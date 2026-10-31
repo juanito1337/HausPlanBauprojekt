@@ -1,0 +1,7 @@
+# Optional standalone CAD environment; NOT for embedded NX Python.
+# Direct versions observed in the handoff environment, no fresh-install guarantee.
+# Use a separate Python 3.12 environment.
+cadquery==2.8.0
+cadquery-ocp==7.9.3.1.1
+numpy==2.3.5
+shapely==2.1.2

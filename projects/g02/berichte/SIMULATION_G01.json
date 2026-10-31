@@ -1,0 +1,26 @@
+{
+  "status": "PYTHON_GESAMTABLAUF_MIT_NX_TESTDOUBLE_BESTANDEN",
+  "NX_tested": false,
+  "house_revision": "MAIN01-A01",
+  "house_bodies": 1418,
+  "house_components": 15,
+  "environment_groups": [
+    "DGM",
+    "V01",
+    "V02",
+    "V03",
+    "V05"
+  ],
+  "simulated_step_imports": 6,
+  "simulated_point_distance_calls": 1335,
+  "real_surface_measurements": 0,
+  "project_children": 3,
+  "utility_groups": 4,
+  "utility_line_segments": 45,
+  "utility_parent_hidden": true,
+  "height_offset_not_guessed": true,
+  "DGM_point85_fixed": false,
+  "source_files_not_resaved": true,
+  "temporary_stub_files_deleted_after_run": true,
+  "note": "Real delivered Python engines + simulated NX bindings and zero-distance answers. No STEP translator/Parasolid execution. No as-built approval."
+}

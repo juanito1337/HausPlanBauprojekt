@@ -1,0 +1,43 @@
+{
+  "schema": "GESAMT_G01_SOURCE_LOCK_V1",
+  "package": "MAIN01-A01-G01b-DGM-UVPRUEFUNG",
+  "house": {
+    "archive": "NX_HAUS_MAIN01_A01.zip",
+    "sha256": "a4c8f918f1006d7e26041fdd944ebf06a0ae8f7ef2d343ac645d79a75c8be467",
+    "target": "haus",
+    "geometry_revision": "MAIN01-A01",
+    "source_changed": false
+  },
+  "environment": {
+    "archive": "NX_Haus_Laufzeit_R11a.zip",
+    "sha256": "e6dda2d2b32b232d3a3ae7feae9536b50cd2a739a8c1f6f54c784a699280ef58",
+    "target": "umgebung",
+    "selected_parts": [
+      "DGM",
+      "V01",
+      "V02",
+      "V03",
+      "V05"
+    ],
+    "runtime_and_geometry_changed": false,
+    "old_house_builder_used": false,
+    "retained_file_count": 263,
+    "selection_note": "Runtime-hash dependencies, CAD source files, data and supporting evidence retained. Historical house PDF duplicates omitted; current house sources live in haus/quellen.",
+    "validation_override_in_gesamt": "G01b DGM fixed UV coordinates plus separate four-edge boundary check; copied umgebung source engine itself unchanged."
+  },
+  "diagnosis": {
+    "archive": "NX_DGM_Punktdiagnose.zip",
+    "sha256": "b74d8fb711fc8be0188e8a924e6c66c7453e32d58ad387567d69997c6fcbcd36",
+    "status": "G01a full NX diagnostic received and analysed; old tools retained as historical evidence."
+  },
+  "known_unresolved": [
+    "G01a numeric distances match source outer boundary. New G01b direct surface-coordinate validator implemented; native NX execution and internal cause still unconfirmed.",
+    "No confirmed house-to-terrain vertical datum connection.",
+    "10 existing house collision pairs and 2 blocked interior door openings.",
+    "No roof structural calculation / no fully modelled roof framing.",
+    "Utilities not measured at depth; archived plan projections only."
+  ],
+  "NX_tested_here": false,
+  "all_defects_fixed": false,
+  "overall_workflow": "Current MAIN01-A01 house unchanged; environment via G01b terrain validator for DGM and old BASIS/INTENSIV algorithm for vegetation. Terrain-only starter available. No source geometry fitting."
+}

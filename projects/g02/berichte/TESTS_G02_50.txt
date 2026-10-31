@@ -1,0 +1,55 @@
+test_01_default_offset (__main__.HeightTests.test_01_default_offset) ... ok
+test_02_anchor_target (__main__.HeightTests.test_02_anchor_target) ... ok
+test_03_not_surveyed (__main__.HeightTests.test_03_not_surveyed) ... ok
+test_04_plan_no_datum_claim (__main__.HeightTests.test_04_plan_no_datum_claim) ... ok
+test_05_weight_sum (__main__.HeightTests.test_05_weight_sum) ... ok
+test_06_all_four_supports (__main__.HeightTests.test_06_all_four_supports) ... ok
+test_07_source_nodes_count (__main__.HeightTests.test_07_source_nodes_count) ... ok
+test_08_no_xy_offset (__main__.HeightTests.test_08_no_xy_offset) ... ok
+test_09_vegetation_follows_parent (__main__.HeightTests.test_09_vegetation_follows_parent) ... ok
+test_10_utility_excluded (__main__.HeightTests.test_10_utility_excluded) ... ok
+test_11_second_height_rejected (__main__.HeightTests.test_11_second_height_rejected) ... ok
+test_12_actual_absolute_mode (__main__.HeightTests.test_12_actual_absolute_mode) ... ok
+test_13_absolute_without_datum (__main__.HeightTests.test_13_absolute_without_datum) ... ok
+test_14_no_fake_datum_on_plan (__main__.HeightTests.test_14_no_fake_datum_on_plan) ... ok
+test_15_outside_grid (__main__.HeightTests.test_15_outside_grid) ... ok
+test_16_nonfinite_or_bool_target (__main__.HeightTests.test_16_nonfinite_or_bool_target) ... ok
+test_17_measured_anchor_remains_dgm_dependent (__main__.HeightTests.test_17_measured_anchor_remains_dgm_dependent) ... ok
+test_18_source_description_required (__main__.HeightTests.test_18_source_description_required) ... ok
+test_19_height_not_rounded_before_assembly (__main__.HeightTests.test_19_height_not_rounded_before_assembly) ... ok
+test_20_settings_no_mutation (__main__.HeightTests.test_20_settings_no_mutation) ... ok
+test_01_readback_pass (__main__.PlacementTests.test_01_readback_pass) ... ok
+test_02_wrong_sign (__main__.PlacementTests.test_02_wrong_sign) ... ok
+test_03_double_shift (__main__.PlacementTests.test_03_double_shift) ... ok
+test_04_house_not_moved (__main__.PlacementTests.test_04_house_not_moved) ... ok
+test_05_leitungen_not_given_fake_depth (__main__.PlacementTests.test_05_leitungen_not_given_fake_depth) ... ok
+test_06_rotation_rejected (__main__.PlacementTests.test_06_rotation_rejected) ... ok
+test_07_missing_child (__main__.PlacementTests.test_07_missing_child) ... ok
+test_08_repeat_absolute (__main__.PlacementTests.test_08_repeat_absolute) ... ok
+test_01_clean_property (__main__.SourceStateTests.test_01_clean_property) ... ok
+test_02_dirty_property (__main__.SourceStateTests.test_02_dirty_property) ... ok
+test_03_method_called (__main__.SourceStateTests.test_03_method_called) ... ok
+test_04_integer_only_zero_one (__main__.SourceStateTests.test_04_integer_only_zero_one) ... ok
+test_05_missing_rejected (__main__.SourceStateTests.test_05_missing_rejected) ... ok
+test_06_display_lookup_does_not_read_dirty_flag (__main__.SourceStateTests.test_06_display_lookup_does_not_read_dirty_flag) ... ok
+test_07_dirty_source_still_rejected (__main__.SourceStateTests.test_07_dirty_source_still_rejected) ... ok
+test_08_dirty_old_master_not_source (__main__.SourceStateTests.test_08_dirty_old_master_not_source) ... ok
+test_01_order_and_integrated_height (__main__.WorkflowTests.test_01_order_and_integrated_height) ... ok
+test_02_no_height_confirmation_no_build (__main__.WorkflowTests.test_02_no_height_confirmation_no_build) ... ok
+test_03_env_failure_preserves_house (__main__.WorkflowTests.test_03_env_failure_preserves_house) ... ok
+test_04_montage_failure_preserves_both (__main__.WorkflowTests.test_04_montage_failure_preserves_both) ... ok
+test_05_house_only_no_env (__main__.WorkflowTests.test_05_house_only_no_env) ... ok
+test_06_env_only_no_house (__main__.WorkflowTests.test_06_env_only_no_house) ... ok
+test_07_assemble_no_rebuild (__main__.WorkflowTests.test_07_assemble_no_rebuild) ... ok
+test_08_reuse_no_project_geometry_read (__main__.WorkflowTests.test_08_reuse_no_project_geometry_read) ... ok
+test_09_reject_incomplete_manifest (__main__.WorkflowTests.test_09_reject_incomplete_manifest) ... ok
+test_10_reject_modified_source (__main__.WorkflowTests.test_10_reject_modified_source) ... ok
+test_11_patch_no_old_R11 (__main__.WorkflowTests.test_11_patch_no_old_R11) ... ok
+test_12_unique_output_dirs (__main__.WorkflowTests.test_12_unique_output_dirs) ... ok
+test_13_invalid_mode (__main__.WorkflowTests.test_13_invalid_mode) ... ok
+test_14_no_fake_success_from_project (__main__.WorkflowTests.test_14_no_fake_success_from_project) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.062s
+
+OK

@@ -1,0 +1,41 @@
+{
+  "unchanged_existing_file_count": 261,
+  "changed_existing_files": [
+    {
+      "file": "00_NX_MODELL_ERZEUGEN_2406.py",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "README_START_HIER.md",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "data/PROGRAMM_UND_QUELLEN_SHA256.json",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "r09/core.py",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "r09/nx_adapter.py",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "r09/run.py",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "tests/test_area_measure_r09c.py",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "tests/test_surface_import_r09b.py",
+      "status": "MODIFIED"
+    },
+    {
+      "file": "werkzeuge/PRUEFE_FLAECHENTEILUNG_OCCT_R09b.py",
+      "status": "MODIFIED"
+    }
+  ]
+}

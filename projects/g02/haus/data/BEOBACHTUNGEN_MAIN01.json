@@ -1,0 +1,98 @@
+[
+  {
+    "id": "M01-O01",
+    "time": "01:30–01:42",
+    "element": "Balkon rechts aus Straßensicht",
+    "status": "MODELLIERT_NAEHERUNG",
+    "note": "Ein Balkon; Lage und Bauform sichtbar. Historische Planzuordnung P05/P22; Maß-/Anschlussdetails nicht bestätigt.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O02",
+    "time": "01:34–01:38",
+    "element": "Horizontale Balkonbekleidung",
+    "status": "MODELLIERT_NAEHERUNG",
+    "note": "Drei Seiten, sieben Anzeigezeilen. Keine vermessene Brettzahl, kein bestimmtes Materialprofil.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O03",
+    "time": "01:34–01:40",
+    "element": "Schlanke Balkonstützen",
+    "status": "MODELLIERT_NAEHERUNG",
+    "note": "Zwei Rund-Außenhüllen; Durchmesser, Achslagen, Wanddicke und Fußpunkte nicht aufgemessen. Keine Fundamente.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O04",
+    "time": "01:30 / 01:36",
+    "element": "Balkonzugang unter Dachnische",
+    "status": "MODELLKORREKTUR_NAEHERUNG",
+    "note": "Tür an schräger Außenwand statt falscher interner Hilfslinie. Dachhülle lokal angepasst. Keine Tragwerkswechsel erfunden.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O05",
+    "time": "01:38–01:42",
+    "element": "Geländer am äußeren Kellerabgang",
+    "status": "MODELLIERT_NAEHERUNG",
+    "note": "Sichtbarer Schutzbereich als Stab-/Handlaufhüllen. Stufen, Wände und Baugrube bleiben nicht rekonstruiert.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O06",
+    "time": "00:36 / 01:40",
+    "element": "Fallrohre an Hauskanten",
+    "status": "TEILWEISE_MODELLIERT",
+    "note": "Zwei oberirdische Abschnitte. Nicht das vollständige Entwässerungsnetz; keine Leitungsanschlüsse oder Rohrwanddicken.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O07",
+    "time": "00:00–00:12 / 01:30",
+    "element": "Dachrinnen und Randbleche",
+    "status": "REGISTRIERT_OFFEN",
+    "note": "Vorhanden sichtbar, durchgehende Lagen/Querschnitte und Anschlüsse nicht festgelegt; kein vollständiges Rinnennetz modelliert.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O08",
+    "time": "01:30 / 02:24–02:36",
+    "element": "Schornsteinköpfe / Dachdurchdringungen",
+    "status": "REGISTRIERT_OFFEN",
+    "note": "Existenz sichtbar. Einmessung und eindeutige Zuordnung der verdeckten Schächte fehlen; keine geratenen Schächte ergänzt.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O09",
+    "time": "00:36",
+    "element": "Wandgerät mit Kabel",
+    "status": "REGISTRIERT_OFFEN",
+    "note": "Kein Hersteller/Modell/elektrischer Anschluss bestimmt. Nicht als technische Installation rekonstruiert.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O10",
+    "time": "00:24 / 01:24–01:30 / 02:24–02:42",
+    "element": "Dachfenster und Solarfelder",
+    "status": "R11_GEOMETRIE_BEIBEHALTEN",
+    "note": "R11-Näherungen unverändert, keine Modulgewichte oder Dachhaken ergänzt.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O11",
+    "time": "00:58–01:26",
+    "element": "Lange Gaube / Fensterteilungen",
+    "status": "R11_GEOMETRIE_BEIBEHALTEN",
+    "note": "Teilung 1+2+2+2+1 beibehalten. Zwei falsche Maßstatusfelder korrigiert; die 750-mm-Modellbreite ist kein Planwert1500.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  },
+  {
+    "id": "M01-O12",
+    "time": "gesamter Rundgang, Einzelbilder",
+    "element": "Außenwände, Sockel und Eingangsstufen",
+    "status": "REGISTRIERT_OFFEN",
+    "note": "Keine flächendeckende Dicken- oder Schwellenvermessung. Kein verdeckter Wandaufbau aus Farbe angenommen.",
+    "source": "Pxl 20261008 162732474-1.mp4"
+  }
+]

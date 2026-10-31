@@ -1,0 +1,13 @@
+{
+  "status": "ABGEBROCHEN",
+  "revision": "R03",
+  "patch": "R03c-ATTRIBUTFIX",
+  "entry": "CHECK_HAUS_2406.py",
+  "error": "Datei nicht lesbar oder ungueltig: W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\LETZTER_ERFOLGREICHER_LAUF.json\n[Errno 2] No such file or directory: 'W:\\\\Plan Haus\\\\Haus_NX2406_Projekt_R03c\\\\LETZTER_ERFOLGREICHER_LAUF.json'",
+  "traceback": "Traceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_runtime.py\", line 29, in read_json\n    return json.loads(Path(path).read_text(encoding='utf-8-sig'),\n  File \"C:\\Siemens\\NX2406\\nxbin\\python\\Python310.zip\\pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"C:\\Siemens\\NX2406\\nxbin\\python\\Python310.zip\\pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: 'W:\\\\Plan Haus\\\\Haus_NX2406_Projekt_R03c\\\\LETZTER_ERFOLGREICHER_LAUF.json'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\CHECK_HAUS_2406.py\", line 96, in main\n    return check_saved_house(base)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_run.py\", line 407, in check_saved_house\n    pointer=read_json(base/'LETZTER_ERFOLGREICHER_LAUF.json')\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_runtime.py\", line 32, in read_json\n    raise ValueError('Datei nicht lesbar oder ungueltig: %s\\n%s' % (path, ex)) from ex\nValueError: Datei nicht lesbar oder ungueltig: W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\LETZTER_ERFOLGREICHER_LAUF.json\n[Errno 2] No such file or directory: 'W:\\\\Plan Haus\\\\Haus_NX2406_Projekt_R03c\\\\LETZTER_ERFOLGREICHER_LAUF.json'\n",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "project_base": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03c",
+  "script": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\CHECK_HAUS_2406.py",
+  "time": "2026-10-07T00:14:36.997905",
+  "note": "Keine Erfolgsmeldung. Bereits erzeugte Teilmodelle sind nicht freigegeben."
+}

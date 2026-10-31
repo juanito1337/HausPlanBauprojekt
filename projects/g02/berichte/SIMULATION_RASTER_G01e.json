@@ -1,0 +1,14 @@
+{
+  "status": "FULL_PROJECT_WITH_8282_DGM_FACES_SIMULATION_PASSED",
+  "NX_tested": false,
+  "house_bodies": 1418,
+  "house_components": 15,
+  "synthetic_DGM_faces": 8282,
+  "saved_components_checked": true,
+  "step_calls": 6,
+  "house_not_downgraded": true,
+  "height_offset_not_guessed": true,
+  "physical_utility_depths_confirmed": false,
+  "source_parts_not_resaved": true,
+  "notes": "Synthetic NX calls; temporary placeholder files are NOT native NX files and are deleted."
+}

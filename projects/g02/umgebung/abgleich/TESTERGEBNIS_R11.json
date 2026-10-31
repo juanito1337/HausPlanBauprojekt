@@ -1,0 +1,62 @@
+{
+  "patch": "R11-FENSTER-UND-QUELLENBEZUG",
+  "NX_tested": false,
+  "checks": [
+    {
+      "name": "haus",
+      "exit_code": 0,
+      "test_count": 380,
+      "log": "haus.txt"
+    },
+    {
+      "name": "integration",
+      "exit_code": 0,
+      "test_count": 243,
+      "log": "integration.txt"
+    },
+    {
+      "name": "video",
+      "exit_code": 0,
+      "test_count": 40,
+      "log": "video.txt"
+    },
+    {
+      "name": "hauskoerper_r11",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "hauskoerper_r11.txt"
+    },
+    {
+      "name": "step",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "step.txt"
+    },
+    {
+      "name": "flaechenteilung",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "flaechenteilung.txt"
+    },
+    {
+      "name": "dgm_integration",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "dgm_integration.txt"
+    }
+  ],
+  "date": "2026-10-09T12:59:40.121666",
+  "cad_requested": true,
+  "all_requested_checks_passed": true,
+  "test_count": 663,
+  "browser_house_preview_loaded": true,
+  "browser_window_register_filter_test": true,
+  "browser_selected_environment_five_groups": true,
+  "evidence_pdf_pages": 8,
+  "numerical_house_bodies": 1361,
+  "open_collision_pairs": 10,
+  "blocked_internal_doors": 2,
+  "window_groups_in_register": 48,
+  "model_matches_all_as_built_windows": false,
+  "own_NX_runtime": false
+}

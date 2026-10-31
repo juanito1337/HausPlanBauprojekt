@@ -1,0 +1,12 @@
+{
+  "schema": "HAUSPLAN_EXTRA_SOURCES_V1",
+  "files": [
+    {
+      "path": "sources/video/AUSSENRUNDGANG_20261008.mp4",
+      "original_name": "Pxl 20261008 162732474-1.mp4",
+      "bytes": 25521285,
+      "sha256": "f7039ff51aab1b966c81fdbf2a12ac8e8ad8f38f87766dc38e5564c96f5fdaac",
+      "transformed": false
+    }
+  ]
+}

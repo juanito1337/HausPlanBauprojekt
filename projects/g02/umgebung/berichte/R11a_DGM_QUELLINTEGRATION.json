@@ -1,0 +1,49 @@
+{
+  "patch": "R09e-ADAPTIVE-FLAECHENMESSUNG",
+  "status": "DGM_QUELLINTEGRATION_BESTANDEN",
+  "source_step": "CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step",
+  "source_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "grid_shape": [
+    102,
+    83
+  ],
+  "bilinear_cells": 8282,
+  "all_source_nodes_and_centers_compared": 16748,
+  "max_sample_reference_error_mm": 7.071121654464448e-08,
+  "quadrature": [
+    {
+      "order_per_direction": 2,
+      "area_mm2": 8361912153.249381,
+      "area_m2": 8361.912153249381,
+      "difference_to_stored_reference_mm2": 3843.4961013793945
+    },
+    {
+      "order_per_direction": 4,
+      "area_mm2": 8361908303.738317,
+      "area_m2": 8361.908303738317,
+      "difference_to_stored_reference_mm2": -6.014963150024414
+    },
+    {
+      "order_per_direction": 8,
+      "area_mm2": 8361908309.753282,
+      "area_m2": 8361.908309753282,
+      "difference_to_stored_reference_mm2": 1.9073486328125e-06
+    },
+    {
+      "order_per_direction": 16,
+      "area_mm2": 8361908309.753275,
+      "area_m2": 8361.908309753275,
+      "difference_to_stored_reference_mm2": -4.76837158203125e-06
+    }
+  ],
+  "quadrature_8_vs_16_mm2": 6.67572021484375e-06,
+  "uploaded_NX_low_area_m2": 8358.381179944885,
+  "uploaded_NX_high_area_m2": 8361.523002046139,
+  "uploaded_NX_pair_delta_m2": 3.1418221012535095,
+  "uploaded_NX_pair_relative_percent": 0.03757475881468816,
+  "uploaded_NX_high_to_source_relative_percent": 0.004607892036934941,
+  "source_area_changed": false,
+  "CAD_geometry_changed": false,
+  "new_NX_measurement_executed": false,
+  "scope": "Integral of the unchanged STEP SOURCE; NOT the imported NX geometry. Numerical convergence, not a rigorous error bound or terrain survey. Only the first two NX values are from the user log; no later NX values exist here."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ABGEBROCHEN",
+  "revision": "R03",
+  "entry": "RUN_HAUS_2406.py",
+  "error": "[WinError 1005] Auf dem Datenträger befindet sich kein erkanntes Dateisystem.\r\nStellen Sie sicher, dass alle benötigten Dateisystemtreiber geladen sind und dass der Datenträger nicht beschädigt ist: 'W:\\\\Plan Haus\\\\Haus_NX2406_Projekt_R03\\\\RUN_HAUS_2406.py'",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Siemens\\NX2406\\nxbin\\python\\Python310.zip\\ntpath.py\", line 689, in realpath\n    path = _getfinalpathname(path)\nOSError: [WinError 1005] Auf dem Datenträger befindet sich kein erkanntes Dateisystem.\r\nStellen Sie sicher, dass alle benötigten Dateisystemtreiber geladen sind und dass der Datenträger nicht beschädigt ist: 'W:\\\\Plan Haus\\\\Haus_NX2406_Projekt_R03\\\\RUN_HAUS_2406.py'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03\\RUN_HAUS_2406.py\", line 58, in main\n    base=Path(__file__).resolve().parent\n  File \"C:\\Siemens\\NX2406\\nxbin\\python\\Python310.zip\\pathlib.py\", line 1077, in resolve\n    s = self._accessor.realpath(self, strict=strict)\n  File \"C:\\Siemens\\NX2406\\nxbin\\python\\Python310.zip\\ntpath.py\", line 695, in realpath\n    path = _getfinalpathname_nonstrict(path)\n  File \"C:\\Siemens\\NX2406\\nxbin\\python\\Python310.zip\\ntpath.py\", line 643, in _getfinalpathname_nonstrict\n    path = _getfinalpathname(path)\nOSError: [WinError 1005] Auf dem Datenträger befindet sich kein erkanntes Dateisystem.\r\nStellen Sie sicher, dass alle benötigten Dateisystemtreiber geladen sind und dass der Datenträger nicht beschädigt ist: 'W:\\\\Plan Haus\\\\Haus_NX2406_Projekt_R03\\\\RUN_HAUS_2406.py'\n",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "time": "2026-10-06T23:08:51.172641",
+  "note": "Keine Erfolgsmeldung. Bereits erzeugte Teilmodelle sind nicht freigegeben."
+}

@@ -1,0 +1,49 @@
+# Local/native results: keep working NX files outside versioned sources.
+/local_data/*
+!/local_data/README.md
+/reports/local/
+**/ausgabe/
+**/fehlerberichte/
+**/_step_quellen/
+**/LETZTER_ERFOLGREICHER_LAUF.json
+**/LETZTES_HAUS_*.json
+**/LETZTE_UMGEBUNG_*.json
+*.prt
+*.prt.*
+*.bak
+*.tmp
+*.lck
+*.log
+
+# Python/editor/tool-local files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv*/
+venv/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Credentials and personal configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.local.json
+.codex/
+
+# Release archives are deliverables, not repository source.
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz

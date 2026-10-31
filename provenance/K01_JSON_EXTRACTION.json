@@ -1,0 +1,10 @@
+{
+  "source": "renovierung/k01_unterlagen/VORSCHAU_BAUABLAUF_K01.html",
+  "source_sha256": "0e763e0fa9452fa1a8b8057849df2f06444ae27610662b8423ea5aa064de0e00",
+  "output": "renovierung/recovered/RENOVIERUNGSPLAN_AUS_VORSCHAU.json",
+  "output_sha256": "334a44d2aec94d50d6f14e6354b9dedd68c70a5ac3ff0e8c9a04a75f8b656906",
+  "javascript_executed": false,
+  "nx_code_recovered": false,
+  "CAD_assets_recovered": false,
+  "reference_only": true
+}

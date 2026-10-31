@@ -1,0 +1,56 @@
+{
+  "status": "OCCT_ORIGINAL_PASSED_AND_REAL_DEFORMATION_REJECTED",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "native_prt_created": false,
+  "source": "umgebung/CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step",
+  "source_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "source_unchanged": true,
+  "surface_type": "Geom_BSplineSurface",
+  "source_degree": [
+    1,
+    1
+  ],
+  "source_poles": [
+    102,
+    83
+  ],
+  "source_parameter_limits": [
+    0.0,
+    101.0,
+    0.0,
+    82.0
+  ],
+  "actual_edges": 4,
+  "reference_points_checked": 16748,
+  "actual_surface_evaluations": 16753,
+  "actual_edge_distance_queries": 736,
+  "maximum_position_error_mm": 7.072150630258171e-08,
+  "maximum_edge_error_mm": 5.896794630138402e-08,
+  "negative_control": {
+    "source_index": 1089,
+    "reference_above_mm": [
+      29377.3560922,
+      -42561.0377436,
+      33920.0
+    ],
+    "NX_position_mm": [
+      29377.35609217,
+      -42561.03774357,
+      30720.0
+    ],
+    "distance_mm": 3200.0,
+    "correctly_not_accepted": true
+  },
+  "real_modified_surface_test": {
+    "changed_pole": [
+      14,
+      11
+    ],
+    "delta_z_mm": 2.0,
+    "detected_index": 1089,
+    "detected_error_mm": 2.0000000000000004,
+    "rejected": true
+  },
+  "limitations": "Validates the actual exported source and production Python comparison using OCCT positions/edges; does not test NX bindings, STEP importer, or the saved user NX part."
+}

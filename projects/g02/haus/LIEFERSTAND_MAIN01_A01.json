@@ -1,0 +1,27 @@
+{
+  "schema": "MAIN01_A01_LIEFERSTAND",
+  "revision": "MAIN01-A01",
+  "date": "2026-10-09",
+  "scope": "HOUSE_ONLY_NO_STEP_OR_ENVIRONMENT",
+  "program_entry": "00_HAUS_MAIN01_ERZEUGEN.py",
+  "native_NX_execution_performed_here": false,
+  "real_PRTs_in_package": false,
+  "planned_components": 15,
+  "planned_solids": 1418,
+  "offline_tests": 87,
+  "independent_CAD_kernel": "Open CASCADE",
+  "cad_bodies_checked": 1418,
+  "unresolved_collision_pairs": 10,
+  "blocked_openings": 2,
+  "source_pitches_deg": [
+    45,
+    28
+  ],
+  "dormer_angles_measured": false,
+  "estimated_dormer_pitches_preserved": true,
+  "three_model_rear_seams_closed": true,
+  "original_main01_package_sha256": "4eea8680968256674c71f850ee6fb12323602bbb2863bbd8abfeaf7a3dd21b9e",
+  "input_sha256": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+  "as_built_verified": false,
+  "structural_approval": false
+}

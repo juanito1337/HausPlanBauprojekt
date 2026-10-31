@@ -1,0 +1,2808 @@
+{
+  "patch": "MAIN01-A01-G01a-GELAENDEPROTOKOLL",
+  "status": "ABGEBROCHEN_KEIN_GESAMTERFOLG",
+  "mode": "TERRAIN",
+  "base": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a",
+  "error": "BASIS-Quellpunktabweichung DGM Sheet 1: 10003.641060 mm > 0.250 mm",
+  "traceback": "Traceback (most recent call last):\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\gesamt\\start.py\", line 37, in main\n    result = run_terrain_only(base)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\gesamt\\terrain_only.py\", line 72, in run_terrain_only\n    part,saved,check=nx.import_surface_part(out,source_root/spec['step_file'],spec,definition,name)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\gesamt\\terrain_audit.py\", line 152, in import_surface_part\n    result=super().import_surface_part(out,source,spec,definition,name)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\umgebung\\r09\\performance.py\", line 231, in import_surface_part\n    result=super().import_surface_part(out,source,spec,definition,name)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\umgebung\\r09\\nx_adapter.py\", line 252, in import_surface_part\n    check = self.verify_surface_geometry(part, spec, out)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\gesamt\\terrain_audit.py\", line 214, in verify_surface_geometry\n    result=super().verify_surface_geometry(part,spec,out)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\umgebung\\r09\\performance.py\", line 237, in verify_surface_geometry\n    if self.validation_level=='BASIS':result=verify_basic(self,part,spec,out)\n  File \"W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\umgebung\\r09\\quick_check.py\", line 102, in verify_basic\n    raise RuntimeError('BASIS-Quellpunktabweichung %s Sheet %d: %.6f mm > %.3f mm' % (\nRuntimeError: BASIS-Quellpunktabweichung DGM Sheet 1: 10003.641060 mm > 0.250 mm\n",
+  "time": "2026-10-11T12:48:25.577439",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "context": {
+    "output_directory": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7",
+    "phase": "GELAENDE_IMPORTIEREN_SICHERN_UND_PRUEFEN",
+    "manifest": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\manifest_G01.json",
+    "saved_house": null,
+    "saved_environment": null,
+    "terrain_report": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\GELAENDE_PROTOKOLL_G01a.json",
+    "house_not_rebuilt": true
+  },
+  "nested_diagnostics": {
+    "nx_surface_check": {
+      "id": "DGM",
+      "report_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\IMPORTPRUEFUNG_DGM_R11a_BASIS.json",
+      "status": "BASISPRUEFUNG_ABGEBROCHEN",
+      "source_sheets": 1,
+      "source_faces": 1,
+      "nx_sheets": 1,
+      "nx_faces": 1,
+      "error": "BASIS-Quellpunktabweichung DGM Sheet 1: 10003.641060 mm > 0.250 mm",
+      "operation": "BASIS DGM Sheet 1/1 Quellpunkt 1089",
+      "validation_level": "BASIS",
+      "last_sheet": {
+        "source_index": 0,
+        "body_index": 0,
+        "nx_faces": 1,
+        "available_samples": 16748,
+        "selected_sample_indices": [
+          0,
+          10,
+          20,
+          31,
+          41,
+          42,
+          51,
+          62,
+          72,
+          82,
+          1079,
+          1089,
+          1099,
+          1110,
+          1120,
+          1130,
+          1141,
+          1151,
+          1161,
+          2075,
+          2085,
+          2095,
+          2106,
+          2116,
+          2126,
+          2137,
+          2147,
+          2157,
+          3154,
+          3164,
+          3174,
+          3185,
+          3195,
+          3205,
+          3216,
+          3226,
+          3236,
+          4150,
+          4160,
+          4170,
+          4181,
+          4191,
+          4201,
+          4212,
+          4222,
+          4232,
+          5229,
+          5239,
+          5249,
+          5260,
+          5270,
+          5280,
+          5291,
+          5301,
+          5311,
+          6308,
+          6318,
+          6328,
+          6339,
+          6349,
+          6359,
+          6370,
+          6380,
+          6390,
+          7304,
+          7314,
+          7324,
+          7335,
+          7345,
+          7355,
+          7366,
+          7376,
+          7386,
+          8280,
+          8383,
+          8393,
+          8403,
+          8414,
+          8424,
+          8434,
+          8445,
+          8455,
+          8465,
+          8466,
+          8478,
+          8489,
+          8501,
+          8512,
+          8524,
+          8535,
+          8547,
+          9614,
+          9626,
+          9637,
+          9649,
+          9660,
+          9672,
+          9683,
+          9695,
+          10844,
+          10856,
+          10867,
+          10879,
+          10890,
+          10902,
+          10913,
+          10925,
+          11992,
+          12004,
+          12015,
+          12027,
+          12038,
+          12050,
+          12061,
+          12073,
+          13140,
+          13152,
+          13163,
+          13175,
+          13186,
+          13198,
+          13209,
+          13221,
+          14288,
+          14300,
+          14311,
+          14323,
+          14334,
+          14346,
+          14357,
+          14369,
+          15518,
+          15530,
+          15541,
+          15553,
+          15564,
+          15576,
+          15587,
+          15599,
+          16666,
+          16678,
+          16689,
+          16701,
+          16712,
+          16724,
+          16735,
+          16747
+        ],
+        "checked_samples": 12,
+        "area_check_performed": false,
+        "max_point_distance_mm": 10003.64105954792,
+        "failed_sample_index": 1089,
+        "failed_sample_mm": [
+          29377.3560922,
+          -42561.0377436,
+          30720.0
+        ],
+        "failed_distance_mm": 10003.64105954792
+      }
+    },
+    "nx_runtime": {
+      "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+      "nx_version_inferred_from_python": false,
+      "UGII_VERSION": "v2406",
+      "UGII_FULL_VERSION": "v2406.0.0.8100",
+      "UGII_BASE_DIR": "C:\\Siemens\\NX2406"
+    },
+    "nx_terrain_audit_g01a": {
+      "schema": "G01A_TERRAIN_AUDIT_V1",
+      "patch": "MAIN01-A01-G01a-GELAENDEPROTOKOLL",
+      "id": "DGM",
+      "report_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\GELAENDE_PROTOKOLL_G01a.json",
+      "events_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\GELAENDE_PUNKTABFRAGEN_G01a.jsonl",
+      "created_at": "2026-10-11T12:47:56.412197",
+      "source": {
+        "path": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\umgebung\\CAD_IMPORT\\GELAENDE_R07_UNVERAENDERT.step",
+        "expected_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+        "exists": true,
+        "bytes": 811109,
+        "sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61"
+      },
+      "step_definition": {
+        "path": "C:\\Siemens\\NX2406\\step214ug\\step214ug.def",
+        "exists": true,
+        "bytes": 1222,
+        "sha256": "2a301b43cdefaa6f6ae65c146b865164c2acbf771bb26812bb798eb5af9af960"
+      },
+      "status": "ABGEBROCHEN_KEINE_GEOMETRIEFREIGABE",
+      "geometry_release": false,
+      "root_cause_fixed": false,
+      "geometry_changed": false,
+      "normal_query_signature": "AskMinimumDist(0, body_tag, 1, fresh_xyz, 0, fresh_zero)",
+      "acceptance_limit_mm": 0.25,
+      "regular_calls_started": 12,
+      "regular_calls_finished": 12,
+      "recent_regular_queries": [
+        {
+          "number": 1,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 0",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            36596.3887994,
+            -57288.0729772,
+            31150.0
+          ],
+          "previous_query_mm": null,
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              36596.3887994,
+              -57288.0729772,
+              31150.0
+            ],
+            [
+              36596.38879939,
+              -57288.072977179996,
+              31150.0
+            ]
+          ],
+          "guess1_after_mm": [
+            36596.3887994,
+            -57288.0729772,
+            31150.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            36596.3887994,
+            -57288.0729772,
+            31150.0
+          ],
+          "returned_target_mm": [
+            36596.38879939,
+            -57288.072977179996,
+            31150.0
+          ],
+          "target_minus_query_mm": [
+            -1.000444171950221e-08,
+            2.0001607481390238e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 2.2364104184127795e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "seconds": 0.006214799999725074
+        },
+        {
+          "number": 2,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 10",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            26795.578944,
+            -55302.0905555,
+            30880.0
+          ],
+          "previous_query_mm": [
+            36596.3887994,
+            -57288.0729772,
+            31150.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              26795.578944,
+              -55302.0905555,
+              30880.0
+            ],
+            [
+              26795.57894403,
+              -55302.09055553,
+              30880.0
+            ]
+          ],
+          "guess1_after_mm": [
+            26795.578944,
+            -55302.0905555,
+            30880.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            26795.578944,
+            -55302.0905555,
+            30880.0
+          ],
+          "returned_target_mm": [
+            26795.57894403,
+            -55302.09055553,
+            30880.0
+          ],
+          "target_minus_query_mm": [
+            2.9998773243278265e-08,
+            -2.9998773243278265e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 4.242467197519924e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 10003.644335955774,
+          "seconds": 0.006981100013945252
+        },
+        {
+          "number": 3,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 20",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            16994.7690887,
+            -53316.1081339,
+            31160.0
+          ],
+          "previous_query_mm": [
+            26795.578944,
+            -55302.0905555,
+            30880.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              16994.7690887,
+              -53316.1081339,
+              31160.0
+            ],
+            [
+              16994.76908867,
+              -53316.10813389,
+              31160.0
+            ]
+          ],
+          "guess1_after_mm": [
+            16994.7690887,
+            -53316.1081339,
+            31160.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            16994.7690887,
+            -53316.1081339,
+            31160.0
+          ],
+          "returned_target_mm": [
+            16994.76908867,
+            -53316.10813389,
+            31160.0
+          ],
+          "target_minus_query_mm": [
+            -2.9998773243278265e-08,
+            1.000444171950221e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 3.162301772792319e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 10003.919231944928,
+          "seconds": 0.005662400042638183
+        },
+        {
+          "number": 4,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 31",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            6213.8782478,
+            -51131.5274701,
+            30070.0
+          ],
+          "previous_query_mm": [
+            16994.7690887,
+            -53316.1081339,
+            31160.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              6213.8782478,
+              -51131.5274701,
+              30070.0
+            ],
+            [
+              6213.878247777,
+              -51131.52747009,
+              30070.0
+            ]
+          ],
+          "guess1_after_mm": [
+            6213.8782478,
+            -51131.5274701,
+            30070.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            6213.8782478,
+            -51131.5274701,
+            30070.0
+          ],
+          "returned_target_mm": [
+            6213.878247777,
+            -51131.52747009,
+            30070.0
+          ],
+          "target_minus_query_mm": [
+            -2.3000211513135582e-08,
+            1.000444171950221e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 2.5081837727086326e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 11053.872624586822,
+          "seconds": 0.005762099986895919
+        },
+        {
+          "number": 5,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 41",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            -3586.9316076,
+            -49145.5450485,
+            29380.0
+          ],
+          "previous_query_mm": [
+            6213.8782478,
+            -51131.5274701,
+            30070.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              -3586.9316076,
+              -49145.5450485,
+              29380.0
+            ],
+            [
+              -3586.931607584,
+              -49145.54504845,
+              29380.0
+            ]
+          ],
+          "guess1_after_mm": [
+            -3586.9316076,
+            -49145.5450485,
+            29380.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            -3586.9316076,
+            -49145.5450485,
+            29380.0
+          ],
+          "returned_target_mm": [
+            -3586.931607584,
+            -49145.54504845,
+            29380.0
+          ],
+          "target_minus_query_mm": [
+            1.5999830793589354e-08,
+            4.999310476705432e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 5.2491000273124526e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 10023.776733372255,
+          "seconds": 0.005486999987624586
+        },
+        {
+          "number": 6,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 42",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            -4567.0125931,
+            -48946.9468063,
+            29360.0
+          ],
+          "previous_query_mm": [
+            -3586.9316076,
+            -49145.5450485,
+            29380.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              -4567.0125931,
+              -48946.9468063,
+              29360.0
+            ],
+            [
+              -4567.01259312,
+              -48946.94680628,
+              29360.0
+            ]
+          ],
+          "guess1_after_mm": [
+            -4567.0125931,
+            -48946.9468063,
+            29360.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            -4567.0125931,
+            -48946.9468063,
+            29360.0
+          ],
+          "returned_target_mm": [
+            -4567.01259312,
+            -48946.94680628,
+            29360.0
+          ],
+          "target_minus_query_mm": [
+            -1.9999788491986692e-08,
+            2.0001607481390238e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 2.8285258378947315e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 1000.1999799993632,
+          "seconds": 0.005361800023820251
+        },
+        {
+          "number": 7,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 51",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            -13387.7414629,
+            -47159.5626268,
+            30160.0
+          ],
+          "previous_query_mm": [
+            -4567.0125931,
+            -48946.9468063,
+            29360.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              -13387.7414629,
+              -47159.5626268,
+              30160.0
+            ],
+            [
+              -13387.74146294,
+              -47159.5626268,
+              30160.0
+            ]
+          ],
+          "guess1_after_mm": [
+            -13387.7414629,
+            -47159.5626268,
+            30160.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            -13387.7414629,
+            -47159.5626268,
+            30160.0
+          ],
+          "returned_target_mm": [
+            -13387.74146294,
+            -47159.5626268,
+            30160.0
+          ],
+          "target_minus_query_mm": [
+            -3.9999576983973384e-08,
+            0.0,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 3.9999576983973384e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 9035.485598480898,
+          "seconds": 0.005549000052269548
+        },
+        {
+          "number": 8,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 62",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            -24168.6323038,
+            -44974.981963,
+            30360.0
+          ],
+          "previous_query_mm": [
+            -13387.7414629,
+            -47159.5626268,
+            30160.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              -24168.6323038,
+              -44974.981963,
+              30360.0
+            ],
+            [
+              -24168.63230384,
+              -44974.981963,
+              30360.0
+            ]
+          ],
+          "guess1_after_mm": [
+            -24168.6323038,
+            -44974.981963,
+            30360.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            -24168.6323038,
+            -44974.981963,
+            30360.0
+          ],
+          "returned_target_mm": [
+            -24168.63230384,
+            -44974.981963,
+            30360.0
+          ],
+          "target_minus_query_mm": [
+            -3.9999576983973384e-08,
+            0.0,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 3.9999576983973384e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 11001.81803162154,
+          "seconds": 0.005261800019070506
+        },
+        {
+          "number": 9,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 72",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            -33969.4421592,
+            -42988.9995414,
+            30900.0
+          ],
+          "previous_query_mm": [
+            -24168.6323038,
+            -44974.981963,
+            30360.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              -33969.4421592,
+              -42988.9995414,
+              30900.0
+            ],
+            [
+              -33969.4421592,
+              -42988.99954136,
+              30900.0
+            ]
+          ],
+          "guess1_after_mm": [
+            -33969.4421592,
+            -42988.9995414,
+            30900.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            -33969.4421592,
+            -42988.9995414,
+            30900.0
+          ],
+          "returned_target_mm": [
+            -33969.4421592,
+            -42988.99954136,
+            30900.0
+          ],
+          "target_minus_query_mm": [
+            0.0,
+            4.0003214962780476e-08,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 4.0003214962780476e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 10014.56938668702,
+          "seconds": 0.005111999984364957
+        },
+        {
+          "number": 10,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 82",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            -43770.2520146,
+            -41003.0171197,
+            30930.0
+          ],
+          "previous_query_mm": [
+            -33969.4421592,
+            -42988.9995414,
+            30900.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              -43770.2520146,
+              -41003.0171197,
+              30930.0
+            ],
+            [
+              -43770.25201456,
+              -41003.01711971,
+              30930.0
+            ]
+          ],
+          "guess1_after_mm": [
+            -43770.2520146,
+            -41003.0171197,
+            30930.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            -43770.2520146,
+            -41003.0171197,
+            30930.0
+          ],
+          "returned_target_mm": [
+            -43770.25201456,
+            -41003.01711971,
+            30930.0
+          ],
+          "target_minus_query_mm": [
+            4.0003214962780476e-08,
+            -9.997165761888027e-09,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 4.123348797554107e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 10000.04499990792,
+          "seconds": 0.005008900014217943
+        },
+        {
+          "number": 11,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 1079",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            39178.1659475,
+            -44547.0201652,
+            30990.0
+          ],
+          "previous_query_mm": [
+            -43770.2520146,
+            -41003.0171197,
+            30930.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            0.0,
+            [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            [
+              39178.16594753,
+              -44547.02016521,
+              30990.0
+            ]
+          ],
+          "guess1_after_mm": [
+            39178.1659475,
+            -44547.0201652,
+            30990.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 0.0,
+          "returned_input_mm": [
+            39178.1659475,
+            -44547.0201652,
+            30990.0
+          ],
+          "returned_target_mm": [
+            39178.16594753,
+            -44547.02016521,
+            30990.0
+          ],
+          "target_minus_query_mm": [
+            2.9998773243278265e-08,
+            -9.997165761888027e-09,
+            0.0
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 3.162071661699485e-08,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": true,
+          "target_distance_to_previous_query_mm": 83024.11456924304,
+          "seconds": 0.0056937000481411815
+        },
+        {
+          "number": 12,
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 1089",
+          "body_tag": 64266,
+          "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+          "query_mm": [
+            29377.3560922,
+            -42561.0377436,
+            30720.0
+          ],
+          "previous_query_mm": [
+            39178.1659475,
+            -44547.0201652,
+            30990.0
+          ],
+          "guess1_given": 1,
+          "guess2_given": 0,
+          "guess2_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "NX_RUECKGABE_ERFASST",
+          "raw_nx_result": [
+            10003.64105954792,
+            [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            [
+              39179.77314681964,
+              -44539.088647555945,
+              30989.757218502215
+            ]
+          ],
+          "guess1_after_mm": [
+            29377.3560922,
+            -42561.0377436,
+            30720.0
+          ],
+          "guess2_after_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distance_mm": 10003.64105954792,
+          "returned_input_mm": [
+            29377.3560922,
+            -42561.0377436,
+            30720.0
+          ],
+          "returned_target_mm": [
+            39179.77314681964,
+            -44539.088647555945,
+            30989.757218502215
+          ],
+          "target_minus_query_mm": [
+            9802.417054619644,
+            -1978.0509039559474,
+            269.7572185022145
+          ],
+          "input_point_error_mm": 0.0,
+          "distance_from_endpoints_mm": 10003.641059547921,
+          "numeric_result_consistent": true,
+          "within_unchanged_0_25mm": false,
+          "target_distance_to_previous_query_mm": 8.09635749252314,
+          "seconds": 0.00885420001577586
+        }
+      ],
+      "unverified_snapshot": {
+        "path": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\diagnose_ungeprueft\\DGM_UNGEPRUEFTER_IMPORT_G01a.prt",
+        "exists": true,
+        "bytes": 715984,
+        "sha256": "df96ddeb683e3b13602e313f6b7d6fb4d0158796e3138dc1fb075a1dc03b99b7",
+        "verified_geometry": false,
+        "assembly_use_allowed": false,
+        "label": "UNGEPRUEFTER_IMPORT_KEINE_FREIGABE"
+      },
+      "own_part_checkpoint": {
+        "path": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+        "exists": true,
+        "bytes": 715984,
+        "sha256": "df96ddeb683e3b13602e313f6b7d6fb4d0158796e3138dc1fb075a1dc03b99b7"
+      },
+      "final_saved_part": null,
+      "source_is_in_package": true,
+      "existing_user_parts_saved_or_closed": false,
+      "note": "Protokoll und Diagnose; kein Bestands-/Formnachweis. Keine Auswahl des passendsten Messwerts.",
+      "updated_at": "2026-10-11T12:48:25.377382",
+      "elapsed_seconds": 28.964981,
+      "planned_part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+      "staged_step_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\_step_quellen\\01_GELAENDE_G01a_38a008d7.step",
+      "intended_import_settings": {
+        "ImportTo": "WorkPart",
+        "SewSurfaces": false,
+        "Optimize": false,
+        "SimplifyGeometry": false,
+        "SmoothBSurfaces": false,
+        "ProcessHoldFlag": true,
+        "scale_changed": false
+      },
+      "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+      "staged_source": {
+        "path": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\_step_quellen\\01_GELAENDE_G01a_38a008d7.step",
+        "exists": true,
+        "bytes": 811109,
+        "sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61"
+      },
+      "body_tags": [
+        64266
+      ],
+      "body_count": 1,
+      "face_counts": [
+        1
+      ],
+      "runtime": {
+        "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+        "nx_version_inferred_from_python": false,
+        "UGII_VERSION": "v2406",
+        "UGII_FULL_VERSION": "v2406.0.0.8100",
+        "UGII_BASE_DIR": "C:\\Siemens\\NX2406"
+      },
+      "active_query": null,
+      "last_query": {
+        "number": 12,
+        "operation": "BASIS DGM Sheet 1/1 Quellpunkt 1089",
+        "body_tag": 64266,
+        "part_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\01_GELAENDE_G01a_38a008d7.prt",
+        "query_mm": [
+          29377.3560922,
+          -42561.0377436,
+          30720.0
+        ],
+        "previous_query_mm": [
+          39178.1659475,
+          -44547.0201652,
+          30990.0
+        ],
+        "guess1_given": 1,
+        "guess2_given": 0,
+        "guess2_before_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "status": "NX_RUECKGABE_ERFASST",
+        "raw_nx_result": [
+          10003.64105954792,
+          [
+            29377.3560922,
+            -42561.0377436,
+            30720.0
+          ],
+          [
+            39179.77314681964,
+            -44539.088647555945,
+            30989.757218502215
+          ]
+        ],
+        "guess1_after_mm": [
+          29377.3560922,
+          -42561.0377436,
+          30720.0
+        ],
+        "guess2_after_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distance_mm": 10003.64105954792,
+        "returned_input_mm": [
+          29377.3560922,
+          -42561.0377436,
+          30720.0
+        ],
+        "returned_target_mm": [
+          39179.77314681964,
+          -44539.088647555945,
+          30989.757218502215
+        ],
+        "target_minus_query_mm": [
+          9802.417054619644,
+          -1978.0509039559474,
+          269.7572185022145
+        ],
+        "input_point_error_mm": 0.0,
+        "distance_from_endpoints_mm": 10003.641059547921,
+        "numeric_result_consistent": true,
+        "within_unchanged_0_25mm": false,
+        "target_distance_to_previous_query_mm": 8.09635749252314,
+        "seconds": 0.00885420001577586
+      },
+      "original_validation_failure": {
+        "error": "BASIS-Quellpunktabweichung DGM Sheet 1: 10003.641060 mm > 0.250 mm",
+        "operation": "BASIS DGM Sheet 1/1 Quellpunkt 1089",
+        "surface_check": {
+          "id": "DGM",
+          "report_file": "W:\\Plan Haus\\neu\\NX_GESAMT_MAIN01_A01_G01a\\ausgabe\\G01a_GELAENDE_20261011_124750_38a008d7\\IMPORTPRUEFUNG_DGM_R11a_BASIS.json",
+          "status": "BASISPRUEFUNG_ABGEBROCHEN",
+          "source_sheets": 1,
+          "source_faces": 1,
+          "nx_sheets": 1,
+          "nx_faces": 1,
+          "error": "BASIS-Quellpunktabweichung DGM Sheet 1: 10003.641060 mm > 0.250 mm",
+          "operation": "BASIS DGM Sheet 1/1 Quellpunkt 1089",
+          "validation_level": "BASIS",
+          "last_sheet": {
+            "source_index": 0,
+            "body_index": 0,
+            "nx_faces": 1,
+            "available_samples": 16748,
+            "selected_sample_indices": [
+              0,
+              10,
+              20,
+              31,
+              41,
+              42,
+              51,
+              62,
+              72,
+              82,
+              1079,
+              1089,
+              1099,
+              1110,
+              1120,
+              1130,
+              1141,
+              1151,
+              1161,
+              2075,
+              2085,
+              2095,
+              2106,
+              2116,
+              2126,
+              2137,
+              2147,
+              2157,
+              3154,
+              3164,
+              3174,
+              3185,
+              3195,
+              3205,
+              3216,
+              3226,
+              3236,
+              4150,
+              4160,
+              4170,
+              4181,
+              4191,
+              4201,
+              4212,
+              4222,
+              4232,
+              5229,
+              5239,
+              5249,
+              5260,
+              5270,
+              5280,
+              5291,
+              5301,
+              5311,
+              6308,
+              6318,
+              6328,
+              6339,
+              6349,
+              6359,
+              6370,
+              6380,
+              6390,
+              7304,
+              7314,
+              7324,
+              7335,
+              7345,
+              7355,
+              7366,
+              7376,
+              7386,
+              8280,
+              8383,
+              8393,
+              8403,
+              8414,
+              8424,
+              8434,
+              8445,
+              8455,
+              8465,
+              8466,
+              8478,
+              8489,
+              8501,
+              8512,
+              8524,
+              8535,
+              8547,
+              9614,
+              9626,
+              9637,
+              9649,
+              9660,
+              9672,
+              9683,
+              9695,
+              10844,
+              10856,
+              10867,
+              10879,
+              10890,
+              10902,
+              10913,
+              10925,
+              11992,
+              12004,
+              12015,
+              12027,
+              12038,
+              12050,
+              12061,
+              12073,
+              13140,
+              13152,
+              13163,
+              13175,
+              13186,
+              13198,
+              13209,
+              13221,
+              14288,
+              14300,
+              14311,
+              14323,
+              14334,
+              14346,
+              14357,
+              14369,
+              15518,
+              15530,
+              15541,
+              15553,
+              15564,
+              15576,
+              15587,
+              15599,
+              16666,
+              16678,
+              16689,
+              16701,
+              16712,
+              16724,
+              16735,
+              16747
+            ],
+            "checked_samples": 12,
+            "area_check_performed": false,
+            "max_point_distance_mm": 10003.64105954792,
+            "failed_sample_index": 1089,
+            "failed_sample_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "failed_distance_mm": 10003.64105954792
+          }
+        }
+      },
+      "additional_diagnostic": {
+        "status": "DIAGNOSE_BEENDET_MIT_MESSFEHLERN",
+        "source_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+        "body_tag": 64266,
+        "face_tags": [
+          64430
+        ],
+        "actual_bbox_mm": [
+          -43770.30211456001,
+          -57288.123077180004,
+          29359.9499,
+          56654.86135798,
+          57985.21251943001,
+          32920.05010000001
+        ],
+        "geometry_release": false,
+        "trigger": "REGULAERE_PRUEFUNG_FEHLGESCHLAGEN",
+        "scope": "Begrenzter Methodenvergleich, kein Ersatz fuer das regulaere Ergebnis.",
+        "planned_calls": 31,
+        "completed_calls": 31,
+        "measurements": [
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 0,
+            "query_mm": [
+              36596.3887994,
+              -57288.0729772,
+              31150.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              36596.3887994,
+              -57288.0729772,
+              31150.0
+            ],
+            "returned_target_mm": [
+              36596.38879939,
+              -57288.072977179996,
+              31150.0
+            ],
+            "target_minus_query_mm": [
+              -1.000444171950221e-08,
+              2.0001607481390238e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 2.2364104184127795e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 83,
+            "distance_to_nearest_focus_source_mm": 1000.0499988022389,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0001993000041693449
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 10,
+            "query_mm": [
+              26795.578944,
+              -55302.0905555,
+              30880.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              26795.578944,
+              -55302.0905555,
+              30880.0
+            ],
+            "returned_target_mm": [
+              26795.57894403,
+              -55302.09055553,
+              30880.0
+            ],
+            "target_minus_query_mm": [
+              2.9998773243278265e-08,
+              -2.9998773243278265e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 4.242467197519924e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 85,
+            "distance_to_nearest_focus_source_mm": 8065.8291576422735,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0002077000099234283
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 20,
+            "query_mm": [
+              16994.7690887,
+              -53316.1081339,
+              31160.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              16994.7690887,
+              -53316.1081339,
+              31160.0
+            ],
+            "returned_target_mm": [
+              16994.76908867,
+              -53316.10813389,
+              31160.0
+            ],
+            "target_minus_query_mm": [
+              -2.9998773243278265e-08,
+              1.000444171950221e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 3.162301772792319e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 13008.858520274733,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.00028279999969527125
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 31,
+            "query_mm": [
+              6213.8782478,
+              -51131.5274701,
+              30070.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              6213.8782478,
+              -51131.5274701,
+              30070.0
+            ],
+            "returned_target_mm": [
+              6213.878247777,
+              -51131.52747009,
+              30070.0
+            ],
+            "target_minus_query_mm": [
+              -2.3000211513135582e-08,
+              1.000444171950221e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 2.5081837727086326e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 17040.30809581714,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.00021329999435693026
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 41,
+            "query_mm": [
+              -3586.9316076,
+              -49145.5450485,
+              29380.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              -3586.9316076,
+              -49145.5450485,
+              29380.0
+            ],
+            "returned_target_mm": [
+              -3586.931607584,
+              -49145.54504845,
+              29380.0
+            ],
+            "target_minus_query_mm": [
+              1.5999830793589354e-08,
+              4.999310476705432e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 5.2491000273124526e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 24732.36745643586,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.00027660001069307327
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 42,
+            "query_mm": [
+              -4567.0125931,
+              -48946.9468063,
+              29360.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              -4567.0125931,
+              -48946.9468063,
+              29360.0
+            ],
+            "returned_target_mm": [
+              -4567.01259312,
+              -48946.94680628,
+              29360.0
+            ],
+            "target_minus_query_mm": [
+              -1.9999788491986692e-08,
+              2.0001607481390238e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 2.8285258378947315e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 25587.934656787806,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0002445999998599291
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 51,
+            "query_mm": [
+              -13387.7414629,
+              -47159.5626268,
+              30160.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              -13387.7414629,
+              -47159.5626268,
+              30160.0
+            ],
+            "returned_target_mm": [
+              -13387.74146294,
+              -47159.5626268,
+              30160.0
+            ],
+            "target_minus_query_mm": [
+              -3.9999576983973384e-08,
+              0.0,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 3.9999576983973384e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 33619.494344792154,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0002041999832727015
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 62,
+            "query_mm": [
+              -24168.6323038,
+              -44974.981963,
+              30360.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              -24168.6323038,
+              -44974.981963,
+              30360.0
+            ],
+            "returned_target_mm": [
+              -24168.63230384,
+              -44974.981963,
+              30360.0
+            ],
+            "target_minus_query_mm": [
+              -3.9999576983973384e-08,
+              0.0,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 3.9999576983973384e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 43967.060397524096,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.00024639995535835624
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 72,
+            "query_mm": [
+              -33969.4421592,
+              -42988.9995414,
+              30900.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              -33969.4421592,
+              -42988.9995414,
+              30900.0
+            ],
+            "returned_target_mm": [
+              -33969.4421592,
+              -42988.99954136,
+              30900.0
+            ],
+            "target_minus_query_mm": [
+              0.0,
+              4.0003214962780476e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 4.0003214962780476e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 53600.824620515225,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0002935000229626894
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 82,
+            "query_mm": [
+              -43770.2520146,
+              -41003.0171197,
+              30930.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              -43770.2520146,
+              -41003.0171197,
+              30930.0
+            ],
+            "returned_target_mm": [
+              -43770.25201456,
+              -41003.01711971,
+              30930.0
+            ],
+            "target_minus_query_mm": [
+              4.0003214962780476e-08,
+              -9.997165761888027e-09,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 4.123348797554107e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 63348.73716183213,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0002487000310793519
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 1079,
+            "query_mm": [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            "returned_target_mm": [
+              39178.16594753,
+              -44547.02016521,
+              30990.0
+            ],
+            "target_minus_query_mm": [
+              2.9998773243278265e-08,
+              -9.997165761888027e-09,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 3.162071661699485e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1079,
+            "distance_to_nearest_focus_source_mm": 3.162071661699485e-08,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0002169000217691064
+          },
+          {
+            "method": "BODY_G01_REPLAY",
+            "target_tag": 64266,
+            "source_index_zero_based": 1089,
+            "query_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 10003.64105954792,
+            "returned_input_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "returned_target_mm": [
+              39179.77314681964,
+              -44539.088647555945,
+              30989.757218502215
+            ],
+            "target_minus_query_mm": [
+              9802.417054619644,
+              -1978.0509039559474,
+              269.7572185022145
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 10003.641059547921,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 1079,
+            "distance_to_nearest_focus_source_mm": 8.09635749252314,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0029864999814890325
+          },
+          {
+            "method": "BODY_G01_FOCUS",
+            "target_tag": 64266,
+            "source_index_zero_based": 83,
+            "query_mm": [
+              36794.9870416,
+              -56307.9919916,
+              31140.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              36794.9870416,
+              -56307.9919916,
+              31140.0
+            ],
+            "returned_target_mm": [
+              36794.98704156,
+              -56307.99199164,
+              31140.0
+            ],
+            "target_minus_query_mm": [
+              -3.999593900516629e-08,
+              -4.0003214962780476e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 5.656794449388634e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 83,
+            "distance_to_nearest_focus_source_mm": 5.656794449388634e-08,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.00023579999106004834
+          },
+          {
+            "method": "BODY_G01_FOCUS",
+            "target_tag": 64266,
+            "source_index_zero_based": 84,
+            "query_mm": [
+              35814.906056,
+              -56109.3937495,
+              31130.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 1000.0499937204836,
+            "returned_input_mm": [
+              35814.906056,
+              -56109.3937495,
+              31130.0
+            ],
+            "returned_target_mm": [
+              35616.20981629763,
+              -57089.45487732078,
+              31139.999000107506
+            ],
+            "target_minus_query_mm": [
+              -198.69623970236717,
+              -980.0611278207798,
+              9.999000107505708
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 1000.0499937204886,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 84,
+            "distance_to_nearest_focus_source_mm": 1000.0499937204886,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0029802999924868345
+          },
+          {
+            "method": "BODY_G01_FOCUS",
+            "target_tag": 64266,
+            "source_index_zero_based": 85,
+            "query_mm": [
+              34834.8250705,
+              -55910.7955073,
+              31120.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 1000.0499937676346,
+            "returned_input_mm": [
+              34834.8250705,
+              -55910.7955073,
+              31120.0
+            ],
+            "returned_target_mm": [
+              34636.12883080989,
+              -56890.85663517137,
+              31129.999000108037
+            ],
+            "target_minus_query_mm": [
+              -198.69623969011445,
+              -980.0611278713695,
+              9.999000108036853
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 1000.0499937676381,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 85,
+            "distance_to_nearest_focus_source_mm": 1000.0499937676381,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.002902100037317723
+          },
+          {
+            "method": "BODY_G01_FOCUS",
+            "target_tag": 64266,
+            "source_index_zero_based": 1099,
+            "query_mm": [
+              19576.5462368,
+              -40575.0553219,
+              30680.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 13008.82675477689,
+            "returned_input_mm": [
+              19576.5462368,
+              -40575.0553219,
+              30680.0
+            ],
+            "returned_target_mm": [
+              16966.6440074193,
+              -53310.40902149065,
+              31158.278198536696
+            ],
+            "target_minus_query_mm": [
+              -2609.9022293806993,
+              -12735.353699590647,
+              478.27819853669644
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 13008.82675477689,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 13008.82675477689,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0031952999997884035
+          },
+          {
+            "method": "FACE_OHNE_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 83,
+            "query_mm": [
+              36794.9870416,
+              -56307.9919916,
+              31140.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              36794.9870416,
+              -56307.9919916,
+              31140.0
+            ],
+            "returned_target_mm": [
+              36794.98704156,
+              -56307.99199164,
+              31140.0
+            ],
+            "target_minus_query_mm": [
+              -3.999593900516629e-08,
+              -4.0003214962780476e-08,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 5.656794449388634e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 83,
+            "distance_to_nearest_focus_source_mm": 5.656794449388634e-08,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.000660700025036931
+          },
+          {
+            "method": "FACE_OHNE_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 84,
+            "query_mm": [
+              35814.906056,
+              -56109.3937495,
+              31130.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 1000.0499937204836,
+            "returned_input_mm": [
+              35814.906056,
+              -56109.3937495,
+              31130.0
+            ],
+            "returned_target_mm": [
+              35616.20981629763,
+              -57089.45487732078,
+              31139.999000107506
+            ],
+            "target_minus_query_mm": [
+              -198.69623970236717,
+              -980.0611278207798,
+              9.999000107505708
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 1000.0499937204886,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 84,
+            "distance_to_nearest_focus_source_mm": 1000.0499937204886,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0035465999972075224
+          },
+          {
+            "method": "FACE_OHNE_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 85,
+            "query_mm": [
+              34834.8250705,
+              -55910.7955073,
+              31120.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 1000.0499937676346,
+            "returned_input_mm": [
+              34834.8250705,
+              -55910.7955073,
+              31120.0
+            ],
+            "returned_target_mm": [
+              34636.12883080989,
+              -56890.85663517137,
+              31129.999000108037
+            ],
+            "target_minus_query_mm": [
+              -198.69623969011445,
+              -980.0611278713695,
+              9.999000108036853
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 1000.0499937676381,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 85,
+            "distance_to_nearest_focus_source_mm": 1000.0499937676381,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0034072999842464924
+          },
+          {
+            "method": "FACE_OHNE_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 1079,
+            "query_mm": [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 0.0,
+            "returned_input_mm": [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            "returned_target_mm": [
+              39178.16594753,
+              -44547.02016521,
+              30990.0
+            ],
+            "target_minus_query_mm": [
+              2.9998773243278265e-08,
+              -9.997165761888027e-09,
+              0.0
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 3.162071661699485e-08,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": true,
+            "nearest_focus_source_index": 1079,
+            "distance_to_nearest_focus_source_mm": 3.162071661699485e-08,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0008562000002712011
+          },
+          {
+            "method": "FACE_OHNE_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 1089,
+            "query_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 10003.64105954792,
+            "returned_input_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "returned_target_mm": [
+              39179.77314681964,
+              -44539.088647555945,
+              30989.757218502215
+            ],
+            "target_minus_query_mm": [
+              9802.417054619644,
+              -1978.0509039559474,
+              269.7572185022145
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 10003.641059547921,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 1079,
+            "distance_to_nearest_focus_source_mm": 8.09635749252314,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.0070525999763049185
+          },
+          {
+            "method": "FACE_OHNE_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 1099,
+            "query_mm": [
+              19576.5462368,
+              -40575.0553219,
+              30680.0
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 13008.82675477689,
+            "returned_input_mm": [
+              19576.5462368,
+              -40575.0553219,
+              30680.0
+            ],
+            "returned_target_mm": [
+              16966.6440074193,
+              -53310.40902149065,
+              31158.278198536696
+            ],
+            "target_minus_query_mm": [
+              -2609.9022293806993,
+              -12735.353699590647,
+              478.27819853669644
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 13008.82675477689,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 1099,
+            "distance_to_nearest_focus_source_mm": 13008.82675477689,
+            "target_inside_actual_body_box": true,
+            "seconds": 0.003353299980517477
+          },
+          {
+            "method": "FACE_MIT_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 83,
+            "query_mm": [
+              36794.9870416,
+              -56307.9919916,
+              31140.0
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              36794.9870416,
+              -56307.9919916,
+              31140.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.7991714000236243
+          },
+          {
+            "method": "FACE_MIT_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 84,
+            "query_mm": [
+              35814.906056,
+              -56109.3937495,
+              31130.0
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              35814.906056,
+              -56109.3937495,
+              31130.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.033129499992355704
+          },
+          {
+            "method": "FACE_MIT_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 85,
+            "query_mm": [
+              34834.8250705,
+              -55910.7955073,
+              31120.0
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              34834.8250705,
+              -55910.7955073,
+              31120.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.04820660001132637
+          },
+          {
+            "method": "FACE_MIT_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 1079,
+            "query_mm": [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              39178.1659475,
+              -44547.0201652,
+              30990.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.0441438999841921
+          },
+          {
+            "method": "FACE_MIT_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 1089,
+            "query_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.03864749998319894
+          },
+          {
+            "method": "FACE_MIT_STARTPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": 1099,
+            "query_mm": [
+              19576.5462368,
+              -40575.0553219,
+              30680.0
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              19576.5462368,
+              -40575.0553219,
+              30680.0
+            ],
+            "off_surface_control": false,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.03284970001550391
+          },
+          {
+            "method": "BODY_KONTROLLPUNKT_OBERHALB",
+            "target_tag": 64266,
+            "source_index_zero_based": null,
+            "query_mm": [
+              29377.3560922,
+              -42561.0377436,
+              33920.000000099964
+            ],
+            "guess2_given": 0,
+            "guess2_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "off_surface_control": true,
+            "status": "MESSUNG_ERFASST",
+            "distance_mm": 10420.037453740866,
+            "returned_input_mm": [
+              29377.3560922,
+              -42561.0377436,
+              33920.000000099964
+            ],
+            "returned_target_mm": [
+              39160.72485920399,
+              -44633.09181845574,
+              30992.634628806696
+            ],
+            "target_minus_query_mm": [
+              9783.36876700399,
+              -2072.0540748557396,
+              -2927.3653712932683
+            ],
+            "input_point_error_mm": 0.0,
+            "distance_from_endpoints_mm": 10420.037453740866,
+            "numeric_result_consistent": true,
+            "within_unchanged_0_25mm": false,
+            "nearest_focus_source_index": 1079,
+            "distance_to_nearest_focus_source_mm": 87.86047077083968,
+            "target_inside_actual_body_box": true,
+            "distance_lower_bound_from_actual_box_mm": 999.9499000999567,
+            "off_surface_control_consistent": true,
+            "seconds": 0.0032922999816946685
+          },
+          {
+            "method": "FACE_KONTROLLE_START_BEI_QUERY",
+            "target_tag": 64430,
+            "source_index_zero_based": null,
+            "query_mm": [
+              29377.3560922,
+              -42561.0377436,
+              33920.000000099964
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              29377.3560922,
+              -42561.0377436,
+              33920.000000099964
+            ],
+            "off_surface_control": true,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.0325660000089556
+          },
+          {
+            "method": "FACE_KONTROLLE_START_BEI_QUELLPUNKT",
+            "target_tag": 64430,
+            "source_index_zero_based": null,
+            "query_mm": [
+              29377.3560922,
+              -42561.0377436,
+              33920.000000099964
+            ],
+            "guess2_given": 1,
+            "guess2_mm": [
+              29377.3560922,
+              -42561.0377436,
+              30720.0
+            ],
+            "off_surface_control": true,
+            "status": "MESSUNG_FEHLGESCHLAGEN",
+            "error": "Failed to find closest approach",
+            "exception_type": "NXException",
+            "nx_error_code": 821014,
+            "seconds": 0.03206759999739006
+          }
+        ],
+        "current_operation": "NUR_DIAGNOSE_KEINE_GEOMETRIEFREIGABE",
+        "comparisons": [
+          {
+            "source_index_zero_based": 83,
+            "valid_numeric_measurements": 2,
+            "method_distance_spread_mm": 0.0,
+            "methods": [
+              {
+                "method": "BODY_G01_FOCUS",
+                "target_tag": 64266,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 0.0,
+                "returned_target_mm": [
+                  36794.98704156,
+                  -56307.99199164,
+                  31140.0
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 83,
+                "distance_to_nearest_focus_source_mm": 5.656794449388634e-08
+              },
+              {
+                "method": "FACE_OHNE_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 0.0,
+                "returned_target_mm": [
+                  36794.98704156,
+                  -56307.99199164,
+                  31140.0
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 83,
+                "distance_to_nearest_focus_source_mm": 5.656794449388634e-08
+              },
+              {
+                "method": "FACE_MIT_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_FEHLGESCHLAGEN",
+                "distance_mm": null,
+                "returned_target_mm": null,
+                "numeric_result_consistent": null,
+                "nearest_focus_source_index": null,
+                "distance_to_nearest_focus_source_mm": null
+              }
+            ]
+          },
+          {
+            "source_index_zero_based": 84,
+            "valid_numeric_measurements": 2,
+            "method_distance_spread_mm": 0.0,
+            "methods": [
+              {
+                "method": "BODY_G01_FOCUS",
+                "target_tag": 64266,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 1000.0499937204836,
+                "returned_target_mm": [
+                  35616.20981629763,
+                  -57089.45487732078,
+                  31139.999000107506
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 84,
+                "distance_to_nearest_focus_source_mm": 1000.0499937204886
+              },
+              {
+                "method": "FACE_OHNE_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 1000.0499937204836,
+                "returned_target_mm": [
+                  35616.20981629763,
+                  -57089.45487732078,
+                  31139.999000107506
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 84,
+                "distance_to_nearest_focus_source_mm": 1000.0499937204886
+              },
+              {
+                "method": "FACE_MIT_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_FEHLGESCHLAGEN",
+                "distance_mm": null,
+                "returned_target_mm": null,
+                "numeric_result_consistent": null,
+                "nearest_focus_source_index": null,
+                "distance_to_nearest_focus_source_mm": null
+              }
+            ]
+          },
+          {
+            "source_index_zero_based": 85,
+            "valid_numeric_measurements": 2,
+            "method_distance_spread_mm": 0.0,
+            "methods": [
+              {
+                "method": "BODY_G01_FOCUS",
+                "target_tag": 64266,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 1000.0499937676346,
+                "returned_target_mm": [
+                  34636.12883080989,
+                  -56890.85663517137,
+                  31129.999000108037
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 85,
+                "distance_to_nearest_focus_source_mm": 1000.0499937676381
+              },
+              {
+                "method": "FACE_OHNE_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 1000.0499937676346,
+                "returned_target_mm": [
+                  34636.12883080989,
+                  -56890.85663517137,
+                  31129.999000108037
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 85,
+                "distance_to_nearest_focus_source_mm": 1000.0499937676381
+              },
+              {
+                "method": "FACE_MIT_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_FEHLGESCHLAGEN",
+                "distance_mm": null,
+                "returned_target_mm": null,
+                "numeric_result_consistent": null,
+                "nearest_focus_source_index": null,
+                "distance_to_nearest_focus_source_mm": null
+              }
+            ]
+          },
+          {
+            "source_index_zero_based": 1079,
+            "valid_numeric_measurements": 2,
+            "method_distance_spread_mm": 0.0,
+            "methods": [
+              {
+                "method": "BODY_G01_REPLAY",
+                "target_tag": 64266,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 0.0,
+                "returned_target_mm": [
+                  39178.16594753,
+                  -44547.02016521,
+                  30990.0
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 1079,
+                "distance_to_nearest_focus_source_mm": 3.162071661699485e-08
+              },
+              {
+                "method": "FACE_OHNE_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 0.0,
+                "returned_target_mm": [
+                  39178.16594753,
+                  -44547.02016521,
+                  30990.0
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 1079,
+                "distance_to_nearest_focus_source_mm": 3.162071661699485e-08
+              },
+              {
+                "method": "FACE_MIT_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_FEHLGESCHLAGEN",
+                "distance_mm": null,
+                "returned_target_mm": null,
+                "numeric_result_consistent": null,
+                "nearest_focus_source_index": null,
+                "distance_to_nearest_focus_source_mm": null
+              }
+            ]
+          },
+          {
+            "source_index_zero_based": 1089,
+            "valid_numeric_measurements": 2,
+            "method_distance_spread_mm": 0.0,
+            "methods": [
+              {
+                "method": "BODY_G01_REPLAY",
+                "target_tag": 64266,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 10003.64105954792,
+                "returned_target_mm": [
+                  39179.77314681964,
+                  -44539.088647555945,
+                  30989.757218502215
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 1079,
+                "distance_to_nearest_focus_source_mm": 8.09635749252314
+              },
+              {
+                "method": "FACE_OHNE_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 10003.64105954792,
+                "returned_target_mm": [
+                  39179.77314681964,
+                  -44539.088647555945,
+                  30989.757218502215
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 1079,
+                "distance_to_nearest_focus_source_mm": 8.09635749252314
+              },
+              {
+                "method": "FACE_MIT_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_FEHLGESCHLAGEN",
+                "distance_mm": null,
+                "returned_target_mm": null,
+                "numeric_result_consistent": null,
+                "nearest_focus_source_index": null,
+                "distance_to_nearest_focus_source_mm": null
+              }
+            ]
+          },
+          {
+            "source_index_zero_based": 1099,
+            "valid_numeric_measurements": 2,
+            "method_distance_spread_mm": 0.0,
+            "methods": [
+              {
+                "method": "BODY_G01_FOCUS",
+                "target_tag": 64266,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 13008.82675477689,
+                "returned_target_mm": [
+                  16966.6440074193,
+                  -53310.40902149065,
+                  31158.278198536696
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 1099,
+                "distance_to_nearest_focus_source_mm": 13008.82675477689
+              },
+              {
+                "method": "FACE_OHNE_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_ERFASST",
+                "distance_mm": 13008.82675477689,
+                "returned_target_mm": [
+                  16966.6440074193,
+                  -53310.40902149065,
+                  31158.278198536696
+                ],
+                "numeric_result_consistent": true,
+                "nearest_focus_source_index": 1099,
+                "distance_to_nearest_focus_source_mm": 13008.82675477689
+              },
+              {
+                "method": "FACE_MIT_STARTPUNKT",
+                "target_tag": 64430,
+                "status": "MESSUNG_FEHLGESCHLAGEN",
+                "distance_mm": null,
+                "returned_target_mm": null,
+                "numeric_result_consistent": null,
+                "nearest_focus_source_index": null,
+                "distance_to_nearest_focus_source_mm": null
+              }
+            ]
+          }
+        ],
+        "production_code_changed": false,
+        "hint": "Mehrere Methoden werden dokumentiert, nicht nachtraeglich nach dem passendsten Wert ausgewaehlt. Kein automatischer Fix und keine Gesamtformfreigabe.",
+        "measurement_error_count": 8
+      },
+      "error": "BASIS-Quellpunktabweichung DGM Sheet 1: 10003.641060 mm > 0.250 mm",
+      "exception_type": "RuntimeError"
+    }
+  }
+}

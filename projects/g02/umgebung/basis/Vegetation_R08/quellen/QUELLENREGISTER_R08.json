@@ -1,0 +1,56 @@
+[
+  {
+    "file": "Mehrfachdownload_UfZKh8_S7OWr5.zip",
+    "bytes": 78243675,
+    "sha256": "631024784fc3f4e22626e5b863b0dcce164d0bdd1b30dbcdd3ccd86f772a11e5",
+    "original_in_this_package": false
+  },
+  {
+    "file": "Mehrfachdownload_1Wgwca_N4MVgo.zip",
+    "bytes": 84568713,
+    "sha256": "da91d539eb8dceb879c42e7171629ef9e513dc03b39b144c7775b7b04fa47cac",
+    "original_in_this_package": false
+  },
+  {
+    "file": "Mehrfachdownload_PCwv1B_3IiLfX.zip",
+    "bytes": 3967453,
+    "sha256": "a8890f5d3fea5c29db6f55500abc7d36363ced5450ed9a80245ad02b90c95fe4",
+    "original_in_this_package": false
+  },
+  {
+    "file": "bdom20nc_32_568_6003_1_sh_2023.pp",
+    "bytes": 4796,
+    "sha256": "85741ae89985af6a4724d86ef6146ff3e94e60c2bd6523f359dd983418fa8c55",
+    "original_in_this_package": true
+  },
+  {
+    "file": "dop20rgbi_32_568_6003_1_sh_2025.tif",
+    "bytes": 104861200,
+    "sha256": "19590c2fb5aea4ce808eb463767ff3dd0561035990a95942c80ee24486cb4460",
+    "original_in_this_package": false
+  },
+  {
+    "file": "dop20rgbi_32_568_6003_1_sh_2025.pp",
+    "bytes": 5320,
+    "sha256": "f9fc754bcb97b93bc3689c4bf7b9fa35dc5c8286275900f6dbd4dfd772dcbb3c",
+    "original_in_this_package": true
+  },
+  {
+    "file": "bdom20nc_32_568_6003_1_sh_2023.tfw",
+    "bytes": 62,
+    "sha256": "d3b634099dffc4da7c772fb1d6a744e4e64f40e83f99e6d17031a14046947ee2",
+    "original_in_this_package": true
+  },
+  {
+    "file": "dop20rgbi_32_568_6003_1_sh_2025.tfw",
+    "bytes": 62,
+    "sha256": "d3b634099dffc4da7c772fb1d6a744e4e64f40e83f99e6d17031a14046947ee2",
+    "original_in_this_package": true
+  },
+  {
+    "file": "bdom20nc_32_568_6003_1_sh_2023.tif",
+    "bytes": 104861184,
+    "sha256": "047550312367dd65d7d7ed4db616e63fde81862aefebdf62a7680339263302c0",
+    "original_in_this_package": false
+  }
+]

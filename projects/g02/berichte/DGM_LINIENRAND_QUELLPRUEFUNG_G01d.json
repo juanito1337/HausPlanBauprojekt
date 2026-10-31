@@ -1,0 +1,33 @@
+{
+  "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+  "status": "REAL_CAD_ROUNDTRIP_AND_EQUIVALENCE_CHECKS_PASSED",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "native_prt_created": false,
+  "original_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "new_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+  "source_original_preserved": true,
+  "old_edges": 4,
+  "new_LINE_edges": 366,
+  "faces": 1,
+  "boundary_loops": 1,
+  "same_degrees_knots_multiplicities_and_weights": true,
+  "poles_compared": 8466,
+  "maximum_pole_difference_mm": 0.0,
+  "surface_is_not_reconstructed_by_fit": true,
+  "independent_edge_position_comparisons": 2562,
+  "maximum_edge_comparison_mm": 5.9043118025503294e-08,
+  "production_reference_points": 16748,
+  "production_edge_probes": 1834,
+  "maximum_production_surface_error_mm": 7.072150630258171e-08,
+  "maximum_production_boundary_error_mm": 5.8932376425665914e-08,
+  "NX_report_comparison": {
+    "queried_point_distance_to_original_exact_boundary_mm": 4.520783456513491e-08,
+    "NX_returned_target_distance_to_original_exact_boundary_mm": 0.2634566001220376,
+    "NX_reported_distance_mm": 0.26372681449087754,
+    "does_not_determine_whether_NX_curve_or_distance_solver_caused_difference": true
+  },
+  "negative_test_true_2mm_deformation_rejected_at_index": 1089,
+  "tolerance_mm": 0.25,
+  "scope": "Source representations and comparison code tested in Open CASCADE. No test of the new source in NX. No terrain-to-house height datum confirmation."
+}

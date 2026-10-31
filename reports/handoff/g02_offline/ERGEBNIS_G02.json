@@ -1,0 +1,50 @@
+{
+  "patch": "MAIN01-A01-G02-INTEGRIERTER-HOEHENBEZUG",
+  "started_at": "2026-10-31T10:53:09.687601",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "as_built_verified": false,
+  "site_alignment_surveyed": false,
+  "package_check": {
+    "count": 542,
+    "settings_changes": [],
+    "NX_test": false
+  },
+  "checks": [
+    {
+      "name": "bisherige_630_pruefungen",
+      "returncode": 0,
+      "unittest_count": 630,
+      "log": "bisherige_630_pruefungen.txt"
+    },
+    {
+      "name": "g02_hoehen_und_speicherzustand",
+      "returncode": 0,
+      "unittest_count": 50,
+      "log": "g02_hoehen_und_speicherzustand.txt"
+    },
+    {
+      "name": "g02_vollstaendiger_workflow_simulation",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "g02_vollstaendiger_workflow_simulation.txt"
+    }
+  ],
+  "python_310_syntax_files": 147,
+  "legacy_suite_vertical_notes_describe_old_source_workflow": true,
+  "baseline_all_checks_passed": true,
+  "package_check_at_end": {
+    "count": 542,
+    "settings_changes": [],
+    "NX_test": false
+  },
+  "test_count": 680,
+  "all_requested_checks_passed": true,
+  "finished_at": "2026-10-31T10:57:20.687020",
+  "limits": [
+    "Kein NX-/Parasolid-Lauf: Simulationen pruefen nicht die reale NX-Schnittstelle oder Laufzeit.",
+    "Der Liefer-Hoehenanschluss ist eine unvermessenene Planannahme, keine bestaetigte NHN-Hoehe.",
+    "Quellkoerper bleiben unveraendert; nur die neue uebergeordnete Baugruppe traegt den Hoehenversatz.",
+    "Zehn bekannte Hausueberschneidungen, zwei teilweise blockierte Oeffnungen, Statik und Leitungstiefen bleiben offen."
+  ]
+}

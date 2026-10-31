@@ -1,0 +1,108 @@
+{
+  "review_mask_buffer_m": 2.0,
+  "house_buffer_m": 0.5,
+  "spectral_threshold": 0.18,
+  "min_height_difference_m": 0.6,
+  "min_component_nodes": 25,
+  "component_connectivity": 8,
+  "low_min_height_difference_m": -0.3,
+  "low_max_height_difference_m": 0.6,
+  "priority": "V01 bis V08 in dieser Reihenfolge, keine doppelte Zuordnung; F01 separat",
+  "manual_exclusions_digitised_from": "DOP2025 visuell; keine Änderung der Hausgeometrie",
+  "exclusion_polygons_offsets": [
+    [
+      [
+        604.9,
+        365.1
+      ],
+      [
+        621.5,
+        368.6
+      ],
+      [
+        621.5,
+        373.6
+      ],
+      [
+        629.9,
+        375.0
+      ],
+      [
+        634,
+        359.7
+      ],
+      [
+        636.2,
+        355.0
+      ],
+      [
+        638,
+        342.6
+      ],
+      [
+        615.8,
+        340.9
+      ],
+      [
+        609.8,
+        344
+      ],
+      [
+        608.1,
+        354.2
+      ]
+    ],
+    [
+      [
+        640.7,
+        377.5
+      ],
+      [
+        652.7,
+        377.5
+      ],
+      [
+        654.3,
+        365.4
+      ],
+      [
+        642,
+        365.2
+      ]
+    ]
+  ],
+  "low_cover_roi_offsets": [
+    [
+      599.6,
+      364.8
+    ],
+    [
+      605.1,
+      365.0
+    ],
+    [
+      609.8,
+      345.0
+    ],
+    [
+      610.2,
+      340.1
+    ],
+    [
+      597.5,
+      339.9
+    ],
+    [
+      596,
+      350.3
+    ],
+    [
+      599.3,
+      352.3
+    ]
+  ],
+  "offset_origin_utm_m": [
+    568000,
+    6003000
+  ]
+}

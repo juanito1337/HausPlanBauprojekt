@@ -1,0 +1,684 @@
+{
+  "schema": "R09A_UTILITY_DEPTH_REVIEW_V1",
+  "review_date": "2026-10-07",
+  "status": "REGELHINWEISE_GEFUNDEN_ISTTIEFEN_WEITERHIN_OFFEN",
+  "documents": [
+    {
+      "document": "G11",
+      "archive_file": "Planos/Tiefbau/Plan_Gas.pdf",
+      "file": "quellen/Leitungspruefung/G11_Plan_Gas.pdf",
+      "sha256": "c9b6b74ee61e4bcc7c2ea2695208f810fb4c39306efeb638a633d495a3eb5791",
+      "pages": 1,
+      "document_date": "2021-10-27",
+      "review": "Lageplan; 0,8 / 1,4 / 2,1 / 36,5 / 1,9 sind grafische Lagemaße. Keine eindeutig bezeichnete Verlegetiefe gefunden.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G12",
+      "archive_file": "Planos/Tiefbau/Strom/1. Anschreiben.pdf",
+      "file": "quellen/Leitungspruefung/G12_1. Anschreiben.pdf",
+      "sha256": "32abe2e915522c917966a61656aad558934d165e96c5a87bbb7d827cb29c6b1d",
+      "pages": 1,
+      "document_date": "2021-11-10",
+      "review": "Lieferumfang: Strom und Breitband angekreuzt; kein Tiefenaufmaß.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G13",
+      "archive_file": "Planos/Tiefbau/Strom/2. Übersicht.pdf",
+      "file": "quellen/Leitungspruefung/G13_2. Übersicht.pdf",
+      "sha256": "6cc97343235f914daf58eafcb4a11e1fd32744036199852cb4dfc21605eb3a6e",
+      "pages": 1,
+      "document_date": "2021-11-10",
+      "review": "Blattübersicht 01/02 und Auskunftsbereich, keine Höhenangaben.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G14",
+      "archive_file": "Planos/Tiefbau/Strom/3. Legende.pdf",
+      "file": "quellen/Leitungspruefung/G14_3. Legende.pdf",
+      "sha256": "cd84641749d75f1ab6cdc7370d15ed5a89018bb4d42280068524fb89c37eb2a4",
+      "pages": 1,
+      "document_date": null,
+      "review": "Sparten-/Symbollegende. Keine Zuordnung kleiner Maßzahlen als Tiefenkennzeichen.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G15",
+      "archive_file": "Planos/Tiefbau/Strom/4. Merkblatt zum Schutz unterirdischer Versorgungsleitungen.pdf",
+      "file": "quellen/Leitungspruefung/G15_4. Merkblatt zum Schutz unterirdischer Versorgungsleitungen.pdf",
+      "sha256": "7d896964da8c35f4217603cb9a7e9a4b4873c1af0edf8ff8340e27776bad10fb",
+      "pages": 5,
+      "document_date": "2018-01-12",
+      "review": "Seite 3 Abschnitt 8: allgemeine SWN-Überdeckungsbereiche; Strom/Gas verweisen auf SH-Netz-Merkblatt. Seite 4: Leitungsabstände, nicht Verlegetiefen.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G16",
+      "archive_file": "Planos/Tiefbau/Strom/5. Nutzungsbedingungen.pdf",
+      "file": "quellen/Leitungspruefung/G16_5. Nutzungsbedingungen.pdf",
+      "sha256": "541f83536c355d653fb92e3e6dee45934d0189275c008c8609e85f25099d4183",
+      "pages": 2,
+      "document_date": "2017-12-01",
+      "review": "Datenstand/Auskunftsgültigkeit und Nutzerpflichten. Kein objektbezogenes Tiefenprofil.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G17",
+      "archive_file": "Planos/Tiefbau/Strom/Leitungsauskunft_Breitband.pdf",
+      "file": "quellen/Leitungspruefung/G17_Leitungsauskunft_Breitband.pdf",
+      "sha256": "31b30fb894eec0a00ea1f0ca7c8ebc44e51f8aa6cfa8a0bc0087b56dc1b1dfaf",
+      "pages": 1,
+      "document_date": "2021-11-10",
+      "review": "0,6 m liegt an seitlicher Maßlinie im Straßenraum; 2,4/7,8 ebenfalls Lagemaße. Kein Hausanschluss Nr.4 im Blatt; keine Tiefen gefunden.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G18",
+      "archive_file": "Planos/Tiefbau/Strom/Leitungsauskunft_Strom.pdf",
+      "file": "quellen/Leitungspruefung/G18_Leitungsauskunft_Strom.pdf",
+      "sha256": "c04391faede680db143eff2c18ddd9f796860bf7e371ddba428a7a43c467c534",
+      "pages": 2,
+      "document_date": "2021-11-10",
+      "review": "Zwei Planblätter. 4,1 m lokalisiert den Hausanschluss entlang der Fassade; 28,9 m ist ein Grundrissmaß. Kein Tiefenprofil und keine eindeutig beschriftete Überdeckung gefunden.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    },
+    {
+      "document": "G19",
+      "archive_file": "Planos/Tiefbau/Telefon.pdf",
+      "file": "quellen/Leitungspruefung/G19_Telefon.pdf",
+      "sha256": "21679ed41327bec23bdf3eec34fc5ef7c1a5bde6702db4593ba47035d4a39b92",
+      "pages": 1,
+      "document_date": "2021-11-10",
+      "review": "Ein Planblatt: A4.33, 0,8/2,1 und 29,1/28,2 an Lage-/Streckenbemaßungen. Keine zuordenbare Tiefenangabe gefunden; keine Telekom-Tiefenlegende mitgeliefert.",
+      "review_mode": "ORIGINAL_PDF_RENDER_UND_VORHANDENER_TEXT_KEINE_OCR_MASSABLEITUNG"
+    }
+  ],
+  "document_count": 9,
+  "page_count": 15,
+  "rules": [
+    {
+      "id": "SWN_WASSER",
+      "network_label": "Wasser-Versorgungsanlagen",
+      "cover_min_m": 1.2,
+      "cover_max_m": 1.6,
+      "construction_method": null,
+      "rule_type": "ALLGEMEINER_UEBERDECKUNGSBEREICH",
+      "applied_to_routes": false,
+      "source": {
+        "document": "G15",
+        "page": 3,
+        "location": "Abschnitt 8 Verlegetiefen"
+      },
+      "provider_scope": "Versorgungsanlagen der SWN laut Merkblatt; keine automatische Übertragung auf VBB-Gas oder Telekom",
+      "as_built_verified": false,
+      "is_safe_depth_envelope": false
+    },
+    {
+      "id": "SWN_FERNWAERME",
+      "network_label": "Fernwärme-Versorgungsanlagen",
+      "cover_min_m": 0.3,
+      "cover_max_m": 1.5,
+      "construction_method": null,
+      "rule_type": "ALLGEMEINER_UEBERDECKUNGSBEREICH",
+      "applied_to_routes": false,
+      "source": {
+        "document": "G15",
+        "page": 3,
+        "location": "Abschnitt 8 Verlegetiefen"
+      },
+      "provider_scope": "Versorgungsanlagen der SWN laut Merkblatt; keine automatische Übertragung auf VBB-Gas oder Telekom",
+      "as_built_verified": false,
+      "is_safe_depth_envelope": false
+    },
+    {
+      "id": "SWN_TK_OFFEN",
+      "network_label": "Telekommunikation (offene Bauweise)",
+      "cover_min_m": 0.3,
+      "cover_max_m": 1.5,
+      "construction_method": "OFFENE_BAUWEISE",
+      "rule_type": "ALLGEMEINER_UEBERDECKUNGSBEREICH",
+      "applied_to_routes": false,
+      "source": {
+        "document": "G15",
+        "page": 3,
+        "location": "Abschnitt 8 Verlegetiefen"
+      },
+      "provider_scope": "Versorgungsanlagen der SWN laut Merkblatt; keine automatische Übertragung auf VBB-Gas oder Telekom",
+      "as_built_verified": false,
+      "is_safe_depth_envelope": false
+    },
+    {
+      "id": "SWN_TK_BOHRUNG",
+      "network_label": "Telekommunikation (Bohrungen)",
+      "cover_min_m": null,
+      "cover_max_m": 5.0,
+      "construction_method": "BOHRUNG",
+      "rule_type": "ALLGEMEINER_HINWEIS_BIS_ZU",
+      "applied_to_routes": false,
+      "source": {
+        "document": "G15",
+        "page": 3,
+        "location": "Abschnitt 8 Verlegetiefen"
+      },
+      "provider_scope": "Versorgungsanlagen der SWN laut Merkblatt; keine automatische Übertragung auf VBB-Gas oder Telekom",
+      "as_built_verified": false,
+      "is_safe_depth_envelope": false
+    },
+    {
+      "id": "STROM_GAS_VERWEIS",
+      "network_label": "Strom-/Gas-Versorgungsanlagen",
+      "cover_min_m": null,
+      "cover_max_m": null,
+      "construction_method": null,
+      "rule_type": "VERWEIS_AUF_NICHT_MITGELIEFERTES_SH_NETZ_MERKBLATT",
+      "applied_to_routes": false,
+      "source": {
+        "document": "G15",
+        "page": 3,
+        "location": "Abschnitt 8 Verlegetiefen"
+      },
+      "provider_scope": "Versorgungsanlagen der SWN laut Merkblatt; keine automatische Übertragung auf VBB-Gas oder Telekom",
+      "as_built_verified": false,
+      "is_safe_depth_envelope": false
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "STROM_TRASSE_42",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 42; NAKLEY 3x120"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "STROM_TRASSE_43",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 43; Verbindungssegment; Typzuordnung offen"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "STROM_TRASSE_45",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 45; NAYY 4x150"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "STROM_TRASSE_49",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 49; Verbindungssegment; Typzuordnung offen"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "STROM_HAUSANSCHLUSS",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 50; NAYY 4x35"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "STROM_STRASSE_GEGENUEBER_44",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 44; Kabelbeschriftung abschnittsbezogen: NAYY/NAKLEY; siehe Original"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "STROM_STRASSE_GEGENUEBER_46",
+      "network": "STROM",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 46; Kabelbeschriftung abschnittsbezogen: NAYY/NAKLEY; siehe Original"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "BREITBAND_TRASSE_57",
+      "network": "BREITBAND",
+      "sources": [
+        {
+          "document": "G17",
+          "page": 1,
+          "location": "Vektorpfad 57; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [
+        "SWN_TK_OFFEN",
+        "SWN_TK_BOHRUNG"
+      ],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "BREITBAND_TRASSE_58",
+      "network": "BREITBAND",
+      "sources": [
+        {
+          "document": "G17",
+          "page": 1,
+          "location": "Vektorpfad 58; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [
+        "SWN_TK_OFFEN",
+        "SWN_TK_BOHRUNG"
+      ],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "BREITBAND_TRASSE_59",
+      "network": "BREITBAND",
+      "sources": [
+        {
+          "document": "G17",
+          "page": 1,
+          "location": "Vektorpfad 59; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [
+        "SWN_TK_OFFEN",
+        "SWN_TK_BOHRUNG"
+      ],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "BREITBAND_TRASSE_60",
+      "network": "BREITBAND",
+      "sources": [
+        {
+          "document": "G17",
+          "page": 1,
+          "location": "Vektorpfad 60; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [
+        "SWN_TK_OFFEN",
+        "SWN_TK_BOHRUNG"
+      ],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "BREITBAND_TRASSE_61",
+      "network": "BREITBAND",
+      "sources": [
+        {
+          "document": "G17",
+          "page": 1,
+          "location": "Vektorpfad 61; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [
+        "SWN_TK_OFFEN",
+        "SWN_TK_BOHRUNG"
+      ],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_9",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 9; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_17",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 17; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_18",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 18; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_35",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 35; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_37",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 37; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_38",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 38; A4.33"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_39",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 39; A4.33"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_40",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 40; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_41",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 41; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_42",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 42; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "TELEFON_TRASSE_43",
+      "network": "TELEFON",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 43; Telekom-Trassenausschnitt"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-11-10",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "GAS_HAUSANSCHLUSS",
+      "network": "GAS",
+      "sources": [
+        {
+          "document": "G11",
+          "page": 1,
+          "location": "Grafisch digitalisierte Linie; DN 40 - ST PE"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-10-27",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    },
+    {
+      "route_id": "GAS_TRANSPORT_STRASSE",
+      "network": "GAS_TRANSPORT",
+      "sources": [
+        {
+          "document": "G11",
+          "page": 1,
+          "location": "Grafisch digitalisierte Linie; Gas Transportltg. nach Legende"
+        }
+      ],
+      "depth_m": null,
+      "height_mm": null,
+      "installation_method": null,
+      "evidence_status": "KEIN_STRECKENBEZOGENER_TIEFENNACHWEIS_GEFUNDEN",
+      "source_date": "2021-10-27",
+      "general_information_ids": [],
+      "general_rules_assigned_as_physical_depth": false,
+      "actual_vertical_geometry_changed": false
+    }
+  ],
+  "confirmed_route_depth_count": 0,
+  "new_water_or_heat_connections": false,
+  "drawing_dimensions_are_not_depths": true,
+  "new_rule_information_changes_geometry": false,
+  "outside_web_depths_used": false,
+  "interpretation_note": "Die Regelwerte sind keine sichere obere/untere Grenze, keine gemessene Tiefe und keine Leitungsachse. Ein Bohrverfahren ist im Grundstücksplan nicht nachgewiesen."
+}

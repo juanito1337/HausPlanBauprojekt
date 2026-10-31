@@ -1,0 +1,25 @@
+{
+  "baseline": "NX_GESAMT_MAIN01_A01_G01e",
+  "new_package": "NX_GESAMT_G02_HOEHENBEZUG",
+  "comparison": {
+    "haus": {
+      "files_compared": 135,
+      "changed": [],
+      "all_files_byte_identical": true
+    },
+    "umgebung": {
+      "files_compared": 265,
+      "changed": [],
+      "all_files_byte_identical": true
+    },
+    "gesamt": {
+      "files_compared": 10,
+      "changed": [],
+      "all_files_byte_identical": true
+    }
+  },
+  "source_geometry_changed": false,
+  "assembly_transform_added": true,
+  "scope": "Vorhandene Haus-/Umgebungs-/Gelaendepruefer unveraendert. Neue Orchestrierung und reine Z-Montage im Ordner g02.",
+  "height_assumption_not_surveyed": true
+}

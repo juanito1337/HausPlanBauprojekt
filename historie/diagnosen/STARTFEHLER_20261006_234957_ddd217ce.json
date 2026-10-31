@@ -1,0 +1,13 @@
+{
+  "status": "ABGEBROCHEN",
+  "revision": "R03",
+  "patch": "R03b-EINHEITENFIX",
+  "entry": "RUN_HAUS_2406.py",
+  "error": "Functionality attempted not possible in the current version of the OM",
+  "traceback": "Traceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\RUN_HAUS_2406.py\", line 91, in main\n    return run_house(base)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\src\\haus2406_r03\\haus_run.py\", line 160, in run_house\n    test=smoke_test(base,_nx=nx,_settings=settings,_parent=out,_silent=True,\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\src\\haus2406_r03\\haus_run.py\", line 269, in smoke_test\n    params=Parameters(items);nx.add_parameters(part,params)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\src\\haus2406_r03\\haus_nx.py\", line 116, in add_parameters\n    for name in params.items:add(name)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\src\\haus2406_r03\\haus_nx.py\", line 114, in add\n    self.attributes(expression,{'id':name,'status':item['status'],'sources':item.get('sources',[])})\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\src\\haus2406_r03\\haus_nx.py\", line 135, in attributes\n    obj.SetUserAttribute(key,-1,str(value),self.N.Update.Option.Now)\nNXOpen.NXException: Functionality attempted not possible in the current version of the OM\n",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "project_base": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03b",
+  "script": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03b\\RUN_HAUS_2406.py",
+  "time": "2026-10-06T23:49:57.600861",
+  "note": "Keine Erfolgsmeldung. Bereits erzeugte Teilmodelle sind nicht freigegeben."
+}

@@ -1,0 +1,8 @@
+{
+  "R06_haus_sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+  "R08_arrays_sha256": "44904663057664c930472a17951f213baafb230a8dc210175e4244adfec08a85",
+  "R07_terrain_unchanged_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "face_count": 585,
+  "new_geometry_inferences": false,
+  "NX_tested": false
+}

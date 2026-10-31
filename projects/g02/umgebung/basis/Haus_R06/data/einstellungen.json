@@ -1,0 +1,10 @@
+{
+  "allow_estimates": false,
+  "show_review_consent": true,
+  "show_reference_curves": false,
+  "continue_on_feature_error": false,
+  "output_root": "",
+  "note": "JA: Quellen-Pruefmodell mit offen markierten Annahmen und fachlichen Sperrpunkten. Kein bestaetigtes Bestandsmodell.",
+  "revision": "R06",
+  "automatic_smoke_test": true
+}

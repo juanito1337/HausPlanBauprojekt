@@ -1,0 +1,45 @@
+test_01_schema (__main__.VideoChecks.test_01_schema) ... ok
+test_02_original_unchanged (__main__.VideoChecks.test_02_original_unchanged) ... ok
+test_03_disabled_exact_baseline (__main__.VideoChecks.test_03_disabled_exact_baseline) ... ok
+test_04_no_double_application (__main__.VideoChecks.test_04_no_double_application) ... ok
+test_05_16_components (__main__.VideoChecks.test_05_16_components) ... ok
+test_06_five_dormer_groups (__main__.VideoChecks.test_06_five_dormer_groups) ... ok
+test_07_eight_panes (__main__.VideoChecks.test_07_eight_panes) ... ok
+test_08_old_three_removed (__main__.VideoChecks.test_08_old_three_removed) ... ok
+test_09_three_existing_widths_retained (__main__.VideoChecks.test_09_three_existing_widths_retained) ... ok
+test_10_existing_heights_retained (__main__.VideoChecks.test_10_existing_heights_retained) ... ok
+test_11_dimensions_are_not_surveyed (__main__.VideoChecks.test_11_dimensions_are_not_surveyed) ... ok
+test_12_six_roof_windows (__main__.VideoChecks.test_12_six_roof_windows) ... ok
+test_13_thirty_roof_window_bodies (__main__.VideoChecks.test_13_thirty_roof_window_bodies) ... ok
+test_14_six_clear_roof_holes (__main__.VideoChecks.test_14_six_clear_roof_holes) ... ok
+test_15_pv_not_individual_modules (__main__.VideoChecks.test_15_pv_not_individual_modules) ... ok
+test_16_pv_does_not_cover_windows (__main__.VideoChecks.test_16_pv_does_not_cover_windows) ... ok
+test_17_profiles (__main__.VideoChecks.test_17_profiles) ... ok
+test_18_no_invalid_solids (__main__.VideoChecks.test_18_no_invalid_solids) ... ok
+test_19_no_new_collisions (__main__.VideoChecks.test_19_no_new_collisions) ... ok
+test_20_two_existing_blocked_openings (__main__.VideoChecks.test_20_two_existing_blocked_openings) ... ok
+test_21_logical_source_integrity (__main__.VideoChecks.test_21_logical_source_integrity) ... ok
+test_22_reference_mode_has_no_proxy_bodies (__main__.VideoChecks.test_22_reference_mode_has_no_proxy_bodies) ... ok
+test_23_unique_ids (__main__.VideoChecks.test_23_unique_ids) ... ok
+test_24_no_site_change (__main__.VideoChecks.test_24_no_site_change) ... ok
+test_25_no_roof_pitch_or_span_change (__main__.VideoChecks.test_25_no_roof_pitch_or_span_change) ... ok
+test_26_no_structural_members_invented (__main__.VideoChecks.test_26_no_structural_members_invented) ... ok
+test_27_no_height_datum_change (__main__.VideoChecks.test_27_no_height_datum_change) ... ok
+test_28_other_parts_equal (__main__.VideoChecks.test_28_other_parts_equal) ... ok
+test_29_quantity_exclusion (__main__.VideoChecks.test_29_quantity_exclusion) ... ok
+test_30_attributes (__main__.VideoChecks.test_30_attributes) ... ok
+test_31_no_fake_metric_approval (__main__.VideoChecks.test_31_no_fake_metric_approval) ... ok
+test_32_no_fake_structural_approval (__main__.VideoChecks.test_32_no_fake_structural_approval) ... ok
+test_33_no_fake_audio_evaluation (__main__.VideoChecks.test_33_no_fake_audio_evaluation) ... ok
+test_34_no_unknown_source_pages (__main__.VideoChecks.test_34_no_unknown_source_pages) ... ok
+test_35_degenerate_profile_rejected (__main__.VideoChecks.test_35_degenerate_profile_rejected) ... ok
+test_36_roof_plane_break_rejected (__main__.VideoChecks.test_36_roof_plane_break_rejected) ... ok
+test_37_disabled_input_not_mutated (__main__.VideoChecks.test_37_disabled_input_not_mutated) ... ok
+test_38_validated_house (__main__.VideoChecks.test_38_validated_house) ... ok
+test_39_observation_register (__main__.VideoChecks.test_39_observation_register) ... ok
+test_40_frame_glass_counts (__main__.VideoChecks.test_40_frame_glass_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 1.112s
+
+OK

@@ -1,0 +1,38 @@
+# Unmodified R03c methods, preserved for regression tests. NOT runtime code.
+import json
+from haus2406_r03.haus_metadata import attribute_diagnostic, AttributeWriteError
+
+def _set_user_attribute(self,obj,key,value,context):
+    text=str(value)
+    previous=self.operation
+    self.operation='SetUserAttribute: '+str(context)+' | '+str(key)
+    try:
+        obj.SetUserAttribute(key,-1,text,self.N.Update.Option.Now)
+    except Exception as exception:
+        diagnostic=attribute_diagnostic(obj,key,text,exception,self.operation)
+        self.attribute_failures.append(diagnostic)
+        error=AttributeWriteError('NX-Attribut konnte nicht geschrieben werden: '+str(key)+
+                                  ' an '+diagnostic['object_type']+' '+str(diagnostic['object_name'])+
+                                  '\n'+diagnostic['error'],diagnostic)
+        # Preserve the originating API error even if a diagnostic log fails.
+        try:self.log('ATTRIBUTFEHLER '+json.dumps(diagnostic,ensure_ascii=False))
+        except Exception as log_error:
+            diagnostic['diagnostic_log_error']=str(log_error)
+        raise error from exception
+    else:
+        self.operation=previous
+
+def attributes(self,obj,meta):
+    # Never call SetUserAttribute on NX expressions. No catch-and-ignore.
+    if isinstance(obj,self.N.Expression):
+        raise TypeError('Ausdrucksmetadaten auf dem zugehoerigen Part speichern; kein Expression.SetUserAttribute.')
+    sources='; '.join('%s S.%s %s'%(s.get('document','?'),s.get('page','?'),s.get('location','')) for s in meta.get('sources',[]))
+    values={'HAUS_ID':meta.get('id',''), 'QUELLSTATUS':meta.get('status',''),
+            'BAUZUSTAND':meta.get('phase','UNGEKLAERT'), 'QUELLE':sources,
+            'MODELLART':'NX_GEOMETRIE_KEIN_NATIVES_BIM', 'GENAUIGKEIT':'PRUEFMODELL_NICHT_AUSFUEHRUNGSREIF', 'REVISION':'R03',
+            'ELTERN_ID':meta.get('parent_id',''), 'WIRTSWAND':meta.get('host_wall',''),
+            'KATEGORIE':meta.get('category',meta.get('kind','')), 'MATERIAL':meta.get('material',''),
+            'DETAILHERKUNFT':meta.get('detail_origin','PLANREKONSTRUKTION_MIT_NAEHERUNGEN')}
+    for key,value in values.items():
+        self._set_user_attribute(obj,key,value,meta.get('id','UNBENANNT'))
+

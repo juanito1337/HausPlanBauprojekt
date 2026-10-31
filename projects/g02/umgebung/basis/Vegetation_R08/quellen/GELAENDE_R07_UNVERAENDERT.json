@@ -1,0 +1,80 @@
+{
+  "schema": "HAUS_TERRAIN_R07_V1",
+  "product": "DGM1",
+  "source_file": "dgm1_32_568_6003_1_sh_2023.xyz",
+  "original_zip": "Mehrfachdownload_PCwv1B_3IiLfX.zip",
+  "source_xyz_sha256": "63fb0db33d981936c11aae25a853e1f0388fc04c46cda98ca4e2f7f60cb54f8c",
+  "original_zip_sha256": "a8890f5d3fea5c29db6f55500abc7d36363ced5450ed9a80245ad02b90c95fe4",
+  "source_year_in_filename": 2023,
+  "acquisition_date": null,
+  "source_crs": "ETRS89 / UTM zone 32N",
+  "source_crs_epsg": 25832,
+  "crs_basis": "Offizielle OpenGBD-Produktbeschreibung; XYZ ohne Header; Dateiname und Zahlenbereich konsistent. Keine neue Vermessung.",
+  "source_height_datum_in_file": null,
+  "expected_source_height_datum": "DHHN2016 / NHN; fuer konkrete Kachel noch zu bestaetigen",
+  "source_vertical_datum_verified": false,
+  "source_height_unit": "m",
+  "source_grid_spacing_m": 1.0,
+  "source_points_are_raster_samples_not_raw_lidar": true,
+  "local_xy_reference": {
+    "copied_from": "R06 data/haus.json site.coordinate_reference",
+    "origin_EN_m": [
+      568609.3789725378,
+      6003364.744735392
+    ],
+    "matrix_local_to_EN": [
+      [
+        0.1985982421641719,
+        -0.9800809855360428
+      ],
+      [
+        0.9800809855360428,
+        0.1985982421641719
+      ]
+    ],
+    "zone_prefix_removed": 32000000,
+    "max_house_to_cadastre_control_residual_mm": 270.27954893145215,
+    "XY_survey_verified": false
+  },
+  "cad_coordinates": {
+    "unit": "mm",
+    "XY": "R06 house local coordinates",
+    "Z": "1000*H_source_m; KEIN Hausbezug; KEIN Hoehenoffset abgezogen",
+    "source_height_offset_m": 0.0,
+    "H_EG_zero_in_same_source_datum_m": null,
+    "house_vertical_alignment_verified": false,
+    "automatic_insert_into_house": false,
+    "required_vertical_translation_formula_mm": "-1000 * H_EG_zero_in_same_source_datum_m",
+    "no_scaling_or_tilt_adjustment": true
+  },
+  "crop": {
+    "points": 8466,
+    "columns": 102,
+    "rows": 83,
+    "bounds_EN_support_m": [
+      568560.5,
+      6003317.5,
+      568661.5,
+      6003399.5
+    ],
+    "surface_span_m": [
+      101.0,
+      82.0
+    ],
+    "selection": "Parcel EN bounding box plus >=20m; original sample centers retained",
+    "resampling": false,
+    "surface_type": "open B-spline face degree 1x1, bilinear per grid cell",
+    "interpolation": "Bilinear between the original heights; no smoothing, no extrapolation",
+    "soil_volume": false,
+    "building_footprints_cut_out": false
+  },
+  "boundary_and_routes": "Copied without moving/changing prior XY; draped heights only additional terrain samples, no utility height or legal monument height",
+  "use_for_excavation": false,
+  "as_built_verified": false,
+  "notes": [
+    "DGM through mapped building footprint is not a cellar/foundation model.",
+    "2023 from file name is not a verified acquisition date.",
+    "No quality flags, metadata, licensing text or vertical CRS record accompany uploaded XYZ; external publisher attribution documented separately.",
+    "Terrain STEP is not the full house and is not a native NX .prt."
+  ]
+}

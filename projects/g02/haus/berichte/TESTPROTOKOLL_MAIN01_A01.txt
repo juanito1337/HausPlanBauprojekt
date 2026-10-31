@@ -1,0 +1,109 @@
+MAIN01-A01 Dachpruefung – echte Offline-/Simulationslaeufe; kein NX-Test.
+
+$ /opt/pyvenv/bin/python /mnt/data/NX_HAUS_MAIN01_A01/tests/test_main01.py
+test_code_tamper_rejected (__main__.ControlTests.test_code_tamper_rejected) ... ok
+test_duplicate_json_rejected (__main__.ControlTests.test_duplicate_json_rejected) ... ok
+test_editable_input_recorded (__main__.ControlTests.test_editable_input_recorded) ... ok
+test_fake_complete_house_and_baseline (__main__.ControlTests.test_fake_complete_house_and_baseline) ... ok
+test_fake_feature_failure_no_baseline (__main__.ControlTests.test_fake_feature_failure_no_baseline) ... ok
+test_fake_save_failure_no_baseline (__main__.ControlTests.test_fake_save_failure_no_baseline) ... ok
+test_monitor_event_and_file (__main__.ControlTests.test_monitor_event_and_file) ... ok
+test_monitor_stop_prevents_next_step (__main__.ControlTests.test_monitor_stop_prevents_next_step) ... ok
+test_no_actual_nx_dependency_for_compilation (__main__.ControlTests.test_no_actual_nx_dependency_for_compilation) ... ok
+test_original_error_preserved (__main__.ControlTests.test_original_error_preserved) ... ok
+test_registry_missing_file (__main__.ControlTests.test_registry_missing_file) ... ok
+test_strict_settings (__main__.ControlTests.test_strict_settings) ... ok
+test_all_unique_solid_ids (__main__.ModelTests.test_all_unique_solid_ids) ... ok
+test_bad_board_count_rejected (__main__.ModelTests.test_bad_board_count_rejected) ... ok
+test_bad_downpipe_rejected (__main__.ModelTests.test_bad_downpipe_rejected) ... ok
+test_bad_post_z_rejected (__main__.ModelTests.test_bad_post_z_rejected) ... ok
+test_balcony_dimension_status (__main__.ModelTests.test_balcony_dimension_status) ... ok
+test_balcony_door_not_blocked (__main__.ModelTests.test_balcony_door_not_blocked) ... ok
+test_balcony_reference_area_not_living_area (__main__.ModelTests.test_balcony_reference_area_not_living_area) ... ok
+test_basis_orthogonal (__main__.ModelTests.test_basis_orthogonal) ... ok
+test_centred_round_posts_touch_beam (__main__.ModelTests.test_centred_round_posts_touch_beam) ... ok
+test_component_count (__main__.ModelTests.test_component_count) ... ok
+test_door_beyond_wall_rejected (__main__.ModelTests.test_door_beyond_wall_rejected) ... ok
+test_door_floor_reference (__main__.ModelTests.test_door_floor_reference) ... ok
+test_door_on_real_outer_wall (__main__.ModelTests.test_door_on_real_outer_wall) ... ok
+test_mismatched_anchor_rejected (__main__.ModelTests.test_mismatched_anchor_rejected) ... ok
+test_negative_projection_rejected (__main__.ModelTests.test_negative_projection_rejected) ... ok
+test_new_parts_quantity_excluded (__main__.ModelTests.test_new_parts_quantity_excluded) ... ok
+test_niche_height_edit_used_in_roof (__main__.ModelTests.test_niche_height_edit_used_in_roof) ... ok
+test_nine_roof_windows_preserved (__main__.ModelTests.test_nine_roof_windows_preserved) ... ok
+test_no_document_link_errors (__main__.ModelTests.test_no_document_link_errors) ... ok
+test_no_hidden_foundations (__main__.ModelTests.test_no_hidden_foundations) ... ok
+test_no_input_mutation (__main__.ModelTests.test_no_input_mutation) ... ok
+test_no_invalid_volume (__main__.ModelTests.test_no_invalid_volume) ... ok
+test_no_measured_approval (__main__.ModelTests.test_no_measured_approval) ... ok
+test_no_step_import_call_in_house_source (__main__.ModelTests.test_no_step_import_call_in_house_source) ... ok
+test_no_structural_approval (__main__.ModelTests.test_no_structural_approval) ... ok
+test_no_terrain_or_lines (__main__.ModelTests.test_no_terrain_or_lines) ... ok
+test_old_collision_pairs_not_new (__main__.ModelTests.test_old_collision_pairs_not_new) ... ok
+test_old_wall_retained_ledger (__main__.ModelTests.test_old_wall_retained_ledger) ... ok
+test_one_balcony (__main__.ModelTests.test_one_balcony) ... ok
+test_only_one_starter (__main__.ModelTests.test_only_one_starter) ... ok
+test_optional_guard_can_be_omitted (__main__.ModelTests.test_optional_guard_can_be_omitted) ... ok
+test_positive_solid_count (__main__.ModelTests.test_positive_solid_count) ... ok
+test_projection_edit_changes_deck_area (__main__.ModelTests.test_projection_edit_changes_deck_area) ... ok
+test_python_310_syntax (__main__.ModelTests.test_python_310_syntax) ... ok
+test_reference_mode_no_detail_bodies (__main__.ModelTests.test_reference_mode_no_detail_bodies) ... ok
+test_removed_false_wall (__main__.ModelTests.test_removed_false_wall) ... ok
+test_repeat_deterministic (__main__.ModelTests.test_repeat_deterministic) ... ok
+test_short_niche_rejected (__main__.ModelTests.test_short_niche_rejected) ... ok
+test_sources_M01_fivepages (__main__.ModelTests.test_sources_M01_fivepages) ... ok
+test_thick_niche_not_silently_desynchronised (__main__.ModelTests.test_thick_niche_not_silently_desynchronised) ... ok
+test_three_sides_seven_display_rows (__main__.ModelTests.test_three_sides_seven_display_rows) ... ok
+test_two_blocked_interior_openings (__main__.ModelTests.test_two_blocked_interior_openings) ... ok
+test_two_downpipe_envelopes (__main__.ModelTests.test_two_downpipe_envelopes) ... ok
+test_units_preserved (__main__.ModelTests.test_units_preserved) ... ok
+test_unknown_asbuilt_flag_rejected (__main__.ModelTests.test_unknown_asbuilt_flag_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 7.753s
+
+OK
+
+$ /opt/pyvenv/bin/python /mnt/data/NX_HAUS_MAIN01_A01/tests/test_roof_attachment.py
+test_actual_main_faces_45 (__main__.RoofAttachmentTests.test_actual_main_faces_45) ... ok
+test_actual_rotated_wing_faces_28 (__main__.RoofAttachmentTests.test_actual_rotated_wing_faces_28) ... ok
+test_all_building_openings_unchanged (__main__.RoofAttachmentTests.test_all_building_openings_unchanged) ... ok
+test_all_rear_seams_closed (__main__.RoofAttachmentTests.test_all_rear_seams_closed) ... ok
+test_balcony_solar_flat_roof_unchanged (__main__.RoofAttachmentTests.test_balcony_solar_flat_roof_unchanged) ... ok
+test_data_schema_valid (__main__.RoofAttachmentTests.test_data_schema_valid) ... ok
+test_documented_main_pitch (__main__.RoofAttachmentTests.test_documented_main_pitch) ... ok
+test_documented_wing_pitch (__main__.RoofAttachmentTests.test_documented_wing_pitch) ... ok
+test_dormer_angles_preserved (__main__.RoofAttachmentTests.test_dormer_angles_preserved) ... ok
+test_east_old_step_reproduced (__main__.RoofAttachmentTests.test_east_old_step_reproduced) ... ok
+test_first_join_before_ridge (__main__.RoofAttachmentTests.test_first_join_before_ridge) ... ok
+test_front_locations_and_widths_preserved (__main__.RoofAttachmentTests.test_front_locations_and_widths_preserved) ... ok
+test_front_roof_heights_preserved (__main__.RoofAttachmentTests.test_front_roof_heights_preserved) ... ok
+test_garage_angle_not_laundered_into_planvalue (__main__.RoofAttachmentTests.test_garage_angle_not_laundered_into_planvalue) ... ok
+test_legacy_definitions_still_valid (__main__.RoofAttachmentTests.test_legacy_definitions_still_valid) ... ok
+test_main_and_wing_geometry_unchanged (__main__.RoofAttachmentTests.test_main_and_wing_geometry_unchanged) ... ok
+test_no_dormer_rear_wall_generated (__main__.RoofAttachmentTests.test_no_dormer_rear_wall_generated) ... ok
+test_no_false_asbuilt_status (__main__.RoofAttachmentTests.test_no_false_asbuilt_status) ... ok
+test_no_fixed_rear_elevation_controls (__main__.RoofAttachmentTests.test_no_fixed_rear_elevation_controls) ... ok
+test_no_input_changes (__main__.RoofAttachmentTests.test_no_input_changes) ... ok
+test_pitch_parameter_changes_join_not_front (__main__.RoofAttachmentTests.test_pitch_parameter_changes_join_not_front) ... ok
+test_seam_has_piecewise_domain_check (__main__.RoofAttachmentTests.test_seam_has_piecewise_domain_check) ... ok
+test_south_old_step_reproduced (__main__.RoofAttachmentTests.test_south_old_step_reproduced) ... ok
+test_steeper_than_host_rejected (__main__.RoofAttachmentTests.test_steeper_than_host_rejected) ... ok
+test_three_independent_estimated_dormer_parameters (__main__.RoofAttachmentTests.test_three_independent_estimated_dormer_parameters) ... ok
+test_too_short_join_search_rejected (__main__.RoofAttachmentTests.test_too_short_join_search_rejected) ... ok
+test_unknown_host_rejected (__main__.RoofAttachmentTests.test_unknown_host_rejected) ... ok
+test_unknown_policy_rejected (__main__.RoofAttachmentTests.test_unknown_policy_rejected) ... ok
+test_west_old_step_reproduced (__main__.RoofAttachmentTests.test_west_old_step_reproduced) ... ok
+test_wrong_axis_rejected (__main__.RoofAttachmentTests.test_wrong_axis_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.482s
+
+OK
+
+$ /opt/pyvenv/bin/python /mnt/data/NX_HAUS_MAIN01_A01/werkzeuge/PRUEFE_HAUS_OCCT_OFFLINE.py --report /mnt/data/NX_HAUS_MAIN01_A01/berichte/CAD_PRUEFUNG_MAIN01_A01.json
+CAD BESTANDEN: 1418 Koerper
+
+Ergebnis: 87 Tests (57 + 30) bestanden; 1418 CAD-Koerper aufgebaut.
+10 bisherige Kollisionen / 2 blockierte Oeffnungen bleiben offen.
+Keine NX-/Parasolid-Ausfuehrung und keine .prt-Dateien erzeugt.

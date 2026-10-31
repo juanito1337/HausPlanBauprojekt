@@ -1,0 +1,294 @@
+# -*- coding: utf-8 -*-
+"""Neue Schnittstelle: dokumentierter STEP214-Import in frisches WorkPart.
+Keine eigene NX-Laufzeit vorhanden. Importfunktionstest wird in NX vorgeschaltet.
+Commit() darf hier None liefern; Erfolg wird an den wirklichen Part-Koerpern geprueft.
+"""
+import os
+import shutil
+from pathlib import Path
+from haus2406_r03.haus_nx import NXAdapter
+from haus2406_r03.haus_runtime import path_key
+from .core import PATCH, absolute, check_box, compare_boxes, sha256, write_json, finite_number
+from .surface_check import reference_checked, area_checked, distance_result_checked, DISTANCE_TOLERANCE_MM
+
+
+class SceneAdapter(NXAdapter):
+    def settings_file(self, base, configured):
+        if configured.strip():
+            p = Path(configured).expanduser()
+            p = absolute(p if p.is_absolute() else base / p)
+            if not p.is_file():
+                raise FileNotFoundError('Angegebene STEP-Importkonfiguration fehlt: ' + str(p))
+            return p
+        candidates = []
+        for variable in ('STEP214UG_DIR', 'UGII_BASE_DIR'):
+            value = os.environ.get(variable, '')
+            # Die NX-Sitzung kann mehr Umgebungsvariablen kennen als os.environ.
+            try:
+                value = self.session.GetEnvironmentVariableValue(variable) or value
+            except Exception as ex:
+                self.log('Hinweis: NX-Umgebungsvariable %s nicht gelesen: %s' % (variable, ex))
+            if not value:
+                continue
+            if variable == 'STEP214UG_DIR':
+                candidates.append(Path(value) / 'step214ug.def')
+            else:
+                candidates.extend(Path(value) / folder / 'step214ug.def' for folder in ('step214ug', 'STEP214UG'))
+        for p in candidates:
+            if p.is_file():
+                return absolute(p)
+        raise FileNotFoundError('STEP-Importdatei step214ug.def nicht gefunden. '
+            'In data/EINSTELLUNGEN_R09.json step_settings_file auf die vorhandene NX-Import-DEF setzen. '
+            'Keine Lizenzdatei oder exportseitige ugstep214.def verwenden. Geprueft: ' + '; '.join(map(str,candidates)))
+
+    def preflight_importer(self):
+        if not callable(getattr(self.session.DexManager, 'CreateStep214Importer', None)):
+            raise RuntimeError('NX STEP214-Import-API fehlt.')
+        modeling = getattr(self.uf, 'Modeling', None)
+        for method in ('AskMassProps3d', 'AskMinimumDist'):
+            if not callable(getattr(modeling, method, None)):
+                raise RuntimeError('NX UF-Python-Messfunktion fehlt: Modeling.' + method)
+        if not hasattr(self.N.Step214Importer.ImportToOption, 'WorkPart'):
+            raise RuntimeError('STEP214 ImportToOption.WorkPart fehlt.')
+
+    def set_display(self, part):
+        self.ensure_work(part)
+        if self.session.Parts.Display is None or self.session.Parts.Display.Tag != part.Tag:
+            status = self.session.Parts.SetDisplay(part, False, False)
+            if not isinstance(status, tuple) or len(status) != 2:
+                raise RuntimeError('SetDisplay-Rueckgabe unerwartet.')
+            self.dispose(status[1])
+        self.ensure_work(part)
+        if self.session.Parts.Display.Tag != part.Tag:
+            raise RuntimeError('Anzeigeteil konnte nicht umgeschaltet werden.')
+
+    def prepare_view(self, part):
+        self.set_display(part)
+        try:
+            view = part.ModelingViews.WorkView
+            view.RenderingStyle = self.N.View.RenderingStyleType.ShadedWithEdges
+            view.Orient(self.N.View.Canned.Isometric, self.N.View.ScaleAdjustment.Fit)
+        except Exception as ex:
+            self.warnings.append('Darstellungsstil manuell pruefen: ' + str(ex))
+            self.log(self.warnings[-1])
+        self.fit(part)
+
+    def surface_box(self, body):
+        return check_box(list(map(float, self.uf.ModlGeneral.AskBoundingBox(body.Tag))))
+
+    def surface_area_mm2(self, body):
+        # UF thin-shell analysis (type=2); units=1 is pound/inch.
+        # Only surface area is read; no material or density is assigned to NX.
+        # Relative integration tolerance for surface area (accuracy=2, acc[0]).
+        result = self.uf.Modeling.AskMassProps3d(
+            [body.Tag], 1, 2, 1, 1.0, 2, [1e-7] + [0.0] * 10)
+        if not isinstance(result, (tuple, list)) or len(result) != 2:
+            raise RuntimeError('AskMassProps3d-Rueckgabe ungueltig; zwei Ergebnisfelder erwartet.')
+        props, statistics = result
+        if len(props) != 47 or len(statistics) != 13:
+            raise RuntimeError('AskMassProps3d-Rueckgabefelder unvollstaendig.')
+        area_in2 = finite_number(props[0], 'UF-Flaecheninhalt [in2]')
+        return area_in2 * 25.4 * 25.4
+
+    def surface_distance_mm(self, body, xyz):
+        # UF NULL_TAG is integer 0; no NXOpen.Tag namespace is assumed in Python.
+        result = self.uf.Modeling.AskMinimumDist(
+            0, body.Tag, 1, list(xyz), 0, [0.0, 0.0, 0.0])
+        return distance_result_checked(result, xyz)
+
+    def verify_surface_geometry(self, part, spec, out):
+        """Face-Unterteilung ist nur Information. Sheet-Anzahl bleibt strikt.
+        Boxbijektion + Flaecheninhalt je Sheet + alle Quellknoten/Zellmitten.
+        Ein gerichteter endlicher Punktabgleich ist KEIN voller Formbeweis.
+        """
+        self.ensure_work(part)
+        reference = reference_checked(spec)
+        report_file = Path(out) / ('IMPORTPRUEFUNG_' + spec['id'] + '_R09b.json')
+        report = {'patch': PATCH, 'id': spec['id'], 'status': 'PRUEFUNG_LAEUFT',
+                  'report_file': str(report_file), 'source_sha256': spec['sha256'],
+                  'source_sheets': spec['expected_sheets'], 'source_faces': spec['expected_faces'],
+                  'point_tolerance_mm': DISTANCE_TOLERANCE_MM, 'sheets_checked': [],
+                  'scope': 'Sheet-Bijektion, Boxen, Flaecheninhalte und endliche gerichtete '
+                           'Quellpunktabstaende; kein vollstaendiger Form-/Bestandsnachweis.'}
+        try:
+            bodies = list(part.Bodies)
+            if any(b.OwningPart.Tag != part.Tag for b in bodies):
+                raise RuntimeError('Importkoerper im falschen Part.')
+            if any(b.IsSolidBody for b in bodies):
+                raise RuntimeError('Volumenkoerper statt offener Flaechenkoerper.')
+            counts = [len(b.GetFaces()) for b in bodies]
+            report.update({'nx_sheets': len(bodies), 'nx_faces': sum(counts), 'faces_per_sheet_import_order': counts})
+            write_json(report_file, report)  # Preserve actual counts BEFORE further checks.
+            self.operation = 'STEP-Sheet-/Boxpruefung: ' + spec['id']
+            check = compare_boxes(spec['face_bounding_boxes_mm'], [self.surface_box(b) for b in bodies])
+            report['box_check'] = check
+            if any(n <= 0 for n in counts):
+                raise RuntimeError('Importierter Sheet ohne Faces.')
+            total_samples = 0; max_distance = 0.0
+            for source_i, body_i in check['mapping']:
+                body = bodies[body_i]; ref = reference['sheets'][source_i]
+                row = {'source_index': source_i, 'body_index': body_i, 'nx_faces': counts[body_i],
+                       'expected_samples': len(ref['samples_mm']), 'checked_samples': 0}
+                report['sheets_checked'].append(row)
+                self.operation = 'STEP-Flaecheninhalt: %s Quellsheet %d' % (spec['id'], source_i+1)
+                row.update(area_checked(ref['area_mm2'], self.surface_area_mm2(body)))
+                if not row['area_passed']:
+                    raise RuntimeError('NX-Flaecheninhalt abweichend: %s Quellsheet %d: '
+                        'Soll=%.6f mm2 Ist=%.6f mm2; Grenze=%.6f mm2.' %
+                        (spec['id'], source_i+1, ref['area_mm2'], row['actual_area_mm2'], row['area_limit_mm2']))
+                row['max_point_distance_mm'] = 0.0
+                for k, xyz in enumerate(ref['samples_mm']):
+                    self.operation = 'STEP-Punktvergleich: %s Quellsheet %d Punkt %d/%d' % (
+                        spec['id'], source_i+1, k+1, len(ref['samples_mm']))
+                    distance = self.surface_distance_mm(body, xyz)
+                    row['checked_samples'] += 1; total_samples += 1
+                    row['max_point_distance_mm'] = max(row['max_point_distance_mm'], distance)
+                    max_distance = max(max_distance, distance)
+                    if distance > DISTANCE_TOLERANCE_MM:
+                        row.update({'failed_sample_index': k, 'failed_sample_mm': xyz,
+                                    'failed_distance_mm': distance})
+                        raise RuntimeError('NX-Oberflaeche weicht vom Quellpunkt ab: %s Sheet %d '
+                            'Punkt %d: %.6f mm > %.3f mm.' %
+                            (spec['id'], source_i+1, k+1, distance, DISTANCE_TOLERANCE_MM))
+                    if len(ref['samples_mm']) > 1000 and (k+1) % 1000 == 0:
+                        self.log('%s: %d/%d Quellpunkte dieses Sheets geprueft.' % (spec['id'], k+1, len(ref['samples_mm'])))
+                if (source_i+1) % 25 == 0:
+                    self.log('%s: %d/%d Quell-Sheets geometrisch verglichen.' % (spec['id'], source_i+1, len(bodies)))
+                    write_json(report_file, report)
+            report.update({'status': 'IMPORTGEOMETRIE_STICHPROBEN_UND_FLAECHEN_BESTANDEN',
+                           'checked_samples': total_samples, 'max_point_distance_mm': max_distance,
+                           'face_count_changed': sum(counts) != spec['expected_faces']})
+            if total_samples != reference['sample_count']:
+                raise RuntimeError('Nicht alle vorgesehenen Quellpunkte geprueft.')
+            if report['face_count_changed']:
+                warning = ('STEP-Topologiehinweis %s: %d Quell-Faces / %d NX-Faces; '
+                    '%d Quell-Sheets zugeordnet, Box-/Inhalts-/Punktpruefung bestanden. '
+                    'Kein vollstaendiger Formgleichheitsnachweis.') % (
+                    spec['id'], spec['expected_faces'], sum(counts), len(bodies))
+                self.warnings.append(warning); self.log(warning)
+            write_json(report_file, report)
+            check.update({'faces': sum(counts), 'face_count_changed': report['face_count_changed'],
+                          'source_faces': spec['expected_faces'], 'geometry_report': str(report_file),
+                          'checked_source_points': total_samples, 'max_point_distance_mm': max_distance,
+                          'geometry_validation_status': report['status'],
+                          'faces_per_sheet_import_order': counts})
+            return check
+        except Exception as ex:
+            report.update({'status': 'IMPORTGEOMETRIE_ABGEBROCHEN', 'error': str(ex), 'operation': self.operation})
+            try:
+                write_json(report_file, report)
+            except Exception as log_error:
+                report['diagnostic_write_error'] = str(log_error)
+            ex.nx_surface_check = {k: report[k] for k in ('id','report_file','status','source_sheets',
+                'source_faces','nx_sheets','nx_faces','error','operation') if k in report}
+            if report['sheets_checked']:
+                ex.nx_surface_check['last_sheet'] = report['sheets_checked'][-1]
+            raise
+
+    def import_surface_part(self, out, source, spec, definition, name=None):
+        name = name or spec['part_file']
+        part = self.new_part(out / name, spec['id'])
+        self.set_display(part)
+        if len(list(part.Bodies)):
+            raise RuntimeError('STEP-Zielteil ist nicht leer.')
+        stage = out / '_step_quellen'
+        stage.mkdir(exist_ok=True)
+        staged = stage / (Path(name).stem + '.step')
+        if staged.exists():
+            raise FileExistsError('Importquelle im Lauf existiert bereits: '+str(staged))
+        shutil.copyfile(source, staged)
+        if sha256(staged) != spec['sha256']:
+            raise RuntimeError('Kopierte STEP-Datei stimmt nicht mit Quelle ueberein.')
+        self.operation = 'STEP214-Import: ' + spec['id']
+        builder = self.session.DexManager.CreateStep214Importer()
+        if builder is None:
+            raise RuntimeError('CreateStep214Importer lieferte keinen Builder.')
+        failed = False
+        try:
+            builder.SettingsFile = str(definition)
+            builder.InputFile = str(staged)
+            builder.OutputFile = str(part.FullPath)
+            builder.ImportTo = self.N.Step214Importer.ImportToOption.WorkPart
+            builder.ImportToTeamcenter = False
+            builder.FileOpenFlag = False
+            builder.ProcessHoldFlag = True
+            builder.FlattenAssembly = True
+            builder.LayerDefault = 1
+            builder.ObjectTypes.Curves = False
+            builder.ObjectTypes.Surfaces = True
+            builder.ObjectTypes.Solids = True
+            builder.SewSurfaces = False
+            builder.Optimize = False
+            builder.SimplifyGeometry = False
+            builder.SmoothBSurfaces = False
+            # Die API dokumentiert NULL als Commit-Rueckgabe. Nicht als Fehler werten!
+            builder.Commit()
+        except Exception:
+            failed = True
+            raise
+        finally:
+            try:
+                builder.Destroy()
+            except Exception as ex:
+                if not failed:
+                    raise
+                self.log('Zusaetzlicher Builder-Aufraeumfehler: ' + str(ex))
+        self.ensure_work(part)
+        self.update('STEP ' + spec['id'])
+        bodies = list(part.Bodies)
+        if any(b.OwningPart.Tag != part.Tag for b in bodies):
+            raise RuntimeError('STEP-Koerper im falschen Part.')
+        if any(b.IsSolidBody for b in bodies):
+            raise RuntimeError('Volumenkoerper statt dokumentierter offener Oberflaechen importiert.')
+        check = self.verify_surface_geometry(part, spec, out)
+        face_count = check['faces']
+        for source_index, body_index in check['mapping']:
+            body = bodies[body_index]
+            body.SetName(spec['id'] + '_QUELLFLAECHE_%04d' % (source_index+1))
+            body.Layer = 1
+            body.Unblank()
+        for title, value in {
+                'HAUS_REVISION': PATCH, 'HAUS_QUELLE': spec['source'],
+                'HAUS_GEOMETRIEART': spec['kind'], 'HAUS_EINHEIT': 'mm',
+                'HAUS_Z_BEZUG': 'QUELLHOEHE_MM_KEIN_EG_OFFSET',
+                'HAUS_BESTAND_BESTAETIGT': 'NEIN',
+                'HAUS_KONSTRUKTION': 'OFFENE_REFERENZFLAECHEN_KEIN_VOLUMEN',
+                'HAUS_INPUT_SHA256': spec['sha256']}.items():
+            self._set_user_attribute(part, title, value, spec['id'])
+        self.prepare_view(part)
+        saved = self.save(part)
+        check.update({'id':spec['id'], 'sheets':len(bodies), 'faces':face_count,
+                      'input_sha256':spec['sha256'], 'settings_file':str(definition)})
+        return part, saved, check
+
+    def add_at(self, master, path, name, translation=(0.0,0.0,0.0)):
+        self.ensure_work(master)
+        if not Path(path).is_file():
+            raise FileNotFoundError('Komponente fehlt: ' + str(path))
+        mat = self.N.Matrix3x3()
+        for k,v in zip(('Xx','Xy','Xz','Yx','Yy','Yz','Zx','Zy','Zz'),(1.,0.,0.,0.,1.,0.,0.,0.,1.)):
+            setattr(mat,k,v)
+        self.operation = 'AddComponent: ' + name
+        comp, status = master.ComponentAssembly.AddComponent(str(path),'Entire Part',name,
+            self.N.Point3d(*map(float,translation)),mat,-1)
+        if status is None:
+            raise RuntimeError('Komponenten-Ladestatus fehlt.')
+        try:
+            if comp is None or status.NumberUnloadedParts:
+                raise RuntimeError('Komponente nicht vollstaendig geladen: '+name)
+        finally:
+            self.dispose(status)
+        self.verify_component(comp,path,translation)
+        return comp
+
+    def verify_component(self, comp, path, translation):
+        if comp.Prototype is None or path_key(comp.Prototype.FullPath) != path_key(path):
+            raise RuntimeError('Komponenten-Prototyp falsch: '+str(path))
+        self.check_millimeters(comp.Prototype, comp.Name)
+        origin, rot = comp.GetPosition()
+        values=[getattr(rot,k) for k in ('Xx','Xy','Xz','Yx','Yy','Yz','Zx','Zy','Zz')]
+        if max(abs(float(a)-b) for a,b in zip(values,(1,0,0,0,1,0,0,0,1))) > 1e-8:
+            raise RuntimeError('Unerwartete Komponentenrotation: '+comp.Name)
+        if max(abs(float(a)-float(b)) for a,b in zip((origin.X,origin.Y,origin.Z),translation)) > 1e-5:
+            raise RuntimeError('Unerwartete Komponentenverschiebung: '+comp.Name)
+        return {'component':comp.Name,'file':str(path),'translation_mm':list(translation),'identity_rotation':True}

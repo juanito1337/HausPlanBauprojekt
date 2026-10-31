@@ -1,0 +1,2715 @@
+{
+  "schema": "K01_MISSING_ASSETS_V1",
+  "source": "RENOVIERUNGSPLAN_AUS_VORSCHAU.json",
+  "unique_asset_references": 541,
+  "available_CAD_files": 0,
+  "items": [
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA01/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "18908cda783d3945f0ad5f7969ca124e74b21874d3daa3a734aedc307ba20f62",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA01/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "f7d0b77c16dd37d5b0d7312c87ec7c9424b6542911b1fc14888b1a6052d1fe02",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA01/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "79b0771165059ead32256a2f9acdce68883463d67338abd766e34d5c5252e22d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA02/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "540cd5d7f8aa5c9fb51f03c075af4c3e44ef168c1ce35ccc6a459d6f0aa31dec",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA02/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "322e7fabf7b74512a74645a09af7cb8593a92cfeb4a7c18fc682d9887801dfc1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA02/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "228ee3460898cb5236a33a0d0867193a12856196680cfe27b40872d4f4397936",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA03/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "ec175113c620fe5923f098e2e9589cd3cc2afbd326385a7bab9be85022eac61a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA03/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "5e5cfa5f487ce6dbda0bdc1a1472eddd9e3b736e5df7524d5dfb0643ea342de9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA03/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "144756375f87acbd708331b552aa37677a1a429d2fcb99ed2c62309422890426",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA04/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "3fc5ea0cb5fa143be2afafa6177f5cf4cc776011949499517f8665c4e13519da",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA04/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "ab65b70e518b1478289b707d8314b6e9f9107b67a5ec513b05ae97c31c8d2b99",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA04/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "0e9c0c706272726c0ad58b92b543836a7ba6b8087f383953c7fd9abd75f1e6dc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "7ccc7b03f9013aab4ad3d8b664e4c626b4656e9809cc19fc6c77f68e4def79a9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "6f2cdd735da8a566be08166c9a566ba2a442abf19e41c0a25325c9f063deddc5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "1fab33d89e5afead7b3ce4c7db76876563e4923e780080386a3419a7dcf939a4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "2b224036da864027212271f061cbe4e1e3004a90f60666b862d9cf14417fabbb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "7f1d8728f15fc32c46b5817dc4f1aaa32177103738c4696ac8daa076444d880e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "6765976fb3bcbd65d3f8feca9e3eca86c1eeebf5d2803b25766b3a730d827b3d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "7885dbac44e52316cec57ed8249cd50e6edb8459fd69a5269a820d62394ee124",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "71c67511b32c593e487c3c7fff1f3b0c41b52bbdc0e61306dfc61d05b4f4af5a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "a2ac5ee853a0a28fe29e12a0dd07e068997c414251dc0edbb95e944e4b0817cc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA05/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "ade96dd5e8b9883ec5640b47d1897502b238b5d9612346d6e6b0a3b76ddfb498",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "f8cc39f5a4866af3a9a76f0b54e0e6050cd5b998cf088ac1f4f05092122de2c7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "aa76a84a8e412ccdde6dfe01f0c3d98422035e1a46bd894197b37a19fde1cdaa",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "95a2796e74b76383fe60442f92b0c2276c0545ff5197d85be27abbb38205b527",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "04fdff06bcdf019089c42a34138e06868e1547fc8127432dda3bd19c269566e6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "3b2938ae65e43176acaeb1fc36c4010d796ba82d8b3e5b055be316a6c9e99bd0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "3d81d46cdf9a93f3f682d0eebe88650755a5195de3ca3ce45783cd386da5eead",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "4575a5515712237a3c305a867d4869bc4426ad10c25227b4a9926a051081cf27",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "a45ba924409f02b926820c542262ab4d7a7b828c8c2cb187a2279d1dcfd1b220",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "da0cc3075cf40544736dd0eb20065e1ef7e6782db471a3992fc177051c1cafac",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "1b7bdf342b12faa43b39623b43a42962c0bbb6cd01abb11c49c2d0caf0c782a1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "055c175f7b1090bfe01839808d3e9f2f2d03dc0bf15338f08db7f64d22f01067",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA06/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "9c66128d77f0025a5a2b305c16ae9558b6b72c2a271bbff7b8bca6b21963300f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "d38d65ed215c04035961b66665a947396b110f62a143353772cbc346cfaeaa08",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "c5f37ba0c8455d83d0e9fe668f9a56f0972ba202e41528661f763517f7e8b167",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "79a1353413e7fc5d5dc2fd89a08d6661240df94783272a74be228ee4c383b6ed",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "feebdd2a03ed3b7bc782c61c7e08cf6281f948ba695e7a20251a9fdff455a405",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "9bf553ea5c3011516eec3d198e33664bf4cab5b212f3f033b50e34fd0f477960",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "23562e0d86799beef2a85c0618ed24f07b8367aca7a03fa8233ecfae0244fc1a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "ede27c4d74626e33af69fb65a2bde2bbef5e55b9c8fa81f396a3b7b433930f1e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "a4071a76c184ac7afcf3aecda135220bf9610cbcd5f5b5113c1d369ca549accd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "71a694b99bef97031c34c537feb7bbe1298e8a413a5dd2ea1f75bf3d315cfb46",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "95c5654519f0e2a6d46c4db342e60ae662a1f0649e99e13a4da70a8cf68c3a71",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "4246bb1c8bf08728be772151cf8da30b343c493be8d3e4bdd8745b41b14059d9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA07/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "b7f3f4f523128724f3aa03c7e4e46cd9532c3c347fbd5fe0f388ea012888910d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "7416b94e13138928ef4cd96f631c6ff22e7d38ec3233f3891053c3ae25aa322f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "51d76a4d08a1bb8ec5589690d08449975737b9f14888aff8120ade70702c0952",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "cbe1eec11dff18a95b5c4f6cc64346ee0fc9d021d4a0a7dc0bc15096e8b51495",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "a016f5990bbb9eca92f2a37afc16f6631ced053e258b8c4b7caa7826fb4590d2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "6b04025a5cb55e9ef16ab5e490d49a4312e8196ca835a3ae7b6946c9e68cc9aa",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "ba82a6f859dfcfeaf162fc1d54755edc0abfd144e63f02390d5e20d9fce0e869",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "2ddc02e45aed640877bbc196fedfe861faa95d4b8ce639a949751f4e780279dd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "0f84c170ef4b65301b5df8d5dacb204f769136b638f37227b264897084b5c44c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "df3becf35c9b1299431cf51d84506b1107b1d80708409d09a01394e563a20e67",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "682f4f81918b97db191a533a394dcd63f65136d97dc88157fe50a79696d95166",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "7184cc4734b1fa52b241b13538c3de260cd10918064444badabfd68fc81b1fb0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA08/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "b3f62f98014262981f2f720ccaf31105f14ac67b223139b2336764bd994e038d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "55b2145898387059b53200aae96a52d901520374657029cd3ea10d971ea6f7b3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "b93b55b3e0bae2e1e71acddc300833166879ee885ec83b9b9cba99760b5c92d7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "c4be31b2619d3cf1f8449debd7e29e4f3ae695fbf7de74469f295aeaaa50d3ee",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "26f9d06d9441276b55c347fe4f1c75250d6d3e3e7d33b4ca47fb770964437f30",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "5c4ff118df0bd2b4c7c377bf0390405ac679445f56097d437d3671bfe3d7ba57",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "ef15281b89adbdb0d632a501574eb3eef2c9436dcd8c54e3a63f2b50fcb166e0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "18b0e0e9ac69ad382cb070f7da28454b8d914d3b5644caf573550abdd1da6a0c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "7d85cf9004ce5c089366e3506f2e7696d5f5dcfaf38a5e09a945557008326aa8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "85d1750b61c1d6c02e65703fb8dfe20c700ff59cf0ca8577f82a46b90f50b686",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "061a3a54e0918cd6ce0bb4afbbdcec94da7aa697532680b9a869d49237fd915b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "e5e590b877ccd4817574c13095e7534a30a75bf5248d2656ec8d5317a2289749",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA09/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "16f8a18791151b91f82c7350a86c1963ac07a8a3418b87f9a60266f55241bc79",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "ee9a87b60c7f20d2ac76c1e89eaf813be48391f991612db77294cd636bac38f5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "92f3e491771721ccdfd2c994cbcf86497b849bea5932b90d18d7715338f32ff8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "495c7f11fb76e4f9813b495cf2d2ca68487c91adabcd379e3ad5483de8caa544",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "229cb6750b01011fc5a17319f5c84de2f69fda5da6292465cb916ecd6fa2ce21",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "550e95bb76d9e6e1dde509789f4412ad5705cd0138b330d105665278fd76f328",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "b64e2886c5480be3db6b06b69783990f5cbb6b60db76738a209eece863480da0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "2c8811e5360ac7e2b4923af610a66d4f9eff8a6e62243efd8a2fd357af5ecc73",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "990299cbf7b6797f56ed833097894b8edf3931c881e1597a01d68da095baf2bf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "80e553b1db563a57ccf2d9e0170437ff799c3d45ea6090f790d51f31c6cc852b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "3e966520dcfe554f71406527e6a5bc312d6aff2cfdbe5e046d580df42590274c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "d21bbdd72fcb0e5f340ea10718cb4f814876eef1302ce1e5f202ea6ad4af28bd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA10/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "bd5c5a7b39606167c09b3ded900cb71d129367b0f610d20563b807e34cebfd62",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "85ca7337b9af1f50447f80cc46a5ed99cbf7ddde273b87c826baaaf39be1f4bb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "45f947c4e48d49b54f8287f1229b110611f444a8dc1e1497f2fcf94ac649b08b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "7898b9cfd59c4b9e128b662747c177bf12124cb024dcd030c95bc42e0878fc48",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "95c6cd19eb225bb6ab908d3c1bdef3553fc2c91b2ba54a4c8ce0b7ac4409ff3c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "b8bb2bb45de673869e3bc724730aafdcb3584eaca766eb754209edc96cfb581c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "3e4a8fe0a3543f88381398de9708bf21a93f73904893b38db042318e54e9b40c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "86f3e402828b58df7a7d8bcad10e95e3c4b570db6fadd52b8f348cd75d6a5d23",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "3d4d04fa8e332ed2d29cec3ddf2ab737b859d006d376cf696b5bcb375bd634f1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "adf765e3dccda1c5204bf0f645e9fff4082af83f9854af86149253cf78a82701",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "788ba342cdfe6c06df1d0b49fb95bc3fdbd9831b8eb027796c2cade93a6517db",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "0999a2f40fb528544e6cde01e18be48adb3057e968144f90771a8013c2dd11c3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA11/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "c6e72912d4e68d6bd6f4ba8fdb8bace1b54893baa855a15717ac1d4bd06283c0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "88e1452ab07266fa0de191f1ffd13823ccdd0dff83e75a3854e52d6b86f63af3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "d9478a7e6ccc9d75700efab5c9869cab9cdb0d804b052f62a01419ac0765678a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "6913752404d4e6dbf9543f2c19545a3324a4cf854cf2d5b60728f2f8a6b3204c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "bd8ce3439c4790a689ada80ed743d52de0550170435a16bfd319e21c0735c65b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "1d6e5eaf662b15344c90e5c85342bf336f29dd1efe355dbec41903fe373cff67",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "3b98bd4c299395ecff4d3d7cc3d5aee33399ae24748dcbba512243a580cdd6b4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "7c8b64bc12026205f515494d97d398e95868b1bcdddf98ff13917922a67d7cd7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "79a2e149098a288d6d232a5c2a2127adcce163b034c4f644ec936e72af933a74",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "48250870620145385b60328ec955abeb804d77b25cb7f7012becc6f825380b0c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "3495699186997ee990231ecac86ecce83e356e32037339319119d77f69666fec",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "1eb074847b4139956490c168adbb8094086291be848e3de270406a7b0a9203a6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA12/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "43354b66839a4713362d099a32408ac7a7761d84033a2534b77476a4b9d52d73",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "50b1ad2683f105c944a220387dee343beb61048a66e710ea41a432ba9be3ab9f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "44c2f99678042f5a1bb7353781d254e3ca9f8c0002baa3ada80f9c406f25995b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "7c95741b22ac1dc0b65a69ae5a4065abe7f440a20b101421afffb77ec32b957d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "6aa3fb8668ac612127b710d64906da3b9dce1ccbaa6105cdc4f61c7d3b25dbc7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "f8ce0f509ebff69b362e940aa61b82e3308bf4d1fcd62f8bb5c759731b98e75f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "1841945e0e71fc144d565ca33f8fe674e192112c6a393a3e1e45b90821f540aa",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "f765c61ecd1dfd960105ce9dbe73ef322a1eac1fd47e8369a093c7c4601a3a63",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "130fd3bd1560edf1408e9bbf1e97cd5b4a98246842e4b6353a2861995ecd020f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "0451ca682bbf1ba5d572285da1581ff97e293335c0ebe0b1975354388ff41f43",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "5a748c1d6f19f510711117fd312eb8bb8e0f8cef5cb9d5d482b7008c478f0e65",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "bd7515f985107a4c93952009706963c369fadc64a8acba9b147fa4f5561b2201",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA13/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "64b4f5e12db716fdaa35e2d216aea7704a8611de3aa70d3c3d07a7c2ff2037fc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "b73647440b9589c1b0c9a051f35cf3c29a1e185d459fa384a75de541ae01fc91",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "8a4a9679a49c13bacc6eb4f02cdcf285cd8e24e7e9f48d0af8061a343fb7f541",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "f9eef4e5f0d7c6948346f8072d149b969a1a0712402e04ed34f2f892b9f29166",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "e32cd5f7837b36e5a193b3b239e504a2affd53a73c1337a44fd81b67b7ef3edf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "2f73b3283e067deceda7f6e566396e148f2f81d43d9a66df39a98342a10a7969",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "cffc3dc5fd533e99cbeebbfa4aaa02e264bc70da1795f7b68c165d5b66e7f7e4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "f8fe0253b85793035b8d09b14afc4935bc4d9b1d26ecbe636d267d1cec80cbdb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "674cbd752fea43b25c7d31f2b8c22b113ec5d42e3e4f1609b63222b269181215",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "55cda1773312bef64bc37f2215a78959d38c3eda3efcdcdf6aafbe7d06d6406f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "7fad0b06558101c29a8aabad6791e023443287c9941a66bc20a3b4eb212f0594",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "ac09c9a1eff7a1f572a994557505e502a464a5addc9a215a12794ccc27abca02",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA14/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "de7ae4dd0ab38e0c4ec354148f7bf30ba995da624e2112c30a9ad5efbc1d4a69",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "17114e13ecc84c4f613ea4ea88f08dc0face1c201a39b54f4aa0f7462f3fc2f5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "5ffbd2f6ae5cb717e40e77e6e4d18f71c99d0eafd2ba36afee6deb20356d06a7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "1f5942920b4e9d3ae20da9b073786c54af49ba41c2d52a68ed6e926c7a033690",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "45e8d5ae6fff9dc3e1cfb04452d0607ad9248bb23e9f25cddec1baab27ad7436",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "3e4cd22583a9232820db6d72dc7f777886bda719f3271a2254a1a17122569b66",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "fbc2e940288890ca57960f38c064fc0656c493bc44bd6833903efd554fbe4b7d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "286494883074254b48043ac728daf5d260a2bf4dfcba622111edc89a2d5f66d2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "e1603bc398cad362f2325745c86fff9221392e51739d112327230e4e4e94eb4c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "d6b36ecc8bece49e8ac40ff37f3a130c7cfd4fbc3bf5375ebd064d3251263da7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "96feaa76c9728e8be521744d6b3be65df4bf72413ebc39b246c18be564071b5d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "3c8bd06d95a646f2fea7d531eaf2fb49d0fc20bddfeb72411555ca76ece7c0e8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA15/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "5c2cb084501dd73014aea5845c0add57f1d1ff7882f76063449546223295a46d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA16/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "b4d0c98edeb3fffb81587cd3121cea2e9d312b52f959179ddc9069b32784fe6f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA16/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "cf7d666bd2d9a5c916a4900f93b8f33659abfbbccb94b56d2361b0d211cd515e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA16/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "83ecf641a6f37169212b2e072c5ad643b057f1a97df9ae8d3d94f69d33306270",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA16/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "bc1cabb17234c1e0ee5bd4f3dc7f86dcaf6c5c26883b2206ec04195086b26d09",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA16/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "487f6235b280e649599fb9924edf169667e106ac0088f8c9057d03f959cf4ac6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA16/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "439da6dada2540d4f63885a544a31c5bf06ce5728c1676b6ce11ae0da4349603",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA17/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "e3a4ebd9840ee4b5719c6cb5272292f14aa37782f77257e76b35af1e91d258a5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA17/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "3df4df49423517428d252c645866502c29e78f30e53fc5598519042b6c506338",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA17/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "796ccdd3e5c1b04b168e6e4fe7b5a61bde2979e02da9dfb3059dc242e85c2880",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA17/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "12183020b8d33ed3077842b599df59a5b22d4fa9661d11256cf8089eaca81563",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA17/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "52f89cc68f4688a260b52b9ee65718c23354b95ec20fc344a37515ddff116c5c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA17/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "0cf5fc98af9e5dfa6af5676fac32f7435c24792d0a83d657767f8aca35b0c014",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA18/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "f7ef864c140accd76b0ca47a6e4bca147306f34b21c2eb2791eae3540eed9d1b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA18/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "e6e4c723c948514d077d9de2ad0ab891aeea685a520d9ee271c2282c5dc1deed",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA18/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "5e0c7a5f1eb08b14d39cc15129e622b30e7adaf1a03e376cb51b76771419b7d7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA18/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "c3a1a32dedf3403ba824b1a03d8e2ffdd52591c34ff7bc15d9c6374573848114",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA18/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "b91c3fe56c75d84306529862c1c5e07332caf01c5a5b5bfda50101b8dab5d0b6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA18/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "11b2294560d7c9d365fe4f225a36b8e36602cad297c21bebd5daa851ce76e0de",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA19/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "2ca8a3f8a0e6e7643f850cf598957560bf47ad9adecba0a329975b969b926669",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA19/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "91fa8a2b5a85a2e3b77e8f2f83fb3f84ec5afc014bc6ad6d8f2f41b9182c417d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA19/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "5e31185ff26aebc70308dab052640a54430394ea676b51c90860f79e7a22dcdd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA19/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "e7fc2bfd1a44602a31c9bcbae7213b31589751a067f9b6f720c2c51ec5ffade6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA19/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "1b8f10fd412ac5e34a783dd86884d9a8518c799b7e0ebaaae6db7432432fb684",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA19/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "d139b8b34a64cb3af5839a65445187572e39a3e9f05523c3cb9271adecfc44bf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA20/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "961a08e0dd63edd43f3dad12a6182fc8630a5347e10d145d705288e604989752",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA20/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "71b02a3eb36c22f30c3511724d7ce8606ff5626a0e66e736fad0f595d96f7fbd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA20/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "bd132be0ca59351ff002cf49d9a03693f368446c2dcc71473b55dca70d8f7cb5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA20/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "850446b531b680efb3834d0e6bf79de2cb05815951d2d01d3a333f550140e945",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA20/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "ae7873c4fa416c324f663e8aa29fd9b716ba61f92922f6dd6c7dac5dafc94a3e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA20/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "a54d9524b8da0f79be48e9098b4e216b81e189e3f0f9e82286ca3c66189b2e45",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA21/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "9a21324061c57da27ea86aeac6c2b89069f104234f6bf994bda4ffe3e1365482",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA21/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "d3211aaef3913f41fb103f3c2d23856a2f31fc4595ef98a8e7e5054934f420bd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA21/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "190280d4a6dcdb8817d277ef2ab70412bb117aa24bf5e8a5a90bf749ec178bce",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA21/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "dc8e1104d8116ba56fe4424b6110722bcf812ba11432c4026dd9926e4e5870be",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA21/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "29bebd167ac72971396a0c5bc46e36bb54dd27ba9e20caf56644d49bc27dd6c7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA21/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "e174bf7475b738e9bb9bef294f634295e03017590818524c2e9e62c921d12300",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA22/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "7f276712386df35a076ef30aa0947ad39fd0f1e7b57f804e1ed4f143f20dd025",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA22/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "9eab216ab62cfa8dd6cad09a5d61cb765108c01c9d39bffe1a8af7f2eb44a2fc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA22/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "017541f2635beb8fba86d8245625583b6965b4fcc3aa7c298306eac0d92472c8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA22/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "cad7c493545db60e68ea9451a301171e70fc49a24156ca66f04d8cbd52c561b6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA22/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "32906a7b5023efad7e3ce82920e492f24c048b6a8f24a330bc052ea865eb03e0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA22/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "daf021dcb86272dd2f55459f350d19b066d9575b552398eb8480a1047eeb6db2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA23/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "c5ea6c42de5839a1d6e9e9bd8b9b43216e06cb076eaffe78aeaac1645ee3ce78",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA23/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "df78e97cce67df0e5233ca4ed2067ddbae23b9e70c2ee4a1315091f1c4391b8a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA23/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "7f81303d1effb45901269c13e479b1e16bd0caeaf78ea0329481e5261e2207e7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA23/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "5545015b00c9a3cdab34aee3160ed200f79bbe2dad1c718d1c482b19166385f9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA23/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "54647a4f77122825be400e46129046c763d46e56e6cade125073be8dda3982f8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA23/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "142e15e0b48fa285f1632becd43713e71c46fbcbb39904e13428e922549b1edf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA24/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "b9d9da7a531e05b0cc47de4824a91b2d3190d5f6efe979790caa59858e1d1fdd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA24/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "b93b0050e6c77c784eb5193f3e949b2b01a9ad0bbec60b6473eca1cbfab22ea2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA24/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "492db2ad3513ebe6279d6c1beea14451f997e6a3a9e3ea77b8f933b2139bd094",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA24/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "b4eb61c6e43d276716ae743997b7046df463fc7dcc37c3ce8bc354920f403d6e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA24/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "a9c82aab184bf21563d51a0d92d4ce5049ecd5f9fc2352a42ce6f2a9ad953805",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA24/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "711067bed784cd3ea54dece98a2c74d7470dcb8ca164990cebdb7dcf3a111bd7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "b7966cbcc4363261ec5d2ac060abe5ae3102593063f170070b1b4b537a7a7db7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "e50132514f658d81e0bdf5430d9056bfe3b0cf39af738a85455365783760e778",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "78225b674bd53b58cfedaee60c68424d595580abe69cd46cbcd924b0b1d1e852",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "cecd9df5905ed7dec4e6988ee5183d5b64e1932260c2ce8f45f671674c69fc4e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "73db29559c0678e6c846d99f952026a61c3badaacef8560327526a27490e5299",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "7671ca03c1518ccc931faeca6f417808f333a5a111f7e450b9a32bb98348d827",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "47fd174cf3b7a0e20134337123dd3fa09610233a56c1828a43fb44d6804dc994",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "2bc5d364b266955cfc2a1504719d6dff89aa30636e19352583c12c4cae79d16d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "300ef706aea5d63f1491e713c8dee26cdf4cc2eb5d107523fc460ed369484a3d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "8a932d8ffd79a2b4f028b7a39d893fa6ee84dd15189e2eba3c9a7603e0faebae",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "f3565f01417a161e5e772882d5fd973371bbf07b1c4370baf3b0da18e11767f2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA25/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "f25b0346e4aaae4aefc85f8e8a987bdf85c93c7ac638e462f9a25933d1f28394",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "957a11dd450e64d050ab0cec3eb557f0e8cbadc41503be4a4cf4271f2c9d344b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "bedcd44598d6b544546170d9aa049587446de0a0fefc095ca6c8dcb64fa4f963",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "13ab65dd89b25501ca697b24d988a64685cd4305d1e716971c784e9752b15fdf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "5c52c479aa41457ac3cb9569c8b9d3dc4ba660c70999772108dd0a23ba4e22da",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "9b5894f11c3c98347cf6f26f7cc7bec4af4eec21ffcf39814d78ee64d2bd515c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "6874df280d0fead2c4103eb468ea0c67937a8e4558b979e63ead3073b0b4f0f0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "f252796a514e2e5b439067d08c58b72dde05cae2d3529388fc576fc1cd5d4bb2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "09774bb5018fde03c253f5a065cd799a100841c33093f4b1237d262e45bdbd74",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "d03ca199e1404254f84557bf24431933069895a2a06201a2c01615421319ed1f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "22b4ab2da4d92f54fbf6aaba113d0e2b1843cd78c2dfd73ea9d35eb409fe85d3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "3cc784197375624dc61d703f5c516f1462a6a52f9095a7b6b1cd8fe695ebe689",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA26/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "def968690b4a3a479187efee01f0720851d9ed22a75ba4372c9e44dc46b49ae7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA27/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "cd2a7a63e787982439b40e933438b1d9ff5d0877bec72e01a2a704283bf2057c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA27/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "68fe709b39d714aa4ccaff4f08865dcb235d3fdca31f78b27a77070eb10244bd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA27/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "d9d5c32c62015388841dee69d0663de2ae112424fb5e0baddfaa93f109bc60cd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA27/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "8765d37d104c4c261b78612e2d74d45232d55b1ddc3dbe70568418f1ae5a9a16",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA27/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "831801ddf8a8734ef6b7fa3e65ff8baff7afabf807b40cf5b7bb13bf1522d902",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA27/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "51ae5072c5a7f1d133d29c4efae4e3cde4339dc50374ecd8f58ee6757353a29c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA28/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "ad920b4154e27e84a533564b8f444135a3489c87051e2ad40825a7aaa11654c2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA28/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "1d57118553fe365fe67be2eff2aae5aa1866e8ff849b0263cf009c28955c28cd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA28/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "b80e5826460f1e1ec51cc72f9ac828662543c873978a3843adf22b8c9d59de15",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA28/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "3c347b9da862f9f7b12d8c6f5dfc041b97d039400340b877249f0bf16746404f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA28/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "e4da9ea50f2ac84400f7e1159d2838fad6dfdc10025d8e2ac5e7a7d3a392c515",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA28/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "f66a3496a28390e12a00a417f02f103432e088a8d9d8aea673aabfb3cf6360fc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "8442b1639fd6a2c543505e1871ecdc221fc3dc110a01a97ade4b5a2ab32a5626",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "0b33e281142b26ecb5b7a4945b7f1059730387a6fed8782a84cc0d637e2de4f7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "060de3c9442c4de60a8dcc971ebc185c49756be0b75bc64fc710b9a5971e4c15",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "e793987914fdede9c6914e23e16f531827d1d5137d703196204184fd24cea3b7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "f0f207497cb15ea3bd4ba9e4fad01946f51738ec6785fae69537e0ba0040323c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "1b4bd09a3eeec0cb993963034ff1872f2ab01f7b56ec8bccf45a5173a318f6c8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "587b976cff2cd748064aa8d8b1d4de6f5c54fab909fb0e80c80a1180753f975a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "bc2f3af0ec828a2ca88e81bb803b9695c695f6cda0b9b059492015937559bc25",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "8b1f9db5e597afac9245cf765d7ee7e003d1f0bf9390db7dc70aaaf0c8c4a15e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "8662f87758604e8b726bd725c13e8296c53db7f220eb78441a642630197d6347",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "8a1812b4364f72cc6fed842c1c93223f81d9bf5f34f1a1f08f0026e777460bf2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA29/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "3a2a5308e3700fcd41fc920eb79cda8d73128ef0a430dcbb43b512fe43f6d872",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA30/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "33d5683cedcc8a17df5e7ccbcccf17cc987a2b5b73859fcfe6521227d2fe1135",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA30/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "c315e1489d7d27d9821da67843e163fedf2d57e9c7e5afe0a8908166f94697ed",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA30/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "46d04fe9457deceaa55a1273a1df8ad17ebf6bcf8d7340ad8d5c02ee846bbf59",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA30/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "f2ba1197a9fa09add1979bcb6ce4fdb6e42373ea6978401dafdcdc291893d801",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA30/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "e53bc06610b11bc15075285e1edc55720d70a0df9e3b059cce51784c131a1bb8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA30/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "777b809f812ec4c1a474eb56a7de30873ba30cd9b719aac3825f172d24640a77",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "c020f63ef006d406e1f3344acfe53b1183890cd3e030851e618c0cf8eb95e581",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "f9dabc9c1e6bcf38d88dc6676439c7b37e47a7796f1a34ec31508b0cde68feeb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "d2f6e9782b9adf02f3147a780061c60dfd40965cc9844c8da928a7d2bd8c282c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "429dc6052d83971cbdbe902b0561fd5ae4b30dbe6d3da0870e0fa7aefea2b986",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "ad43cb0c0f2b1cbf61fad0d8cc7b1d1234d49a0a254348eaabc03cb534717991",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "195954a4598e750b4807b45f3c151e23c278aa03c64038029a9438fd0fe558bb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "5641e49272384a5e7cc531ee17fd85c400848cd621448cd127215bee4ab627de",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "fe50a11b68e515d96227864800dfb913d1d45a4fa97656e4283b938f158c9a26",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "0f29a23ff45fbea40e99af8a8f747ab7ce1c599723d11487a9c45cbad8cf265a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "5b95aac2ef19e570fc98c8b68ca10600ba8c828b36f97479a81d0ad42cd80761",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "c11ab53e82a91bf827f625f04c2708f8f9f610b394e658753ce4e4b5adcaadc2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA31/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "313bc3e5faff27c85267fdc30c877b3017b4e6be2086aba3016a33c00d126fba",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "437754048efd941b02609493d19d437d59ec59acf038766bae1a3da93ade11e8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "15c89d599d9b52246369ee6a939792614c0f8e8d3d9aefb0f9f2be031347930c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "d76b3899cf8ab7fa57e5cc3ffd05486522f69d2b696637826852b9597f5b3f79",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "3da6eecf9a784310dd059a5ffae1de6a1a9146c5b2f34e232e56a650bd3bd624",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "9e64e7cab450e703f1354e479cedee27ce0dc64b59078e7573192b9eee04a72e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "58fa3eebb8beaeaa2f030aa8d7dd64616d9b4600efdcd56d351971fe1b5716bc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "49de7a000cd1154724e2e6aaf3af6ec491dbde1f2f7982181a474ae2fc956465",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "bfd28c3f8808e3083ecca2278db020cca300df45b19b5ba20d929e44038f0a8c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "03027735da9c8c7798303e4a1cc29db0193c20d4f4e4a799925929100023df8e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "dcc1f3319f912fcefee16154f7d706aae5256f3f527de6b72f57d85b1aff99c6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "91f6beae601819f9c846388824e82aaa7acffe3335abaec92e200d90c0afbb9e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA32/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "6f9467d9ecf7b0aa62c59b6b0c419398798f3240e2032132ec1729dc8a790704",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "b8c44852637c15bd10356eded9a650836211eafbb2358393b9e8ceb4c8c7eca8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "7ef7d1f562c02afbe623c0baee2688ea51b38d5c407fb896465bda2bd413d386",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "c213fcb25e49a841ebe92d9af8340e935488e61a88bda5cca32590cc05921120",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "cc8e8808466b1507a81e94bfbc65324d3f2870a0ef784ed7ac08c5692a2e1029",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "8880b7e1655c3bfd9506b9aae36150a3dfbf1259d63267b7af8e82c77de212fa",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "75d76b3faeede384e8fccd9b8677e1655449398b70efca70b60c2891b89f5ded",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "53608aa241af5ef37cdfb55ade669ee030ae249b8e182ef6f80b23b101c1fd58",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "593bd97d3a00643c2488363b71a5ca044c0c10014ee48ef66be1c2ede4b67c01",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "21548f85b76ea74c3ead8cf895b9a953dd0ee642a139b856dd437bbf9abc709c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "e0707b4b984a1193e12e68ceda6f1185cbd1515bd13d28718ca8c8f11a8efd42",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "e385fece8fac09587dc1d4df663c097aae15616b189c0f479917018678b43acb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA33/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "3114b14c7b84cf3e7b06d293a589c07035e3a7e377447b9c55446771de315d10",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "e6f3414fb229e49d61c7134c149ea483b68cdf860e47e949f14526fa978579d3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "0f6e92c37a14393a04538913ef839fa88cb2c94100c4c70e97464183876b7aaf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "b83dbb972133d7f0482e80ff4c1d7362bf1e03f9c9b85df67645ac2af5123375",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "f0c1c41107129d2ea1fa9d844b0332d59f77112edb9feb91f84c0b37fafa17bc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "9134e23c87ef9d2d4fcfb80c5e44501490e9d7d500c40573b55aaf30828fbd9a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "bf2682de7bc6c7284997e713cd86a8541902b13ca7e86f410347fe165756f630",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "949b927184c01f49e595f357e9c7c9bd242ea3abe4b189fba10a0bd854a5c88c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "69e1619f7ce7323fb887a5eab341496eecf8608e30a430c156b5e6dbea666bf1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "ee2bba6df8469441d90641f991c2db0db9ebecc7c02dc670b31f38f6182cd36d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "b9be386e025decd63d99ebf0b45cb34da85c9e9d088bb1c556a0872ed6e14b5a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "3e0969fa2e4719294cc1823f188a56e713d70d72d8b99ac35c599f3c4db6074f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA34/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "90ff1a8ec6a920e9f1a9aae8096791b683cd93cd261e95f0e396ca21b1be5a06",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "3bc4aeaa859acbbf0461f826fe1d0d4d4e0ced5692f455f2637ae7a389e29d91",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "95858833fd4ba819749a74b3e41991d6e97e468eafdb33b61f12e0a255291465",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "9368e7eb118801119395d324930a0dcde92d34572058e207606e938aa9041bce",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "684736a69721c0e554a676ad6bc74978c1d2bb37899d896d117b3bca72a7de56",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "e6f9a97d95c769a6c1295468b5d94e8a72c5a7c3e478791bad1c42fe39c94511",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "16a85bb2ac9fc7f97b10e5474544be6b8b8d2566858995ee39f1d101697b4eac",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "b5fa9ef9e52a683e6b6b6cad2d5459de03ad6d6c821bd03ce5acfb4ca211a732",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "cac7743a19a5ae54cf373fa1ebecd348662558337e82ccf1d6b23f2b92cd0df2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "61b2539f2eba7e4fff8e0a77428e44805e60e1305f6a36c5e41ff8d9790da8f7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "22b428a40d2f0abe082d147bcce63d7d3e18c26995cd2eae113f2bbbd6197e94",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "19a5a471630b0f16078e33e99c49c747605df5226b3188fe8bace289d78829b8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA35/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "e13b10b64e6c0e5a7bcf786459f4c1590ff597cec811a8965e98d69cc244aa1f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "987469a99d0050f0ab539595461f910970778b20dceb8b5399898a434146f644",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "a7ac413b024b41d08f9649323a5984ee3b4e5c5d9d06e07525815bf95fc04b1c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "169ab9f2718c54bccd0c01f3912f3b51ae40c352cf55972ce713a4a1dde6e902",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "af01cb71913b4cf9941d6b28cbe039b2bccc3acabec1d9ba30f67965583c443d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "d20651e1cdb70804896a53f1119fee1e463b152dde4543548566746cf855b1cd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "30ba1f6c1bfdcbbf7372c10d74ec638fbf6af4e8575a95f6d47f137c7be6beb0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "d8f3cf56a6d1c593f7186c271b11d9aecdadde963d4e6d1d403c48579be586be",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "10413a6d1fff09996b06a3f5fe0652b2b6aa04af60f3d6596c0fd79e714c78a9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "5d78885d462e89869429887621878ab7c7c29ce1f78e75736c7000b60d0e0f89",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "ec30d40da120d009641c5ef385f58d2412f856ef08da29805ad4b83aaa19aac1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "ec098629828fa085a309f285e898bfd70894d4e321e5c6999fad588443653fe3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA36/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "d04d54b0c98c270a7dea5ff495913cae37812d31694f54d376ec25c46aa68cc8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "4700cf638c76b8806bf6555ea923ef9af44ac3fd4064703cb489bb5cd974314a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "78b3a3c65caa912b0c3fdb5626a5f806f2dddd459a5d85d108deb95b774f48fc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "edb8102747e7fc16c68f1155a9cfa69480aadb47973dfc6d38b8c59522e69783",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "409d1de708205c5e5de13d316ed3f540dc5bcf31efc6207463b23a2cc2e92eda",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "a2f9fa8edd5b443efeb9c9b8ada99debe3e26c9f9ee138ff666edb7d65f07984",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "acac2e7de0497cc290c054f883d7400d759011fbd6674e27e218e8505dd6abc3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "ebca6bdbd479dbecb70b99e4a55a956635c064620157207383a6fbe3ee016115",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "8cce49ade51e9ddd421c489f978077cfbe9cf51ba2511733d0ff40da5e145a6d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "b69dd755bccac71267555ad05f82a795a610eb91642218e8e55f3e48b27daf4e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "99fcf5b7ec5f03d07fee5330419dcea11a20f767ac9b224fb62e109b1066bf85",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "98b0e1b5a6c76ce2961746100a4bca9e4057e17cbac8a0498bcaa86ee1ed5596",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA37/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "383058d30ab677620e15ac3b9faefb658e156d6946daf6501d59479a9d39e79b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "90c33fd9be9cfbedc28a63948488615a59e419c03f723093c155c3d6be9c7f96",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "47b4d0f0d3493ac8c860863ec417ba1d45b194dfaa85ef16c08d12872872fbab",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "b13aa1c039b019aa95b80fedcc6b85b274c4e780de49968de681e0414bf98836",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "43ebef6302a94159a734930238dfa387e7045e54edf40677fd6683b5d32df1a4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "cd3a3d25974986f83c782be250d5996f8f9f7745e60f35032e7beb68c7c7ed4c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "3312eca05031588218d89d6fb76aedf7ca7208205a86253ee87b8bf81af838da",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "20a17a77fc87b4cf79359d116565a194b18c76336bcdd0364dd5427a6e822fdf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "5f9e892fe7db52c58d5a11c29ccf0ef90f460af7118b157b21f380ffa2339a01",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "c4332b320ba24128da9b9c05c47f193d9ecd926ea9dc6b79e3273e112e60802b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "2a91c9ce45a596da1e8a7d2fb0b1925ca8f82f77ffb8d0a09a503b046af6e4dc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "c144a832ec92b81ae710a0763f9d9e38ec6ecd2de25eb511e3a5d4fcaafbed15",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA38/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "e9930102fb6d41e581f20767a7e336aa17c0d6bf75b776c13df1d861cdb0bd51",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "fb9bab5a0b1228b3194b3fcb60bf0811a1edd6092258f88780ea66510176a473",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "e455885f062677f8e201a2e02ce391f2e8868e623a84baeb6a4a48c398b82cb2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "2d2a7709034206050b3e5a8156cc4f5b10dec755d934547435e76ecdfd081d46",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "ac06bfa1443f549ac7006b9c928c7a7e97fb073466644317cf4f79c7c8f6105e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "af5c2a780c3cd58ae4d0dbadfa1a766565cc198c293da5fc82bb1ee9cfc4f487",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "17642dcd91fc4ba39b863fa19697ab46674be54ff98203bf3154c5ef04edb94e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "ffa8e44cd385cbe436f66a97c0c36ac85992092b90ddc8000d741b933c533ff4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "f072079b0f653fd4e904cbabc1ca29b0b9353fd0f35ac107c47f7adaeb7fb8b8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "3782baee57f64e1ff8711f93086237da426717766bf1d8bffca38829aa177df1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "a77ef5e60de219a18e665dab6de7b1781310db2b20e641bf146ff9ce62390d4e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "5042d61fa5eb7db8666e146747980f95fbf641290b3d5873c89ec91aff7b524e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA39/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "ab8f69b3958f22ed14ed82c77bfa2b2f670d963c9d2b1972f565e762c23f0899",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "0ad22ffd5c7f1409592e2a88e72d150a0a825218a09a7fb860ad4f8bd83edc68",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "8c542dfc6752b98b5ee7cfa895134ff7bcd9425935a7254c2f57ce14aa0f5129",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "03a92a80c7187692ce33f416a64fc59ea4beda6766fd7447623809288798b3c3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "b29866c7797102bf1d9f82f1166281656dd91e35cbb27849111e1bfd1ccab4cf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "780fb9e09bd5b3bff940254962c01b6f3bdf7f771e2137e8f24c74b8af268048",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "b3048c6f48648898197bf459ab663fe6a753900012215fbdb59afb1d5931ecd2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "2751ba73a61b4fbbb8c72d816ecdafa6dcb2e1934b73ca63c7409c18be5315b2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "d5da6b861c281067d419c2f6744975653a6ffa053eaf107b95f7745581c2b6df",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "3d336d3d96305c03ba3db359a6291a47aad50108143ab13b2d827b9095aeb344",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "8fb3dac4142c8e57d805d92c2705913b32ebdd28e49a3f0709415635407506b1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "c5d6f01a53cba62493c9b46ed381ce416a80c43e1a97213dae3a644162e38769",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA40/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "233ae5f405843978e589d6485186fe03194a1c8ef5df21917a145ee13f39b7a6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "7a4e2c380f7f288eee9879dd0aaf61112f358338bda9b64149ea047ddd033bc2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "516cbc654daa9cccea639880c42f8ced6c015d667205248cd97beae1c13c7fb4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "495616a6a342e3978f86681a014d6a69694d002ca44abb37ae2ec53c2d457f0d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "7993a56071d2fa0bba7289764de183bea6f8912fe49054438374fa67482e76fc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "a0c55039b0e115dee5e0478869a150ec60aabe25983229a2208aa0f943c7839d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "fd1fad6b251164b4154a71e565ec2003d02524d68684470a66d8710e587089a6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "82b32ccecd75a117389f84e19c3bcaca54d7e185dce9f350555f33ef8735ea68",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "047a5459586a812ee1978150db070203950c02b676a9c07e587d7289f8dc697b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "caa243f52179741b4b005152849ebf0d524896d72b47ddbe6585fbdc580f3b50",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "b9413c619d6fabac47690bd0f0bf48995028c3aa13b9b05204bd54ff621a8542",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "f2e9c29274296a18f75b79c0c84db960953220fc9e305d4b65e4014d1c51f446",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA41/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "d948e1afcca0c66d016dec29578ca480234a78d1494867f120e042985060b8d4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "25c7084ea56265fa4a720f9a0fce8d1b54c14f5e2f337eed21448b9362ff1379",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "cdc88482bd617425a9c5e1d94b1fd3efddd818153aba28770acf1a20b5b79a58",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "27c30b12ddb83fa8b44dd91a241fdf7e510bc22ab6cad4d4833da24020f21a22",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "a00f7bbc00e9da532b41a241eff7e0d652ae379f859e2b64cff79f76140bf864",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "9c5be2711496e316ea45bd587f8ad5e0798ea74b81a7b4c516ef0f65e821aad5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "cede64ac4ee7ec7b3d4325c212dd0c3abfbe2e98907c0fb8fffd2c2cf4ba7103",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "0fc90e5ad9e8e7b306447937ba4b86beab19e28e91683b03d24b6f9810a74801",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "434af4e02f39301bb5f14b6bc0fc5cab128eee8489d4dbb47437280d346a1ff6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "2777ab856a272fc2fbd332892153563d0bbaf31f2d49dfa791f5e5a6d6ca8af3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "348f3d52de27ead0b22465b9fa4e5e416f09964490cace5dbb837d464bc1499c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "964ff0766d6ff43db70e84d581871fdc1d7242c60ebf0d6de7641c0e24d25870",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA42/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "43743acee676dc86e00de5b631236d56e96ee14ee2d04e5149951b6277ec237a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "d0b803d07c166c959b856ecc6fdd49ebc108480e255869f9aa8b65010673aa25",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "4bbdb8e82c69ea2d5a84b07424bb1c4f2905272ba4be359e1532b7ea885029cb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "dede8e9b426dcda7c26b6f22298598571419f478c3973bc81dfe449152f35e33",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "8640862c20fa0c07eae42a16610bf18c68863bf9d548ceafaf9409cc9c846c3d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "97d5f7e5eea1b2edf55f68c65cc07b4bf01e4a3f772867449bde736dd75cf9d2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "e2020a646abb8812f29071f54254a4fb1728e4994b302ce5a2da15984d9cfd49",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "50dcf2fe4e03948287edb5f3b0a3323bf9fcec834382aea14fc225501e5f1e82",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "3ba01a2d536bcadc52f234ab269bbfccc4450fd6a6f525c65802c5cbd8b047ac",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "f9de85b555d547cbc75bae5d0c9d08be95dd41c2689a9fc280f7342948758c86",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "c7833cdc8490144e637cecbcfe827de83aee2fb65d38ccb48295a9b4f4ce8b39",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "b9383de509ec9daf3ab250e4c8abb27f75007e92f3a0c4e86a3ee9c8f61066ad",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA43/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "27b03f2fcbb9e52c7723b2c1e56a0db37acad0d0fb67fb24d09390b6db7af5bc",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "31bc6997743d864713c5b55cfacb792474f44085bb9d5a02c79ec39a4836628e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "d56f5860403be2d2747f6881263558dc0456c5b7f84f3b26d96b9409c494dfb5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "1703911b9309345c0aa313cf6b8c51055d73b0243025c8892592315b7522c052",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "d5bb1ac4dfa6eddca1d1bec999c7addecf264f1f270689c33ed81028a695785c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "49b1b5da99f45fe8378a426abcd00ab6ec82af9927d70e2679eb3b7501c626ee",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "d7504dbc049eb889ed122c7f1d8d0cdd6e7e94994f2454af635f8b5ed9451ed7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "f4886f8389e33834c289ae752397f5db9de2fec017f49d1a1fa7d14de18abd5c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "f906a4f366020e6ceb7d4bae87359e3a500b08be35ce15746c70c942505b4d8b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "1e0e0002ce71dd231e1a1acc36effcec4d22012fdbea94caf86588408ba4b0fe",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "177064d6a662b1abd2e2abc79ee32f7bf8996a8ec09c4d0b716f5fa479a9a74e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "7830f32eb173b6c193dc53b867cfc1199c54435842a321fb05b1fe8dc7a9ba2a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA44/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "3f98bac36715eb8a464d5fb7ea8730c8c94803e56c57944fdef83034016d054f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "2daa64754be6b311c2a8e6848a250c0e172cc1238f9484061491c7a2533b88be",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "e569d43a24994e1bdbec6fd02d935dae286de5019f2d9fdf5b32864399e4b56b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "9001d444b62f9b9ec7d41caea6424b498e816572dc138b080e228c85f423a4df",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "6ffcd8b39a8a3fddb1bd16be0e20e93624e9acce2374c5b4483dd9c480593aa2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "ae2fccf458d81804c073bd6832531b24fd7b15343db7b266cd4b08e8ef8da77b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "8e98d0631ca43eedd20a1581312f17941f448ef3a98a855fb3b6aa5c838a3474",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "ce3784d3446cfae00a6028c1a9184bb73aa1bf643f45c9185224cdade7f0f157",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "44c53f83cdeadc629dca52d1675d4bfddc0367dc73a9a12c79411902fd6e54b9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "95b9c9e11611eb7ddf5e131cdedc2b9ab6fed77986635bf7d53d2a7dae0a88bb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "40681a7d1e1661b19a3e4551550c59675b26fd321d94cffdff190edd5a63d89d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "3b0087b98140ecf7a7e8711560acfd1e11a64ee9f9a43a1cd47ce2e64f7a39f9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA45/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "5ecf85828ac4df6cc07c59a65635382ef85de23ec5923f98cd55f59663fc797a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA46/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "f6e7f72b2e57acc1167672bdb45b352d1f2025ea8fe5be98afe69790dacec866",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA46/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "7e86d0af9331b1bdf44bd6b5361c659ffdc73740f4b3a753a6853b179b6093cf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA46/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "64ac9d5f985276dac197361c0cf79c07bef8e66ae426b1ee6715fd29e943ae19",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA46/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "4ef781165a9ddf427b645fcb9d30b4223177f5903248108d57b77463ed4f3f86",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA46/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "fa556b17c93820fbfb6f0a1af95b36b649935f1defd28352015ad3977c893571",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA46/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "1a1ed6215c46ef9ffc1446328a8404e227f17e0d23acdcf27b745e55ce349a84",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA47/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "691a8fe3491c7701536eff79d968a56609b2a14300f8b757c2ffaf243a1b65a6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA47/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "ee2a38b288162e971cbc86bc614c9ed7cbe68021b9586e4e3f8033b29bc2caea",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA47/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "413160f3a27a9b16d19e3e80e567dcb50e698aaef87926f5b6dd90fb6aca2a3b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA47/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "d00d3234d7f93e92f11f6da7f370a77e8787946acd60ecbda3904214d3bcd392",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA47/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "0275cb3e0a55dc1b5007c9133e78d8b0ee990a4435de1b329f0a4c1637dcbd57",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA47/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "86ea1714ad2fcac90c14567b829b53f9fc3e76333f27e9f66cb774e230f19ac5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA48/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "c354d799f37871d3b10673170bc601542d8db7b692fd430dd6813ee495716a44",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA48/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "784e61dc87ec48b47124df9916cfe1aec03e0102e4001cbc560c3fa181c945bd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA48/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "574e92c8e83fccd634ea835ea96e2c140201d85b758151a5c88bd786f2df9b55",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA48/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "eaf0c188e1f23aecd2e3208bf8ce9566677dc89108496b2f4e03c4f72d13be86",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA48/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "b9fcf519fd16e99aafd933149824f1f55243a0c1a492645b8ee10f61e48fe130",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA48/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "1b72991e75707c481df613853c6f10cb59a1d46ca44ab723720cdec41bab7eb6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA49/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "5c0bcc94e73d1cfb09bbdd72626a1d2a94fe75565bfc4e9cd5158a70fca13f65",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA49/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "5d18733ccf973928899b099150850d40c788ea3738377a80bac1b84974687615",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA49/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "1a9d54b52efa57ba40a643bce38ff6aedf3e57d63660a5fa76293a936348cdb5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA49/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "5543cc09745eb866a4906fd3a22206bfe9bfaf02e1953274a4e492d9197c3b2c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA49/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "8bcce0968c66009c7c34b4da5b7815a976f3ba21e92c1e89c9b4396cdeba50c6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA49/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "07034407c7ec194491006e89859c21537274285045a092a6cad4102044351a66",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA50/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "5b94929bb7e37002df703748f1186950a01cc97944153d22d2eb88224cff19a3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA50/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "1ef62003a99c0565bee80611992cedd090011506ac5e8a71f7757a72ea56b2d2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA50/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "afd690710f8566ed001dda82709d3950e254452341909a601b93533cbf8ad1b4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA50/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "7ebeae79b4ed51186e2b7125e06c706e2ca5e705fa4172012133d5a93665508a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA50/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "a745c0a60f221cf8dc8fc4d0acee1ff1eef4ba1e6d276075331357fe6964d931",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA50/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "3f793627cd5c5db9c6bf6efa6caa6c8e8a3b45e747be16a42a74879141319c25",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA51/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "8f99a6ccc6d082b2630cd42b3ed770ce49856d028b225cf09f049b69219d02de",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA51/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "5189990311c0ec957427b3f4af25ac7dd2246949aa6af4e2392ad12523102806",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA51/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "f0b723062e1cb44ec7273fe14801329fc98bcfc446a541f7f7c40920d8741709",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA51/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "05df3c890a573db09cd05e8a6bde51491ac6b9e9364c1a57474fc308161d73c3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA51/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "cd44a91326aed8143e38156b042429af8c69b14cce9c2160f1b29fb009ed0955",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA51/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "a8f72aedaead4e236d4263fba413f3ee3e8deee321ceb31282e3b9fcc4adde40",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA52/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "9d9710da45204de7925abb9c31a8be566f7d06f9d7d4a89742b9dbcb89ef1f74",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA52/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "f9c53a1daf05d2068d4bc7de91a0427691799328dfad7e269d05d1a8000e7f3f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA52/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "220e34f3508396eb5736a47de4d1aaad21ae9b371de6afabc0b02d4502a37af3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA52/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "c4441fbb36d742ac106680fccb0eba1a7042bf199da8c9af524df1c9dba86f39",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA52/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "890b2cb4d6aee4781b8f97fc9548893fb9c322df2a471764eedcb2ff17195260",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA52/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "8241794ca04fc3c8be9934e49f06e4e5a27e72c4cd07dc68d2b3393d76d87bad",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA53/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "e898583ec723da6282686b9f644f883837eb5ccdb4c7473c2da2db2eb8327a46",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA53/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "3a2eb7fbf3497d43892f87884d7b5824983429cf9b7f85f5c18ef82f331b0a3d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA53/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "de8f922c2c0bdec6b40259cca728ee139ae61e1c3742f845ca3fd0f8f3d15de1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA53/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "1f70b236f8a1d8aec83025653c5dbd8d62192e8902029f18b411c00890b56a5b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA53/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "e616425a1726e979db915f4fdc274569ea7e2da65129abffb205a0ec631ee19d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA53/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "7297fb296007d7973458a9a2fef34446bb850ab59b064794d172315103a66326",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA54/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "88e8d938715d82a40949c1cd0629a1bb33565edb28793ae8627c544c88bd3b47",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA54/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "dfa395e942c3090aaae4101116d5366bed07b02318d9c83f9cb0225d0bf5c933",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA54/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "a7f678f3f75380fa259629c96440641646a25bb7c766ce77874a3d5e2a22428b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA54/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "d8b953c614412e9d29ad350273b2ed0afd0a68f01626a0af5eaae935d8647a8f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA54/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "bc7aa3d4e512e4df5e98409b26e5190251cd811139a906c8c97417500efb049b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA54/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "467dcddf21983de7a9cb9cd4ca339160cbc6c96d36ee0d130027a078307f16cb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA55/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "24cfe2ed162901b70882e2e6687d2cb0ebd6c373667b0423ec6e6aa8a503bfc1",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA55/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "928f480e79993305c86dd6887069f23d1e8820c514a395617847653ed22c9ffe",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA55/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "d568eeb6acfbf36189967cf0cfd28ba40d02f655f00ecec921944a9aa09d6841",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA55/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "3777f2008b088dca845d64cb330711e304050c3b3a88840772abe05901668f84",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA55/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "a69f88ff738ebe4eff00fb2f2b71ecde2c9eee6b13c006cff6dd8553426a1cf3",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA55/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "395a7b58e88e8c27c1725cd55a9e60ac38a037f48d11c479865f324cb4dfd11e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA56/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "923c589eb8cc3c18e8f749df342b8592e9e4996e0f06efd91b9ba770bdda4487",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA56/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "744bd3b5b2466fef92b4d17ffbecdb93f0223dcb3bc9d850aff2ff7f4536be41",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA56/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "b339a864adecfc4d782743717f5a6e46bbc2ef43574093615870186f8785d23e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA56/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "0cf19fb692f47339c12fc83627abfd3fab5b1e384f5174c58da2189a2307fad0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA56/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "8514c493a950487779ed1be2c8b25e87ced61db92bd36f666f9a99d6c81786d6",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA56/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "ffa24ecde1486694f131bd3ca7468fca8f40e5cb5173c7984f302a1cb0cf90a2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA57/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "ac334fa74cf426bd40d7e49e760f1853b8ca68dc9f3f620669771eca0ceb14e2",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA57/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "d1c68b590ee1ced258b7c7884106e19a646b0f31031f6802187fe080c8d42ac9",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA57/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "8ab5b035efdff6772555adc085d22edba75c5985d837a8d62c5427ec60a83cac",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA57/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "02a80c117ee2edc427496f98fcd29177557a728bb8016eaa1ba1e29779bce9c7",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA57/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "18fb8d6276100ac4b465e65e4bf3c64f0e72fe5b9702ad488bb41030e40005aa",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA57/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "ed50283545e190216a2bf30815c6c2b2292d629009fe14ddaa22e0ddcdac7daf",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA58/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "076c44758f3f6099d501296cf28178c6644d6a99fb1f93868386fb4ec34f3f16",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA58/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "039f9ed4a913d7e29d93e872a0ae797cf908b5fea52ce0fc081befbc9738749a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA58/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "62c0576af9877b6083fe9fd4ad87c2f9c6f474729a5be66b30b21bf3671745e8",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA58/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "274c409516401b0d5262cd69ffab45f0d623e79af072b136261d4e87b4d11fda",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA58/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "5a122b1e7cf99a5154e808af3bc31e8425ee43f2e2d772f3c337218220e73525",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA58/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "87e6dcd03278421d8d591e50daeea52f5946b8b9912d87acad8dba4c766c7710",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "35df1ad5973895db5fc8f0ef7e517aa15a02a71899047f2e71ce0bfa7f68f54c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "75c63392e033d9c00908b7e1b109e49a65d84d0d2819bd28edec1ded7d3e0969",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "2ca27afea8ec591616da9f38f28db64b11615712ae564f49840638ee276cc448",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "e04188cc8fefb80e36faa43ba0921695688e6236f005e6b24e0c810286514926",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "52961a764db1c573d42c9999cd5c7e923d26d132116c11eea0c75131b8ed38c0",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "d720884585152a8aaaf8ca1b8ba6df17edc07beb128bd564639ced394094ea8e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "428a558e24e7e0f3b6081f9fd92f80e5f00e0f3c6c0ed4d6d1addb440c2441c5",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "f14465406b8722c10287dd4330ce2efe3f2e808535ac5d481345fd6a2978a8ad",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "4a01ee5caaa801106428e1690836b18ccc7563cc2d372e8d73ea6254ad27bb8f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "7a97da4129f52cd6669b257a1b670aca6b8d5f82f0fef6211db5fd031df7299b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "b50855a7ff702b8fc2e03f743b0207abb7f7349c454b135723578fdd56447f43",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA59/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "0143a31acc6a86f1d9757f1a490a34424c198717bc8b80e48e5855886343255c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "48581d48db85e0f4775c579b35a1906282aca5bd6269ec350c7706fd900e40be",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "378f269fbb7699a1d6a5fa22ca0da97740fde99a477771077652d58bab22642d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/GELAENDE_MIT_OFFENEM_ABSCHNITT.step",
+      "historical_sha256": "f946dc6318fec2ca0ac0017194c03ecc3bce78b08e5adb16b406fd0d8b22d350",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/OFFENER_GRABEN_BOESCHUNG_SOHLFLAECHEN.step",
+      "historical_sha256": "98f0f80674463dd92e99930db88c7d9e30bc19c9903688c41dc7e2738385f4eb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/AUSHUB_MENGENKOERPER.step",
+      "historical_sha256": "13512d299a02c9aa1828e46a6d58148017a52601a7c424edff0d127d70af1d9f",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/VERBAU_ERFORDERLICH_NICHT_BEMESSEN.step",
+      "historical_sha256": "eb5c3bbcf22aa0cd0cafde5e77070e951789ee178d84f438d2056ed806384efd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/LICHTER_ARBEITSRAUM_800MM_VOR_STEIFEN.step",
+      "historical_sha256": "7a82b4c384e8f08252669e5f1e9425b7b651363a4a53625d6612c99b10766eae",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/ZIEL_UNTER_PLATTE_GRUENDUNGSPRUEFUNG_OFFEN.step",
+      "historical_sha256": "75e6fa4a8e737692f075177944186f8163b2220d68e629635d538b830ff0379e",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/ZUGANGSLEITER_NUR_GERAETEHUELLE.step",
+      "historical_sha256": "b7e3497e1db728eb299985226321f5c386cb4ba54f5b26a063e99ff1ff40973b",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "58dd87cfc74d94ce1e1851c936f24261ccc57f321c4440becc5187286a266478",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "7213c88d6184d6a9f28046f7ea845b21263761867c7a72360513204e9f79ccac",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA60/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "5e7c7f87420b8ac245985d0e7915e67bca5ed0aeb0f76e62c0dee350a4f39deb",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA61/MATERIALLAGER_RESERVIERUNG.step",
+      "historical_sha256": "78d97d915ece7e1262350a159de12eaf21c0ec47170d0382200f1a8e1989693a",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA61/MANUELLER_TRANSPORTWEG.step",
+      "historical_sha256": "6b47f41e2accf87fff54a1141d68db9486403e463218bb4c7de6666d5cc5ddee",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA61/SPERRBEREICH_KEINE_FREILEGUNG.step",
+      "historical_sha256": "7563a1cb4f9561d4160a4368e84d5c962b5d4fefdb7f77d84749d6e3c6a64a1c",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA61/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "b168819342e1b20cf4e2ba5b63e846f305a97f3d3e1e57908c1fceedfff94b4d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA61/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "ccd6efa11ad3125f12b109bedf88f06874fd5740f0ab2442278e5b85a9ad04b4",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA61/BODENLAGER_REALE_KONZEPTMENGE.step",
+      "historical_sha256": "83565fb2e925fd5141a1f95ae4f91c016526366188464fdde338b48476a7cf26",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA62/BEREITS_ABGEDICHTET_GEDAEMMT_GESCHUETZT.step",
+      "historical_sha256": "4f5bf65ef027f6c15b1fe9d6b461f744039197c204eaa330dc6530230e8dd70d",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA62/BEREITS_WIEDERVERFUELLT.step",
+      "historical_sha256": "5551cb91a27a778a5066a1fcce7fe9fa2dca6bacc2e5b25b97debe015202dccd",
+      "available_in_handoff": false
+    },
+    {
+      "relative_path_in_missing_K01_package": "CAD/BA62/RESTBODEN_NICHT_ABGEFAHREN.step",
+      "historical_sha256": "f38cdb3ca9314e3ed4cccab527525c1dd07cf16e5fff2863d2fc3df1466d44ac",
+      "available_in_handoff": false
+    }
+  ],
+  "historical_CAD_files_counter": 541,
+  "note": "Dateiverweise aus einer historischen Vorschau; keine CAD-Dateien daraus erzeugt. Werte bleiben historische Studienwerte."
+}

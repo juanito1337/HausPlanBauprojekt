@@ -1,0 +1,70 @@
+{
+  "schema": "R11_VEGETATION_REVIEW_V1",
+  "source_document": "V11",
+  "review_is_metric_survey": false,
+  "geometry_date_bdom": "2023-04-07",
+  "identification_image_date": "2025-05-12",
+  "video_file": "Pxl 20261008 162732474-1.mp4",
+  "video_recording_date_independently_verified": false,
+  "groups": [
+    {
+      "id": "V01",
+      "include": true,
+      "status": "ERSCHEINUNGSBEREICH_PLAUSIBEL_WIEDERERKANNT",
+      "video": "03:18",
+      "reason": "Hecke hinter dem Stellplatzstreifen, Lage gegen Garage und Stellplatzkante vergleichbar. Keine Hoehenmessung im Video."
+    },
+    {
+      "id": "V02",
+      "include": true,
+      "status": "ERSCHEINUNGSBEREICH_PLAUSIBEL_WIEDERERKANNT",
+      "video": "01:10–01:14; 03:21",
+      "reason": "Zweiter Heckenabschnitt entlang des vorderen Parkplatzes. Grobe Bereichsidentitaet, kein Nachweis gleicher Schnittkontur."
+    },
+    {
+      "id": "V03",
+      "include": true,
+      "status": "ERSCHEINUNGSBEREICH_PLAUSIBEL_WIEDERERKANNT",
+      "video": "00:46–01:02",
+      "reason": "Gehölz-/Beetbereich vor der straßenseitigen Küche und links vom Fassadenfensterband. Abgrenzung nicht vermessen."
+    },
+    {
+      "id": "V04",
+      "include": false,
+      "status": "EINZELZUORDNUNG_OFFEN",
+      "video": "00:56–01:00",
+      "reason": "Niedriger Bewuchs und weitere Pflanzen sichtbar; keine sichere Einzelzuordnung der alten V04-Maske. Nicht als beseitigt interpretieren."
+    },
+    {
+      "id": "V05",
+      "include": true,
+      "status": "ERSCHEINUNGSBEREICH_PLAUSIBEL_WIEDERERKANNT",
+      "video": "01:20; 01:30–01:38",
+      "reason": "Runder Strauchbereich neben dem Balkonkörper wiedererkennbar; keine neue Stammposition, Art oder Hoehe behauptet."
+    },
+    {
+      "id": "V06",
+      "include": false,
+      "status": "NUR_TEILWEISE_BESTAETIGT_ODER_VERAENDERT",
+      "video": "00:10–00:18; 02:58–03:10; 03:29",
+      "reason": "Zaun-/Zufahrtbereich mit Erdarbeiten und lokalem Bewuchs. Alte durchgehende Abgrenzung nicht als aktueller Vollbestand uebernehmen."
+    },
+    {
+      "id": "V07",
+      "include": false,
+      "status": "TEILANSICHT_OHNE_GESAMTABGRENZUNG",
+      "video": "01:30–01:58",
+      "reason": "Heckenabschnitte am seitlichen Weg sichtbar, aber Gesamtgruppe und heutige Grenzkontur nicht hinreichend kontrollierbar."
+    },
+    {
+      "id": "V08",
+      "include": false,
+      "status": "TEILANSICHT_OHNE_GESAMTABGRENZUNG",
+      "video": "00:02–00:06; 02:28–02:46",
+      "reason": "Rueckseitiger Bewuchs sichtbar; die komplette alte R08-Grenzsaummaske nicht einwandfrei zugeordnet."
+    }
+  ],
+  "ground_cover_F01_include": false,
+  "ground_cover_reason": "DGM bleibt enthalten. Alte F01-Vegetations-/Bodenprojektion nicht als aktueller Pflanzbestand nach Erdarbeiten uebernommen.",
+  "note": "Aufgenommene Gruppen behalten alte offene CAD-Oberflaechen; Videouebereinstimmung bedeutet nur plausible Bereichsidentitaet. Nicht auf 2026 umdatiert. Ausgeschlossene Gruppen als unveraenderte STEP-Quellen weiterhin im Paket."
+}

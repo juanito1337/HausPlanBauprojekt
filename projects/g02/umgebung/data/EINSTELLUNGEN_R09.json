@@ -1,0 +1,12 @@
+{
+  "schema": "R09_SETTINGS_V1",
+  "build_house": true,
+  "output_root": "",
+  "step_settings_file": "",
+  "height_connection": {
+    "H_EG_zero_in_source_datum_m": null,
+    "source": "",
+    "common_vertical_datum_confirmed": false
+  },
+  "note": "Ohne Hoehenanschluss werden zwei getrennte Master erzeugt. Kein automatischer Offset aus Median, Fassade oder DGM. build_house=false erzeugt nur Umgebung."
+}

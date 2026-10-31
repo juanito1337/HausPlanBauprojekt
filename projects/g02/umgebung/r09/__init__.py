@@ -1,0 +1,1 @@
+__version__ = "R09-NX-ZUSAMMENFUEHRUNG"

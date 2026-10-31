@@ -1,0 +1,54 @@
+{
+  "basis/Haus_R06/data/haus.json": {
+    "sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+    "byte_identical_R09": true
+  },
+  "data/IMPORTAUFTRAG_R09.json": {
+    "sha256": "a48e4f2069db2af9471ce73a49ad03826536c35f929e1aadd75ba48425714978",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V02_R09.step": {
+    "sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V05_R09.step": {
+    "sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V01_R09.step": {
+    "sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/F01_R09.step": {
+    "sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/TEST_IMPORT_R09.step": {
+    "sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V04_R09.step": {
+    "sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step": {
+    "sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V03_R09.step": {
+    "sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V08_R09.step": {
+    "sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V07_R09.step": {
+    "sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+    "byte_identical_R09": true
+  },
+  "CAD_IMPORT/V06_R09.step": {
+    "sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+    "byte_identical_R09": true
+  }
+}

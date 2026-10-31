@@ -1,0 +1,10 @@
+{
+  "allow_estimates": false,
+  "show_review_consent": true,
+  "show_reference_curves": false,
+  "continue_on_feature_error": false,
+  "output_root": "",
+  "note": "MAIN01-A01: nur Haus; 45/28 Grad beibehalten, hintere Gaubendachanschluesse korrigiert. Ja erlaubt dokumentierte Annahmen; Nein Referenzgeruest.",
+  "revision": "MAIN01-A01",
+  "automatic_smoke_test": true
+}

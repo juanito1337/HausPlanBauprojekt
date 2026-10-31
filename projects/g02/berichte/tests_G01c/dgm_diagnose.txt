@@ -1,0 +1,23 @@
+test_01_exact_result (__main__.Tests.test_01_exact_result) ... ok
+test_02_true_error_retained (__main__.Tests.test_02_true_error_retained) ... ok
+test_03_wrong_input_detected (__main__.Tests.test_03_wrong_input_detected) ... ok
+test_04_inconsistent_distance (__main__.Tests.test_04_inconsistent_distance) ... ok
+test_05_nonfinite_rejected (__main__.Tests.test_05_nonfinite_rejected) ... ok
+test_06_invalid_result_rejected (__main__.Tests.test_06_invalid_result_rejected) ... ok
+test_07_negative_rejected (__main__.Tests.test_07_negative_rejected) ... ok
+test_08_coordinates_checked (__main__.Tests.test_08_coordinates_checked) ... ok
+test_09_bounded_twelve_calls (__main__.Tests.test_09_bounded_twelve_calls) ... ok
+test_10_seed_to_faces_not_body (__main__.Tests.test_10_seed_to_faces_not_body) ... ok
+test_11_meter_disagreement_retained (__main__.Tests.test_11_meter_disagreement_retained) ... ok
+test_12_exceptions_not_passed (__main__.Tests.test_12_exceptions_not_passed) ... ok
+test_13_persistent_offset_not_hidden (__main__.Tests.test_13_persistent_offset_not_hidden) ... ok
+test_14_inconsistent_results_flagged (__main__.Tests.test_14_inconsistent_results_flagged) ... ok
+test_15_pre_call_status_is_written (__main__.Tests.test_15_pre_call_status_is_written) ... ok
+test_16_bounded_faces (__main__.Tests.test_16_bounded_faces) ... ok
+test_17_output_is_json (__main__.Tests.test_17_output_is_json) ... ok
+test_18_no_part_write_apis (__main__.Tests.test_18_no_part_write_apis) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.014s
+
+OK

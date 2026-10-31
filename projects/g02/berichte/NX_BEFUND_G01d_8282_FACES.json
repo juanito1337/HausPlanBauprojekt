@@ -1,0 +1,18 @@
+{
+  "source_name": "STARTFEHLER_G01d_20261012_231858_556c0280.json",
+  "source_sha256": "3219be281ea4f5176f81cde86dfa5c1cdbf0d8b6890581c691079e28c254a759",
+  "actual_NX_report": true,
+  "NX_version": "v2406.0.0.8100",
+  "body_count": 1,
+  "face_counts": [
+    8282
+  ],
+  "source_STEP_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+  "source_exists": true,
+  "unchecked_snapshot_exists": true,
+  "checked_samples": 0,
+  "inferred_grid_cells": 8282,
+  "grid_cell_mapping_verified_by_report": false,
+  "old_error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+  "house_saved": true
+}

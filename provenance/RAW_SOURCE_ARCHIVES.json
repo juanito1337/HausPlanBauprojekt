@@ -1,0 +1,51 @@
+{
+  "schema": "HAUSPLAN_RAW_SOURCES_V1",
+  "note": "G02 enthält bereits seine benötigten Plan- und CAD-Quelldaten. Zusätzliche Originalpakete werden getrennt bereitgestellt, nicht als Altversionen des Programms eingebunden.",
+  "archives": [
+    {
+      "name": "Planos.zip",
+      "role": "Ursprüngliche Planunterlagen",
+      "bytes": 82843045,
+      "sha256": "8ef472a8ba1263a2cdb5f4689bbc01c348c5c30b83dae8c7b812fabd456f20ab",
+      "in_main_repository": false,
+      "delivery": "separate_original_sources_archives",
+      "required_for_G02_journal": false
+    },
+    {
+      "name": "Umbau.zip",
+      "role": "Ursprünglicher Umbau-Ordner",
+      "bytes": 40427489,
+      "sha256": "9043a1d243aa2de80d5b4496f4bb62e83b616144e57597f3612caa683770d543",
+      "in_main_repository": false,
+      "delivery": "separate_original_sources_archives",
+      "required_for_G02_journal": false
+    },
+    {
+      "name": "Mehrfachdownload_PCwv1B_3IiLfX.zip",
+      "role": "DGM-Originaldownload 2023",
+      "bytes": 3967453,
+      "sha256": "a8890f5d3fea5c29db6f55500abc7d36363ced5450ed9a80245ad02b90c95fe4",
+      "in_main_repository": false,
+      "delivery": "separate_original_sources_archives",
+      "required_for_G02_journal": false
+    },
+    {
+      "name": "Mehrfachdownload_UfZKh8_S7OWr5.zip",
+      "role": "bDOM-Originaldownload 2023",
+      "bytes": 78243675,
+      "sha256": "631024784fc3f4e22626e5b863b0dcce164d0bdd1b30dbcdd3ccd86f772a11e5",
+      "in_main_repository": false,
+      "delivery": "separate_original_sources_archives",
+      "required_for_G02_journal": false
+    },
+    {
+      "name": "Mehrfachdownload_1Wgwca_N4MVgo.zip",
+      "role": "DOP-Originaldownload 2025",
+      "bytes": 84568713,
+      "sha256": "da91d539eb8dceb879c42e7171629ef9e513dc03b39b144c7775b7b04fa47cac",
+      "in_main_repository": false,
+      "delivery": "separate_original_sources_archives",
+      "required_for_G02_journal": false
+    }
+  ]
+}

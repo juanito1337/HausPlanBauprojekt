@@ -1,0 +1,21 @@
+{
+  "schema": "MAIN01_LIEFERSTAND",
+  "revision": "MAIN01",
+  "date": "2026-10-09",
+  "scope": "HOUSE_ONLY_NO_STEP_OR_ENVIRONMENT",
+  "program_entry": "00_HAUS_MAIN01_ERZEUGEN.py",
+  "native_NX_execution_performed_here": false,
+  "real_PRTs_in_package": false,
+  "planned_components": 15,
+  "planned_solids": 1425,
+  "source_video_sha256": "f7039ff51aab1b966c81fdbf2a12ac8e8ad8f38f87766dc38e5564c96f5fdaac",
+  "input_sha256": "e199f69b6ecf2667f230773907edeee385e2ef620311944dc80d695e0d50cca2",
+  "offline_tests": 57,
+  "independent_CAD_kernel": "Open CASCADE",
+  "cad_bodies_checked": 1425,
+  "unresolved_collision_pairs": 10,
+  "blocked_openings": 2,
+  "as_built_verified": false,
+  "structural_approval": false,
+  "development_policy": "First working baseline; preserve generated native files separately after actual NX execution; no automatic carry-over of manual edits."
+}

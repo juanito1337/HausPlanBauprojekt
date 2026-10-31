@@ -1,0 +1,16 @@
+{
+  "status": "ABGEBROCHEN",
+  "patch": "R09b-STEP-FLAECHENPRUEFUNG",
+  "entry": "00_NX_MODELL_ERZEUGEN_2406.py",
+  "project_base": "C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b",
+  "error": "Gleichnamige Projektteile sind bereits geoeffnet. Eigene Arbeit speichern, diese Teile manuell schliessen und neu starten:\nC:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\ausgabe\\R09_20261008_083614_c1e4fe\\umgebung\\02_V01_HECKENBEREICH_R09.prt\nC:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\ausgabe\\R09_20261008_083614_c1e4fe\\umgebung\\01_GELAENDE_R09.prt",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\00_NX_MODELL_ERZEUGEN_2406.py\", line 37, in main\n    return run_project(base)\n  File \"C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\r09\\run.py\", line 130, in run_project\n    preflight_open_parts(nx,job,cfg['build_house'],house_part_files)\n  File \"C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\r09\\run.py\", line 91, in preflight_open_parts\n    raise RuntimeError('Gleichnamige Projektteile sind bereits geoeffnet. Eigene Arbeit speichern, '\nRuntimeError: Gleichnamige Projektteile sind bereits geoeffnet. Eigene Arbeit speichern, diese Teile manuell schliessen und neu starten:\nC:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\ausgabe\\R09_20261008_083614_c1e4fe\\umgebung\\02_V01_HECKENBEREICH_R09.prt\nC:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\ausgabe\\R09_20261008_083614_c1e4fe\\umgebung\\01_GELAENDE_R09.prt\n",
+  "python": "3.10.12 (main, Mar  5 2024, 17:56:48) [MSC v.1929 64 bit (AMD64)]",
+  "time": "2026-10-08T10:14:11.039442",
+  "note": "Kein vollstaendiger Erfolg; ggf. gespeicherte Teilergebnisse im Manifest gekennzeichnet.",
+  "r09_context": {
+    "output_directory": "C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\ausgabe\\R09_20261008_101410_e846a5",
+    "phase": "VORPRUEFUNG",
+    "operation": "INITIALISIERUNG"
+  }
+}

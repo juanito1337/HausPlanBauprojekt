@@ -1,0 +1,12 @@
+{
+  "schema": "GESAMT_G01_SETTINGS_V1",
+  "output_root": "",
+  "surface_validation": "BASIS",
+  "step_settings_file": "",
+  "height_connection": {
+    "H_EG_zero_in_source_datum_m": null,
+    "source": "",
+    "common_vertical_datum_confirmed": false
+  },
+  "note": "Haus MAIN01-A01 unveraendert. DGM G01b: direkter UV-Abgleich aller Rasterknoten/Zellmitten plus separate Randpruefung. BASIS/INTENSIV bleibt fuer Vegetation; INTENSIV fordert zusaetzlich DGM-Flaecheninhalt. Hoehenanschluss weiterhin offen."
+}

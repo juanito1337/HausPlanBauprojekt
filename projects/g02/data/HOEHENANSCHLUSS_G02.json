@@ -1,0 +1,13 @@
+{
+  "schema": "H01_HEIGHT_SETTINGS_V1",
+  "mode": "PLAN_ANNAHME",
+  "anchor_xy_mm": [
+    0,
+    -500
+  ],
+  "ground_z_relative_eg_mm": -300,
+  "source": "P13 Schnitt A-A, 14.06.1995: Aussenkote -0.30 m / EG +/-0.00. Uebertragung auf den gewaehlten Modellpunkt (0,-500 mm) ist eine unbestaetigte Modellannahme; kein im Plan exakt zugeordneter Messpunkt. DGM-Jahreskennung 2023.",
+  "absolute_eg_source_m": null,
+  "common_vertical_datum_confirmed": false,
+  "note": "Nur nach bewusster Bestaetigung im NX-Dialog. Die Ankerlage 0.5 m vor der bisherigen lokalen Hausecke ist gewaehlt, nicht vermessen. Terrain/Vegetation werden als ganze Baugruppe verschoben, keine Gelaendeverformung."
+}

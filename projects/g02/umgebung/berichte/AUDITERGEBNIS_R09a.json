@@ -1,0 +1,116 @@
+{
+  "patch": "R09a-LEITUNGSPRUEFUNG",
+  "review_date": "2026-10-07",
+  "scope": "9 Original-Tiefbau-PDFs visuell/textlich; gesamter numerischer Hausbauauftrag und R09-Integration automatisch geprüft. Keine erneute Volltranskription aller Architektur-PDFs; kein NX-Lauf.",
+  "documents": 9,
+  "pages": 15,
+  "routes": 25,
+  "general_rule_rows": 5,
+  "confirmed_individual_depths": 0,
+  "projected_utility_line_segments": 45,
+  "new_physical_depth_values": 0,
+  "new_networks": 0,
+  "house_body_orders": 1165,
+  "environment_model_faces": 585,
+  "house_collision_pairs_open": 10,
+  "blocked_openings": 2,
+  "offline_test_suites": {
+    "house": 380,
+    "integration_and_depth": 87,
+    "unique_total": 467,
+    "new_vs_R09": 28
+  },
+  "actual_step_check": {
+    "status": "OCCT_STEP_RUECKIMPORT_BESTANDEN",
+    "files": 11,
+    "model_faces": 585,
+    "test_faces": 2,
+    "point_to_face_samples": 3516,
+    "max_point_to_face_distance_mm": 8.39504580339755e-09,
+    "parts": [
+      {
+        "id": "DGM",
+        "faces": 1,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 0.0
+      },
+      {
+        "id": "V01",
+        "faces": 49,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 5.002220859751105e-09
+      },
+      {
+        "id": "V02",
+        "faces": 27,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 5.016772774979472e-09
+      },
+      {
+        "id": "V03",
+        "faces": 21,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 4.998582880944014e-09
+      },
+      {
+        "id": "V04",
+        "faces": 13,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 5.995389074087143e-09
+      },
+      {
+        "id": "V05",
+        "faces": 17,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 5.002220859751105e-09
+      },
+      {
+        "id": "V06",
+        "faces": 83,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 4.998582880944014e-09
+      },
+      {
+        "id": "V07",
+        "faces": 140,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 7.106791599653661e-08
+      },
+      {
+        "id": "V08",
+        "faces": 32,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 5.002220859751105e-09
+      },
+      {
+        "id": "F01",
+        "faces": 202,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 4.993125912733376e-09
+      },
+      {
+        "id": "TEST",
+        "faces": 2,
+        "valid_open_geometry": true,
+        "max_bbox_error_mm": 5.002220859751105e-09
+      }
+    ],
+    "NX_tested": false,
+    "scope": "Echte STEP-Dateien, CAD-Pruefung in Open CASCADE; kein NX-Translator und kein Bestandsnachweis."
+  },
+  "real_NX_execution": false,
+  "geometry_change": false,
+  "rules_are_safe_depth_bounds": false,
+  "new_code_checks": [
+    "Preflight gegen alle vorgesehenen Haus-Partnamen vor STEP-Import",
+    "Eindeutige Linien-IDs, keine Nullsegmente, konsistente Segmentanzahl",
+    "Tiefenregister/Originalquellen/Betreiberbezug prüfen; keine Regeltiefe als Isttiefe"
+  ],
+  "model_limitations": [
+    "Keine verifizierte Leitungstiefe",
+    "Höhenanschluss Haus/Umgebung fehlt",
+    "DGM-spezifischer Höhendatumnachweis fehlt",
+    "Kartenrestabweichungen unverändert",
+    "Kein bestätigter Tragwerksbestand"
+  ]
+}

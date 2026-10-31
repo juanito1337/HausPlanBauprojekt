@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-31",
+  "G02_offline_tests_passed": 680,
+  "repository_tests_passed": 28,
+  "G02_files_byte_identical": 543,
+  "K01_original_documents_byte_identical": 8,
+  "K01_JSON_extracted_without_JS_execution": true,
+  "K01_CAD_references_in_JSON": 541,
+  "K01_CAD_files_available": 0,
+  "JSON_files_parsed": 180,
+  "invalid_JSON_files": [],
+  "source_archives_crc": {
+    "Planos.zip": true,
+    "Umbau.zip": true,
+    "Mehrfachdownload_PCwv1B_3IiLfX.zip": true,
+    "Mehrfachdownload_UfZKh8_S7OWr5.zip": true,
+    "Mehrfachdownload_1Wgwca_N4MVgo.zip": true
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "NX_run_performed": false,
+  "new_CAD_kernel_test_performed": false,
+  "GitHub_Actions_run_performed": false,
+  "remote_push_performed": false
+}

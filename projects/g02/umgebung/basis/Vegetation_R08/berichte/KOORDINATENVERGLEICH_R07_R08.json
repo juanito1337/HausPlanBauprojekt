@@ -1,0 +1,6 @@
+{
+  "R07_nodes_checked": 8466,
+  "max_local_xy_difference_mm": 4.999747034162283e-07,
+  "terrain_step_byte_identical": true,
+  "meaning": "Rounding of R07 CSV, not survey accuracy; no inferred EG height"
+}

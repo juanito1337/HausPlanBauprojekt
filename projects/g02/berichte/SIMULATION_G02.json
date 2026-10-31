@@ -1,0 +1,26 @@
+{
+  "status": "G02_FULL_AND_REUSE_SIMULATIONS_PASSED",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "house_bodies": 1418,
+  "house_components": 15,
+  "synthetic_DGM_faces": 8282,
+  "source_components_files_unchanged": true,
+  "step_imports_full": 6,
+  "step_imports_reuse": 0,
+  "extrusion_features_reuse": 0,
+  "dirty_old_master_unchanged_and_not_read_as_source": true,
+  "partially_loaded_house_loaded_once": true,
+  "dirty_source_component_rejected": true,
+  "environment_translation_mm": [
+    0.0,
+    0.0,
+    -31362.49870845903
+  ],
+  "anchor_error_mm": 0.0,
+  "height_shift_not_accumulated": true,
+  "utility_segments": 45,
+  "as_built_verified": false,
+  "temporary_files_are_not_native_NX_parts": true,
+  "note": "Real supplied Python workflow with synthetic NX bindings and synthetic surface/edge replies. No measured NX runtime."
+}

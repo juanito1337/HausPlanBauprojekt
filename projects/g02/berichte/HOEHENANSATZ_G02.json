@@ -1,0 +1,84 @@
+{
+  "schema": "G02_HEIGHT_PLAN_V1",
+  "mode": "PLAN_ANNAHME",
+  "status": "PLANANNAHME_KEIN_VERMESSENER_BESTAND",
+  "source": "P13 Schnitt A-A, 14.06.1995: Aussenkote -0.30 m / EG +/-0.00. Uebertragung auf den gewaehlten Modellpunkt (0,-500 mm) ist eine unbestaetigte Modellannahme; kein im Plan exakt zugeordneter Messpunkt. DGM-Jahreskennung 2023.",
+  "anchor": {
+    "xy_mm": [
+      0.0,
+      -500.0
+    ],
+    "source_z_mm": 31062.49870845903,
+    "grid_uv": [
+      48.38893203969948,
+      47.14543627315287
+    ],
+    "indices": [
+      4031,
+      4114,
+      4115,
+      4032
+    ],
+    "weights": [
+      0.5221965135112852,
+      0.33236721333584734,
+      0.05656482636363598,
+      0.08887144678923158
+    ],
+    "support_points_mm": [
+      [
+        65.2981031,
+        -910.0682897,
+        31030.0
+      ],
+      [
+        263.8963452,
+        70.0126958,
+        31120.0
+      ],
+      [
+        -716.1846403,
+        268.610938,
+        31060.0
+      ],
+      [
+        -914.7828825,
+        -711.4700476,
+        31040.0
+      ]
+    ]
+  },
+  "target_ground_z_mm": -300.0,
+  "translation_mm": [
+    0.0,
+    0.0,
+    -31362.49870845903
+  ],
+  "effective_EG_zero_in_source_m": 31.36249870845903,
+  "absolute_height_independently_verified": false,
+  "site_alignment_surveyed": false,
+  "geometry_deformed": false,
+  "xy_changed": false,
+  "rotation_changed": false,
+  "source_grid_sha256": "55b08470f5f80120865d40e7faee587b5a91c65f3fb2a216340b85dfccc7d7a1",
+  "source_step_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+  "datum_confirmation_is_user_claim": false,
+  "settings_file": "data/HOEHENANSCHLUSS_G02.json",
+  "settings_sha256": "a565318eaed01f741615c91be954f76e8b85c4ef790797bbe33c6607006cd341",
+  "DGM_grid_file": "data/DGM_STUETZPUNKTE_G02.json",
+  "DGM_grid_file_sha256": "da981e278a8bbd3545c467491c0684132b5969c36e6ee7e2506498d7a8a512f9",
+  "applies_to": [
+    "GELAENDE",
+    "V01",
+    "V02",
+    "V03",
+    "V05",
+    "KARTENREFERENZEN"
+  ],
+  "excludes": [
+    "HAUS",
+    "LEITUNGSPLAN_Z0"
+  ],
+  "applied_exactly_once_at_environment_parent": true,
+  "local_source_parts_remain_at_original_source_heights": true
+}

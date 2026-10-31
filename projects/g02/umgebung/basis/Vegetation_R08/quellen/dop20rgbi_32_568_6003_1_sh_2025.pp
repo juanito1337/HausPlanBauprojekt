@@ -1,0 +1,72 @@
+#-----------------------------------------------------------------------------------
+#ID,    Name,                   Gewicht,BS      Rechts,         Hoch
+#-----------------------------------------------------------------------------------
+1,      links  unten,           1.0,    0,      568000.000,     6003000.000
+2,      rechts unten,           1.0,    0,      569000.000,     6003000.000
+3,      rechts oben,            1.0,    0,      569000.000,     6004000.000
+4,      links  oben,            1.0,    0,      568000.000,     6004000.000
+#-----------------------------------------------------------------------------------
+#       Pixelkoordinaten (Ausgabe 2025)
+#1      links  unten                                     1,               1
+#2      rechts unten                                  5000,               1
+#3      rechts oben                                   5000,            5000
+#4      links  oben                                      1,            5000
+#-----------------------------------------------------------------------------------
+#Rechtswert: 5000
+#Hochwert: 5000
+#-----------------------------------------------------------------------------------
+#   4           3
+#   +-----------+
+#   |           |
+#   |           |
+#   |           |
+#   |           |
+#   |           |
+#   +-----------+
+#   1           2
+#-----------------------------------------------------------------------------------
+####################################################################################
+#                                META-DATEN DER DOP                                #
+####################################################################################
+# Land:                                Schleswig-Holstein                          #
+# Eigentümer:                          Landesamt für Vermessung und Geoinformation #
+#                                      Schleswig-Holstein (LVermGeo SH)            #
+# Aktualität_Kachelinformationen       26.08.2025                                  #
+# Version_Standard:                    V4.1                                        #
+# Kachel-10km:                         32560_6000                                  #
+# Kachelname:                          dop20rgbi_32_568_6003_1_sh_2025             #
+# Erfassungsmethode:                   0                                           #
+# Aktualität:                          12.05.2025                                  #
+# Bildflugnummer:                      TK1_25                                      #
+# Kamera_Sensor:                       UltraCam Eagle M3, 431S91898X119229-f100    #
+# Bodenpixelgrösse:                    20                                          #
+# Flughöhe:                            ca. 2285 m                                  #
+# Luftbild-Auflösung:                  9 cm                                        #
+# Spektralkanäle:                      RGBI                                        #
+# Koordinatenreferenzsystem_Lage:      25832                                       #
+# Koordinatenreferenzsystem_Höhe:      7837                                        #
+# Bezugsfläche:                        bDOM                                        #
+# DGM-Bezeichnung:                                                                 #
+# DGM-Gitterweite:                                                                 #
+# Koordinatenursprung_East:            568000                                      #
+# Koordinatenursprung_North:           6003000                                     #
+# DOP-Ausdehnung:                      1.0 x 1.0 km                                #
+# DOP-Maßstab:                         1 : 5000                                    #
+# Herstellung des DOP:                 26.08.2025                                  #
+# Anzahl_Spalten:                      5000                                        #
+# Anzahl_Zeilen:                       5000                                        #
+# Farbtiefe:                           8                                           #
+# Standardabweichung:                  40                                          #
+# Dateiformat:                         GeoTIFF                                     #
+# Hintergrund:                         0                                           #
+# Hintergrundwert:                     255                                         #
+# Quelldatenqualität:                  0                                           #
+# Kompression:                         0                                           #
+# Komprimierung:                       0                                           #
+# Belaubung:                           0                                           #
+# Bemerkungen:                         keine                                       #
+####################################################################################
+#                                                                                  #
+#          Landesamt für Vermessung und Geoinformation Schleswig-Holstein          #
+#                                                                                  #
+####################################################################################

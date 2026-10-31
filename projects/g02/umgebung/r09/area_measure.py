@@ -1,0 +1,307 @@
+# -*- coding: utf-8 -*-
+"""NX surface-area measurement without the failing relative-tolerance mass call.
+
+Only measures the actual imported body. This module NEVER receives a source area.
+Primary: MeasureManager.NewFaceProperties, all faces, explicit mm^2 / mm.
+Bounded fallback: UF AskMassProps3d, thin-shell, fixed accuracy mode 1, cm^2.
+Two requested accuracies are the fast path. If that initial pair is not stable,
+refine the SAME measurement method on a fixed finite schedule. Three consecutive
+fine evaluations must fit the unchanged stability band. Never pick a convenient
+value, loosen a tolerance, average results or substitute a source area.
+NX exceptions may trigger the pre-existing independent fixed-mode fallback;
+lack of numerical convergence by itself NEVER triggers an alternative method.
+A successful measurement is NOT a successful source-geometry comparison.
+No new material, density, features or body geometry are assigned by this module.
+Python standard library only; actual NX bindings still require an NX test.
+"""
+import math
+import sys
+from .core import finite_number
+
+ACCURACY_VALUES = (0.999, 0.9999)
+REFINEMENT_ACCURACIES = (0.99999, 0.999999, 0.9999999)
+ACCURACY_SCHEDULE = ACCURACY_VALUES + REFINEMENT_ACCURACIES
+REFINED_WINDOW_SIZE = 3
+STABILITY_RELATIVE = 0.0001
+STABILITY_ABSOLUTE_MM2 = 0.1
+PRIMARY = 'MeasureManager.NewFaceProperties'
+FALLBACK = 'UF.Modeling.AskMassProps3d_FIXED_ACCURACY'
+
+
+class SurfaceAreaMeasurementError(RuntimeError):
+    """No usable area was measured; never convert this exception into a pass."""
+
+
+class _NXCallFailed(Exception):
+    """Only actual NX call exceptions are eligible for the bounded fallback."""
+    def __init__(self, original):
+        super().__init__(str(original))
+        self.original = original
+
+
+def error_details(error):
+    result = {'error': str(error), 'exception_type': type(error).__name__}
+    code = getattr(error, 'ErrorCode', None)
+    try:
+        if code is not None:
+            result['nx_error_code'] = int(code)
+    except (TypeError, ValueError, OverflowError):
+        result['nx_error_code_unreadable'] = repr(code)
+    return result
+
+
+def runtime_information(adapter):
+    """Best-effort diagnostics. Missing optional version fields cannot stop CAD."""
+    info = {'python': sys.version, 'nx_version_inferred_from_python': False}
+    for name in ('UGII_VERSION', 'UGII_FULL_VERSION', 'UGII_BASE_DIR'):
+        try:
+            value = adapter.session.GetEnvironmentVariableValue(name)
+            info[name] = str(value) if value else None
+        except Exception as error:
+            info[name] = None
+            info[name + '_read_error'] = str(error)
+    return info
+
+
+def _positive_area(value):
+    area = finite_number(value, 'NX-Flaecheninhalt [mm2]')
+    if area <= 0:
+        raise ValueError('NX-Flaecheninhalt muss positiv sein.')
+    return area
+
+
+def _nx_exception(adapter, error):
+    cls = getattr(adapter.N, 'NXException', None)
+    return isinstance(cls, type) and isinstance(error, cls)
+
+
+def _face_measure(adapter, part, faces, accuracy, row):
+    # Explicit named units instead of an implicit base unit or imperial output.
+    area_unit = part.UnitCollection.FindObject('SquareMilliMeter')
+    length_unit = part.UnitCollection.FindObject('MilliMeter')
+    if area_unit is None or length_unit is None:
+        raise RuntimeError('NX-Einheiten SquareMilliMeter/MilliMeter fehlen.')
+    row.update({'area_unit': 'mm2', 'length_unit': 'mm', 'face_count': len(faces),
+                'requested_accuracy': accuracy})
+    measurement = None
+    pending = None
+    value = None
+    try:
+        measurement = part.MeasureManager.NewFaceProperties(
+            area_unit, length_unit, accuracy, faces)
+        if measurement is None:
+            raise RuntimeError('NewFaceProperties lieferte kein Messobjekt.')
+        value = _positive_area(measurement.Area)
+        row['area_mm2'] = value
+    except Exception as error:
+        pending = error
+        row.update(error_details(error))
+    finally:
+        if measurement is not None:
+            try:
+                # Dispose releases transient measurement data. No CreateFeature.
+                measurement.Dispose()
+                row['disposed'] = True
+            except Exception as cleanup_error:
+                row['disposed'] = False
+                row['cleanup_error'] = error_details(cleanup_error)
+                if pending is None:
+                    pending = cleanup_error
+    if pending is not None:
+        # A failed cleanup or invalid return is NOT a signal to try another API.
+        if 'cleanup_error' not in row and _nx_exception(adapter, pending):
+            raise _NXCallFailed(pending) from pending
+        raise pending
+    return value
+
+
+def _uf_measure(adapter, body, accuracy, row):
+    values = [accuracy] + [0.0] * 10
+    row.update({'analysis_type': 2, 'unit_code': 3, 'returned_area_unit': 'cm2',
+                'accuracy_mode': 1, 'requested_accuracy': accuracy,
+                'area_to_mm2_factor': 100.0})
+    try:
+        # Type 2 = sheet/thin shell; units 3 = gram/cm. Accuracy 1 is FIXED.
+        # The former accuracy=2, acc_value[0]=1e-7 call is intentionally absent.
+        # Density is a numerical input only; not assigned to the part/body.
+        result = adapter.uf.Modeling.AskMassProps3d(
+            [body.Tag], 1, 2, 3, 1.0, 1, values)
+    except Exception as error:
+        row.update(error_details(error))
+        if _nx_exception(adapter, error):
+            raise _NXCallFailed(error) from error
+        raise
+    if not isinstance(result, (tuple, list)) or len(result) != 2:
+        raise RuntimeError('AskMassProps3d-Rueckgabe ungueltig; zwei Ergebnisfelder erwartet.')
+    props, stats = result
+    if len(props) != 47 or len(stats) != 13:
+        raise RuntimeError('AskMassProps3d-Rueckgabefelder unvollstaendig.')
+    area = _positive_area(finite_number(props[0], 'UF-Flaecheninhalt [cm2]') * 100.0)
+    row['area_mm2'] = area
+    return area
+
+
+def _pair_result(values):
+    if len(values) != 2:
+        raise RuntimeError('Zwei vollstaendige Flaechenmessungen erforderlich.')
+    low, high = map(_positive_area, values)
+    delta = abs(high-low)
+    limit = max(STABILITY_ABSOLUTE_MM2, STABILITY_RELATIVE * abs(high))
+    return {'area_mm2': high, 'area_at_first_accuracy_mm2': low,
+            'repeat_delta_mm2': delta, 'repeat_limit_mm2': limit,
+            'stable': delta <= limit,
+            'scope': 'Numerischer Konvergenzvergleich von NX-Auswertungen; '
+                     'kein bewiesener Integrationsfehler und kein Bestandsnachweis.'}
+
+
+def _stable_pair(values):
+    """Strict historical two-value check, also retained for regression tests."""
+    result = _pair_result(values)
+    if not result['stable']:
+        raise RuntimeError('NX-Flaechenmessungen nicht stabil: Differenz %.9g mm2 '
+                           '> %.9g mm2; keine Freigabe.' %
+                           (result['repeat_delta_mm2'], result['repeat_limit_mm2']))
+    return result
+
+
+def _measure_series(adapter, part, body, faces, method, attempt, diagnostic):
+    """A source-independent, bounded refinement; no same-accuracy retries.
+
+    Stable first pair: same fast path as R09d. Unstable first pair: require the
+    complete range of the latest THREE fine values to fit the original band.
+    Two individually small but cumulatively excessive changes do not qualify.
+    The newest value is always selected, never the one nearest the STEP source.
+    """
+    values = []
+    refinement = False
+    attempt['comparisons'] = []
+    for index, accuracy in enumerate(ACCURACY_SCHEDULE):
+        if index >= len(ACCURACY_VALUES):
+            adapter.log('Flaechenmessung Body %s: verfeinerte Auswertung %d/%d, '
+                        'accuracy=%.7f; Akzeptanzgrenzen unveraendert.' %
+                        (body.Tag, index+1, len(ACCURACY_SCHEDULE), accuracy))
+        row = {'requested_accuracy': accuracy}
+        attempt['measurements'].append(row)
+        diagnostic['requested_accuracies'] = [r['requested_accuracy']
+                                              for r in attempt['measurements']]
+        if method == PRIMARY:
+            area = _face_measure(adapter, part, faces, accuracy, row)
+        else:
+            area = _uf_measure(adapter, body, accuracy, row)
+        values.append(area)
+        if len(values) < 2:
+            continue
+        pair = _pair_result(values[-2:])
+        attempt['comparisons'].append(dict(pair, evaluation_count=len(values)))
+        if len(values) == 2:
+            if pair['stable']:
+                attempt['refinement_used'] = False
+                return dict(pair, refinement_used=False, measurement_count=2,
+                            convergence_window_size=2,
+                            convergence_span_mm2=pair['repeat_delta_mm2'],
+                            convergence_limit_mm2=pair['repeat_limit_mm2'],
+                            selected_accuracy=accuracy)
+            refinement = True
+            attempt['refinement_used'] = True
+            diagnostic['refinement_used'] = True
+            adapter.log('Flaechenmessung Body %s: erste Differenz %.9g mm2 '
+                        '> %.9g mm2. Noch kein Formfehler nachgewiesen; '
+                        'begrenzte Nachmessung mit feineren Vorgaben.' %
+                        (body.Tag, pair['repeat_delta_mm2'], pair['repeat_limit_mm2']))
+        # Do not let the first coarse evaluation constrain the refined window.
+        # At least three fine measurements (.9999 or finer) are necessary.
+        if refinement and len(values) >= REFINED_WINDOW_SIZE+1:
+            window = values[-REFINED_WINDOW_SIZE:]
+            span = max(window) - min(window)
+            limit = max(STABILITY_ABSOLUTE_MM2, STABILITY_RELATIVE * abs(values[-1]))
+            comparison = {'evaluation_count':len(values),
+                          'window_accuracies':list(ACCURACY_SCHEDULE[index-2:index+1]),
+                          'window_values_mm2':list(window),
+                          'span_mm2':span, 'limit_mm2':limit, 'passed':span <= limit}
+            attempt.setdefault('refined_windows', []).append(comparison)
+            if comparison['passed']:
+                return dict(pair, area_at_first_accuracy_mm2=values[0],
+                            refinement_used=True, measurement_count=len(values),
+                            convergence_window_size=REFINED_WINDOW_SIZE,
+                            convergence_span_mm2=span, convergence_limit_mm2=limit,
+                            selected_accuracy=accuracy)
+    attempt['status'] = 'KONVERGENZ_NICHT_ERREICHT'
+    raise RuntimeError('NX-Flaechenmessungen nicht stabil nach %d Auswertungen '
+                       'derselben Methode. Drei aufeinanderfolgende feine Werte '
+                       'passen nicht in max(%.9g mm2, %.7g relativ). '
+                       'Keine Geometriefreigabe; keine gelockerten Grenzwerte.' %
+                       (len(values), STABILITY_ABSOLUTE_MM2, STABILITY_RELATIVE))
+
+
+def measure_surface_area(adapter, body):
+    """Return actual converged area, or stop. No source-guess fallback."""
+    part = body.OwningPart
+    diagnostic = {'status': 'MESSUNG_LAEUFT', 'body_tag': int(body.Tag),
+                  'part_file': str(part.FullPath),
+                  'requested_accuracies': [], 'attempts': [],
+                  'accuracy_schedule': list(ACCURACY_SCHEDULE),
+                  'maximum_measurements_per_method': len(ACCURACY_SCHEDULE),
+                  'refined_window_size': REFINED_WINDOW_SIZE,
+                  'stability_relative': STABILITY_RELATIVE,
+                  'stability_absolute_mm2': STABILITY_ABSOLUTE_MM2,
+                  'refinement_used': False,
+                  'relative_tolerance_mass_mode_used': False,
+                  'source_value_as_fallback_allowed': False,
+                  'geometry_changed': False}
+    try:
+        if body.IsSolidBody:
+            raise RuntimeError('Offener Flaechenkoerper fuer STEP-Flaechenmessung erwartet.')
+        faces = list(body.GetFaces())
+        if not faces:
+            raise RuntimeError('Importierter Sheet ohne Faces.')
+        if any(getattr(face, 'OwningPart', None) is None or
+               face.OwningPart.Tag != part.Tag for face in faces):
+            raise RuntimeError('Flaechenmessung enthaelt Faces aus einem fremden Part.')
+        # A duplicate face would be double-counted. Tags must be unique.
+        if len({int(f.Tag) for f in faces}) != len(faces):
+            raise RuntimeError('Doppelte Face-Tags bei der Flaechenmessung.')
+        diagnostic['nx_faces'] = len(faces)
+        manager = getattr(part, 'MeasureManager', None)
+        modeling = getattr(adapter.uf, 'Modeling', None)
+        available = {
+            PRIMARY: callable(getattr(manager, 'NewFaceProperties', None)),
+            FALLBACK: callable(getattr(modeling, 'AskMassProps3d', None))}
+        diagnostic['available'] = available
+        last_error = None
+        for method in (PRIMARY, FALLBACK):
+            attempt = {'method': method, 'measurements': []}
+            diagnostic['attempts'].append(attempt)
+            if not available[method]:
+                attempt['status'] = 'API_NICHT_VERFUEGBAR'
+                continue
+            try:
+                repeated = _measure_series(adapter, part, body, faces, method,
+                                           attempt, diagnostic)
+            except _NXCallFailed as failure:
+                last_error = failure.original
+                attempt.update({'status': 'NX_MESSAUFRUF_FEHLGESCHLAGEN',
+                                **error_details(failure.original)})
+                adapter.log('Flaechenmessung: %s fehlgeschlagen, Body %s: %s' %
+                            (method, body.Tag, failure.original))
+                continue
+            attempt['status'] = ('VERFEINERTE_MESSREIHE_STABIL' if repeated['refinement_used']
+                                 else 'ZWEI_MESSUNGEN_STABIL')
+            attempt.update(repeated)
+            diagnostic.update({'status': 'FLAECHENINHALT_GEMESSEN',
+                               'selected_method': method,
+                               'fallback_used': method == FALLBACK, **repeated})
+            if method == FALLBACK:
+                warning = ('STEP-Flaechenmessung Body %s: dokumentierter UF-Ersatzweg '
+                           'mit festem Genauigkeitswert, kein Quellwert-Ersatz; Details im Importbericht.' % body.Tag)
+                adapter.warnings.append(warning)
+                adapter.log(warning)
+            return repeated['area_mm2'], diagnostic
+        if last_error is not None:
+            raise last_error
+        raise RuntimeError('Keine verfuegbare NX-Flaechenmessmethode.')
+    except Exception as error:
+        diagnostic.update({'status': 'FLAECHENMESSUNG_ABGEBROCHEN', **error_details(error)})
+        wrapped = SurfaceAreaMeasurementError(
+            'NX-Flaechenmessung fehlgeschlagen; keine Geometriefreigabe. ' + str(error))
+        wrapped.nx_area_measurement = diagnostic
+        raise wrapped from error

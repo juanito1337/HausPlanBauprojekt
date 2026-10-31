@@ -1,0 +1,29 @@
+test_01_new_import_source_exists_and_matches_hash (__main__.DeliveryTests.test_01_new_import_source_exists_and_matches_hash) ... ok
+test_02_original_file_still_present_unchanged (__main__.DeliveryTests.test_02_original_file_still_present_unchanged) ... ok
+test_03_step_bytes_changed_not_called_byte_identical (__main__.DeliveryTests.test_03_step_bytes_changed_not_called_byte_identical) ... ok
+test_04_all_16748_source_points_identical (__main__.DeliveryTests.test_04_all_16748_source_points_identical) ... ok
+test_05_no_box_or_unit_change (__main__.DeliveryTests.test_05_no_box_or_unit_change) ... ok
+test_06_step_has_366_explicit_3d_lines (__main__.DeliveryTests.test_06_step_has_366_explicit_3d_lines) ... ok
+test_07_old_declaration_not_used_as_current_import (__main__.DeliveryTests.test_07_old_declaration_not_used_as_current_import) ... ok
+test_08_unchanged_limits (__main__.DeliveryTests.test_08_unchanged_limits) ... ok
+test_09_fixture_is_actual_failed_NX_report (__main__.DeliveryTests.test_09_fixture_is_actual_failed_NX_report) ... ok
+test_10_evidence_reports_all_carrier_samples_only (__main__.DeliveryTests.test_10_evidence_reports_all_carrier_samples_only) ... ok
+test_11_failed_probe_is_original_grid_knot (__main__.DeliveryTests.test_11_failed_probe_is_original_grid_knot) ... ok
+test_12_raw_returned_point_still_outside_025mm (__main__.DeliveryTests.test_12_raw_returned_point_still_outside_025mm) ... ok
+test_13_actual_285_endpoint_chains_cover_sides (__main__.DeliveryTests.test_13_actual_285_endpoint_chains_cover_sides) ... ok
+test_14_source_boundary_segments_use_existing_nodes (__main__.DeliveryTests.test_14_source_boundary_segments_use_existing_nodes) ... ok
+test_15_corrupt_source_identity_rejected (__main__.DeliveryTests.test_15_corrupt_source_identity_rejected) ... ok
+test_16_historical_reference_points_match_new_source (__main__.DeliveryTests.test_16_historical_reference_points_match_new_source) ... ok
+test_17_new_full_366_segment_simulation (__main__.IntegrationTests.test_17_new_full_366_segment_simulation) ... ok
+test_18_actual_0263727_replay_not_silently_accepted (__main__.IntegrationTests.test_18_actual_0263727_replay_not_silently_accepted) ... ok
+test_19_even_0251_mm_still_rejected (__main__.IntegrationTests.test_19_even_0251_mm_still_rejected) ... ok
+test_20_true_2mm_internal_deformation_still_rejected (__main__.IntegrationTests.test_20_true_2mm_internal_deformation_still_rejected) ... ok
+test_21_missing_boundary_segment_rejected (__main__.IntegrationTests.test_21_missing_boundary_segment_rejected) ... ok
+test_22_terrain_only_uses_packaged_new_source (__main__.IntegrationTests.test_22_terrain_only_uses_packaged_new_source) ... ok
+test_23_no_surface_integration_or_body_distance (__main__.IntegrationTests.test_23_no_surface_integration_or_body_distance) ... ok
+test_24_failure_retains_unverified_file (__main__.IntegrationTests.test_24_failure_retains_unverified_file) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 30.870s
+
+OK

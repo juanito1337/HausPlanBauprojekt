@@ -1,0 +1,9 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "cadquery": "2.8.0",
+  "rasterio": "1.5.0",
+  "scipy": "1.17.0",
+  "numpy": "2.3.5",
+  "shapely": "2.1.2",
+  "NX_installed_or_tested": false
+}

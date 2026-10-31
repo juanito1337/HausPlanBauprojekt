@@ -1,0 +1,96 @@
+{
+  "parts": [
+    {
+      "id": "DGM",
+      "source_faces": 1,
+      "samples": 16748,
+      "area_mm2": 8361908309.75328,
+      "max_area_quadrature_relative_delta": 2.280996827707116e-16,
+      "step_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61"
+    },
+    {
+      "id": "V01",
+      "source_faces": 49,
+      "samples": 1920,
+      "area_mm2": 30160159.5774546,
+      "max_area_quadrature_relative_delta": 2.725478984505527e-15,
+      "step_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d"
+    },
+    {
+      "id": "V02",
+      "source_faces": 27,
+      "samples": 1222,
+      "area_mm2": 21575130.727684084,
+      "max_area_quadrature_relative_delta": 2.1222004347502016e-15,
+      "step_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2"
+    },
+    {
+      "id": "V03",
+      "source_faces": 21,
+      "samples": 452,
+      "area_mm2": 7269853.05534229,
+      "max_area_quadrature_relative_delta": 3.085948357519503e-15,
+      "step_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098"
+    },
+    {
+      "id": "V04",
+      "source_faces": 13,
+      "samples": 299,
+      "area_mm2": 4173336.8453774117,
+      "max_area_quadrature_relative_delta": 1.9092077371539197e-15,
+      "step_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca"
+    },
+    {
+      "id": "V05",
+      "source_faces": 17,
+      "samples": 541,
+      "area_mm2": 8561681.523631722,
+      "max_area_quadrature_relative_delta": 1.770202003548623e-15,
+      "step_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a"
+    },
+    {
+      "id": "V06",
+      "source_faces": 83,
+      "samples": 2465,
+      "area_mm2": 40192658.9535595,
+      "max_area_quadrature_relative_delta": 3.279707951100554e-15,
+      "step_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8"
+    },
+    {
+      "id": "V07",
+      "source_faces": 140,
+      "samples": 5160,
+      "area_mm2": 84408089.36600882,
+      "max_area_quadrature_relative_delta": 6.092631706051921e-14,
+      "step_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771"
+    },
+    {
+      "id": "V08",
+      "source_faces": 32,
+      "samples": 1089,
+      "area_mm2": 19782950.560856063,
+      "max_area_quadrature_relative_delta": 2.3694724253692163e-15,
+      "step_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342"
+    },
+    {
+      "id": "F01",
+      "source_faces": 202,
+      "samples": 5707,
+      "area_mm2": 76797028.32735787,
+      "max_area_quadrature_relative_delta": 3.4534080104068627e-15,
+      "step_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd"
+    },
+    {
+      "id": "TEST",
+      "source_faces": 2,
+      "samples": 58,
+      "area_mm2": 1010167.2788944682,
+      "max_area_quadrature_relative_delta": 1.215889277541977e-15,
+      "step_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f"
+    }
+  ],
+  "total_samples_including_test": 35661,
+  "source_geometry_changed": false,
+  "NX_tested": false,
+  "note": "Area is numerical surface area of reference geometry, NOT surveyed vegetation or material quantity."
+}

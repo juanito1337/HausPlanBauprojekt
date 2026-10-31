@@ -1,0 +1,153 @@
+{
+  "scope": "Unveraenderte STEP-Quelldatei aus R10; NICHT Nutzer-NX-Import. Keine NX-Sitzung ausgefuehrt.",
+  "source_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "expected_source_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "source_shape_valid_occt": true,
+  "source_faces": 1,
+  "results": [
+    {
+      "source_index_zero_based": 0,
+      "display_index_one_based": 1,
+      "sample_mm": [
+        36596.3887994,
+        -57288.0729772,
+        31150.0
+      ],
+      "occt_distance_mm": 2.235759708022267e-08,
+      "occt_surface_point_mm": [
+        36596.38879939,
+        -57288.07297718,
+        31150.0
+      ]
+    },
+    {
+      "source_index_zero_based": 1,
+      "display_index_one_based": 2,
+      "sample_mm": [
+        35616.3078139,
+        -57089.474735,
+        31140.0
+      ],
+      "occt_distance_mm": 1.7747857891385424e-08,
+      "occt_surface_point_mm": [
+        35616.30781389647,
+        -57089.47473501739,
+        31140.00000000037
+      ]
+    },
+    {
+      "source_index_zero_based": 82,
+      "display_index_one_based": 83,
+      "sample_mm": [
+        -43770.2520146,
+        -41003.0171197,
+        30930.0
+      ],
+      "occt_distance_mm": 4.123348797554107e-08,
+      "occt_surface_point_mm": [
+        -43770.25201456,
+        -41003.01711971,
+        30930.0
+      ]
+    },
+    {
+      "source_index_zero_based": 83,
+      "display_index_one_based": 84,
+      "sample_mm": [
+        36794.9870416,
+        -56307.9919916,
+        31140.0
+      ],
+      "occt_distance_mm": 3.125633933618085e-08,
+      "occt_surface_point_mm": [
+        36794.987041569366,
+        -56307.9919915938,
+        31139.999999999527
+      ]
+    },
+    {
+      "source_index_zero_based": 84,
+      "display_index_one_based": 85,
+      "sample_mm": [
+        35814.906056,
+        -56109.3937495,
+        31130.0
+      ],
+      "occt_distance_mm": 8.036557859440844e-11,
+      "occt_surface_point_mm": [
+        35814.906056,
+        -56109.39374949999,
+        31130.00000000008
+      ]
+    },
+    {
+      "source_index_zero_based": 85,
+      "display_index_one_based": 86,
+      "sample_mm": [
+        34834.8250705,
+        -55910.7955073,
+        31120.0
+      ],
+      "occt_distance_mm": 3.710024985479529e-11,
+      "occt_surface_point_mm": [
+        34834.8250705,
+        -55910.795507300005,
+        31119.999999999964
+      ]
+    },
+    {
+      "source_index_zero_based": 166,
+      "display_index_one_based": 167,
+      "sample_mm": [
+        36993.5852837,
+        -55327.9110061,
+        31130.0
+      ],
+      "occt_distance_mm": 1.9606155982006867e-08,
+      "occt_surface_point_mm": [
+        36993.585283719214,
+        -55327.911006103895,
+        31130.00000000004
+      ]
+    },
+    {
+      "source_index_zero_based": 167,
+      "display_index_one_based": 168,
+      "sample_mm": [
+        36013.5042982,
+        -55129.3127639,
+        31120.0
+      ],
+      "occt_distance_mm": 3.930364280260839e-10,
+      "occt_surface_point_mm": [
+        36013.50429820001,
+        -55129.31276390001,
+        31119.999999999607
+      ]
+    },
+    {
+      "source_index_zero_based": 168,
+      "display_index_one_based": 169,
+      "sample_mm": [
+        35033.4233126,
+        -54930.7145218,
+        31110.0
+      ],
+      "occt_distance_mm": 1.5660220560698424e-10,
+      "occt_surface_point_mm": [
+        35033.4233126,
+        -54930.71452180001,
+        31109.999999999844
+      ]
+    }
+  ],
+  "point_85_to_84_distance_mm": 1000.0499987999968,
+  "reported_screenshot_distance_mm": 1000.049994,
+  "diagnosis": "Abstand stimmt nahezu mit einem benachbarten Rasterpunkt ueberein. Hinweis auf Nahpunktsuche, kein Beweis. Nutzerfehlerbericht/Importgeometrie fehlen.",
+  "not_changed": [
+    "Modelldaten",
+    "STEP-Geometrie",
+    "Prueftoleranz 0.25 mm"
+  ],
+  "r10_r11a_dgm_definition_equal": true
+}

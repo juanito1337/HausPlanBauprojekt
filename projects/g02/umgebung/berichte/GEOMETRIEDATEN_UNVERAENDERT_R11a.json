@@ -1,0 +1,101 @@
+{
+  "scope": "Unveraenderte Quell- und Steuerdaten. Kein Nachweis eines eigenen NX-Laufs.",
+  "files": [
+    {
+      "file": "basis/Haus_R06/data/haus.json",
+      "original_sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+      "current_sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+      "unchanged": true
+    },
+    {
+      "file": "data/IMPORTAUFTRAG_R09.json",
+      "original_sha256": "d6d74e021a3b65361b33c792bcae5e55385bed8a4ed8a01b459c42fa7b8587a2",
+      "current_sha256": "d6d74e021a3b65361b33c792bcae5e55385bed8a4ed8a01b459c42fa7b8587a2",
+      "unchanged": true
+    },
+    {
+      "file": "data/EINSTELLUNGEN_R09.json",
+      "original_sha256": "0480fca8100d50bbad7bcd65a0821556927c401b8c2c4ba07d15352deceb1f31",
+      "current_sha256": "0480fca8100d50bbad7bcd65a0821556927c401b8c2c4ba07d15352deceb1f31",
+      "unchanged": true
+    },
+    {
+      "file": "abgleich/FENSTER_AENDERUNGEN_R11.json",
+      "original_sha256": "e04acc78935cd62ebdff784a21873f263ac43982d1449443d07def241a89a434",
+      "current_sha256": "e04acc78935cd62ebdff784a21873f263ac43982d1449443d07def241a89a434",
+      "unchanged": true
+    },
+    {
+      "file": "abgleich/VEGETATION_VIDEO_R11.json",
+      "original_sha256": "976d3c622aad6dc07239aea9f186839fb07b403c6569ee390a4d513aeaaa1b7b",
+      "current_sha256": "976d3c622aad6dc07239aea9f186839fb07b403c6569ee390a4d513aeaaa1b7b",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/F01_R09.step",
+      "original_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "current_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step",
+      "original_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "current_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/TEST_IMPORT_R09.step",
+      "original_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "current_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V01_R09.step",
+      "original_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "current_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V02_R09.step",
+      "original_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "current_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V03_R09.step",
+      "original_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "current_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V04_R09.step",
+      "original_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "current_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V05_R09.step",
+      "original_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "current_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V06_R09.step",
+      "original_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "current_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V07_R09.step",
+      "original_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "current_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V08_R09.step",
+      "original_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "current_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "ABGEBROCHEN",
+  "patch": "R09a-LEITUNGSPRUEFUNG",
+  "entry": "00_NX_MODELL_ERZEUGEN_2406.py",
+  "project_base": "C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a",
+  "error": "NX-Flaechenanzahl abweichend: V01 Soll=49 Ist=56. Importprotokoll pruefen.",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\00_NX_MODELL_ERZEUGEN_2406.py\", line 37, in main\n    return run_project(base)\n  File \"C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\r09\\run.py\", line 154, in run_project\n    part,saved,check=nx.import_surface_part(env_dir,base/spec['step_file'],spec,definition)\n  File \"C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\r09\\nx_adapter.py\", line 133, in import_surface_part\n    raise RuntimeError('NX-Flaechenanzahl abweichend: %s Soll=%d Ist=%d. Importprotokoll pruefen.' %\nRuntimeError: NX-Flaechenanzahl abweichend: V01 Soll=49 Ist=56. Importprotokoll pruefen.\n",
+  "python": "3.10.12 (main, Mar  5 2024, 17:56:48) [MSC v.1929 64 bit (AMD64)]",
+  "time": "2026-10-08T08:37:07.608402",
+  "note": "Kein vollstaendiger Erfolg; ggf. gespeicherte Teilergebnisse im Manifest gekennzeichnet.",
+  "r09_context": {
+    "output_directory": "C:\\Users\\Jan\\Downloads\\NX_Haus_und_Umgebung_R09a\\NX_Haus_und_Umgebung_R09a\\ausgabe\\R09_20261008_083614_c1e4fe",
+    "phase": "UMGEBUNG",
+    "operation": "STEP214-Import: V01"
+  }
+}

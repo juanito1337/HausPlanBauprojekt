@@ -1,0 +1,64 @@
+{
+  "node_evaluations": 12552,
+  "midcell_evaluations": 6303,
+  "max_node_error_mm": 0.0,
+  "max_midcell_error_mm": 7.275957614183426e-12,
+  "parts": [
+    {
+      "id": "V01",
+      "faces": 49,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V02",
+      "faces": 27,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V03",
+      "faces": 21,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V04",
+      "faces": 13,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V05",
+      "faces": 17,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V06",
+      "faces": 83,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V07",
+      "faces": 140,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "V08",
+      "faces": 32,
+      "source": "bdom",
+      "shape_valid": true
+    },
+    {
+      "id": "F01",
+      "faces": 202,
+      "source": "dgm",
+      "shape_valid": true
+    }
+  ],
+  "native_NX_tested": false,
+  "model_representation": "Open degree 1x1 B-spline faces. No biomass/stems/roots/closed crown underside."
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "HAUSPLAN_ADDITIONAL_FILES_V1",
+  "files": {
+    "sources/video/AUSSENRUNDGANG_20261008.mp4": "f7039ff51aab1b966c81fdbf2a12ac8e8ad8f38f87766dc38e5564c96f5fdaac",
+    "historie/diagnosen/STARTFEHLER_R09_20261008_101411_a05c0616.json": "c3bc3219ffb341304286f226925fe1afb7a09e76fd6a96ff388d8f792c93f89e",
+    "historie/diagnosen/STARTFEHLER_G01_20261010_112421_0d3e77b0.json": "40076fddf5214035b9ac5a5f34953c4515dbb629c1babdff679f2c048e6c41a5",
+    "historie/diagnosen/STARTFEHLER_R09_20261008_083707_8f175ff7.json": "ff128f0cca192735e5cbf1da8ad4f1326ae4478162c88d5f5beda8af330ca476",
+    "historie/diagnosen/STARTFEHLER_G01_20261010_114332_e61a370d.json": "b6be402867d3d4576a240e425de84f168fe14b907a160f0e925db541b1ad95fb",
+    "historie/diagnosen/STARTFEHLER_20261006_230851_6d79673a.json": "78a46708f75a3ab4fdf92a069ff2ffa6d31428091cc5db5d755d9f9d53a2ba27",
+    "historie/diagnosen/STARTFEHLER_G01a_20261011_124825_69a57d5d.json": "9e068e2476900c024f05a8629cc6538cd601100bf27789563e0fa487e60aad1a",
+    "historie/diagnosen/STARTFEHLER_G01c_20261012_121659_75b4ef58.json": "d0b7cbae1f27d5831c470649879bdb2d37200bf7faa0e1718c87d3cd3a14c424",
+    "historie/diagnosen/STARTFEHLER_20261006_234957_ddd217ce.json": "7d049cb7f6bf11d198e7bd332fb6ef83fba8de888456dbca3617eb9952abfb26",
+    "historie/diagnosen/STARTFEHLER_20261006_233059_f1bd30a6.json": "b14e37e47c4a1941a7322b289dba6067d8b035aa432d4360df28e41ea9f503d9",
+    "historie/diagnosen/STARTFEHLER_R09_20261008_164240_ff5feef3.json": "75dfd17a85f270d576abfbf839cb9b872507916563809c1dc8d3bdd042f42f7e",
+    "historie/diagnosen/STARTFEHLER_G01_20261010_114535_33b28e82.json": "8e00ef9c4ff378f866bffe10a07cb2980c68543d748f3ff95c16a4f78774922c",
+    "historie/diagnosen/STARTFEHLER_G01_20261010_113930_e2485b93.json": "4198281ea47fb5369a309ebc3ea84322c9a3d6b4b3e1f3d7a9a182cea0a509d3",
+    "historie/diagnosen/STARTFEHLER_R09_20261008_105827_3b21a507.json": "6cc47be0054404bd0862138d21809898ee17223e69beeed2e3a5391ccc52d90a",
+    "historie/diagnosen/STARTFEHLER_20261007_001436_fe8a9b6c.json": "d612f14850fe3cb08919e822ad121a23f6df54e5c8d46094089be0c0e687f135",
+    "historie/diagnosen/STARTFEHLER_20261007_003256_b768a097.json": "d9a5e3df863c006dd544c2d73d6aa2fedd43a42b612bb26250ba1b1733239d62",
+    "historie/diagnosen/STARTFEHLER_G01d_20261012_231858_556c0280.json": "3219be281ea4f5176f81cde86dfa5c1cdbf0d8b6890581c691079e28c254a759",
+    "renovierung/recovered/FEHLENDE_CAD_DATEIEN.json": "f57c8eb5c1b7e3454bc36a66ce83180401dfa1100790272f48810ea2bfac0be9",
+    "renovierung/recovered/README.md": "d155d40b2cb048ed2f0e13b9901c65435d9147afad8710c2c293b830243c499c",
+    "renovierung/recovered/RENOVIERUNGSPLAN_AUS_VORSCHAU.json": "334a44d2aec94d50d6f14e6354b9dedd68c70a5ac3ff0e8c9a04a75f8b656906"
+  },
+  "note": "Historische/abgeleitete Referenzdateien der Übergabe; keine generierten NX-Parts."
+}

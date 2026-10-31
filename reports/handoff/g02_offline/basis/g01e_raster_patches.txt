@@ -1,0 +1,47 @@
+test_01_report_8282_matches_cells_not_automatic_acceptance (__main__.Geometry.test_01_report_8282_matches_cells_not_automatic_acceptance) ... ok
+test_02_grid_nodes_roundtrip (__main__.Geometry.test_02_grid_nodes_roundtrip) ... ok
+test_03_shifted_node_rejected (__main__.Geometry.test_03_shifted_node_rejected) ... ok
+test_04_invalid_grid (__main__.Geometry.test_04_invalid_grid) ... ok
+test_05_quad_recognized (__main__.Geometry.test_05_quad_recognized) ... ok
+test_06_shuffled_edges (__main__.Geometry.test_06_shuffled_edges) ... ok
+test_07_missing_edge (__main__.Geometry.test_07_missing_edge) ... ok
+test_08_diagonal_trim (__main__.Geometry.test_08_diagonal_trim) ... ok
+test_09_inner_hole (__main__.Geometry.test_09_inner_hole) ... ok
+test_10_zero_edge (__main__.Geometry.test_10_zero_edge) ... ok
+test_11_segmented_face_boundary (__main__.Geometry.test_11_segmented_face_boundary) ... ok
+test_12_complete_small_coverage (__main__.Geometry.test_12_complete_small_coverage) ... ok
+test_13_duplicate_coverage (__main__.Geometry.test_13_duplicate_coverage) ... ok
+test_14_missing_coverage (__main__.Geometry.test_14_missing_coverage) ... ok
+test_15_outside_coverage (__main__.Geometry.test_15_outside_coverage) ... ok
+test_16_true_shared_edge (__main__.Geometry.test_16_true_shared_edge) ... ok
+test_17_disconnected_seam (__main__.Geometry.test_17_disconnected_seam) ... ok
+test_18_wrong_shared_neighbor (__main__.Geometry.test_18_wrong_shared_neighbor) ... ok
+test_19_exterior_only_one_incidence (__main__.Geometry.test_19_exterior_only_one_incidence) ... ok
+test_20_nine_grid_samples_2x2_patch (__main__.Geometry.test_20_nine_grid_samples_2x2_patch) ... ok
+test_21_affine_uv_forward (__main__.Geometry.test_21_affine_uv_forward) ... ok
+test_22_uv_swapped (__main__.Geometry.test_22_uv_swapped) ... ok
+test_23_skewed_plane_uv_supported (__main__.Geometry.test_23_skewed_plane_uv_supported) ... ok
+test_24_nonaffine_uv_rejected (__main__.Geometry.test_24_nonaffine_uv_rejected) ... ok
+test_25_singular_uv_rejected (__main__.Geometry.test_25_singular_uv_rejected) ... ok
+test_26_outside_uv_rejected (__main__.Geometry.test_26_outside_uv_rejected) ... ok
+test_27_original_step_not_modified (__main__.Geometry.test_27_original_step_not_modified) ... ok
+test_28_limit_remains_025 (__main__.Geometry.test_28_limit_remains_025) ... ok
+test_29_two_rectangles_full_coverage (__main__.Integration.test_29_two_rectangles_full_coverage) ... ok
+test_30_uv_axes_reversed_and_swapped (__main__.Integration.test_30_uv_axes_reversed_and_swapped) ... ok
+test_31_duplicate_rectangle_rejected (__main__.Integration.test_31_duplicate_rectangle_rejected) ... ok
+test_32_missing_cell_rejected (__main__.Integration.test_32_missing_cell_rejected) ... ok
+test_33_foreign_face_owner (__main__.Integration.test_33_foreign_face_owner) ... ok
+test_34_deformed_node_rejected (__main__.Integration.test_34_deformed_node_rejected) ... ok
+test_35_deformed_cell_centre_rejected (__main__.Integration.test_35_deformed_cell_centre_rejected) ... ok
+test_36_bad_edge_result_still_rejected (__main__.Integration.test_36_bad_edge_result_still_rejected) ... ok
+test_37_nonfinite_uv_rejected (__main__.Integration.test_37_nonfinite_uv_rejected) ... ok
+test_38_nonfinite_surface_rejected (__main__.Integration.test_38_nonfinite_surface_rejected) ... ok
+test_39_data_not_mutated (__main__.Integration.test_39_data_not_mutated) ... ok
+test_40_cancel_is_not_ignored (__main__.Integration.test_40_cancel_is_not_ignored) ... ok
+test_41_full_8282_cell_subdivision (__main__.Integration.test_41_full_8282_cell_subdivision) ... ok
+test_42_failure_json_has_actual_counts (__main__.Integration.test_42_failure_json_has_actual_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 11.634s
+
+OK

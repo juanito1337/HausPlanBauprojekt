@@ -1,0 +1,28 @@
+test_inch_new_part_stops_before_geometry_attributes_and_save (test_units_r03b.UnitsAdapterDoubleTests.test_inch_new_part_stops_before_geometry_attributes_and_save) ... ok
+test_missing_read_enum_blocks_before_part_creation (test_units_r03b.UnitsAdapterDoubleTests.test_missing_read_enum_blocks_before_part_creation) ... ok
+test_mock_rejects_basepart_enum_as_newdisplay_argument (test_units_r03b.UnitsAdapterDoubleTests.test_mock_rejects_basepart_enum_as_newdisplay_argument) ... ok
+test_newdisplay_still_receives_part_enum (test_units_r03b.UnitsAdapterDoubleTests.test_newdisplay_still_receives_part_enum) ... ok
+test_unit_read_check_does_not_change_foreign_part (test_units_r03b.UnitsAdapterDoubleTests.test_unit_read_check_does_not_change_foreign_part) ... ok
+test_basepart_millimeters_accepted_with_type_diagnostic (test_units_r03b.UnitsContractTests.test_basepart_millimeters_accepted_with_type_diagnostic) ... ok
+test_broken_repr_does_not_mask_unit_problem (test_units_r03b.UnitsContractTests.test_broken_repr_does_not_mask_unit_problem) ... ok
+test_creation_enum_as_property_value_is_rejected (test_units_r03b.UnitsContractTests.test_creation_enum_as_property_value_is_rejected) ... ok
+test_diagnostics_are_json_safe_on_success_and_failure (test_units_r03b.UnitsContractTests.test_diagnostics_are_json_safe_on_success_and_failure) ... ok
+test_enum_comparison_exception_not_silently_accepted (test_units_r03b.UnitsContractTests.test_enum_comparison_exception_not_silently_accepted) ... ok
+test_inch_part_rejected_and_not_converted (test_units_r03b.UnitsContractTests.test_inch_part_rejected_and_not_converted) ... ok
+test_missing_basepart_enum_not_replaced_by_creation_enum (test_units_r03b.UnitsContractTests.test_missing_basepart_enum_not_replaced_by_creation_enum) ... ok
+test_missing_property_reports_query_error (test_units_r03b.UnitsContractTests.test_missing_property_reports_query_error) ... ok
+test_no_string_number_none_or_boolean_shortcuts (test_units_r03b.UnitsContractTests.test_no_string_number_none_or_boolean_shortcuts) ... ok
+test_old_comparison_reproduces_exact_reported_message (test_units_r03b.UnitsContractTests.test_old_comparison_reproduces_exact_reported_message) ... ok
+test_property_read_failure_preserves_cause (test_units_r03b.UnitsContractTests.test_property_read_failure_preserves_cause) ... ok
+test_checker_rejects_inch_master (test_units_r03b.UnitsFlowDoubleTests.test_checker_rejects_inch_master) ... ok
+test_checker_rejects_inch_subcomponent (test_units_r03b.UnitsFlowDoubleTests.test_checker_rejects_inch_subcomponent) ... ok
+test_main_reports_actual_unit_type_and_blocks_house_on_inch (test_units_r03b.UnitsFlowDoubleTests.test_main_reports_actual_unit_type_and_blocks_house_on_inch) ... ok
+test_missing_new_unit_module_is_explicit_for_all_entrypoints (test_units_r03b.UnitsFlowDoubleTests.test_missing_new_unit_module_is_explicit_for_all_entrypoints) ... ok
+test_mixed_r03a_module_marker_is_rejected (test_units_r03b.UnitsFlowDoubleTests.test_mixed_r03a_module_marker_is_rejected) ... ok
+test_reference_model_and_nine_part_checks_accept_read_enum (test_units_r03b.UnitsFlowDoubleTests.test_reference_model_and_nine_part_checks_accept_read_enum) ... ok
+test_standalone_smoke_reports_unit_failure (test_units_r03b.UnitsFlowDoubleTests.test_standalone_smoke_reports_unit_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.148s
+
+OK

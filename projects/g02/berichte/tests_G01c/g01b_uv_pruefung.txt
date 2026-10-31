@@ -1,0 +1,41 @@
+test_01_all_source_indices_checked (__main__.UVTests.test_01_all_source_indices_checked) ... ok
+test_02_problem_points_are_checked_early (__main__.UVTests.test_02_problem_points_are_checked_early) ... ok
+test_03_shift_at_1089_is_rejected (__main__.UVTests.test_03_shift_at_1089_is_rejected) ... ok
+test_04_all_eight_axis_mappings (__main__.UVTests.test_04_all_eight_axis_mappings) ... ok
+test_05_swapped_reversed_actual_parameters (__main__.UVTests.test_05_swapped_reversed_actual_parameters) ... ok
+test_06_corner_translation_not_fitted_away (__main__.UVTests.test_06_corner_translation_not_fitted_away) ... ok
+test_07_nan_not_accepted (__main__.UVTests.test_07_nan_not_accepted) ... ok
+test_08_missing_SrfPos_fails (__main__.UVTests.test_08_missing_SrfPos_fails) ... ok
+test_09_missing_API_fails_with_saved_checkpoint (__main__.UVTests.test_09_missing_API_fails_with_saved_checkpoint) ... ok
+test_10_no_silent_use_of_legacy_if_evaluation_fails (__main__.UVTests.test_10_no_silent_use_of_legacy_if_evaluation_fails) ... ok
+test_11_inner_hole_topology_fails (__main__.UVTests.test_11_inner_hole_topology_fails) ... ok
+test_12_three_edges_fail (__main__.UVTests.test_12_three_edges_fail) ... ok
+test_13_boundary_endpoints_do_not_match (__main__.UVTests.test_13_boundary_endpoints_do_not_match) ... ok
+test_14_boundary_deformation_fails_even_if_UV_matches (__main__.UVTests.test_14_boundary_deformation_fails_even_if_UV_matches) ... ok
+test_15_contradictory_boundary_zero_fails (__main__.UVTests.test_15_contradictory_boundary_zero_fails) ... ok
+test_16_numerical_limits_are_not_liberalized (__main__.UVTests.test_16_numerical_limits_are_not_liberalized) ... ok
+test_17_UV_limit_nan_fails (__main__.UVTests.test_17_UV_limit_nan_fails) ... ok
+test_18_zero_UV_domain_fails (__main__.UVTests.test_18_zero_UV_domain_fails) ... ok
+test_19_wrong_surface_count_fails (__main__.UVTests.test_19_wrong_surface_count_fails) ... ok
+test_20_volume_not_accepted (__main__.UVTests.test_20_volume_not_accepted) ... ok
+test_21_source_data_stay_unchanged (__main__.UVTests.test_21_source_data_stay_unchanged) ... ok
+test_22_changed_grid_centre_rejected (__main__.UVTests.test_22_changed_grid_centre_rejected) ... ok
+test_23_historic_failure_reports_as_boundary_distance (__main__.UVTests.test_23_historic_failure_reports_as_boundary_distance) ... ok
+test_24_legacy_body_failure_is_not_used_for_UV (__main__.UVTests.test_24_legacy_body_failure_is_not_used_for_UV) ... ok
+test_25_output_contains_actual_positions_not_just_counts (__main__.UVTests.test_25_output_contains_actual_positions_not_just_counts) ... ok
+test_26_no_output_overwrite (__main__.UVTests.test_26_no_output_overwrite) ... ok
+test_27_negative_control_is_positive (__main__.UVTests.test_27_negative_control_is_positive) ... ok
+test_28_production_standalone_uses_UV_without_manual_import (__main__.UVTests.test_28_production_standalone_uses_UV_without_manual_import) ... ok
+test_29_no_area_integration_in_default (__main__.UVTests.test_29_no_area_integration_in_default) ... ok
+test_30_INTENSIV_keeps_area_check (__main__.UVTests.test_30_INTENSIV_keeps_area_check) ... ok
+test_31_stop_checked_between_chunks (__main__.UVTests.test_31_stop_checked_between_chunks) ... ok
+test_32_two_runs_get_new_files (__main__.UVTests.test_32_two_runs_get_new_files) ... ok
+test_33_reference_fraction_indexing (__main__.UVTests.test_33_reference_fraction_indexing) ... ok
+test_34_invalid_fraction_indices (__main__.UVTests.test_34_invalid_fraction_indices) ... ok
+test_35_numeric_validation (__main__.UVTests.test_35_numeric_validation) ... ok
+test_36_wrong_owner_fails (__main__.UVTests.test_36_wrong_owner_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 12.000s
+
+OK

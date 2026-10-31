@@ -1,0 +1,20 @@
+[
+  {
+    "archive": "HausPlan_Originalplaene.zip",
+    "files": 3,
+    "bytes": 120007073,
+    "sha256": "89607e159a0505211f24ea4ec1ec0681d1998fad5379367414034bef6b119f6b",
+    "crc_passed": true,
+    "all_payload_hashes_passed": true,
+    "NX_run_performed": false
+  },
+  {
+    "archive": "HausPlan_Geodaten_Originale.zip",
+    "files": 4,
+    "bytes": 165978741,
+    "sha256": "f20e4d68ecd69864c79d8449776f3caf0bdde6312070af18fa02deff93df7c13",
+    "crc_passed": true,
+    "all_payload_hashes_passed": true,
+    "NX_run_performed": false
+  }
+]

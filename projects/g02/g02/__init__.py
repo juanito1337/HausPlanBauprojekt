@@ -1,0 +1,2 @@
+# -*- coding: utf-8 -*-
+PATCH = 'MAIN01-A01-G02-INTEGRIERTER-HOEHENBEZUG'

@@ -1,0 +1,113 @@
+{
+  "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+  "tested_at": "2026-10-12T11:22:56.898348",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "all_model_defects_fixed": false,
+  "package_check": {
+    "checked_files": 492,
+    "editable_changes": [],
+    "NX_geometry_test": false,
+    "scope": "ALL"
+  },
+  "syntax_files": 124,
+  "checks": [
+    {
+      "name": "haus_main01_a01",
+      "returncode": 0,
+      "unittest_count": 87,
+      "log": "haus_main01_a01.txt"
+    },
+    {
+      "name": "umgebung_r11a",
+      "returncode": 0,
+      "unittest_count": 291,
+      "log": "umgebung_r11a.txt"
+    },
+    {
+      "name": "gesamt_g01",
+      "returncode": 0,
+      "unittest_count": 58,
+      "log": "gesamt_g01.txt"
+    },
+    {
+      "name": "g01a_terrain_audit",
+      "returncode": 0,
+      "unittest_count": 32,
+      "log": "g01a_terrain_audit.txt"
+    },
+    {
+      "name": "g01b_uv_pruefung",
+      "returncode": 0,
+      "unittest_count": 36,
+      "log": "g01b_uv_pruefung.txt"
+    },
+    {
+      "name": "g01c_boundary_chains",
+      "returncode": 0,
+      "unittest_count": 42,
+      "log": "g01c_boundary_chains.txt"
+    },
+    {
+      "name": "g01d_exact_boundary_delivery",
+      "returncode": 0,
+      "unittest_count": 24,
+      "log": "g01d_exact_boundary_delivery.txt"
+    },
+    {
+      "name": "dgm_diagnose",
+      "returncode": 0,
+      "unittest_count": 18,
+      "log": "dgm_diagnose.txt"
+    },
+    {
+      "name": "gesamt_simulation",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "gesamt_simulation.txt"
+    },
+    {
+      "name": "cad_haus",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "cad_haus.txt"
+    },
+    {
+      "name": "cad_umgebung",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "cad_umgebung.txt"
+    },
+    {
+      "name": "cad_dgm_uv",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "cad_dgm_uv.txt"
+    },
+    {
+      "name": "cad_dgm_exact_line_boundary",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "cad_dgm_exact_line_boundary.txt"
+    },
+    {
+      "name": "cad_dgm_segmented_boundary",
+      "returncode": 0,
+      "unittest_count": 0,
+      "log": "cad_dgm_segmented_boundary.txt"
+    }
+  ],
+  "package_check_at_end": {
+    "checked_files": 492,
+    "editable_changes": [],
+    "NX_geometry_test": false,
+    "scope": "ALL"
+  },
+  "test_count": 588,
+  "all_requested_checks_passed": true,
+  "limits": [
+    "No NX execution; simulated bindings do not validate translator, kernel or actual run time.",
+    "G01d exports the unchanged carrier surface with 366 exact LINE boundary segments. Existing fixed 0.25 mm coordinate/boundary checks remain. No NX execution of this new representation.",
+    "House/terrain vertical connection, structural calculations and utility depths still open."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "ABGEBROCHEN",
+  "revision": "R03",
+  "patch": "R03a-PFADFIX",
+  "entry": "RUN_HAUS_2406.py",
+  "error": "Neues Part ist nicht in Millimetern: FUNKTIONSTEST",
+  "traceback": "Traceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03a\\RUN_HAUS_2406.py\", line 88, in main\n    return run_house(base)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03a\\src\\haus2406_r03\\haus_run.py\", line 160, in run_house\n    test=smoke_test(base,_nx=nx,_settings=settings,_parent=out,_silent=True,\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03a\\src\\haus2406_r03\\haus_run.py\", line 263, in smoke_test\n    part=nx.new_part(out/geometry_name,'FUNKTIONSTEST')\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03a\\src\\haus2406_r03\\haus_nx.py\", line 71, in new_part\n    raise RuntimeError('Neues Part ist nicht in Millimetern: '+ident)\nRuntimeError: Neues Part ist nicht in Millimetern: FUNKTIONSTEST\n",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "project_base": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03a",
+  "script": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03a\\RUN_HAUS_2406.py",
+  "time": "2026-10-06T23:30:59.767493",
+  "note": "Keine Erfolgsmeldung. Bereits erzeugte Teilmodelle sind nicht freigegeben."
+}

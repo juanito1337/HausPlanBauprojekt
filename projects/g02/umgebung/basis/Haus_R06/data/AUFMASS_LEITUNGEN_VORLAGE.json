@@ -1,0 +1,611 @@
+{
+  "purpose": "Ausfüllhilfe, wird NICHT automatisch in das Modell übernommen. Koordinatenbezug/Quellen vor Übernahme prüfen.",
+  "model_coordinate_system": "lokale Millimeter, Z relativ EG-Modellbezug; kein NHN-Wert ohne Umrechnung",
+  "routes": [
+    {
+      "id": "STROM_TRASSE_42",
+      "points_local_mm_reference": [
+        [
+          28438.291,
+          -29515.732
+        ],
+        [
+          21853.294,
+          -29530.037
+        ],
+        [
+          3115.691,
+          -29025.837
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "STROM_TRASSE_43",
+      "points_local_mm_reference": [
+        [
+          3115.691,
+          -29025.837
+        ],
+        [
+          -70.161,
+          -28938.513
+        ],
+        [
+          -369.416,
+          -28907.967
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "STROM_TRASSE_45",
+      "points_local_mm_reference": [
+        [
+          -369.416,
+          -28907.967
+        ],
+        [
+          -11371.073,
+          -28350.455
+        ],
+        [
+          -27149.916,
+          -28196.242
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "STROM_TRASSE_49",
+      "points_local_mm_reference": [
+        [
+          -19966.864,
+          -37880.201
+        ],
+        [
+          -21285.088,
+          -37862.492
+        ],
+        [
+          -21294.156,
+          -39132.202
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "STROM_HAUSANSCHLUSS",
+      "points_local_mm_reference": [
+        [
+          3115.691,
+          -29025.837
+        ],
+        [
+          4100.691,
+          -18.582
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "STROM_STRASSE_GEGENUEBER_44",
+      "points_local_mm_reference": [
+        [
+          26929.15,
+          -37573.886
+        ],
+        [
+          17380.838,
+          -37669.631
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "STROM_STRASSE_GEGENUEBER_46",
+      "points_local_mm_reference": [
+        [
+          15573.074,
+          -37687.498
+        ],
+        [
+          -11807.341,
+          -38007.828
+        ],
+        [
+          -19966.864,
+          -37880.201
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "BREITBAND_TRASSE_57",
+      "points_local_mm_reference": [
+        [
+          -27278.745,
+          -28884.133
+        ],
+        [
+          -11349.435,
+          -29727.62
+        ],
+        [
+          21790.434,
+          -30001.415
+        ],
+        [
+          28346.271,
+          -30007.082
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "BREITBAND_TRASSE_58",
+      "points_local_mm_reference": [
+        [
+          26956.757,
+          -37426.481
+        ],
+        [
+          524.662,
+          -37161.344
+        ],
+        [
+          -18071.676,
+          -37395.553
+        ],
+        [
+          -28806.29,
+          -37040.558
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "BREITBAND_TRASSE_59",
+      "points_local_mm_reference": [
+        [
+          26970.56,
+          -37352.779
+        ],
+        [
+          513.911,
+          -37083.048
+        ],
+        [
+          -18053.272,
+          -37297.283
+        ],
+        [
+          -28787.886,
+          -36942.287
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "BREITBAND_TRASSE_60",
+      "points_local_mm_reference": [
+        [
+          28291.058,
+          -30301.893
+        ],
+        [
+          21759.771,
+          -30300.818
+        ],
+        [
+          -11355.538,
+          -30031.617
+        ],
+        [
+          -27333.957,
+          -29178.943
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "BREITBAND_TRASSE_61",
+      "points_local_mm_reference": [
+        [
+          26961.358,
+          -37401.914
+        ],
+        [
+          529.263,
+          -37136.776
+        ],
+        [
+          -18062.474,
+          -37346.418
+        ],
+        [
+          -28797.088,
+          -36991.423
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_9",
+      "points_local_mm_reference": [
+        [
+          -21913.621,
+          -36660.993
+        ],
+        [
+          -3911.066,
+          -36689.935
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_17",
+      "points_local_mm_reference": [
+        [
+          -22775.176,
+          -27813.667
+        ],
+        [
+          -13451.089,
+          -28041.66
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_18",
+      "points_local_mm_reference": [
+        [
+          -13451.089,
+          -28041.66
+        ],
+        [
+          -12553.444,
+          -28021.047
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_35",
+      "points_local_mm_reference": [
+        [
+          1556.797,
+          -28210.035
+        ],
+        [
+          18217.438,
+          -28179.977
+        ],
+        [
+          37557.893,
+          -28669.286
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_37",
+      "points_local_mm_reference": [
+        [
+          -3911.066,
+          -36689.935
+        ],
+        [
+          -1644.078,
+          -36823.972
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_38",
+      "points_local_mm_reference": [
+        [
+          1556.797,
+          -28210.035
+        ],
+        [
+          2039.567,
+          34.671
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_39",
+      "points_local_mm_reference": [
+        [
+          -3936.641,
+          -28083.152
+        ],
+        [
+          -3969.528,
+          -21460.597
+        ],
+        [
+          -2362.431,
+          642.037
+        ],
+        [
+          -156.248,
+          650.558
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_40",
+      "points_local_mm_reference": [
+        [
+          -1644.078,
+          -36823.972
+        ],
+        [
+          17435.365,
+          -37045.895
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_41",
+      "points_local_mm_reference": [
+        [
+          -12553.444,
+          -28021.047
+        ],
+        [
+          -3936.641,
+          -28083.152
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_42",
+      "points_local_mm_reference": [
+        [
+          -3911.066,
+          -36689.935
+        ],
+        [
+          -3936.641,
+          -28083.152
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "TELEFON_TRASSE_43",
+      "points_local_mm_reference": [
+        [
+          -3936.641,
+          -28083.152
+        ],
+        [
+          1556.797,
+          -28210.035
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "GAS_HAUSANSCHLUSS",
+      "points_local_mm_reference": [
+        [
+          19988.542,
+          -37729.506
+        ],
+        [
+          25104.268,
+          -1433.815
+        ],
+        [
+          19603.993,
+          -835.794
+        ],
+        [
+          19577.659,
+          30.525
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    },
+    {
+      "id": "GAS_TRANSPORT_STRASSE",
+      "points_local_mm_reference": [
+        [
+          -8126.188,
+          -37334.593
+        ],
+        [
+          24582.148,
+          -37884.856
+        ]
+      ],
+      "confirmed_xy_mm": null,
+      "measured_z_mm_each_point": null,
+      "height_reference": "ZU_ERGAENZEN: Achse/Oberkante/Sohle und Höhenbezug",
+      "height_sources": [],
+      "outer_diameter_mm": null,
+      "material_confirmed": null,
+      "survey_date": null,
+      "note": "XY aus historischem Plan; nicht als Aufmaß kopieren."
+    }
+  ]
+}

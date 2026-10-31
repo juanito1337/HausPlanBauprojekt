@@ -1,0 +1,26 @@
+# Normalize only newly maintained repository text.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.csv text eol=lf
+
+# Existing delivery manifests hash bytes. Do not normalize imported snapshots.
+projects/g02/** -text
+renovierung/k01_unterlagen/** -text
+historie/diagnosen/** -text
+
+# Binary / large geometry: ordinary Git in this initial repository, no LFS dependency.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.npz binary
+*.mp4 binary
+*.step -text -diff
+*.stp -text -diff
+*.prt binary

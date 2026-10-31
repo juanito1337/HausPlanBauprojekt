@@ -1,0 +1,37 @@
+test_01_terrain_source_in_package (__main__.IntegrationTests.test_01_terrain_source_in_package) ... ok
+test_02_points_match_delivered_source (__main__.IntegrationTests.test_02_points_match_delivered_source) ... ok
+test_03_normal_import_is_automatic_and_passes (__main__.IntegrationTests.test_03_normal_import_is_automatic_and_passes) ... ok
+test_04_snapshot_exists_before_first_distance_call (__main__.IntegrationTests.test_04_snapshot_exists_before_first_distance_call) ... ok
+test_05_every_query_has_raw_return_and_endpoints (__main__.IntegrationTests.test_05_every_query_has_raw_return_and_endpoints) ... ok
+test_06_failure_keeps_original_and_automatically_probes (__main__.IntegrationTests.test_06_failure_keeps_original_and_automatically_probes) ... ok
+test_07_original_bad_target_is_preserved (__main__.IntegrationTests.test_07_original_bad_target_is_preserved) ... ok
+test_08_no_source_coordinates_mutated (__main__.IntegrationTests.test_08_no_source_coordinates_mutated) ... ok
+test_09_production_flags_unchanged_fresh_arrays (__main__.IntegrationTests.test_09_production_flags_unchanged_fresh_arrays) ... ok
+test_10_wrong_body_count_is_not_accepted (__main__.IntegrationTests.test_10_wrong_body_count_is_not_accepted) ... ok
+test_11_source_missing_no_part_created (__main__.IntegrationTests.test_11_source_missing_no_part_created) ... ok
+test_12_wrong_source_checksum_rejected (__main__.IntegrationTests.test_12_wrong_source_checksum_rejected) ... ok
+test_13_import_exception_logged_without_snapshot_claim (__main__.IntegrationTests.test_13_import_exception_logged_without_snapshot_claim) ... ok
+test_14_zero_distance_with_wrong_input_rejected (__main__.IntegrationTests.test_14_zero_distance_with_wrong_input_rejected) ... ok
+test_15_malformed_nx_return_saved_before_error (__main__.IntegrationTests.test_15_malformed_nx_return_saved_before_error) ... ok
+test_16_probe_error_does_not_hide_original (__main__.IntegrationTests.test_16_probe_error_does_not_hide_original) ... ok
+test_17_save_failure_has_no_false_snapshot (__main__.IntegrationTests.test_17_save_failure_has_no_false_snapshot) ... ok
+test_18_existing_output_not_overwritten (__main__.IntegrationTests.test_18_existing_output_not_overwritten) ... ok
+test_19_non_dgm_has_no_checkpoint (__main__.IntegrationTests.test_19_non_dgm_has_no_checkpoint) ... ok
+test_20_reused_diagnostic_path_rejected (__main__.IntegrationTests.test_20_reused_diagnostic_path_rejected) ... ok
+test_21_tolerance_not_relaxed (__main__.IntegrationTests.test_21_tolerance_not_relaxed) ... ok
+test_22_standalone_builds_only_dgm_and_does_not_require_prior_prt (__main__.IntegrationTests.test_22_standalone_builds_only_dgm_and_does_not_require_prior_prt) ... ok
+test_23_standalone_can_run_twice_without_closing_old_dgm (__main__.IntegrationTests.test_23_standalone_can_run_twice_without_closing_old_dgm) ... ok
+test_24_standalone_failed_report_embeds_diagnostic (__main__.IntegrationTests.test_24_standalone_failed_report_embeds_diagnostic) ... ok
+test_25_json_safe_preserves_nan_as_diagnostic (__main__.IntegrationTests.test_25_json_safe_preserves_nan_as_diagnostic) ... ok
+test_26_snapshot_is_unverified_and_not_final_record (__main__.IntegrationTests.test_26_snapshot_is_unverified_and_not_final_record) ... ok
+test_27_snapshot_stage_does_not_save_foreign_part (__main__.IntegrationTests.test_27_snapshot_stage_does_not_save_foreign_part) ... ok
+test_28_pre_nx_event_remains_when_native_call_raises (__main__.IntegrationTests.test_28_pre_nx_event_remains_when_native_call_raises) ... ok
+test_29_checkpoint_hash_identical_copy (__main__.IntegrationTests.test_29_checkpoint_hash_identical_copy) ... ok
+test_30_no_more_accurate_result_auto_selected (__main__.IntegrationTests.test_30_no_more_accurate_result_auto_selected) ... ok
+test_31_stop_request_skips_additional_native_queries (__main__.IntegrationTests.test_31_stop_request_skips_additional_native_queries) ... ok
+test_32_start_error_json_embeds_raw_terrain_diagnostic (__main__.IntegrationTests.test_32_start_error_json_embeds_raw_terrain_diagnostic) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 6.964s
+
+OK

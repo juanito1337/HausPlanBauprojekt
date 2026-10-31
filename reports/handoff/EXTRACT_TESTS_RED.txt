@@ -1,0 +1,78 @@
+test_archive_refuses_duplicate (test_repo_tools.RepoToolTests.test_archive_refuses_duplicate) ... ok
+test_archive_refuses_git_metadata (test_repo_tools.RepoToolTests.test_archive_refuses_git_metadata) ... ok
+test_archive_refuses_inside_repository (test_repo_tools.RepoToolTests.test_archive_refuses_inside_repository) ... ok
+test_archive_refuses_missing_input (test_repo_tools.RepoToolTests.test_archive_refuses_missing_input) ... ok
+test_archive_refuses_overwrite (test_repo_tools.RepoToolTests.test_archive_refuses_overwrite) ... ok
+test_archive_roundtrip (test_repo_tools.RepoToolTests.test_archive_roundtrip) ... ok
+test_bad_syntax (test_repo_tools.RepoToolTests.test_bad_syntax) ... ok
+test_baseline_import_manifest_exists (test_repo_tools.RepoToolTests.test_baseline_import_manifest_exists) ... ok
+test_digest (test_repo_tools.RepoToolTests.test_digest) ... ok
+test_extract_json_assignment (test_repo_tools.RepoToolTests.test_extract_json_assignment) ... ERROR
+test_extract_rejects_ambiguous_assignment (test_repo_tools.RepoToolTests.test_extract_rejects_ambiguous_assignment) ... ERROR
+test_extract_rejects_javascript (test_repo_tools.RepoToolTests.test_extract_rejects_javascript) ... ERROR
+test_extract_requires_assignment (test_repo_tools.RepoToolTests.test_extract_requires_assignment) ... ERROR
+test_extract_requires_terminator (test_repo_tools.RepoToolTests.test_extract_requires_terminator) ... ERROR
+test_k01_is_documents_only (test_repo_tools.RepoToolTests.test_k01_is_documents_only) ... ok
+test_manifest_bad_digest (test_repo_tools.RepoToolTests.test_manifest_bad_digest) ... ok
+test_manifest_case_collision (test_repo_tools.RepoToolTests.test_manifest_case_collision) ... ok
+test_manifest_missing (test_repo_tools.RepoToolTests.test_manifest_missing) ... ok
+test_manifest_modified (test_repo_tools.RepoToolTests.test_manifest_modified) ... ok
+test_manifest_ok (test_repo_tools.RepoToolTests.test_manifest_ok) ... ok
+test_member_absolute (test_repo_tools.RepoToolTests.test_member_absolute) ... ok
+test_member_backslash (test_repo_tools.RepoToolTests.test_member_backslash) ... ok
+test_member_empty (test_repo_tools.RepoToolTests.test_member_empty) ... ok
+test_member_normal (test_repo_tools.RepoToolTests.test_member_normal) ... ok
+test_member_parent (test_repo_tools.RepoToolTests.test_member_parent) ... ok
+test_member_symlink (test_repo_tools.RepoToolTests.test_member_symlink) ... ok
+test_member_windows (test_repo_tools.RepoToolTests.test_member_windows) ... ok
+test_python_syntax_310 (test_repo_tools.RepoToolTests.test_python_syntax_310) ... ok
+
+======================================================================
+ERROR: test_extract_json_assignment (test_repo_tools.RepoToolTests.test_extract_json_assignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 83, in test_extract_json_assignment
+    self.assertEqual(rs.extract_json_assignment('const P={"a":[1,2]}; draw();'), {'a':[1,2]})
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tools.repo_support' has no attribute 'extract_json_assignment'
+
+======================================================================
+ERROR: test_extract_rejects_ambiguous_assignment (test_repo_tools.RepoToolTests.test_extract_rejects_ambiguous_assignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 87, in test_extract_rejects_ambiguous_assignment
+    with self.assertRaises(ValueError):rs.extract_json_assignment('const P={}; const P={};')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tools.repo_support' has no attribute 'extract_json_assignment'
+
+======================================================================
+ERROR: test_extract_rejects_javascript (test_repo_tools.RepoToolTests.test_extract_rejects_javascript)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 85, in test_extract_rejects_javascript
+    with self.assertRaises(ValueError):rs.extract_json_assignment('const P=fetch("secret");')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tools.repo_support' has no attribute 'extract_json_assignment'
+
+======================================================================
+ERROR: test_extract_requires_assignment (test_repo_tools.RepoToolTests.test_extract_requires_assignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 89, in test_extract_requires_assignment
+    with self.assertRaises(ValueError):rs.extract_json_assignment('<html>missing</html>')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tools.repo_support' has no attribute 'extract_json_assignment'
+
+======================================================================
+ERROR: test_extract_requires_terminator (test_repo_tools.RepoToolTests.test_extract_requires_terminator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 91, in test_extract_requires_terminator
+    with self.assertRaises(ValueError):rs.extract_json_assignment('const P={} + execute();')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tools.repo_support' has no attribute 'extract_json_assignment'
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.007s
+
+FAILED (errors=5)

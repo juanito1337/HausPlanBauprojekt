@@ -1,0 +1,654 @@
+{
+  "revision": "MAIN01-A01",
+  "NX_executed": false,
+  "original_package_sha256": "4eea8680968256674c71f850ee6fb12323602bbb2863bbd8abfeaf7a3dd21b9e",
+  "two_documented_main_pitches": [
+    {
+      "pitch_deg": 45,
+      "document": "P13",
+      "page": 1
+    },
+    {
+      "pitch_deg": 28,
+      "document": "P18",
+      "page": 1
+    }
+  ],
+  "roof_angle_check": [
+    {
+      "id": "DACH_HAUPT",
+      "declared_pitch_deg": 45.0,
+      "computed_face_pitches_deg": [
+        45.0,
+        45.0,
+        45.0,
+        45.0
+      ],
+      "pitch_status": "PLANWERT_45_AUS_P13",
+      "pitch_source": {
+        "document": "P13",
+        "page": 1,
+        "location": "45 Grad an Hauptdach; keine Gaubenwinkelangabe"
+      },
+      "changed_geometry": false
+    },
+    {
+      "id": "DACH_QUER",
+      "declared_pitch_deg": 45.0,
+      "computed_face_pitches_deg": [
+        45.0,
+        45.0,
+        45.0,
+        45.0
+      ],
+      "pitch_status": "PLANWERT_45_AUS_P13",
+      "pitch_source": {
+        "document": "P13",
+        "page": 1,
+        "location": "45 Grad an Hauptdach; keine Gaubenwinkelangabe"
+      },
+      "changed_geometry": false
+    },
+    {
+      "id": "DACH_ANBAU",
+      "declared_pitch_deg": 28.0,
+      "computed_face_pitches_deg": [
+        27.999999999999996,
+        27.999999999999996,
+        28.000000000000007,
+        28.00000000000001
+      ],
+      "pitch_status": "PLANWERT_28_AUS_P18",
+      "pitch_source": {
+        "document": "P18",
+        "page": 1,
+        "location": "28 Grad am Binderdach; kein allgemeiner Winkel fuer Gauben"
+      },
+      "changed_geometry": false
+    },
+    {
+      "id": "DACH_GARAGE",
+      "declared_pitch_deg": 35.0,
+      "computed_face_pitches_deg": [
+        35.0,
+        35.0,
+        35.0,
+        35.0
+      ],
+      "pitch_status": "GESCHAETZT_KEIN_NUMERISCHER_PLANWINKEL",
+      "pitch_source": null,
+      "changed_geometry": false
+    }
+  ],
+  "dormer_check": [
+    {
+      "id": "GAUBE_WEST",
+      "before_pitch_deg": 12.658509308797653,
+      "after_pitch_deg": 12.658509308797653,
+      "status": "GESCHAETZT_AUS_ALTEM_MODELL_NICHT_IM_PLAN_BEMASST",
+      "old_rear_gap_mm": 255.0,
+      "new_rear_gap_mm": 0.0,
+      "old_front_to_back_mm": 1870,
+      "new_front_to_back_mm": 2198.8620689655177,
+      "rear_extension_mm": 328.86206896551766,
+      "rear_connection": {
+        "status": "MODELLFLAECHEN_SCHNEIDEN_SICH_NICHT_BESTANDSBESTAETIGT",
+        "pitch_deg": 12.658509308797653,
+        "pitch_status": "GESCHAETZT_AUS_MAIN01_GEOMETRIE",
+        "front_z_mm": 5510.0,
+        "rear_z_mm": 6003.862068965517,
+        "front_to_rear_mm": 2198.8620689655177,
+        "original_rect": [
+          -70,
+          4900,
+          1800,
+          9050
+        ],
+        "resolved_rect": [
+          -70.0,
+          4900.0,
+          2128.8620689655177,
+          9050.0
+        ],
+        "stations": [
+          {
+            "station": 0,
+            "point": [
+              2128.8620689655177,
+              4900.0,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 1,
+            "point": [
+              2128.8620689655177,
+              5418.75,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 2,
+            "point": [
+              2128.8620689655177,
+              5937.5,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 3,
+            "point": [
+              2128.8620689655177,
+              6456.25,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 4,
+            "point": [
+              2128.8620689655177,
+              6975.0,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 5,
+            "point": [
+              2128.8620689655177,
+              7493.75,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 6,
+            "point": [
+              2128.8620689655177,
+              8012.5,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 7,
+            "point": [
+              2128.8620689655177,
+              8531.25,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 8,
+            "point": [
+              2128.8620689655177,
+              9050.0,
+              6003.862068965517
+            ],
+            "depth_mm": 2198.8620689655177,
+            "host_parent": "DACH_HAUPT"
+          }
+        ],
+        "max_depth_spread_mm": 0.0,
+        "whole_rear_seam_checks": [
+          {
+            "fraction": 0.0,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.11579975072704606,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.2315995014540921,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.6157997507270461,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 1.0,
+            "gap_mm": 0.0
+          }
+        ],
+        "max_rear_gap_mm": 0.0,
+        "source": "GEOMETRISCHE_ABLEITUNG_AUS_BISHERIGEN_MODELLANNAHMEN",
+        "as_built_verified": false,
+        "flashing_or_structure_designed": false
+      }
+    },
+    {
+      "id": "GAUBE_OST",
+      "before_pitch_deg": 15.699905975270214,
+      "after_pitch_deg": 15.699905975270214,
+      "status": "GESCHAETZT_AUS_ALTEM_MODELL_NICHT_IM_PLAN_BEMASST",
+      "old_rear_gap_mm": 265.0000000000009,
+      "new_rear_gap_mm": 0.0,
+      "old_front_to_back_mm": 1494.2070000000003,
+      "new_front_to_back_mm": 1862.8183151375872,
+      "rear_extension_mm": 368.61131513758687,
+      "rear_connection": {
+        "status": "MODELLFLAECHEN_SCHNEIDEN_SICH_NICHT_BESTANDSBESTAETIGT",
+        "pitch_deg": 15.699905975270214,
+        "pitch_status": "GESCHAETZT_AUS_MAIN01_GEOMETRIE",
+        "front_z_mm": 5510.0,
+        "rear_z_mm": 6033.611315137586,
+        "front_to_rear_mm": 1862.8183151375872,
+        "original_rect": [
+          6200,
+          9953.756,
+          7694.207,
+          15453.756
+        ],
+        "resolved_rect": [
+          5831.388684862413,
+          9953.756,
+          7694.207,
+          15453.756
+        ],
+        "stations": [
+          {
+            "station": 0,
+            "point": [
+              5831.388684862413,
+              9953.756,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 1,
+            "point": [
+              5831.388684862413,
+              10641.256,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 2,
+            "point": [
+              5831.388684862413,
+              11328.756,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 3,
+            "point": [
+              5831.388684862413,
+              12016.256,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 4,
+            "point": [
+              5831.388684862413,
+              12703.756,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 5,
+            "point": [
+              5831.388684862413,
+              13391.256,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 6,
+            "point": [
+              5831.388684862413,
+              14078.756,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 7,
+            "point": [
+              5831.388684862413,
+              14766.256,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 8,
+            "point": [
+              5831.388684862413,
+              15453.756,
+              6033.611315137586
+            ],
+            "depth_mm": 1862.8183151375872,
+            "host_parent": "DACH_HAUPT"
+          }
+        ],
+        "max_depth_spread_mm": 0.0,
+        "whole_rear_seam_checks": [
+          {
+            "fraction": 0.0,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.46316866501250786,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.9263373300250157,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.9263373300250158,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 0.963168665012508,
+            "gap_mm": 0.0
+          },
+          {
+            "fraction": 1.0,
+            "gap_mm": 0.0
+          }
+        ],
+        "max_rear_gap_mm": 0.0,
+        "source": "GEOMETRISCHE_ABLEITUNG_AUS_BISHERIGEN_MODELLANNAHMEN",
+        "as_built_verified": false,
+        "flashing_or_structure_designed": false
+      }
+    },
+    {
+      "id": "GAUBE_SUED",
+      "before_pitch_deg": 12.852491996352292,
+      "after_pitch_deg": 12.852491996352292,
+      "status": "GESCHAETZT_AUS_ALTEM_MODELL_NICHT_IM_PLAN_BEMASST",
+      "old_rear_gap_mm": 255.0,
+      "new_rear_gap_mm": 9.094947017729282e-13,
+      "old_front_to_back_mm": 1840.829,
+      "new_front_to_back_mm": 2171.207529013696,
+      "rear_extension_mm": 330.3785290136959,
+      "rear_connection": {
+        "status": "MODELLFLAECHEN_SCHNEIDEN_SICH_NICHT_BESTANDSBESTAETIGT",
+        "pitch_deg": 12.852491996352292,
+        "pitch_status": "GESCHAETZT_AUS_MAIN01_GEOMETRIE",
+        "front_z_mm": 5510.0,
+        "rear_z_mm": 6005.378529013696,
+        "front_to_rear_mm": 2171.207529013696,
+        "original_rect": [
+          4700,
+          -40.829,
+          13200,
+          1800
+        ],
+        "resolved_rect": [
+          4700.0,
+          -40.829,
+          13200.0,
+          2130.3785290136957
+        ],
+        "stations": [
+          {
+            "station": 0,
+            "point": [
+              4700.0,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 1,
+            "point": [
+              5762.5,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_HAUPT"
+          },
+          {
+            "station": 2,
+            "point": [
+              6825.0,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          },
+          {
+            "station": 3,
+            "point": [
+              7887.5,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          },
+          {
+            "station": 4,
+            "point": [
+              8950.0,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          },
+          {
+            "station": 5,
+            "point": [
+              10012.5,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          },
+          {
+            "station": 6,
+            "point": [
+              11075.0,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          },
+          {
+            "station": 7,
+            "point": [
+              12137.5,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          },
+          {
+            "station": 8,
+            "point": [
+              13200.0,
+              2130.3785290136957,
+              6005.378529013696
+            ],
+            "depth_mm": 2171.207529013696,
+            "host_parent": "DACH_QUER"
+          }
+        ],
+        "max_depth_spread_mm": 0.0,
+        "whole_rear_seam_checks": [
+          {
+            "fraction": 0.0,
+            "gap_mm": 9.094947017729282e-13
+          },
+          {
+            "fraction": 0.06821302770507673,
+            "gap_mm": 9.094947017729282e-13
+          },
+          {
+            "fraction": 0.13642605541015346,
+            "gap_mm": 9.094947017729282e-13
+          },
+          {
+            "fraction": 0.32644832182272376,
+            "gap_mm": 9.094947017729282e-13
+          },
+          {
+            "fraction": 0.5164705882352941,
+            "gap_mm": 9.094947017729282e-13
+          },
+          {
+            "fraction": 0.7582352941176471,
+            "gap_mm": 9.094947017729282e-13
+          },
+          {
+            "fraction": 1.0,
+            "gap_mm": 9.094947017729282e-13
+          }
+        ],
+        "max_rear_gap_mm": 9.094947017729282e-13,
+        "source": "GEOMETRISCHE_ABLEITUNG_AUS_BISHERIGEN_MODELLANNAHMEN",
+        "as_built_verified": false,
+        "flashing_or_structure_designed": false
+      }
+    }
+  ],
+  "parts_comparison": [
+    {
+      "part": "STEUERUNG",
+      "before_solids": 0,
+      "after_solids": 0,
+      "records_identical": true
+    },
+    {
+      "part": "KG",
+      "before_solids": 233,
+      "after_solids": 233,
+      "records_identical": true
+    },
+    {
+      "part": "EG",
+      "before_solids": 376,
+      "after_solids": 376,
+      "records_identical": true
+    },
+    {
+      "part": "DG",
+      "before_solids": 404,
+      "after_solids": 397,
+      "records_identical": false
+    },
+    {
+      "part": "ANBAU_KG",
+      "before_solids": 27,
+      "after_solids": 27,
+      "records_identical": true
+    },
+    {
+      "part": "ANBAU_EG",
+      "before_solids": 136,
+      "after_solids": 136,
+      "records_identical": true
+    },
+    {
+      "part": "GARAGE",
+      "before_solids": 27,
+      "after_solids": 27,
+      "records_identical": true
+    },
+    {
+      "part": "DACH",
+      "before_solids": 101,
+      "after_solids": 101,
+      "records_identical": false
+    },
+    {
+      "part": "VIDEO_DACHFENSTER",
+      "before_solids": 45,
+      "after_solids": 45,
+      "records_identical": true
+    },
+    {
+      "part": "VIDEO_SOLARFELDER",
+      "before_solids": 15,
+      "after_solids": 15,
+      "records_identical": true
+    },
+    {
+      "part": "FLACHDACH",
+      "before_solids": 1,
+      "after_solids": 1,
+      "records_identical": true
+    },
+    {
+      "part": "BALKON_RECHTS",
+      "before_solids": 31,
+      "after_solids": 31,
+      "records_identical": true
+    },
+    {
+      "part": "BALKON_ZUGANG",
+      "before_solids": 2,
+      "after_solids": 2,
+      "records_identical": true
+    },
+    {
+      "part": "KELLERABGANG_GELAENDER",
+      "before_solids": 25,
+      "after_solids": 25,
+      "records_identical": true
+    },
+    {
+      "part": "FALLROHR_SICHTABSCHNITTE",
+      "before_solids": 2,
+      "after_solids": 2,
+      "records_identical": true
+    }
+  ],
+  "known_collision_count": 10,
+  "blocked_openings": 2,
+  "new_collision_pairs": [],
+  "invalid_volumes": [],
+  "logical_errors": [],
+  "scope": "Modelldachneigungen und hintere Gaubenanschluesse; kein Aufmass, keine Statik, keine vollstaendige Dachanschlusskonstruktion.",
+  "preserved_but_unconfirmed": [
+    "35 Grad Garagen-Huellenwinkel",
+    "Gaubenwinkel 12.66/15.70/12.85 Grad",
+    "Vorderhoehnen und Traufen",
+    "Tragwerk",
+    "flache Balkonzugangshaube",
+    "Flachdach"
+  ],
+  "baseline_input_geometry": "Keine Aenderung der Fassaden-/Dachfensterdaten, Balkondefinitionen, Dachhauptwinkel oder Firststeuerung."
+}

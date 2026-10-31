@@ -1,0 +1,235 @@
+test_archive_refuses_duplicate (test_repo_tools.RepoToolTests.test_archive_refuses_duplicate) ... FAIL
+test_archive_refuses_git_metadata (test_repo_tools.RepoToolTests.test_archive_refuses_git_metadata) ... FAIL
+test_archive_refuses_inside_repository (test_repo_tools.RepoToolTests.test_archive_refuses_inside_repository) ... FAIL
+test_archive_refuses_missing_input (test_repo_tools.RepoToolTests.test_archive_refuses_missing_input) ... FAIL
+test_archive_refuses_overwrite (test_repo_tools.RepoToolTests.test_archive_refuses_overwrite) ... FAIL
+test_archive_roundtrip (test_repo_tools.RepoToolTests.test_archive_roundtrip) ... FAIL
+test_bad_syntax (test_repo_tools.RepoToolTests.test_bad_syntax) ... FAIL
+test_baseline_import_manifest_exists (test_repo_tools.RepoToolTests.test_baseline_import_manifest_exists) ... FAIL
+test_digest (test_repo_tools.RepoToolTests.test_digest) ... FAIL
+test_k01_is_documents_only (test_repo_tools.RepoToolTests.test_k01_is_documents_only) ... FAIL
+test_manifest_bad_digest (test_repo_tools.RepoToolTests.test_manifest_bad_digest) ... FAIL
+test_manifest_case_collision (test_repo_tools.RepoToolTests.test_manifest_case_collision) ... FAIL
+test_manifest_missing (test_repo_tools.RepoToolTests.test_manifest_missing) ... FAIL
+test_manifest_modified (test_repo_tools.RepoToolTests.test_manifest_modified) ... FAIL
+test_manifest_ok (test_repo_tools.RepoToolTests.test_manifest_ok) ... FAIL
+test_member_absolute (test_repo_tools.RepoToolTests.test_member_absolute) ... FAIL
+test_member_backslash (test_repo_tools.RepoToolTests.test_member_backslash) ... FAIL
+test_member_empty (test_repo_tools.RepoToolTests.test_member_empty) ... FAIL
+test_member_normal (test_repo_tools.RepoToolTests.test_member_normal) ... FAIL
+test_member_parent (test_repo_tools.RepoToolTests.test_member_parent) ... FAIL
+test_member_symlink (test_repo_tools.RepoToolTests.test_member_symlink) ... FAIL
+test_member_windows (test_repo_tools.RepoToolTests.test_member_windows) ... FAIL
+test_python_syntax_310 (test_repo_tools.RepoToolTests.test_python_syntax_310) ... FAIL
+
+======================================================================
+FAIL: test_archive_refuses_duplicate (test_repo_tools.RepoToolTests.test_archive_refuses_duplicate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_archive_refuses_git_metadata (test_repo_tools.RepoToolTests.test_archive_refuses_git_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_archive_refuses_inside_repository (test_repo_tools.RepoToolTests.test_archive_refuses_inside_repository)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_archive_refuses_missing_input (test_repo_tools.RepoToolTests.test_archive_refuses_missing_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_archive_refuses_overwrite (test_repo_tools.RepoToolTests.test_archive_refuses_overwrite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_archive_roundtrip (test_repo_tools.RepoToolTests.test_archive_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_bad_syntax (test_repo_tools.RepoToolTests.test_bad_syntax)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_baseline_import_manifest_exists (test_repo_tools.RepoToolTests.test_baseline_import_manifest_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_digest (test_repo_tools.RepoToolTests.test_digest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_k01_is_documents_only (test_repo_tools.RepoToolTests.test_k01_is_documents_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_manifest_bad_digest (test_repo_tools.RepoToolTests.test_manifest_bad_digest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_manifest_case_collision (test_repo_tools.RepoToolTests.test_manifest_case_collision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_manifest_missing (test_repo_tools.RepoToolTests.test_manifest_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_manifest_modified (test_repo_tools.RepoToolTests.test_manifest_modified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_manifest_ok (test_repo_tools.RepoToolTests.test_manifest_ok)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_absolute (test_repo_tools.RepoToolTests.test_member_absolute)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_backslash (test_repo_tools.RepoToolTests.test_member_backslash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_empty (test_repo_tools.RepoToolTests.test_member_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_normal (test_repo_tools.RepoToolTests.test_member_normal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_parent (test_repo_tools.RepoToolTests.test_member_parent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_symlink (test_repo_tools.RepoToolTests.test_member_symlink)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_member_windows (test_repo_tools.RepoToolTests.test_member_windows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+======================================================================
+FAIL: test_python_syntax_310 (test_repo_tools.RepoToolTests.test_python_syntax_310)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/HausPlanBauprojekt/tests/test_repo_tools.py", line 19, in setUp
+    self.assertIsNotNone(rs, 'tools/repo_support.py ist noch nicht implementiert')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : tools/repo_support.py ist noch nicht implementiert
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.003s
+
+FAILED (failures=23)

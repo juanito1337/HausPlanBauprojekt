@@ -1,0 +1,33 @@
+{
+  "source_file": "STARTFEHLER_R09_20261008_164240_ff5feef3.json",
+  "source_sha256": "75dfd17a85f270d576abfbf839cb9b872507916563809c1dc8d3bdd042f42f7e",
+  "nx_runtime": {
+    "python": "3.10.12 (main, Mar  5 2024, 17:56:48) [MSC v.1929 64 bit (AMD64)]",
+    "nx_version_inferred_from_python": false,
+    "UGII_VERSION": "v2406",
+    "UGII_FULL_VERSION": "v2406.0.0.7001",
+    "UGII_BASE_DIR": "C:\\Siemens\\nx2406"
+  },
+  "surface_id": "DGM",
+  "measurements": [
+    {
+      "requested_accuracy": 0.999,
+      "area_unit": "mm2",
+      "length_unit": "mm",
+      "face_count": 1,
+      "area_mm2": 8358381179.944885,
+      "disposed": true
+    },
+    {
+      "requested_accuracy": 0.9999,
+      "area_unit": "mm2",
+      "length_unit": "mm",
+      "face_count": 1,
+      "area_mm2": 8361523002.046139,
+      "disposed": true
+    }
+  ],
+  "later_refinement_results_available": false,
+  "point_checks_reached": false,
+  "note": "Only two measured values from uploaded NX report. All later values in regression tests are synthetic."
+}

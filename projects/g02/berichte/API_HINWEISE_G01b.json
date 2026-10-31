@@ -1,0 +1,20 @@
+{
+  "status": "API symbols selected; actual NX 2406 execution not performed here",
+  "calls": [
+    "Modeling.AskFaceUvMinmax(face.Tag)",
+    "Modeling.EvaluateFace(face.Tag,0,[u,v]).SrfPos",
+    "Face.GetEdges()",
+    "Edge.GetVertices()"
+  ],
+  "reference_examples": [
+    {
+      "url": "https://www.cnblogs.com/hustmse0510/p/17476928.html",
+      "role": "Original author Python example of EvaluateFace returning result.SrfPos; uses normal request10, whereas this code requests position only0."
+    },
+    {
+      "url": "https://nxjournaling.com/content/lookat-journal-orient-view-nearest-uv-orientation-face",
+      "role": "Original author C# example of AskFaceUvMinmax ordering and EvaluateFace; NOT used to copy .NET output-argument signature into Python."
+    }
+  ],
+  "limitations": "Examples are not an installed NX 2406 API run or a Siemens certification. Missing methods/return fields fail with diagnostics; no guessed return values."
+}

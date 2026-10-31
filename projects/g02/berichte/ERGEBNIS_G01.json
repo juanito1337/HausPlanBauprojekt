@@ -1,0 +1,20 @@
+{
+  "patch": "MAIN01-A01-G01-GESAMT",
+  "test_count": 454,
+  "NX_tested": false,
+  "counts": {
+    "house_unit_tests": 87,
+    "inherited_environment_integration_tests": 291,
+    "new_overall_tests": 58,
+    "diagnostic_tests": 18
+  },
+  "all_executed_tests_passed": true,
+  "cad_house_bodies": 1418,
+  "cad_step_files": 11,
+  "cad_point_face_samples": 3516,
+  "combined_simulation": "SIMULATION_G01.json",
+  "DGM_point85_fixed": false,
+  "all_model_defects_fixed": false,
+  "unverified_elevation_link": true,
+  "own_execution": "Python tests / NX doubles / Open CASCADE only; no NX/Parasolid."
+}

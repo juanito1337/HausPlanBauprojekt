@@ -1,0 +1,49 @@
+{
+  "source": "STARTFEHLER_G01c_20261012_121659_75b4ef58.json",
+  "source_sha256": "d0b7cbae1f27d5831c470649879bdb2d37200bf7faa0e1718c87d3cd3a14c424",
+  "nx_runtime": {
+    "version": "v2406.0.0.7001",
+    "python": "3.10.12"
+  },
+  "checked_surface_points": 16748,
+  "maximum_surface_deviation_mm": 7.071121654464448e-08,
+  "failure": {
+    "side": "R1",
+    "index": 417,
+    "query_mm": [
+      53714.5683014,
+      42295.9012885,
+      32440.0
+    ],
+    "probe_kind": "ORIGINAL_RANDKNOTEN",
+    "edge_tag": 64439,
+    "source_fraction": 0.03658536585356554,
+    "raw_result": [
+      0.26372681449087754,
+      [
+        53714.5683014,
+        42295.9012885,
+        32440.0
+      ],
+      [
+        53714.55144298791,
+        42295.904704550165,
+        32440.263165265987
+      ]
+    ],
+    "distance_mm": 0.26372681449087754
+  },
+  "boundary_samples_completed_including_failure": 418,
+  "boundary_samples_planned": 1591,
+  "selected_checks_passed": false,
+  "actual_NX_measurement": true,
+  "boundary_side_counts": {
+    "R0": 82,
+    "R1": 1,
+    "C0": 101,
+    "C1": 101
+  },
+  "threshold_excess_mm": 0.013726814490877537,
+  "long_edge_chord_length_mm": 82000.24390208228,
+  "geometric_displacement_or_distance_search_error_not_resolved_by_log_alone": true
+}

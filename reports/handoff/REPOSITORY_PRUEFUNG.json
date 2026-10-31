@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "source": "NX_GESAMT_G02_HOEHENBEZUG.zip",
+      "target": "projects/g02",
+      "checked_files": 543,
+      "problems": []
+    },
+    {
+      "source": "K01_Unterlagen_NEU.zip",
+      "target": "renovierung/k01_unterlagen",
+      "checked_files": 8,
+      "problems": []
+    }
+  ],
+  "python_310_syntax_files": 154,
+  "syntax_errors": [],
+  "additional_file_errors": [],
+  "K01_recovered_data_matches_preview": true,
+  "missing_repo_files": [],
+  "NX_run_performed": false,
+  "renovation_implementation_available": false,
+  "warning": "K01 ist nur als historische Unterlage erhalten. Keine Ausführungs-/Tragwerksfreigabe."
+}

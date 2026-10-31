@@ -1,0 +1,40 @@
+{
+  "patch": "R09e-ADAPTIVE-FLAECHENMESSUNG",
+  "NX_tested": false,
+  "checks": [
+    {
+      "name": "haus",
+      "exit_code": 0,
+      "test_count": 380,
+      "log": "haus.txt"
+    },
+    {
+      "name": "integration",
+      "exit_code": 0,
+      "test_count": 210,
+      "log": "integration.txt"
+    },
+    {
+      "name": "step",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "step.txt"
+    },
+    {
+      "name": "flaechenteilung",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "flaechenteilung.txt"
+    },
+    {
+      "name": "dgm_integration",
+      "exit_code": 0,
+      "test_count": null,
+      "log": "dgm_integration.txt"
+    }
+  ],
+  "date": "2026-10-08T15:01:55.561754",
+  "cad_requested": true,
+  "all_requested_checks_passed": true,
+  "test_count": 590
+}

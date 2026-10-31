@@ -1,0 +1,91 @@
+{
+  "baseline": "R09a",
+  "rows": [
+    {
+      "file": "CAD_IMPORT/V02_R09.step",
+      "sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V06_R09.step",
+      "sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step",
+      "sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V04_R09.step",
+      "sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/TEST_IMPORT_R09.step",
+      "sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V07_R09.step",
+      "sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V01_R09.step",
+      "sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V05_R09.step",
+      "sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V08_R09.step",
+      "sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V03_R09.step",
+      "sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/F01_R09.step",
+      "sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "unchanged": true
+    },
+    {
+      "file": "UMGEBUNG_ZUM_DIREKTIMPORT.step",
+      "sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Haus_R06/data/haus.json",
+      "sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/data/BAUAUFTRAG_VEGETATION_R08.json",
+      "sha256": "1efa527c8a769bbbe5c0d8035c5b6e1cc8457223f341d12ec49bffaad3c55864",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/data/RASTER_AUSWERTUNG_R08.npz",
+      "sha256": "44904663057664c930472a17951f213baafb230a8dc210175e4244adfec08a85",
+      "unchanged": true
+    },
+    {
+      "file": "data/EINSTELLUNGEN_R09.json",
+      "sha256": "0480fca8100d50bbad7bcd65a0821556927c401b8c2c4ba07d15352deceb1f31",
+      "unchanged": true
+    },
+    {
+      "file": "data/LEITUNGSTIEFEN_PRUEFUNG_R09a.json",
+      "sha256": "e5b04285e0b00369af3b700df8f1c5a44f0e3a0a2b347c786a854c7daeec1ddd",
+      "unchanged": true
+    }
+  ],
+  "all_unchanged": true
+}

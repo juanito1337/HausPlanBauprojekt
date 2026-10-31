@@ -1,0 +1,35 @@
+{
+  "status": "ACTUAL_OCCT_8282_FACES_PASS_REAL_2MM_BULGE_REJECTED",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "user_imported_NX_part_tested": false,
+  "source_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+  "source_STEP_unchanged": true,
+  "actual_CAD_model": "Constructed from actual imported STEP carrier as 8282 bilinear Bezier faces with shared edges",
+  "counts": {
+    "nx_faces": 8282,
+    "covered_cells": 8282,
+    "unique_edges": 16747,
+    "interior_edges": 16381,
+    "exterior_edges": 366,
+    "checked_samples": 16748,
+    "face_point_comparisons": 41410,
+    "surface_evaluation_calls": 74538,
+    "edge_distance_calls": 50977,
+    "boundary_samples_checked": 1834,
+    "shared_edge_samples_checked": 49143,
+    "max_position_error_mm": 1.7775732040487898e-05,
+    "max_boundary_error_mm": 7.071121654464448e-08
+  },
+  "deformation_test": {
+    "cell": [
+      13,
+      10
+    ],
+    "actual_displacement_at_centre_mm": 2.0,
+    "source_index": 9542,
+    "measured_deviation_mm": 1.9999999849538597,
+    "rejected": true
+  },
+  "elapsed_seconds_OCCT_only": 26.129
+}

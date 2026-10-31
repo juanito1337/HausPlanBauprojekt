@@ -1,0 +1,60 @@
+{
+  "status": "G02_HOEHEN_TRANSFORMATION_OCCT_BESTANDEN",
+  "NX_tested": false,
+  "Parasolid_tested": false,
+  "translation_mm": [
+    0.0,
+    0.0,
+    -31362.49870845903
+  ],
+  "grid_nodes_checked": 8466,
+  "groups": [
+    {
+      "id": "DGM",
+      "actual_source_faces": 1,
+      "source_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+      "transformed_faces_valid": true,
+      "position_comparisons": 8473,
+      "max_translation_error_mm": 7.071121654464448e-08
+    },
+    {
+      "id": "V01",
+      "actual_source_faces": 49,
+      "source_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "transformed_faces_valid": true,
+      "position_comparisons": 343,
+      "max_translation_error_mm": 5.002220859751105e-12
+    },
+    {
+      "id": "V02",
+      "actual_source_faces": 27,
+      "source_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "transformed_faces_valid": true,
+      "position_comparisons": 189,
+      "max_translation_error_mm": 5.002220859751105e-12
+    },
+    {
+      "id": "V03",
+      "actual_source_faces": 21,
+      "source_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "transformed_faces_valid": true,
+      "position_comparisons": 147,
+      "max_translation_error_mm": 3.183231456205249e-12
+    },
+    {
+      "id": "V05",
+      "actual_source_faces": 17,
+      "source_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "transformed_faces_valid": true,
+      "position_comparisons": 119,
+      "max_translation_error_mm": 4.547473508864641e-12
+    }
+  ],
+  "all_selected_surface_faces": 115,
+  "comparisons": 9271,
+  "anchor_target_mm": -300.0,
+  "anchor_error_mm": 7.389644451905042e-13,
+  "original_files_unchanged": true,
+  "site_alignment_surveyed": false,
+  "scope": "Actual STEP/Open-CASCADE rigid translation; independent of NX runtime. Same translation for all selected vegetation and ground; no terrain reshaping."
+}

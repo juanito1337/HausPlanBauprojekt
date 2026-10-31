@@ -1,0 +1,29 @@
+{
+  "patch": "R09b-STEP-FLAECHENPRUEFUNG",
+  "entry": "00_NX_MODELL_ERZEUGEN_2406.py",
+  "error": "Fehlernummer: 820001",
+  "python": "3.12.9 (main, Feb 24 2025, 12:24:11) [MSC v.1929 64 bit (AMD64)]",
+  "time": "2026-10-08T10:58:27.644789",
+  "source_file": "STARTFEHLER_R09_20261008_105827_3b21a507.json",
+  "source_sha256": "6cc47be0054404bd0862138d21809898ee17223e69beeed2e3a5391ccc52d90a",
+  "phase": "NX_STEP_IMPORT_FUNKTIONSTEST",
+  "operation": "STEP-Flaecheninhalt: TEST Quellsheet 2",
+  "nx_surface_check": {
+    "id": "TEST",
+    "status": "IMPORTGEOMETRIE_ABGEBROCHEN",
+    "source_sheets": 2,
+    "source_faces": 2,
+    "nx_sheets": 2,
+    "nx_faces": 2,
+    "error": "Fehlernummer: 820001",
+    "operation": "STEP-Flaecheninhalt: TEST Quellsheet 2",
+    "last_sheet": {
+      "source_index": 1,
+      "body_index": 1,
+      "nx_faces": 1,
+      "expected_samples": 38,
+      "checked_samples": 0
+    }
+  },
+  "note": "Lokale Projektpfade sind in diesem Auszug weggelassen; Originalbericht bleibt beim Nutzer."
+}

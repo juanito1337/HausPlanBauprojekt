@@ -1,0 +1,957 @@
+{
+  "revision": "R06",
+  "facts": [
+    {
+      "id": "Q01",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 1"
+        }
+      ],
+      "source_statement": "Neue Wohnungstrennwaende werden aus 24 KS hergestellt.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "TEILWEISE_ZUGEORDNET",
+      "remaining": "Zuordnung einzelner neuer Trennwaende zur 2015er Aufteilung und Istzustand offen.",
+      "values": {
+        "KS_mm": 240
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q02",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 1"
+        }
+      ],
+      "source_statement": "Altes Schwimmbecken im Suedfluegel wird ausgebaut; neuer Holzfussboden, damit lichte Raumhoehe 2,55 m entsteht.",
+      "part_ids": [
+        "ANBAU_EG",
+        "ANBAU_KG"
+      ],
+      "representation": "HOEHENBEZUG_UND_BODENSCHICHTEN",
+      "remaining": "Becken-/Fundamentrest, Holztraglage und Auflager fehlen.",
+      "values": {
+        "clear_height_mm": 2550
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q03",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 1"
+        }
+      ],
+      "source_statement": "Grossflaechige Hoffensterfront nahezu geschlossen; neue Fenster Ost/Sued.",
+      "part_ids": [
+        "ANBAU_EG"
+      ],
+      "representation": "OEFFNUNGEN_NACH_GRUNDRISS",
+      "remaining": "Aktueller Zustand sowie Roh-/Fertigmasse und Stuerze offen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q04",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 1"
+        }
+      ],
+      "source_statement": "Vorhandenes Brettbinderdach im ehemaligen Schwimmbadbereich bleibt erhalten.",
+      "part_ids": [
+        "DACH"
+      ],
+      "representation": "TRAGSYSTEM_REGISTER_DACH_NUR_HUELLE",
+      "remaining": "Binderaufbau, Abstaende, Querschnitte, Knoten und Aussteifung fehlen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q05",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Ueber Wohnungen 1 und 2 altes Satteldach abbrechen und neues Pfettendach errichten.",
+      "part_ids": [
+        "DACH"
+      ],
+      "representation": "TRAGSYSTEM_REGISTER_DACH_NUR_HUELLE",
+      "remaining": "Pfetten, Sparren, Stuetzen, Auflager und Verbindungen nach fehlender Statik.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q06",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Erschliessung oberer Wohnungen ueber Stahlbetontreppe; Treppenhaus aus KS.",
+      "part_ids": [
+        "EG",
+        "DG"
+      ],
+      "representation": "KS_WAENDE_TEILWEISE_TREPPE_NUR_REFERENZ",
+      "remaining": "Treppenplatte, Laeufe, Podeste, Bewehrung und Anschlussdetails fehlen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q07",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Sonst im oberen Geschoss nur Leichtbaustaenderwaende.",
+      "part_ids": [
+        "DG"
+      ],
+      "representation": "MATERIALSYSTEM_ZUGEORDNET",
+      "remaining": "Staenderprofile, Beplankung, Daemmung und Anschlussdetails nicht festgelegt.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q08",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Decke zum EG unveraendert: 16 cm Stahlbeton mit schwimmendem Estrich.",
+      "part_ids": [
+        "EG",
+        "DG"
+      ],
+      "representation": "GEOMETRISCH_ALS_DECKE",
+      "remaining": "Bewehrung, lokale Unterzuege, Auflager und Durchbrueche nicht nachgewiesen.",
+      "values": {
+        "structural_slab_mm": 160
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q09",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Neues Dach mit 14 cm Mineralwolle und Dampfsperre zwischen den Sparren; dunkle Betondachsteine.",
+      "part_ids": [
+        "DACH"
+      ],
+      "representation": "SCHICHTEN_REGISTER",
+      "remaining": "Keine erfundene Sparrenhoehe aus der Daemmstaerke; komplette Schichtkoerper fehlen.",
+      "values": {
+        "insulation_mm": 140
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q10",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Neue Fenster: Kunststoff, D-DK, Waermeschutzglas von mind. 1,8 W/m2 K.",
+      "part_ids": [
+        "EG",
+        "DG",
+        "ANBAU_EG"
+      ],
+      "representation": "MERKMAL_REGISTER_GENERISCHE_EINBAUTEILE",
+      "remaining": "Originalwortlaut mind. erhalten, nicht still zu maximal korrigiert. Kein energetischer Nachweis, keine Herstellerprofile.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q11",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 3"
+        }
+      ],
+      "source_statement": "Stahl/Holz-Balkon an Suedwestecke fuer Wohnung 4, wasserdurchlaessige Holzgrating.",
+      "part_ids": [
+        "DG"
+      ],
+      "representation": "QUELLENREGISTER_RAUMANGABE",
+      "remaining": "Balkontragwerk, Verbindungen, Abdichtungsanschluss und Gelaender fehlen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q12",
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Letzter Absatz"
+        }
+      ],
+      "source_statement": "Vorhandene Entwaesserungs- und Heizungsanlage laut damaliger Beschreibung ausreichend dimensioniert und weiter nutzbar.",
+      "part_ids": [],
+      "representation": "HISTORISCHE_AUSSAGE",
+      "remaining": "Keine eigene Kapazitaetspruefung und keine Bestandsleitungsgeometrie daraus abgeleitet.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q13",
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Absatz 1/2"
+        }
+      ],
+      "source_statement": "Terrasse Wohnung 1 wird Wintergarten; bestehende Nord-, West- und halbe Ostwand bleiben in ihrer Beschaffenheit unveraendert.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "VARIANTENREGISTER",
+      "remaining": "Keine allgemeine Uebertragung des neuen Suedwandaufbaus auf alle Seiten.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q14",
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "source_statement": "Bestehende Fenster entfernen; entstehende Oeffnungen als Durchgaenge nutzen.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "QUELLENREGISTER",
+      "remaining": "Eindeutige Zuordnung aller Durchgaenge und genaue Laibungen noch offen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q15",
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Absatz 3"
+        }
+      ],
+      "source_statement": "Suedwand neu, frostfrei gegruendetes Fundament, Betonplatte, schwimmender Estrich und Teppich.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "WAND_GEOMETRISCH_GRUENDUNG_OFFEN",
+      "remaining": "Keine Standard-Fundamenttiefe und Plattendicke ergaenzt.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q16",
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Absatz 4/5"
+        }
+      ],
+      "source_statement": "Neue Suedwand: 17,5 cm KS, 8 cm Daemmung, 4 cm Luftschicht, 11,5 cm Vormauerstein.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "DREI_MATERIALSCHICHTEN_PLUS_HOHLRAUM",
+      "remaining": "410-mm-Beschreibungsvariante aktiv; Grundrisswert 365 mm nicht damit gleichgesetzt.",
+      "values": {
+        "inside_out_mm": [
+          175,
+          80,
+          40,
+          115
+        ],
+        "sum_mm": 410
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q17",
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Absatz 6"
+        }
+      ],
+      "source_statement": "Restliche Ostfassade als Fensterfront mit Terrassentuer.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "QUELLENREGISTER_GEOMETRIE_UNVOLLSTAENDIG",
+      "remaining": "Genaue Glasfrontlage/-teilung/-hoehe und Einbauten nicht vollstaendig.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q18",
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Absatz 7"
+        }
+      ],
+      "source_statement": "Schiedel-Schornstein Wohnung 3 fuer moeglichen Ofenanschluss; dort Fensteranordnung geringfuegig geaendert.",
+      "part_ids": [
+        "EG",
+        "DG",
+        "DACH"
+      ],
+      "representation": "QUELLENREGISTER",
+      "remaining": "Aktueller Schornstein, Querschnitt, Hoehen, Durchdringungen und Abstaende offen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q19",
+      "sources": [
+        {
+          "document": "P13",
+          "page": 1,
+          "location": "Schnitt A-A Dachbeschriftung"
+        }
+      ],
+      "source_statement": "Hauptdach: Dachpfannen, Lattung 40/60, Konterlattung 20/60, Unterspannbahn, Luftschicht.",
+      "part_ids": [
+        "DACH"
+      ],
+      "representation": "SCHICHTEN_REGISTER",
+      "remaining": "Lattabstaende/Pfannenprofil/Luftschichtmass nicht ergaenzt.",
+      "values": {
+        "batten_section_mm": [
+          40,
+          60
+        ],
+        "counterbatten_section_mm": [
+          20,
+          60
+        ]
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q20",
+      "sources": [
+        {
+          "document": "P13",
+          "page": 1,
+          "location": "Schnitt A-A Dachbeschriftung"
+        }
+      ],
+      "source_statement": "Dachausbau: 14 cm Daemmung, Dampfsperre, 2 cm Sparschalung, 1,25 cm Gipskarton.",
+      "part_ids": [
+        "DACH",
+        "DG"
+      ],
+      "representation": "SCHICHTEN_REGISTER",
+      "remaining": "Schichten nicht als beliebiges Dach-Sandwich ohne Traggeometrie erzeugt.",
+      "values": {
+        "insulation_mm": 140,
+        "boarding_mm": 20,
+        "gypsum_mm": 12.5
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q21",
+      "sources": [
+        {
+          "document": "P13",
+          "page": 1,
+          "location": "Schnitt A-A"
+        }
+      ],
+      "source_statement": "Sparren und Kehlbalken nach Statik.",
+      "part_ids": [
+        "DACH"
+      ],
+      "representation": "FEHLENDE_TRAGGLIEDER_GESPERRT",
+      "remaining": "Keine Ersatzquerschnitte oder angenommene Raster.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q22",
+      "sources": [
+        {
+          "document": "P13",
+          "page": 1,
+          "location": "Schnitt A-A Massketten"
+        }
+      ],
+      "source_statement": "Dachneigung 45 Grad; Geschossbezug EG 0,00, DG +2,87, KG -2,325.",
+      "part_ids": [
+        "KG",
+        "EG",
+        "DG",
+        "DACH"
+      ],
+      "representation": "PARAMETER_MODELL",
+      "remaining": "Zuordnung zum heutigen Bauzustand nicht vermessen.",
+      "values": {
+        "angle_deg": 45,
+        "floor_levels_mm": [
+          -2325,
+          0,
+          2870
+        ]
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q23",
+      "sources": [
+        {
+          "document": "P18",
+          "page": 1,
+          "location": "Schnitt B-B"
+        }
+      ],
+      "source_statement": "Binderdach mit 12 cm Waermedaemmung; Neigung 28 Grad.",
+      "part_ids": [
+        "DACH"
+      ],
+      "representation": "TRAGSYSTEM_UND_NEIGUNG_DAEMMUNG_REGISTER",
+      "remaining": "12 cm nicht mit den 14 cm des neuen Hauptdaches vermischen.",
+      "values": {
+        "insulation_mm": 120,
+        "angle_deg": 28
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q24",
+      "sources": [
+        {
+          "document": "P18",
+          "page": 1,
+          "location": "Linke Masskette Schnitt B-B"
+        }
+      ],
+      "source_statement": "Hoehenkette ueber Anbau-FFB +0,15: lichte Hoehe 2,55, Zone 0,16, Dachhoehe 2,50.",
+      "part_ids": [
+        "DACH",
+        "ANBAU_EG"
+      ],
+      "representation": "FIRSTHOEHEN_KONTROLLE",
+      "remaining": "Lesart der Masskette explizit; geometrische 16-cm-Zone kein Beweis fuer bestimmten Werkstoff.",
+      "values": {
+        "ridge_derived_mm": 5360,
+        "chain_mm": [
+          150,
+          2550,
+          160,
+          2500
+        ]
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q25",
+      "sources": [
+        {
+          "document": "P18",
+          "page": 1,
+          "location": "Schnitt B-B rechts"
+        }
+      ],
+      "source_statement": "Neue Holzbalkendecke: Holzbalken und Schalung siehe Statik; Trittschall 4 cm, Estrich 4 cm.",
+      "part_ids": [
+        "ANBAU_EG"
+      ],
+      "representation": "ZWEI_BODENSCHICHTEN_KEIN_TRAGVOLLKLOTZ",
+      "remaining": "Tragglieder, Schalung und Auflager fehlen.",
+      "values": {
+        "impact_sound_mm": 40,
+        "screed_mm": 40
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q26",
+      "sources": [
+        {
+          "document": "P18",
+          "page": 1,
+          "location": "Schnitt B-B"
+        }
+      ],
+      "source_statement": "Holztreppe zum unteren Anbaubereich; unterer Fertigboden -1,86.",
+      "part_ids": [
+        "ANBAU_KG",
+        "ANBAU_EG"
+      ],
+      "representation": "HOEHENBEZUG_TREPPE_REFERENZ",
+      "remaining": "Tatsaechlicher Lauf, Wangen, Tritte, Podeste und Befestigung offen.",
+      "values": {
+        "lower_floor_mm": -1860
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q27",
+      "sources": [
+        {
+          "document": "P16",
+          "page": 1,
+          "location": "Baubeschreibung Nutzungsänderung"
+        }
+      ],
+      "source_statement": "2015 Aufteilung einer Wohnung in zwei kleinere; laut Beschreibung minimale Arbeiten ohne Eingriff in Gebaeudekonstruktion.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "ZIELGRUNDRISS_2015_MIT_AELTEREN_KONSTRUKTIONSQUELLEN",
+      "remaining": "Historische Aussage ersetzt keinen aktuellen Tragwerksnachweis.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q28",
+      "sources": [
+        {
+          "document": "P16",
+          "page": 1,
+          "location": "Absatz 3"
+        }
+      ],
+      "source_statement": "Nach Umbau sechs Wohnungen; zehn vorhandene Stellplaetze.",
+      "part_ids": [],
+      "representation": "HISTORISCHE_NUTZUNGSANGABE",
+      "remaining": "Keine sechs heutigen Wohnungseinheiten oder zehn vermessenen Parkplatzpolygone daraus abgeleitet.",
+      "values": {
+        "apartments_plan_2015": 6,
+        "parking_spaces_stated": 10
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q29",
+      "sources": [
+        {
+          "document": "P05",
+          "page": 1,
+          "location": "DG-Grundriss Fassaden"
+        }
+      ],
+      "source_statement": "Drei Gauben und acht beschriftete Gaubenfenster mit 1,50 x 1,50 m.",
+      "part_ids": [
+        "DG",
+        "DACH"
+      ],
+      "representation": "OEFFNUNGEN_NAEHERUNGSWEISE_UND_DACHHUELLEN",
+      "remaining": "Brüstung, Laibung und exakte Gaubenanschluesse weiterhin offen.",
+      "values": {
+        "window_width_mm": 1500,
+        "window_height_mm": 1500
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q30",
+      "sources": [
+        {
+          "document": "P05",
+          "page": 1,
+          "location": "DG-Grundriss Raumbeschriftungen"
+        }
+      ],
+      "source_statement": "Zusaetzliche Raumangaben Abstell 2,71 und 2,09 sowie Flure 7,79 und 12,27 m2.",
+      "part_ids": [
+        "DG"
+      ],
+      "representation": "RAUMREGISTER_ERGAENZT",
+      "remaining": "Keine daraus erfundenen Raumgrenzen oder DIN/Wohnflaechensummen.",
+      "values": {
+        "room_areas_m2": [
+          2.71,
+          2.09,
+          7.79,
+          12.27
+        ]
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q31",
+      "sources": [
+        {
+          "document": "P09",
+          "page": 1,
+          "location": "EG-Grundriss Anbau"
+        }
+      ],
+      "source_statement": "Anbau-Raumbeschriftungen Wohnen/Kueche 46,63; Bad 7,23; Treppen-Flur 11,60; Schlafen 16,42; Zimmer 10,93 m2.",
+      "part_ids": [
+        "ANBAU_EG"
+      ],
+      "representation": "RAUMREGISTER_ERGAENZT",
+      "remaining": "Raumpolygone und automatische Flaechenberechnung nicht vorhanden.",
+      "values": {
+        "room_areas_m2": [
+          46.63,
+          7.23,
+          11.6,
+          16.42,
+          10.93
+        ]
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q32",
+      "sources": [
+        {
+          "document": "P30",
+          "page": 1,
+          "location": "Flaechenberechnung Wohnung A"
+        }
+      ],
+      "source_statement": "Berechnung Wohnung A umfasst EG und Keller einschliesslich 3,64 m2 Treppenraum; Summe 106,56 m2.",
+      "part_ids": [
+        "EG",
+        "KG"
+      ],
+      "representation": "QUELLENSUMME_UND_RAUMREGISTER",
+      "remaining": "Nur Summe dieser Berechnung; kein unabhängiger Wohnflaechennachweis.",
+      "values": {
+        "areas_m2": [
+          53.53,
+          10.21,
+          1.7,
+          3.64,
+          9.28,
+          5.33,
+          22.87
+        ],
+        "total_m2": 106.56
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q33",
+      "sources": [
+        {
+          "document": "P30",
+          "page": 2,
+          "location": "Flaechenberechnung Wohnung B"
+        }
+      ],
+      "source_statement": "Wohnung B: 17,16 + 8,47 + 4,57 + 6,75 = 36,95 m2.",
+      "part_ids": [
+        "EG"
+      ],
+      "representation": "QUELLENSUMME_UND_RAUMREGISTER",
+      "remaining": "Nicht mit Brutto-, Grund- oder Geschossflaeche vermischen.",
+      "values": {
+        "areas_m2": [
+          17.16,
+          8.47,
+          4.57,
+          6.75
+        ],
+        "total_m2": 36.95
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q34",
+      "sources": [
+        {
+          "document": "G05",
+          "page": 1,
+          "location": "Kartenkopf/Grundstueck"
+        }
+      ],
+      "source_statement": "Liegenschaftskarte 1:500, erstellt 23.01.2026, Flurstueck 74/34, Flur 1.",
+      "part_ids": [
+        "GRUNDSTUECK"
+      ],
+      "representation": "GESCHLOSSENE_KARTENREFERENZ",
+      "remaining": "Keine amtliche Grenzpunktdatei und kein Gelaende-/Hoehenmodell.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q35",
+      "sources": [
+        {
+          "document": "P29",
+          "page": 1,
+          "location": "Grundflaechenberechnung 1996"
+        }
+      ],
+      "source_statement": "Historische Grundflaechenberechnung nennt Grundstuecksflaeche 1834 m2.",
+      "part_ids": [
+        "GRUNDSTUECK"
+      ],
+      "representation": "HISTORISCHE_FLAECHENANGABE",
+      "remaining": "Grafisch erfasster aktueller Umriss nicht auf diese Zahl skaliert; Flurstuecks-/Planstandsbezug getrennt.",
+      "values": {
+        "historic_parcel_area_m2": 1834
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q36",
+      "sources": [
+        {
+          "document": "G11",
+          "page": 1,
+          "location": "Gas-Bestandslageplan"
+        }
+      ],
+      "source_statement": "Gas-Hausanschluss mit Beschriftung DN 40 - ST PE sowie Transportleitung im Strassenbereich.",
+      "part_ids": [
+        "GAS_PLAN"
+      ],
+      "representation": "PLANPROJEKTION_KEINE_ROHRKOERPER",
+      "remaining": "DN nicht Aussendurchmesser; Tiefe und Istlage nicht belegt.",
+      "values": {
+        "nominal_dn": 40
+      },
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q37",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Strom-Plan Blatt 1/2"
+        }
+      ],
+      "source_statement": "Strom-Hausanschluss NAYY 4x35; Strassentrassen mit eigenen Kabelbeschriftungen.",
+      "part_ids": [
+        "STROM_PLAN"
+      ],
+      "representation": "PLANPROJEKTION",
+      "remaining": "Kabelaufbau und Tiefe nicht aus Planlinie hergeleitet.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q38",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Telekom-Auskunft"
+        }
+      ],
+      "source_statement": "Zwei im Plan dargestellte Zugaenge zu A4.33 und zugehoerige Trassen.",
+      "part_ids": [
+        "TELEFON_PLAN"
+      ],
+      "representation": "GETRENNTE_PLANLINIEN",
+      "remaining": "Anzahl realer Kabel, Hoehen und Rohrhuellen nicht bewiesen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q39",
+      "sources": [
+        {
+          "document": "G17",
+          "page": 1,
+          "location": "SWN-Plan"
+        }
+      ],
+      "source_statement": "Breitbandtrassen im Strassenbereich.",
+      "part_ids": [
+        "BREITBAND_PLAN"
+      ],
+      "representation": "FUENF_QUELLPFADE",
+      "remaining": "Kein Hausanschluss und keine fuenf physischen Kabel behauptet.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q40",
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Plankopf/Hinweis"
+        }
+      ],
+      "source_statement": "Auskunft erstellt 10.11.2021, gueltig bis 10.12.2021; Masse unverbindlich, Lage vor Erdarbeiten festzustellen.",
+      "part_ids": [
+        "STROM_PLAN"
+      ],
+      "representation": "GUELTIGKEIT_UND_WARNUNG",
+      "remaining": "Historisch; keine aktuelle Betreiberfreigabe oder Grabungsfreigabe.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q41",
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Fusszeile"
+        }
+      ],
+      "source_statement": "Telekom-Auskunft vom 10.11.2021, gueltig bis 10.12.2021.",
+      "part_ids": [
+        "TELEFON_PLAN"
+      ],
+      "representation": "GUELTIGKEIT_UND_WARNUNG",
+      "remaining": "Historisch; neuer Auskunftsstand fuer spaetere Erdarbeiten erforderlich.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q42",
+      "sources": [
+        {
+          "document": "G15",
+          "page": 1,
+          "location": "Mehrseitiges Merkblatt"
+        }
+      ],
+      "source_statement": "Leitungsschutz-Merkblatt ist allgemeine Verhaltens-/Schutzinformation, kein objektspezifisches Leitungsaufmass.",
+      "part_ids": [
+        "GAS_PLAN",
+        "STROM_PLAN",
+        "TELEFON_PLAN",
+        "BREITBAND_PLAN"
+      ],
+      "representation": "ABGRENZUNG_GENERIC_VS_OBJEKT",
+      "remaining": "Allgemeine Tiefen-/Abstandshinweise werden NICHT als Verlegetiefen des Hauses eingetragen.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q43",
+      "sources": [
+        {
+          "document": "P24",
+          "page": 2,
+          "location": "Antragsformular"
+        }
+      ],
+      "source_statement": "Bauantrag nennt Statik/Tragwerksplanung, enthaelt aber keine fuer den Modellbau ausreichende Positions-/Traggliedplanung.",
+      "part_ids": [
+        "DACH",
+        "EG",
+        "DG",
+        "ANBAU_EG"
+      ],
+      "representation": "DOKUMENTVERWEIS_FEHLENDE_ANLAGE",
+      "remaining": "Die erwaehnte Statik ist im gelieferten Archiv nicht enthalten; keine fiktiven Balken.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    },
+    {
+      "id": "Q44",
+      "sources": [
+        {
+          "document": "G09",
+          "page": 1,
+          "location": "Beide Schnittseiten"
+        }
+      ],
+      "source_statement": "Historische Schnitte sind frueherer Gebaeudestand.",
+      "part_ids": [
+        "DACH",
+        "EG",
+        "KG"
+      ],
+      "representation": "HISTORISCHER_VERGLEICH",
+      "remaining": "Nicht still anstelle des dokumentierten Dachumbaus 1995 verwenden.",
+      "values": {},
+      "as_built_verified": false,
+      "scope": "Dokumentierter Plan-/Beschreibungsstand; nicht pauschal als heutiger Istzustand bestaetigt."
+    }
+  ],
+  "all_document_information_in_model": false
+}

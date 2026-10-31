@@ -1,0 +1,919 @@
+{
+  "all_compared_unchanged": true,
+  "compared_files": 152,
+  "files": [
+    {
+      "file": "haus/00_HAUS_MAIN01_ERZEUGEN.py",
+      "before_sha256": "4885a5d8be4535924ce351a1b76f1d8f91c04298d50ce206f22a1265342d0b9c",
+      "after_sha256": "4885a5d8be4535924ce351a1b76f1d8f91c04298d50ce206f22a1265342d0b9c",
+      "identical": true
+    },
+    {
+      "file": "haus/LIEFERSTAND_MAIN01_A01.json",
+      "before_sha256": "44c0219ae8520a6b2f55645538aa1ce6432d1b68874c49ab195dacab58aad8b7",
+      "after_sha256": "44c0219ae8520a6b2f55645538aa1ce6432d1b68874c49ab195dacab58aad8b7",
+      "identical": true
+    },
+    {
+      "file": "haus/PAKETDATEIEN_SHA256.json",
+      "before_sha256": "795222800552256ee09174ef2a0b312e6e99080fceeb31bb91fb4f1adf153f8b",
+      "after_sha256": "795222800552256ee09174ef2a0b312e6e99080fceeb31bb91fb4f1adf153f8b",
+      "identical": true
+    },
+    {
+      "file": "haus/PRUEFBERICHT_DACH_A01.html",
+      "before_sha256": "bae72a5b20e91f6801eb751519ab330af0471fba20de473850494efa677d4c60",
+      "after_sha256": "bae72a5b20e91f6801eb751519ab330af0471fba20de473850494efa677d4c60",
+      "identical": true
+    },
+    {
+      "file": "haus/PRUEFBERICHT_DACH_A01.pdf",
+      "before_sha256": "277f6a9fcf01f368b37dc163fb7e774ed3fee79dcda79b54de905cabf1f4fa87",
+      "after_sha256": "277f6a9fcf01f368b37dc163fb7e774ed3fee79dcda79b54de905cabf1f4fa87",
+      "identical": true
+    },
+    {
+      "file": "haus/README_START_HIER.md",
+      "before_sha256": "479479c4432dd4c10ba4b600a74b0c219ec5c1756facde326a74e86f4d2f6692",
+      "after_sha256": "479479c4432dd4c10ba4b600a74b0c219ec5c1756facde326a74e86f4d2f6692",
+      "identical": true
+    },
+    {
+      "file": "haus/VORSCHAU_HAUS.html",
+      "before_sha256": "dd33749dbf8765638e2357eb2fb6388de0edab6c9a0df5f593f81514468f2551",
+      "after_sha256": "dd33749dbf8765638e2357eb2fb6388de0edab6c9a0df5f593f81514468f2551",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/BAUAUFTRAG_MAIN01.json",
+      "before_sha256": "24162dad34dcf22bf94effc1233986cff1b6f53cd0a1337dc4155807a5c657db",
+      "after_sha256": "24162dad34dcf22bf94effc1233986cff1b6f53cd0a1337dc4155807a5c657db",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/CAD_PRUEFUNG_MAIN01.json",
+      "before_sha256": "c9fe3c7a144e7dc59145195c8425c3b3e7bd5c5f639dbdf8991a810bee0d8ccb",
+      "after_sha256": "c9fe3c7a144e7dc59145195c8425c3b3e7bd5c5f639dbdf8991a810bee0d8ccb",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/FENSTERREGISTER_R11.html",
+      "before_sha256": "8b3aa443e9ecafb6883e7004b92c7aed68548a2fa42bc383dcfa15c1950ee2f6",
+      "after_sha256": "8b3aa443e9ecafb6883e7004b92c7aed68548a2fa42bc383dcfa15c1950ee2f6",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/HAUS_MAIN01_VOR_DACHPRUEFUNG.json",
+      "before_sha256": "e199f69b6ecf2667f230773907edeee385e2ef620311944dc80d695e0d50cca2",
+      "after_sha256": "e199f69b6ecf2667f230773907edeee385e2ef620311944dc80d695e0d50cca2",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/HAUS_R11_UNVERAENDERT.json",
+      "before_sha256": "adb0c507c4c2f4024e44369c09b8251deacc87b2ab0fea1015ac4dce9f2eafd3",
+      "after_sha256": "adb0c507c4c2f4024e44369c09b8251deacc87b2ab0fea1015ac4dce9f2eafd3",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/KONSISTENZ_MAIN01.json",
+      "before_sha256": "214a473494a65abface94c845ad156787826e34e393214b1ef249d83d00d02ff",
+      "after_sha256": "214a473494a65abface94c845ad156787826e34e393214b1ef249d83d00d02ff",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/LIEFERSTAND_MAIN01.json",
+      "before_sha256": "9c921ee5954288614a726b17c08dabd023f65057f5c81061b860bae15d1ee5e8",
+      "after_sha256": "9c921ee5954288614a726b17c08dabd023f65057f5c81061b860bae15d1ee5e8",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/NUMERISCHE_PRUEFUNG_MAIN01.json",
+      "before_sha256": "92af2542f9fe6e645a9cfd1914743fae89bf6aa7cd96305810206ebda837edb8",
+      "after_sha256": "92af2542f9fe6e645a9cfd1914743fae89bf6aa7cd96305810206ebda837edb8",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/PRUEFBERICHT_MAIN01.html",
+      "before_sha256": "ab073bc94ddf5f74b46894aa3dfca75e52d3de90a6420bcba4b072697ec84875",
+      "after_sha256": "ab073bc94ddf5f74b46894aa3dfca75e52d3de90a6420bcba4b072697ec84875",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/PRUEFBERICHT_MAIN01.pdf",
+      "before_sha256": "b60eaa6a0461ef7465e940408a0b09b991c3146f6a796508940398bf6f606c36",
+      "after_sha256": "b60eaa6a0461ef7465e940408a0b09b991c3146f6a796508940398bf6f606c36",
+      "identical": true
+    },
+    {
+      "file": "haus/archiv/README_MAIN01_HISTORISCH.md",
+      "before_sha256": "a5074cc09f257dab022f660c9febe08617edb9cd35fe4535730a1499519742ea",
+      "after_sha256": "a5074cc09f257dab022f660c9febe08617edb9cd35fe4535730a1499519742ea",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/BAUAUFTRAG_MAIN01_A01.json",
+      "before_sha256": "03d4d3cae364f59fffeae7e48f474f2777f719f19980a0b7ddb55c5ca2e9b733",
+      "after_sha256": "03d4d3cae364f59fffeae7e48f474f2777f719f19980a0b7ddb55c5ca2e9b733",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/BROWSERPRUEFUNG_A01.json",
+      "before_sha256": "4b081af7cbbdcf52c9ac2f76195391e9c445cee0d1e686591f989459c6bd9efd",
+      "after_sha256": "4b081af7cbbdcf52c9ac2f76195391e9c445cee0d1e686591f989459c6bd9efd",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/CAD_PRUEFUNG_MAIN01_A01.json",
+      "before_sha256": "474514e696ae6bf03ce87b8138cd34e9afe7da145dcabbb7365841b10d5748ef",
+      "after_sha256": "474514e696ae6bf03ce87b8138cd34e9afe7da145dcabbb7365841b10d5748ef",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/DACHPRUEFUNG_MAIN01_A01.json",
+      "before_sha256": "7c3140eae30bc2be6b0df631f149670cb825b496601d47d94c2c09d30e5b8d5f",
+      "after_sha256": "7c3140eae30bc2be6b0df631f149670cb825b496601d47d94c2c09d30e5b8d5f",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/KONSISTENZ_MAIN01_A01.json",
+      "before_sha256": "fb6529ff364474c661245d376950316285002bdbe2b54fb27e19e98698cda22d",
+      "after_sha256": "fb6529ff364474c661245d376950316285002bdbe2b54fb27e19e98698cda22d",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/NUMERISCHE_PRUEFUNG_MAIN01_A01.json",
+      "before_sha256": "6f3aa027d4326654ef17e52d3ca545197bc52890db82ae125735c83a7a3c19ff",
+      "after_sha256": "6f3aa027d4326654ef17e52d3ca545197bc52890db82ae125735c83a7a3c19ff",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/TESTAUSGABE_MAIN01.txt",
+      "before_sha256": "ea66f8cdcd83698cc0d9a237cdabf8fad4bf68bd688b56a228936aef22f47a8d",
+      "after_sha256": "ea66f8cdcd83698cc0d9a237cdabf8fad4bf68bd688b56a228936aef22f47a8d",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/TESTPROTOKOLL_MAIN01_A01.txt",
+      "before_sha256": "0904f68c9426f9a78b1eb6ddcccf4091698fe5834ccb0ebdf2be34f87400ffdc",
+      "after_sha256": "0904f68c9426f9a78b1eb6ddcccf4091698fe5834ccb0ebdf2be34f87400ffdc",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/ansichten/BALKON_DRAUFSICHT_MAIN01.png",
+      "before_sha256": "57d49edc5f800876b486663ef341ed0d60659066aa7c2ab92cca6a9a2f635380",
+      "after_sha256": "57d49edc5f800876b486663ef341ed0d60659066aa7c2ab92cca6a9a2f635380",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/ansichten/BALKON_DRAUFSICHT_MAIN01_MODELL.png",
+      "before_sha256": "a41c200fe84136e0edf88e8f3044a24bed4ad117a9a1378f6f65d19ac8e9c4f3",
+      "after_sha256": "a41c200fe84136e0edf88e8f3044a24bed4ad117a9a1378f6f65d19ac8e9c4f3",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/ansichten/BALKON_MAIN01.png",
+      "before_sha256": "25773fe400d2f2ef37a53ae3ef21f3a2729fbd8626ec2ede3b03b4ab4c19d635",
+      "after_sha256": "25773fe400d2f2ef37a53ae3ef21f3a2729fbd8626ec2ede3b03b4ab4c19d635",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/ansichten/BALKON_MAIN01_MODELL.png",
+      "before_sha256": "06a6cb0edf500bac86e7f1fe5161d197d1a444a3993b5815d850b6e7b755c3ff",
+      "after_sha256": "06a6cb0edf500bac86e7f1fe5161d197d1a444a3993b5815d850b6e7b755c3ff",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/ansichten/HAUS_MAIN01.png",
+      "before_sha256": "e3ddcf56fce37d77c6f852147f1e213d452ee8df8096c3d68e6ea6ffca776981",
+      "after_sha256": "e3ddcf56fce37d77c6f852147f1e213d452ee8df8096c3d68e6ea6ffca776981",
+      "identical": true
+    },
+    {
+      "file": "haus/berichte/ansichten/HAUS_MAIN01_MODELL.png",
+      "before_sha256": "8822dbe60aeedf0fb16ad49065283ee209e603b77708a2c1452d960a8c30664a",
+      "after_sha256": "8822dbe60aeedf0fb16ad49065283ee209e603b77708a2c1452d960a8c30664a",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/GAUBENANSCHLUSS_VERGLEICH.png",
+      "before_sha256": "6b36f3553bfdf5e3fbfd81dc1c6e590161c0c51fbfa46ceb72e1f10c32594294",
+      "after_sha256": "6b36f3553bfdf5e3fbfd81dc1c6e590161c0c51fbfa46ceb72e1f10c32594294",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/VORSCHAU_DACH_GAUBEN_A01.png",
+      "before_sha256": "321c0b20cc7d7aef5db712f341ab61ea9644c0eefcdde0833e6a52da226884b6",
+      "after_sha256": "321c0b20cc7d7aef5db712f341ab61ea9644c0eefcdde0833e6a52da226884b6",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/belege/P13_DACH_AUSSCHNITT.png",
+      "before_sha256": "cfe3690d84e09d752884f716f5b1b1fedb863adb609ca4bf1dbaa2a11ba06c37",
+      "after_sha256": "cfe3690d84e09d752884f716f5b1b1fedb863adb609ca4bf1dbaa2a11ba06c37",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/belege/P18_DACH_AUSSCHNITT.png",
+      "before_sha256": "0fda4dd5a42f176b8b54e7d8e684455db3fd6700c97f688b5a4a8f809f3eebdd",
+      "after_sha256": "0fda4dd5a42f176b8b54e7d8e684455db3fd6700c97f688b5a4a8f809f3eebdd",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/belege/t036.jpg",
+      "before_sha256": "c0fe03bf70cc09fb9d0b21b340d808bfb030ca3a2a8ee8eb04d05700604f951b",
+      "after_sha256": "c0fe03bf70cc09fb9d0b21b340d808bfb030ca3a2a8ee8eb04d05700604f951b",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/belege/t084.jpg",
+      "before_sha256": "97d92fe635dd41baf51227bd1fb7084e207db4a1209dd44104831eb974fd5c9e",
+      "after_sha256": "97d92fe635dd41baf51227bd1fb7084e207db4a1209dd44104831eb974fd5c9e",
+      "identical": true
+    },
+    {
+      "file": "haus/dachpruefung/belege/t156.jpg",
+      "before_sha256": "ec6a07ca0d888783f5af28e019a42eeb4b3a3e48011c68966b8cceb1d19edb47",
+      "after_sha256": "ec6a07ca0d888783f5af28e019a42eeb4b3a3e48011c68966b8cceb1d19edb47",
+      "identical": true
+    },
+    {
+      "file": "haus/data/AENDERUNGEN_MAIN01.json",
+      "before_sha256": "b4727bbd0c7cc468039f1f20d9a34100275e54f42c9863f134b244b539e2b9ed",
+      "after_sha256": "b4727bbd0c7cc468039f1f20d9a34100275e54f42c9863f134b244b539e2b9ed",
+      "identical": true
+    },
+    {
+      "file": "haus/data/AUFMASS_MAIN01_VORLAGE.json",
+      "before_sha256": "4c991cdf678b3be0701231f1720757eb4aea8d6037c878f89e63158ead3c27a6",
+      "after_sha256": "4c991cdf678b3be0701231f1720757eb4aea8d6037c878f89e63158ead3c27a6",
+      "identical": true
+    },
+    {
+      "file": "haus/data/BEOBACHTUNGEN_MAIN01.json",
+      "before_sha256": "9183a4fb9f6a98c702ff2f2d26c22fa1af2059e4618c7bc924d3ef71861ae60a",
+      "after_sha256": "9183a4fb9f6a98c702ff2f2d26c22fa1af2059e4618c7bc924d3ef71861ae60a",
+      "identical": true
+    },
+    {
+      "file": "haus/data/DACHWINKEL_UND_GAUBEN_A01.csv",
+      "before_sha256": "ae6975384d31cce18b588915d18f2b0632b487973174657650842fb173e240ff",
+      "after_sha256": "ae6975384d31cce18b588915d18f2b0632b487973174657650842fb173e240ff",
+      "identical": true
+    },
+    {
+      "file": "haus/data/einstellungen.json",
+      "before_sha256": "9c057551fced3225fa0549db590a6f293766a751ed53607629a2cbe1607bbc50",
+      "after_sha256": "9c057551fced3225fa0549db590a6f293766a751ed53607629a2cbe1607bbc50",
+      "identical": true
+    },
+    {
+      "file": "haus/data/haus.json",
+      "before_sha256": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+      "after_sha256": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+      "identical": true
+    },
+    {
+      "file": "haus/data/planregister.json",
+      "before_sha256": "b8e3fc65afe1bb0039b2d1d263b3392888d7257439471887a6cc9f35ccd2c649",
+      "after_sha256": "b8e3fc65afe1bb0039b2d1d263b3392888d7257439471887a6cc9f35ccd2c649",
+      "identical": true
+    },
+    {
+      "file": "haus/data/planregister_grundstueck.json",
+      "before_sha256": "5502ba7ef8c466ebb390f0884be73e97d131509800eb44d3a02865c921fb491a",
+      "after_sha256": "5502ba7ef8c466ebb390f0884be73e97d131509800eb44d3a02865c921fb491a",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P01.pdf",
+      "before_sha256": "bc6d2c105efd2a5bbee11d83104bb62d1a7f9ddc4a5541786fa1530e9fa0d4bf",
+      "after_sha256": "bc6d2c105efd2a5bbee11d83104bb62d1a7f9ddc4a5541786fa1530e9fa0d4bf",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P02.pdf",
+      "before_sha256": "e3e4109d4fa78ac65c06cfeb78ff8ae1cc9fb8f5c3fc89ed8c8e081fea27c0f6",
+      "after_sha256": "e3e4109d4fa78ac65c06cfeb78ff8ae1cc9fb8f5c3fc89ed8c8e081fea27c0f6",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P03.pdf",
+      "before_sha256": "81963125db2b1dea99d936b5e7525fcf4be98d4b42050942e35729f6c91da459",
+      "after_sha256": "81963125db2b1dea99d936b5e7525fcf4be98d4b42050942e35729f6c91da459",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P04.pdf",
+      "before_sha256": "8a4ccd70c6ad0a88a4673b4d3364cd13dd50308459c6fe84eb5f80b6db55c509",
+      "after_sha256": "8a4ccd70c6ad0a88a4673b4d3364cd13dd50308459c6fe84eb5f80b6db55c509",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P05.pdf",
+      "before_sha256": "c298c31c9eb83e287bce01a379b9a172ae052b8f106e4c25584f782901a69a8b",
+      "after_sha256": "c298c31c9eb83e287bce01a379b9a172ae052b8f106e4c25584f782901a69a8b",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P05_Arbeitskopie.png",
+      "before_sha256": "470d5175c4f3ad3d9c41de7ec996721d264d1936bd701c0040d81d63ea26f6a3",
+      "after_sha256": "470d5175c4f3ad3d9c41de7ec996721d264d1936bd701c0040d81d63ea26f6a3",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P05_BALKON_AUSSCHNITT.png",
+      "before_sha256": "43e8fa15e558fd3841b6fa75cf3b8605a1615e8dba8a126bf88a2a2221aaf1eb",
+      "after_sha256": "43e8fa15e558fd3841b6fa75cf3b8605a1615e8dba8a126bf88a2a2221aaf1eb",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P06.pdf",
+      "before_sha256": "49c9a67171f6658710644f2b37b160bfa1eccfd2fa9e61acd2b27b8849c5b117",
+      "after_sha256": "49c9a67171f6658710644f2b37b160bfa1eccfd2fa9e61acd2b27b8849c5b117",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P06_Arbeitskopie.png",
+      "before_sha256": "e67c2fc39d7ed9258d2c10f74278c68234622e6668b6c2a0c7a6c24684f0b552",
+      "after_sha256": "e67c2fc39d7ed9258d2c10f74278c68234622e6668b6c2a0c7a6c24684f0b552",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P07.pdf",
+      "before_sha256": "85bdbe61af8d097c9916548d6fde4f66cd3a9f3b263526fbad47e1dafaf386ef",
+      "after_sha256": "85bdbe61af8d097c9916548d6fde4f66cd3a9f3b263526fbad47e1dafaf386ef",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P08.pdf",
+      "before_sha256": "3973e40f5cbfc36fb1e8ba09d14d043449d0fd7611e7959ac2889e13b1cf01e0",
+      "after_sha256": "3973e40f5cbfc36fb1e8ba09d14d043449d0fd7611e7959ac2889e13b1cf01e0",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P09.pdf",
+      "before_sha256": "9a80ade028a57f33e18756d0df3498b605ac731cbd0543a9a58b2e160277b68d",
+      "after_sha256": "9a80ade028a57f33e18756d0df3498b605ac731cbd0543a9a58b2e160277b68d",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P09_Arbeitskopie.png",
+      "before_sha256": "b7c4dfc25fdf8b378b20f4d5bf0a125c32a317d4985489c627bfc9784b24ee72",
+      "after_sha256": "b7c4dfc25fdf8b378b20f4d5bf0a125c32a317d4985489c627bfc9784b24ee72",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P10.pdf",
+      "before_sha256": "0e0f56c0d42bc388985a94ee9030d61bd215d65986a2dd4178da059a67f4bdfd",
+      "after_sha256": "0e0f56c0d42bc388985a94ee9030d61bd215d65986a2dd4178da059a67f4bdfd",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P11.pdf",
+      "before_sha256": "34d361df2485e25b9bcdf22300ba93c3f5c976ba44bdde0b329d510afafb9561",
+      "after_sha256": "34d361df2485e25b9bcdf22300ba93c3f5c976ba44bdde0b329d510afafb9561",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P12.pdf",
+      "before_sha256": "9189f6669b2cd784aee4af11cd0fcb3b532c7cdb8cf9d12da9e47036a351f5e0",
+      "after_sha256": "9189f6669b2cd784aee4af11cd0fcb3b532c7cdb8cf9d12da9e47036a351f5e0",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P13.pdf",
+      "before_sha256": "7b68757e6dbfd479c0f0aaab5d4e8ac3b7d524824e868d5aba9638cc7695c70c",
+      "after_sha256": "7b68757e6dbfd479c0f0aaab5d4e8ac3b7d524824e868d5aba9638cc7695c70c",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P14.pdf",
+      "before_sha256": "d3825dfb402271721303ca211678f893c023e1ae33fa44eadb1a800651594079",
+      "after_sha256": "d3825dfb402271721303ca211678f893c023e1ae33fa44eadb1a800651594079",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P15.pdf",
+      "before_sha256": "444ba52f5efef164d827338f0485dd79ab722ac9bc8141e9f28529b076664801",
+      "after_sha256": "444ba52f5efef164d827338f0485dd79ab722ac9bc8141e9f28529b076664801",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P16.pdf",
+      "before_sha256": "ad23a46fa9f0ecfa8094b429c8fd122a203af9cd00a9571a830d9aef8dcb6fe0",
+      "after_sha256": "ad23a46fa9f0ecfa8094b429c8fd122a203af9cd00a9571a830d9aef8dcb6fe0",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P17.pdf",
+      "before_sha256": "f06ee92d66513f05370481daa36920e8857ef2e5851f8e2c8dbb3e135269e66e",
+      "after_sha256": "f06ee92d66513f05370481daa36920e8857ef2e5851f8e2c8dbb3e135269e66e",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P18.pdf",
+      "before_sha256": "55bf8b8c2ade9cdec84d498512062e59f9b36b7304728bb817f6924d2b2cf18e",
+      "after_sha256": "55bf8b8c2ade9cdec84d498512062e59f9b36b7304728bb817f6924d2b2cf18e",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P19.pdf",
+      "before_sha256": "49465ec85e64e9690b5ea01cfecca318efac0859eece7260a486819b36950910",
+      "after_sha256": "49465ec85e64e9690b5ea01cfecca318efac0859eece7260a486819b36950910",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P20.pdf",
+      "before_sha256": "8a9047293f2220f61abfcd4ed54f3223ed174049d7d95d44208bcee6e78a2d61",
+      "after_sha256": "8a9047293f2220f61abfcd4ed54f3223ed174049d7d95d44208bcee6e78a2d61",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P21.pdf",
+      "before_sha256": "d84a295eb84a8e18ae335df091f6d1644794b744d788103f0fa1bb4e1c2902eb",
+      "after_sha256": "d84a295eb84a8e18ae335df091f6d1644794b744d788103f0fa1bb4e1c2902eb",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P22.pdf",
+      "before_sha256": "aed3fb87b7a2de17272fd11a501d406445455f60fc0721c9ada55c9797d97be9",
+      "after_sha256": "aed3fb87b7a2de17272fd11a501d406445455f60fc0721c9ada55c9797d97be9",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P23.pdf",
+      "before_sha256": "1263d52bb083034083f63465408485537246663d6784fdd6f705b812e3b0da9d",
+      "after_sha256": "1263d52bb083034083f63465408485537246663d6784fdd6f705b812e3b0da9d",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P24.pdf",
+      "before_sha256": "99cdfa260d23794eda9a107b8603b40e21f6ba0a9ba06307409bb5204c93cfe1",
+      "after_sha256": "99cdfa260d23794eda9a107b8603b40e21f6ba0a9ba06307409bb5204c93cfe1",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P25.pdf",
+      "before_sha256": "eda319551cf1973de2ba8266dcb62947970d41beaa4d90a4c7285281e8cbbc77",
+      "after_sha256": "eda319551cf1973de2ba8266dcb62947970d41beaa4d90a4c7285281e8cbbc77",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P26.pdf",
+      "before_sha256": "ba74e45c4b3d7db0a6f23853a85ce8b4b5347367f970672d7a9eabc71ce03b8f",
+      "after_sha256": "ba74e45c4b3d7db0a6f23853a85ce8b4b5347367f970672d7a9eabc71ce03b8f",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P27.pdf",
+      "before_sha256": "41cb369b58485ee0b0971b48bbf528396489e65feb2693edd5d71f16ad23311c",
+      "after_sha256": "41cb369b58485ee0b0971b48bbf528396489e65feb2693edd5d71f16ad23311c",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P28.pdf",
+      "before_sha256": "fad10a8cd2595221e7ffc125c70b9f791b3ce7bc1ffbff50ad49b7508c0ccf03",
+      "after_sha256": "fad10a8cd2595221e7ffc125c70b9f791b3ce7bc1ffbff50ad49b7508c0ccf03",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P29.pdf",
+      "before_sha256": "a16af8d2dce089329f2a84b0a2d441a2be7ca8903af05370eb57f8e124f5a332",
+      "after_sha256": "a16af8d2dce089329f2a84b0a2d441a2be7ca8903af05370eb57f8e124f5a332",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P30.pdf",
+      "before_sha256": "a152580d7a472f01a2203a8801aab8b5ea8c9ed51002b6acd7362a8e7b4892f1",
+      "after_sha256": "a152580d7a472f01a2203a8801aab8b5ea8c9ed51002b6acd7362a8e7b4892f1",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/P31.pdf",
+      "before_sha256": "df4349cf4eab21949ab4f9d0e5b517621370b8704132f49842f2f91ff6fdd288",
+      "after_sha256": "df4349cf4eab21949ab4f9d0e5b517621370b8704132f49842f2f91ff6fdd288",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/V10_VIDEOBELEGE_R10.pdf",
+      "before_sha256": "138295902c3dfad7497677a129da2cff354782a7704364f24ed0bcdcdb64f00a",
+      "after_sha256": "138295902c3dfad7497677a129da2cff354782a7704364f24ed0bcdcdb64f00a",
+      "identical": true
+    },
+    {
+      "file": "haus/quellen/V11_FENSTERBELEGE_R11.pdf",
+      "before_sha256": "b3b4e1d9ec6822a37aed6571f16ee476cf78ffa53e2de7166c6e54fa11cadf90",
+      "after_sha256": "b3b4e1d9ec6822a37aed6571f16ee476cf78ffa53e2de7166c6e54fa11cadf90",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/__init__.py",
+      "before_sha256": "6dcf5db69be3fbc1ef7e07c8cac9ad821561bf9fd2b5eb307093f6e10c6209d5",
+      "after_sha256": "6dcf5db69be3fbc1ef7e07c8cac9ad821561bf9fd2b5eb307093f6e10c6209d5",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_audit.py",
+      "before_sha256": "5f8137e0c159a51e2e1f975cace3bb1a603c115ce2e87f72a41f5659ff7fc9e7",
+      "after_sha256": "5f8137e0c159a51e2e1f975cace3bb1a603c115ce2e87f72a41f5659ff7fc9e7",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_compile.py",
+      "before_sha256": "ad330c2db2e813816cce3e89f733df371d690fb7d38f7dd8e315a08bb23ea894",
+      "after_sha256": "ad330c2db2e813816cce3e89f733df371d690fb7d38f7dd8e315a08bb23ea894",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_consistency.py",
+      "before_sha256": "0fae20e9a3c27a4d3303a4a514b151b9294939711dcef7a1d22224ab3935dd38",
+      "after_sha256": "0fae20e9a3c27a4d3303a4a514b151b9294939711dcef7a1d22224ab3935dd38",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_construction.py",
+      "before_sha256": "12c39d855928c68f74a8ddea52b4313ea40e0d2eace3fe1b3599d71e920921db",
+      "after_sha256": "12c39d855928c68f74a8ddea52b4313ea40e0d2eace3fe1b3599d71e920921db",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_details.py",
+      "before_sha256": "92658649881f2cb1b3696dabca73f08e0eb9ea4b358491fc52bbf385dcc25dba",
+      "after_sha256": "92658649881f2cb1b3696dabca73f08e0eb9ea4b358491fc52bbf385dcc25dba",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_geometry.py",
+      "before_sha256": "0239148c7ae5fd6938247605678d6a9e6d1f121c6ff58e3db581f1e2010e49db",
+      "after_sha256": "0239148c7ae5fd6938247605678d6a9e6d1f121c6ff58e3db581f1e2010e49db",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_main_details.py",
+      "before_sha256": "ab009fe78e7f18545168985ae3972fd7cfd7359b4605b1783b9906b72653f82f",
+      "after_sha256": "ab009fe78e7f18545168985ae3972fd7cfd7359b4605b1783b9906b72653f82f",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_metadata.py",
+      "before_sha256": "7d7151898956b29064f3720f41bec4404fe94d07147292cebfbec71dc440b2ad",
+      "after_sha256": "7d7151898956b29064f3720f41bec4404fe94d07147292cebfbec71dc440b2ad",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_nx.py",
+      "before_sha256": "3fc82596b0605fedd3aca8736dded99629742d70e4801cd981a965fb6fca5488",
+      "after_sha256": "3fc82596b0605fedd3aca8736dded99629742d70e4801cd981a965fb6fca5488",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_preview.py",
+      "before_sha256": "f6cca41e909cc2b2020da8c15721707ee1cdcab138bdea461b2c828b2f9dce6d",
+      "after_sha256": "f6cca41e909cc2b2020da8c15721707ee1cdcab138bdea461b2c828b2f9dce6d",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_profile.py",
+      "before_sha256": "149bc9746bc3e2473ebda3ee625b0b00e582f1a7075b6979503f77bc929ad9b9",
+      "after_sha256": "149bc9746bc3e2473ebda3ee625b0b00e582f1a7075b6979503f77bc929ad9b9",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_quality.py",
+      "before_sha256": "8b179816a5f33b3beace9bf0903877179517f8c59c06f007937df7052acd6f6b",
+      "after_sha256": "8b179816a5f33b3beace9bf0903877179517f8c59c06f007937df7052acd6f6b",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_roof.py",
+      "before_sha256": "d566ce1077fdebaa38d946be3488bf31f30a35e1c02d3dfaf36fbda0ec866e92",
+      "after_sha256": "d566ce1077fdebaa38d946be3488bf31f30a35e1c02d3dfaf36fbda0ec866e92",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_run.py",
+      "before_sha256": "e04709d66900bf0f198275fd0db2009e0f99d0187bdac9a2019482691cdec7bc",
+      "after_sha256": "e04709d66900bf0f198275fd0db2009e0f99d0187bdac9a2019482691cdec7bc",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_runtime.py",
+      "before_sha256": "5473e843109522b5ee2d35ca1f6df12928e3a3b7dade0f3c441469f952048653",
+      "after_sha256": "5473e843109522b5ee2d35ca1f6df12928e3a3b7dade0f3c441469f952048653",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_site.py",
+      "before_sha256": "8424dbd1c8907575b9c631b19dae100eb6e18091e41c30a831f98ffb81fc9006",
+      "after_sha256": "8424dbd1c8907575b9c631b19dae100eb6e18091e41c30a831f98ffb81fc9006",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_units.py",
+      "before_sha256": "7aaa2fbd1a719d6e0402d0558024af887b63ef6354df379e8febaa5a4435c32d",
+      "after_sha256": "7aaa2fbd1a719d6e0402d0558024af887b63ef6354df379e8febaa5a4435c32d",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/haus_video.py",
+      "before_sha256": "216550aeb0bf1aeede2ab584fa20c2dac0e8ae34f16a03e6b7b2d0837653e009",
+      "after_sha256": "216550aeb0bf1aeede2ab584fa20c2dac0e8ae34f16a03e6b7b2d0837653e009",
+      "identical": true
+    },
+    {
+      "file": "haus/src/haus2406_r03/preview_template.html",
+      "before_sha256": "a60ab1e29841d8c6ec46024f7ccb5dd004169d2f3ba5148be5a2ad23bb869241",
+      "after_sha256": "a60ab1e29841d8c6ec46024f7ccb5dd004169d2f3ba5148be5a2ad23bb869241",
+      "identical": true
+    },
+    {
+      "file": "haus/src/main01/__init__.py",
+      "before_sha256": "e5540d1c89ea7da0e427a822796ec5e31783465f5ec0f1f4f7b0fb257c364231",
+      "after_sha256": "e5540d1c89ea7da0e427a822796ec5e31783465f5ec0f1f4f7b0fb257c364231",
+      "identical": true
+    },
+    {
+      "file": "haus/src/main01/runtime.py",
+      "before_sha256": "7ef627e807bba678772e7036b38ecaa24fa55e5b445d0ff200b2306d51a11e1d",
+      "after_sha256": "7ef627e807bba678772e7036b38ecaa24fa55e5b445d0ff200b2306d51a11e1d",
+      "identical": true
+    },
+    {
+      "file": "haus/tests/fake_nx.py",
+      "before_sha256": "60fbf9a2c30771ff641268d95035110459a540d585b7f8a1a3e6f4955a7a36d9",
+      "after_sha256": "60fbf9a2c30771ff641268d95035110459a540d585b7f8a1a3e6f4955a7a36d9",
+      "identical": true
+    },
+    {
+      "file": "haus/tests/test_main01.py",
+      "before_sha256": "27afab195dcf0e373288faec1d0ccf7e7d32fb843d0f37f19b502342c703d3a4",
+      "after_sha256": "27afab195dcf0e373288faec1d0ccf7e7d32fb843d0f37f19b502342c703d3a4",
+      "identical": true
+    },
+    {
+      "file": "haus/tests/test_roof_attachment.py",
+      "before_sha256": "8e28986fb295b675a720a5b831ad1ee0a4db05256a4c251a72df5e19a8539458",
+      "after_sha256": "8e28986fb295b675a720a5b831ad1ee0a4db05256a4c251a72df5e19a8539458",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/AUSSCHNITT_036.jpg",
+      "before_sha256": "ce31b1529d4aeeb1da85e5491ff51512d1d126cf046a583503a8a62bb475585d",
+      "after_sha256": "ce31b1529d4aeeb1da85e5491ff51512d1d126cf046a583503a8a62bb475585d",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/AUSSCHNITT_090.jpg",
+      "before_sha256": "63e92f4f1fa6fd9184450c904bad43d9eba03c3b8b1cd393e1d4f0d104de4fef",
+      "after_sha256": "63e92f4f1fa6fd9184450c904bad43d9eba03c3b8b1cd393e1d4f0d104de4fef",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/AUSSCHNITT_096.jpg",
+      "before_sha256": "71f899fa8805d356de3e7aaf6338cf2982f3d129fde1d032b18309c3a710f391",
+      "after_sha256": "71f899fa8805d356de3e7aaf6338cf2982f3d129fde1d032b18309c3a710f391",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/AUSSCHNITT_100.jpg",
+      "before_sha256": "1b3e156a4273cb9f0906f8853b9759a008c2027df74dd2ac24f0ddff31f02d76",
+      "after_sha256": "1b3e156a4273cb9f0906f8853b9759a008c2027df74dd2ac24f0ddff31f02d76",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t000.jpg",
+      "before_sha256": "6272e7046c363867fa9b4ab044b3ce1f73a906e2a3bce7b7ad2759a2346987b5",
+      "after_sha256": "6272e7046c363867fa9b4ab044b3ce1f73a906e2a3bce7b7ad2759a2346987b5",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t006.jpg",
+      "before_sha256": "b3b3e16f9feca525838c60f89bd61fa5a4fb71ed49a8cadf398f06b8bb63ffd3",
+      "after_sha256": "b3b3e16f9feca525838c60f89bd61fa5a4fb71ed49a8cadf398f06b8bb63ffd3",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t024.jpg",
+      "before_sha256": "e82a6ae88d603cc53c7fea81dbbeeb311b81e267abec27b76bdf87ced2efc574",
+      "after_sha256": "e82a6ae88d603cc53c7fea81dbbeeb311b81e267abec27b76bdf87ced2efc574",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t036.jpg",
+      "before_sha256": "c0fe03bf70cc09fb9d0b21b340d808bfb030ca3a2a8ee8eb04d05700604f951b",
+      "after_sha256": "c0fe03bf70cc09fb9d0b21b340d808bfb030ca3a2a8ee8eb04d05700604f951b",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t084.jpg",
+      "before_sha256": "97d92fe635dd41baf51227bd1fb7084e207db4a1209dd44104831eb974fd5c9e",
+      "after_sha256": "97d92fe635dd41baf51227bd1fb7084e207db4a1209dd44104831eb974fd5c9e",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t090.jpg",
+      "before_sha256": "bcd92bbd74483cbc8b242c1ba24dedca2471edc10ddd215f42bbb62aa025d63f",
+      "after_sha256": "bcd92bbd74483cbc8b242c1ba24dedca2471edc10ddd215f42bbb62aa025d63f",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t094.jpg",
+      "before_sha256": "f7cb16b9d9a9d3afb3bbe7b35b125ca4295538c22844b165d455eb26738cb083",
+      "after_sha256": "f7cb16b9d9a9d3afb3bbe7b35b125ca4295538c22844b165d455eb26738cb083",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t096.jpg",
+      "before_sha256": "dbd0edef81856f3e483c3e9d1af7e3aa90274f2735325f3e5559070e065044c7",
+      "after_sha256": "dbd0edef81856f3e483c3e9d1af7e3aa90274f2735325f3e5559070e065044c7",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t098.jpg",
+      "before_sha256": "26af98139db2298fbe136dd21061c29ba7ef8cfd33c7914ea53e4759aec8fb31",
+      "after_sha256": "26af98139db2298fbe136dd21061c29ba7ef8cfd33c7914ea53e4759aec8fb31",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t100.jpg",
+      "before_sha256": "28131a7644244ae95a70c40c1b1f23e9643f421d8c02c8e76e8d72512c005e3c",
+      "after_sha256": "28131a7644244ae95a70c40c1b1f23e9643f421d8c02c8e76e8d72512c005e3c",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t102.jpg",
+      "before_sha256": "70b6dc368688c27b30dd85d0172ccdacb9acebfdab6e6dcfc3f404f3b229c5f4",
+      "after_sha256": "70b6dc368688c27b30dd85d0172ccdacb9acebfdab6e6dcfc3f404f3b229c5f4",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t108.jpg",
+      "before_sha256": "83bbac26d3da496743b2a847549954ce92f417391be42ca5abc20e649d596831",
+      "after_sha256": "83bbac26d3da496743b2a847549954ce92f417391be42ca5abc20e649d596831",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t120.jpg",
+      "before_sha256": "f12f3f2aac3ee8d443f37e6a601b21030cf3d575bca95899a2311039fd8c815c",
+      "after_sha256": "f12f3f2aac3ee8d443f37e6a601b21030cf3d575bca95899a2311039fd8c815c",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t132.jpg",
+      "before_sha256": "b8f9efec9b13ea84f09fcbb3de507a2929496d6f06a1b257de9c9e0e39e880d2",
+      "after_sha256": "b8f9efec9b13ea84f09fcbb3de507a2929496d6f06a1b257de9c9e0e39e880d2",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t144.jpg",
+      "before_sha256": "c6e5744bd8b1bd7455aa868e3319a733e39e56d155b7cfe9813f5e61d8fecdf5",
+      "after_sha256": "c6e5744bd8b1bd7455aa868e3319a733e39e56d155b7cfe9813f5e61d8fecdf5",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t146.jpg",
+      "before_sha256": "5e005d16cc2b6842cf0795bc3f986e006cf6a2ced1e2c7393fad531c1cb6f7e4",
+      "after_sha256": "5e005d16cc2b6842cf0795bc3f986e006cf6a2ced1e2c7393fad531c1cb6f7e4",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t150.jpg",
+      "before_sha256": "0b33d3db99a0f2e511bd4fc8aff36141455e48779b3c2279a8e5fb7736ed3a31",
+      "after_sha256": "0b33d3db99a0f2e511bd4fc8aff36141455e48779b3c2279a8e5fb7736ed3a31",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t156.jpg",
+      "before_sha256": "ec6a07ca0d888783f5af28e019a42eeb4b3a3e48011c68966b8cceb1d19edb47",
+      "after_sha256": "ec6a07ca0d888783f5af28e019a42eeb4b3a3e48011c68966b8cceb1d19edb47",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t162.jpg",
+      "before_sha256": "0d7960f117885372b76d2de25a91f9b41195694c2585e2bd2780699a31020247",
+      "after_sha256": "0d7960f117885372b76d2de25a91f9b41195694c2585e2bd2780699a31020247",
+      "identical": true
+    },
+    {
+      "file": "haus/video/belege/t210.jpg",
+      "before_sha256": "2d15204ec724e01a6a0243693ff117feea58bafbbd0ee573f1d885574654c3ae",
+      "after_sha256": "2d15204ec724e01a6a0243693ff117feea58bafbbd0ee573f1d885574654c3ae",
+      "identical": true
+    },
+    {
+      "file": "haus/werkzeuge/PRUEFE_HAUS_OCCT_OFFLINE.py",
+      "before_sha256": "530f2daf8d904993d19bbfd218ad732c2c2ed8fe3e697ad916db9e52dac3c851",
+      "after_sha256": "530f2daf8d904993d19bbfd218ad732c2c2ed8fe3e697ad916db9e52dac3c851",
+      "identical": true
+    },
+    {
+      "file": "haus/werkzeuge/PRUEFE_MAIN01_OFFLINE.py",
+      "before_sha256": "944ec851370a9e0f3a4c8082989caa4ac12b7b37bb9d57add1aafadb9d80e811",
+      "after_sha256": "944ec851370a9e0f3a4c8082989caa4ac12b7b37bb9d57add1aafadb9d80e811",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/F01_R09.step",
+      "before_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "after_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step",
+      "before_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "after_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/TEST_IMPORT_R09.step",
+      "before_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "after_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V01_R09.step",
+      "before_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "after_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V02_R09.step",
+      "before_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "after_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V03_R09.step",
+      "before_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "after_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V04_R09.step",
+      "before_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "after_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V05_R09.step",
+      "before_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "after_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V06_R09.step",
+      "before_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "after_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V07_R09.step",
+      "before_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "after_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "identical": true
+    },
+    {
+      "file": "umgebung/CAD_IMPORT/V08_R09.step",
+      "before_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "after_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "identical": true
+    },
+    {
+      "file": "umgebung/UMGEBUNG_ZUM_DIREKTIMPORT.step",
+      "before_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "after_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "identical": true
+    },
+    {
+      "file": "umgebung/basis/Vegetation_R08/CAD/GELAENDE_R07_UNVERAENDERT.step",
+      "before_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "after_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "identical": true
+    },
+    {
+      "file": "umgebung/basis/Vegetation_R08/CAD/GELAENDE_UND_VEGETATION_R08.step",
+      "before_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "after_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "identical": true
+    },
+    {
+      "file": "umgebung/basis/Vegetation_R08/CAD/GRUENFLAECHEN_NUR_BODENREFERENZ_R08.step",
+      "before_sha256": "08bc1bc914872c4cbbc99272857343ec84ff5332119b00f91f0804357e374daa",
+      "after_sha256": "08bc1bc914872c4cbbc99272857343ec84ff5332119b00f91f0804357e374daa",
+      "identical": true
+    },
+    {
+      "file": "umgebung/basis/Vegetation_R08/CAD/VEGETATION_OBERFLAECHEN_R08.step",
+      "before_sha256": "2b9ef33293376b230fc78098f3bc3a714ce2de2f7f0ae55728b731f5fd518c87",
+      "after_sha256": "2b9ef33293376b230fc78098f3bc3a714ce2de2f7f0ae55728b731f5fd518c87",
+      "identical": true
+    },
+    {
+      "file": "umgebung/data/IMPORTAUFTRAG_R09.json",
+      "before_sha256": "d6d74e021a3b65361b33c792bcae5e55385bed8a4ed8a01b459c42fa7b8587a2",
+      "after_sha256": "d6d74e021a3b65361b33c792bcae5e55385bed8a4ed8a01b459c42fa7b8587a2",
+      "identical": true
+    }
+  ],
+  "NX_executed_here": false
+}

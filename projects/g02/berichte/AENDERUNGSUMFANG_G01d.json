@@ -1,0 +1,23 @@
+{
+  "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+  "compared_to": "G01c",
+  "house_files_byte_identical": 135,
+  "house_geometry_changed": false,
+  "vegetation_import_specs_unchanged": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "F01"
+  ],
+  "new_DGM_export_topology": true,
+  "new_DGM_sample_values": false,
+  "original_DGM_source_retained": true,
+  "new_DGM_carrier_knots_weights_poles_bitwise_identical_in_OCCT": true,
+  "proof": "DGM_LINIENRAND_QUELLPRUEFUNG_G01d.json",
+  "NX_tested": false
+}

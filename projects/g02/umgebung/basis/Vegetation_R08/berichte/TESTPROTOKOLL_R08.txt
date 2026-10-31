@@ -1,0 +1,32 @@
+test_01_raster_coverage_and_pixel_alignment (__main__.VegetationTests.test_01_raster_coverage_and_pixel_alignment) ... ok
+test_02_rgbi_band_layout_and_float_height_data (__main__.VegetationTests.test_02_rgbi_band_layout_and_float_height_data) ... ok
+test_03_no_nodata_in_review_crop (__main__.VegetationTests.test_03_no_nodata_in_review_crop) ... ok
+test_04_metadata_dates_not_conflated (__main__.VegetationTests.test_04_metadata_dates_not_conflated) ... ok
+test_05_height_metadata_kept_and_no_house_offset (__main__.VegetationTests.test_05_height_metadata_kept_and_no_house_offset) ... ok
+test_06_rotation_is_rigid (__main__.VegetationTests.test_06_rotation_is_rigid) ... ok
+test_07_r07_house_axes_and_boundary_roundtrip (__main__.VegetationTests.test_07_r07_house_axes_and_boundary_roundtrip) ... ok
+test_08_all_selected_grid_coordinates_follow_r07 (__main__.VegetationTests.test_08_all_selected_grid_coordinates_follow_r07) ... ok
+test_09_dgm_bilinear_sampling_reproduced (__main__.VegetationTests.test_09_dgm_bilinear_sampling_reproduced) ... ok
+test_10_height_difference_not_shifted (__main__.VegetationTests.test_10_height_difference_not_shifted) ... ok
+test_11_spectral_index_reproduced (__main__.VegetationTests.test_11_spectral_index_reproduced) ... ok
+test_12_selected_vegetation_satisfies_criteria (__main__.VegetationTests.test_12_selected_vegetation_satisfies_criteria) ... ok
+test_13_no_canopy_nodes_in_buffered_cadastral_house (__main__.VegetationTests.test_13_no_canopy_nodes_in_buffered_cadastral_house) ... ok
+test_14_regions_inside_review_roi_and_parcel_buffer (__main__.VegetationTests.test_14_regions_inside_review_roi_and_parcel_buffer) ... ok
+test_15_boundary_ownership_not_inferred (__main__.VegetationTests.test_15_boundary_ownership_not_inferred) ... ok
+test_16_raster_rectangles_exact_without_overlap_or_extra_cells (__main__.VegetationTests.test_16_raster_rectangles_exact_without_overlap_or_extra_cells) ... ok
+test_17_actual_imported_shapes_valid_open_not_solid (__main__.VegetationTests.test_17_actual_imported_shapes_valid_open_not_solid) ... ok
+test_18_step_face_counts (__main__.VegetationTests.test_18_step_face_counts) ... ok
+test_19_roundtrip_all_patch_bounds_and_point_distances (__main__.VegetationTests.test_19_roundtrip_all_patch_bounds_and_point_distances) ... ok
+test_20_all_dates_and_height_unknowns_in_registry (__main__.VegetationTests.test_20_all_dates_and_height_unknowns_in_registry) ... ok
+test_21_step_units_are_mm (__main__.VegetationTests.test_21_step_units_are_mm) ... ok
+test_22_canopy_shapes_are_not_placed_at_roof_or_house_zero (__main__.VegetationTests.test_22_canopy_shapes_are_not_placed_at_roof_or_house_zero) ... ok
+test_23_source_metadata_texts_retained (__main__.VegetationTests.test_23_source_metadata_texts_retained) ... ok
+test_24_source_masks_and_incomplete_coverage_disclosed (__main__.VegetationTests.test_24_source_masks_and_incomplete_coverage_disclosed) ... ok
+test_25_selection_recalculated_from_geotiffs_and_rois (__main__.VegetationTests.test_25_selection_recalculated_from_geotiffs_and_rois) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 6.341s
+
+OK
+
+Actual STEP round-trip: 3504 point-to-face checks, maximum error 0.000000008 mm

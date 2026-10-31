@@ -1,0 +1,119 @@
+{
+  "revision": "MAIN01",
+  "scope": "HAUS_OHNE_GARTEN_OHNE_STEP",
+  "source_revision": "R11a",
+  "removed_false_model_wall": {
+    "id": "DG_W_BALKON",
+    "a": [
+      16750.581,
+      5279.862
+    ],
+    "b": [
+      16750.581,
+      29.171
+    ],
+    "thickness": "IW_100",
+    "bottom": "Z_DG",
+    "top": "OK_DG_WAND",
+    "category": "INNENWAND",
+    "phase": "UNGEKLAERT",
+    "present_in_target": true,
+    "status": "GESCHAETZT",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Grundriss, grafisch uebertragene Wandlage"
+      },
+      {
+        "document": "P22",
+        "page": 1,
+        "location": "Absatz 2: OG sonst nur Leichtbaustaenderwaende; Zuordnung zu P05 abgeleitet"
+      }
+    ],
+    "openings": [
+      {
+        "id": "DG_T_BALKON_1",
+        "offset": 1662.719,
+        "width": 1604.378,
+        "height": "H_TUER_PROXY",
+        "sill": 0,
+        "kind": "TUER",
+        "status": "GESCHAETZT",
+        "phase": "UNGEKLAERT",
+        "sources": [
+          {
+            "document": "P05",
+            "page": 1,
+            "location": "Oeffnung im Grundriss; Lage grafisch"
+          }
+        ],
+        "note": "Rohbau-/Fertigmasszuordnung, Anschlag und/oder Hoehe nicht durchgehend belegt.",
+        "height_reference": "Z_DG",
+        "height_reference_status": "MODELLBEZUG_FFB_KEIN_NEUER_HOEHENNACHWEIS"
+      }
+    ],
+    "note": "Raumlage P05 grafisch. Dachanschluesse im Pruefmodell ueber vorlaeufige Dachhuelle begrenzt, nicht konstruktiv nachgewiesen. R04: Kein massives Mauerwerk. Staender, Beplankung und Befestigung sind nicht dimensioniert.",
+    "source_pixel_axis": [
+      [
+        931,
+        660
+      ],
+      [
+        931,
+        840
+      ]
+    ],
+    "construction_status": "BAUART_BELEGT_EINZELSCHICHTEN_OFFEN",
+    "load_bearing_status": "UNGEKLAERT",
+    "as_built_status": "NICHT_AM_BAU_BESTAETIGT",
+    "material": "LEICHTBAUSTAENDERWAND_AUFBAU_OFFEN",
+    "dimension_status": "DICKE_AUS_MODELLZUORDNUNG_LAGE_NICHT_AUFGEMESSEN",
+    "system_id": "DG_LEICHTBAU_P22"
+  },
+  "relocated_opening_id": "DG_T_BALKON_1",
+  "evidence_metadata_corrections": [
+    {
+      "id": "R10_DG_STRASSE_F01",
+      "field": "width",
+      "before": {
+        "status": "PLANWERT",
+        "value": 1500
+      },
+      "after": {
+        "status": "GESCHAETZT",
+        "value": 750,
+        "note": "Aktueller Modellwert. Frueherer Quellenwert separat erhalten; keine neue Vermessung."
+      }
+    },
+    {
+      "id": "R10_DG_STRASSE_F05",
+      "field": "width",
+      "before": {
+        "status": "PLANWERT",
+        "value": 1500
+      },
+      "after": {
+        "status": "GESCHAETZT",
+        "value": 750,
+        "note": "Aktueller Modellwert. Frueherer Quellenwert separat erhalten; keine neue Vermessung."
+      }
+    }
+  ],
+  "video_audio_reviewed": false,
+  "metric_as_built_verified": false,
+  "structural_approval": false,
+  "balcony_count_observed": 1,
+  "note": "Ein Balkon rechts aus Strassensicht. Keine zweite/gestapelte Balkonanlage aus der doppelten Formulierung angenommen.",
+  "body_count": 1425,
+  "component_count": 15,
+  "unchanged_house_source": "R11a (geometrisch R11), außer den ausdrücklich aufgeführten MAIN01-Änderungen",
+  "new_parts": [
+    "BALKON_RECHTS",
+    "BALKON_ZUGANG",
+    "KELLERABGANG_GELAENDER",
+    "FALLROHR_SICHTABSCHNITTE"
+  ],
+  "no_terrain_STEP_or_vegetation_import": true,
+  "video_visual_sampling": "Gesamter Clip in 6-s-Schritten; verdichtete Einzelbilder an Balkonzonen und Details. SAR 9:16 für die Anzeige berücksichtigt. Keine metrische Entzerrung/Photogrammetrie. Audio nicht ausgewertet."
+}

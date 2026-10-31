@@ -1,0 +1,28 @@
+{
+  "scope": "Aufrufzaehlung einer Simulation des tatsaechlichen R11a-Codes; KEIN Laufzeitbenchmark in NX.",
+  "NX_tested": false,
+  "model_body_count": 1361,
+  "step_import_calls_including_smoke": 6,
+  "distance_calls_including_smoke": 1335,
+  "NewFaceProperties_calls": 0,
+  "AskMassProps3d_calls": 0,
+  "counters": {
+    "completed_WARTET_AUF_DIALOG": 1,
+    "attribute_writes_later": 56543,
+    "completed_TEIL_ANLEGEN": 29,
+    "completed_PARAMETER": 17,
+    "completed_HAUS_FEATURE": 1485,
+    "features_created": 1485,
+    "completed_UPDATE": 35,
+    "completed_SPEICHERN": 29,
+    "completed_HAUS_GESAMT": 1,
+    "completed_PUNKTABSTAND": 1335,
+    "surface_distance_calls": 1335,
+    "completed_UMGEBUNG_PRUEFUNG": 6,
+    "intermediate_view_fits_omitted": 6,
+    "completed_UMGEBUNG_IMPORT_UND_PRUEFUNG": 6
+  },
+  "inspection_level": "BASIS",
+  "geometry_revision": "R11_UNVERAENDERT",
+  "simulated_measurements_are_not_NX_measurements": true
+}

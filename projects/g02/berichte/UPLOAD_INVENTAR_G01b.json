@@ -1,0 +1,35 @@
+[
+  {
+    "filename": "diagnose.zip",
+    "sha256": "7e6a61dacb63c3d2759065f56ccc9c2050b0b9ac0b62620c47d5ba76af45eccd",
+    "file_count": 6,
+    "files": [
+      "diagnose/DGM_Punkt85/DIAGNOSE_DGM_PUNKT85.py",
+      "diagnose/DGM_Punkt85/QUELLPRUEFUNG_DGM_PUNKT85.json",
+      "diagnose/DGM_Punkt85/README_DIAGNOSE.md",
+      "diagnose/DGM_Punkt85/SHA256.json",
+      "diagnose/DGM_Punkt85/TESTE_DIAGNOSE_OFFLINE.py",
+      "diagnose/DGM_Punkt85/TESTPROTOKOLL_DIAGNOSE.txt"
+    ],
+    "native_prt_or_exchange_geometry": []
+  },
+  {
+    "filename": "berichte.zip",
+    "sha256": "35ed7c0793cb8bbf0db1898d633244fce0adb43a1f5c39b030359187a8a38cb2",
+    "file_count": 11,
+    "files": [
+      "berichte/CAD_HAUS_G01.json",
+      "berichte/CAD_UMGEBUNG_G01.json",
+      "berichte/ERGEBNIS_G01.json",
+      "berichte/QUELLENABGLEICH_G01.json",
+      "berichte/QUELLGEOMETRIE_UNVERAENDERT_G01a.json",
+      "berichte/SIMULATION_G01.json",
+      "berichte/TESTPROTOKOLL_G01a.txt",
+      "berichte/tests_diagnose.txt",
+      "berichte/tests_env.txt",
+      "berichte/tests_g01.txt",
+      "berichte/tests_house.txt"
+    ],
+    "native_prt_or_exchange_geometry": []
+  }
+]

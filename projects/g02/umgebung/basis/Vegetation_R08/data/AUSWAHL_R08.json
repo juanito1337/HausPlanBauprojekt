@@ -1,0 +1,574 @@
+{
+  "method_parameters": {
+    "spectral_index": "(NIR_DN-R_DN)/(NIR_DN+R_DN)",
+    "threshold": 0.18,
+    "height_difference_threshold_m": 0.6,
+    "min_component_pixels": 25,
+    "min_component_projected_area_m2": 1.0,
+    "boundary_review_buffer_m": 2.0,
+    "morphological_expansion": false,
+    "height_smoothing": false,
+    "parcel_geometry_source": "R06 Kartenreferenz, nicht vermessen"
+  },
+  "regions": [
+    {
+      "id": "V01",
+      "name": "Stellplatzhecke, nördlicher Abschnitt",
+      "type_inferred": "HECKENBEREICH",
+      "review_polygon_utm_m": [
+        [
+          568594.5,
+          6003363.8
+        ],
+        [
+          568597.6,
+          6003364.1
+        ],
+        [
+          568599.1,
+          6003353.1
+        ],
+        [
+          568594.9,
+          6003351.6
+        ],
+        [
+          568593.4,
+          6003351.8
+        ],
+        [
+          568593.2,
+          6003353.3
+        ],
+        [
+          568595.4,
+          6003354.6
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 859,
+      "selected_height_nodes": 818,
+      "projected_pixel_area_m2": 32.72,
+      "nodes_inside_parcel": 818,
+      "nodes_outside_parcel": 0,
+      "height_difference_min_m": 0.6044957122765489,
+      "height_difference_median_m": 1.6887867797962617,
+      "height_difference_p95_m": 1.878312705078246,
+      "height_difference_max_m": 1.8984805297930727,
+      "surface_H_min_m": 31.358495712280273,
+      "surface_H_max_m": 32.77955627441406,
+      "surface_cells": 674,
+      "surface_faces": 49,
+      "surface_projected_area_m2": 26.96,
+      "represented_source_nodes": 808,
+      "selected_nodes_not_represented": 10,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V02",
+      "name": "Stellplatzhecke, südlicher Abschnitt",
+      "type_inferred": "HECKENBEREICH",
+      "review_polygon_utm_m": [
+        [
+          568592.9,
+          6003352.5
+        ],
+        [
+          568595.9,
+          6003352.3
+        ],
+        [
+          568597.2,
+          6003340.4
+        ],
+        [
+          568594.1,
+          6003340.6
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 601,
+      "selected_height_nodes": 551,
+      "projected_pixel_area_m2": 22.04,
+      "nodes_inside_parcel": 551,
+      "nodes_outside_parcel": 0,
+      "height_difference_min_m": 0.6030650970695532,
+      "height_difference_median_m": 1.6449025146502052,
+      "height_difference_p95_m": 1.8306663055513042,
+      "height_difference_max_m": 1.8811623535119004,
+      "surface_H_min_m": 31.458580017089844,
+      "surface_H_max_m": 32.635623931884766,
+      "surface_cells": 465,
+      "surface_faces": 27,
+      "surface_projected_area_m2": 18.6,
+      "represented_source_nodes": 544,
+      "selected_nodes_not_represented": 7,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V03",
+      "name": "Gehölzgruppe im vorderen Garten, Nord",
+      "type_inferred": "GEHOELZKRONE",
+      "review_polygon_utm_m": [
+        [
+          568599.4,
+          6003364.6
+        ],
+        [
+          568603.7,
+          6003365.1
+        ],
+        [
+          568605.8,
+          6003362.9
+        ],
+        [
+          568605.2,
+          6003359.9
+        ],
+        [
+          568602.0,
+          6003358.8
+        ],
+        [
+          568599.6,
+          6003360.6
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 264,
+      "selected_height_nodes": 220,
+      "projected_pixel_area_m2": 8.8,
+      "nodes_inside_parcel": 220,
+      "nodes_outside_parcel": 0,
+      "height_difference_min_m": 0.6087289276137007,
+      "height_difference_median_m": 2.107791949462097,
+      "height_difference_p95_m": 2.4596141253743036,
+      "height_difference_max_m": 2.4900476928694175,
+      "surface_H_min_m": 31.614728927612305,
+      "surface_H_max_m": 33.560447692871094,
+      "surface_cells": 152,
+      "surface_faces": 21,
+      "surface_projected_area_m2": 6.08,
+      "represented_source_nodes": 206,
+      "selected_nodes_not_represented": 14,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V04",
+      "name": "Pflanzbereich an der westlichen Fassade, Mitte",
+      "type_inferred": "STRAUCH_ODER_KLEINGEHOELZ",
+      "review_polygon_utm_m": [
+        [
+          568604.0,
+          6003358.6
+        ],
+        [
+          568608.1,
+          6003359.6
+        ],
+        [
+          568609.5,
+          6003352.9
+        ],
+        [
+          568605.6,
+          6003351.4
+        ],
+        [
+          568603.9,
+          6003354.1
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 510,
+      "selected_height_nodes": 124,
+      "projected_pixel_area_m2": 4.96,
+      "nodes_inside_parcel": 124,
+      "nodes_outside_parcel": 0,
+      "height_difference_min_m": 0.601445815879849,
+      "height_difference_median_m": 0.7197678878853786,
+      "height_difference_p95_m": 0.8831308287769243,
+      "height_difference_max_m": 0.9452040710323466,
+      "surface_H_min_m": 30.8084716796875,
+      "surface_H_max_m": 31.632076263427734,
+      "surface_cells": 96,
+      "surface_faces": 13,
+      "surface_projected_area_m2": 3.84,
+      "represented_source_nodes": 123,
+      "selected_nodes_not_represented": 1,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V05",
+      "name": "Gehölzgruppe im vorderen Garten, Süd",
+      "type_inferred": "GEHOELZKRONE",
+      "review_polygon_utm_m": [
+        [
+          568604.3,
+          6003345.8
+        ],
+        [
+          568608.1,
+          6003346.3
+        ],
+        [
+          568610.2,
+          6003344.1
+        ],
+        [
+          568609.3,
+          6003340.7
+        ],
+        [
+          568606.1,
+          6003340.3
+        ],
+        [
+          568604.4,
+          6003342.3
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 499,
+      "selected_height_nodes": 254,
+      "projected_pixel_area_m2": 10.16,
+      "nodes_inside_parcel": 254,
+      "nodes_outside_parcel": 0,
+      "height_difference_min_m": 0.6193894744800374,
+      "height_difference_median_m": 1.6292219604555527,
+      "height_difference_p95_m": 1.8715101525928453,
+      "height_difference_max_m": 1.894338012691584,
+      "surface_H_min_m": 31.599287033081055,
+      "surface_H_max_m": 32.968650817871094,
+      "surface_cells": 187,
+      "surface_faces": 17,
+      "surface_projected_area_m2": 7.48,
+      "represented_source_nodes": 232,
+      "selected_nodes_not_represented": 22,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V06",
+      "name": "Nördlicher Grenzsaum, Eigentum ungeklärt",
+      "type_inferred": "GRENZSAUM",
+      "review_polygon_utm_m": [
+        [
+          568582.2,
+          6003368.1
+        ],
+        [
+          568584.0,
+          6003371.1
+        ],
+        [
+          568633.8,
+          6003381.0
+        ],
+        [
+          568634.6,
+          6003377.2
+        ],
+        [
+          568626.7,
+          6003374.7
+        ],
+        [
+          568583.6,
+          6003366.3
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 1926,
+      "selected_height_nodes": 1050,
+      "projected_pixel_area_m2": 42.0,
+      "nodes_inside_parcel": 333,
+      "nodes_outside_parcel": 717,
+      "height_difference_min_m": 0.6002882446326758,
+      "height_difference_median_m": 1.1616861358373214,
+      "height_difference_p95_m": 1.9816544068187054,
+      "height_difference_max_m": 2.2968221435882157,
+      "surface_H_min_m": 31.680261611938477,
+      "surface_H_max_m": 33.67082214355469,
+      "surface_cells": 781,
+      "surface_faces": 83,
+      "surface_projected_area_m2": 31.24,
+      "represented_source_nodes": 1018,
+      "selected_nodes_not_represented": 32,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V07",
+      "name": "Südlicher Grenzsaum, Eigentum ungeklärt",
+      "type_inferred": "GRENZSAUM",
+      "review_polygon_utm_m": [
+        [
+          568585.0,
+          6003338.5
+        ],
+        [
+          568641.5,
+          6003342.0
+        ],
+        [
+          568641.8,
+          6003338.5
+        ],
+        [
+          568585.0,
+          6003335.7
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 2697,
+      "selected_height_nodes": 2184,
+      "projected_pixel_area_m2": 87.36,
+      "nodes_inside_parcel": 466,
+      "nodes_outside_parcel": 1718,
+      "height_difference_min_m": 0.6001662353488157,
+      "height_difference_median_m": 1.200583944763661,
+      "height_difference_p95_m": 2.317158305037723,
+      "height_difference_max_m": 3.2832204284681943,
+      "surface_H_min_m": 30.522584915161133,
+      "surface_H_max_m": 33.955265045166016,
+      "surface_cells": 1644,
+      "surface_faces": 140,
+      "surface_projected_area_m2": 65.76,
+      "represented_source_nodes": 2125,
+      "selected_nodes_not_represented": 59,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    },
+    {
+      "id": "V08",
+      "name": "Östlicher Grenzsaum, Eigentum ungeklärt",
+      "type_inferred": "GRENZSAUM",
+      "review_polygon_utm_m": [
+        [
+          568632.2,
+          6003378.2
+        ],
+        [
+          568634.0,
+          6003378.7
+        ],
+        [
+          568642.4,
+          6003342.0
+        ],
+        [
+          568639.3,
+          6003341.5
+        ]
+      ],
+      "classification": "VISUELLER_ABGLEICH_2025_PLUS_DN_INDEX_UND_HOEHENSTUETZUNG_2023",
+      "stem_location": null,
+      "stem_diameter_m": null,
+      "species": null,
+      "root_extent": null,
+      "acquisition_image": "2025-05-12",
+      "acquisition_surface": "2023-04-07",
+      "ground_acquisition": null,
+      "ground_year_filename": 2023,
+      "source_height_datum_epsg": 7837,
+      "ground_vertical_datum_verified": false,
+      "canopy_height_current_verified": false,
+      "stem_ownership_verified": false,
+      "spectral_pixels_2025": 914,
+      "selected_height_nodes": 493,
+      "projected_pixel_area_m2": 19.72,
+      "nodes_inside_parcel": 54,
+      "nodes_outside_parcel": 439,
+      "height_difference_min_m": 0.6181520446375011,
+      "height_difference_median_m": 1.945877331562155,
+      "height_difference_p95_m": 2.1216248644959395,
+      "height_difference_max_m": 2.178592285157645,
+      "surface_H_min_m": 31.6679744720459,
+      "surface_H_max_m": 33.39459228515625,
+      "surface_cells": 395,
+      "surface_faces": 32,
+      "surface_projected_area_m2": 15.8,
+      "represented_source_nodes": 482,
+      "selected_nodes_not_represented": 11,
+      "surface_source": "bDOM 2023 original heights; face boundaries conservative raster-cell support",
+      "is_physical_solid": false
+    }
+  ],
+  "low_cover_pixel_count": 2589,
+  "paved_comparisons": [
+    {
+      "id": "K01",
+      "points": 405,
+      "median_difference_m": 0.07393716430757635,
+      "p05_m": 0.05210721558060669,
+      "p95_m": 0.15260591003370785,
+      "polygon_EN_m": [
+        [
+          568586.7,
+          6003363.4
+        ],
+        [
+          568591.6,
+          6003363.9
+        ],
+        [
+          568591.7,
+          6003360.5
+        ],
+        [
+          568587.0,
+          6003360.0
+        ]
+      ],
+      "datum_proof": false,
+      "offset_applied": false
+    },
+    {
+      "id": "K02",
+      "points": 207,
+      "median_difference_m": 0.09494153136964556,
+      "p05_m": 0.07524091796716945,
+      "p95_m": 0.14134103789796235,
+      "polygon_EN_m": [
+        [
+          568590.0,
+          6003349.0
+        ],
+        [
+          568592.3,
+          6003349.0
+        ],
+        [
+          568592.9,
+          6003345.4
+        ],
+        [
+          568590.6,
+          6003345.4
+        ]
+      ],
+      "datum_proof": false,
+      "offset_applied": false
+    },
+    {
+      "id": "K03",
+      "points": 249,
+      "median_difference_m": 0.3745630432084184,
+      "p05_m": 0.13416627380030305,
+      "p95_m": 1.2057851318393382,
+      "polygon_EN_m": [
+        [
+          568611.0,
+          6003370.0
+        ],
+        [
+          568616.0,
+          6003371.0
+        ],
+        [
+          568616.0,
+          6003369.0
+        ],
+        [
+          568611.0,
+          6003368.0
+        ]
+      ],
+      "datum_proof": false,
+      "offset_applied": false
+    }
+  ],
+  "low_cover_surface_cells": 1909,
+  "low_cover_surface_faces": 202,
+  "low_cover_projected_area_m2": 76.36
+}

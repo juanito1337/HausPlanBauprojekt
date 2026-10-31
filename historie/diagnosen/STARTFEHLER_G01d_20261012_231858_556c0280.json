@@ -1,0 +1,324 @@
+{
+  "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+  "status": "ABGEBROCHEN_KEIN_GESAMTERFOLG",
+  "mode": "ALL",
+  "base": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d",
+  "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+  "traceback": "Traceback (most recent call last):\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\gesamt\\start.py\", line 39, in main\n    result = run_project(base,mode)\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\gesamt\\core.py\", line 260, in run_project\n    state['environment'] = validate_component_result(backend.build_environment(out,cfg),'environment')\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\gesamt\\nx_backend.py\", line 176, in build_environment\n    model = e.run.run_project(root,config=cfg,adapter_factory=factory,\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\umgebung\\r09\\run.py\", line 167, in run_project\n    part,saved,check=nx.import_surface_part(env_dir,base/spec['step_file'],spec,definition)\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\gesamt\\terrain_audit.py\", line 158, in import_surface_part\n    result=super().import_surface_part(out,source,spec,definition,name)\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\umgebung\\r09\\performance.py\", line 231, in import_surface_part\n    result=super().import_surface_part(out,source,spec,definition,name)\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\umgebung\\r09\\nx_adapter.py\", line 252, in import_surface_part\n    check = self.verify_surface_geometry(part, spec, out)\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\gesamt\\terrain_audit.py\", line 224, in verify_surface_geometry\n    result=dgm_validator(self,part,spec,out,trace)\n  File \"W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\gesamt\\terrain_uv.py\", line 229, in verify_dgm_uv\n    raise RuntimeError('DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.')\nRuntimeError: DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.\n",
+  "time": "2026-10-12T23:18:58.095786",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "context": {
+    "output_directory": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724",
+    "phase": "UMGEBUNG_IMPORTIEREN_UND_PRUEFEN",
+    "manifest": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\manifest_G01.json",
+    "saved_house": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\haus\\HAUS_20261012_231453_013cbf\\HAUS_MASTER.prt",
+    "saved_environment": null
+  },
+  "nested_diagnostics": {
+    "r11a_context": {
+      "output_directory": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung",
+      "progress_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\LAUFSTATUS_R11a.json",
+      "last_step": {
+        "patch": "R11a-LAUFZEIT",
+        "status": "LAEUFT",
+        "sequence": 29,
+        "updated_at": "2026-10-12T23:18:58",
+        "elapsed_seconds": 63.767,
+        "current": null,
+        "current_duration_seconds": null,
+        "last_completed": {
+          "kind": "UMGEBUNG_IMPORT_UND_PRUEFUNG",
+          "label": "DGM",
+          "seconds": 41.30152820000001,
+          "status": "FEHLER",
+          "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie."
+        },
+        "counters": {
+          "attribute_writes_later": 57,
+          "completed_TEIL_ANLEGEN": 3,
+          "completed_UPDATE": 5,
+          "completed_PUNKTABSTAND": 23,
+          "surface_distance_calls": 23,
+          "completed_UMGEBUNG_PRUEFUNG": 1,
+          "intermediate_view_fits_omitted": 1,
+          "completed_SPEICHERN": 3,
+          "completed_UMGEBUNG_IMPORT_UND_PRUEFUNG": 2
+        },
+        "timings_seconds": {
+          "TEIL_ANLEGEN": {
+            "count": 3,
+            "total": 0.6892662999999857,
+            "maximum": 0.23244200000004867
+          },
+          "UPDATE": {
+            "count": 5,
+            "total": 0.15037189999992506,
+            "maximum": 0.09501229999995076
+          },
+          "PUNKTABSTAND": {
+            "count": 23,
+            "total": 0.009006200000044373,
+            "maximum": 0.0023767999999790845
+          },
+          "UMGEBUNG_PRUEFUNG": {
+            "count": 1,
+            "total": 0.09731959999999162,
+            "maximum": 0.09731959999999162
+          },
+          "SPEICHERN": {
+            "count": 3,
+            "total": 5.291475300000002,
+            "maximum": 4.79451929999999
+          },
+          "UMGEBUNG_IMPORT_UND_PRUEFUNG": {
+            "count": 2,
+            "total": 60.878618200000005,
+            "maximum": 41.30152820000001
+          }
+        },
+        "stop_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\STOP_R11a.txt",
+        "cancel_requested": false,
+        "updates_only_between_NX_calls": true,
+        "note": "Unveraenderter Zeitstempel kann einen laufenden NX-Kernelaufruf bedeuten; kein Timeout-/Hangnachweis. STOP wirkt erst nach Rueckkehr eines Aufrufs."
+      },
+      "phase": "G01_UMGEBUNG_DIREKT",
+      "saved_environment_master": null
+    },
+    "r09_context": {
+      "output_directory": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3",
+      "phase": "UMGEBUNG",
+      "operation": "PartUnits: DGM UV-Koordinatenpruefung"
+    },
+    "nx_surface_check": {
+      "id": "DGM",
+      "status": "DGM_UV_PRUEFUNG_ABGEBROCHEN",
+      "report_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPRUEFUNG_G01d.json",
+      "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+      "operation": "PartUnits: DGM UV-Koordinatenpruefung",
+      "method": "FIXED_UV_COORDINATES_PLUS_SEGMENTED_BOUNDARY_CHAINS",
+      "checked_samples": 0,
+      "failed_sample": null
+    },
+    "nx_runtime": {
+      "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+      "nx_version_inferred_from_python": false,
+      "UGII_VERSION": "v2406",
+      "UGII_FULL_VERSION": "v2406.0.0.8100",
+      "UGII_BASE_DIR": "C:\\Siemens\\NX2406"
+    },
+    "nx_terrain_audit_g01a": {
+      "schema": "G01A_TERRAIN_AUDIT_V1",
+      "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+      "id": "DGM",
+      "report_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\GELAENDE_PROTOKOLL_G01d.json",
+      "events_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\GELAENDE_PUNKTABFRAGEN_G01d.jsonl",
+      "created_at": "2026-10-12T23:18:15.936958",
+      "source": {
+        "path": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\umgebung\\CAD_IMPORT\\GELAENDE_G01d_EXAKTER_SEGMENTRAND.step",
+        "expected_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+        "exists": true,
+        "bytes": 1112151,
+        "sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f"
+      },
+      "step_definition": {
+        "path": "C:\\Siemens\\NX2406\\step214ug\\step214ug.def",
+        "exists": true,
+        "bytes": 1222,
+        "sha256": "2a301b43cdefaa6f6ae65c146b865164c2acbf771bb26812bb798eb5af9af960"
+      },
+      "status": "ABGEBROCHEN_KEINE_GEOMETRIEFREIGABE",
+      "geometry_release": false,
+      "root_cause_fixed": false,
+      "geometry_changed": false,
+      "normal_query_signature": "EvaluateFace(face, UF_MODL_EVAL, UV); Rand separat an Edge-Tags",
+      "acceptance_limit_mm": 0.25,
+      "regular_calls_started": 0,
+      "regular_calls_finished": 0,
+      "recent_regular_queries": [],
+      "unverified_snapshot": {
+        "path": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\diagnose_ungeprueft\\DGM_UNGEPRUEFTER_IMPORT_G01d.prt",
+        "exists": true,
+        "bytes": 9620065,
+        "sha256": "de49061bfb973d0e8ba66c0fc444fda47546a91297d099ad2167be588789ec0f",
+        "verified_geometry": false,
+        "assembly_use_allowed": false,
+        "label": "UNGEPRUEFTER_IMPORT_KEINE_FREIGABE"
+      },
+      "own_part_checkpoint": {
+        "path": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\01_GELAENDE_R09.prt",
+        "exists": true,
+        "bytes": 9620065,
+        "sha256": "de49061bfb973d0e8ba66c0fc444fda47546a91297d099ad2167be588789ec0f"
+      },
+      "final_saved_part": null,
+      "source_is_in_package": true,
+      "existing_user_parts_saved_or_closed": false,
+      "note": "Direkte Koordinaten der importierten Traegerflaeche und separat gepruefter Rand. Keine Quellwerte als NX-Rueckgabe.",
+      "updated_at": "2026-10-12T23:18:57.355527",
+      "elapsed_seconds": 41.418666,
+      "validation_method": "DGM_PARAMETER_UND_RANDPRUEFUNG_G01c",
+      "distance_search_replaced": true,
+      "planned_part_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\01_GELAENDE_R09.prt",
+      "staged_step_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\_step_quellen\\01_GELAENDE_R09.step",
+      "intended_import_settings": {
+        "ImportTo": "WorkPart",
+        "SewSurfaces": false,
+        "Optimize": false,
+        "SimplifyGeometry": false,
+        "SmoothBSurfaces": false,
+        "ProcessHoldFlag": true,
+        "scale_changed": false
+      },
+      "part_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\01_GELAENDE_R09.prt",
+      "staged_source": {
+        "path": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\_step_quellen\\01_GELAENDE_R09.step",
+        "exists": true,
+        "bytes": 1112151,
+        "sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f"
+      },
+      "body_tags": [
+        258235
+      ],
+      "body_count": 1,
+      "face_counts": [
+        8282
+      ],
+      "runtime": {
+        "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+        "nx_version_inferred_from_python": false,
+        "UGII_VERSION": "v2406",
+        "UGII_FULL_VERSION": "v2406.0.0.8100",
+        "UGII_BASE_DIR": "C:\\Siemens\\NX2406"
+      },
+      "direct_parameter_check": {
+        "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+        "method": "FIXED_UV_COORDINATES_PLUS_SEGMENTED_BOUNDARY_CHAINS",
+        "status": "DGM_UV_PRUEFUNG_ABGEBROCHEN",
+        "report_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPRUEFUNG_G01d.json",
+        "events_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPUNKTE_G01d.jsonl",
+        "source_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+        "original_step_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+        "source_boundary_representation": "366_EXACT_LINE_SEGMENTS",
+        "source_topology_changed_since_G01c": true,
+        "carrier_surface_modified": false,
+        "position_tolerance_mm": 0.25,
+        "geometry_changed": false,
+        "numeric_translation_or_scaling_fitted": false,
+        "closest_point_search_used_for_interior": false,
+        "area_check_performed": false,
+        "full_reference_check_performed": false,
+        "geometry_release": false,
+        "original_boundary_samples_checked": 0,
+        "per_edge_extra_samples_checked": 0,
+        "as_built_approved": false,
+        "checked_samples": 0,
+        "boundary_samples_checked": 0,
+        "max_position_error_mm": 0.0,
+        "max_boundary_error_mm": 0.0,
+        "focus_points": [],
+        "scope": "Endlicher parametrischer Koordinatenvergleich und separater Randabgleich. Keine Vermessungs-/Tragwerksfreigabe; keine allgemeine Minimumabstandsberechnung.",
+        "new_NX_calls_tested_here": false,
+        "phase": "ABGEBROCHEN",
+        "updated_at": "2026-10-12T23:18:57.276903",
+        "elapsed_seconds": 0.183276,
+        "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+        "exception_type": "RuntimeError",
+        "operation": "PartUnits: DGM UV-Koordinatenpruefung",
+        "selected_checks_passed": false
+      },
+      "original_validation_failure": {
+        "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+        "operation": "PartUnits: DGM UV-Koordinatenpruefung",
+        "surface_check": {
+          "id": "DGM",
+          "status": "DGM_UV_PRUEFUNG_ABGEBROCHEN",
+          "report_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPRUEFUNG_G01d.json",
+          "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+          "operation": "PartUnits: DGM UV-Koordinatenpruefung",
+          "method": "FIXED_UV_COORDINATES_PLUS_SEGMENTED_BOUNDARY_CHAINS",
+          "checked_samples": 0,
+          "failed_sample": null
+        }
+      },
+      "additional_diagnostic": {
+        "status": "KEINE_LEGACY_WIEDERHOLUNG_NACH_UV_FEHLER",
+        "reason": "Direkte UV-Fehler werden nicht durch eine andere Messmethode uebergangen.",
+        "geometry_release": false
+      },
+      "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+      "exception_type": "RuntimeError"
+    },
+    "nx_terrain_uv_g01b": {
+      "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+      "method": "FIXED_UV_COORDINATES_PLUS_SEGMENTED_BOUNDARY_CHAINS",
+      "status": "DGM_UV_PRUEFUNG_ABGEBROCHEN",
+      "report_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPRUEFUNG_G01d.json",
+      "events_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPUNKTE_G01d.jsonl",
+      "source_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+      "original_step_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "source_boundary_representation": "366_EXACT_LINE_SEGMENTS",
+      "source_topology_changed_since_G01c": true,
+      "carrier_surface_modified": false,
+      "position_tolerance_mm": 0.25,
+      "geometry_changed": false,
+      "numeric_translation_or_scaling_fitted": false,
+      "closest_point_search_used_for_interior": false,
+      "area_check_performed": false,
+      "full_reference_check_performed": false,
+      "geometry_release": false,
+      "original_boundary_samples_checked": 0,
+      "per_edge_extra_samples_checked": 0,
+      "as_built_approved": false,
+      "checked_samples": 0,
+      "boundary_samples_checked": 0,
+      "max_position_error_mm": 0.0,
+      "max_boundary_error_mm": 0.0,
+      "focus_points": [],
+      "scope": "Endlicher parametrischer Koordinatenvergleich und separater Randabgleich. Keine Vermessungs-/Tragwerksfreigabe; keine allgemeine Minimumabstandsberechnung.",
+      "new_NX_calls_tested_here": false,
+      "phase": "ABGEBROCHEN",
+      "updated_at": "2026-10-12T23:18:57.276903",
+      "elapsed_seconds": 0.183276,
+      "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+      "exception_type": "RuntimeError",
+      "operation": "PartUnits: DGM UV-Koordinatenpruefung",
+      "selected_checks_passed": false
+    },
+    "nx_terrain_boundary_g01c": {
+      "patch": "MAIN01-A01-G01d-EXAKTER-RASTERRAND",
+      "method": "FIXED_UV_COORDINATES_PLUS_SEGMENTED_BOUNDARY_CHAINS",
+      "status": "DGM_UV_PRUEFUNG_ABGEBROCHEN",
+      "report_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPRUEFUNG_G01d.json",
+      "events_file": "W:\\Plan Haus\\NX_GESAMT_MAIN01_A01_G01d\\ausgabe\\G01_20261012_231436_f9e95724\\umgebung\\R09_20261012_231755_8345e3\\umgebung\\DGM_FLAECHENPUNKTE_G01d.jsonl",
+      "source_sha256": "fb62317c99b8fb2e88a6f529bae98381e83c3399d20da18d5ac1598bcc1cbf2f",
+      "original_step_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "source_boundary_representation": "366_EXACT_LINE_SEGMENTS",
+      "source_topology_changed_since_G01c": true,
+      "carrier_surface_modified": false,
+      "position_tolerance_mm": 0.25,
+      "geometry_changed": false,
+      "numeric_translation_or_scaling_fitted": false,
+      "closest_point_search_used_for_interior": false,
+      "area_check_performed": false,
+      "full_reference_check_performed": false,
+      "geometry_release": false,
+      "original_boundary_samples_checked": 0,
+      "per_edge_extra_samples_checked": 0,
+      "as_built_approved": false,
+      "checked_samples": 0,
+      "boundary_samples_checked": 0,
+      "max_position_error_mm": 0.0,
+      "max_boundary_error_mm": 0.0,
+      "focus_points": [],
+      "scope": "Endlicher parametrischer Koordinatenvergleich und separater Randabgleich. Keine Vermessungs-/Tragwerksfreigabe; keine allgemeine Minimumabstandsberechnung.",
+      "new_NX_calls_tested_here": false,
+      "phase": "ABGEBROCHEN",
+      "updated_at": "2026-10-12T23:18:57.276903",
+      "elapsed_seconds": 0.183276,
+      "error": "DGM: die neue UV-Pruefung ist auf genau eine rechteckige Face begrenzt; keine Freigabe geteilter/unbekannter Topologie.",
+      "exception_type": "RuntimeError",
+      "operation": "PartUnits: DGM UV-Koordinatenpruefung",
+      "selected_checks_passed": false
+    }
+  }
+}

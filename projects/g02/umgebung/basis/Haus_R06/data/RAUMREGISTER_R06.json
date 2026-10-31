@@ -1,0 +1,895 @@
+[
+  {
+    "id": "EG_N_W",
+    "name": "Wohnen Nord",
+    "level": "EG",
+    "point": [
+      5178.941,
+      15931.794
+    ],
+    "area_plan_m2": 22.52,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ],
+    "reading_status": "NACHLESE_OFFEN_22_52_ODER_22_32",
+    "reading_note": "R06 Scan-Nachlese ergibt moeglicherweise 22,32 statt bisher 22,52 m2. Alter Zahlenwert nur unbestaetigter Registerwert; keine Summe oder Geometrie damit abgleichen.",
+    "area_use_for_validation": false
+  },
+  {
+    "id": "EG_N_B",
+    "name": "Bad Nord",
+    "level": "EG",
+    "point": [
+      1355.6,
+      16252.178
+    ],
+    "area_plan_m2": 10.69,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_N_S",
+    "name": "Schlafen Nord",
+    "level": "EG",
+    "point": [
+      1797.733,
+      12174.571
+    ],
+    "area_plan_m2": 11.94,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_N_WC",
+    "name": "WC",
+    "level": "EG",
+    "point": [
+      639.015,
+      8941.61
+    ],
+    "area_plan_m2": 3.19,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_N_A",
+    "name": "Abstell",
+    "level": "EG",
+    "point": [
+      1722.85,
+      9495.0
+    ],
+    "area_plan_m2": 1.0,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_N_D",
+    "name": "Diele",
+    "level": "EG",
+    "point": [
+      3967.912,
+      8941.61
+    ],
+    "area_plan_m2": 12.55,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_WG",
+    "name": "Wintergarten",
+    "level": "EG",
+    "point": [
+      8328.333,
+      10485.276
+    ],
+    "area_plan_m2": 24.25,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_F",
+    "name": "Treppenflur",
+    "level": "EG",
+    "point": [
+      1731.987,
+      6232.914
+    ],
+    "area_plan_m2": 10.39,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_K",
+    "name": "Kueche Nordwohnung",
+    "level": "EG",
+    "point": [
+      6025.049,
+      6320.291
+    ],
+    "area_plan_m2": 8.35,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_A_W",
+    "name": "A Wohnen/Schlafen",
+    "level": "EG",
+    "point": [
+      9946.382,
+      2941.702
+    ],
+    "area_plan_m2": 53.53,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_A_K",
+    "name": "A Kueche",
+    "level": "EG",
+    "point": [
+      1822.455,
+      1951.426
+    ],
+    "area_plan_m2": 10.21,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_A_WC",
+    "name": "A WC",
+    "level": "EG",
+    "point": [
+      4357.017,
+      990.276
+    ],
+    "area_plan_m2": 1.7,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_B_W",
+    "name": "B Wohnen/Schlafen",
+    "level": "EG",
+    "point": [
+      16538.071,
+      1689.294
+    ],
+    "area_plan_m2": 17.16,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_B_K",
+    "name": "B Kueche",
+    "level": "EG",
+    "point": [
+      16263.081,
+      4456.242
+    ],
+    "area_plan_m2": 8.47,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_B_B",
+    "name": "B Bad",
+    "level": "EG",
+    "point": [
+      19750.702,
+      1776.672
+    ],
+    "area_plan_m2": 4.57,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "EG_B_A",
+    "name": "B Abstell",
+    "level": "EG",
+    "point": [
+      13933.642,
+      5533.896
+    ],
+    "area_plan_m2": 6.75,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_N_F",
+    "name": "Flur Nord",
+    "level": "KG",
+    "point": [
+      1428.581,
+      15947.091
+    ],
+    "area_plan_m2": 12.07,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_N_R",
+    "name": "KG-Raum Nord",
+    "level": "KG",
+    "point": [
+      5383.554,
+      16319.955
+    ],
+    "area_plan_m2": 22.6,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_M1",
+    "name": "KG-Raum Mitte 1",
+    "level": "KG",
+    "point": [
+      1870.664,
+      11730.864
+    ],
+    "area_plan_m2": 13.02,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_M2",
+    "name": "KG-Raum Mitte 2",
+    "level": "KG",
+    "point": [
+      1755.317,
+      8948.727
+    ],
+    "area_plan_m2": 6.71,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_MF",
+    "name": "Flur Mitte",
+    "level": "KG",
+    "point": [
+      1845.851,
+      6682.864
+    ],
+    "area_plan_m2": 7.96,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_F",
+    "name": "Flur",
+    "level": "KG",
+    "point": [
+      5709.769,
+      6568.136
+    ],
+    "area_plan_m2": 17.46,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_AN",
+    "name": "Anschlusskeller",
+    "level": "KG",
+    "point": [
+      1991.607,
+      1520.136
+    ],
+    "area_plan_m2": 8.83,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_S",
+    "name": "KG-Raum West",
+    "level": "KG",
+    "point": [
+      5665.435,
+      2380.591
+    ],
+    "area_plan_m2": 12.99,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_A_R",
+    "name": "A KG-Raum",
+    "level": "KG",
+    "point": [
+      10705.639,
+      2495.318
+    ],
+    "area_plan_m2": 22.87,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_A_F",
+    "name": "A Flur",
+    "level": "KG",
+    "point": [
+      11371.04,
+      5851.091
+    ],
+    "area_plan_m2": 9.28,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_A_B",
+    "name": "A Bad",
+    "level": "KG",
+    "point": [
+      14291.667,
+      5879.773
+    ],
+    "area_plan_m2": 5.33,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "KG_OEL",
+    "name": "Oeltanks",
+    "level": "KG",
+    "point": [
+      16030.63,
+      2466.636
+    ],
+    "area_plan_m2": 19.16,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P06",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_W",
+    "name": "Wohnen",
+    "level": "DG",
+    "point": [
+      2975.992,
+      16043.779
+    ],
+    "area_plan_m2": 38.91,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_KI",
+    "name": "Kind",
+    "level": "DG",
+    "point": [
+      1558.853,
+      11172.304
+    ],
+    "area_plan_m2": 8.34,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_S",
+    "name": "Schlafen",
+    "level": "DG",
+    "point": [
+      1587.195,
+      7030.092
+    ],
+    "area_plan_m2": 12.6,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_K",
+    "name": "Kueche",
+    "level": "DG",
+    "point": [
+      6093.697,
+      10793.088
+    ],
+    "area_plan_m2": 5.48,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_B",
+    "name": "Bad",
+    "level": "DG",
+    "point": [
+      6037.011,
+      8459.447
+    ],
+    "area_plan_m2": 4.23,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_F",
+    "name": "Flur",
+    "level": "DG",
+    "point": [
+      4166.388,
+      8284.424
+    ],
+    "area_plan_m2": 9.31,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_S_Z",
+    "name": "Zimmer",
+    "level": "DG",
+    "point": [
+      2210.737,
+      1458.525
+    ],
+    "area_plan_m2": 17.57,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_S_S",
+    "name": "Schlafen",
+    "level": "DG",
+    "point": [
+      10175.057,
+      1429.355
+    ],
+    "area_plan_m2": 16.1,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_S_B",
+    "name": "Bad",
+    "level": "DG",
+    "point": [
+      8927.975,
+      5921.613
+    ],
+    "area_plan_m2": 7.12,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_S_K",
+    "name": "Kueche",
+    "level": "DG",
+    "point": [
+      11847.28,
+      5921.613
+    ],
+    "area_plan_m2": 10.06,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_S_W",
+    "name": "Wohnen",
+    "level": "DG",
+    "point": [
+      15928.64,
+      2071.106
+    ],
+    "area_plan_m2": 31.17,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_S_BA",
+    "name": "Balkon",
+    "level": "DG",
+    "point": [
+      18507.833,
+      2158.618
+    ],
+    "area_plan_m2": 8.74,
+    "area_basis": "Planangabe; keine automatische Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung bzw. Flaechenberechnung"
+      }
+    ]
+  },
+  {
+    "id": "DG_N_ABST",
+    "name": "Abstell (3.3.8)",
+    "level": "DG",
+    "point": null,
+    "area_plan_m2": 2.71,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung 3.3.8"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "DG_S_ABST",
+    "name": "Abstell (3.4.8)",
+    "level": "DG",
+    "point": null,
+    "area_plan_m2": 2.09,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung 3.4.8"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "DG_TREPPENFLUR",
+    "name": "Flur (3.7.7)",
+    "level": "DG",
+    "point": null,
+    "area_plan_m2": 7.79,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung am Treppenlauf 3.7.7"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "DG_S_FLUR",
+    "name": "Flur (3.4.7)",
+    "level": "DG",
+    "point": null,
+    "area_plan_m2": 12.27,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P05",
+        "page": 1,
+        "location": "Raumbeschriftung 3.4.7"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "AN_EG_WOHNEN",
+    "name": "Wohnen/Kueche",
+    "level": "ANBAU_EG",
+    "point": null,
+    "area_plan_m2": 46.63,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Ehemalige Schwimmhalle, oberer Raum F=46.63"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "AN_EG_BAD",
+    "name": "Bad",
+    "level": "ANBAU_EG",
+    "point": null,
+    "area_plan_m2": 7.23,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Anbau Bad F=7.23"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "AN_EG_TREPPENFLUR",
+    "name": "Treppen-Flur",
+    "level": "ANBAU_EG",
+    "point": null,
+    "area_plan_m2": 11.6,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Anbau Treppen-Flur F=11.60"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "AN_EG_SCHLAFEN",
+    "name": "Schlafen",
+    "level": "ANBAU_EG",
+    "point": null,
+    "area_plan_m2": 16.42,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Anbau Schlafen F=16.42"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "AN_EG_ZIMMER",
+    "name": "Zimmer",
+    "level": "ANBAU_EG",
+    "point": null,
+    "area_plan_m2": 10.93,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P09",
+        "page": 1,
+        "location": "Anbau Zimmer F=10.93"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  },
+  {
+    "id": "KG_A_TREPPENRAUM",
+    "name": "A Treppenraum",
+    "level": "KG",
+    "point": null,
+    "area_plan_m2": 3.64,
+    "area_status": "PLANWERT_ABGELESEN",
+    "area_basis": "Quellenangabe, kein geometrisch berechnetes Raumvolumen und keine neue Wohnflaechenberechnung",
+    "sources": [
+      {
+        "document": "P30",
+        "page": 1,
+        "location": "Berechnung Wohnung A, Kellergeschoss, Treppenraum"
+      }
+    ],
+    "geometry_status": "KEIN_RAUMPOLYGON_ERGAENZT"
+  }
+]

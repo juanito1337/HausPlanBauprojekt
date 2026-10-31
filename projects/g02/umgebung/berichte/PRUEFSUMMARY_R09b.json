@@ -1,0 +1,19 @@
+{
+  "patch": "R09b-STEP-FLAECHENPRUEFUNG",
+  "offline_unique_tests": 504,
+  "house_tests": 380,
+  "integration_tests": 124,
+  "new_tests": 37,
+  "test_failures": 0,
+  "syntax_files_checked": 59,
+  "native_NX_tested": false,
+  "source_STEP_files_checked": 11,
+  "OCCT_original_point_distances": 3516,
+  "OCCT_synthetic_split_point_distances": 1920,
+  "synthetic_split_case": "49 Sheets / 56 Faces",
+  "users_NX_geometry_received": false,
+  "main_runtime_planned_sample_count": 35603,
+  "smoke_runtime_planned_sample_count": 58,
+  "known_house_overlap_pairs": 10,
+  "known_blocked_openings": 2
+}

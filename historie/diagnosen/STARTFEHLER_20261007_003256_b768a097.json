@@ -1,0 +1,27 @@
+{
+  "status": "ABGEBROCHEN",
+  "revision": "R03",
+  "patch": "R03c-ATTRIBUTFIX",
+  "entry": "00_HAUS_ERZEUGEN_2406.py",
+  "launcher_patch": "R03c-STARTKORREKTUR-01",
+  "phase": "FUNKTIONSTEST_UND_HAUSAUFBAU",
+  "error": "NX-Schritt fehlgeschlagen: SetUserAttribute: TESTWAND | MATERIAL\nNX-Attribut konnte nicht geschrieben werden: MATERIAL an NXOpen.Body TEST_TUEROEFFNUNG_KOERPER_01\nThe attribute is reserved by an NX application or the system, so it cannot be set, changed or deleted.",
+  "traceback": "Traceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_nx.py\", line 158, in _set_user_attribute\n    obj.SetUserAttribute(key,-1,text,self.N.Update.Option.Now)\nNXOpen.NXException: The attribute is reserved by an NX application or the system, so it cannot be set, changed or deleted.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_nx.py\", line 260, in extrude\n    body.SetName(name+'_KOERPER_%02d'%(i+1));self.attributes(body,meta)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_nx.py\", line 192, in attributes\n    self._set_user_attribute(obj,key,value,meta.get('id','UNBENANNT'))\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_nx.py\", line 169, in _set_user_attribute\n    raise error from exception\nhaus2406_r03.haus_metadata.AttributeWriteError: NX-Attribut konnte nicht geschrieben werden: MATERIAL an NXOpen.Body TEST_TUEROEFFNUNG_KOERPER_01\nThe attribute is reserved by an NX application or the system, so it cannot be set, changed or deleted.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\00_HAUS_ERZEUGEN_2406.py\", line 137, in main\n    return _build_then_check(base,run_house,check_saved_house,progress)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\00_HAUS_ERZEUGEN_2406.py\", line 93, in _build_then_check\n    state = build(base)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_run.py\", line 187, in run_house\n    test=smoke_test(base,_nx=nx,_settings=settings,_parent=out,_silent=True,\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_run.py\", line 309, in smoke_test\n    cut=nx.xy_extrude(part,[[1000,-1],[2000,-1],[2000,241],[1000,241]],-1,2010,'TEST_TUEROEFFNUNG',meta,target=wall)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_nx.py\", line 284, in xy_extrude\n    return self.extrude(part,[[p[0],p[1],0] for p in polygon],bottom,top,name,meta,target)\n  File \"W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\src\\haus2406_r03\\haus_nx.py\", line 278, in extrude\n    raise RuntimeError('NX-Schritt fehlgeschlagen: '+failed_operation+'\\n'+str(ex)) from ex\nRuntimeError: NX-Schritt fehlgeschlagen: SetUserAttribute: TESTWAND | MATERIAL\nNX-Attribut konnte nicht geschrieben werden: MATERIAL an NXOpen.Body TEST_TUEROEFFNUNG_KOERPER_01\nThe attribute is reserved by an NX application or the system, so it cannot be set, changed or deleted.\n",
+  "python": "3.10.15 (main, Sep 30 2024, 11:52:23) [MSC v.1929 64 bit (AMD64)]",
+  "project_base": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03c",
+  "script": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\00_HAUS_ERZEUGEN_2406.py",
+  "time": "2026-10-07T00:32:56.651885",
+  "note": "Keine Erfolgsmeldung. Bereits erzeugte Teilmodelle sind nicht freigegeben.",
+  "nx_attribute_check": {
+    "operation": "SetUserAttribute: TESTWAND | MATERIAL",
+    "object_type": "NXOpen.Body",
+    "object_name": "TEST_TUEROEFFNUNG_KOERPER_01",
+    "object_tag": 66123,
+    "part_file": "W:\\Plan Haus\\Haus_NX2406_Projekt_R03c\\ausgabe\\HAUS_20261007_003240_926999\\funktionstest\\TEST_GEOMETRIE_b698f28f.prt",
+    "attribute": "MATERIAL",
+    "value_chars": 0,
+    "nx_error_code": 512091,
+    "error": "The attribute is reserved by an NX application or the system, so it cannot be set, changed or deleted.",
+    "policy": "FEHLER_STOPPT_LAUF_KEIN_STILLES_WEGLASSEN"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "HAUSPLAN_HANDOFF_STATUS_V1",
+  "date": "2026-10-31",
+  "active_G02_snapshot_included": true,
+  "active_G02_imported_files": 543,
+  "G02_runtime_modified": false,
+  "G02_user_reported_success": true,
+  "NX_run_performed_in_handoff": false,
+  "native_NX_result_parts_included": false,
+  "K01_documents_included": 8,
+  "K01_preview_json_recovered": true,
+  "K01_states_in_recovered_JSON": 62,
+  "K01_NX_implementation_available": false,
+  "K01_CAD_assets_available": 0,
+  "height_is_surveyed": false,
+  "construction_approved": false
+}

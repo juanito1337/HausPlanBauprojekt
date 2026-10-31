@@ -1,0 +1,33 @@
+{
+  "scope": "DOKUMENTENARCHIV_KEIN_NX_PAKET",
+  "files": {
+    "BAUABSCHNITTE_K01.csv": {
+      "bytes": 24191,
+      "sha256": "bdee44a02274de174dfd65b8436dd3048108d21168647756590044f7c96e5712"
+    },
+    "BODENBILANZ_K01.csv": {
+      "bytes": 7052,
+      "sha256": "295c5f37494b567f24e524ac331c451841b77d114fff951d5844b247ba38c896"
+    },
+    "KONZEPTBERICHT_K01.pdf": {
+      "bytes": 17505,
+      "sha256": "5fa984f2ec85e190bb94e42dca55ef6b012b0cc41a2c61a5132d1a4fce2f4768"
+    },
+    "README_START_HIER.md": {
+      "bytes": 2436,
+      "sha256": "0720d18d5f8cf9ee32d90e980a99dee5cb7b7a2a9d3cd446367280a64607c2bf"
+    },
+    "VORSCHAU_BAUABLAUF_K01.html": {
+      "bytes": 417578,
+      "sha256": "0e763e0fa9452fa1a8b8057849df2f06444ae27610662b8423ea5aa064de0e00"
+    },
+    "archiv/HISTORISCHES_TESTPROTOKOLL_K01.txt": {
+      "bytes": 3515,
+      "sha256": "276eca348c89880f42f296759123d040d9b865b39b43e8c8b499d01378a1e1e5"
+    },
+    "archiv/URSPRUENGLICHE_STARTANLEITUNG_K01.md": {
+      "bytes": 3308,
+      "sha256": "84288ce652913b85ea39e298d6435cebb9719810835f24898d4b493c3748dfc6"
+    }
+  }
+}

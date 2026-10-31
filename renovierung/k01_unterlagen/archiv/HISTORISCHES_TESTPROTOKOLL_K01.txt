@@ -1,0 +1,47 @@
+test_all_active_cad_valid (test_k01.DataTests.test_all_active_cad_valid) ... ok
+test_all_assets_present (test_k01.DataTests.test_all_assets_present) ... ok
+test_all_sources_available (test_k01.DataTests.test_all_sources_available) ... ok
+test_annex_unknown (test_k01.DataTests.test_annex_unknown) ... ok
+test_asset_hashes (test_k01.DataTests.test_asset_hashes) ... ok
+test_asset_ownership_paths (test_k01.DataTests.test_asset_ownership_paths) ... ok
+test_associated_file_root_guard_present (test_k01.DataTests.test_associated_file_root_guard_present) ... ok
+test_blocked_no_excavation (test_k01.DataTests.test_blocked_no_excavation) ... ok
+test_boolean_method_false (test_k01.DataTests.test_boolean_method_false) ... ok
+test_boolean_method_true (test_k01.DataTests.test_boolean_method_true) ... ok
+test_boolean_unknown_fails (test_k01.DataTests.test_boolean_unknown_fails) ... ok
+test_closure_no_open (test_k01.DataTests.test_closure_no_open) ... ok
+test_completed_closure_count (test_k01.DataTests.test_completed_closure_count) ... ok
+test_corners_recorded (test_k01.DataTests.test_corners_recorded) ... ok
+test_failed_volume_crosschecks_blocked (test_k01.DataTests.test_failed_volume_crosschecks_blocked) ... ok
+test_final_residual_not_zeroed (test_k01.DataTests.test_final_residual_not_zeroed) ... ok
+test_foundation_unknown (test_k01.DataTests.test_foundation_unknown) ... ok
+test_future_never_completed (test_k01.DataTests.test_future_never_completed) ... ok
+test_gross_equals_backfill_plus_new (test_k01.DataTests.test_gross_equals_backfill_plus_new) ... ok
+test_ids_unique (test_k01.DataTests.test_ids_unique) ... ok
+test_loose_balance (test_k01.DataTests.test_loose_balance) ... ok
+test_no_approved_sand_angle (test_k01.DataTests.test_no_approved_sand_angle) ... ok
+test_no_excavation_at_numeric_gate (test_k01.DataTests.test_no_excavation_at_numeric_gate) ... ok
+test_no_fake_waterproofing_approval (test_k01.DataTests.test_no_fake_waterproofing_approval) ... ok
+test_no_real_nx_claim (test_k01.DataTests.test_no_real_nx_claim) ... ok
+test_no_section_length_release (test_k01.DataTests.test_no_section_length_release) ... ok
+test_no_structural_release (test_k01.DataTests.test_no_structural_release) ... ok
+test_one_open_max (test_k01.DataTests.test_one_open_max) ... ok
+test_original_coordinates_preserved (test_k01.DataTests.test_original_coordinates_preserved) ... ok
+test_path_inside (test_k01.DataTests.test_path_inside) ... ok
+test_path_outside_refused (test_k01.DataTests.test_path_outside_refused) ... ok
+test_plate (test_k01.DataTests.test_plate) ... ok
+test_quantities_after_step_not_claimed (test_k01.DataTests.test_quantities_after_step_not_claimed) ... ok
+test_stockpile_height_limit (test_k01.DataTests.test_stockpile_height_limit) ... ok
+test_target (test_k01.DataTests.test_target) ... ok
+test_terrain_rotation_guard_present (test_k01.DataTests.test_terrain_rotation_guard_present) ... ok
+test_total_balance (test_k01.DataTests.test_total_balance) ... ok
+test_water_unknown (test_k01.DataTests.test_water_unknown) ... ok
+test_logistics_inside (test_k01.SpatialTests.test_logistics_inside) ... ok
+test_measures_inside (test_k01.SpatialTests.test_measures_inside) ... ok
+test_no_selected_spatial_conflict (test_k01.SpatialTests.test_no_selected_spatial_conflict) ... ok
+test_not_excavating_below_building_projection (test_k01.SpatialTests.test_not_excavating_below_building_projection) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.879s
+
+OK

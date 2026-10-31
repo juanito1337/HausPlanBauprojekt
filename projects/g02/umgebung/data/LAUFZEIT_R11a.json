@@ -1,0 +1,7 @@
+{
+  "schema": "R11A_RUNTIME_V1",
+  "surface_validation": "BASIS",
+  "defer_project_attributes": true,
+  "intermediate_dialogs": false,
+  "skip_individual_surface_fit": true
+}

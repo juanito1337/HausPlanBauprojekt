@@ -1,0 +1,536 @@
+{
+  "schema": "R11_WINDOW_REVIEW_V1",
+  "enabled": true,
+  "video_sha256": "f7039ff51aab1b966c81fdbf2a12ac8e8ad8f38f87766dc38e5564c96f5fdaac",
+  "metric_as_built_verified": false,
+  "source_document": "V11",
+  "source_pages": 8,
+  "operations": [
+    {
+      "action": "update",
+      "wall_id": "KG_AW_01",
+      "id": "KG_S_F00",
+      "values": {
+        "offset": 1950,
+        "width": 900
+      },
+      "reason": "P06: grafische Oeffnungslagen neu zugeordnet; die beiden mittleren breiteren Fenster werden im Video unter dem Fensterband gesehen. Die Kellerhoehen sind kein Planwert.",
+      "plan": "P06 S.1 unterer Fassadenrand; P10 nur historischer Vergleich",
+      "video": "",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "update",
+      "wall_id": "KG_AW_01",
+      "id": "KG_S_F01",
+      "values": {
+        "offset": 5700,
+        "width": 900
+      },
+      "reason": "P06: grafische Oeffnungslagen neu zugeordnet; die beiden mittleren breiteren Fenster werden im Video unter dem Fensterband gesehen. Die Kellerhoehen sind kein Planwert.",
+      "plan": "P06 S.1 unterer Fassadenrand; P10 nur historischer Vergleich",
+      "video": "",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "update",
+      "wall_id": "KG_AW_01",
+      "id": "KG_S_F02",
+      "values": {
+        "offset": 8150,
+        "width": 1510,
+        "height": 1010,
+        "sill": 1010
+      },
+      "reason": "P06: grafische Oeffnungslagen neu zugeordnet; die beiden mittleren breiteren Fenster werden im Video unter dem Fensterband gesehen. Die Kellerhoehen sind kein Planwert.",
+      "plan": "P06 S.1 unterer Fassadenrand; P10 nur historischer Vergleich",
+      "video": "00:58–01:02 / 01:26",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "update",
+      "wall_id": "KG_AW_01",
+      "id": "KG_S_F03",
+      "values": {
+        "offset": 10900,
+        "width": 1510,
+        "height": 1010,
+        "sill": 1010
+      },
+      "reason": "P06: grafische Oeffnungslagen neu zugeordnet; die beiden mittleren breiteren Fenster werden im Video unter dem Fensterband gesehen. Die Kellerhoehen sind kein Planwert.",
+      "plan": "P06 S.1 unterer Fassadenrand; P10 nur historischer Vergleich",
+      "video": "00:58–01:02 / 01:26",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "remove",
+      "wall_id": "KG_AW_10",
+      "id": "KG_W_F00",
+      "reason": "An dieser Stelle in P06 keine Aussenfensteroeffnung; oberer Abschnitt grenzt an nicht unterkellerte Garage. Falsche alte Modellzuordnung entfernt.",
+      "plan": "P06 S.1 linker Fassadenrand",
+      "video": "",
+      "certainty": "MODELLKORREKTUR_KEIN_BEHAUPTETER_ABBRUCH",
+      "evidence_page": 6
+    },
+    {
+      "action": "remove",
+      "wall_id": "KG_AW_10",
+      "id": "KG_W_F01",
+      "reason": "An dieser Stelle in P06 keine Aussenfensteroeffnung; oberer Abschnitt grenzt an nicht unterkellerte Garage. Falsche alte Modellzuordnung entfernt.",
+      "plan": "P06 S.1 linker Fassadenrand",
+      "video": "",
+      "certainty": "MODELLKORREKTUR_KEIN_BEHAUPTETER_ABBRUCH",
+      "evidence_page": 6
+    },
+    {
+      "action": "update",
+      "wall_id": "KG_AW_10",
+      "id": "KG_W_F02",
+      "values": {
+        "offset": 7000,
+        "width": 1000
+      },
+      "reason": "Fenster KG-Raum 13,02: Lage aus P06; Brüstung/Höhe unverändert als Altmodellannahme.",
+      "plan": "P06 S.1 linker Rand bei KG-Raum 13,02",
+      "video": "",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "update",
+      "wall_id": "KG_AW_10",
+      "id": "KG_W_F03",
+      "values": {
+        "offset": 9600,
+        "width": 900
+      },
+      "reason": "Fenster KG-Raum 6,71: Lage aus P06; Brüstung/Höhe unverändert als Altmodellannahme.",
+      "plan": "P06 S.1 linker Rand bei KG-Raum 6,71",
+      "video": "",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "add",
+      "wall_id": "KG_AW_09",
+      "id": "R11_KG_N_F01",
+      "values": {
+        "offset": 2300,
+        "width": 900,
+        "height": 600,
+        "sill": 1300,
+        "kind": "FENSTER",
+        "height_reference": "Z_KG"
+      },
+      "reason": "Bisher fehlende Oeffnung am oberen Rand in P06. Breite grafisch, Hoehe/Brüstung aus bisherigem Kellerprofil nur als Näherung.",
+      "plan": "P06 S.1 oberer Rand KG-Raum 22,40; P10 Lichtschacht",
+      "video": "",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 6
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_01",
+      "id": "EG_S_F01",
+      "values": {
+        "offset": 1195,
+        "width": 2010,
+        "height": 1510,
+        "sill": 800,
+        "video_panes": 2
+      },
+      "reason": "Video zeigt ein deutlich kompakteres zweifeldriges Fenster statt des alten niedrigen Bandformats. Mitte des Vorgängermodells beibehalten; 2010/1510 ist grobe Video-Modellannahme, kein abgelesenes Istmaß.",
+      "plan": "P07 S.1 historisch 3,01/1,01; P09 S.1 zeigt Öffnung, kein bestätigtes neues Format",
+      "video": "00:46–00:50 / 01:01",
+      "plan_nominal_mm": {
+        "width": 3010,
+        "height": 1010
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 2
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_01",
+      "id": "EG_S_F02",
+      "values": {
+        "offset": 5300,
+        "width": 1010,
+        "height": 2310,
+        "sill": 0
+      },
+      "reason": "Tür links am durchgehenden Fensterband; Lage korrigiert, Breite und Höhe aus P07. Keine Mauerwerkswand zwischen Tür und Nachbarfeld behauptet.",
+      "plan": "P07 S.1 1,01/2,31; P09 S.1",
+      "video": "00:58–00:59",
+      "plan_nominal_mm": {
+        "width": 1010,
+        "height": 2310
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 2
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_01",
+      "id": "EG_S_F03",
+      "values": {
+        "offset": 6310,
+        "width": 1500,
+        "height": 1760,
+        "sill": 550,
+        "video_panes": 1
+      },
+      "reason": "Seitliches Glasfeld unmittelbar neben der Tür. Breite als 2510 minus 1010 aus historischer Gruppe abgeleitet, gemeinsamer Sturz als Modellannahme.",
+      "plan": "P07 S.1 Fensterband 3 x 2,51/1,76; P19 Westansicht",
+      "video": "00:58–00:59",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 2
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_01",
+      "id": "EG_S_F04",
+      "values": {
+        "offset": 7870,
+        "width": 2510,
+        "height": 1760,
+        "sill": 550,
+        "video_panes": 2
+      },
+      "reason": "Mittlere breite Gruppe: im Video zwei Glasfelder, statt großer Mauerlücken im R10. Position grafisch und kleines Zwischenstück als Vereinfachung.",
+      "plan": "P07 S.1 3 x 2,51/1,76; P09 S.1; P19",
+      "video": "00:56–00:59",
+      "plan_nominal_mm": {
+        "width": 2510,
+        "height": 1760
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 2
+    },
+    {
+      "action": "add",
+      "wall_id": "EG_AW_01",
+      "id": "R11_EG_S_F06",
+      "values": {
+        "offset": 10440,
+        "width": 2510,
+        "height": 1760,
+        "sill": 550,
+        "kind": "FENSTER",
+        "video_panes": 1,
+        "height_reference": "Z_EG"
+      },
+      "reason": "Bisher fehlendes rechtes breites Feld des zusammenhängenden Bandes. Sichtbar mit durchgehender Verglasung; keine zusätzliche Flügelteilung erfunden.",
+      "plan": "P07 S.1 3 x 2,51/1,76; P09 S.1; P19",
+      "video": "00:56–00:58 / 01:26",
+      "plan_nominal_mm": {
+        "width": 2510,
+        "height": 1760
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 2
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_01",
+      "id": "EG_S_F05",
+      "values": {
+        "offset": 16200,
+        "width": 2635,
+        "height": 1510,
+        "sill": 800,
+        "video_panes": 2
+      },
+      "reason": "Rechtes getrenntes Fenster gemäß P09 weiter zum Fassadenende versetzt; Format aus P07, Zweiteilung aus Video.",
+      "plan": "P07 S.1 2,635/1,51; P09 S.1 rechte Wohnung",
+      "video": "00:54 / 01:30",
+      "plan_nominal_mm": {
+        "width": 2635,
+        "height": 1510
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 2
+    },
+    {
+      "action": "remove",
+      "wall_id": "EG_AW_10",
+      "id": "EG_W_O01",
+      "reason": "Im oberen Wandabschnitt an der Garage liegt in P09 keine derartig breite Außentür. Keine Bestands-Abbruchaussage.",
+      "plan": "P09 S.1 Garage/Bad links oben",
+      "video": "00:26–00:31",
+      "certainty": "MODELLKORREKTUR_KEIN_BEHAUPTETER_ABBRUCH",
+      "evidence_page": 3
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_10",
+      "id": "EG_W_O02",
+      "values": {
+        "offset": 6850,
+        "width": 1385,
+        "height": 1385,
+        "sill": 925,
+        "video_panes": 1
+      },
+      "reason": "Schlafraumfenster näher zum Eingang und mit Brüstung statt bodentief. Format in P07, Position grafisch aus P09.",
+      "plan": "P07 S.1 1,385/1,385; P09 S.1",
+      "video": "00:20–00:25",
+      "plan_nominal_mm": {
+        "width": 1385,
+        "height": 1385
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 3
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_10",
+      "id": "EG_W_O04",
+      "values": {
+        "offset": 9500,
+        "width": 1010,
+        "height": 1010,
+        "sill": 1300,
+        "video_panes": 1
+      },
+      "reason": "WC-Fenster ist ein kleines hochbrüstiges Fenster, keine bodentiefe Öffnung.",
+      "plan": "P07 S.1 1,01/1,01; P09 S.1",
+      "video": "00:20–00:22",
+      "plan_nominal_mm": {
+        "width": 1010,
+        "height": 1010
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 3
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_10",
+      "id": "EG_W_O03",
+      "values": {
+        "offset": 11200,
+        "width": 2510,
+        "height": 2385,
+        "sill": 0
+      },
+      "reason": "Haupteingang an den Treppenflur verschoben; historisches Öffnungsformat beibehalten. Generisches Türblatt bleibt kein realer Tür-/Seitenteil-Nachbau.",
+      "plan": "P07 S.1 2,51/2,385; P09 S.1",
+      "video": "00:20–00:23",
+      "plan_nominal_mm": {
+        "width": 2510,
+        "height": 2385
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 3
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_10",
+      "id": "EG_W_O05",
+      "values": {
+        "offset": 16450,
+        "width": 1010,
+        "height": 1385,
+        "sill": 925,
+        "video_panes": 1
+      },
+      "reason": "Fenster rechts des Eingangs zur vorderen Ecke verschoben, mit Brüstung. Video zeigt ein schmales Fenster statt bodentiefer Öffnung. Historisches Format 2,01/1,01 ist damit nicht als Istmaß bestätigt.",
+      "plan": "P07 S.1 historisch 2,01/1,01; P09 S.1",
+      "video": "00:22 / 00:34",
+      "plan_nominal_mm": {
+        "width": 2010,
+        "height": 1010
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 3
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_09",
+      "id": "EG_N_WOHNEN",
+      "values": {
+        "offset": 1200,
+        "width": 2010,
+        "height": 1510,
+        "sill": 800,
+        "video_panes": 2
+      },
+      "reason": "Breites zweifeldriges Fenster am rückwärtigen Kopf: Videoformat; historische Breite 2635 bleibt als Vergleichswert, nicht aktuelles Aufmaß.",
+      "plan": "P07 S.1 2,635/1,51; P09 S.1",
+      "video": "00:00–00:04 / 02:29–02:40",
+      "plan_nominal_mm": {
+        "width": 2635,
+        "height": 1510
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 4
+    },
+    {
+      "action": "update",
+      "wall_id": "EG_AW_09",
+      "id": "EG_N_BAD",
+      "values": {
+        "offset": 6000,
+        "width": 1385,
+        "height": 2385,
+        "sill": 0,
+        "kind": "TUER"
+      },
+      "reason": "Als Fenster geführtes Element ist gemäß Treppenpodest in P07 und Videotür ein Zugang. Alte Lage am Fassadenrand korrigiert.",
+      "plan": "P07 S.1 Treppenpodest/Bad; P09 S.1",
+      "video": "00:00 / 00:04 / 02:46",
+      "plan_nominal_mm": {
+        "width": 1385,
+        "height": 2385
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 4
+    },
+    {
+      "action": "add",
+      "wall_id": "EG_AW_09",
+      "id": "R11_EG_N_F02",
+      "values": {
+        "offset": 4050,
+        "width": 1010,
+        "height": 1385,
+        "sill": 925,
+        "kind": "FENSTER",
+        "video_panes": 1,
+        "height_reference": "Z_EG"
+      },
+      "reason": "Zusätzliches schmales Fenster im Video zwischen breitem Fenster und Tür. Maße/Lage reine Näherung; keine neue Raumteilung daraus abgeleitet.",
+      "plan": "P09 S.1 nur Fassaden-/Raumbezug, zusätzliche Öffnung nicht eindeutig dargestellt",
+      "video": "00:00–00:04 / 02:29–02:40",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 4
+    },
+    {
+      "action": "add",
+      "wall_id": "EG_AW_02",
+      "id": "R11_EG_SEITE_F01",
+      "values": {
+        "offset": 700,
+        "width": 1010,
+        "height": 1010,
+        "sill": 1300,
+        "kind": "FENSTER",
+        "height_reference": "Z_EG"
+      },
+      "reason": "Kleines Seitenfenster unter dem Balkon ergänzt. Maße und absolute Lage geschätzt, Existenz in Ansicht und Video.",
+      "plan": "P11 S.1 Südansicht unter Balkon; P09 S.1 Anschlussbereich",
+      "video": "01:38–01:43",
+      "plan_nominal_mm": null,
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 4
+    },
+    {
+      "action": "add",
+      "wall_id": "EG_AW_02",
+      "id": "R11_EG_SEITE_T01",
+      "values": {
+        "offset": 2800,
+        "width": 1010,
+        "height": 2385,
+        "sill": 0,
+        "kind": "TUER",
+        "height_reference": "Z_EG"
+      },
+      "reason": "Seitentür am Balkon-/Anbauanschluss ergänzt; Position aus P09 grob übertragen, keine Eingriffskonstruktion.",
+      "plan": "P09 S.1 Zugang Wo.B; P11 S.1 Südansicht",
+      "video": "01:38–01:46",
+      "plan_nominal_mm": {
+        "width": 1010,
+        "height": 2385
+      },
+      "certainty": "LAGE_GRAFISCH_MASSE_TEILWEISE_GESCHAETZT",
+      "evidence_page": 4
+    },
+    {
+      "action": "update",
+      "wall_id": "DG_W_N_WEST",
+      "id": "DG_F_GAUBE_W1",
+      "values": {
+        "video_panes": 2
+      },
+      "reason": "Je zwei erkennbare Glasfelder statt eines ungeteilten Glases. Öffnungspositionen und 1500/1500 aus bisheriger Planrekonstruktion bleiben unverändert.",
+      "plan": "P05 S.1; P19 Nordansicht",
+      "video": "00:20–00:25",
+      "plan_nominal_mm": {
+        "width": 1500,
+        "height": 1500
+      },
+      "certainty": "TEILUNG_VISUELL_MASSE_UNVERAENDERT_UNBESTAETIGT",
+      "evidence_page": 5
+    },
+    {
+      "action": "update",
+      "wall_id": "DG_W_N_WEST",
+      "id": "DG_F_GAUBE_W2",
+      "values": {
+        "video_panes": 2
+      },
+      "reason": "Je zwei erkennbare Glasfelder statt eines ungeteilten Glases. Öffnungspositionen und 1500/1500 aus bisheriger Planrekonstruktion bleiben unverändert.",
+      "plan": "P05 S.1; P19 Nordansicht",
+      "video": "00:20–00:25",
+      "plan_nominal_mm": {
+        "width": 1500,
+        "height": 1500
+      },
+      "certainty": "TEILUNG_VISUELL_MASSE_UNVERAENDERT_UNBESTAETIGT",
+      "evidence_page": 5
+    }
+  ],
+  "roof_windows_add": [
+    {
+      "id": "R11_DF_STRASSE_LINKS",
+      "rect_mm": [
+        1950,
+        650,
+        2950,
+        1450
+      ],
+      "roof_parent": "DACH_HAUPT",
+      "evidence": "00:46–00:50 / 01:01",
+      "frame_width_xy_mm": 70
+    },
+    {
+      "id": "R11_DF_KOPF_OBEN",
+      "rect_mm": [
+        2800,
+        16600,
+        3500,
+        17200
+      ],
+      "roof_parent": "DACH_HAUPT",
+      "evidence": "02:28–02:30",
+      "frame_width_xy_mm": 70
+    },
+    {
+      "id": "R11_DF_KOPF_UNTEN",
+      "rect_mm": [
+        4600,
+        17500,
+        5500,
+        18300
+      ],
+      "roof_parent": "DACH_HAUPT",
+      "evidence": "02:28–02:30",
+      "frame_width_xy_mm": 70
+    }
+  ],
+  "policy": "Videobefund betrifft Existenz/Teilung/Format. Neue metrische Werte sind unvermessen; Planstände bleiben getrennt. Nicht sichtbare Stellen werden nicht bestätigt."
+}

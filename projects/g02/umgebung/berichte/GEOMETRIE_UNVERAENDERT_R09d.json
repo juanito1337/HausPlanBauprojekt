@@ -1,0 +1,153 @@
+{
+  "basis": "NX_Haus_und_Umgebung_R09c.zip",
+  "basis_sha256": "366be82a9be60d6c854790695e86fcc1325d822673344fef3fc6b5484e3612e7",
+  "checked_geometry_data_files": 24,
+  "all_unchanged": true,
+  "rows": [
+    {
+      "file": "CAD_IMPORT/F01_R09.step",
+      "old_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "new_sha256": "eed0bd17eb3c479aac9b9ed65b54f1baf0fc4af5b785567ffc91c30f7fbe41dd",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/GELAENDE_R07_UNVERAENDERT.step",
+      "old_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "new_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/TEST_IMPORT_R09.step",
+      "old_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "new_sha256": "73042182efeba8d92dd61434bb87c0bfc4f5f5e1c9f0b6cce5f745044dc5513f",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V01_R09.step",
+      "old_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "new_sha256": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V02_R09.step",
+      "old_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "new_sha256": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V03_R09.step",
+      "old_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "new_sha256": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V04_R09.step",
+      "old_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "new_sha256": "9cbad22beec157eebefee26117415da04f14d6466a1e136e74ab0911461fcfca",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V05_R09.step",
+      "old_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "new_sha256": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V06_R09.step",
+      "old_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "new_sha256": "bbe912d6b46e4874a2a6a9105a21207c5ddbdd034e4803a54b6af074ae1c7fc8",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V07_R09.step",
+      "old_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "new_sha256": "de145fceb89025d5eef6d96a8a092fa32ef7416708ad761828a93e4e4e6f8771",
+      "unchanged": true
+    },
+    {
+      "file": "CAD_IMPORT/V08_R09.step",
+      "old_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "new_sha256": "edd031660a6e79bed1aabf5682aefcffd8665eff0705bf4f8896938248b69342",
+      "unchanged": true
+    },
+    {
+      "file": "UMGEBUNG_ZUM_DIREKTIMPORT.step",
+      "old_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "new_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Haus_R06/data/haus.json",
+      "old_sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+      "new_sha256": "4b482a6bc1debf2d34d4a4505820d9e8000e1ed9f9ddd1101422d4586caca43a",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/CAD/GELAENDE_R07_UNVERAENDERT.step",
+      "old_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "new_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/CAD/GELAENDE_UND_VEGETATION_R08.step",
+      "old_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "new_sha256": "f7b758ebf861a04a6e0e8e845c937c33338632248c825ad90571dddda5d092ec",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/CAD/GRUENFLAECHEN_NUR_BODENREFERENZ_R08.step",
+      "old_sha256": "08bc1bc914872c4cbbc99272857343ec84ff5332119b00f91f0804357e374daa",
+      "new_sha256": "08bc1bc914872c4cbbc99272857343ec84ff5332119b00f91f0804357e374daa",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/CAD/VEGETATION_OBERFLAECHEN_R08.step",
+      "old_sha256": "2b9ef33293376b230fc78098f3bc3a714ce2de2f7f0ae55728b731f5fd518c87",
+      "new_sha256": "2b9ef33293376b230fc78098f3bc3a714ce2de2f7f0ae55728b731f5fd518c87",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/data/BDOM_2023_AUSSCHNITT.tif",
+      "old_sha256": "e8e56b265a96be4eca41ad2b78f3c2052d06fab3771144cf97b8bcdd63a7e1d2",
+      "new_sha256": "e8e56b265a96be4eca41ad2b78f3c2052d06fab3771144cf97b8bcdd63a7e1d2",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/data/DGM_R07_AUSSCHNITT.tif",
+      "old_sha256": "f98f879331163234bb38a2c95eb5bd6730187154d996ed16214a54ce14dd50a8",
+      "new_sha256": "f98f879331163234bb38a2c95eb5bd6730187154d996ed16214a54ce14dd50a8",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/data/DOP_RGBI_2025_AUSSCHNITT.tif",
+      "old_sha256": "88a0ef99a43f2d7ced2ecd72deeb72c73f3ac12e02fcafe38fb9c156ce0d7a5b",
+      "new_sha256": "88a0ef99a43f2d7ced2ecd72deeb72c73f3ac12e02fcafe38fb9c156ce0d7a5b",
+      "unchanged": true
+    },
+    {
+      "file": "basis/Vegetation_R08/data/RASTER_AUSWERTUNG_R08.npz",
+      "old_sha256": "44904663057664c930472a17951f213baafb230a8dc210175e4244adfec08a85",
+      "new_sha256": "44904663057664c930472a17951f213baafb230a8dc210175e4244adfec08a85",
+      "unchanged": true
+    },
+    {
+      "file": "data/EINSTELLUNGEN_R09.json",
+      "old_sha256": "0480fca8100d50bbad7bcd65a0821556927c401b8c2c4ba07d15352deceb1f31",
+      "new_sha256": "0480fca8100d50bbad7bcd65a0821556927c401b8c2c4ba07d15352deceb1f31",
+      "unchanged": true
+    },
+    {
+      "file": "data/IMPORTAUFTRAG_R09.json",
+      "old_sha256": "d6d74e021a3b65361b33c792bcae5e55385bed8a4ed8a01b459c42fa7b8587a2",
+      "new_sha256": "d6d74e021a3b65361b33c792bcae5e55385bed8a4ed8a01b459c42fa7b8587a2",
+      "unchanged": true
+    },
+    {
+      "file": "data/LEITUNGSTIEFEN_PRUEFUNG_R09a.json",
+      "old_sha256": "e5b04285e0b00369af3b700df8f1c5a44f0e3a0a2b347c786a854c7daeec1ddd",
+      "new_sha256": "e5b04285e0b00369af3b700df8f1c5a44f0e3a0a2b347c786a854c7daeec1ddd",
+      "unchanged": true
+    }
+  ],
+  "scope": "Identische Geometrie-/Quelldaten, keine neue fachliche Freigabe. Neue Ablauflogik separat geprüft."
+}

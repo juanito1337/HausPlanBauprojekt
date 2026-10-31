@@ -1,0 +1,34 @@
+{
+  "status": "ABGEBROCHEN",
+  "patch": "R09b-STEP-FLAECHENPRUEFUNG",
+  "entry": "00_NX_MODELL_ERZEUGEN_2406.py",
+  "project_base": "X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b",
+  "error": "Fehlernummer: 820001",
+  "traceback": "Traceback (most recent call last):\n  File \"X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\00_NX_MODELL_ERZEUGEN_2406.py\", line 37, in main\n    return run_project(base)\n           ^^^^^^^^^^^^^^^^^\n  File \"X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\r09\\run.py\", line 141, in run_project\n    sm_part,sm_save,sm_check=nx.import_surface_part(smoke_dir,base/smoke['step_file'],smoke,definition,name=unique)\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\r09\\nx_adapter.py\", line 243, in import_surface_part\n    check = self.verify_surface_geometry(part, spec, out)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\r09\\nx_adapter.py\", line 134, in verify_surface_geometry\n    row.update(area_checked(ref['area_mm2'], self.surface_area_mm2(body)))\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\r09\\nx_adapter.py\", line 83, in surface_area_mm2\n    result = self.uf.Modeling.AskMassProps3d(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nNXOpen.NXException: Fehlernummer: 820001\n",
+  "python": "3.12.9 (main, Feb 24 2025, 12:24:11) [MSC v.1929 64 bit (AMD64)]",
+  "time": "2026-10-08T10:58:27.644789",
+  "note": "Kein vollstaendiger Erfolg; ggf. gespeicherte Teilergebnisse im Manifest gekennzeichnet.",
+  "r09_context": {
+    "output_directory": "X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\ausgabe\\R09_20261008_105807_8e8207",
+    "phase": "NX_STEP_IMPORT_FUNKTIONSTEST",
+    "operation": "STEP-Flaecheninhalt: TEST Quellsheet 2"
+  },
+  "nx_surface_check": {
+    "id": "TEST",
+    "report_file": "X:\\Konstruktion\\Haus Plan\\NX_Haus_und_Umgebung_R09b\\NX_Haus_und_Umgebung_R09b\\ausgabe\\R09_20261008_105807_8e8207\\funktionstest\\IMPORTPRUEFUNG_TEST_R09b.json",
+    "status": "IMPORTGEOMETRIE_ABGEBROCHEN",
+    "source_sheets": 2,
+    "source_faces": 2,
+    "nx_sheets": 2,
+    "nx_faces": 2,
+    "error": "Fehlernummer: 820001",
+    "operation": "STEP-Flaecheninhalt: TEST Quellsheet 2",
+    "last_sheet": {
+      "source_index": 1,
+      "body_index": 1,
+      "nx_faces": 1,
+      "expected_samples": 38,
+      "checked_samples": 0
+    }
+  }
+}

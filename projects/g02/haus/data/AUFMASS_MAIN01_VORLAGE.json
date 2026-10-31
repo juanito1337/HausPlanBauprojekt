@@ -1,0 +1,30 @@
+{
+  "schema": "MAIN01_AUFMASS_VORLAGE_NICHT_AUTOMATISCH_IMPORTIERT",
+  "note": "Keine Schätzwerte als Messwerte eintragen. mm, Foto-/Messpunktbezug, Messdatum und Quelle pro Angabe. Änderungen anschließend fachlich prüfen.",
+  "balcony": {
+    "actual_length_mm": null,
+    "actual_projection_mm": null,
+    "floor_top_to_EG_zero_mm": null,
+    "edge_profile": null,
+    "post_centres_local_xy_mm": null,
+    "post_outer_diameter_mm": null,
+    "post_wall_thickness_mm": null,
+    "post_foot_levels_mm": null,
+    "railing_height_mm": null,
+    "board_dimensions_and_count": null,
+    "door_clear_width_height_mm": null,
+    "door_offset_from_marked_corner_mm": null,
+    "door_threshold_level_mm": null,
+    "roof_niche_geometry": null,
+    "attachments_and_foundations": null
+  },
+  "cellar_access": {
+    "guard_footprint_and_levels": null,
+    "stair_survey": null
+  },
+  "rainwater": {
+    "pipe_diameters_and_bends": null,
+    "gutter_sections_and_falls": null,
+    "ground_connections": null
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "schema": "QUELLENKONSTRUKTION_V1",
+  "source_revision": "1995/1996 + Nutzungsstand2015, Fortgeltung nicht durchgehend bestaetigt",
+  "as_built_verified": false,
+  "structural_calculation_provided": false,
+  "policy": "Kein reales Tragglied ohne belegten Querschnitt, Endpunkte, Orientierung und Zuordnung. Keine Schaetzung aus ueblichen Bauweisen.",
+  "systems": [
+    {
+      "id": "PFETTENDACH_P22",
+      "type": "PFETTENDACH",
+      "scope": [
+        "DACH_HAUPT",
+        "DACH_QUER"
+      ],
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        },
+        {
+          "document": "P13",
+          "page": 1,
+          "location": "Sparren/Kehlbalken nach Statik"
+        }
+      ],
+      "known": {
+        "pitch_deg": 45,
+        "insulation_mm": 140,
+        "insulation_type": "MINERALWOLLE",
+        "dampfsperre": true,
+        "sparse_board_mm": 20,
+        "gipskarton_mm": 12.5,
+        "lattung_section_mm": [
+          40,
+          60
+        ],
+        "konterlattung_section_mm": [
+          20,
+          60
+        ],
+        "covering": "DUNKLE_BETONDACHSTEINE"
+      },
+      "unknown": [
+        "Sparrenquerschnitte",
+        "Sparrenabstaende",
+        "Pfettenquerschnitte und Achsen",
+        "Pfosten/Auflager",
+        "Kehlbalkenquerschnitte und Abstaende",
+        "Gaubenwechsel",
+        "Knoten/Verbindungsmittel",
+        "Luftschichtdicke",
+        "Lattungsteilung",
+        "Ziegelaufbauhoehe",
+        "Aussteifung"
+      ]
+    },
+    {
+      "id": "BRETTBINDER_BESTAND_P22",
+      "type": "BRETTBINDERDACH",
+      "scope": [
+        "DACH_ANBAU"
+      ],
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 1: Brettbinderdach erhalten"
+        },
+        {
+          "document": "P18",
+          "page": 1,
+          "location": "Binderdach 12 cm Waermedaemmung, 28 Grad"
+        }
+      ],
+      "known": {
+        "pitch_deg": 28,
+        "insulation_mm": 120,
+        "existing_preserved_in_1995_plan": true
+      },
+      "unknown": [
+        "Binderraster",
+        "Gurtquerschnitte",
+        "Stegquerschnitte",
+        "Knotenausfuehrung",
+        "Auflager/Anker",
+        "Aussteifung",
+        "Istzustand des Holzes"
+      ]
+    },
+    {
+      "id": "ANBAU_HOLZBALKENDECKE_P18",
+      "type": "HOLZBALKENDECKE",
+      "scope": [
+        "ANBAU_EG"
+      ],
+      "sources": [
+        {
+          "document": "P18",
+          "page": 1,
+          "location": "Neue Holzbalkendecke; Holz/Schalung siehe Statik"
+        }
+      ],
+      "known": {
+        "ffb_mm": 150,
+        "estrich_mm": 40,
+        "trittschall_mm": 40
+      },
+      "unknown": [
+        "Balkenquerschnitte",
+        "Balkenrichtung",
+        "Balkenraster",
+        "Schalungsdicke",
+        "Auflager und Wechsel",
+        "Befestigungen"
+      ]
+    },
+    {
+      "id": "HAUPTDECKE_STB160_P22",
+      "type": "STAHLBETONDECKE",
+      "scope": [
+        "DG_ROHDECKE"
+      ],
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2"
+        }
+      ],
+      "known": {
+        "thickness_mm": 160
+      },
+      "unknown": [
+        "Bewehrung",
+        "Betonguete",
+        "Auflagerlaengen",
+        "Tragrichtung",
+        "Durchbrueche und Randverstaerkungen"
+      ]
+    },
+    {
+      "id": "WG_SUED_P21",
+      "type": "ZWEISCHALIGES_MAUERWERK",
+      "scope": [
+        "EG_AW_06"
+      ],
+      "sources": [
+        {
+          "document": "P21",
+          "page": 1,
+          "location": "Suedwand neu; 175 KS + 80 Daemmung + 40 Luft + 115 Vormauerstein"
+        },
+        {
+          "document": "P07",
+          "page": 1,
+          "location": "Rechte senkrechte, neu schraffierte Wintergartenwand; keine Glasfront in dieser Wand"
+        },
+        {
+          "document": "P09",
+          "page": 1,
+          "location": "Wintergarten-Grundriss; 365-mm-Massangaben bleiben Konflikt zur Beschreibungsvariante"
+        }
+      ],
+      "known": {
+        "inside_to_outside_mm": [
+          175,
+          80,
+          40,
+          115
+        ],
+        "total_mm": 410
+      },
+      "unknown": [
+        "Verifikation Dicke gegen 365-mm-Planbezug",
+        "Maueranker",
+        "Fundamentbreite/-tiefe",
+        "Ausfuehrung am Bau"
+      ]
+    },
+    {
+      "id": "DG_LEICHTBAU_P22",
+      "type": "LEICHTBAUSTAENDERWAND",
+      "scope": [
+        "DG"
+      ],
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2: sonst nur Leichtbaustaenderwaende"
+        }
+      ],
+      "known": {
+        "system": "Leichtbaustaenderwand"
+      },
+      "unknown": [
+        "Staendermaterial/-raster/-profil",
+        "Beplankungszahl",
+        "Plattendicken",
+        "Anschluesse"
+      ]
+    },
+    {
+      "id": "BESTANDSWAND_UNGEKLAERT",
+      "type": "WAND_AUFBAU_UNGEKLAERT",
+      "scope": [
+        "KG_AW_01",
+        "KG_AW_02",
+        "KG_AW_03",
+        "KG_AW_04",
+        "KG_AW_05",
+        "KG_AW_06",
+        "KG_AW_07",
+        "KG_AW_08",
+        "KG_AW_09",
+        "KG_AW_10",
+        "KG_IW_N_TRENN",
+        "KG_IW_N_FLUR_N",
+        "KG_IW_N_FLUR_E",
+        "KG_IW_N_FLUR_S",
+        "KG_IW_MITTE_E",
+        "KG_IW_MITTE_1",
+        "KG_IW_MITTE_2",
+        "KG_IW_FLUR_N",
+        "KG_IW_TREPPEN_E",
+        "KG_IW_TREPPEN_S",
+        "KG_IW_S_TRENN",
+        "KG_IW_A_KG_N",
+        "KG_IW_A_FLUR_BAD",
+        "KG_IW_A_BAD_S",
+        "KG_IW_A_KG_O",
+        "KG_IW_A_TREPPEN_FLUR",
+        "KG_IW_OEL_N",
+        "KG_IW_OEL_O",
+        "KG_IW_FLUR_S",
+        "KG_IW_TECHNIK_O",
+        "EG_AW_01",
+        "EG_AW_02",
+        "EG_AW_03",
+        "EG_AW_04",
+        "EG_AW_05",
+        "EG_AW_07",
+        "EG_AW_08",
+        "EG_AW_09",
+        "EG_AW_10",
+        "EG_IW_BAD_WOHNEN",
+        "EG_IW_BAD_S",
+        "EG_IW_BAD_ECKE",
+        "EG_IW_WOHNEN_S1",
+        "EG_IW_WOHNEN_S2",
+        "EG_IW_WOHNEN_S3",
+        "EG_IW_SCHLAFEN_E",
+        "EG_IW_SCHLAFEN_S",
+        "EG_IW_WC_ABST",
+        "EG_IW_ABST_DIELE",
+        "EG_IW_DIELE_S1",
+        "EG_IW_DIELE_S2",
+        "EG_IW_WINTERGARTEN_W",
+        "EG_IW_KUECHE_W",
+        "EG_IW_KUECHE_E",
+        "EG_IW_KUECHE_S",
+        "EG_IW_TREPPEN_N",
+        "EG_IW_TREPPEN_O",
+        "EG_IW_TREPPEN_S",
+        "EG_IW_A_KUECHE_E",
+        "EG_IW_A_WC_E",
+        "EG_IW_A_WC_N",
+        "EG_IW_B_ABST_E",
+        "EG_IW_B_ABST_S",
+        "EG_IW_B_KUECHE_S",
+        "EG_IW_B_BAD_W",
+        "EG_IW_B_BAD_N",
+        "DG_W_N_WEST",
+        "DG_W_N_NORD",
+        "DG_W_N_OST",
+        "DG_W_HOF",
+        "DG_W_SUED",
+        "DG_W_OST",
+        "DG_W_ANBAU_ANSCHLUSS",
+        "DG_W_ZIMMER_E",
+        "AN_KG_AW_01",
+        "AN_KG_AW_02",
+        "AN_KG_AW_03",
+        "AN_KG_AW_04",
+        "AN_KG_IW_N_RAUM_S",
+        "AN_KG_IW_BAD_O",
+        "AN_KG_IW_BAD_S",
+        "AN_KG_IW_RAUM_S",
+        "AN_EG_AW_01",
+        "AN_EG_AW_02",
+        "AN_EG_AW_03",
+        "AN_EG_AW_04",
+        "AN_EG_IW_WOHNEN_S",
+        "AN_EG_IW_BAD_O",
+        "AN_EG_IW_BAD_S",
+        "AN_EG_IW_SCHLAFEN_O",
+        "AN_EG_IW_SCHLAFEN_N",
+        "AN_EG_IW_ZIMMER_N",
+        "AN_EG_IW_WOHNEN_KUECHE_1",
+        "AN_EG_IW_WOHNEN_KUECHE_2",
+        "GAR_AW_01",
+        "GAR_AW_03",
+        "GAR_AW_04"
+      ],
+      "sources": [],
+      "known": {},
+      "unknown": [
+        "Mauerstein/Beton/Schichten",
+        "Tragfunktion",
+        "Auflager",
+        "Istmasse"
+      ]
+    },
+    {
+      "id": "TREPPENHAUS_KS_P22",
+      "type": "KALKSANDSTEIN_TREPPENHAUS",
+      "scope": [
+        "DG_W_TREPPEN_E",
+        "DG_W_TREPPEN_S"
+      ],
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 2: Treppenhaus aus KS"
+        }
+      ],
+      "known": {
+        "material": "KALKSANDSTEIN"
+      },
+      "unknown": [
+        "Einzeldicken als Bestandsmass",
+        "Anschluesse",
+        "Tragfunktion"
+      ]
+    },
+    {
+      "id": "WOHNUNGSTRENNWAND_KS240_P22",
+      "type": "WOHNUNGSTRENNWAND_KS",
+      "scope": [
+        "EG_IW_A_B_TRENNUNG"
+      ],
+      "sources": [
+        {
+          "document": "P22",
+          "page": 1,
+          "location": "Absatz 1: neue Wohnungstrennwaende 24 KS"
+        }
+      ],
+      "known": {
+        "description_thickness_mm": 240,
+        "material": "KALKSANDSTEIN"
+      },
+      "unknown": [
+        "Fortgeltung und Zuordnung zur 2015er Trennwand",
+        "Istzustand"
+      ]
+    },
+    {
+      "id": "DG_RAND_HUELLE_UNGEKLAERT",
+      "type": "DACHGESCHOSS_RAND_GEOMETRIE",
+      "scope": [],
+      "sources": [
+        {
+          "document": "P05",
+          "page": 1,
+          "location": "Randbereiche und Dickenzuordnung"
+        }
+      ],
+      "known": {},
+      "unknown": [
+        "Dachschichten versus Wandaufbau",
+        "Bauteilfunktion"
+      ]
+    },
+    {
+      "id": "BESTANDSDACH_UNGEKLAERT",
+      "type": "BESTANDSDACH_PROXY",
+      "scope": [
+        "DACH_GARAGE"
+      ],
+      "sources": [
+        {
+          "document": "P19",
+          "page": 1,
+          "location": "Garage in der Ansicht"
+        }
+      ],
+      "known": {},
+      "unknown": [
+        "Dachform/Neigung/Querschnitte und Auflager als Istmass"
+      ]
+    },
+    {
+      "id": "GAUBE_TRAGWERK_OFFEN",
+      "type": "GAUBEN_PRUEFHUELLE",
+      "scope": [
+        "GAUBE_WEST",
+        "GAUBE_OST",
+        "GAUBE_SUED"
+      ],
+      "sources": [
+        {
+          "document": "P05",
+          "page": 1,
+          "location": "Drei Gauben; Geometrie nur teilweise bemaesst"
+        }
+      ],
+      "known": {},
+      "unknown": [
+        "Wechsel",
+        "Pfosten",
+        "Anschluesse",
+        "Isthoehen"
+      ]
+    }
+  ],
+  "pending_members": [
+    {
+      "id": "HAUPT_SPARREN",
+      "system_id": "PFETTENDACH_P22",
+      "kind": "SPARREN",
+      "part": "DACH",
+      "start_mm": null,
+      "end_mm": null,
+      "section_mm": null,
+      "width_direction": null,
+      "source_dimension": null,
+      "source_placement": null,
+      "section_status": "UNGEKLAERT",
+      "placement_status": "UNGEKLAERT",
+      "enabled": false
+    },
+    {
+      "id": "HAUPT_PFETTEN",
+      "system_id": "PFETTENDACH_P22",
+      "kind": "PFETTE",
+      "part": "DACH",
+      "start_mm": null,
+      "end_mm": null,
+      "section_mm": null,
+      "width_direction": null,
+      "source_dimension": null,
+      "source_placement": null,
+      "section_status": "UNGEKLAERT",
+      "placement_status": "UNGEKLAERT",
+      "enabled": false
+    },
+    {
+      "id": "HAUPT_KEHLBALKEN",
+      "system_id": "PFETTENDACH_P22",
+      "kind": "KEHLBALKEN",
+      "part": "DACH",
+      "start_mm": null,
+      "end_mm": null,
+      "section_mm": null,
+      "width_direction": null,
+      "source_dimension": null,
+      "source_placement": null,
+      "section_status": "UNGEKLAERT",
+      "placement_status": "UNGEKLAERT",
+      "enabled": false
+    },
+    {
+      "id": "ANBAU_BINDER",
+      "system_id": "BRETTBINDER_BESTAND_P22",
+      "kind": "BINDER_EINZELSTAB",
+      "part": "DACH",
+      "start_mm": null,
+      "end_mm": null,
+      "section_mm": null,
+      "width_direction": null,
+      "source_dimension": null,
+      "source_placement": null,
+      "section_status": "UNGEKLAERT",
+      "placement_status": "UNGEKLAERT",
+      "enabled": false
+    },
+    {
+      "id": "ANBAU_DECKENBALKEN",
+      "system_id": "ANBAU_HOLZBALKENDECKE_P18",
+      "kind": "DECKENBALKEN",
+      "part": "ANBAU_EG",
+      "start_mm": null,
+      "end_mm": null,
+      "section_mm": null,
+      "width_direction": null,
+      "source_dimension": null,
+      "source_placement": null,
+      "section_status": "UNGEKLAERT",
+      "placement_status": "UNGEKLAERT",
+      "enabled": false
+    }
+  ],
+  "removed_or_blocked_elements": [
+    {
+      "id": "EG_WINTERGARTEN_OST",
+      "reason": "Ost-Glasfront war in neuer geschlossener Suedwand. Zuordnung der echten Front und Rahmenmasse noch offen.",
+      "previous_definition": {
+        "id": "EG_WINTERGARTEN_OST",
+        "offset": 600,
+        "width": 3900,
+        "height": 2380,
+        "sill": 0,
+        "kind": "FENSTER",
+        "status": "GESCHAETZT",
+        "phase": "UNGEKLAERT",
+        "sources": [
+          {
+            "document": "P21",
+            "page": 1,
+            "location": "Wintergarten, oestliche Fenster-/Tuerfront; Teilung offen"
+          }
+        ],
+        "note": "Rohbau-/Fertigmasszuordnung, Anschlag und/oder Hoehe nicht durchgehend belegt."
+      }
+    },
+    {
+      "id": "AN_EG_TRAGDECKE_PROXY",
+      "reason": "Ersatzblock ist kein Balkenrost",
+      "previous_definition": {
+        "id": "AN_EG_TRAGDECKE_PROXY",
+        "polygon": [
+          [
+            15450.0,
+            5865.0
+          ],
+          [
+            24047.372,
+            4349.051
+          ],
+          [
+            26344.737,
+            17378.058
+          ],
+          [
+            17747.365,
+            18894.007
+          ]
+        ],
+        "bottom": "UK_EG_ANBAU_PROXY",
+        "top": "Z_EG_ANBAU-80",
+        "holes": [
+          [
+            [
+              21789.68,
+              10088.287
+            ],
+            [
+              24601.306,
+              9592.522
+            ],
+            [
+              24771.481,
+              10557.633
+            ],
+            [
+              21959.855,
+              11053.399
+            ]
+          ]
+        ],
+        "category": "DECKE",
+        "phase": "UNGEKLAERT",
+        "status": "GESCHAETZT",
+        "sources": [
+          {
+            "document": "P18",
+            "page": 1,
+            "location": "Grundrisskontur und Schnitt; Umriss-/Anschlussmasskonflikte siehe Register"
+          },
+          {
+            "document": "P09",
+            "page": 1,
+            "location": "Grafisch uebertragener Geschossumriss; Kontur nicht widerspruchsfrei bemasst"
+          }
+        ],
+        "material": "HOLZ_TRAGZONE_UNBESTAETIGT"
+      }
+    }
+  ],
+  "variant_conflicts": [
+    {
+      "id": "WG_410_VS_365",
+      "chosen": "P21_QUELLENVARIANTE_410",
+      "alternative": "P09_365_BEZUG_UNGEKLAERT",
+      "resolved": false,
+      "delta_mm": 45,
+      "anchor": "Aussenkante unveraendert"
+    }
+  ]
+}

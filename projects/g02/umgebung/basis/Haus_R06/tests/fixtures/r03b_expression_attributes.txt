@@ -1,0 +1,36 @@
+# Exact R03b method bodies for offline regression only. NOT a journal.
+def add_parameters(self,part,params):
+        self.ensure_work(part)
+        created=set();visiting=set()
+        def add(name):
+            if name in created:return
+            if name in visiting:raise ValueError('Zyklische Parameter vor NX-Expression: '+name)
+            visiting.add(name)
+            item=params.items[name]
+            if item.get('unit') not in ('mm','deg'):raise ValueError('Nicht unterstuetzte Einheit: '+name)
+            if item.get('value') is None and item.get('formula') is None:
+                visiting.remove(name)
+                return
+            rhs=item.get('formula')
+            if rhs is not None:
+                for dep in sorted(params.dependencies(rhs)):add(dep)
+            else:rhs=format(params.value(name),'.12g')
+            params.value(name)  # Endlichkeit/Abhaengigkeiten vor NX pruefen.
+            unit_name='Degrees' if item['unit']=='deg' else 'MilliMeter'
+            unit=part.UnitCollection.FindObject(unit_name)
+            expression=part.Expressions.CreateWithUnits(name+'='+str(rhs),unit)
+            self.attributes(expression,{'id':name,'status':item['status'],'sources':item.get('sources',[])})
+            created.add(name);visiting.remove(name)
+        for name in params.items:add(name)
+        return len(created)
+
+def attributes(self,obj,meta):
+        sources='; '.join('%s S.%s %s'%(s.get('document','?'),s.get('page','?'),s.get('location','')) for s in meta.get('sources',[]))
+        values={'HAUS_ID':meta.get('id',''), 'QUELLSTATUS':meta.get('status',''),
+                'BAUZUSTAND':meta.get('phase','UNGEKLAERT'), 'QUELLE':sources,
+                'MODELLART':'NX_GEOMETRIE_KEIN_NATIVES_BIM', 'GENAUIGKEIT':'PRUEFMODELL_NICHT_AUSFUEHRUNGSREIF', 'REVISION':'R03',
+                'ELTERN_ID':meta.get('parent_id',''), 'WIRTSWAND':meta.get('host_wall',''),
+                'KATEGORIE':meta.get('category',meta.get('kind','')), 'MATERIAL':meta.get('material',''),
+                'DETAILHERKUNFT':meta.get('detail_origin','PLANREKONSTRUKTION_MIT_NAEHERUNGEN')}
+        for key,value in values.items():
+            obj.SetUserAttribute(key,-1,str(value),self.N.Update.Option.Now)

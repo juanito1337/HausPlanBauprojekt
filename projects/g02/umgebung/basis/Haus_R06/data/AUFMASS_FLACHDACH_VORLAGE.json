@@ -1,0 +1,17 @@
+{
+  "purpose": "Ausfüllhilfe; Flachdachbereich zuerst bestätigen. NICHT automatisch eingelesen.",
+  "roof_id": "FLACHDACH_ZWISCHENANBAU",
+  "location_confirmed": false,
+  "marked_photo": null,
+  "outline_mm": null,
+  "top_levels_model_mm": null,
+  "underside_level_mm": null,
+  "slope_percent": null,
+  "drainage_direction": null,
+  "attic_heights_mm": null,
+  "layer_stack_inside_to_outside": [],
+  "members": [],
+  "connections": [],
+  "outlets": [],
+  "sources": []
+}

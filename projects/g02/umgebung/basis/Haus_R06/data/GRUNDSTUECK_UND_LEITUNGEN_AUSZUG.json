@@ -1,0 +1,2199 @@
+{
+  "note": "Nur Leseauszug. Maßgebliche editierbare Definition: data/haus.json / site.",
+  "site": {
+    "schema": "HAUS_SITE_V1",
+    "enabled": true,
+    "mode": "KARTENPROJEKTION_KEINE_VERIFIZIERTE_3D_LEITUNGSLAGE",
+    "parcel": "74/34",
+    "flur": "1",
+    "gemarkung": "Wattenbek",
+    "boundary_date": "2026-01-23",
+    "survey_verified": false,
+    "crs_confirmed": false,
+    "display_plane_z_mm": 0.0,
+    "physical_z_mm": null,
+    "use_for_excavation": false,
+    "coordinate_reference": {
+      "source": "G05",
+      "printed_grid_labels": {
+        "x": [
+          32568600,
+          32568650
+        ],
+        "y": [
+          6003350,
+          6003400
+        ]
+      },
+      "grid_pdf_points": {
+        "x": [
+          238.2103729248047,
+          521.501220703125
+        ],
+        "y": [
+          491.99224853515625,
+          208.4359130859375
+        ]
+      },
+      "mm_per_pdf_pt": [
+        176.49705379513642,
+        176.33180341673003
+      ],
+      "local_origin_G05_pdf_pt": [
+        291.34991455078125,
+        408.37298583984375
+      ],
+      "origin_printed_grid_m": [
+        32568609.378972538,
+        6003364.744735392
+      ],
+      "local_x_in_east_north": [
+        0.1985982421641719,
+        -0.9800809855360428
+      ],
+      "local_y_in_east_north": [
+        0.9800809855360428,
+        0.1985982421641719
+      ],
+      "north_direction_local": [
+        -0.9800809855360428,
+        0.1985982421641719
+      ],
+      "registration": "Unveraenderte Hausgeometrie. Ursprung an G05 Hauptbau-Aussenecke; X parallel Hauptfassade, keine Skalierung des Hauses. Historische/neuere Katasterkonturen und Architekturhuellen weichen ab.",
+      "house_control_checks": [
+        {
+          "model_xy_mm": [
+            0,
+            0
+          ],
+          "G05_pdf_point": [
+            291.34991455078125,
+            408.37298583984375
+          ],
+          "G05_in_model_mm": [
+            0.0,
+            0.0
+          ],
+          "residual_mm": 0.0
+        },
+        {
+          "model_xy_mm": [
+            0,
+            12500
+          ],
+          "G05_pdf_point": [
+            360.71551513671875,
+            394.50848388671875
+          ],
+          "G05_in_model_mm": [
+            35.348,
+            12484.483
+          ],
+          "residual_mm": 38.60377799124409
+        },
+        {
+          "model_xy_mm": [
+            -4250,
+            12500
+          ],
+          "G05_pdf_point": [
+            355.8944396972656,
+            371.1008605957031
+          ],
+          "G05_in_model_mm": [
+            -4178.933,
+            12470.242
+          ],
+          "residual_mm": 77.04562628154399
+        },
+        {
+          "model_xy_mm": [
+            -4250,
+            18990
+          ],
+          "G05_pdf_point": [
+            392.08831787109375,
+            363.75445556640625
+          ],
+          "G05_in_model_mm": [
+            -4179.867,
+            18988.375
+          ],
+          "residual_mm": 70.15203794811633
+        },
+        {
+          "model_xy_mm": [
+            7990,
+            18990
+          ],
+          "G05_pdf_point": [
+            405.7959289550781,
+            431.74462890625
+          ],
+          "G05_in_model_mm": [
+            8050.637,
+            18978.577
+          ],
+          "residual_mm": 61.70332163502964
+        },
+        {
+          "model_xy_mm": [
+            20385,
+            0
+          ],
+          "G05_pdf_point": [
+            314.5916748046875,
+            523.1784057617188
+          ],
+          "G05_in_model_mm": [
+            20655.28,
+            -0.0
+          ],
+          "residual_mm": 270.27954893145215
+        }
+      ],
+      "max_house_control_residual_mm": 270.27954893145215,
+      "height_datum": "Unbekannt; kein Zusammenhang zwischen EG +-0.00 und NHN belegt. Z=0 hier nur Zeichenebene."
+    },
+    "boundary": {
+      "id": "FLURSTUECK_74_34_KARTENKONTUR",
+      "points_pdf_pt": [
+        [
+          463.61260986328125,
+          544.4613037109375
+        ],
+        [
+          460.1587219238281,
+          544.3172607421875
+        ],
+        [
+          358.95257568359375,
+          550.9074096679688
+        ],
+        [
+          257.13482666015625,
+          556.05712890625
+        ],
+        [
+          162.08091735839844,
+          562.3951416015625
+        ],
+        [
+          127.8298568725586,
+          393.1400451660156
+        ],
+        [
+          424.1447448730469,
+          332.20819091796875
+        ],
+        [
+          464.79986572265625,
+          533.5137939453125
+        ],
+        [
+          467.0664978027344,
+          544.6053466796875
+        ]
+      ],
+      "points_local_mm": [
+        [
+          29556.861,
+          25032.541
+        ],
+        [
+          29410.902,
+          24440.127
+        ],
+        [
+          27002.329,
+          6702.564
+        ],
+        [
+          24323.385,
+          -11090.353
+        ],
+        [
+          22086.886,
+          -27754.863
+        ],
+        [
+          -8364.254,
+          -27752.484
+        ],
+        [
+          -8508.033,
+          25638.266
+        ],
+        [
+          27706.534,
+          25621.287
+        ],
+        [
+          29702.82,
+          25624.955
+        ]
+      ],
+      "closed": true,
+      "z_mm": null,
+      "source_drawing_index": 163,
+      "status": "ABGELEITET",
+      "geometry_quality": "VEKTOR_AUS_KATASTERKARTE_KEINE_AMTLICHE_PUNKTDATEI",
+      "sources": [
+        {
+          "document": "G05",
+          "page": 1,
+          "location": "Flurstueck 74/34, geschlossener Grenzlinienzug (Vektorpfad 163); G04 ist identische Datei."
+        }
+      ],
+      "graphic_area_m2": 1829.1091155487732
+    },
+    "cadastral_house": {
+      "id": "HAUS_KATASTERKONTUR_2026",
+      "points_pdf_pt": [
+        [
+          343.26617431640625,
+          521.3057861328125
+        ],
+        [
+          314.5916748046875,
+          523.1784057617188
+        ],
+        [
+          291.34991455078125,
+          408.37298583984375
+        ],
+        [
+          360.71551513671875,
+          394.50848388671875
+        ],
+        [
+          355.8944396972656,
+          371.1008605957031
+        ],
+        [
+          392.08831787109375,
+          363.75445556640625
+        ],
+        [
+          405.7959289550781,
+          431.74462890625
+        ],
+        [
+          373.91943359375,
+          438.1546936035156
+        ],
+        [
+          371.6528015136719,
+          426.9910583496094
+        ],
+        [
+          341.46728515625,
+          433.1130676269531
+        ],
+        [
+          353.0162048339844,
+          485.2580261230469
+        ],
+        [
+          415.7618408203125,
+          481.11669921875
+        ],
+        [
+          418.7480163574219,
+          530.6688232421875
+        ],
+        [
+          344.1656188964844,
+          535.3143310546875
+        ]
+      ],
+      "points_local_mm": [
+        [
+          21336.753,
+          5025.733
+        ],
+        [
+          20655.28,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          35.348,
+          12484.483
+        ],
+        [
+          -4178.933,
+          12470.242
+        ],
+        [
+          -4179.867,
+          18988.375
+        ],
+        [
+          8050.637,
+          18978.577
+        ],
+        [
+          8041.085,
+          13240.06
+        ],
+        [
+          6032.342,
+          13238.917
+        ],
+        [
+          6032.282,
+          7802.996
+        ],
+        [
+          15448.757,
+          7974.67
+        ],
+        [
+          16932.416,
+          18973.524
+        ],
+        [
+          25600.658,
+          17754.802
+        ],
+        [
+          23789.229,
+          4690.752
+        ]
+      ],
+      "closed": true,
+      "status": "ABGELEITET",
+      "sources": [
+        {
+          "document": "G05",
+          "page": 1,
+          "location": "Graue Gebaeudekontur Hausnummer 4 (Vektorpfad 32). Kein Nachweis fertiger Bauausfuehrung."
+        }
+      ]
+    },
+    "routes": [
+      {
+        "id": "STROM_TRASSE_42",
+        "network": "STROM",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            274.427978515625,
+            637.2030029296875
+          ],
+          [
+            260.5364990234375,
+            563.7764892578125
+          ],
+          [
+            227.08349609375,
+            353.7030334472656
+          ]
+        ],
+        "points_local_mm": [
+          [
+            28438.291,
+            -29515.732
+          ],
+          [
+            21853.294,
+            -29530.037
+          ],
+          [
+            3115.691,
+            -29025.837
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "NAKLEY 3x120",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 42,
+        "length_projection_m": 25.32939793251897,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 42; NAKLEY 3x120"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "STROM_TRASSE_43",
+        "network": "STROM",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            227.08349609375,
+            353.7030334472656
+          ],
+          [
+            221.41348266601562,
+            317.9820556640625
+          ],
+          [
+            221.12998962402344,
+            314.58001708984375
+          ]
+        ],
+        "points_local_mm": [
+          [
+            3115.691,
+            -29025.837
+          ],
+          [
+            -70.161,
+            -28938.513
+          ],
+          [
+            -369.416,
+            -28907.967
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Verbindungssegment; Typzuordnung offen",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 43,
+        "length_projection_m": 3.487858476527164,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 43; Verbindungssegment; Typzuordnung offen"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "STROM_TRASSE_45",
+        "network": "STROM",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            221.12998962402344,
+            314.58001708984375
+          ],
+          [
+            204.4034881591797,
+            190.6905517578125
+          ],
+          [
+            173.21849060058594,
+            14.35357666015625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -369.416,
+            -28907.967
+          ],
+          [
+            -11371.073,
+            -28350.455
+          ],
+          [
+            -27149.916,
+            -28196.242
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "NAYY 4x150",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 45,
+        "length_projection_m": 26.79537055482469,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 45; NAYY 4x150"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "STROM_TRASSE_49",
+        "network": "STROM",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            80.23049926757812,
+            114.7125244140625
+          ],
+          [
+            77.67899322509766,
+            99.9705810546875
+          ],
+          [
+            63.503997802734375,
+            102.52203369140625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -19966.864,
+            -37880.201
+          ],
+          [
+            -21285.088,
+            -37862.492
+          ],
+          [
+            -21294.156,
+            -39132.202
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Verbindungssegment; Typzuordnung offen",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 49,
+        "length_projection_m": 2.5880853262993204,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 49; Verbindungssegment; Typzuordnung offen"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "STROM_HAUSANSCHLUSS",
+        "network": "STROM",
+        "role": "HAUSANSCHLUSS",
+        "source_points_pdf_pt": [
+          [
+            227.08349609375,
+            353.7030334472656
+          ],
+          [
+            552.5414428710938,
+            304.09051513671875
+          ]
+        ],
+        "points_local_mm": [
+          [
+            3115.691,
+            -29025.837
+          ],
+          [
+            4100.691,
+            -18.582
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "NAYY 4x35",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 50,
+        "length_projection_m": 29.023974015200352,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 50; NAYY 4x35"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "STROM_STRASSE_GEGENUEBER_44",
+        "network": "STROM",
+        "role": "STRASSENTRASSE_GEGENUEBER",
+        "source_points_pdf_pt": [
+          [
+            181.4399871826172,
+            637.2030029296875
+          ],
+          [
+            160.46099853515625,
+            530.8905029296875
+          ]
+        ],
+        "points_local_mm": [
+          [
+            26929.15,
+            -37573.886
+          ],
+          [
+            17380.838,
+            -37669.631
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Kabelbeschriftung abschnittsbezogen: NAYY/NAKLEY; siehe Original",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 44,
+        "length_projection_m": 9.54879202592501,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 44; Kabelbeschriftung abschnittsbezogen: NAYY/NAKLEY; siehe Original"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "STROM_STRASSE_GEGENUEBER_46",
+        "network": "STROM",
+        "role": "STRASSENTRASSE_GEGENUEBER",
+        "source_points_pdf_pt": [
+          [
+            156.4919891357422,
+            510.76202392578125
+          ],
+          [
+            95.822998046875,
+            205.99957275390625
+          ],
+          [
+            80.23049926757812,
+            114.7125244140625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            15573.074,
+            -37687.498
+          ],
+          [
+            -11807.341,
+            -38007.828
+          ],
+          [
+            -19966.864,
+            -37880.201
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Kabelbeschriftung abschnittsbezogen: NAYY/NAKLEY; siehe Original",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 46,
+        "length_projection_m": 35.54280982080732,
+        "sources": [
+          {
+            "document": "G18",
+            "page": 1,
+            "location": "Vektorpfad 46; Kabelbeschriftung abschnittsbezogen: NAYY/NAKLEY; siehe Original"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "BREITBAND_TRASSE_57",
+        "network": "BREITBAND",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            165.28048706054688,
+            14.35357666015625
+          ],
+          [
+            189.09449768066406,
+            193.80902099609375
+          ],
+          [
+            255.14999389648438,
+            564.06005859375
+          ],
+          [
+            268.75799560546875,
+            637.2030029296875
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -27278.745,
+            -28884.133
+          ],
+          [
+            -11349.435,
+            -29727.62
+          ],
+          [
+            21790.434,
+            -30001.415
+          ],
+          [
+            28346.271,
+            -30007.082
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 57,
+        "length_projection_m": 55.648465931112106,
+        "sources": [
+          {
+            "document": "G17",
+            "page": 1,
+            "location": "Vektorpfad 57; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "BREITBAND_TRASSE_58",
+        "network": "BREITBAND",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            183.1409912109375,
+            637.2030029296875
+          ],
+          [
+            130.97698974609375,
+            341.7960510253906
+          ],
+          [
+            89.58599853515625,
+            134.841064453125
+          ],
+          [
+            71.15849304199219,
+            14.35357666015625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            26956.757,
+            -37426.481
+          ],
+          [
+            524.662,
+            -37161.344
+          ],
+          [
+            -18071.676,
+            -37395.553
+          ],
+          [
+            -28806.29,
+            -37040.558
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 58,
+        "length_projection_m": 55.77171980238059,
+        "sources": [
+          {
+            "document": "G17",
+            "page": 1,
+            "location": "Vektorpfad 58; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "BREITBAND_TRASSE_59",
+        "network": "BREITBAND",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            183.99148559570312,
+            637.2030029296875
+          ],
+          [
+            131.82749938964844,
+            341.5125427246094
+          ],
+          [
+            90.7199935913086,
+            134.841064453125
+          ],
+          [
+            72.29249572753906,
+            14.35357666015625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            26970.56,
+            -37352.779
+          ],
+          [
+            513.911,
+            -37083.048
+          ],
+          [
+            -18053.272,
+            -37297.283
+          ],
+          [
+            -28787.886,
+            -36942.287
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 59,
+        "length_projection_m": 55.76692515908045,
+        "sources": [
+          {
+            "document": "G17",
+            "page": 1,
+            "location": "Vektorpfad 59; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "BREITBAND_TRASSE_60",
+        "network": "BREITBAND",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            265.3559875488281,
+            637.2030029296875
+          ],
+          [
+            251.74798583984375,
+            564.343505859375
+          ],
+          [
+            185.69248962402344,
+            194.37603759765625
+          ],
+          [
+            161.8784942626953,
+            14.35357666015625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            28291.058,
+            -30301.893
+          ],
+          [
+            21759.771,
+            -30300.818
+          ],
+          [
+            -11355.538,
+            -30031.617
+          ],
+          [
+            -27333.957,
+            -29178.943
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 60,
+        "length_projection_m": 55.64884418234591,
+        "sources": [
+          {
+            "document": "G17",
+            "page": 1,
+            "location": "Vektorpfad 60; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "BREITBAND_TRASSE_61",
+        "network": "BREITBAND",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            183.4244842529297,
+            637.2030029296875
+          ],
+          [
+            131.260498046875,
+            341.7960510253906
+          ],
+          [
+            90.15299224853516,
+            134.841064453125
+          ],
+          [
+            71.72549438476562,
+            14.35357666015625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            26961.358,
+            -37401.914
+          ],
+          [
+            529.263,
+            -37136.776
+          ],
+          [
+            -18062.474,
+            -37346.418
+          ],
+          [
+            -28797.088,
+            -36991.423
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "SWN_2021_BLATT1_NACH_G05",
+        "source_path_index": 61,
+        "length_projection_m": 55.76682594740424,
+        "sources": [
+          {
+            "document": "G17",
+            "page": 1,
+            "location": "Vektorpfad 61; Telekommunikation/LWL-Trasse; kein Hausanschluss Nr. 4 im Blatt dargestellt"
+          }
+        ],
+        "note": "",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_9",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            258.82000732421875,
+            135.59002685546875
+          ],
+          [
+            276.7900085449219,
+            232.82003784179688
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -21913.621,
+            -36660.993
+          ],
+          [
+            -3911.066,
+            -36689.935
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 9,
+        "length_projection_m": 18.002578264442818,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 9; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_17",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            307.67999267578125,
+            119.6600341796875
+          ],
+          [
+            315.7900085449219,
+            170.2900390625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -22775.176,
+            -27813.667
+          ],
+          [
+            -13451.089,
+            -28041.66
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 17,
+        "length_projection_m": 9.326874031079116,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 17; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_18",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            315.7900085449219,
+            170.2900390625
+          ],
+          [
+            316.80999755859375,
+            175.11001586914062
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -13451.089,
+            -28041.66
+          ],
+          [
+            -12553.444,
+            -28021.047
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 18,
+        "length_projection_m": 0.897881641305802,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 18; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_35",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            329.9599914550781,
+            251.530029296875
+          ],
+          [
+            346.9100036621094,
+            341.4400329589844
+          ],
+          [
+            363.6400146484375,
+            446.48004150390625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            1556.797,
+            -28210.035
+          ],
+          [
+            18217.438,
+            -28179.977
+          ],
+          [
+            37557.893,
+            -28669.286
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 35,
+        "length_projection_m": 36.00731182590539,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 35; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_37",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            276.7900085449219,
+            232.82003784179688
+          ],
+          [
+            278.32000732421875,
+            245.23004150390625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -3911.066,
+            -36689.935
+          ],
+          [
+            -1644.078,
+            -36823.972
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 37,
+        "length_projection_m": 2.270947051235013,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 37; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_38",
+        "network": "TELEFON",
+        "role": "HAUSANSCHLUSS",
+        "source_points_pdf_pt": [
+          [
+            329.9599914550781,
+            251.530029296875
+          ],
+          [
+            489.20001220703125,
+            218.13003540039062
+          ]
+        ],
+        "points_local_mm": [
+          [
+            1556.797,
+            -28210.035
+          ],
+          [
+            2039.567,
+            34.671
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "A4.33",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 38,
+        "length_projection_m": 28.248831549275376,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 38; A4.33"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_39",
+        "network": "TELEFON",
+        "role": "HAUSANSCHLUSS",
+        "source_points_pdf_pt": [
+          [
+            325.1400146484375,
+            221.71002197265625
+          ],
+          [
+            362.3299865722656,
+            213.09002685546875
+          ],
+          [
+            488.17999267578125,
+            193.59002685546875
+          ],
+          [
+            490.45001220703125,
+            205.49002075195312
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -3936.641,
+            -28083.152
+          ],
+          [
+            -3969.528,
+            -21460.597
+          ],
+          [
+            -2362.431,
+            642.037
+          ],
+          [
+            -156.248,
+            650.558
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "A4.33",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 39,
+        "length_projection_m": 30.989819630248068,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 39; A4.33"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_40",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            278.32000732421875,
+            245.23004150390625
+          ],
+          [
+            296.2900085449219,
+            348.52001953125
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -1644.078,
+            -36823.972
+          ],
+          [
+            17435.365,
+            -37045.895
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 40,
+        "length_projection_m": 19.080733607704346,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 40; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_41",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            316.80999755859375,
+            175.11001586914062
+          ],
+          [
+            325.1400146484375,
+            221.71002197265625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -12553.444,
+            -28021.047
+          ],
+          [
+            -3936.641,
+            -28083.152
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 41,
+        "length_projection_m": 8.617026805797577,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 41; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_42",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            276.7900085449219,
+            232.82003784179688
+          ],
+          [
+            325.1400146484375,
+            221.71002197265625
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -3911.066,
+            -36689.935
+          ],
+          [
+            -3936.641,
+            -28083.152
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 42,
+        "length_projection_m": 8.606820997889638,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 42; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "TELEFON_TRASSE_43",
+        "network": "TELEFON",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            325.1400146484375,
+            221.71002197265625
+          ],
+          [
+            329.9599914550781,
+            251.530029296875
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -3936.641,
+            -28083.152
+          ],
+          [
+            1556.797,
+            -28210.035
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Telekom-Trassenausschnitt",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-11-10",
+        "valid_until": "2021-12-10",
+        "registration_id": "TELEFON_2021_NACH_G05",
+        "source_path_index": 43,
+        "length_projection_m": 5.494903125218224,
+        "sources": [
+          {
+            "document": "G19",
+            "page": 1,
+            "location": "Vektorpfad 43; Telekom-Trassenausschnitt"
+          }
+        ],
+        "note": "Zwei im Plan gezeichnete Zugaenge zu A4.33 nicht ohne Betreiberklaerung zu einem Kabel zusammengefasst.",
+        "physical_pipe_model": false
+      },
+      {
+        "id": "GAS_HAUSANSCHLUSS",
+        "network": "GAS",
+        "role": "HAUSANSCHLUSS",
+        "source_points_pdf_pt": [
+          [
+            488.6666666666667,
+            660.6666666666666
+          ],
+          [
+            476.6666666666667,
+            229.33333333333334
+          ],
+          [
+            412.0,
+            233.33333333333334
+          ],
+          [
+            410.0,
+            223.33333333333334
+          ]
+        ],
+        "points_local_mm": [
+          [
+            19988.542,
+            -37729.506
+          ],
+          [
+            25104.268,
+            -1433.815
+          ],
+          [
+            19603.993,
+            -835.794
+          ],
+          [
+            19577.659,
+            30.525
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "DN 40 - ST PE",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-10-27",
+        "valid_until": "2021-10-27",
+        "registration_id": "GAS_2021_NACH_G05",
+        "source_path_index": null,
+        "length_projection_m": 43.053846922472935,
+        "sources": [
+          {
+            "document": "G11",
+            "page": 1,
+            "location": "Grafisch digitalisierte Linie; DN 40 - ST PE"
+          }
+        ],
+        "note": "DN 40 ist Beschriftung, kein belegter Aussendurchmesser. 36,5 / 2,1 / 0,8 / 1,9 sind Plan-Richtmasse. Kein Tiefenwert daraus abgeleitet.",
+        "physical_pipe_model": false,
+        "nominal_size_dn": 40,
+        "source_dimensions_m": [
+          36.5,
+          2.1,
+          0.8,
+          1.4,
+          1.9
+        ],
+        "validity_note": "Laut G11 nur am Tag der Ausgabe gueltig."
+      },
+      {
+        "id": "GAS_TRANSPORT_STRASSE",
+        "network": "GAS_TRANSPORT",
+        "role": "STRASSENTRASSE",
+        "source_points_pdf_pt": [
+          [
+            163.33333333333334,
+            712.0
+          ],
+          [
+            542.0,
+            653.3333333333334
+          ]
+        ],
+        "points_local_mm": [
+          [
+            -8126.188,
+            -37334.593
+          ],
+          [
+            24582.148,
+            -37884.856
+          ]
+        ],
+        "z_mm": null,
+        "diameter_outer_mm": null,
+        "source_label": "Gas Transportltg. nach Legende",
+        "status": "ABGELEITET",
+        "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+        "vertical_status": "UNGEKLAERT",
+        "source_date": "2021-10-27",
+        "valid_until": "2021-10-27",
+        "registration_id": "GAS_2021_NACH_G05",
+        "source_path_index": null,
+        "length_projection_m": 32.7129642994649,
+        "sources": [
+          {
+            "document": "G11",
+            "page": 1,
+            "location": "Grafisch digitalisierte Linie; Gas Transportltg. nach Legende"
+          }
+        ],
+        "note": "Nur sichtbarer Planausschnitt; kein vollstaendiger Netzverlauf.",
+        "physical_pipe_model": false,
+        "validity_note": "Laut G11 nur am Tag der Ausgabe gueltig."
+      }
+    ],
+    "registrations": [
+      {
+        "id": "SWN_2021_BLATT2_NACH_G05",
+        "method": "AFFINE_2D_QUELLENREGISTRIERUNG_KEIN_BESTANDSAUFMASS",
+        "matrix_2x3": [
+          [
+            0.49947009509431,
+            0.0074991525710400575,
+            264.6941714284735
+          ],
+          [
+            -0.007395072077990223,
+            0.4996438787476647,
+            279.67694893046433
+          ]
+        ],
+        "source_points": [
+          [
+            149.97149658203125,
+            485.81402587890625
+          ],
+          [
+            92.70449829101562,
+            488.6490173339844
+          ],
+          [
+            49.32899856567383,
+            258.447021484375
+          ],
+          [
+            188.8109893798828,
+            232.6485595703125
+          ],
+          [
+            179.73899841308594,
+            185.5875244140625
+          ],
+          [
+            252.59848022460938,
+            171.97955322265625
+          ],
+          [
+            277.8299865722656,
+            308.62652587890625
+          ],
+          [
+            213.7589874267578,
+            320.25006103515625
+          ],
+          [
+            209.7899932861328,
+            297.853515625
+          ],
+          [
+            149.12098693847656,
+            309.19354248046875
+          ],
+          [
+            170.6669921875,
+            414.0885314941406
+          ],
+          [
+            296.2574768066406,
+            407.5680236816406
+          ],
+          [
+            300.7934875488281,
+            506.79302978515625
+          ],
+          [
+            151.3889923095703,
+            513.8804931640625
+          ]
+        ],
+        "target_G05_pdf_pt": [
+          [
+            343.26617431640625,
+            521.3057861328125
+          ],
+          [
+            314.5916748046875,
+            523.1784057617188
+          ],
+          [
+            291.34991455078125,
+            408.37298583984375
+          ],
+          [
+            360.71551513671875,
+            394.50848388671875
+          ],
+          [
+            355.8944396972656,
+            371.1008605957031
+          ],
+          [
+            392.08831787109375,
+            363.75445556640625
+          ],
+          [
+            405.7959289550781,
+            431.74462890625
+          ],
+          [
+            373.91943359375,
+            438.1546936035156
+          ],
+          [
+            371.6528015136719,
+            426.9910583496094
+          ],
+          [
+            341.46728515625,
+            433.1130676269531
+          ],
+          [
+            353.0162048339844,
+            485.2580261230469
+          ],
+          [
+            415.7618408203125,
+            481.11669921875
+          ],
+          [
+            418.7480163574219,
+            530.6688232421875
+          ],
+          [
+            344.1656188964844,
+            535.3143310546875
+          ]
+        ],
+        "control_residuals_mm": [
+          4.035295975798918,
+          13.944266900657405,
+          18.730118068731564,
+          5.616730279472694,
+          7.528013843918044,
+          11.163970002340744,
+          14.711209965589697,
+          13.152691531265285,
+          13.052931744896494,
+          10.371832373423127,
+          10.537196675031872,
+          7.123380365005327,
+          2.8198018135700322,
+          0.6212986098155386
+        ],
+        "rms_control_residual_mm": 10.730050181177559,
+        "max_control_residual_mm": 18.730118068731564,
+        "warning": "Anpassungsrest ist KEINE Lagegenauigkeit. Quellplan-/Ablese-/Hausregistrierungsunsicherheit kommt hinzu."
+      },
+      {
+        "id": "SWN_2021_BLATT1_NACH_G05",
+        "method": "AFFINE_2D_QUELLENREGISTRIERUNG_KEIN_BESTANDSAUFMASS",
+        "matrix_2x3": [
+          [
+            0.49947009509431,
+            0.0074991525710400575,
+            17.60256913096589
+          ],
+          [
+            -0.007395072077990223,
+            0.4996438787476647,
+            283.3353465538719
+          ]
+        ],
+        "source_points": [
+          [
+            644.6789970397949,
+            485.81402587890625
+          ],
+          [
+            587.4119987487793,
+            488.6490173339844
+          ],
+          [
+            544.0364990234375,
+            258.447021484375
+          ],
+          [
+            683.5184898376465,
+            232.6485595703125
+          ],
+          [
+            674.4464988708496,
+            185.5875244140625
+          ],
+          [
+            747.305980682373,
+            171.97955322265625
+          ],
+          [
+            772.5374870300293,
+            308.62652587890625
+          ],
+          [
+            708.4664878845215,
+            320.25006103515625
+          ],
+          [
+            704.4974937438965,
+            297.853515625
+          ],
+          [
+            643.8284873962402,
+            309.19354248046875
+          ],
+          [
+            665.3744926452637,
+            414.0885314941406
+          ],
+          [
+            790.9649772644043,
+            407.5680236816406
+          ],
+          [
+            795.5009880065918,
+            506.79302978515625
+          ],
+          [
+            646.096492767334,
+            513.8804931640625
+          ]
+        ],
+        "target_G05_pdf_pt": [
+          [
+            343.26617431640625,
+            521.3057861328125
+          ],
+          [
+            314.5916748046875,
+            523.1784057617188
+          ],
+          [
+            291.34991455078125,
+            408.37298583984375
+          ],
+          [
+            360.71551513671875,
+            394.50848388671875
+          ],
+          [
+            355.8944396972656,
+            371.1008605957031
+          ],
+          [
+            392.08831787109375,
+            363.75445556640625
+          ],
+          [
+            405.7959289550781,
+            431.74462890625
+          ],
+          [
+            373.91943359375,
+            438.1546936035156
+          ],
+          [
+            371.6528015136719,
+            426.9910583496094
+          ],
+          [
+            341.46728515625,
+            433.1130676269531
+          ],
+          [
+            353.0162048339844,
+            485.2580261230469
+          ],
+          [
+            415.7618408203125,
+            481.11669921875
+          ],
+          [
+            418.7480163574219,
+            530.6688232421875
+          ],
+          [
+            344.1656188964844,
+            535.3143310546875
+          ]
+        ],
+        "control_residuals_mm": [
+          4.035295975798918,
+          13.944266900657405,
+          18.730118068731564,
+          5.616730279472694,
+          7.528013843918044,
+          11.163970002340744,
+          14.711209965589697,
+          13.152691531265285,
+          13.052931744896494,
+          10.371832373423127,
+          10.537196675031872,
+          7.123380365005327,
+          2.8198018135700322,
+          0.6212986098155386
+        ],
+        "rms_control_residual_mm": 10.730050181177559,
+        "max_control_residual_mm": 18.730118068731564,
+        "warning": "Anpassungsrest ist KEINE Lagegenauigkeit. Quellplan-/Ablese-/Hausregistrierungsunsicherheit kommt hinzu.",
+        "sheet_x_offset_to_sheet2_pt": -494.7075004577637
+      },
+      {
+        "id": "TELEFON_2021_NACH_G05",
+        "method": "AFFINE_2D_QUELLENREGISTRIERUNG_KEIN_BESTANDSAUFMASS",
+        "matrix_2x3": [
+          [
+            0.993200481521318,
+            0.023123787473919077,
+            -197.08027517685818
+          ],
+          [
+            0.03177328889148887,
+            1.0235808107708058,
+            180.85297444828086
+          ]
+        ],
+        "source_points": [
+          [
+            485.3333333333333,
+            208.0
+          ],
+          [
+            557.778,
+            191.1113333333333
+          ],
+          [
+            553.1113333333334,
+            167.55533333333332
+          ],
+          [
+            588.4446666666666,
+            160.0
+          ],
+          [
+            602.6666666666666,
+            227.33333333333334
+          ],
+          [
+            570.222,
+            234.222
+          ],
+          [
+            568.0,
+            223.55533333333335
+          ],
+          [
+            537.5553333333334,
+            230.66666666666666
+          ],
+          [
+            548.4446666666666,
+            278.22200000000004
+          ],
+          [
+            608.6666666666666,
+            274.44466666666665
+          ],
+          [
+            612.222,
+            322.88866666666667
+          ]
+        ],
+        "target_G05_pdf_pt": [
+          [
+            291.34991455078125,
+            408.37298583984375
+          ],
+          [
+            360.71551513671875,
+            394.50848388671875
+          ],
+          [
+            355.8944396972656,
+            371.1008605957031
+          ],
+          [
+            392.08831787109375,
+            363.75445556640625
+          ],
+          [
+            405.7959289550781,
+            431.74462890625
+          ],
+          [
+            373.91943359375,
+            438.1546936035156
+          ],
+          [
+            371.6528015136719,
+            426.9910583496094
+          ],
+          [
+            341.46728515625,
+            433.1130676269531
+          ],
+          [
+            353.0162048339844,
+            485.2580261230469
+          ],
+          [
+            415.7618408203125,
+            481.11669921875
+          ],
+          [
+            418.7480163574219,
+            530.6688232421875
+          ]
+        ],
+        "control_residuals_mm": [
+          314.07189314354264,
+          120.97368413445501,
+          210.51671349998017,
+          196.31683412226684,
+          237.07713236613708,
+          166.8597089877637,
+          164.67982674968079,
+          203.3019090841073,
+          429.5562555697271,
+          347.3296154216778,
+          58.786656068573166
+        ],
+        "rms_control_residual_mm": 244.4371126538785,
+        "max_control_residual_mm": 429.5562555697271,
+        "warning": "Anpassungsrest ist KEINE Lagegenauigkeit. Quellplan-/Ablese-/Hausregistrierungsunsicherheit kommt hinzu."
+      },
+      {
+        "id": "GAS_2021_NACH_G05",
+        "method": "AFFINE_2D_QUELLENREGISTRIERUNG_KEIN_BESTANDSAUFMASS",
+        "matrix_2x3": [
+          [
+            0.01460038109172588,
+            -0.4810201546931414,
+            414.99029482697665
+          ],
+          [
+            0.4841211227249913,
+            0.015383612104973077,
+            315.2291035333035
+          ]
+        ],
+        "source_points": [
+          [
+            184.0,
+            262.6666666666667
+          ],
+          [
+            160.0,
+            118.0
+          ],
+          [
+            111.33333333333333,
+            126.0
+          ],
+          [
+            238.66666666666666,
+            160.0
+          ],
+          [
+            346.6666666666667,
+            139.33333333333334
+          ]
+        ],
+        "target_G05_pdf_pt": [
+          [
+            291.34991455078125,
+            408.37298583984375
+          ],
+          [
+            360.71551513671875,
+            394.50848388671875
+          ],
+          [
+            355.8944396972656,
+            371.1008605957031
+          ],
+          [
+            341.46728515625,
+            433.1130676269531
+          ],
+          [
+            353.0162048339844,
+            485.2580261230469
+          ]
+        ],
+        "control_residuals_mm": [
+          5.749568808820696,
+          26.40614408293772,
+          20.827092757142747,
+          22.72839995380836,
+          10.294536619206351
+        ],
+        "rms_control_residual_mm": 18.903266533566704,
+        "max_control_residual_mm": 26.40614408293772,
+        "warning": "Anpassungsrest ist KEINE Lagegenauigkeit. Quellplan-/Ablese-/Hausregistrierungsunsicherheit kommt hinzu.",
+        "orientation_warning": "Gedruckte Nordpfeildarstellung nicht zur Haus-/Strassenorientierung in G05 passend. Registrierung erfolgt ueber 5 identifizierte Gebaeudeecken; Ausrichtung vor Ort bestaetigen."
+      }
+    ],
+    "unavailable_networks": [
+      "TRINKWASSER_HAUSANSCHLUSS",
+      "SCHMUTZWASSER",
+      "REGENWASSER",
+      "DRAENAGE",
+      "FERNWAERME_FALLS_VORHANDEN"
+    ],
+    "warnings": [
+      "Alle Leitungsverlaeufe als Planprojektion Z=0 im 3D-Projekt. Diese Hoehe ist NICHT die Verlegetiefe.",
+      "Keine Regel-Verlegetiefen als Bestandswerte verwendet.",
+      "Gasplan datiert 27.10.2021; Strom/Breitband/Telefon 10.11.2021. Gueltigkeitsangaben abgelaufen; keine aktuelle Baufreigabe.",
+      "Keine Leitungen erfinden, wenn eine Sparte nur in einer Legende vorkommt.",
+      "Offene/abgeschnittene Linien sind Blattrandausschnitte, keine tatsaechlichen Leitungsenden."
+    ],
+    "physical_3d_requirements": [
+      "Z-/Tiefenwerte an jedem Knick und Hausanschluss mit eindeutigem Bezug",
+      "aktueller Betreiberplan und Vor-Ort-Ortung",
+      "Aussendurchmesser/Schutzrohrdaten und Material",
+      "Knoten-/Abzweig-/Endpunktzuordnung",
+      "Quellen fuer Hoehen und Lage"
+    ],
+    "route_count": 25,
+    "segment_count": 45
+  }
+}

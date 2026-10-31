@@ -1,0 +1,647 @@
+G01a — Offline-Pruefung, kein NX-/Parasolid-Lauf
+
+Uebernommene Basispruefungen wurden mit integrierter Diagnose ausgefuehrt.
+32 neue Diagnosetests (einschliesslich Stopp und Startfehler-JSON) danach erneut ausgefuehrt.
+Endgueltige Liefer-ZIP-Pruefung wird separat als TESTPROTOKOLL_G01a_AUS_LIEFERZIP.txt ausgegeben.
+
+
+=== haus_main01_a01.txt ===
+MAIN01-A01 OFFLINE: KEIN NX-LAUF / KEINE STATIK / KEINE BESTANDSFREIGABE
+PAKETPRUEFUNG: {"checked_files": 134, "editable_input_changes": [], "baseline_inputs_unchanged": true, "scope": "Originaler Hausstand und noetige Dateien, kein NX-Geometrienachweis."}
+test_code_tamper_rejected (__main__.ControlTests.test_code_tamper_rejected) ... ok
+test_duplicate_json_rejected (__main__.ControlTests.test_duplicate_json_rejected) ... ok
+test_editable_input_recorded (__main__.ControlTests.test_editable_input_recorded) ... ok
+test_fake_complete_house_and_baseline (__main__.ControlTests.test_fake_complete_house_and_baseline) ... ok
+test_fake_feature_failure_no_baseline (__main__.ControlTests.test_fake_feature_failure_no_baseline) ... ok
+test_fake_save_failure_no_baseline (__main__.ControlTests.test_fake_save_failure_no_baseline) ... ok
+test_monitor_event_and_file (__main__.ControlTests.test_monitor_event_and_file) ... ok
+test_monitor_stop_prevents_next_step (__main__.ControlTests.test_monitor_stop_prevents_next_step) ... ok
+test_no_actual_nx_dependency_for_compilation (__main__.ControlTests.test_no_actual_nx_dependency_for_compilation) ... ok
+test_original_error_preserved (__main__.ControlTests.test_original_error_preserved) ... ok
+test_registry_missing_file (__main__.ControlTests.test_registry_missing_file) ... ok
+test_strict_settings (__main__.ControlTests.test_strict_settings) ... ok
+test_all_unique_solid_ids (__main__.ModelTests.test_all_unique_solid_ids) ... ok
+test_bad_board_count_rejected (__main__.ModelTests.test_bad_board_count_rejected) ... ok
+test_bad_downpipe_rejected (__main__.ModelTests.test_bad_downpipe_rejected) ... ok
+test_bad_post_z_rejected (__main__.ModelTests.test_bad_post_z_rejected) ... ok
+test_balcony_dimension_status (__main__.ModelTests.test_balcony_dimension_status) ... ok
+test_balcony_door_not_blocked (__main__.ModelTests.test_balcony_door_not_blocked) ... ok
+test_balcony_reference_area_not_living_area (__main__.ModelTests.test_balcony_reference_area_not_living_area) ... ok
+test_basis_orthogonal (__main__.ModelTests.test_basis_orthogonal) ... ok
+test_centred_round_posts_touch_beam (__main__.ModelTests.test_centred_round_posts_touch_beam) ... ok
+test_component_count (__main__.ModelTests.test_component_count) ... ok
+test_door_beyond_wall_rejected (__main__.ModelTests.test_door_beyond_wall_rejected) ... ok
+test_door_floor_reference (__main__.ModelTests.test_door_floor_reference) ... ok
+test_door_on_real_outer_wall (__main__.ModelTests.test_door_on_real_outer_wall) ... ok
+test_mismatched_anchor_rejected (__main__.ModelTests.test_mismatched_anchor_rejected) ... ok
+test_negative_projection_rejected (__main__.ModelTests.test_negative_projection_rejected) ... ok
+test_new_parts_quantity_excluded (__main__.ModelTests.test_new_parts_quantity_excluded) ... ok
+test_niche_height_edit_used_in_roof (__main__.ModelTests.test_niche_height_edit_used_in_roof) ... ok
+test_nine_roof_windows_preserved (__main__.ModelTests.test_nine_roof_windows_preserved) ... ok
+test_no_document_link_errors (__main__.ModelTests.test_no_document_link_errors) ... ok
+test_no_hidden_foundations (__main__.ModelTests.test_no_hidden_foundations) ... ok
+test_no_input_mutation (__main__.ModelTests.test_no_input_mutation) ... ok
+test_no_invalid_volume (__main__.ModelTests.test_no_invalid_volume) ... ok
+test_no_measured_approval (__main__.ModelTests.test_no_measured_approval) ... ok
+test_no_step_import_call_in_house_source (__main__.ModelTests.test_no_step_import_call_in_house_source) ... ok
+test_no_structural_approval (__main__.ModelTests.test_no_structural_approval) ... ok
+test_no_terrain_or_lines (__main__.ModelTests.test_no_terrain_or_lines) ... ok
+test_old_collision_pairs_not_new (__main__.ModelTests.test_old_collision_pairs_not_new) ... ok
+test_old_wall_retained_ledger (__main__.ModelTests.test_old_wall_retained_ledger) ... ok
+test_one_balcony (__main__.ModelTests.test_one_balcony) ... ok
+test_only_one_starter (__main__.ModelTests.test_only_one_starter) ... ok
+test_optional_guard_can_be_omitted (__main__.ModelTests.test_optional_guard_can_be_omitted) ... ok
+test_positive_solid_count (__main__.ModelTests.test_positive_solid_count) ... ok
+test_projection_edit_changes_deck_area (__main__.ModelTests.test_projection_edit_changes_deck_area) ... ok
+test_python_310_syntax (__main__.ModelTests.test_python_310_syntax) ... ok
+test_reference_mode_no_detail_bodies (__main__.ModelTests.test_reference_mode_no_detail_bodies) ... ok
+test_removed_false_wall (__main__.ModelTests.test_removed_false_wall) ... ok
+test_repeat_deterministic (__main__.ModelTests.test_repeat_deterministic) ... ok
+test_short_niche_rejected (__main__.ModelTests.test_short_niche_rejected) ... ok
+test_sources_M01_fivepages (__main__.ModelTests.test_sources_M01_fivepages) ... ok
+test_thick_niche_not_silently_desynchronised (__main__.ModelTests.test_thick_niche_not_silently_desynchronised) ... ok
+test_three_sides_seven_display_rows (__main__.ModelTests.test_three_sides_seven_display_rows) ... ok
+test_two_blocked_interior_openings (__main__.ModelTests.test_two_blocked_interior_openings) ... ok
+test_two_downpipe_envelopes (__main__.ModelTests.test_two_downpipe_envelopes) ... ok
+test_units_preserved (__main__.ModelTests.test_units_preserved) ... ok
+test_unknown_asbuilt_flag_rejected (__main__.ModelTests.test_unknown_asbuilt_flag_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 7.297s
+
+OK
+test_actual_main_faces_45 (__main__.RoofAttachmentTests.test_actual_main_faces_45) ... ok
+test_actual_rotated_wing_faces_28 (__main__.RoofAttachmentTests.test_actual_rotated_wing_faces_28) ... ok
+test_all_building_openings_unchanged (__main__.RoofAttachmentTests.test_all_building_openings_unchanged) ... ok
+test_all_rear_seams_closed (__main__.RoofAttachmentTests.test_all_rear_seams_closed) ... ok
+test_balcony_solar_flat_roof_unchanged (__main__.RoofAttachmentTests.test_balcony_solar_flat_roof_unchanged) ... ok
+test_data_schema_valid (__main__.RoofAttachmentTests.test_data_schema_valid) ... ok
+test_documented_main_pitch (__main__.RoofAttachmentTests.test_documented_main_pitch) ... ok
+test_documented_wing_pitch (__main__.RoofAttachmentTests.test_documented_wing_pitch) ... ok
+test_dormer_angles_preserved (__main__.RoofAttachmentTests.test_dormer_angles_preserved) ... ok
+test_east_old_step_reproduced (__main__.RoofAttachmentTests.test_east_old_step_reproduced) ... ok
+test_first_join_before_ridge (__main__.RoofAttachmentTests.test_first_join_before_ridge) ... ok
+test_front_locations_and_widths_preserved (__main__.RoofAttachmentTests.test_front_locations_and_widths_preserved) ... ok
+test_front_roof_heights_preserved (__main__.RoofAttachmentTests.test_front_roof_heights_preserved) ... ok
+test_garage_angle_not_laundered_into_planvalue (__main__.RoofAttachmentTests.test_garage_angle_not_laundered_into_planvalue) ... ok
+test_legacy_definitions_still_valid (__main__.RoofAttachmentTests.test_legacy_definitions_still_valid) ... ok
+test_main_and_wing_geometry_unchanged (__main__.RoofAttachmentTests.test_main_and_wing_geometry_unchanged) ... ok
+test_no_dormer_rear_wall_generated (__main__.RoofAttachmentTests.test_no_dormer_rear_wall_generated) ... ok
+test_no_false_asbuilt_status (__main__.RoofAttachmentTests.test_no_false_asbuilt_status) ... ok
+test_no_fixed_rear_elevation_controls (__main__.RoofAttachmentTests.test_no_fixed_rear_elevation_controls) ... ok
+test_no_input_changes (__main__.RoofAttachmentTests.test_no_input_changes) ... ok
+test_pitch_parameter_changes_join_not_front (__main__.RoofAttachmentTests.test_pitch_parameter_changes_join_not_front) ... ok
+test_seam_has_piecewise_domain_check (__main__.RoofAttachmentTests.test_seam_has_piecewise_domain_check) ... ok
+test_south_old_step_reproduced (__main__.RoofAttachmentTests.test_south_old_step_reproduced) ... ok
+test_steeper_than_host_rejected (__main__.RoofAttachmentTests.test_steeper_than_host_rejected) ... ok
+test_three_independent_estimated_dormer_parameters (__main__.RoofAttachmentTests.test_three_independent_estimated_dormer_parameters) ... ok
+test_too_short_join_search_rejected (__main__.RoofAttachmentTests.test_too_short_join_search_rejected) ... ok
+test_unknown_host_rejected (__main__.RoofAttachmentTests.test_unknown_host_rejected) ... ok
+test_unknown_policy_rejected (__main__.RoofAttachmentTests.test_unknown_policy_rejected) ... ok
+test_west_old_step_reproduced (__main__.RoofAttachmentTests.test_west_old_step_reproduced) ... ok
+test_wrong_axis_rejected (__main__.RoofAttachmentTests.test_wrong_axis_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.574s
+
+OK
+MAIN01 OFFLINEPRUEFUNG BESTANDEN. 10 bekannte Kollisionen und 2 blockierte Oeffnungen bleiben offen.
+
+=== umgebung_r11a.txt ===
+test_01_actual_old_function_reproduces_observed_abort (test_adaptive_area_r09e.AdaptiveAreaTests.test_01_actual_old_function_reproduces_observed_abort) ... ok
+test_02_same_first_two_values_can_continue_to_finer_evaluations (test_adaptive_area_r09e.AdaptiveAreaTests.test_02_same_first_two_values_can_continue_to_finer_evaluations) ... ok
+test_03_stable_initial_pair_retains_fast_two_call_path (test_adaptive_area_r09e.AdaptiveAreaTests.test_03_stable_initial_pair_retains_fast_two_call_path) ... ok
+test_04_one_stable_fine_pair_is_not_enough_after_initial_mismatch (test_adaptive_area_r09e.AdaptiveAreaTests.test_04_one_stable_fine_pair_is_not_enough_after_initial_mismatch) ... ok
+test_05_small_pairwise_drift_but_excessive_three_value_range_stops (test_adaptive_area_r09e.AdaptiveAreaTests.test_05_small_pairwise_drift_but_excessive_three_value_range_stops) ... ok
+test_06_fifth_level_available_without_unbounded_loop (test_adaptive_area_r09e.AdaptiveAreaTests.test_06_fifth_level_available_without_unbounded_loop) ... ok
+test_07_oscillation_never_falls_back_to_nicer_api (test_adaptive_area_r09e.AdaptiveAreaTests.test_07_oscillation_never_falls_back_to_nicer_api) ... ok
+test_08_all_original_acceptance_tolerances_unchanged (test_adaptive_area_r09e.AdaptiveAreaTests.test_08_all_original_acceptance_tolerances_unchanged) ... ok
+test_09_latest_value_not_average_or_closest_to_source (test_adaptive_area_r09e.AdaptiveAreaTests.test_09_latest_value_not_average_or_closest_to_source) ... ok
+test_10_invalid_refined_value_does_not_trigger_fallback (test_adaptive_area_r09e.AdaptiveAreaTests.test_10_invalid_refined_value_does_not_trigger_fallback) ... ok
+test_11_cleanup_failure_on_refinement_stops (test_adaptive_area_r09e.AdaptiveAreaTests.test_11_cleanup_failure_on_refinement_stops) ... ok
+test_12_fixed_mode_fallback_uses_same_bounded_refinement (test_adaptive_area_r09e.AdaptiveAreaTests.test_12_fixed_mode_fallback_uses_same_bounded_refinement) ... ok
+test_13_fixed_mode_nonconvergence_remains_error (test_adaptive_area_r09e.AdaptiveAreaTests.test_13_fixed_mode_nonconvergence_remains_error) ... ok
+test_14_source_comparison_still_rejects_stable_wrong_result (test_adaptive_area_r09e.AdaptiveAreaTests.test_14_source_comparison_still_rejects_stable_wrong_result) ... ok
+test_15_all_dgm_samples_checked_after_successful_refinement (test_adaptive_area_r09e.AdaptiveAreaTests.test_15_all_dgm_samples_checked_after_successful_refinement) ... ok
+test_16_shape_error_not_masked_by_successful_area_refinement (test_adaptive_area_r09e.AdaptiveAreaTests.test_16_shape_error_not_masked_by_successful_area_refinement) ... ok
+test_17_only_observed_pair_alone_does_not_prove_geometry (test_adaptive_area_r09e.AdaptiveAreaTests.test_17_only_observed_pair_alone_does_not_prove_geometry) ... ok
+test_18_bounded_schedule_uses_unique_increasing_values_below_one (test_adaptive_area_r09e.AdaptiveAreaTests.test_18_bounded_schedule_uses_unique_increasing_values_below_one) ... ok
+test_19_no_source_dependency_and_no_geometry_write_in_measurement (test_adaptive_area_r09e.AdaptiveAreaTests.test_19_no_source_dependency_and_no_geometry_write_in_measurement) ... ok
+test_20_full_environment_simulated_with_refinement_checks_all_sources (test_adaptive_area_r09e.AdaptiveAreaTests.test_20_full_environment_simulated_with_refinement_checks_all_sources) ... ok
+test_21_error_keeps_all_evaluations_and_attempt_status (test_adaptive_area_r09e.AdaptiveAreaTests.test_21_error_keeps_all_evaluations_and_attempt_status) ... ok
+test_22_real_observed_fixture_identifies_no_fine_results_as_user_data (test_adaptive_area_r09e.AdaptiveAreaTests.test_22_real_observed_fixture_identifies_no_fine_results_as_user_data) ... ok
+test_01_original_r09b_reproduces_820001_on_second_test_sheet (test_area_measure_r09c.AreaMeasureTests.test_01_original_r09b_reproduces_820001_on_second_test_sheet) ... ok
+test_02_new_code_does_not_call_failing_relative_mass_mode (test_area_measure_r09c.AreaMeasureTests.test_02_new_code_does_not_call_failing_relative_mass_mode) ... ok
+test_03_primary_has_explicit_mm_units_no_inch_factor (test_area_measure_r09c.AreaMeasureTests.test_03_primary_has_explicit_mm_units_no_inch_factor) ... ok
+test_04_fixed_mode_fallback_on_nx_error_is_recorded (test_area_measure_r09c.AreaMeasureTests.test_04_fixed_mode_fallback_on_nx_error_is_recorded) ... ok
+test_05_missing_primary_has_bounded_documented_fallback (test_area_measure_r09c.AreaMeasureTests.test_05_missing_primary_has_bounded_documented_fallback) ... ok
+test_06_both_nx_methods_fail_stops_with_both_attempts (test_area_measure_r09c.AreaMeasureTests.test_06_both_nx_methods_fail_stops_with_both_attempts) ... ok
+test_07_zero_result_is_error_not_fallback_trigger (test_area_measure_r09c.AreaMeasureTests.test_07_zero_result_is_error_not_fallback_trigger) ... ok
+test_08_nonfinite_result_not_accepted (test_area_measure_r09c.AreaMeasureTests.test_08_nonfinite_result_not_accepted) ... ok
+test_09_null_measurement_does_not_hide_binding_problem (test_area_measure_r09c.AreaMeasureTests.test_09_null_measurement_does_not_hide_binding_problem) ... ok
+test_10_type_error_not_masked_by_alternate_api (test_area_measure_r09c.AreaMeasureTests.test_10_type_error_not_masked_by_alternate_api) ... ok
+test_11_two_accuracy_results_must_be_stable (test_area_measure_r09c.AreaMeasureTests.test_11_two_accuracy_results_must_be_stable) ... ok
+test_12_stable_but_wrong_result_fails_source_comparison (test_area_measure_r09c.AreaMeasureTests.test_12_stable_but_wrong_result_fails_source_comparison) ... ok
+test_13_wrong_fallback_value_also_fails_source_comparison (test_area_measure_r09c.AreaMeasureTests.test_13_wrong_fallback_value_also_fails_source_comparison) ... ok
+test_14_cleanup_failure_stops_not_fallback (test_area_measure_r09c.AreaMeasureTests.test_14_cleanup_failure_stops_not_fallback) ... ok
+test_15_area_read_exception_releases_measure_then_fallback (test_area_measure_r09c.AreaMeasureTests.test_15_area_read_exception_releases_measure_then_fallback) ... ok
+test_16_read_and_cleanup_fail_preserve_both_errors (test_area_measure_r09c.AreaMeasureTests.test_16_read_and_cleanup_fail_preserve_both_errors) ... ok
+test_17_split_faces_all_counted_once (test_area_measure_r09c.AreaMeasureTests.test_17_split_faces_all_counted_once) ... ok
+test_18_primary_success_requires_no_mass_api (test_area_measure_r09c.AreaMeasureTests.test_18_primary_success_requires_no_mass_api) ... ok
+test_19_no_available_method_is_fatal (test_area_measure_r09c.AreaMeasureTests.test_19_no_available_method_is_fatal) ... ok
+test_20_invalid_uf_return_is_fatal (test_area_measure_r09c.AreaMeasureTests.test_20_invalid_uf_return_is_fatal) ... ok
+test_21_import_point_check_still_blocks_wrong_shape (test_area_measure_r09c.AreaMeasureTests.test_21_import_point_check_still_blocks_wrong_shape) ... ok
+test_22_faulty_smoke_test_never_starts_house (test_area_measure_r09c.AreaMeasureTests.test_22_faulty_smoke_test_never_starts_house) ... ok
+test_23_whole_house_and_environment_use_new_measurements (test_area_measure_r09c.AreaMeasureTests.test_23_whole_house_and_environment_use_new_measurements) ... ok
+test_24_runtime_does_not_guess_nx_release_from_python (test_area_measure_r09c.AreaMeasureTests.test_24_runtime_does_not_guess_nx_release_from_python) ... ok
+test_25_optional_version_read_error_not_cad_error (test_area_measure_r09c.AreaMeasureTests.test_25_optional_version_read_error_not_cad_error) ... ok
+test_26_start_report_includes_measurement_and_runtime_diagnostics (test_area_measure_r09c.AreaMeasureTests.test_26_start_report_includes_measurement_and_runtime_diagnostics) ... ok
+test_27_area_module_no_source_values_or_shape_modifications (test_area_measure_r09c.AreaMeasureTests.test_27_area_module_no_source_values_or_shape_modifications) ... ok
+test_28_stability_absolute_and_relative_limits (test_area_measure_r09c.AreaMeasureTests.test_28_stability_absolute_and_relative_limits) ... ok
+test_29_uf_fallback_unstable_pair_not_accepted (test_area_measure_r09c.AreaMeasureTests.test_29_uf_fallback_unstable_pair_not_accepted) ... ok
+test_30_unexpected_sheet_count_is_not_measurement_fallback (test_area_measure_r09c.AreaMeasureTests.test_30_unexpected_sheet_count_is_not_measurement_fallback) ... ok
+test_31_fallback_workflow_still_checks_all_points (test_area_measure_r09c.AreaMeasureTests.test_31_fallback_workflow_still_checks_all_points) ... ok
+test_32_duplicate_faces_are_not_double_counted (test_area_measure_r09c.AreaMeasureTests.test_32_duplicate_faces_are_not_double_counted) ... ok
+test_33_primary_unit_lookup_problem_is_not_hidden (test_area_measure_r09c.AreaMeasureTests.test_33_primary_unit_lookup_problem_is_not_hidden) ... ok
+test_34_measured_area_failure_report_has_runtime_snapshot (test_area_measure_r09c.AreaMeasureTests.test_34_measured_area_failure_report_has_runtime_snapshot) ... ok
+test_full_scene_and_house_write_depth_disclaimers_without_changing_z (test_depth_review_r09a.DepthRuntimeTests.test_full_scene_and_house_write_depth_disclaimers_without_changing_z) ... ok
+test_runtime_rejects_orphan_floor_before_step_import (test_depth_review_r09a.DepthRuntimeTests.test_runtime_rejects_orphan_floor_before_step_import) ... ok
+test_25_unknown_z_lists_stay_unknown (test_depth_review_r09a.DepthSourceTests.test_25_unknown_z_lists_stay_unknown) ... ok
+test_all_nine_original_files_hashed (test_depth_review_r09a.DepthSourceTests.test_all_nine_original_files_hashed) ... ok
+test_attributes_explicitly_disclaim_real_depth (test_depth_review_r09a.DepthSourceTests.test_attributes_explicitly_disclaim_real_depth) ... ok
+test_bore_upper_information_no_invented_lower_bound (test_depth_review_r09a.DepthSourceTests.test_bore_upper_information_no_invented_lower_bound) ... ok
+test_cannot_apply_swn_rule_to_gas (test_depth_review_r09a.DepthSourceTests.test_cannot_apply_swn_rule_to_gas) ... ok
+test_cannot_promote_rule_to_as_built (test_depth_review_r09a.DepthSourceTests.test_cannot_promote_rule_to_as_built) ... ok
+test_cannot_promote_rule_to_safe_envelope (test_depth_review_r09a.DepthSourceTests.test_cannot_promote_rule_to_safe_envelope) ... ok
+test_cannot_replace_unknown_depth_with_mean (test_depth_review_r09a.DepthSourceTests.test_cannot_replace_unknown_depth_with_mean) ... ok
+test_cannot_set_unknown_installation_method (test_depth_review_r09a.DepthSourceTests.test_cannot_set_unknown_installation_method) ... ok
+test_changed_physical_z_requires_re_review (test_depth_review_r09a.DepthSourceTests.test_changed_physical_z_requires_re_review) ... ok
+test_correct_source_page_in_runtime_q42 (test_depth_review_r09a.DepthSourceTests.test_correct_source_page_in_runtime_q42) ... ok
+test_duplicate_route_audit_blocked (test_depth_review_r09a.DepthSourceTests.test_duplicate_route_audit_blocked) ... ok
+test_environment_only_does_not_block_unrelated_house (test_depth_review_r09a.DepthSourceTests.test_environment_only_does_not_block_unrelated_house) ... ok
+test_every_route_checked_once (test_depth_review_r09a.DepthSourceTests.test_every_route_checked_once) ... ok
+test_explicit_water_range_not_route_depth (test_depth_review_r09a.DepthSourceTests.test_explicit_water_range_not_route_depth) ... ok
+test_geometric_payload_bitwise_unchanged (test_depth_review_r09a.DepthSourceTests.test_geometric_payload_bitwise_unchanged) ... ok
+test_no_actual_depths_claimed (test_depth_review_r09a.DepthSourceTests.test_no_actual_depths_claimed) ... ok
+test_no_duplicate_reference_id (test_depth_review_r09a.DepthSourceTests.test_no_duplicate_reference_id) ... ok
+test_no_numeric_gas_power_rules_in_upload (test_depth_review_r09a.DepthSourceTests.test_no_numeric_gas_power_rules_in_upload) ... ok
+test_no_synthetic_water_network (test_depth_review_r09a.DepthSourceTests.test_no_synthetic_water_network) ... ok
+test_no_zero_length_reference_line (test_depth_review_r09a.DepthSourceTests.test_no_zero_length_reference_line) ... ok
+test_original_data_not_mutated (test_depth_review_r09a.DepthSourceTests.test_original_data_not_mutated) ... ok
+test_preflight_checks_orphan_house_parts (test_depth_review_r09a.DepthSourceTests.test_preflight_checks_orphan_house_parts) ... ok
+test_reference_count_checked_before_nx (test_depth_review_r09a.DepthSourceTests.test_reference_count_checked_before_nx) ... ok
+test_swn_not_telekom_or_vbb (test_depth_review_r09a.DepthSourceTests.test_swn_not_telekom_or_vbb) ... ok
+test_telecom_open_range_exact_source (test_depth_review_r09a.DepthSourceTests.test_telecom_open_range_exact_source) ... ok
+test_47_later_queue_is_flushed_before_save_and_matches_now (test_performance_r11a.DeferredQueueTests.test_47_later_queue_is_flushed_before_save_and_matches_now)
+Unlike the old double, this test really delays setting the attributes. ... ok
+test_48_diagnostic_io_failure_does_not_hide_geometry_error (test_performance_r11a.DeferredQueueTests.test_48_diagnostic_io_failure_does_not_hide_geometry_error) ... ok
+test_14_current_action_written_before_kernel_call (test_performance_r11a.MonitorTests.test_14_current_action_written_before_kernel_call) ... ok
+test_15_elapsed_timing_not_estimated (test_performance_r11a.MonitorTests.test_15_elapsed_timing_not_estimated) ... ok
+test_16_cancellation_before_next_call (test_performance_r11a.MonitorTests.test_16_cancellation_before_next_call) ... ok
+test_17_stop_during_call_waits_until_return (test_performance_r11a.MonitorTests.test_17_stop_during_call_waits_until_return) ... ok
+test_18_errors_recorded_without_success (test_performance_r11a.MonitorTests.test_18_errors_recorded_without_success) ... ok
+test_19_quiet_log_keeps_details_in_file (test_performance_r11a.MonitorTests.test_19_quiet_log_keeps_details_in_file) ... ok
+test_40_all_keeps_1361_house_bodies_and_5_source_parts (test_performance_r11a.OptimizedWorkflowTests.test_40_all_keeps_1361_house_bodies_and_5_source_parts) ... ok
+test_41_house_only_no_import_or_area (test_performance_r11a.OptimizedWorkflowTests.test_41_house_only_no_import_or_area) ... ok
+test_42_environment_only_has_all_selected_sheets (test_performance_r11a.OptimizedWorkflowTests.test_42_environment_only_has_all_selected_sheets) ... ok
+test_43_import_failure_preserves_house (test_performance_r11a.OptimizedWorkflowTests.test_43_import_failure_preserves_house) ... ok
+test_44_no_empty_success_after_house_failure (test_performance_r11a.OptimizedWorkflowTests.test_44_no_empty_success_after_house_failure) ... ok
+test_45_new_entry_points_use_performance_wrapper (test_performance_r11a.OptimizedWorkflowTests.test_45_new_entry_points_use_performance_wrapper) ... ok
+test_46_cancel_new_run_never_overwrites_old (test_performance_r11a.OptimizedWorkflowTests.test_46_cancel_new_run_never_overwrites_old) ... ok
+test_20_basic_never_calls_area_integration (test_performance_r11a.PerformanceNXDoubleTests.test_20_basic_never_calls_area_integration) ... ok
+test_21_intensive_retains_original_area_and_points (test_performance_r11a.PerformanceNXDoubleTests.test_21_intensive_retains_original_area_and_points) ... ok
+test_22_intensive_does_not_swallow_integration_failure (test_performance_r11a.PerformanceNXDoubleTests.test_22_intensive_does_not_swallow_integration_failure) ... ok
+test_23_basic_rejects_missing_body (test_performance_r11a.PerformanceNXDoubleTests.test_23_basic_rejects_missing_body) ... ok
+test_24_basic_rejects_extra_body (test_performance_r11a.PerformanceNXDoubleTests.test_24_basic_rejects_extra_body) ... ok
+test_25_basic_rejects_wrong_scale (test_performance_r11a.PerformanceNXDoubleTests.test_25_basic_rejects_wrong_scale) ... ok
+test_26_basic_rejects_solid_instead_of_sheet (test_performance_r11a.PerformanceNXDoubleTests.test_26_basic_rejects_solid_instead_of_sheet) ... ok
+test_27_basic_rejects_empty_face_list (test_performance_r11a.PerformanceNXDoubleTests.test_27_basic_rejects_empty_face_list) ... ok
+test_28_basic_rejects_point_deviation (test_performance_r11a.PerformanceNXDoubleTests.test_28_basic_rejects_point_deviation) ... ok
+test_29_basic_accepts_within_original_tolerance (test_performance_r11a.PerformanceNXDoubleTests.test_29_basic_accepts_within_original_tolerance) ... ok
+test_30_basic_split_faces_are_not_full_verified (test_performance_r11a.PerformanceNXDoubleTests.test_30_basic_split_faces_are_not_full_verified) ... ok
+test_31_scope_stored_on_part (test_performance_r11a.PerformanceNXDoubleTests.test_31_scope_stored_on_part) ... ok
+test_32_deferred_attribute_has_mandatory_save_update (test_performance_r11a.PerformanceNXDoubleTests.test_32_deferred_attribute_has_mandatory_save_update) ... ok
+test_33_missing_later_uses_now (test_performance_r11a.PerformanceNXDoubleTests.test_33_missing_later_uses_now) ... ok
+test_34_deferred_attribute_errors_not_ignored (test_performance_r11a.PerformanceNXDoubleTests.test_34_deferred_attribute_errors_not_ignored) ... ok
+test_35_intermediate_dialogs_are_logged_not_modal (test_performance_r11a.PerformanceNXDoubleTests.test_35_intermediate_dialogs_are_logged_not_modal) ... ok
+test_36_estimates_consent_is_not_bypassed (test_performance_r11a.PerformanceNXDoubleTests.test_36_estimates_consent_is_not_bypassed) ... ok
+test_37_basic_does_not_change_source_geometry (test_performance_r11a.PerformanceNXDoubleTests.test_37_basic_does_not_change_source_geometry) ... ok
+test_38_no_source_area_substitution (test_performance_r11a.PerformanceNXDoubleTests.test_38_no_source_area_substitution) ... ok
+test_39_cancel_before_import (test_performance_r11a.PerformanceNXDoubleTests.test_39_cancel_before_import) ... ok
+test_01_default_is_explicitly_basic (test_performance_r11a.PolicyAndSamplingTests.test_01_default_is_explicitly_basic) ... ok
+test_02_unknown_policy_rejected (test_performance_r11a.PolicyAndSamplingTests.test_02_unknown_policy_rejected) ... ok
+test_03_invalid_level_rejected (test_performance_r11a.PolicyAndSamplingTests.test_03_invalid_level_rejected) ... ok
+test_04_no_truthy_strings (test_performance_r11a.PolicyAndSamplingTests.test_04_no_truthy_strings) ... ok
+test_05_real_active_source_counts (test_performance_r11a.PolicyAndSamplingTests.test_05_real_active_source_counts) ... ok
+test_06_dgm_147_of_16748_original_points (test_performance_r11a.PolicyAndSamplingTests.test_06_dgm_147_of_16748_original_points) ... ok
+test_07_corners_and_height_extrema_included (test_performance_r11a.PolicyAndSamplingTests.test_07_corners_and_height_extrema_included) ... ok
+test_08_nodes_and_midpoints_used (test_performance_r11a.PolicyAndSamplingTests.test_08_nodes_and_midpoints_used) ... ok
+test_09_all_selected_points_refer_to_original_rows (test_performance_r11a.PolicyAndSamplingTests.test_09_all_selected_points_refer_to_original_rows) ... ok
+test_10_full_small_cell_retained (test_performance_r11a.PolicyAndSamplingTests.test_10_full_small_cell_retained) ... ok
+test_11_wrong_reference_hash_is_not_skipped (test_performance_r11a.PolicyAndSamplingTests.test_11_wrong_reference_hash_is_not_skipped) ... ok
+test_12_tolerance_is_not_relaxed (test_performance_r11a.PolicyAndSamplingTests.test_12_tolerance_is_not_relaxed) ... ok
+test_13_selection_reproducible (test_performance_r11a.PolicyAndSamplingTests.test_13_selection_reproducible) ... ok
+test_alignment_missing_source_rejected (test_r09.CoreTests.test_alignment_missing_source_rejected) ... ok
+test_alignment_nan_rejected (test_r09.CoreTests.test_alignment_nan_rejected) ... ok
+test_alignment_no_string_conversion (test_r09.CoreTests.test_alignment_no_string_conversion) ... ok
+test_alignment_sign_m_to_mm (test_r09.CoreTests.test_alignment_sign_m_to_mm) ... ok
+test_alignment_true_not_number (test_r09.CoreTests.test_alignment_true_not_number) ... ok
+test_alignment_unconfirmed_datum_rejected (test_r09.CoreTests.test_alignment_unconfirmed_datum_rejected) ... ok
+test_alignment_zero_allowed_only_explicit (test_r09.CoreTests.test_alignment_zero_allowed_only_explicit) ... ok
+test_bbox_tolerance_not_faked (test_r09.CoreTests.test_bbox_tolerance_not_faked) ... ok
+test_bijection_not_import_order (test_r09.CoreTests.test_bijection_not_import_order) ... ok
+test_bom_and_atomic_json (test_r09.CoreTests.test_bom_and_atomic_json) ... ok
+test_build_flag_not_text (test_r09.CoreTests.test_build_flag_not_text) ... ok
+test_confirmation_without_height_rejected (test_r09.CoreTests.test_confirmation_without_height_rejected) ... ok
+test_default_no_height_guess (test_r09.CoreTests.test_default_no_height_guess) ... ok
+test_duplicate_json_key (test_r09.CoreTests.test_duplicate_json_key) ... ok
+test_duplicate_output_record_rejected (test_r09.CoreTests.test_duplicate_output_record_rejected) ... ok
+test_duplicated_surface_not_missing_other (test_r09.CoreTests.test_duplicated_surface_not_missing_other) ... ok
+test_extra_sheet_rejected (test_r09.CoreTests.test_extra_sheet_rejected) ... ok
+test_infinite_bbox_rejected (test_r09.CoreTests.test_infinite_bbox_rejected) ... ok
+test_json_nan_rejected (test_r09.CoreTests.test_json_nan_rejected) ... ok
+test_line_bbox_not_surface (test_r09.CoreTests.test_line_bbox_not_surface) ... ok
+test_output_hash_detects_edit (test_r09.CoreTests.test_output_hash_detects_edit) ... ok
+test_path_fix_does_not_call_resolve (test_r09.CoreTests.test_path_fix_does_not_call_resolve) ... ok
+test_path_traversal_rejected (test_r09.CoreTests.test_path_traversal_rejected) ... ok
+test_planar_sheet_bbox_accepted (test_r09.CoreTests.test_planar_sheet_bbox_accepted) ... ok
+test_scale_error_rejected (test_r09.CoreTests.test_scale_error_rejected) ... ok
+test_unknown_config_key_rejected (test_r09.CoreTests.test_unknown_config_key_rejected) ... ok
+test_all_import_options_verified (test_r09.NXSimulationTests.test_all_import_options_verified) ... ok
+test_def_discovery (test_r09.NXSimulationTests.test_def_discovery) ... ok
+test_duplicate_open_part_rejected (test_r09.NXSimulationTests.test_duplicate_open_part_rejected) ... ok
+test_entry_syntax (test_r09.NXSimulationTests.test_entry_syntax) ... ok
+test_environment_import_smoke_first (test_r09.NXSimulationTests.test_environment_import_smoke_first) ... ok
+test_existing_prt_not_overwritten (test_r09.NXSimulationTests.test_existing_prt_not_overwritten) ... ok
+test_explicit_missing_def_is_error (test_r09.NXSimulationTests.test_explicit_missing_def_is_error) ... ok
+test_full_environment_default_no_guess (test_r09.NXSimulationTests.test_full_environment_default_no_guess) ... ok
+test_house_failure_preserves_environment_only (test_r09.NXSimulationTests.test_house_failure_preserves_environment_only) ... ok
+test_house_reference_no_full_model_claim (test_r09.NXSimulationTests.test_house_reference_no_full_model_claim) ... ok
+test_import_failure_destroys_builder (test_r09.NXSimulationTests.test_import_failure_destroys_builder) ... ok
+test_import_failure_does_not_build_house (test_r09.NXSimulationTests.test_import_failure_does_not_build_house) ... ok
+test_missing_sheet_rejected (test_r09.NXSimulationTests.test_missing_sheet_rejected) ... ok
+test_nonzero_component_translation_checked (test_r09.NXSimulationTests.test_nonzero_component_translation_checked) ... ok
+test_real_r06_code_combines_only_with_explicit_height (test_r09.NXSimulationTests.test_real_r06_code_combines_only_with_explicit_height) ... ok
+test_real_r06_code_full_simulated_run_separate (test_r09.NXSimulationTests.test_real_r06_code_full_simulated_run_separate) ... ok
+test_smoke_failure_does_not_build_house (test_r09.NXSimulationTests.test_smoke_failure_does_not_build_house) ... ok
+test_solid_instead_of_sheet_rejected (test_r09.NXSimulationTests.test_solid_instead_of_sheet_rejected) ... ok
+test_step_commit_none_is_success (test_r09.NXSimulationTests.test_step_commit_none_is_success) ... ok
+test_workpart_made_current_before_import (test_r09.NXSimulationTests.test_workpart_made_current_before_import) ... ok
+test_wrong_import_scale_rejected (test_r09.NXSimulationTests.test_wrong_import_scale_rejected) ... ok
+test_f01_only_blanked_default (test_r09.SourceTests.test_f01_only_blanked_default) ... ok
+test_geometry_unit_mm (test_r09.SourceTests.test_geometry_unit_mm) ... ok
+test_house_json_unchanged (test_r09.SourceTests.test_house_json_unchanged) ... ok
+test_mixed_source_dates_preserved (test_r09.SourceTests.test_mixed_source_dates_preserved) ... ok
+test_no_fake_prt_files_in_package (test_r09.SourceTests.test_no_fake_prt_files_in_package) ... ok
+test_no_unknown_height_added (test_r09.SourceTests.test_no_unknown_height_added) ... ok
+test_reference_segment_count (test_r09.SourceTests.test_reference_segment_count) ... ok
+test_runtime_hashes (test_r09.SourceTests.test_runtime_hashes) ... ok
+test_source_hashes_and_job (test_r09.SourceTests.test_source_hashes_and_job) ... ok
+test_ten_surface_components (test_r09.SourceTests.test_ten_surface_components) ... ok
+test_terrain_byte_identical (test_r09.SourceTests.test_terrain_byte_identical) ... ok
+test_vegetation_382_and_low_202 (test_r09.SourceTests.test_vegetation_382_and_low_202) ... ok
+test_01_original_r09a_reproduces_49_56_abort (test_surface_import_r09b.SurfaceImportTests.test_01_original_r09a_reproduces_49_56_abort) ... ok
+test_02_split_49_sheets_56_faces_with_geometry_passes (test_surface_import_r09b.SurfaceImportTests.test_02_split_49_sheets_56_faces_with_geometry_passes) ... ok
+test_03_split_reordered_body_mapping_preserved (test_surface_import_r09b.SurfaceImportTests.test_03_split_reordered_body_mapping_preserved) ... ok
+test_04_same_face_count_wrong_area_rejected (test_surface_import_r09b.SurfaceImportTests.test_04_same_face_count_wrong_area_rejected) ... ok
+test_05_split_wrong_area_is_not_ignored (test_surface_import_r09b.SurfaceImportTests.test_05_split_wrong_area_is_not_ignored) ... ok
+test_06_zero_area_rejected (test_surface_import_r09b.SurfaceImportTests.test_06_zero_area_rejected) ... ok
+test_07_nan_area_rejected (test_surface_import_r09b.SurfaceImportTests.test_07_nan_area_rejected) ... ok
+test_08_split_surface_point_mismatch_rejected (test_surface_import_r09b.SurfaceImportTests.test_08_split_surface_point_mismatch_rejected) ... ok
+test_09_same_count_point_mismatch_rejected (test_surface_import_r09b.SurfaceImportTests.test_09_same_count_point_mismatch_rejected) ... ok
+test_10_inside_numeric_distance_tolerance_passes (test_surface_import_r09b.SurfaceImportTests.test_10_inside_numeric_distance_tolerance_passes) ... ok
+test_11_empty_faces_rejected (test_surface_import_r09b.SurfaceImportTests.test_11_empty_faces_rejected) ... ok
+test_12_more_bodies_not_accepted_as_split_faces (test_surface_import_r09b.SurfaceImportTests.test_12_more_bodies_not_accepted_as_split_faces) ... ok
+test_13_failure_diagnostic_retains_actual_counts (test_surface_import_r09b.SurfaceImportTests.test_13_failure_diagnostic_retains_actual_counts) ... ok
+test_14_missing_reference_rejected (test_surface_import_r09b.SurfaceImportTests.test_14_missing_reference_rejected) ... ok
+test_15_foreign_reference_hash_rejected (test_surface_import_r09b.SurfaceImportTests.test_15_foreign_reference_hash_rejected) ... ok
+test_16_missing_grid_point_rejected (test_surface_import_r09b.SurfaceImportTests.test_16_missing_grid_point_rejected) ... ok
+test_17_changed_tolerance_rejected (test_surface_import_r09b.SurfaceImportTests.test_17_changed_tolerance_rejected) ... ok
+test_18_reference_indices_must_match (test_surface_import_r09b.SurfaceImportTests.test_18_reference_indices_must_match) ... ok
+test_19_nan_reference_point_rejected (test_surface_import_r09b.SurfaceImportTests.test_19_nan_reference_point_rejected) ... ok
+test_20_reference_total_count_checked (test_surface_import_r09b.SurfaceImportTests.test_20_reference_total_count_checked) ... ok
+test_21_reference_point_outside_source_rejected (test_surface_import_r09b.SurfaceImportTests.test_21_reference_point_outside_source_rejected) ... ok
+test_22_full_workflow_reports_actual_topology_not_585 (test_surface_import_r09b.SurfaceImportTests.test_22_full_workflow_reports_actual_topology_not_585) ... ok
+test_23_bad_distance_api_return_rejected (test_surface_import_r09b.SurfaceImportTests.test_23_bad_distance_api_return_rejected) ... ok
+test_24_negative_distance_rejected (test_surface_import_r09b.SurfaceImportTests.test_24_negative_distance_rejected) ... ok
+test_25_distance_endpoints_must_agree (test_surface_import_r09b.SurfaceImportTests.test_25_distance_endpoints_must_agree) ... ok
+test_26_distance_input_point_must_agree (test_surface_import_r09b.SurfaceImportTests.test_26_distance_input_point_must_agree) ... ok
+test_27_api_errors_not_swallowed (test_surface_import_r09b.SurfaceImportTests.test_27_api_errors_not_swallowed) ... ok
+test_28_primary_area_already_in_square_mm (test_surface_import_r09b.SurfaceImportTests.test_28_primary_area_already_in_square_mm) ... ok
+test_29_all_original_knots_and_cell_centres_present (test_surface_import_r09b.SurfaceImportTests.test_29_all_original_knots_and_cell_centres_present) ... ok
+test_30_area_comparison_not_total_cancellation (test_surface_import_r09b.SurfaceImportTests.test_30_area_comparison_not_total_cancellation) ... ok
+test_31_import_settings_not_relaxed (test_surface_import_r09b.SurfaceImportTests.test_31_import_settings_not_relaxed) ... ok
+test_32_starter_reports_surface_diagnosis (test_surface_import_r09b.SurfaceImportTests.test_32_starter_reports_surface_diagnosis) ... ok
+test_33_nonexistent_measurement_api_blocks_before_import (test_surface_import_r09b.SurfaceImportTests.test_33_nonexistent_measurement_api_blocks_before_import) ... ok
+test_34_diagnostic_logs_failed_point (test_surface_import_r09b.SurfaceImportTests.test_34_diagnostic_logs_failed_point) ... ok
+test_35_zero_or_negative_reference_area_rejected (test_surface_import_r09b.SurfaceImportTests.test_35_zero_or_negative_reference_area_rejected) ... ok
+test_36_distance_nan_rejected (test_surface_import_r09b.SurfaceImportTests.test_36_distance_nan_rejected) ... ok
+test_37_null_tag_uses_python_integer_without_nxopen_tag_namespace (test_surface_import_r09b.SurfaceImportTests.test_37_null_tag_uses_python_integer_without_nxopen_tag_namespace) ... ok
+test_01_no_mutation (test_windows_review_r11.WindowReviewTests.test_01_no_mutation) ... ok
+test_02_apply_once (test_windows_review_r11.WindowReviewTests.test_02_apply_once) ... ok
+test_03_baseline_required (test_windows_review_r11.WindowReviewTests.test_03_baseline_required) ... ok
+test_04_disable_is_exact_baseline (test_windows_review_r11.WindowReviewTests.test_04_disable_is_exact_baseline) ... ok
+test_05_no_metric_claim (test_windows_review_r11.WindowReviewTests.test_05_no_metric_claim) ... ok
+test_06_operation_duplicate_rejected (test_windows_review_r11.WindowReviewTests.test_06_operation_duplicate_rejected) ... ok
+test_07_dimension_nan_rejected (test_windows_review_r11.WindowReviewTests.test_07_dimension_nan_rejected) ... ok
+test_08_source_page_required (test_windows_review_r11.WindowReviewTests.test_08_source_page_required) ... ok
+test_09_removed_false_openings (test_windows_review_r11.WindowReviewTests.test_09_removed_false_openings) ... ok
+test_10_entry_sills_not_zero (test_windows_review_r11.WindowReviewTests.test_10_entry_sills_not_zero) ... ok
+test_11_plan_entry_sizes (test_windows_review_r11.WindowReviewTests.test_11_plan_entry_sizes) ... ok
+test_12_rear_exit_is_door (test_windows_review_r11.WindowReviewTests.test_12_rear_exit_is_door) ... ok
+test_13_plan_disagreement_not_erased (test_windows_review_r11.WindowReviewTests.test_13_plan_disagreement_not_erased) ... ok
+test_14_long_dormer_eight_lights_unchanged (test_windows_review_r11.WindowReviewTests.test_14_long_dormer_eight_lights_unchanged) ... ok
+test_15_garage_dormer_four_lights (test_windows_review_r11.WindowReviewTests.test_15_garage_dormer_four_lights) ... ok
+test_16_courtyard_dormer_not_guessed (test_windows_review_r11.WindowReviewTests.test_16_courtyard_dormer_not_guessed) ... ok
+test_17_all_changes_have_old_and_new (test_windows_review_r11.WindowReviewTests.test_17_all_changes_have_old_and_new) ... ok
+test_18_new_roof_windows_count (test_windows_review_r11.WindowReviewTests.test_18_new_roof_windows_count) ... ok
+test_19_new_roof_windows_have_actual_frames_glass (test_windows_review_r11.WindowReviewTests.test_19_new_roof_windows_have_actual_frames_glass) ... ok
+test_20_body_count (test_windows_review_r11.WindowReviewTests.test_20_body_count) ... ok
+test_21_reference_mode_zero_bodies (test_windows_review_r11.WindowReviewTests.test_21_reference_mode_zero_bodies) ... ok
+test_22_no_new_numerical_collisions (test_windows_review_r11.WindowReviewTests.test_22_no_new_numerical_collisions) ... ok
+test_23_no_new_blocked_openings_or_reference_errors (test_windows_review_r11.WindowReviewTests.test_23_no_new_blocked_openings_or_reference_errors) ... ok
+test_24_runtime_uses_same_overlay (test_windows_review_r11.WindowReviewTests.test_24_runtime_uses_same_overlay) ... ok
+test_25_property_and_utility_data_unchanged (test_windows_review_r11.WindowReviewTests.test_25_property_and_utility_data_unchanged) ... ok
+test_26_vegetation_only_four_groups_and_dgm (test_windows_review_r11.WindowReviewTests.test_26_vegetation_only_four_groups_and_dgm) ... ok
+test_27_selected_source_count (test_windows_review_r11.WindowReviewTests.test_27_selected_source_count) ... ok
+test_28_source_geometry_not_modified_by_filter (test_windows_review_r11.WindowReviewTests.test_28_source_geometry_not_modified_by_filter) ... ok
+test_29_unmatched_not_imported_or_called_removed (test_windows_review_r11.WindowReviewTests.test_29_unmatched_not_imported_or_called_removed) ... ok
+test_30_every_group_has_explicit_review (test_windows_review_r11.WindowReviewTests.test_30_every_group_has_explicit_review) ... ok
+test_31_bad_vegetation_policy_rejected (test_windows_review_r11.WindowReviewTests.test_31_bad_vegetation_policy_rejected) ... ok
+test_32_unknown_dgm_height_not_filled (test_windows_review_r11.WindowReviewTests.test_32_unknown_dgm_height_not_filled) ... ok
+test_33_original_video_provenance (test_windows_review_r11.WindowReviewTests.test_33_original_video_provenance) ... ok
+test_01_full_run_house_precedes_environment (test_workflow_r09d.WorkflowTests.test_01_full_run_house_precedes_environment) ... ok
+test_02_house_only_never_calls_step_importer (test_workflow_r09d.WorkflowTests.test_02_house_only_never_calls_step_importer) ... ok
+test_03_environment_only_never_builds_house (test_workflow_r09d.WorkflowTests.test_03_environment_only_never_builds_house) ... ok
+test_04_environment_failure_preserves_house (test_workflow_r09d.WorkflowTests.test_04_environment_failure_preserves_house) ... ok
+test_05_house_failure_never_imports_environment (test_workflow_r09d.WorkflowTests.test_05_house_failure_never_imports_environment) ... ok
+test_06_no_height_means_two_separate_masters (test_workflow_r09d.WorkflowTests.test_06_no_height_means_two_separate_masters) ... ok
+test_07_confirmed_height_applies_to_whole_environment_once (test_workflow_r09d.WorkflowTests.test_07_confirmed_height_applies_to_whole_environment_once) ... ok
+test_08_reference_house_does_not_become_full_model (test_workflow_r09d.WorkflowTests.test_08_reference_house_does_not_become_full_model) ... ok
+test_09_explicit_house_start_overrides_build_house_false (test_workflow_r09d.WorkflowTests.test_09_explicit_house_start_overrides_build_house_false) ... ok
+test_10_all_start_respects_build_house_false (test_workflow_r09d.WorkflowTests.test_10_all_start_respects_build_house_false) ... ok
+test_11_house_does_not_parse_environment_job (test_workflow_r09d.WorkflowTests.test_11_house_does_not_parse_environment_job) ... ok
+test_12_invalid_mode_before_creating_outputs (test_workflow_r09d.WorkflowTests.test_12_invalid_mode_before_creating_outputs) ... ok
+test_13_open_old_house_component_is_never_closed (test_workflow_r09d.WorkflowTests.test_13_open_old_house_component_is_never_closed) ... ok
+test_14_existing_environment_does_not_prevent_house_only (test_workflow_r09d.WorkflowTests.test_14_existing_environment_does_not_prevent_house_only) ... ok
+test_15_existing_house_does_not_prevent_environment_only (test_workflow_r09d.WorkflowTests.test_15_existing_house_does_not_prevent_environment_only) ... ok
+test_16_house_file_tampering_during_environment_is_rejected (test_workflow_r09d.WorkflowTests.test_16_house_file_tampering_during_environment_is_rejected) ... ok
+test_17_partial_house_status_cannot_be_success (test_workflow_r09d.WorkflowTests.test_17_partial_house_status_cannot_be_success) ... ok
+test_18_wrong_house_verification_cannot_be_success (test_workflow_r09d.WorkflowTests.test_18_wrong_house_verification_cannot_be_success) ... ok
+test_19_partial_environment_status_cannot_be_success (test_workflow_r09d.WorkflowTests.test_19_partial_environment_status_cannot_be_success) ... ok
+test_20_foreign_environment_directory_rejected (test_workflow_r09d.WorkflowTests.test_20_foreign_environment_directory_rejected) ... ok
+test_21_display_does_not_grant_write_ownership (test_workflow_r09d.WorkflowTests.test_21_display_does_not_grant_write_ownership) ... ok
+test_22_display_missing_part_not_assumed_open (test_workflow_r09d.WorkflowTests.test_22_display_missing_part_not_assumed_open) ... ok
+test_23_phase_pointers_reference_checked_results (test_workflow_r09d.WorkflowTests.test_23_phase_pointers_reference_checked_results) ... ok
+test_24_import_measurements_not_disabled (test_workflow_r09d.WorkflowTests.test_24_import_measurements_not_disabled) ... ok
+test_25_invalid_geometry_environment_preserves_house (test_workflow_r09d.WorkflowTests.test_25_invalid_geometry_environment_preserves_house) ... ok
+test_26_step_split_keeps_same_sheet_requirements (test_workflow_r09d.WorkflowTests.test_26_step_split_keeps_same_sheet_requirements) ... ok
+test_27_entry_modes_and_diagnostics_are_explicit (test_workflow_r09d.WorkflowTests.test_27_entry_modes_and_diagnostics_are_explicit) ... ok
+test_28_scope_does_not_require_environment_import_job (test_workflow_r09d.WorkflowTests.test_28_scope_does_not_require_environment_import_job) ... ok
+test_29_unknown_verification_scope_rejected (test_workflow_r09d.WorkflowTests.test_29_unknown_verification_scope_rejected) ... ok
+test_30_no_automatic_terrain_alignment_default (test_workflow_r09d.WorkflowTests.test_30_no_automatic_terrain_alignment_default) ... ok
+
+----------------------------------------------------------------------
+Ran 291 tests in 67.524s
+
+OK
+
+=== gesamt_g01.txt ===
+test_01_load_current_house_compiler (__main__.BackendTests.test_01_load_current_house_compiler) ... ok
+test_02_environment_selection_preserved (__main__.BackendTests.test_02_environment_selection_preserved) ... ok
+test_03_house_preflight_never_loads_env (__main__.BackendTests.test_03_house_preflight_never_loads_env) ... ok
+test_04_env_preflight_never_loads_house (__main__.BackendTests.test_04_env_preflight_never_loads_house) ... ok
+test_05_loaded_latest_house_conflict (__main__.BackendTests.test_05_loaded_latest_house_conflict) ... ok
+test_06_loaded_environment_conflict (__main__.BackendTests.test_06_loaded_environment_conflict) ... ok
+test_07_unrelated_part_not_closed (__main__.BackendTests.test_07_unrelated_part_not_closed) ... ok
+test_08_module_switch_restores_current_house (__main__.BackendTests.test_08_module_switch_restores_current_house) ... ok
+test_09_bad_package_load_clear_error (__main__.BackendTests.test_09_bad_package_load_clear_error) ... ok
+test_10_all_original_utility_routes_no_depth (__main__.BackendTests.test_10_all_original_utility_routes_no_depth) ... ok
+test_11_latest_house_and_old_env_disagree_is_explicit (__main__.BackendTests.test_11_latest_house_and_old_env_disagree_is_explicit) ... ok
+test_12_step_distance_query_not_silently_changed (__main__.BackendTests.test_12_step_distance_query_not_silently_changed) ... ok
+test_01_default_no_height (__main__.ConfigurationTests.test_01_default_no_height) ... ok
+test_02_default_basis (__main__.ConfigurationTests.test_02_default_basis) ... ok
+test_03_explicit_metres_to_mm (__main__.ConfigurationTests.test_03_explicit_metres_to_mm) ... ok
+test_04_missing_elevation (__main__.ConfigurationTests.test_04_missing_elevation) ... ok
+test_05_missing_source (__main__.ConfigurationTests.test_05_missing_source) ... ok
+test_06_unconfirmed_datum (__main__.ConfigurationTests.test_06_unconfirmed_datum) ... ok
+test_07_invalid_elevations (__main__.ConfigurationTests.test_07_invalid_elevations) ... ok
+test_08_unknown_config (__main__.ConfigurationTests.test_08_unknown_config) ... ok
+test_09_invalid_surface_policy (__main__.ConfigurationTests.test_09_invalid_surface_policy) ... ok
+test_10_config_no_mutation (__main__.ConfigurationTests.test_10_config_no_mutation) ... ok
+test_11_path_no_resolve (__main__.ConfigurationTests.test_11_path_no_resolve) ... ok
+test_12_reject_unsafe_relative_paths (__main__.ConfigurationTests.test_12_reject_unsafe_relative_paths) ... ok
+test_13_duplicate_json_key (__main__.ConfigurationTests.test_13_duplicate_json_key) ... ok
+test_14_nonfinite_json (__main__.ConfigurationTests.test_14_nonfinite_json) ... ok
+test_15_atomic_bom_unicode (__main__.ConfigurationTests.test_15_atomic_bom_unicode) ... ok
+test_01_valid_package (__main__.PackageTests.test_01_valid_package) ... ok
+test_02_program_edit_rejected (__main__.PackageTests.test_02_program_edit_rejected) ... ok
+test_03_house_input_edit_reported (__main__.PackageTests.test_03_house_input_edit_reported) ... ok
+test_04_missing_step_not_house_dependency (__main__.PackageTests.test_04_missing_step_not_house_dependency) ... ok
+test_05_missing_house_not_env_dependency (__main__.PackageTests.test_05_missing_house_not_env_dependency) ... ok
+test_06_config_edit_allowed_but_traced (__main__.PackageTests.test_06_config_edit_allowed_but_traced) ... ok
+test_01_valid_saved_house (__main__.ResultTests.test_01_valid_saved_house) ... ok
+test_02_wrong_old_house_rejected (__main__.ResultTests.test_02_wrong_old_house_rejected) ... ok
+test_03_unverified_result_rejected (__main__.ResultTests.test_03_unverified_result_rejected) ... ok
+test_04_environment_cannot_build_old_house (__main__.ResultTests.test_04_environment_cannot_build_old_house) ... ok
+test_05_claimed_as_built_rejected (__main__.ResultTests.test_05_claimed_as_built_rejected) ... ok
+test_06_reference_not_counted_house (__main__.ResultTests.test_06_reference_not_counted_house) ... ok
+test_07_changed_file_rejected (__main__.ResultTests.test_07_changed_file_rejected) ... ok
+test_08_duplicate_record_rejected (__main__.ResultTests.test_08_duplicate_record_rejected) ... ok
+test_09_master_must_be_registered (__main__.ResultTests.test_09_master_must_be_registered) ... ok
+test_10_pointer_requires_success (__main__.ResultTests.test_10_pointer_requires_success) ... ok
+test_11_missing_pointer_clear_error (__main__.ResultTests.test_11_missing_pointer_clear_error) ... ok
+test_12_roundtrip_pointer (__main__.ResultTests.test_12_roundtrip_pointer) ... ok
+test_13_cause_diagnostics_preserved (__main__.ResultTests.test_13_cause_diagnostics_preserved) ... ok
+test_01_house_first_environment_then_assembly (__main__.WorkflowTests.test_01_house_first_environment_then_assembly) ... ok
+test_02_only_house_no_environment (__main__.WorkflowTests.test_02_only_house_no_environment) ... ok
+test_03_only_environment_no_house (__main__.WorkflowTests.test_03_only_environment_no_house) ... ok
+test_04_environment_failure_preserves_house (__main__.WorkflowTests.test_04_environment_failure_preserves_house) ... ok
+test_05_house_failure_no_environment (__main__.WorkflowTests.test_05_house_failure_no_environment) ... ok
+test_06_assembly_failure_keeps_both (__main__.WorkflowTests.test_06_assembly_failure_keeps_both) ... ok
+test_07_reuse_without_regeneration (__main__.WorkflowTests.test_07_reuse_without_regeneration) ... ok
+test_08_edited_reuse_source_fails (__main__.WorkflowTests.test_08_edited_reuse_source_fails) ... ok
+test_09_no_pointer_no_assembly (__main__.WorkflowTests.test_09_no_pointer_no_assembly) ... ok
+test_10_run_folders_unique (__main__.WorkflowTests.test_10_run_folders_unique) ... ok
+test_11_preflight_no_build (__main__.WorkflowTests.test_11_preflight_no_build) ... ok
+test_12_invalid_mode_no_output (__main__.WorkflowTests.test_12_invalid_mode_no_output) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 2.501s
+
+OK
+
+=== dgm_diagnose.txt ===
+test_01_exact_result (__main__.Tests.test_01_exact_result) ... ok
+test_02_true_error_retained (__main__.Tests.test_02_true_error_retained) ... ok
+test_03_wrong_input_detected (__main__.Tests.test_03_wrong_input_detected) ... ok
+test_04_inconsistent_distance (__main__.Tests.test_04_inconsistent_distance) ... ok
+test_05_nonfinite_rejected (__main__.Tests.test_05_nonfinite_rejected) ... ok
+test_06_invalid_result_rejected (__main__.Tests.test_06_invalid_result_rejected) ... ok
+test_07_negative_rejected (__main__.Tests.test_07_negative_rejected) ... ok
+test_08_coordinates_checked (__main__.Tests.test_08_coordinates_checked) ... ok
+test_09_bounded_twelve_calls (__main__.Tests.test_09_bounded_twelve_calls) ... ok
+test_10_seed_to_faces_not_body (__main__.Tests.test_10_seed_to_faces_not_body) ... ok
+test_11_meter_disagreement_retained (__main__.Tests.test_11_meter_disagreement_retained) ... ok
+test_12_exceptions_not_passed (__main__.Tests.test_12_exceptions_not_passed) ... ok
+test_13_persistent_offset_not_hidden (__main__.Tests.test_13_persistent_offset_not_hidden) ... ok
+test_14_inconsistent_results_flagged (__main__.Tests.test_14_inconsistent_results_flagged) ... ok
+test_15_pre_call_status_is_written (__main__.Tests.test_15_pre_call_status_is_written) ... ok
+test_16_bounded_faces (__main__.Tests.test_16_bounded_faces) ... ok
+test_17_output_is_json (__main__.Tests.test_17_output_is_json) ... ok
+test_18_no_part_write_apis (__main__.Tests.test_18_no_part_write_apis) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.015s
+
+OK
+
+=== 32 neue G01a-Tests ===
+test_01_terrain_source_in_package (__main__.IntegrationTests.test_01_terrain_source_in_package) ... ok
+test_02_points_match_delivered_source (__main__.IntegrationTests.test_02_points_match_delivered_source) ... ok
+test_03_normal_import_is_automatic_and_passes (__main__.IntegrationTests.test_03_normal_import_is_automatic_and_passes) ... ok
+test_04_snapshot_exists_before_first_distance_call (__main__.IntegrationTests.test_04_snapshot_exists_before_first_distance_call) ... ok
+test_05_every_query_has_raw_return_and_endpoints (__main__.IntegrationTests.test_05_every_query_has_raw_return_and_endpoints) ... ok
+test_06_failure_keeps_original_and_automatically_probes (__main__.IntegrationTests.test_06_failure_keeps_original_and_automatically_probes) ... ok
+test_07_original_bad_target_is_preserved (__main__.IntegrationTests.test_07_original_bad_target_is_preserved) ... ok
+test_08_no_source_coordinates_mutated (__main__.IntegrationTests.test_08_no_source_coordinates_mutated) ... ok
+test_09_production_flags_unchanged_fresh_arrays (__main__.IntegrationTests.test_09_production_flags_unchanged_fresh_arrays) ... ok
+test_10_wrong_body_count_is_not_accepted (__main__.IntegrationTests.test_10_wrong_body_count_is_not_accepted) ... ok
+test_11_source_missing_no_part_created (__main__.IntegrationTests.test_11_source_missing_no_part_created) ... ok
+test_12_wrong_source_checksum_rejected (__main__.IntegrationTests.test_12_wrong_source_checksum_rejected) ... ok
+test_13_import_exception_logged_without_snapshot_claim (__main__.IntegrationTests.test_13_import_exception_logged_without_snapshot_claim) ... ok
+test_14_zero_distance_with_wrong_input_rejected (__main__.IntegrationTests.test_14_zero_distance_with_wrong_input_rejected) ... ok
+test_15_malformed_nx_return_saved_before_error (__main__.IntegrationTests.test_15_malformed_nx_return_saved_before_error) ... ok
+test_16_probe_error_does_not_hide_original (__main__.IntegrationTests.test_16_probe_error_does_not_hide_original) ... ok
+test_17_save_failure_has_no_false_snapshot (__main__.IntegrationTests.test_17_save_failure_has_no_false_snapshot) ... ok
+test_18_existing_output_not_overwritten (__main__.IntegrationTests.test_18_existing_output_not_overwritten) ... ok
+test_19_non_dgm_has_no_checkpoint (__main__.IntegrationTests.test_19_non_dgm_has_no_checkpoint) ... ok
+test_20_reused_diagnostic_path_rejected (__main__.IntegrationTests.test_20_reused_diagnostic_path_rejected) ... ok
+test_21_tolerance_not_relaxed (__main__.IntegrationTests.test_21_tolerance_not_relaxed) ... ok
+test_22_standalone_builds_only_dgm_and_does_not_require_prior_prt (__main__.IntegrationTests.test_22_standalone_builds_only_dgm_and_does_not_require_prior_prt) ... ok
+test_23_standalone_can_run_twice_without_closing_old_dgm (__main__.IntegrationTests.test_23_standalone_can_run_twice_without_closing_old_dgm) ... ok
+test_24_standalone_failed_report_embeds_diagnostic (__main__.IntegrationTests.test_24_standalone_failed_report_embeds_diagnostic) ... ok
+test_25_json_safe_preserves_nan_as_diagnostic (__main__.IntegrationTests.test_25_json_safe_preserves_nan_as_diagnostic) ... ok
+test_26_snapshot_is_unverified_and_not_final_record (__main__.IntegrationTests.test_26_snapshot_is_unverified_and_not_final_record) ... ok
+test_27_snapshot_stage_does_not_save_foreign_part (__main__.IntegrationTests.test_27_snapshot_stage_does_not_save_foreign_part) ... ok
+test_28_pre_nx_event_remains_when_native_call_raises (__main__.IntegrationTests.test_28_pre_nx_event_remains_when_native_call_raises) ... ok
+test_29_checkpoint_hash_identical_copy (__main__.IntegrationTests.test_29_checkpoint_hash_identical_copy) ... ok
+test_30_no_more_accurate_result_auto_selected (__main__.IntegrationTests.test_30_no_more_accurate_result_auto_selected) ... ok
+test_31_stop_request_skips_additional_native_queries (__main__.IntegrationTests.test_31_stop_request_skips_additional_native_queries) ... ok
+test_32_start_error_json_embeds_raw_terrain_diagnostic (__main__.IntegrationTests.test_32_start_error_json_embeds_raw_terrain_diagnostic) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 5.519s
+
+OK
+
+=== Gesamtsimulation ===
+{
+  "status": "PYTHON_GESAMTABLAUF_MIT_NX_TESTDOUBLE_BESTANDEN",
+  "NX_tested": false,
+  "house_revision": "MAIN01-A01",
+  "house_bodies": 1418,
+  "house_components": 15,
+  "environment_groups": [
+    "DGM",
+    "V01",
+    "V02",
+    "V03",
+    "V05"
+  ],
+  "simulated_step_imports": 6,
+  "simulated_point_distance_calls": 1335,
+  "real_surface_measurements": 0,
+  "project_children": 3,
+  "utility_groups": 4,
+  "utility_line_segments": 45,
+  "utility_parent_hidden": true,
+  "height_offset_not_guessed": true,
+  "DGM_point85_fixed": false,
+  "source_files_not_resaved": true,
+  "temporary_stub_files_deleted_after_run": true,
+  "note": "Real delivered Python engines + simulated NX bindings and zero-distance answers. No STEP translator/Parasolid execution. No as-built approval."
+}
+
+=== CAD-Haus ===
+CAD BESTANDEN: 1418 Koerper
+
+=== CAD-STEP ===
+{
+  "status": "OCCT_STEP_RUECKIMPORT_BESTANDEN",
+  "files": 11,
+  "model_faces": 585,
+  "test_faces": 2,
+  "point_to_face_samples": 3516,
+  "max_point_to_face_distance_mm": 8.39504580339755e-09,
+  "parts": [
+    {
+      "id": "DGM",
+      "faces": 1,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 0.0
+    },
+    {
+      "id": "V01",
+      "faces": 49,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 5.002220859751105e-09
+    },
+    {
+      "id": "V02",
+      "faces": 27,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 5.016772774979472e-09
+    },
+    {
+      "id": "V03",
+      "faces": 21,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 4.998582880944014e-09
+    },
+    {
+      "id": "V04",
+      "faces": 13,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 5.995389074087143e-09
+    },
+    {
+      "id": "V05",
+      "faces": 17,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 5.002220859751105e-09
+    },
+    {
+      "id": "V06",
+      "faces": 83,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 4.998582880944014e-09
+    },
+    {
+      "id": "V07",
+      "faces": 140,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 7.106791599653661e-08
+    },
+    {
+      "id": "V08",
+      "faces": 32,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 5.002220859751105e-09
+    },
+    {
+      "id": "F01",
+      "faces": 202,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 4.993125912733376e-09
+    },
+    {
+      "id": "TEST",
+      "faces": 2,
+      "valid_open_geometry": true,
+      "max_bbox_error_mm": 5.002220859751105e-09
+    }
+  ],
+  "NX_tested": false,
+  "scope": "Echte STEP-Dateien, CAD-Pruefung in Open CASCADE; kein NX-Translator und kein Bestandsnachweis."
+}

@@ -1,0 +1,55 @@
+{
+  "patch": "MAIN01-A01-G01c-SEGMENTIERTER-DGM-RAND",
+  "status": "REAL_OCCT_FIXTURES_CHECKED",
+  "NX_tested": false,
+  "native_prt_created": false,
+  "source_sha256": "25a972e13beecdd9ebcf2a3420124803c78805263c806162a9785b84e167fd61",
+  "source_unchanged": true,
+  "cases": [
+    {
+      "case": "original_4",
+      "valid_CAD_face": true,
+      "actual_edges": 4,
+      "face_count": 1,
+      "checked_points": 16748,
+      "boundary_queries": 748,
+      "max_position_error_mm": 7.072150630258171e-08,
+      "max_boundary_error_mm": 5.896794630138402e-08,
+      "side_counts": {
+        "R0": 1,
+        "R1": 1,
+        "C0": 1,
+        "C1": 1
+      }
+    },
+    {
+      "case": "synthetic_split_285",
+      "valid_CAD_face": true,
+      "actual_edges": 285,
+      "face_count": 1,
+      "checked_points": 16748,
+      "boundary_queries": 1591,
+      "max_position_error_mm": 7.072150630258171e-08,
+      "max_boundary_error_mm": 5.896794630138402e-08,
+      "side_counts": {
+        "R0": 64,
+        "R1": 64,
+        "C0": 79,
+        "C1": 78
+      }
+    }
+  ],
+  "negative_tests": {
+    "interior_hole": {
+      "rejected": true,
+      "actual_edges": 289,
+      "error": "DGM-Rand: Randkante nicht eindeutig einer Quellseite zugeordnet (Innenkante, falsche Hoehe oder Eckquerung)."
+    },
+    "changed_pole": {
+      "rejected": true,
+      "failed_index": 1089,
+      "displacement_mm": 2.0
+    }
+  },
+  "limits": "The 285-edge split is an artificial CAD fixture, not the actual NX output. Finite coordinate and edge probes are not a full mathematical surface identity proof."
+}

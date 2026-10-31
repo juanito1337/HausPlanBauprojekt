@@ -1,0 +1,33 @@
+{
+  "git_version": "git version 2.47.3",
+  "index_files": 637,
+  "original_G02_K01_files_all_tracked": true,
+  "autocrlf_true_checkout_hashes": {
+    "projects/g02": {
+      "count": 543,
+      "hash_mismatches": []
+    },
+    "renovierung/k01_unterlagen": {
+      "count": 8,
+      "hash_mismatches": []
+    }
+  },
+  "ignored_examples": {
+    "local_data/native/master.prt": true,
+    "projects/g02/ausgabe/example/file.prt": true,
+    "projects/g02/LETZTES_HAUS_G02.json": true,
+    "private.local.json": true,
+    ".env": true,
+    ".venv-cad/lib/site.py": true,
+    "reports/local/a.txt": true
+  },
+  "largest_tracked_file": {
+    "bytes": 25521285,
+    "path": "sources/video/AUSSENRUNDGANG_20261008.mp4"
+  },
+  "max_relative_path_chars": 114,
+  "remote_created": false,
+  "remote_push_performed": false,
+  "git_history_in_delivered_ZIP": false,
+  "NX_run_performed": false
+}

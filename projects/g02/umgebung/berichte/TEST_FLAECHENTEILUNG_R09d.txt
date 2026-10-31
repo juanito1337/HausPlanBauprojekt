@@ -1,0 +1,15 @@
+Actual constructed CAD faces 56
+{
+  "test": "OCCT_CREATED_V01_SPLIT_49_SHEETS_56_FACES",
+  "status": "BESTANDEN",
+  "actual_constructed_sheets": 49,
+  "actual_constructed_faces": 56,
+  "source_points_checked": 1920,
+  "max_source_point_distance_mm": 8.602973028426567e-08,
+  "max_area_relative_error": 5.050525379278838e-07,
+  "NX_tested": false,
+  "NX_accuracy_behavior_emulated": false,
+  "OCCT_integration_eps": 1e-08,
+  "not_users_imported_model": true,
+  "scope": "Constructed OCCT face splits; production check with CAD-computed measurements via simulated NX boundary. Does NOT verify user NX import."
+}

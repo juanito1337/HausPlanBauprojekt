@@ -1,0 +1,64 @@
+#-----------------------------------------------------------------------------------
+#ID,    Name,                         Rechts,        Hoch
+#-----------------------------------------------------------------------------------
+1,      links  unten,                   568000.000,  6003000.000
+2,      rechts unten,                   569000.000,  6003000.000
+3,      rechts oben,                    569000.000,  6004000.000
+4,      links  oben,                    568000.000,  6004000.000
+#-----------------------------------------------------------------------------------
+#   4           3
+#   +-----------+
+#   |           |
+#   |           |
+#   |           |
+#   |           |
+#   |           |
+#   +-----------+
+#   1           2
+#-----------------------------------------------------------------------------------
+####################################################################################
+#                                META-DATEN DES DOM                                #
+####################################################################################
+# Land:                                Schleswig-Holstein                          #
+# Eigentuemer:                         Landesamt für Vermessung und Geoinformation #
+#                                      Schleswig-Holstein (LVermGeo SH)            #
+# Aktualitaet_Kachelinformation:       06.06.2024                                  #
+# Version_Standard:                    2.0                                         #
+# Kachel_10km:                         32560_6000                                  #
+# Kachelname:                          bdom20nc_32_568_6003_1_sh_2023              #
+# Aktualitaet:                         07.04.2023                                  #
+# Bildflugnummer:                      TK1_23                                      #
+# Flughoehe:                           ca. 2235 m                                  #
+# Kamera_Sensor:                       UltraCamEagle_M3                            #
+# Quelldaten_GSD:                      9 cm                                        #
+# Quelldaten_Laengsueberdeckung:       80.0                                        #
+# Quelldaten_Querueberdeckung:         40.0                                        #
+# Herstellungsdatum:                   28.06.2023                                  #
+# Anzahl_Spalten:                      5000                                        #
+# Anzahl_Zeilen:                       5000                                        #
+# Aufloesung:                          20                                          #
+# Farbtiefe:                           16                                          #
+# Datentyp:                            IEEE floating point data                    #
+# Koordinatenreferenzsystem_Lage:      25832                                       #
+# Koordinatenreferenzsystem_Hoehe:     7837                                        #
+# UTM_Zone:                            32                                          #
+# Koordinatenursprung_East:            568000.0                                    #
+# Koordinatenursprung_North:           6003000.0                                   #
+# Ausdehnung:                          1.0 x 1.0 km                                #
+# Standardabweichung_Lage:             20                                          #
+# Standardabweichung_Hoehe:            40                                          #
+# Erfassungsmethode:                   5040                                        #
+# Quelldatenqualitaet:                 0                                           #
+# Dateiformat:                         GeoTIFF                                     #
+# NODATA_Wert:                         nan                                         #
+# NODATA_enthalten:                    NEIN                                        #
+# Kompression:                         0                                           #
+# Komprimierung:                                                                   #
+# Belaubungszustand:                   0                                           #
+# Bemerkungen:                                                                     #
+# Software:                            SURE 5.x                                    #
+####################################################################################
+#                                                                                  #
+#          Landesamt für Vermessung und Geoinformation Schleswig-Holstein          #
+#                                                                                  #
+####################################################################################

@@ -1,0 +1,47 @@
+test_31_full_285_import_and_save_simulation (__main__.BoundaryIntegration.test_31_full_285_import_and_save_simulation) ... ok
+test_32_changed_interior_still_rejected (__main__.BoundaryIntegration.test_32_changed_interior_still_rejected) ... ok
+test_33_wrong_boundary_still_rejected (__main__.BoundaryIntegration.test_33_wrong_boundary_still_rejected) ... ok
+test_34_subset_missing_no_geometry_success (__main__.BoundaryIntegration.test_34_subset_missing_no_geometry_success) ... ok
+test_35_boundary_failure_keeps_saved_unverified_copy (__main__.BoundaryIntegration.test_35_boundary_failure_keeps_saved_unverified_copy) ... ok
+test_36_records_captured_before_assignment_failure (__main__.BoundaryIntegration.test_36_records_captured_before_assignment_failure) ... ok
+test_37_no_new_NX_methods_required (__main__.BoundaryIntegration.test_37_no_new_NX_methods_required) ... ok
+test_38_only_terrain_starter_integrates_chain_check (__main__.BoundaryIntegration.test_38_only_terrain_starter_integrates_chain_check) ... ok
+test_39_actual_false_distance_is_not_replaced (__main__.BoundaryIntegration.test_39_actual_false_distance_is_not_replaced) ... ok
+test_40_shuffled_simulated_API_output (__main__.BoundaryIntegration.test_40_shuffled_simulated_API_output) ... ok
+test_41_one_displaced_edge_middle_rejected (__main__.BoundaryIntegration.test_41_one_displaced_edge_middle_rejected) ... ok
+test_42_no_area_measurement_in_basis (__main__.BoundaryIntegration.test_42_no_area_measurement_in_basis) ... ok
+test_01_285_segments_not_rejected_by_count (__main__.BoundaryPure.test_01_285_segments_not_rejected_by_count) ... ok
+test_02_four_original_edges_still_accepted (__main__.BoundaryPure.test_02_four_original_edges_still_accepted) ... ok
+test_03_all_366_grid_edges_accepted (__main__.BoundaryPure.test_03_all_366_grid_edges_accepted) ... ok
+test_04_shuffled_reversed_edges_accepted (__main__.BoundaryPure.test_04_shuffled_reversed_edges_accepted) ... ok
+test_05_nonuniform_splits_accepted (__main__.BoundaryPure.test_05_nonuniform_splits_accepted) ... ok
+test_06_random_additional_splits (__main__.BoundaryPure.test_06_random_additional_splits) ... ok
+test_07_missing_segment_rejected (__main__.BoundaryPure.test_07_missing_segment_rejected) ... ok
+test_08_missing_side_rejected (__main__.BoundaryPure.test_08_missing_side_rejected) ... ok
+test_09_duplicate_geometry_with_new_tag_rejected (__main__.BoundaryPure.test_09_duplicate_geometry_with_new_tag_rejected) ... ok
+test_10_duplicate_tag_rejected_not_deduplicated (__main__.BoundaryPure.test_10_duplicate_tag_rejected_not_deduplicated) ... ok
+test_11_duplicate_index_rejected (__main__.BoundaryPure.test_11_duplicate_index_rejected) ... ok
+test_12_interior_hole_edge_rejected (__main__.BoundaryPure.test_12_interior_hole_edge_rejected) ... ok
+test_13_cross_corner_edge_rejected (__main__.BoundaryPure.test_13_cross_corner_edge_rejected) ... ok
+test_14_wrong_elevation_rejected (__main__.BoundaryPure.test_14_wrong_elevation_rejected) ... ok
+test_15_equal_endpoints_rejected (__main__.BoundaryPure.test_15_equal_endpoints_rejected) ... ok
+test_16_nan_coordinate_rejected (__main__.BoundaryPure.test_16_nan_coordinate_rejected) ... ok
+test_17_no_tolerance_relaxation_allowed (__main__.BoundaryPure.test_17_no_tolerance_relaxation_allowed) ... ok
+test_18_no_silent_edge_limit_truncation (__main__.BoundaryPure.test_18_no_silent_edge_limit_truncation) ... ok
+test_19_gap_under_original_sample_spacing_rejected (__main__.BoundaryPure.test_19_gap_under_original_sample_spacing_rejected) ... ok
+test_20_cumulative_small_gaps_rejected (__main__.BoundaryPure.test_20_cumulative_small_gaps_rejected) ... ok
+test_21_0251_mm_not_tolerated (__main__.BoundaryPure.test_21_0251_mm_not_tolerated) ... ok
+test_22_probe_count_and_all_edges (__main__.BoundaryPure.test_22_probe_count_and_all_edges) ... ok
+test_23_original_boundary_knots_unchanged (__main__.BoundaryPure.test_23_original_boundary_knots_unchanged) ... ok
+test_24_source_and_input_records_unchanged (__main__.BoundaryPure.test_24_source_and_input_records_unchanged) ... ok
+test_25_corner_junction_mismatch_rejected (__main__.BoundaryPure.test_25_corner_junction_mismatch_rejected) ... ok
+test_26_real_error_never_returns_successful_audit (__main__.BoundaryPure.test_26_real_error_never_returns_successful_audit) ... ok
+test_27_chord_cannot_replace_terrain_end_elevation (__main__.BoundaryPure.test_27_chord_cannot_replace_terrain_end_elevation) ... ok
+test_28_legacy_count_check_reproduces_reported_285 (__main__.BoundaryPure.test_28_legacy_count_check_reproduces_reported_285) ... ok
+test_29_source_x_y_not_rectilinear_rejected (__main__.BoundaryPure.test_29_source_x_y_not_rectilinear_rejected) ... ok
+test_30_three_edges_rejected_with_explicit_message (__main__.BoundaryPure.test_30_three_edges_rejected_with_explicit_message) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 33.393s
+
+OK

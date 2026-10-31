@@ -1,0 +1,316 @@
+{
+  "schema": "VIDEO_R10_V1",
+  "enabled": true,
+  "video_file": "Pxl 20261008 162732474-1.mp4",
+  "video_sha256": "f7039ff51aab1b966c81fdbf2a12ac8e8ad8f38f87766dc38e5564c96f5fdaac",
+  "video_duration_s": 213.463044,
+  "video_audio_transcribed": false,
+  "geometric_as_built_verified": false,
+  "structural_approval": false,
+  "evidence_document": "video/VIDEOBELEGE_R10.pdf",
+  "evidence_pages": 6,
+  "front_dormer": {
+    "wall_id": "DG_W_SUED",
+    "replace_ids": [
+      "DG_F_GAUBE_S1",
+      "DG_F_GAUBE_S2",
+      "DG_F_GAUBE_S3"
+    ],
+    "evidence": "VID01 00:59 und 01:26; lange strassenseitige Gaube. Keine Himmelsrichtung aus dem internen Namen abgeleitet.",
+    "groups": [
+      {
+        "offset_mm": 5450,
+        "width_mm": 750,
+        "panes": 1
+      },
+      {
+        "offset_mm": 6450,
+        "width_mm": 1500,
+        "panes": 2
+      },
+      {
+        "offset_mm": 8200,
+        "width_mm": 1500,
+        "panes": 2
+      },
+      {
+        "offset_mm": 9950,
+        "width_mm": 1500,
+        "panes": 2
+      },
+      {
+        "offset_mm": 11700,
+        "width_mm": 750,
+        "panes": 1
+      }
+    ]
+  },
+  "roof_windows": [
+    {
+      "id": "R10_DF_STRASSE",
+      "rect_mm": [
+        15700,
+        650,
+        16600,
+        1450
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 01:30",
+      "evidence_page": 2,
+      "dimension_status": "GESCHAETZT",
+      "frame_width_xy_mm": 70,
+      "placement_basis": "Visuelle Videozuordnung, Plausibilisierung an vorhandener 2025er Orthofoto-Kartenbasis. Nicht eingemessen."
+    },
+    {
+      "id": "R10_DF_HOF_01",
+      "rect_mm": [
+        8900,
+        7000,
+        9900,
+        7800
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 02:26; links unten in Hofansicht",
+      "evidence_page": 3,
+      "dimension_status": "GESCHAETZT",
+      "frame_width_xy_mm": 70,
+      "placement_basis": "Visuelle Videozuordnung, Plausibilisierung an vorhandener 2025er Orthofoto-Kartenbasis. Nicht eingemessen."
+    },
+    {
+      "id": "R10_DF_HOF_02",
+      "rect_mm": [
+        9650,
+        4650,
+        10450,
+        5350
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 02:26; links oben in Hofansicht",
+      "evidence_page": 3,
+      "dimension_status": "GESCHAETZT",
+      "frame_width_xy_mm": 70,
+      "placement_basis": "Visuelle Videozuordnung, Plausibilisierung an vorhandener 2025er Orthofoto-Kartenbasis. Nicht eingemessen."
+    },
+    {
+      "id": "R10_DF_HOF_03",
+      "rect_mm": [
+        13250,
+        6550,
+        14250,
+        7350
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 02:26 und 02:31; rechts unten",
+      "evidence_page": 3,
+      "dimension_status": "GESCHAETZT",
+      "frame_width_xy_mm": 70,
+      "placement_basis": "Visuelle Videozuordnung, Plausibilisierung an vorhandener 2025er Orthofoto-Kartenbasis. Nicht eingemessen."
+    },
+    {
+      "id": "R10_DF_HOF_04",
+      "rect_mm": [
+        13350,
+        4650,
+        14150,
+        5350
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 02:26 und 02:31; rechts oben",
+      "evidence_page": 3,
+      "dimension_status": "GESCHAETZT",
+      "frame_width_xy_mm": 70,
+      "placement_basis": "Visuelle Videozuordnung, Plausibilisierung an vorhandener 2025er Orthofoto-Kartenbasis. Nicht eingemessen."
+    },
+    {
+      "id": "R10_DF_NORDSEITE",
+      "rect_mm": [
+        100,
+        12150,
+        1000,
+        13050
+      ],
+      "roof_parent": "DACH_HAUPT",
+      "evidence": "VID01 00:25; neben kleiner Gaube/Garage",
+      "evidence_page": 4,
+      "dimension_status": "GESCHAETZT",
+      "frame_width_xy_mm": 70,
+      "placement_basis": "Visuelle Videozuordnung, Plausibilisierung an vorhandener 2025er Orthofoto-Kartenbasis. Nicht eingemessen."
+    }
+  ],
+  "pv_fields": [
+    {
+      "id": "R10_SOLAR_STRASSE",
+      "rectangles_mm": [
+        [
+          13100,
+          2800,
+          17000,
+          3550
+        ],
+        [
+          14500,
+          1800,
+          17800,
+          2700
+        ]
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 01:30; zwei versetzte Reihenbereiche rechts der langen Gaube",
+      "evidence_page": 2,
+      "dimension_status": "GESCHAETZT",
+      "window_clearance_xy_mm": 120,
+      "module_count": null
+    },
+    {
+      "id": "R10_SOLAR_HOF",
+      "rectangles_mm": [
+        [
+          8300,
+          4500,
+          17300,
+          5700
+        ],
+        [
+          8500,
+          5800,
+          15500,
+          7650
+        ]
+      ],
+      "roof_parent": "DACH_QUER",
+      "evidence": "VID01 02:26 und 02:31; Hofdach mit Fensteraussparungen",
+      "evidence_page": 3,
+      "dimension_status": "GESCHAETZT",
+      "window_clearance_xy_mm": 120,
+      "module_count": null
+    }
+  ],
+  "observations": [
+    {
+      "id": "V01",
+      "time": "00:59 / 01:26",
+      "observation": "Lange Gaube: 5 Fenstergruppen mit Teilung 1+2+2+2+1.",
+      "treatment": "Geometrie angepasst; Randbreiten/Lagen geschaetzt",
+      "metric_verified": false
+    },
+    {
+      "id": "V02",
+      "time": "01:30",
+      "observation": "Solarmodule in zwei versetzten Reihenbereichen rechts der langen Gaube.",
+      "treatment": "Umrissgruppen ergaenzt; keine Moduleinzelzaehlung",
+      "metric_verified": false
+    },
+    {
+      "id": "V03",
+      "time": "02:26 / 02:31",
+      "observation": "Weitere Solarmodule auf hofseitiger Dachflaeche; Fenster bleiben ausgespart.",
+      "treatment": "Umrissgruppe ergaenzt; keine Leistungs-/Lastangabe",
+      "metric_verified": false
+    },
+    {
+      "id": "V04",
+      "time": "01:30",
+      "observation": "Dachflaechenfenster unterhalb des strassenseitigen Modulfelds.",
+      "treatment": "Geometrie auf bestehender Dachhuelle ergaenzt",
+      "metric_verified": false
+    },
+    {
+      "id": "V05",
+      "time": "02:26 / 02:31",
+      "observation": "Mehrere Dachflaechenfenster in der hofseitigen Modulbelegung.",
+      "treatment": "Vier zugeordnete Fenster ergaenzt; keine Behauptung vollstaendiger Dachfensterinventur",
+      "metric_verified": false
+    },
+    {
+      "id": "V06",
+      "time": "00:25",
+      "observation": "Dachflaechenfenster bei Garagen-/kleinem Gaubenbereich.",
+      "treatment": "Ein geometrischer Referenzeinbau ergaenzt",
+      "metric_verified": false
+    },
+    {
+      "id": "V07",
+      "time": "01:36 / 01:39",
+      "observation": "Balkon mit horizontal gegliederter Verkleidung und schlanken Stuetzen.",
+      "treatment": "Nur Beobachtungsregister; Querschnitte, Auflager und Belag fehlen",
+      "metric_verified": false
+    },
+    {
+      "id": "V08",
+      "time": "01:39 / 01:43",
+      "observation": "Aussenliegender Kellerabgang mit Metallgelander.",
+      "treatment": "Nur Register; Stufen und absolute Hoehen nicht vermessen",
+      "metric_verified": false
+    },
+    {
+      "id": "V09",
+      "time": "00:04 / 00:36 / 02:30",
+      "observation": "Dachrinnen, Fallrohre und breite Traufverkleidungen sichtbar.",
+      "treatment": "Nur Register; Profile, Gefaelle und exakte Laengen offen",
+      "metric_verified": false
+    },
+    {
+      "id": "V10",
+      "time": "00:36",
+      "observation": "Blaue Wandbox mit angeschlossenem Kabel sichtbar.",
+      "treatment": "Als Wandgeraet dokumentiert; Fabrikat und Elektroinstallation nicht abgeleitet",
+      "metric_verified": false
+    },
+    {
+      "id": "V11",
+      "time": "00:46 / 01:26 / 02:23",
+      "observation": "Gelblich-braune Sichtmauerwerksfassade, roetlicher Sockel und dunkle Fensterrahmen.",
+      "treatment": "Nur Oberflaechenbeobachtung; kein Beleg innerer Wandschichten",
+      "metric_verified": false
+    },
+    {
+      "id": "V12",
+      "time": "01:26 / 02:26",
+      "observation": "Mehrere Schornsteinkoepfe erkennbar.",
+      "treatment": "Nur Register; Innenzuege, Abmessungen und Anschluesse unbekannt",
+      "metric_verified": false
+    },
+    {
+      "id": "V13",
+      "time": "02:10 / 02:14 / 02:31",
+      "observation": "Leichter verglaster Bau im Hof-/Gartenbereich sichtbar.",
+      "treatment": "Nur Register; nicht ungeprueft mit dem geplanten Wintergarten gleichgesetzt",
+      "metric_verified": false
+    },
+    {
+      "id": "V14",
+      "time": "02:02 / 02:06",
+      "observation": "Neu wirkende Holzsichtschutzfelder mit Metallpfosten und Pflanzbeeten.",
+      "treatment": "Nur Register; keine neue amtliche Grenze daraus abgeleitet",
+      "metric_verified": false
+    },
+    {
+      "id": "V15",
+      "time": "03:10 / 03:26",
+      "observation": "Pflasterzufahrt, Rasengitterstellflaechen, Gabionen auf hellen Sockeln.",
+      "treatment": "Nur Register; keine Aufbau-/Grenz- oder Fundamentmasse",
+      "metric_verified": false
+    },
+    {
+      "id": "V16",
+      "time": "02:42 / 02:58",
+      "observation": "Offene Bodenstellen und gelagertes Material sichtbar.",
+      "treatment": "Voruebergehender Aufnahmezustand; DGM nicht auf Verdacht geaendert",
+      "metric_verified": false
+    },
+    {
+      "id": "V17",
+      "time": "00:00 bis 03:33",
+      "observation": "Video ist ein Aussenrundgang; kein durchgehender Innenraum-/Dachstuhlscan.",
+      "treatment": "Keine ergaenzten Innenwaende, Sparren, Binder oder Leitungsverlegetiefen",
+      "metric_verified": false
+    },
+    {
+      "id": "V18",
+      "time": "02:26",
+      "observation": "Hofanschluss unterhalb geneigter Dachflaeche sichtbar, Flachdachaufbau verdeckt.",
+      "treatment": "Flachdach-R05/R06 bleibt unbestaetigt; keine neue Schichtung erfunden",
+      "metric_verified": false
+    }
+  ]
+}
