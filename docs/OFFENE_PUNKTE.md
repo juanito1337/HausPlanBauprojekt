@@ -15,5 +15,8 @@
 | REN-02 | Unabhängige Kopie von Basis und jedem Bauzustand. | Neu zu implementieren; echte NX-Integrationsprüfung erforderlich. |
 | REN-03 | K01-Studienmengen/-takte. | Historische Vergleichswerte; neue Geometrie muss neu bilanziert und auf Konflikte geprüft werden. |
 | PACK-01 | Historische ZIP-/Testbehauptungen ohne Artefakt. | Nicht übernehmen; neue Releases aus tatsächlichen Dateien bauen und frisch entpackt prüfen. |
+| TEST-WIN-01 | `r09.core.within()` weist `/tmp/x` unter Windows nicht ab; historischer Test `test_path_traversal_rejected` schlägt fehl. | Reproduziert am 31.10.2026; eigenständige bewusste G02-Revision erforderlich. Importnachweise nicht überschreiben. Der neue native G02-Aufbau und beide Ladeprüfungen sind unabhängig davon bestanden. |
+
+Ergänzung zu NX-01: Ein neuer G02-Stand wurde am 31.10.2026 tatsächlich erzeugt und unter `cad/nx/` für Git LFS abgelegt. Das ersetzt nicht die Sicherung etwaiger manueller Änderungen im früheren erfolgreichen Nutzer-Ausgabeordner. Nachweis: `docs/entwicklungsstand/NX-native-2026-10-31.md`.
 
 Aktive Entwicklung: `docs/ENTWICKLUNGSPLAN.md`. Änderungen an diesem Register benötigen einen konkreten Nachweis. „Tests grün“ allein schließt keinen der fachlichen Punkte.

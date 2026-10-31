@@ -48,6 +48,8 @@ git switch -c feature/keller-renovierung
 
 ## 5. Große Dateien
 
+**Aktuelle Ausnahme auf Nutzerauftrag vom 31.10.2026:** Neue native Lieferungen unter `cad/nx/` werden jetzt bewusst mit Git LFS versioniert (`cad/nx/**/*.prt`). Nach einem Clone `git lfs install --local` und `git lfs pull` ausführen. Vor einem Push mit `git lfs ls-files` und `git lfs fsck` prüfen. Die initialen G02-Quellen bleiben unverändert; keine Migration oder Umschreibung alter Commits. Arbeitskopien unter `local_data/` bleiben ignoriert. Aktuelle Bedienung und NX-Ladeverfahren: `cad/nx/README.md`.
+
 Die initial mitgelieferten versionierten Einzeldateien sind kleiner als 100 MiB; daher ist für diesen Stand kein Git LFS zwingend erforderlich. Das Gesamt-ZIP ist viel größer als einzelne Dateien. Die entpackten Dateien per Git push übertragen; den ZIP nicht als einzelne Repository-Datei ablegen.
 
 Neue große `.prt`, Videos oder Roharchive zunächst außerhalb von Git unter `local_data/` lassen. Werden sie ausdrücklich zur Versionierung ausgewählt, vorher Git LFS und dessen Speicher-/Zugriffsregeln einrichten. Keine nachträgliche History-Umschreibung ohne bewusstes Vorgehen. `.gitignore` ist kein Datenschutzfilter für bereits eingecheckte Dateien.

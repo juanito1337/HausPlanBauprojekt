@@ -8,6 +8,10 @@ G02 (`projects/g02/`) ist die vom Nutzer als funktionierend gemeldete Ausgangsba
 K01 ist **nicht ausführbar vorhanden**. `renovierung/k01_unterlagen/` enthält 8 historische Dateien; `renovierung/recovered/` enthält zusätzlich den sicher aus der HTML-Vorschau extrahierten JSON-Studienplan. Seine CAD-Verweise sind keine vorhandenen CAD-Dateien. Alte Startanleitungen, Testzahlen und CAD-Mengen sind keine Belege für verfügbaren K01-Code oder aktuelle, nachgerechnete Geometrie. Fehlende `.py`, `.step`, `.prt` niemals als vorhanden behaupten.
 
 ## Prüfungen
+- Nutzerauftrag vom 31.10.2026: Native NX-Dateien unter `cad/nx/` mit Git LFS versionieren. Diese gezielte Ausnahme ersetzt dort die frühere Regel, alle `.prt` ausschließlich lokal zu halten. Keine alten Originaldateien überschreiben.
+- Bei jeder Änderung an Erzeugercode, Geometrie oder Modelleingaben den aktuellen Stand tatsächlich in einer separaten NX-Sitzung neu erzeugen und erneut öffnen: `python tools/nx_project.py build --accept-model-assumptions`. Der Schalter bestätigt ausschließlich die dokumentierten bestehenden Modellannahmen für die Visualisierung, keine bautechnische Freigabe.
+- Vor jedem Abschluss `python tools/nx_project.py check` ausführen. Der Nachweis muss zu den aktuellen Quell-/Generatorhashes und nativen Dateien passen. Bei reiner Dokumentation genügt dieser Aktualitätscheck eines bereits erfolgreichen echten NX-Laufs. Offline-Checks allein erlauben keine Aussage „in NX erstellbar“; fehlende Lizenz/Installation oder fehlgeschlagene Builds ausdrücklich als nicht bestanden melden.
+- Neue ausführbare Renovierungsmodule in den NX-Build-/Prüfumfang und Quellfingerprint aufnehmen, sobald sie eingeführt werden. Der aktuelle Runner prüft ausschließlich die tatsächlich vorhandene G02-Engine, keine noch geplante K02-Funktion.
 - Schnell: `python tools/run_checks.py`.
 - Gesamter vorhandener Python-/Simulationsstand: `python tools/run_checks.py --full`.
 - Optionale externe CAD-Prüfung: `python tools/run_checks.py --full --cad`, nur mit den separat dokumentierten Abhängigkeiten.

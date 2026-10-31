@@ -2,6 +2,16 @@
 
 Stand dieser Übergabe: **31.10.2026**.
 
+## Ergänzung: echte native NX-Lieferung
+
+Am 31.10.2026 wurde der unveränderte G02-Erzeuger mit **NX 2406.6000** tatsächlich vollständig ausgeführt. Die neue Lieferung liegt unter `cad/nx/20261031T134924_e0fb72/`: **29 `.prt`-Dateien**, insgesamt 36.028.198 Bytes. Master: `PROJEKT_MASTER_G02_PLANBEZUG_1953e9e2.prt`. Haus: 1.418 Körperaufträge in 15 Komponenten. Umgebung und höhenbezogene Gesamtmontage wurden erzeugt und gespeichert.
+
+Wiederöffnen in einem frischen NX-Prozess und Laden einer verschobenen Kopie bestanden; alle 29 Parts vollständig geladen, in mm und innerhalb des jeweils geprüften Ordners. `BUILD.json`/`VERIFY.json` und `CURRENT.json` ordnen die Lieferung zu. Versionierung über Git LFS. Diese neue Erzeugung übernimmt keine manuellen Änderungen aus früheren Nutzerdateien.
+
+51 aktuelle Repository-/Werkzeugtests bestanden (ein bereits bestehender Windows-Symlinktest übersprungen). Die vollständige historische G02-Suite wurde ausgeführt, ist unter Windows aber nicht vollständig grün: nach UTF-8-Korrektur der Testumgebung bleibt der Pfadtest für `/tmp/x` offen. Einzelheiten und ausgeführte Befehle: [Entwicklungsnachweis](entwicklungsstand/NX-native-2026-10-31.md). Vor jedem Abschluss ist der native Aktualitätscheck verpflichtend; Erzeugeränderungen benötigen einen neuen echten NX-Lauf.
+
+Die folgenden Angaben beschreiben den ursprünglichen importierten Lieferbestand; insbesondere bleiben K01-Lücken und fachliche Einschränkungen bestehen.
+
 ## Was tatsächlich verfügbar ist
 
 G02 ist vollständig aus `NX_GESAMT_G02_HOEHENBEZUG.zip` übernommen: 543 Dateien unter `projects/g02/`. Das Quellarchiv, die einzelnen Dateihashes und ihre Zielorte sind im Importmanifest dokumentiert. Kein G02-Programm und keine Geometrie wurde für die Git-Übergabe verändert. Die internen Paketregister (542 Einträge im äußeren Register plus Registerdatei selbst) bleiben gültig.

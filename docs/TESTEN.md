@@ -1,12 +1,25 @@
 # Testen ohne erfundene Erfolgsnachweise
 
+## Verbindlicher nativer Projektcheck ab 31.10.2026
+
+Auf Nutzerwunsch werden neue native Ausgaben unter `cad/nx/` mit Git LFS verwaltet. Vor einem Abschluss `python tools/nx_project.py check` ausführen: Der gespeicherte echte NX-Nachweis muss zu aktuellen Quell-/Generatorhashes und allen nativen Dateien passen. Nach Erzeuger-/Geometrieänderungen ist ein neuer echter Lauf erforderlich:
+
+```sh
+python tools/nx_project.py build --nx-root C:/Siemens/NX2406 --accept-model-assumptions
+python tools/nx_project.py check
+```
+
+Der Build enthält neue Erzeugung, Wiederöffnen in einem frischen NX-Prozess und Laden einer verschobenen Kopie. Ein separates Prüfjournal verweigert ungeladene Teile, fremde Komponentenpfade, falsche Einheiten und geänderte Dateien. Details: `cad/nx/README.md`. `python tools/run_checks.py` prüft den gespeicherten nativen Nachweis jetzt standardmäßig mit und scheitert bei fehlendem oder veraltetem Nachweis. `python tools/run_checks.py --full --nx --accept-model-assumptions` kombiniert alle Offline-Tests mit einem neuen echten NX-Lauf. Die gewöhnliche Cloud-CI lädt Git-LFS-Dateien, besitzt aber keine NX-Lizenz; dort kann nur der gespeicherte Nachweis geprüft werden, nicht ein neuer NX-Lauf behauptet werden.
+
+Lokal ist Python 3.12.14 auch über die vorhandene Codex-Laufzeit verfügbar, obwohl `python` im PATH auf den Windows-Store-Alias zeigte. Für die folgenden Befehle einen tatsächlich verfügbaren Python-Interpreter verwenden; NX-Python bleibt unverändert.
+
 ## 1. Schneller Repository-Check
 
 ```sh
 python tools/run_checks.py
 ```
 
-Benötigt nur Python >=3.10. Prüft G02/K01-Importhashes, Python-3.10-Syntax und die Repository-Werkzeugtests. Kein NX-Import, keine neue Geometrie. Eine absichtlich geänderte Datei im importierten G02-Stand führt zu einer sichtbaren Abweichung; die historischen Importhashes werden nicht automatisch aktualisiert.
+Benötigt Python >=3.10 und ausgecheckte Git-LFS-Nativdateien. Prüft G02/K01-Importhashes, Python-3.10-Syntax, die Repository-Werkzeugtests und die Aktualität des gespeicherten nativen Nachweises. Kein NX-Import, keine neue Geometrie. Eine absichtlich geänderte Datei im importierten G02-Stand führt zu einer sichtbaren Abweichung; die historischen Importhashes werden nicht automatisch aktualisiert.
 
 ## 2. Vorhandener vollständiger Python-/Simulationsstand
 

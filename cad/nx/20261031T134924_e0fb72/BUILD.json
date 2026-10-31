@@ -1,0 +1,166 @@
+{
+  "schema": "HAUSPLAN_NX_BUILD_V1",
+  "status": "PASS",
+  "native_NX_run_completed": true,
+  "source_fingerprint": "7ffccaab4cd230f8934b960d5145fcb184dfcb4829ab3a6d82628da41cb4af4b",
+  "nx_version": "2406.6000",
+  "completed_at": "2026-10-31T13:55:43.661095+01:00",
+  "master": "PROJEKT_MASTER_G02_PLANBEZUG_1953e9e2.prt",
+  "parts": [
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/00_STEUERUNG.prt",
+      "bytes": 493980,
+      "sha256": "1fc2a38e7875e0456d08d943c4118da0a87ae49b205da687155cb085a3958a6b"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/02_KELLER.prt",
+      "bytes": 3186502,
+      "sha256": "6526518a5ac7a3475100e3b494147d448728d683cf661f46fef181f148a1dbbb"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/02B_KELLER_ANBAU.prt",
+      "bytes": 810888,
+      "sha256": "7bfd2a3e164f087363828303c94090613787cd987289efb0d00ebc00699e2a55"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/03_ERDGESCHOSS.prt",
+      "bytes": 4901075,
+      "sha256": "d6f78524d93a61223969977c5cec0d6dc9e16cc0485fcae30b506177c97557a8"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/03B_ERDGESCHOSS_ANBAU.prt",
+      "bytes": 2080835,
+      "sha256": "12da4e2fffb05268417416ed240661d64da75940a78d06e0af885f648f7e28d9"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/03C_GARAGE.prt",
+      "bytes": 874093,
+      "sha256": "88f0b0a336effa39b2ffdb816748b0a39c665527406416889b4e4aa0e536f0e0"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/04_DACHGESCHOSS.prt",
+      "bytes": 5752869,
+      "sha256": "a30789f0e6dc78298a1a739c98d07de444201b06487a3632e6fe69c641a3b2c2"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/05_DACH_PRUEFHUELLE.prt",
+      "bytes": 1638968,
+      "sha256": "39dc94360f249acdb8eeab15e0a9f7c5e70a34da144451def77b57d17288b906"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/05B_FLACHDACH_ANBAU_REFERENZ.prt",
+      "bytes": 508469,
+      "sha256": "2975872ff6f0b6544d9a68a3145e913be236b763fda99d9c2b74f5a637694681"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/08_VIDEO_DACHFENSTER_R10.prt",
+      "bytes": 1004966,
+      "sha256": "416c37c0330b2207e58d306368b61313306675870625a67ae79c94ae61c40367"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/09_VIDEO_SOLARFELDER_R10.prt",
+      "bytes": 665154,
+      "sha256": "66cf06af3946c6d2f52a88390e27f560fe5b95698bde86690104df311a81c5cb"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/10_BALKON_RECHTS_MAIN01.prt",
+      "bytes": 883560,
+      "sha256": "42ea6258ffff5ddf6f974e30eac1d8d45d24d59d79fd00480655f34d1e145998"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/11_BALKON_ZUGANG_MAIN01.prt",
+      "bytes": 547778,
+      "sha256": "9636a93fb256a450f828abc25417acc38cd4aa95afc04ba654468807bd6ba030"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/12_KELLERABGANG_GELAENDER_MAIN01.prt",
+      "bytes": 1049943,
+      "sha256": "b49ec9919b04ffb31ec6020f93614eebe5d72465f5691e17cb07fde0f4d824d6"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/13_FALLROHR_REFERENZEN_MAIN01.prt",
+      "bytes": 554978,
+      "sha256": "08ce624e4f8169c5477400919e6962d97ffde33f0e78e12be9efb5c525b005a2"
+    },
+    {
+      "path": "haus/HAUS_20261031_134951_4b0fee/HAUS_MASTER.prt",
+      "bytes": 246901,
+      "sha256": "92fa34df1fa591c43c806645114428c4600d9ee967122e9ccc0faeb728dfe2df"
+    },
+    {
+      "path": "planreferenzen/07A_GAS_PLANPROJEKTION_G02_1953e9e2.prt",
+      "bytes": 58158,
+      "sha256": "791e3575cebbd223b64e777870d2922b8b05ac367195c6f7ca452b6f6ef6cab1"
+    },
+    {
+      "path": "planreferenzen/07B_STROM_PLANPROJEKTION_G02_1953e9e2.prt",
+      "bytes": 60876,
+      "sha256": "18218c53da6f564ee8afd7bc13b9607d7454904db96ff451a0072950306aa36c"
+    },
+    {
+      "path": "planreferenzen/07C_TELEFON_PLANPROJEKTION_G02_1953e9e2.prt",
+      "bytes": 61433,
+      "sha256": "db94f827d51ac2adf3ff8aec0cd67bca3c1ac5f9617ab4887db044f97d4d9e97"
+    },
+    {
+      "path": "planreferenzen/07D_BREITBAND_PLANPROJEKTION_G02_1953e9e2.prt",
+      "bytes": 61762,
+      "sha256": "1760bc7abc6728d49b217410be0d74f6fb8d3d2603a6a1198683ab6440294a05"
+    },
+    {
+      "path": "planreferenzen/LEITUNGSPLAN_MASTER_G02_1953e9e2.prt",
+      "bytes": 62159,
+      "sha256": "aaf6852ca3c9084333bb470e805c2372f7cda7da0ad7898c0a1fe20dfb6803c5"
+    },
+    {
+      "path": "PROJEKT_MASTER_G02_PLANBEZUG_1953e9e2.prt",
+      "bytes": 252831,
+      "sha256": "fcaef1bfe8a13d52e617187e50b2526be2facb72cc677a7c38df420148d93722"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/01_GELAENDE_R09.prt",
+      "bytes": 8115018,
+      "sha256": "20a8d5ef473e1fcb5b2f9d254e2baa737ee2090f503c6786a59e4262dc3999eb"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/02_V01_HECKENBEREICH_R09.prt",
+      "bytes": 830952,
+      "sha256": "3416b15adb52b82b116896c516b4c68c6978a1a01571a226bc17089576fccf8d"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/03_V02_HECKENBEREICH_R09.prt",
+      "bytes": 530766,
+      "sha256": "cb5c3216fbe0242095f6fbf9dbc2263db4ef35b19e2ed4a0dde1b8fcf8584ebe"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/04_V03_GEHOELZKRONE_R09.prt",
+      "bytes": 301397,
+      "sha256": "cdd98efbd3c340b88a2fd50bb269d6da19155c9903c647f270422b719f74f49c"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/06_V05_GEHOELZKRONE_R09.prt",
+      "bytes": 289034,
+      "sha256": "097fa086475ca1761aff0d83708d421bc25d0f849ab09d2eeb34701303889d33"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/11_KARTENREFERENZEN_R09.prt",
+      "bytes": 136850,
+      "sha256": "9a0520363893970cbe86fe21cdadb8f7386a743a4ea818ab919816b4f179ccb4"
+    },
+    {
+      "path": "umgebung/R09_20261031_135104_8e5c70/umgebung/UMGEBUNG_MASTER_R09.prt",
+      "bytes": 66003,
+      "sha256": "2dc11c43ab1784b4e9dbb3247903f102c31f83c665754be3f92aed883e5c92e3"
+    }
+  ],
+  "house_bodies": 1418,
+  "house_components": 15,
+  "height_translation_mm": [
+    0.0,
+    0.0,
+    -31362.49870845903
+  ],
+  "surface_validation": "BASIS",
+  "source_commit": "1277a60caeb0667a79aadc7c995ec7dcf3c80785",
+  "source_commit_is_context_fingerprint_is_authoritative": true
+}

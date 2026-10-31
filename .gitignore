@@ -47,3 +47,13 @@ Thumbs.db
 *.tar
 *.tar.gz
 *.tgz
+
+# Native NX deliveries: only reviewed parts and compact build evidence.
+/cad/nx/**
+!/cad/nx/**/
+!/cad/nx/**/*.prt
+!/cad/nx/README.md
+!/cad/nx/CURRENT.json
+!/cad/nx/LAST_ATTEMPT.json
+!/cad/nx/*/BUILD.json
+!/cad/nx/*/VERIFY.json

@@ -24,3 +24,6 @@ historie/diagnosen/** -text
 *.step -text -diff
 *.stp -text -diff
 *.prt binary
+
+# Versioned native NX delivery; source/import snapshots remain unchanged.
+cad/nx/**/*.prt filter=lfs diff=lfs merge=lfs -text

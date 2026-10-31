@@ -2,6 +2,8 @@
 
 **Git-fähiger Entwicklungsstand vom 31.10.2026.** Dieses Repository enthält den tatsächlich verfügbaren G02-Quellcode mit seinen Plan-/Geometriequellen, die erhaltenen K01-Unterlagen, den Außenrundgang und eine eigenständige Übergabe an Codex.
 
+**Erweiterung auf Nutzerwunsch:** Native NX-Dateien werden unter [`cad/nx/`](cad/nx/README.md) mit Git LFS verwaltet. Der neue Einstieg `tools/nx_project.py` erzeugt den G02-Stand in einer separaten echten NX-Sitzung und prüft Wiederöffnen/Portabilität. Der jeweils tatsächliche Status steht in `cad/nx/LAST_ATTEMPT.json`; nur ein vollständig geprüfter Lauf erhält einen Eintrag in `cad/nx/CURRENT.json`. Quell-/Generatoränderungen entwerten den alten Nachweis.
+
 > **Privates Repository verwenden.** Hauspläne, Grundstücksdaten, Bilder, lokale Pfade und teilweise personenbezogene Angaben sind enthalten. Dieses Verzeichnis ist nicht anonymisiert.
 
 ## Zuerst lesen
@@ -57,4 +59,4 @@ Höhenanschluss: vorläufiger Planansatz, **nicht vermessen**. Grundstücksgrenz
 - `reports/handoff/`: tatsächlich bei dieser Übergabe ausgeführte Prüfungen.
 - `provenance/IMPORT_MANIFEST.json`: Herkunft und SHA-256 aller importierten G02-/K01-Dateien.
 
-Kein Repository wurde online angelegt oder veröffentlicht. Keine NX-Lizenzdateien oder Zugangsdaten sind für die Werkzeuge erforderlich.
+Der ursprüngliche Übergabestand wurde am 31.10.2026 in `juanito1337/HausPlanBauprojekt` hochgeladen. Neue lokale Commits sind erst nach einem tatsächlichen Push auf GitHub verfügbar. Lizenzdateien oder Zugangsdaten gehören nicht ins Repository; echte NX-Läufe benötigen die lokal verfügbare NX-Lizenz.

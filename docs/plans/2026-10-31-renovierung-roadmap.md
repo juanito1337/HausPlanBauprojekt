@@ -3,6 +3,8 @@
 Stand: 31.10.2026. Status: **Planung erstellt; Entwicklung noch nicht begonnen.**
 Auftrag: Roadmap mit wiederverwendbaren Entwicklungsprompts; Superpowers für die Entwicklung einsetzen.
 
+**Nachfolgender Nutzerauftrag:** Native NX-Dateien im Repository mit Git verwalten und fortlaufend echte NX-Erstellbarkeit prüfen. Umsetzung/Nachweise werden im [NX-Prüfplan](2026-10-31-nx-git-und-pruefung.md) und unter `cad/nx/` geführt. Die ursprüngliche reine-Lokaldaten-Regel gilt weiterhin für fremde Originale und Arbeitskopien; gezielt erzeugte native Lieferungen dürfen unter `cad/nx/` mit Git LFS versioniert werden. P00/P01 werden erst nach ihrer jeweiligen vollständigen Abnahme als erledigt markiert.
+
 ## Ziel und Ausgangslage
 
 Aus dem vorhandenen G02-Bestand soll eine separat entwickelte Renovierungsstudie entstehen: unabhängige NX-Basis, nachvollziehbare Abschnitte, A/B-Aushubvarianten, Mengen-/Lagerbilanz und unabhängige gespeicherte Bauzustände. G02 und seine historischen Importnachweise bleiben unverändert. Softwareabnahme, echter NX-Nachweis und fachliche Freigabe sind getrennte Ergebnisse.
@@ -42,7 +44,7 @@ Die P-Nummern sind aufrufbare Entwicklungsprompts im [Promptkatalog](2026-10-31-
 
 | Prompt | Meilenstein | Ergebnis | Voraussetzung / nachweisbare Abnahme | Status |
 |---|---|---|---|---|
-| P00 | M0 | Aktuelle Testbasis und Quellenübersicht | Python-Version/Pfad, beide Offline-Befehle mit Rückgabecode; native Quelle vorhanden oder konkret als fehlend dokumentiert | Offen |
+| P00 | M0 | Aktuelle Testbasis und Quellenübersicht | Python-Version/Pfad, beide Offline-Befehle mit Rückgabecode; native Quelle vorhanden oder konkret als fehlend dokumentiert | Teilweise: Python und neue native NX-Basis vorhanden; historischer Windows-Pfadtest offen, siehe [Nachweis](../entwicklungsstand/NX-native-2026-10-31.md) |
 | P01 | M0 | Rein lesendes Dateiinventar mit SHA-256 | P00 Testumgebung; deterministische Ausgabe, unveränderte Quelle, keine behaupteten NX-Referenzen | Offen |
 | P02 | M0 | Reales NX-Baugruppeninventar | P01; explizit gewählte native Quelle und bewusst gestarteter NX-Leselauf, Status vor/nach unverändert | Wartet auf native Quelle/NX |
 | P03 | M1 | Offline-Kopierplan mit Abhängigkeitsprüfung | P02 für echten Bestand; zuvor synthetische Entwicklung möglich; alle Prototypen/Fremdreferenzen zugeordnet oder gesperrt | Offen |
