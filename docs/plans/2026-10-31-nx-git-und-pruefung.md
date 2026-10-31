@@ -19,7 +19,7 @@ Der Nachweis enthält Quellfingerprint, Generatorfingerprint, NX-Version, Datum,
 - [x] Vollständigen echten G02-Aufbau ausführen; Fehler reproduzieren und begründet behandeln, keine Schutzprüfungen umgehen.
 - [x] Gespeicherte Baugruppe in frischem NX öffnen; verschobene Kopie vollständig laden und alle Pfade/Hashes prüfen.
 - [x] AGENTS.md, Testanleitung, Projektstand und Roadmap um verpflichtende NX-Prüfung ergänzen.
-- [ ] Offline-Tests, G02-Importhashes, LFS-Zuordnung, Native-Nachweis und Diff prüfen; unabhängiges Review; gezielt committen.
+- [x] Offline-Tests, G02-Importhashes, LFS-Zuordnung, Native-Nachweis und Diff prüfen; unabhängiges Review; gezielt committen. Nativer Implementierungsstand: `a8b7f62`; `git lfs fsck` bestanden. Historischer Windows-Pfadtest bleibt ausdrücklich offen.
 
 ## Abnahme
 
