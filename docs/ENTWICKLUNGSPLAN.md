@@ -1,5 +1,15 @@
 # Nächste Arbeitspakete für Codex
 
+## Aktive Roadmap und Entwicklungsprompts
+
+Stand 31.10.2026: Git-Import abgeschlossen (`085b13a`); Entwicklung der Renovierungserweiterung noch nicht begonnen. Aktuell ist **M0 / P00** der Einstieg. Die folgenden M0–M6 bleiben die fachliche Reihenfolge.
+
+- [Roadmap mit Status, Abhängigkeiten und Abnahmen](plans/2026-10-31-renovierung-roadmap.md)
+- [Entwicklungsprompts P00–P10 mit gemeinsamem Superpowers-Startblock](plans/2026-10-31-entwicklungsprompts.md)
+- [Erster Detailplan: rein lesendes Dateiinventar P01](plans/2026-10-31-m0-dateiinventar-plan.md)
+
+Kurzauftrag: „Arbeite P00 aus `docs/plans/2026-10-31-entwicklungsprompts.md` mit dem gemeinsamen Startblock ab.“
+
 ## M0 – Bestand sichern (vor Maßnahmengeometrie)
 
 G02-Import und Tests reproduzieren. Erfolgreichen Nutzer-Lauf als lokale Quelle inventarisieren, ohne Dateien zu verändern. Den vollständigen Baugruppenbaum, Komponentenpfade, Einheiten, Transformationen, Unterdrückungen, Referenzmengen, Materialien und Änderungszustände dokumentieren. Fehlende Quellen und manuelle Änderungen sichtbar melden. Abnahme: rein lesender Bericht, keine NX-/Dateiänderung durch Inventarisierung.
