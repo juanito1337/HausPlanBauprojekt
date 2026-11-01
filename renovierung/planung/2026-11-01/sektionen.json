@@ -1,0 +1,1641 @@
+{
+  "schema": "KELLER_PLANUNGSKATALOG_V01_DOCUMENT_ONLY",
+  "date": "2026-11-01",
+  "source_file": "projects/g02/haus/data/haus.json",
+  "source_sha256": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+  "units": "mm",
+  "coordinate_system": {
+    "origin": "vorlaeufige untere linke Ecke des Hauptbaukoerpers in den Grundrissen",
+    "x": "nach rechts im Grundriss",
+    "y": "nach oben im Grundriss",
+    "z": "nach oben",
+    "north_azimuth_deg": null,
+    "note": "Keine globale Vermessung / Nordorientierung freigegeben. Geschossteile in absoluten Gebaeudekoordinaten, Baugruppentransformation Identitaet.",
+    "directional_ids_note": "Historische Bauteilnamen WEST/OST/SUED/NORD sind lokale Identifikatoren; nicht als verifizierte Himmelsrichtung verwenden.",
+    "map_north_direction_local": [
+      -0.9800809855360428,
+      0.1985982421641719
+    ],
+    "north_status": "AUS_G05_KARTENREGISTRIERUNG_KEINE_VERMESSUNGSFREIGABE"
+  },
+  "evidence": "AKTIVES_MODELL_KEIN_BESTANDSAUFMASS",
+  "user_confirmed_missing_evidence": [
+    "Belastbare Baugrundunterlagen",
+    "Belastbare Fundamentunterlagen"
+  ],
+  "construction_release": false,
+  "footprints": {
+    "KG": [
+      [
+        0,
+        0
+      ],
+      [
+        20385,
+        0
+      ],
+      [
+        21160,
+        4800
+      ],
+      [
+        15190,
+        5840
+      ],
+      [
+        15190,
+        7930
+      ],
+      [
+        5650,
+        7930
+      ],
+      [
+        5650,
+        13250
+      ],
+      [
+        7930,
+        13250
+      ],
+      [
+        7930,
+        18930
+      ],
+      [
+        0,
+        18930
+      ]
+    ],
+    "ANBAU_KG": [
+      [
+        15450.0,
+        5865.0
+      ],
+      [
+        24047.372,
+        4349.051
+      ],
+      [
+        26344.737,
+        17378.058
+      ],
+      [
+        17747.365,
+        18894.007
+      ]
+    ],
+    "EG": [
+      [
+        0,
+        0
+      ],
+      [
+        20645,
+        0
+      ],
+      [
+        21390,
+        5020
+      ],
+      [
+        15450,
+        6070
+      ],
+      [
+        15450,
+        7990
+      ],
+      [
+        11355,
+        7990
+      ],
+      [
+        11355,
+        13250
+      ],
+      [
+        7990,
+        13250
+      ],
+      [
+        7990,
+        18990
+      ],
+      [
+        0,
+        18990
+      ]
+    ],
+    "GARAGE": [
+      [
+        -4250,
+        12500
+      ],
+      [
+        0,
+        12500
+      ],
+      [
+        0,
+        18990
+      ],
+      [
+        -4250,
+        18990
+      ]
+    ]
+  },
+  "areas_m2": {
+    "KG": 225.4575,
+    "ANBAU_KG": 115.497908143989,
+    "EG": 260.10275,
+    "GARAGE": 27.5825
+  },
+  "sectors": [
+    {
+      "id": "PS01",
+      "label": "Hauptkeller, untere Grundrissseite",
+      "segments": [
+        {
+          "source_wall": "KG_AW_01",
+          "a": [
+            0,
+            0
+          ],
+          "b": [
+            20385,
+            0
+          ],
+          "length_mm": 20385.0,
+          "outside_normal": [
+            0.0,
+            -1.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            20385,
+            0
+          ]
+        ]
+      ],
+      "length_mm": 20385.0,
+      "source_walls": [
+        "KG_AW_01"
+      ],
+      "risks": [
+        "Historische Strom-, Telefon- und Gas-Hausanschluesse; Tiefen unbekannt",
+        "Fenster; Gelaende im DGM ungleichmaessig",
+        "Fundamente/Baugrund/Wasser nicht belegt"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Leitungen und Gelände",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS01/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen. Vor Flächenwahl Strom, Gas und Telekom orten; auffällige Geländesenke vermessen.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS01-MED",
+        "note": "Medien-Arbeitskammer nur bei Bedarf. Lage/Tiefe/Abmessungen offen; Betreiberplan und Ortung erforderlich."
+      }
+    },
+    {
+      "id": "PS02",
+      "label": "Hauptkeller, Balkon und Kellerabgang",
+      "segments": [
+        {
+          "source_wall": "KG_AW_02",
+          "a": [
+            20385,
+            0
+          ],
+          "b": [
+            21160,
+            4800
+          ],
+          "length_mm": 4862.1625846941815,
+          "outside_normal": [
+            0.9872150337197967,
+            -0.15939409398600884
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            20385,
+            0
+          ],
+          [
+            21160,
+            4800
+          ]
+        ]
+      ],
+      "length_mm": 4862.1625846941815,
+      "source_walls": [
+        "KG_AW_02"
+      ],
+      "risks": [
+        "Kellerabgang nur geschaetztes Gelaender, keine Schacht- oder Treppengeometrie",
+        "Balkonstuetzen mit unbekannten Fundamenten",
+        "Anbauanschluss am oberen Ende"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Abgang und Balkonstützen",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS02/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "B vertieft untersuchen. A benötigt Platznachweis neben Abgang/Stützen. Keine Reaktionskräfte gegen ungeprüfte Bauteile.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS02-ABG",
+        "note": "Nur geschätztes Geländer modelliert. Treppe, Sohle, Wände, Ablauf und Gründung fehlen; Zugang erhalten."
+      }
+    },
+    {
+      "id": "PS03",
+      "label": "Hauptbau-Anbau-Anschluss",
+      "segments": [
+        {
+          "source_wall": "KG_AW_03",
+          "a": [
+            21160,
+            4800
+          ],
+          "b": [
+            15190,
+            5840
+          ],
+          "length_mm": 6059.909240244445,
+          "outside_normal": [
+            0.17161973204041722,
+            0.9851632695012412
+          ]
+        },
+        {
+          "source_wall": "KG_AW_04",
+          "a": [
+            15190,
+            5840
+          ],
+          "b": [
+            15190,
+            7930
+          ],
+          "length_mm": 2090.0,
+          "outside_normal": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            21160,
+            4800
+          ],
+          [
+            15190,
+            5840
+          ]
+        ],
+        [
+          [
+            15190,
+            5840
+          ],
+          [
+            15190,
+            7930
+          ]
+        ]
+      ],
+      "length_mm": 8149.909240244445,
+      "source_walls": [
+        "KG_AW_03",
+        "KG_AW_04"
+      ],
+      "risks": [
+        "Gegenueberliegende Hauptbau-/Anbaukonturen mit nur ca. 57 bis 69 mm Abstand an KG_AW_03",
+        "KG_AW_04 schmale Anschlusszone; kein nachgewiesener Arbeitsraum",
+        "Unterschiedliche Kellerhoehen und ungeklaerte Gruendungsanschluesse"
+      ],
+      "status": "SONDERBEREICH_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Hauptbau / Anbau",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS03/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B als Standard-Außengraben gesperrt. Zuerst Haupt-/Anbaukontakt, Gründung und reale Zugänglichkeit klären.",
+      "special_conflict": true,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS03-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS04",
+      "label": "Hauptkeller, aeusserer oberer Querbauabschnitt",
+      "segments": [
+        {
+          "source_wall": "KG_AW_05",
+          "a": [
+            15190,
+            7930
+          ],
+          "b": [
+            11355,
+            7930
+          ],
+          "length_mm": 3835.0,
+          "outside_normal": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            15190,
+            7930
+          ],
+          [
+            11355,
+            7930
+          ]
+        ]
+      ],
+      "length_mm": 3835.0,
+      "source_walls": [
+        "KG_AW_05"
+      ],
+      "risks": [
+        "Anbauecke bei x=15190; engster Konturabstand dort ca. 615 mm",
+        "EG-Umrissversatz und Ecke gesondert pruefen"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Versatz und Anbauecke",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS04/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen. Engen Anschluss zu PS03/PS13 und EG-Versatz mit Eck- und Fundamentnachweis lösen.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS04-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS05",
+      "label": "Ueberbaute und widerspruechliche KG-/EG-Kontur",
+      "segments": [
+        {
+          "source_wall": "KG_AW_05",
+          "a": [
+            11355,
+            7930
+          ],
+          "b": [
+            5650,
+            7930
+          ],
+          "length_mm": 5705.0,
+          "outside_normal": [
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "source_wall": "KG_AW_06",
+          "a": [
+            5650,
+            7930
+          ],
+          "b": [
+            5650,
+            13250
+          ],
+          "length_mm": 5320.0,
+          "outside_normal": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "source_wall": "KG_AW_07",
+          "a": [
+            5650,
+            13250
+          ],
+          "b": [
+            7930,
+            13250
+          ],
+          "length_mm": 2280.0,
+          "outside_normal": [
+            0.0,
+            -1.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            11355,
+            7930
+          ],
+          [
+            5650,
+            7930
+          ]
+        ],
+        [
+          [
+            5650,
+            7930
+          ],
+          [
+            5650,
+            13250
+          ]
+        ],
+        [
+          [
+            5650,
+            13250
+          ],
+          [
+            7930,
+            13250
+          ]
+        ]
+      ],
+      "length_mm": 13305.0,
+      "source_walls": [
+        "KG_AW_05",
+        "KG_AW_06",
+        "KG_AW_07"
+      ],
+      "risks": [
+        "EG-Kontur reicht zwischen y=7990 und 13250 bis x=11355; KG nur bis x=5650",
+        "Keine normal von aussen zugaengliche Fassade nachgewiesen",
+        "Tragkonstruktion/Bestandsanschluss ungeklärt; Konturen nicht anpassen"
+      ],
+      "status": "SONDERBEREICH_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Überbauter Kellerbereich",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS05/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B als Standard-Außengraben gesperrt. EG überragt den KG-Umriss erheblich; Zugänglichkeit und Lastabtrag fehlen.",
+      "special_conflict": true,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS05-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS06",
+      "label": "Hauptkeller, obere rechte Grundrissseite",
+      "segments": [
+        {
+          "source_wall": "KG_AW_08",
+          "a": [
+            7930,
+            13250
+          ],
+          "b": [
+            7930,
+            18930
+          ],
+          "length_mm": 5680.0,
+          "outside_normal": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            7930,
+            13250
+          ],
+          [
+            7930,
+            18930
+          ]
+        ]
+      ],
+      "length_mm": 5680.0,
+      "source_walls": [
+        "KG_AW_08"
+      ],
+      "risks": [
+        "Kellerfenster",
+        "EG-Kontur um etwa 60 mm versetzt",
+        "Fundamente/Baugrund/Wasser nicht belegt"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Äußere Kellerfassade",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS06/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen. Fenster und beide Endanschlüsse berücksichtigen; Rand-/Lagerflächen und Bauzustände prüfen.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS06-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS07",
+      "label": "Hauptkeller, obere Grundrissseite",
+      "segments": [
+        {
+          "source_wall": "KG_AW_09",
+          "a": [
+            7930,
+            18930
+          ],
+          "b": [
+            0,
+            18930
+          ],
+          "length_mm": 7930.0,
+          "outside_normal": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            7930,
+            18930
+          ],
+          [
+            0,
+            18930
+          ]
+        ]
+      ],
+      "length_mm": 7930.0,
+      "source_walls": [
+        "KG_AW_09"
+      ],
+      "risks": [
+        "Historischer Lichtschachthinweis ohne Schachtmasse",
+        "Garagenecke bei x=0; EG-Versatz",
+        "Fundamente/Baugrund/Wasser nicht belegt"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Lichtschacht und Garagenecke",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS07/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen. Lichtschacht erst aufnehmen; Garagenecke und Fensteranschluss getrennt bemessen.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS07-LIC",
+        "note": "Lichtschacht als Quellenhinweis. Fensterbezug X 4730–5630 / Y 18930 mm ist kein Schachtmaß."
+      }
+    },
+    {
+      "id": "PS08",
+      "label": "Hauptkeller, Garagenanschluss",
+      "segments": [
+        {
+          "source_wall": "KG_AW_10",
+          "a": [
+            0,
+            18930
+          ],
+          "b": [
+            0,
+            12500
+          ],
+          "length_mm": 6430.0,
+          "outside_normal": [
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            0,
+            18930
+          ],
+          [
+            0,
+            12500
+          ]
+        ]
+      ],
+      "length_mm": 6430.0,
+      "source_walls": [
+        "KG_AW_10"
+      ],
+      "risks": [
+        "Garage unmittelbar auf Aussenseite; nicht unterkellert laut Quellenregister",
+        "Garagenboden und Fundamente fehlen",
+        "Kein gewoehnlicher frei erreichbarer Aussengraben"
+      ],
+      "status": "SONDERBEREICH_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Garagenanschluss",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS08/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B als Standard-Außengraben gesperrt. Garage liegt außen an. Fundament, Verbindung und Sanierungszugang klären.",
+      "special_conflict": true,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS08-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS09",
+      "label": "Hauptkeller, freie linke Grundrissseite",
+      "segments": [
+        {
+          "source_wall": "KG_AW_10",
+          "a": [
+            0,
+            12500
+          ],
+          "b": [
+            0,
+            0
+          ],
+          "length_mm": 12500.0,
+          "outside_normal": [
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            0,
+            12500
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "length_mm": 12500.0,
+      "source_walls": [
+        "KG_AW_10"
+      ],
+      "risks": [
+        "Kellerfenster",
+        "Telefon-Hausanschluss nahe y=650; Tiefe unbekannt",
+        "Garagenuebergang und Ecke y=0 gesondert pruefen"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Längsseite und Telefon",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS09/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen. Garagenende und Telefontrasse als Sonderbereiche; Medienortung vor Festlegung von Arbeitsfeldern.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS09-MED",
+        "note": "Telefontrasse historisch. Bedarf und Lage einer Arbeitskammer erst nach aktueller Ortung festlegen."
+      }
+    },
+    {
+      "id": "PS10",
+      "label": "Anbau, Hauptbauanschluss und untere Stirnseite",
+      "segments": [
+        {
+          "source_wall": "AN_KG_AW_01",
+          "a": [
+            15450.0,
+            5865.0
+          ],
+          "b": [
+            24047.372,
+            4349.051
+          ],
+          "length_mm": 8730.000382416085,
+          "outside_normal": [
+            -0.17364821690654392,
+            -0.9848077460932047
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            15450.0,
+            5865.0
+          ],
+          [
+            24047.372,
+            4349.051
+          ]
+        ]
+      ],
+      "length_mm": 8730.000382416085,
+      "source_walls": [
+        "AN_KG_AW_01"
+      ],
+      "risks": [
+        "Teilweise Hauptbau direkt gegenueber; Anschlussbereich nicht als freier Graben nutzbar",
+        "Freier Endbereich und Anschluss erst nach Bestandsklaerung trennen",
+        "Anbau-Bodenplatte und Fundament fehlen; Zieltiefe unbekannt"
+      ],
+      "status": "SONDERBEREICH_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Anbauanschluss",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS10/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B derzeit gesperrt. Anschluss und freien Endbereich nach Aufmaß trennen; keinen sicheren Trennpunkt erfinden.",
+      "special_conflict": true,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS10-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS11",
+      "label": "Anbau, rechte Laengsseite zur Grenze",
+      "segments": [
+        {
+          "source_wall": "AN_KG_AW_02",
+          "a": [
+            24047.372,
+            4349.051
+          ],
+          "b": [
+            26344.737,
+            17378.058
+          ],
+          "length_mm": 13230.000353336127,
+          "outside_normal": [
+            0.9848077590349087,
+            -0.17364814351049426
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            24047.372,
+            4349.051
+          ],
+          [
+            26344.737,
+            17378.058
+          ]
+        ]
+      ],
+      "length_mm": 13230.000353336127,
+      "source_walls": [
+        "AN_KG_AW_02"
+      ],
+      "risks": [
+        "Geringster Modellabstand zur Kartengrenze ca. 2088 mm",
+        "Boeschung/Verbau/Rueckverankerung/Wege innerhalb Grenze nachzuweisen",
+        "Anbau-Bodenplatte und Fundament fehlen; Zieltiefe unbekannt"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Anbau / Grenzengpass",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS11/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "B vorrangig untersuchen. A nur mit vollständigem Raumnachweis. Kartengrenzabstand mindestens ca. 2088 mm; keine freien Rückanker.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS11-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS12",
+      "label": "Anbau, obere Stirnseite",
+      "segments": [
+        {
+          "source_wall": "AN_KG_AW_03",
+          "a": [
+            26344.737,
+            17378.058
+          ],
+          "b": [
+            17747.365,
+            18894.007
+          ],
+          "length_mm": 8730.000382416085,
+          "outside_normal": [
+            0.17364821690654403,
+            0.9848077460932047
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            26344.737,
+            17378.058
+          ],
+          [
+            17747.365,
+            18894.007
+          ]
+        ]
+      ],
+      "length_mm": 8730.000382416085,
+      "source_walls": [
+        "AN_KG_AW_03"
+      ],
+      "risks": [
+        "Grenzengpass an rechter Ecke, geringster Modellabstand ca. 2088 mm",
+        "Ecke nicht gleichzeitig mit benachbartem Sektor oeffnen ohne Fachnachweis",
+        "Anbau-Bodenplatte und Fundament fehlen; Zieltiefe unbekannt"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Anbauecke / Grenze",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS12/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen, Engpass an PS11-Ecke. Kartengrenzabstand dort ca. 2088 mm. Ecköffnung separat nachweisen.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS12-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    },
+    {
+      "id": "PS13",
+      "label": "Anbau, Hofseite",
+      "segments": [
+        {
+          "source_wall": "AN_KG_AW_04",
+          "a": [
+            17747.365,
+            18894.007
+          ],
+          "b": [
+            15450.0,
+            5865.0
+          ],
+          "length_mm": 13230.000353336127,
+          "outside_normal": [
+            -0.9848077590349087,
+            0.17364814351049426
+          ]
+        }
+      ],
+      "polylines": [
+        [
+          [
+            17747.365,
+            18894.007
+          ],
+          [
+            15450.0,
+            5865.0
+          ]
+        ]
+      ],
+      "length_mm": 13230.000353336127,
+      "source_walls": [
+        "AN_KG_AW_04"
+      ],
+      "risks": [
+        "Untere Ecke mit engem Hauptbauanschluss",
+        "Unterschiedliche Hauptbau-/Anbauhoehen",
+        "Anbau-Bodenplatte und Fundament fehlen; Zieltiefe unbekannt"
+      ],
+      "status": "VORPLANUNG_GESPERRT",
+      "role": "PLANUNGSSEKTOR_KEINE_ZULAESSIGE_OFFENE_ABSCHNITTSLAENGE",
+      "construction_release": false,
+      "excavation_width_mm": null,
+      "excavation_volume_m3": null,
+      "title": "Anbau / Hofseite",
+      "assembly_target": "RENOVIERUNG_BAxxx/SEKTIONEN/PS13/MASTER.prt",
+      "assembly_exists": false,
+      "variant_assessment": "A/B offen. Engen Anschluss unten, Hofzugang und unterschiedliche Kellerhöhen berücksichtigen.",
+      "special_conflict": false,
+      "work_fields": [],
+      "design_parameters": {
+        "field_length_mm": null,
+        "formation_z_mm": null,
+        "working_clear_width_mm": null,
+        "slope_angle_deg": null,
+        "shoring_system": null,
+        "foundation_bottom_z_mm": null,
+        "design_water_z_mm": null,
+        "edge_loads": null,
+        "max_open_duration": null,
+        "excavation_volume_m3": null,
+        "stockpile_area_m2": null,
+        "execution_order": null
+      },
+      "release_requirements": [
+        "U01_AUFMASS_GRENZE",
+        "U02_TRAGWERK_GRUENDUNG",
+        "U03_BODEN_WASSER",
+        "U04_MEDIEN",
+        "U05_ABDICHTUNG",
+        "U06_LOGISTIK_MONITORING",
+        "H2_FACHNACHWEISE",
+        "H3_BAUSTELLENVORBEREITUNG"
+      ],
+      "shaft_planning": {
+        "id": "SCH-PS13-Fnn",
+        "note": "Arbeitsfeld-Schacht nur bei Erfordernis. Anzahl, Lage und Maße nach Nachweis; kein vorhandener Schacht behauptet."
+      }
+    }
+  ],
+  "heights": {
+    "main_cellar": {
+      "FFB": -2325,
+      "slab_top": -2355,
+      "slab_bottom": -2505,
+      "check_target_only": -2605,
+      "wall_bottom": -2325,
+      "wall_top": -220,
+      "foundation": null
+    },
+    "extension_cellar": {
+      "FFB": -1860,
+      "slab_top": null,
+      "slab_bottom": null,
+      "check_target_only": null,
+      "wall_bottom": -1860,
+      "wall_top_proxy": -70,
+      "foundation": null
+    },
+    "terrain": {
+      "source": "projects/g02/data/DGM_STUETZPUNKTE_G02.json",
+      "settings": "projects/g02/data/HOEHENANSCHLUSS_G02.json",
+      "translation_z_mm": -31362.49870845903,
+      "status": "PLAN_ANNAHME_KEIN_VERMESSUNGSNACHWEIS",
+      "uniform_ground_z": null
+    }
+  },
+  "parcel": {
+    "polygon": [
+      [
+        29556.861,
+        25032.541
+      ],
+      [
+        29410.902,
+        24440.127
+      ],
+      [
+        27002.329,
+        6702.564
+      ],
+      [
+        24323.385,
+        -11090.353
+      ],
+      [
+        22086.886,
+        -27754.863
+      ],
+      [
+        -8364.254,
+        -27752.484
+      ],
+      [
+        -8508.033,
+        25638.266
+      ],
+      [
+        27706.534,
+        25621.287
+      ],
+      [
+        29702.82,
+        25624.955
+      ]
+    ],
+    "status": "KARTENREFERENZ_KEINE_ABSTECKBARE_GRENZE",
+    "survey_verified": false
+  },
+  "utilities": [
+    {
+      "id": "STROM_HAUSANSCHLUSS",
+      "network": "STROM",
+      "role": "HAUSANSCHLUSS",
+      "points_local_mm": [
+        [
+          3115.691,
+          -29025.837
+        ],
+        [
+          4100.691,
+          -18.582
+        ]
+      ],
+      "z_mm": null,
+      "diameter_outer_mm": null,
+      "source_date": "2021-11-10",
+      "valid_until": "2021-12-10",
+      "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+      "vertical_status": "UNGEKLAERT",
+      "physical_pipe_model": false,
+      "sources": [
+        {
+          "document": "G18",
+          "page": 1,
+          "location": "Vektorpfad 50; NAYY 4x35"
+        }
+      ]
+    },
+    {
+      "id": "TELEFON_TRASSE_38",
+      "network": "TELEFON",
+      "role": "HAUSANSCHLUSS",
+      "points_local_mm": [
+        [
+          1556.797,
+          -28210.035
+        ],
+        [
+          2039.567,
+          34.671
+        ]
+      ],
+      "z_mm": null,
+      "diameter_outer_mm": null,
+      "source_date": "2021-11-10",
+      "valid_until": "2021-12-10",
+      "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+      "vertical_status": "UNGEKLAERT",
+      "physical_pipe_model": false,
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 38; A4.33"
+        }
+      ]
+    },
+    {
+      "id": "TELEFON_TRASSE_39",
+      "network": "TELEFON",
+      "role": "HAUSANSCHLUSS",
+      "points_local_mm": [
+        [
+          -3936.641,
+          -28083.152
+        ],
+        [
+          -3969.528,
+          -21460.597
+        ],
+        [
+          -2362.431,
+          642.037
+        ],
+        [
+          -156.248,
+          650.558
+        ]
+      ],
+      "z_mm": null,
+      "diameter_outer_mm": null,
+      "source_date": "2021-11-10",
+      "valid_until": "2021-12-10",
+      "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+      "vertical_status": "UNGEKLAERT",
+      "physical_pipe_model": false,
+      "sources": [
+        {
+          "document": "G19",
+          "page": 1,
+          "location": "Vektorpfad 39; A4.33"
+        }
+      ]
+    },
+    {
+      "id": "GAS_HAUSANSCHLUSS",
+      "network": "GAS",
+      "role": "HAUSANSCHLUSS",
+      "points_local_mm": [
+        [
+          19988.542,
+          -37729.506
+        ],
+        [
+          25104.268,
+          -1433.815
+        ],
+        [
+          19603.993,
+          -835.794
+        ],
+        [
+          19577.659,
+          30.525
+        ]
+      ],
+      "z_mm": null,
+      "diameter_outer_mm": null,
+      "source_date": "2021-10-27",
+      "valid_until": "2021-10-27",
+      "horizontal_status": "AUS_BESTANDSPLAN_REGISTRIERT_NICHT_GEORTET",
+      "vertical_status": "UNGEKLAERT",
+      "physical_pipe_model": false,
+      "sources": [
+        {
+          "document": "G11",
+          "page": 1,
+          "location": "Grafisch digitalisierte Linie; DN 40 - ST PE"
+        }
+      ]
+    }
+  ],
+  "unavailable_networks": [
+    "TRINKWASSER_HAUSANSCHLUSS",
+    "SCHMUTZWASSER",
+    "REGENWASSER",
+    "DRAENAGE",
+    "FERNWAERME_FALLS_VORHANDEN"
+  ],
+  "attachments": {
+    "cellar_railing": {
+      "envelope_xy": [
+        [
+          22072.232,
+          -81.27
+        ],
+        [
+          22420.163,
+          1888.234
+        ],
+        [
+          21238.461,
+          2096.992
+        ],
+        [
+          20890.53,
+          127.489
+        ]
+      ],
+      "bottom_z": -100,
+      "top_z": 900,
+      "status": "GESCHAETZTES_GELAENDER_KEINE_SCHACHTGEOMETRIE",
+      "stairs": null,
+      "shaft_bottom": null,
+      "drainage": null,
+      "source": "haus_main_details.py:151; effective v_min=max(config_v_min,850)"
+    },
+    "balcony": {
+      "footprint_xy": [
+        [
+          23467.47,
+          -1495.558
+        ],
+        [
+          24366.871,
+          3595.609
+        ],
+        [
+          20831.612,
+          4220.144
+        ],
+        [
+          19932.211,
+          -871.023
+        ]
+      ],
+      "post_centers_xy": [
+        [
+          23457.654,
+          -1321.192
+        ],
+        [
+          24297.906,
+          3435.16
+        ]
+      ],
+      "foundations": null,
+      "status": "VIDEOREFERENZ_GESCHAETZTE_HUELLEN"
+    },
+    "downpipes": [
+      {
+        "id": "MAIN01_FALLROHR_EINGANG",
+        "xy": [
+          -210,
+          -210
+        ],
+        "top": 2680,
+        "bottom": -150,
+        "evidence": "Video 00:36, vordere Eingangsecke, Position angenähert"
+      },
+      {
+        "id": "MAIN01_FALLROHR_BALKONSEITE",
+        "xy": [
+          24250,
+          4290
+        ],
+        "top": 2700,
+        "bottom": -150,
+        "evidence": "Video 01:38, Ecke hinter Balkon; Einordnung zu Anbaukante angenommen"
+      }
+    ],
+    "lightwell": {
+      "reference_window": "R11_KG_N_F01",
+      "source_wall": "KG_AW_09",
+      "window_xy": [
+        [
+          5630,
+          18930
+        ],
+        [
+          4730,
+          18930
+        ]
+      ],
+      "source": "P06 oberer Rand / P10 Lichtschacht; haus.json:1842",
+      "shaft_geometry": null,
+      "status": "QUELLENHINWEIS_KEINE_SCHACHTMASSE"
+    }
+  },
+  "source_locations": {
+    "KG_walls": "haus.json:1355-1875",
+    "KG_slab": "haus.json:3085",
+    "EG_outline": "haus.json:5935",
+    "ANBAU_KG_walls": "haus.json:8313-8415",
+    "ANBAU_KG_outline": "haus.json:8648",
+    "garage": "haus.json:9661",
+    "parcel": "haus.json:14905",
+    "utilities": "haus.json:15339,16020,16065,16306",
+    "material_side": "haus_geometry.py:230"
+  },
+  "warnings": [
+    "Sektorlaengen sind keine sicheren Aushubabschnittslaengen.",
+    "Sektornummern geben keine freigegebene Baufolge vor.",
+    "Bodenplatte, Fundament und tragende Aufstandsflaeche unterscheiden.",
+    "Keine Ausfuehrungsbreiten, Boeschungswinkel, Verbauabmessungen oder Aushubvolumen abgeleitet.",
+    "Alle Bereiche bis fachlicher Pruefung sichtbar gesperrt.",
+    "Konturen und externe Konflikte unveraendert darstellen.",
+    "Geografische Nordrichtung nicht freigegeben."
+  ],
+  "document": "docs/plans/2026-11-01-keller-aushub-und-schachtplanung.md",
+  "pdf": "output/pdf/Keller_Vorplanung_V01.pdf",
+  "norm_research_date": "2026-11-01",
+  "source_hashes": {
+    "projects/g02/haus/data/haus.json": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+    "projects/g02/data/HOEHENANSCHLUSS_G02.json": "a565318eaed01f741615c91be954f76e8b85c4ef790797bbe33c6607006cd341",
+    "projects/g02/data/DGM_STUETZPUNKTE_G02.json": "da981e278a8bbd3545c467491c0684132b5969c36e6ee7e2506498d7a8a512f9"
+  }
+}

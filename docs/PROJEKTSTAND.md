@@ -2,6 +2,10 @@
 
 Stand dieser Übergabe: **31.10.2026**.
 
+## Ergänzung 01.11.2026: Keller-Vorplanung
+
+[Aushub- und Schachtplanung V01](plans/2026-11-01-keller-aushub-und-schachtplanung.md) erstellt: 13 aus den aktuellen Kellerkonturen abgeleitete Planungssektionen, 21-seitiges Zeichnungsheft, editierbarer Sektionskatalog, Untersuchungs-/Nachweisprogramm, Bauablauf mit Haltepunkten und Zielstruktur für NX-Unterbaugruppen. Keine neuen Renovierungs-.prt oder Maßnahmengeometrien erzeugt. Fachliche Grundlagen fehlen laut Nutzer; sichere Feldlängen, Tiefen und Mengen noch offen. Sämtliche Ausführungsfreigaben bleiben gesperrt. Prüfungen stehen im [V01-Protokoll](../renovierung/planung/2026-11-01/PRUEFUNG.md).
+
 ## Ergänzung: echte native NX-Lieferung
 
 Am 31.10.2026 wurde der unveränderte G02-Erzeuger mit **NX 2406.6000** tatsächlich vollständig ausgeführt. Die neue Lieferung liegt unter `cad/nx/20261031T134924_e0fb72/`: **29 `.prt`-Dateien**, insgesamt 36.028.198 Bytes. Master: `PROJEKT_MASTER_G02_PLANBEZUG_1953e9e2.prt`. Haus: 1.418 Körperaufträge in 15 Komponenten. Umgebung und höhenbezogene Gesamtmontage wurden erzeugt und gespeichert.

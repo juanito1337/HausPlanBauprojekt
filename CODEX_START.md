@@ -2,6 +2,8 @@
 
 ## Fortsetzung nach der Git-Übergabe
 
+Aktueller fachlicher Entwurf: [Keller-Aushub und Schachtplanung V01 vom 01.11.2026](docs/plans/2026-11-01-keller-aushub-und-schachtplanung.md), 13 Planungssektionen, A/B-Prüfung, Untersuchungsprogramm und geplante Unterbaugruppen. Nutzer bestätigt fehlende belastbare Baugrund-/Fundamentunterlagen. Der Entwurf ersetzt keine Ausführungsfreigabe; die Entwicklungsprompts K-S01–K-S06 ergänzen die folgende Roadmap.
+
 Die aktuelle [Roadmap](docs/plans/2026-10-31-renovierung-roadmap.md) konkretisiert M0–M6 mit Abnahmen. Für die Entwicklung den [Promptkatalog P00–P10](docs/plans/2026-10-31-entwicklungsprompts.md) verwenden und mit P00 samt gemeinsamem Superpowers-Startblock beginnen. Der folgende ursprüngliche Übernahmeauftrag bleibt als Kontext erhalten; spätere Etappen nicht ohne ihre Voraussetzungen starten.
 
 Diesen Text nach dem Öffnen des Repositorys an Codex geben:
