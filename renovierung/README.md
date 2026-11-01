@@ -2,6 +2,8 @@
 
 ## Vorplanung vom 01.11.2026
 
+**Aktueller Maßnahmenumfang:** [Ergänzung E01](../docs/plans/2026-11-01-keller-ergaenzung-umfang-leitungen.md) zusammen mit V01 lesen: mögliche Ausnahmen für Überbau/Niedergänge, Sandboden und Eingang der Tiefbau-Unterlagen. Maschinenlesbare Ergänzung: [UMFANG_E01.json](planung/2026-11-01/UMFANG_E01.json). Die V01-PDF allein bildet diese jüngere Umfangsvorgabe noch nicht ab.
+
 Der [Projektplan zu Aushub und Schächten](../docs/plans/2026-11-01-keller-aushub-und-schachtplanung.md) gliedert die aktuelle Kellergeometrie in 13 räumliche Sektionen mit geplanter NX-Unterbaugruppenstruktur. Dazu gehören ein [21-seitiges Zeichnungsheft](../output/pdf/Keller_Vorplanung_V01.pdf), der [editierbare Sektionskatalog](planung/2026-11-01/sektionen.json) und das [Prüfprotokoll](planung/2026-11-01/PRUEFUNG.md).
 
 Der Nutzer bestätigt fehlende belastbare Baugrund-/Fundamentunterlagen. Sämtliche Aushubfelder bleiben bis zur fachlichen Prüfung gesperrt. Planungssektoren sind keine zulässigen offenen Grabenlängen. Der aktuelle Stand ergänzt Dokumentation; neue Renovierungs-.prt oder eine K02-Engine sind damit noch nicht implementiert.

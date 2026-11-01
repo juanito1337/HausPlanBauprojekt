@@ -1,5 +1,9 @@
 # Renovierung Keller – ursprünglicher Nutzerauftrag
 
+## Umfangsergänzung des Nutzers vom 01.11.2026
+
+Überbaute Bereiche und Kellerniedergänge werden voraussichtlich ausgelassen; für Niedergänge wird alternativ ein gesondertes Abdichtungs-/Anschlusskonzept untersucht. Der Nutzer bezeichnet den Boden als Sandboden und kündigt weitere Leitungstiefenpläne an. Diese jüngere Umfangsvorgabe konkretisiert das nachfolgende ursprüngliche Ziel „rund um das gesamte Haus“; sie ist noch keine endgültige Teilflächenfestlegung. Details und Prüfung von `Tiefbau.zip`: [Ergänzung E01](plans/2026-11-01-keller-ergaenzung-umfang-leitungen.md). Ausgenommene Bereiche nicht löschen oder als saniert darstellen; angrenzende Gründungs-/Abdichtungsrisiken bleiben zu prüfen.
+
 Die folgenden Anforderungen stammen aus dem Nutzerauftrag im bisherigen Gespräch. Sie werden für Codex erhalten. **Sie sind Zielanforderungen, kein Nachweis einer bereits vorhandenen Implementierung oder einer sicheren Bauausführung.**
 
 ---

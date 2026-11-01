@@ -2,6 +2,8 @@
 
 Stand **01.11.2026**, Revision **V01**. **Vorplanung; keine Bauausführung freigegeben.**
 
+**Aktuelle Umfangsergänzung:** [E01: voraussichtliche Auslassung überbauter Bereiche und Kellerniedergänge, Sandboden und Tiefbau-Unterlagen](2026-11-01-keller-ergaenzung-umfang-leitungen.md). E01 ist beim Lesen des V01-Zeichnungshefts und Sektionskatalogs mitzuberücksichtigen; deren Geometrie bleibt unverändert. Teilflächen und endgültige Ausnahmen sind noch offen.
+
 Der Nutzer bestätigt am 01.11.2026: Es liegen noch keine belastbaren Baugrund-, Fundament- oder Kellerstatikunterlagen vor. Deshalb sind die nachfolgenden 13 Sektionen räumliche Planungsbereiche, keine zulässigen offenen Grabenlängen. Alle tatsächlichen Aushubfelder bleiben gesperrt, bis ihre Nachweise vorliegen.
 
 ## 1. Ergebnis und Lesereihenfolge

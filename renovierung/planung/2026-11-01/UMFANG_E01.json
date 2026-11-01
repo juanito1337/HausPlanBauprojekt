@@ -1,0 +1,80 @@
+{
+  "schema": "KELLER_UMFANG_ERGAENZUNG_E01",
+  "date": "2026-11-01",
+  "document_only": true,
+  "base_catalog": "renovierung/planung/2026-11-01/sektionen.json",
+  "base_catalog_sha256": "61c05993677a7b01cdd1809251a68b30305752a159d6e88cf3ca05806ac09ddf",
+  "applies_with": "docs/plans/2026-11-01-keller-ergaenzung-umfang-leitungen.md",
+  "decision_status": "VORLAEUFIG_NUTZER_SAGT_WAHRSCHEINLICH",
+  "construction_release": false,
+  "geometry_changed": false,
+  "soil": {
+    "description": "Sandboden",
+    "provenance": "NUTZERANGABE_2026-11-01",
+    "geotechnical_verification": false,
+    "parameters": null
+  },
+  "provisional_exclusions": [
+    {
+      "sector": "PS05",
+      "scope": "UEBERBAUTER_TEILBEREICH",
+      "boundary": null,
+      "excavation_policy": "VORLAEUFIG_NICHT_EINPLANEN"
+    },
+    {
+      "sector": "PS08",
+      "scope": "UEBERBAUTER_GARAGENANSCHLUSS",
+      "boundary": null,
+      "excavation_policy": "VORLAEUFIG_NICHT_EINPLANEN"
+    },
+    {
+      "sector": "PS02",
+      "object": "SCH-PS02-ABG",
+      "scope": "NUR_NIEDERGANG_TEILBEREICH",
+      "boundary": null,
+      "excavation_policy": "VORLAEUFIG_AUSNAHME_ODER_SEPARATES_ABDICHTUNGSKONZEPT",
+      "whole_sector_excluded": false
+    }
+  ],
+  "scope_needs_survey": [
+    "PS03",
+    "PS10",
+    "weitere_nicht_erfasste_Niedergaenge_und_Ueberbauten"
+  ],
+  "not_automatically_excluded": [
+    "PS07_LICHTSCHACHT",
+    "PS02_UEBRIGE_FASSADE"
+  ],
+  "interface_concept": {
+    "interpretation": "ABDICHTUNGSTECHNISCHER_ANSCHLUSS",
+    "method": null,
+    "structural_separation_authorized": false,
+    "interface_geometry": null,
+    "remaining_moisture_and_thermal_bridges_to_assess": true
+  },
+  "utility_depths": {
+    "additional_plans_expected": true,
+    "new_verified_depths_received": false,
+    "inventory": "TIEFBAU_EINGANG.json",
+    "required_fields": [
+      "medium",
+      "source_document",
+      "page",
+      "source_date",
+      "measurement_location",
+      "unit",
+      "depth_reference",
+      "pipe_crown_axis_or_invert",
+      "surface_level_at_measurement",
+      "present_surface_level",
+      "verification_status"
+    ]
+  },
+  "presentation": {
+    "retain_all_13_sector_ids": true,
+    "retain_existing_geometry": true,
+    "excluded_does_not_mean_renovated": true,
+    "unknown_quantities_are_null_not_zero": true
+  },
+  "nx_parts_created": false
+}
