@@ -1,0 +1,16 @@
+{
+  "schema": "K02_STUDY_CONFIG_V1",
+  "working_width_mm": 800,
+  "max_bottom_length_mm": 2000,
+  "main_formation_z_mm": -2605,
+  "excavation_slope_ratio": 1,
+  "terrain_tolerance_mm": 25,
+  "loose_factor": 1.05,
+  "compacted_factor": 0.89,
+  "utility_corridor_half_width_mm": 1000,
+  "pile_candidates_mm": [[5000, -14000], [13000, -16000], [0, -20000]],
+  "pile_patch_radius_mm": 6000,
+  "construction_release": false,
+  "user_confirmed_study_dimensions": true,
+  "assumptions": "User confirmed 800 mm working width and 2000 mm field length on 2026-11-01. Field bottom lengths are bounded by 2000 mm. Slopes and piles remain conceptual study forms without construction release or stability evidence."
+}
