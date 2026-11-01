@@ -29,7 +29,13 @@ Vor einer Änderung die konkreten Importpfade und Modulaufrufe lesen.
 
 ## Neue Renovierungsentwicklung
 
-`renovierung/src/` ist **noch kein vorhandener Erzeuger**. Zuerst klare Schnittstellen für Eingangsinventar, unabhängige Kopie, Studienkonfiguration, räumliche Konfliktprüfung, Mengenbilanz und NX-Adapter entwerfen. Geometrische Berechnung möglichst unabhängig von NX halten; NX-Schreibzugriffe getrennt kapseln. Frühere K01-CSV/HTML/PDF dienen als historische Vergleichsdaten, nicht als Ersatz für nachvollziehbare Geometriequellen.
+`renovierung/k02/` enthält den getrennten K02-Studienerzeuger. `terrain.py` liest das bilineare G02-DGM und erzeugt ein lokal verfeinertes Studien-TIN; `geometry.py` berechnet geschlossene Eingriffs-/Haufenkörper, `materials.py` Volumenäquivalente und `planning.py` das vollständige Feldregister einschließlich gesperrter Bereiche. `mesh_step.py` überträgt die geschlossenen Netze als STEP. Diese Mathematik benötigt kein NXOpen; ihre Tests belegen keine NX-Ausführung.
+
+`runner.py` verbindet den frischen Gesamtplan mit seriellen echten NX-Prozessen. `nx_build.py` klont alle Quellparts mit UFClone in jeden eigenen Zustand, stellt sämtliche Komponentenreferenzen um und erzeugt die Studiengeometrie. `nx_verify.py` öffnet jeden gespeicherten Zustand frisch (AsSaved) und als verschobene Kopie (SearchDirectories); geprüft werden Hashes, vollständiges Laden, mm, interne Pfade, Interpart-Abhängigkeiten, Komponentenlagen und native Körpervolumen. BASE und die unabhängigen Einzelfeldvarianten teilen keine bearbeitbaren Parts. Ein Feld mit mehreren getrennten geschlossenen Aushubkomponenten bleibt mehrteilig.
+
+`tools/nx_project.py build` verwendet eine nach aktuellem G02-Fingerprint gültige Basis wieder oder erzeugt sie einmal neu; anschließend plant und erzeugt es K02 vollständig. Der eigene K02-Fingerprint umfasst Eingaben, Konfiguration, sämtliche K02-Pythonmodule, Integrationstools und den tatsächlichen G02-Nativbestand samt Nachweisen. `check` verlangt gültige G02- und vollständige K02-Nachweise. Ein Pilot oder Fehler darf K02-CURRENT nicht fortschreiben. Historische Nachweise werden nicht umgeschrieben.
+
+Die Felder sind unabhängige Studienalternativen mit höchstens einem offenen Eingriff, keine kumulative Baufolge. `construction_release=false`; bei unbekannten Tiefen oder Umfangsgrenzen bleiben Mengen null. Quellgelände bleibt als geblankte Kopie erhalten, während der lokale geschlossene Studienboden einen künstlichen unteren Abschluss besitzt. Alle 72 Registerverweise liegen ausdrücklich auf Z=0, ohne erfundene Leitungstiefen. Frühere K01-CSV/HTML/PDF bleiben historische Vergleichsdaten. Lieferstand, Mengen und noch offene Sichtprüfung stehen im [K02-Nachweis](entwicklungsstand/K02-native-2026-11-01.md).
 
 ## Warum kein großes Refactoring bei der Übergabe
 

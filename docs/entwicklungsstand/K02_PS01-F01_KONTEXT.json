@@ -1,0 +1,105 @@
+{
+  "schema": "K02_NATIVE_CONTEXT_IMAGE_V1",
+  "date": "2026-11-01",
+  "state_id": "PS01-F01",
+  "master": "cad/nx/k02/20261101T133310_8b6d68/PS01-F01/PS01-F01_21.prt",
+  "image": "K02_PS01-F01_KONTEXT.png",
+  "image_sha256": "3abeb0ee5feb67205e2dceb16dbe8a936418532b9e1eac50a50d825eedf5e244",
+  "actual_NX_occurrence_STL_export": true,
+  "coordinate_basis": "ACTUAL_BODY_OCCURRENCES_IN_ASSEMBLY_COORDINATES",
+  "export_proof_sha256": "c88aa5400fe239415ede2c0a705f61e89e94577d133127baaabdbffc42523ed4",
+  "parts_saved": false,
+  "source_hashes_unchanged": true,
+  "source_part_sha256": {
+    "PS01-F01_00.prt": "5adb652eb5725eefeef9adcfbf108209a2181e8fe21612838bdd6539ef0ea25d",
+    "PS01-F01_01.prt": "36ac877a35307adbcf0dff124f338aace8bab3d6c8e86ddca403875a1568ed7b",
+    "PS01-F01_02.prt": "025bdff390cc9524b7dc1562bdf679c385e156edb7031108b47f99d751341c74",
+    "PS01-F01_03.prt": "2c81060e71e3f8f10912c1d4b0f2d33d1a91d594b36919c20ec50714f56de058",
+    "PS01-F01_04.prt": "3af974b535e969ad9a59e7e1768da9d9a9030f5738cab89087297538acd34d06",
+    "PS01-F01_05.prt": "d86feb0a4ca497c796271b351d322125ad04ff4d61a8283bf201cd07d47ab086",
+    "PS01-F01_06.prt": "461c8fedf5e7e88d02d4c526e6108a610521c44588a249410349bccb14c5e587",
+    "PS01-F01_07.prt": "d719f4d128b2e3e83dfe994e98adf33aa04d07620f020240a32873660f16c56d",
+    "PS01-F01_08.prt": "affaedc78b3727126c6e76e335eaf01c533b85ce356942e90ec68da3c40503fd",
+    "PS01-F01_09.prt": "be907a2416de101ad3ac434aa9511b5487ceb393861929aff3a93219d8c6f4a2",
+    "PS01-F01_10.prt": "8a5fc2ee86575c4fe1f8eeec7e6b4bfe5aee5a984c7c47b7f95a1743026e2444",
+    "PS01-F01_11.prt": "b52d7db2bb7d8514f54cf9b377490eae4117a787df971e85a3c814d5cd1145cf",
+    "PS01-F01_12.prt": "5525f81c39c99d22169aa1c3491698381f3d096722ee67e9ed92b5af3713a363",
+    "PS01-F01_13.prt": "4cbce8c1267691b607c5821550b2ca74b4c359dad9e6c8ac4e7f42c868c69667",
+    "PS01-F01_14.prt": "f4ac3905e107e20083cc8ee259107266c4ee26eeee5c4accc86eb76ac26198b0",
+    "PS01-F01_15.prt": "a5094e89e10cffd8a29761a475436885366fb01370a9852d9c37475d1d5bde9f",
+    "PS01-F01_16.prt": "89a2cb7ce1cecdc8c059265a1a51e5c44fd26b1f0b45402d44ba6356a22edeb2",
+    "PS01-F01_17.prt": "710d7a432cfff2d17e9038123ab90f599ec8ae811fa2102340754862225cf7ee",
+    "PS01-F01_18.prt": "8abbad9ad20e6184f802f7c55c234473c4158c631a84031db3bdb1c7339d4687",
+    "PS01-F01_19.prt": "92b276860fc0159bffbd67032636f3eb9cb7090f6fd41d49550e14bb0fbb4be7",
+    "PS01-F01_20.prt": "560a88c4c819106ffbeff6ed34dd8f091662f51099ca7ff428dc7e241b4f5979",
+    "PS01-F01_21.prt": "7adc62c08cb603dfe0651aa6d38784481bb00ac0b8f7b382731487dcbbe14c60",
+    "PS01-F01_22.prt": "cc93da2ac242de838af35e3dfc409db3a59517b47cc81a1ab6fe3967b3002f37",
+    "PS01-F01_23.prt": "bc05971f647c55ba8531b80b229ae459c672aceb8dad0cc1ddae8722fa7857b3",
+    "PS01-F01_24.prt": "33f9768e85d92bc60b53cfc15a5fbb41341be966d9bb8348e23b0a6517271a6d",
+    "PS01-F01_25.prt": "fe514337da935fb5ac22cb560cedd2ff7e8528db6a798e2bec3d5bf6e6db9d00",
+    "PS01-F01_26.prt": "d3501b5ce450932fe9f55140d4af801ba450481d34fc548a9b20e64ebe599ca1",
+    "PS01-F01_27.prt": "9791acf4f42929c2e3f9ff340386a4774aac503b87d4e15695fe65b0b51452d0",
+    "PS01-F01_28.prt": "77cb805ce59b4edf51032101f5a922c6a9496a4d58d3dee4df99472924ad905e",
+    "PS01-F01_STUDY.prt": "2e03dfb3c84ac02f2dba3342af2f60e029eb3ef299636e61b7d3aebdacd33ee1"
+  },
+  "is_NX_screenshot": false,
+  "saved_NX_camera_verified": false,
+  "NX_graphical_operation_verified": false,
+  "graphical_review_of_all_fields": false,
+  "scope": "REPRESENTATIVE_FIELD_GEOMETRY_DIAGNOSTIC_ONLY",
+  "construction_release": false,
+  "diagnostic_colors": true,
+  "display_depth_tie_mm": 0.01,
+  "omitted": [
+    "upper_storeys",
+    "roofs",
+    "vegetation",
+    "utility_projections",
+    "reference_notes"
+  ],
+  "raw_STL_and_scripts_included": false,
+  "groups": [
+    {
+      "group": "basement",
+      "body_count": 233,
+      "triangles": 7228,
+      "exported_STL_sha256": "dc9118f14f621a1cf0fece082b21515bd51beb28ff048c826cdd361dffa50f98"
+    },
+    {
+      "group": "annex",
+      "body_count": 27,
+      "triangles": 936,
+      "exported_STL_sha256": "e61d88f0159bd25ae41d53fe8652dcfdfcfb4b24ee57179f2b6d6748c35eb99c"
+    },
+    {
+      "group": "garage",
+      "body_count": 27,
+      "triangles": 836,
+      "exported_STL_sha256": "b96bf57e6d4d5abd055278716316f55efbc54c095e39d6db7b04cd71158cca4f"
+    },
+    {
+      "group": "cut_soil",
+      "body_count": 1,
+      "triangles": 9636,
+      "exported_STL_sha256": "5360795edef3e14ceaa1e40a6abd5f55bdf2650755ee6ca77dae9b066ae7006c"
+    },
+    {
+      "group": "pile_main",
+      "body_count": 1,
+      "triangles": 4816,
+      "exported_STL_sha256": "9f362ad0f6c0241822c528084a346a860e6eb0f5e362e4afd1a8740303fc4909"
+    }
+  ],
+  "diagnostic_bbox_m": {
+    "min": [
+      -5.82809814453125,
+      -19.57704296875,
+      -3.605
+    ],
+    "max": [
+      26.344736328125,
+      18.99,
+      2.65
+    ]
+  }
+}

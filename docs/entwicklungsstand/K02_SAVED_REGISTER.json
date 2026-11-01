@@ -1,0 +1,829 @@
+{
+  "status": "PASS",
+  "terrain_body_count": 1,
+  "terrain_all_blank": true,
+  "register_curve_count": 72,
+  "register_note_count": 72,
+  "study_limitations_note_saved": true,
+  "register_status_attributes": [
+    {
+      "id": "PS01-F01",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 20.25509838369136
+    },
+    {
+      "id": "PS01-F02",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 20.37140897436686
+    },
+    {
+      "id": "PS01-F03",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 19.601060472354668
+    },
+    {
+      "id": "PS01-F04",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 15.081648334753673
+    },
+    {
+      "id": "PS01-F05",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 9.039976795880902
+    },
+    {
+      "id": "PS01-F06",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [
+        "DISCONNECTED_EXCAVATION_COMPONENTS"
+      ],
+      "volume_m3": 4.504641443222522
+    },
+    {
+      "id": "PS01-F07",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 10.473732205053807
+    },
+    {
+      "id": "PS01-F08",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 16.00726992499279
+    },
+    {
+      "id": "PS01-F09",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 19.72070265069811
+    },
+    {
+      "id": "PS01-F10",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 20.106587572033533
+    },
+    {
+      "id": "PS01-F11",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 20.682324681204523
+    },
+    {
+      "id": "PS02-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS02-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS02-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS03-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS03-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS03-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS03-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS03-F05",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS03-F06",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS04-F01",
+      "status": "GEOMETRY_CONFLICT",
+      "blockers": [],
+      "geometry_conflicts": [
+        "OBSTACLE:ANBAU_KG"
+      ],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 25.045424232961654
+    },
+    {
+      "id": "PS04-F02",
+      "status": "OVERBUILD_PROJECTION_UNRESOLVED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 25.073225725369056
+    },
+    {
+      "id": "PS05-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F05",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F06",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F07",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS05-F08",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS06-F01",
+      "status": "OVERBUILD_PROJECTION_UNRESOLVED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 24.54261506943452
+    },
+    {
+      "id": "PS06-F02",
+      "status": "OVERBUILD_PROJECTION_UNRESOLVED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 24.611609929523222
+    },
+    {
+      "id": "PS06-F03",
+      "status": "OVERBUILD_PROJECTION_UNRESOLVED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 24.147797637901306
+    },
+    {
+      "id": "PS07-F01",
+      "status": "OVERBUILD_PROJECTION_UNRESOLVED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 23.070489035328404
+    },
+    {
+      "id": "PS07-F02",
+      "status": "OVERBUILD_PROJECTION_UNRESOLVED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 23.25801521459265
+    },
+    {
+      "id": "PS07-F03",
+      "status": "GEOMETRY_CONFLICT",
+      "blockers": [],
+      "geometry_conflicts": [
+        "OBSTACLE:GARAGE"
+      ],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 24.422185773141113
+    },
+    {
+      "id": "PS07-F04",
+      "status": "GEOMETRY_CONFLICT",
+      "blockers": [],
+      "geometry_conflicts": [
+        "OBSTACLE:GARAGE"
+      ],
+      "overbuild_projection_conflicts": [
+        "OVERBUILD_PROJECTION_UNRESOLVED"
+      ],
+      "geometry_warnings": [],
+      "volume_m3": 25.395972784395145
+    },
+    {
+      "id": "PS08-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS08-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS08-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS08-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "MASK_BOUNDARY_UNKNOWN"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS09-F01",
+      "status": "GEOMETRY_CONFLICT",
+      "blockers": [],
+      "geometry_conflicts": [
+        "OBSTACLE:GARAGE"
+      ],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 22.909504471833053
+    },
+    {
+      "id": "PS09-F02",
+      "status": "GEOMETRY_CONFLICT",
+      "blockers": [],
+      "geometry_conflicts": [
+        "OBSTACLE:GARAGE"
+      ],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 22.776242035748822
+    },
+    {
+      "id": "PS09-F03",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 22.378858178722098
+    },
+    {
+      "id": "PS09-F04",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 21.840301076935166
+    },
+    {
+      "id": "PS09-F05",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 21.374200417047984
+    },
+    {
+      "id": "PS09-F06",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 20.87443243388353
+    },
+    {
+      "id": "PS09-F07",
+      "status": "GEOMETRY_CANDIDATE_UNVERIFIED",
+      "blockers": [],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": [],
+      "volume_m3": 20.420026887260526
+    },
+    {
+      "id": "PS10-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED",
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS10-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED",
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS10-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED",
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS10-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED",
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS10-F05",
+      "status": "BLOCKED",
+      "blockers": [
+        "INTERFACE_UNRESOLVED",
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F05",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F06",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS11-F07",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS12-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS12-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS12-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS12-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS12-F05",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F01",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F02",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F03",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F04",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F05",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F06",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    },
+    {
+      "id": "PS13-F07",
+      "status": "BLOCKED",
+      "blockers": [
+        "UNKNOWN_FORMATION"
+      ],
+      "geometry_conflicts": [],
+      "overbuild_projection_conflicts": [],
+      "geometry_warnings": null,
+      "volume_m3": null
+    }
+  ],
+  "blocked_fields_with_null_quantities": 45,
+  "construction_release": false,
+  "files_saved_by_auditor": false,
+  "gui_visual_inspection_performed": false,
+  "screenshot_created": false,
+  "scope": "SAVED_SOURCE_TERRAIN_BLANK_FLAGS_AND_REGISTER_OBJECT_COUNTS_ONLY",
+  "schema": "K02_SAVED_REGISTER_AUDIT_V1",
+  "completed_at": "2026-11-01T15:09:59.876263+01:00",
+  "native_process_returncode": 0,
+  "master": "cad/nx/k02/20261101T133310_8b6d68/PS01-F01/PS01-F01_21.prt",
+  "BUILD_sha256": "e574cce173249f7e18908428eb91519d5642710ecb9b59d1ec8b243977d6d714",
+  "VERIFY_sha256": "84aeee1c14d2ef536d22f5a306433a9d0d1ba7f4a498812eff7881d148745610",
+  "audit_script_sha256": "3656165679baed1e9623a2e4858e0d8c7b58f9f085ff48787b98dbc31ffd989c",
+  "source_part_sha256": {
+    "PS01-F01/PS01-F01_00.prt": "5adb652eb5725eefeef9adcfbf108209a2181e8fe21612838bdd6539ef0ea25d",
+    "PS01-F01/PS01-F01_01.prt": "36ac877a35307adbcf0dff124f338aace8bab3d6c8e86ddca403875a1568ed7b",
+    "PS01-F01/PS01-F01_02.prt": "025bdff390cc9524b7dc1562bdf679c385e156edb7031108b47f99d751341c74",
+    "PS01-F01/PS01-F01_03.prt": "2c81060e71e3f8f10912c1d4b0f2d33d1a91d594b36919c20ec50714f56de058",
+    "PS01-F01/PS01-F01_04.prt": "3af974b535e969ad9a59e7e1768da9d9a9030f5738cab89087297538acd34d06",
+    "PS01-F01/PS01-F01_05.prt": "d86feb0a4ca497c796271b351d322125ad04ff4d61a8283bf201cd07d47ab086",
+    "PS01-F01/PS01-F01_06.prt": "461c8fedf5e7e88d02d4c526e6108a610521c44588a249410349bccb14c5e587",
+    "PS01-F01/PS01-F01_07.prt": "d719f4d128b2e3e83dfe994e98adf33aa04d07620f020240a32873660f16c56d",
+    "PS01-F01/PS01-F01_08.prt": "affaedc78b3727126c6e76e335eaf01c533b85ce356942e90ec68da3c40503fd",
+    "PS01-F01/PS01-F01_09.prt": "be907a2416de101ad3ac434aa9511b5487ceb393861929aff3a93219d8c6f4a2",
+    "PS01-F01/PS01-F01_10.prt": "8a5fc2ee86575c4fe1f8eeec7e6b4bfe5aee5a984c7c47b7f95a1743026e2444",
+    "PS01-F01/PS01-F01_11.prt": "b52d7db2bb7d8514f54cf9b377490eae4117a787df971e85a3c814d5cd1145cf",
+    "PS01-F01/PS01-F01_12.prt": "5525f81c39c99d22169aa1c3491698381f3d096722ee67e9ed92b5af3713a363",
+    "PS01-F01/PS01-F01_13.prt": "4cbce8c1267691b607c5821550b2ca74b4c359dad9e6c8ac4e7f42c868c69667",
+    "PS01-F01/PS01-F01_14.prt": "f4ac3905e107e20083cc8ee259107266c4ee26eeee5c4accc86eb76ac26198b0",
+    "PS01-F01/PS01-F01_15.prt": "a5094e89e10cffd8a29761a475436885366fb01370a9852d9c37475d1d5bde9f",
+    "PS01-F01/PS01-F01_16.prt": "89a2cb7ce1cecdc8c059265a1a51e5c44fd26b1f0b45402d44ba6356a22edeb2",
+    "PS01-F01/PS01-F01_17.prt": "710d7a432cfff2d17e9038123ab90f599ec8ae811fa2102340754862225cf7ee",
+    "PS01-F01/PS01-F01_18.prt": "8abbad9ad20e6184f802f7c55c234473c4158c631a84031db3bdb1c7339d4687",
+    "PS01-F01/PS01-F01_19.prt": "92b276860fc0159bffbd67032636f3eb9cb7090f6fd41d49550e14bb0fbb4be7",
+    "PS01-F01/PS01-F01_20.prt": "560a88c4c819106ffbeff6ed34dd8f091662f51099ca7ff428dc7e241b4f5979",
+    "PS01-F01/PS01-F01_21.prt": "7adc62c08cb603dfe0651aa6d38784481bb00ac0b8f7b382731487dcbbe14c60",
+    "PS01-F01/PS01-F01_22.prt": "cc93da2ac242de838af35e3dfc409db3a59517b47cc81a1ab6fe3967b3002f37",
+    "PS01-F01/PS01-F01_23.prt": "bc05971f647c55ba8531b80b229ae459c672aceb8dad0cc1ddae8722fa7857b3",
+    "PS01-F01/PS01-F01_24.prt": "33f9768e85d92bc60b53cfc15a5fbb41341be966d9bb8348e23b0a6517271a6d",
+    "PS01-F01/PS01-F01_25.prt": "fe514337da935fb5ac22cb560cedd2ff7e8528db6a798e2bec3d5bf6e6db9d00",
+    "PS01-F01/PS01-F01_26.prt": "d3501b5ce450932fe9f55140d4af801ba450481d34fc548a9b20e64ebe599ca1",
+    "PS01-F01/PS01-F01_27.prt": "9791acf4f42929c2e3f9ff340386a4774aac503b87d4e15695fe65b0b51452d0",
+    "PS01-F01/PS01-F01_28.prt": "77cb805ce59b4edf51032101f5a922c6a9496a4d58d3dee4df99472924ad905e",
+    "PS01-F01/PS01-F01_STUDY.prt": "2e03dfb3c84ac02f2dba3342af2f60e029eb3ef299636e61b7d3aebdacd33ee1"
+  },
+  "all_source_part_hashes_unchanged": true
+}

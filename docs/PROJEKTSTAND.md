@@ -1,6 +1,16 @@
 # Projektstand und gesicherte Übergabe
 
-Stand dieser Übergabe: **31.10.2026**.
+Aktueller Studienstand: **01.11.2026**. Der ursprüngliche Übergabestand vom 31.10.2026 bleibt nachfolgend als Historie erhalten.
+
+## Aktuelle K02-Böschungs- und Abraumstudie
+
+**Native Lieferung bestanden:** [Renovierungsbasis BASE direkt öffnen](../cad/nx/k02/20261101T133310_8b6d68/BASE/BASE_21.prt), oder ein Feld über die [Mengenübersicht mit direkten Masterlinks](../renovierung/planung/2026-11-01/K02_STUDIE.md) wählen. Vollständigen jeweiligen Komponentenordner beibehalten und nach Checkout die [NX-Suchpfadanleitung](../cad/nx/README.md) beachten. Ein Master allein ist keine vollständige Baugruppe.
+
+Lauf `20261101T133310_8b6d68`: BASE plus alle 22 nativen Kandidaten, **689 unabhängige `.prt`-Dateien**, tatsächlich erzeugt und je Zustand frisch AsSaved sowie nach Verschieben SearchDirectories geöffnet. Alle Teile vollständig, mm, interne Referenzen, Quellhashes und Komponentenlagen passend; echte Rollen-/Einzelkomponentenvolumen kohärent. Der Gesamtplan wurde auf endgültigem Code und neuer gültiger G02-Basis frisch berechnet. Unveränderte historische Dateien bleiben erhalten. [Entwicklungs- und Prüfnachweis](entwicklungsstand/K02-native-2026-11-01.md).
+
+Alle 13 PS/72 Felder bleiben registriert. 45 ungeklärte/vorläufig ausgenommene Felder erhalten keine erfundenen Mengen; fünf weitere Felder bleiben vollständige hypothetische Hinderniskonflikte. Sechs native Kandidaten behalten ungeklärte EG-Überbauprojektionen. PS01-F06 hat drei getrennte Aushubkörper, keinen nachgewiesenen durchgehenden Graben. Die 60 positiven Projektionsüberschneidungen sind keine berechnete Volumenunion. Keine kumulative Baufolge, Netto-Erstaushubmenge oder Ausführungsfreigabe; sämtliche `construction_release=false`.
+
+Aktuell bestanden: Integrität von 543 G02-/8 K01-Importdateien, 51 Werkzeugtests (ein bestehender Skip), 45 K02-Tests und nativer Aktualitätscheck. Die historische vollständige G02-Suite behält ihren bekannten Windows-Pfadfehler; sie wurde ohne neuen Anlass nicht erneut gestartet. **Grafische NX-Sicht-/Bedien-/Kameraprüfung bleibt offen.** Eine ausdrücklich diagnostische Ansicht des finalen F01 aus echten NX-Körpern liegt im Nachweis, keine NX-Bildschirmaufnahme.
 
 ## Ergänzung 01.11.2026: Keller-Vorplanung
 

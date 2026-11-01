@@ -21,6 +21,8 @@ python tools/run_checks.py
 
 Benötigt Python >=3.10 und ausgecheckte Git-LFS-Nativdateien. Prüft G02/K01-Importhashes, Python-3.10-Syntax, die Repository-Werkzeugtests und die Aktualität des gespeicherten nativen Nachweises. Kein NX-Import, keine neue Geometrie. Eine absichtlich geänderte Datei im importierten G02-Stand führt zu einer sichtbaren Abweichung; die historischen Importhashes werden nicht automatisch aktualisiert.
 
+K02 ist ebenfalls enthalten: derzeit 45 reine Kern-/Runner-Tests für Geometrie, Terrain, Materialäquivalente, Konflikt-/Nullstatus, Provenienz und das vollständige native Manifestgate. Der Mengenvalidator verlangt nichtleere positive endliche Komponenten, passende Körperanzahlen und kohärente Gesamtvolumen; BUILD sowie beide VERIFY-Phasen werden geprüft. Diese Offline-Tests verwenden ausdrücklich Testfixtures und behaupten keine native Erzeugung. Fokussierter Aufruf: `python -m unittest discover -s renovierung/tests -p "test_k02*.py" -v`.
+
 ## 2. Vorhandener vollständiger Python-/Simulationsstand
 
 ```sh
@@ -28,6 +30,8 @@ python tools/run_checks.py --full
 ```
 
 Startet zusätzlich `projects/g02/werkzeuge/PRUEFE_G02_OFFLINE.py` und dessen vorhandene Gruppen. Der bei dieser Übergabe ausgeführte Altbestand zählt 680 Tests; diese Zahl ist eine Beobachtung dieses Stands, kein auf ewig festes Erfolgskriterium. Testgruppen in getrennten Prozessen laufen lassen. Alle neuen Ausgaben unter `reports/local/` sind ignoriert.
+
+Bekannte Windows-Grenze: `test_r09.CoreTests.test_path_traversal_rejected`, Teilfall `/tmp/x`, scheitert im unveränderten historischen G02. Der volle Lauf vom 01.11.2026 hat diesen einen Fehler erneut bestätigt; der K02-Lieferabschluss wiederholt die breite historische Suite ohne neuen Anlass nicht. Das ist getrennt vom schnellen Check und echten nativen Gate zu lesen, keine Behauptung einer vollständig grünen historischen Suite. Aktuelle Befehle, Exitcodes und Nachweise: [K02-Entwicklungsnachweis](entwicklungsstand/K02-native-2026-11-01.md).
 
 ## 3. Optionale unabhängige CAD-Prüfung
 
@@ -47,6 +51,8 @@ Die vorhandenen Prüfungen verwenden Open CASCADE/cadquery. Sie prüfen Quellkö
 NX 2406 mit der beim Nutzer vorhandenen Lizenz. Nur bewusst gestartete Journale ausführen. Vorher eigene Arbeit sichern; kein automatisches Schließen/Verwerfen fremder Parts. Neue Funktionen zuerst an einer kleinen Testkopie erproben. Für neue Renovierungskopien mindestens: Quelldateihashes unverändert; keine Original-/Fremdreferenzen; gleicher Maßstab und Transformationen; korrekte Unterdrückungen/Materialien; Speichern und erneutes Öffnen; dann erst Bauzustandsgeometrie.
 
 Protokoll muss unterscheiden: tatsächlich ausgeführt / nur simuliert / nicht getestet. Ohne geotechnische und statische Unterlagen keine Standsicherheit behaupten.
+
+K02 benötigt BASE plus alle 22 aktuellen nativen Kandidaten. Jeder Zustand wird mit unabhängigen Quellklonen gebaut und in zwei frischen eigenen NX-Prozessen geprüft: AsSaved am Lieferort, SearchDirectories nach vollständigem Verschieben. Alle drei echten Volumennachweise müssen einschließlich mehrteiliger Rollen zusammenpassen. Quellpart-Hashes werden vor/nach verglichen; eine Übertragungstoleranz ist keine Gelände- oder Vermessungsgenauigkeit. Die grafische Prüfung von Schnittsichtbarkeit, Böschung, Platzierung und Register bleibt ein eigener Nachweis; Batch-Messungen, gespeicherte Blankflags und aus NX exportierte Diagnosegeometrie dürfen nicht als NX-Bildschirmaufnahme ausgegeben werden.
 
 ## 5. GitHub Actions / Codex
 

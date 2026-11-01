@@ -1,5 +1,7 @@
 # Entwicklungsprompts für die Renovierungs-Roadmap
 
+**Aktueller Einstieg 01.11.2026:** Dieser Katalog ist die historische Etappenplanung. Vor einem neuen Auftrag den [aktuellen K02-Nachweis](../entwicklungsstand/K02-native-2026-11-01.md) und die [Einordnung der Roadmap](2026-10-31-renovierung-roadmap.md) lesen; vorhandene unabhängige NX-Studien nicht wegen alter Wartestatus neu entwickeln. Keine pauschale P00–P10-Abnahme daraus ableiten.
+
 Stand: 31.10.2026. Geplante Arbeit; keine der Etappen ist durch dieses Dokument umgesetzt.
 Zuordnung und Abnahmen: [Roadmap](2026-10-31-renovierung-roadmap.md).
 

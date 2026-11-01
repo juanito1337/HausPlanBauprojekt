@@ -1,12 +1,16 @@
 # Erster Arbeitsauftrag für Codex
 
-## Fortsetzung nach der Git-Übergabe
+## Aktueller Einstieg am 01.11.2026
+
+Zuerst [Projektstand](docs/PROJEKTSTAND.md), [K02-Nachweis](docs/entwicklungsstand/K02-native-2026-11-01.md) und [Mengenbericht mit direkten NX-Masterlinks](renovierung/planung/2026-11-01/K02_STUDIE.md) lesen. Der getrennte K02-Studienerzeuger ist implementiert; vorhandene native Kopien und Nachweise nicht wegen des folgenden historischen Startauftrags erneut entwickeln. `python tools/run_checks.py` und `python tools/nx_project.py check` prüfen den aktuellen gelieferten Stand. Bekannter historischer Windows-Pfadtest und offene grafische/fachliche Prüfungen bleiben ausdrücklich im Nachweis getrennt ausgewiesen. Nächsten Auftrag am tatsächlichen Stand abgrenzen.
+
+## Historischer Startauftrag nach der Git-Übergabe
 
 Für den aktuellen Maßnahmenumfang zusätzlich [Ergänzung E01](docs/plans/2026-11-01-keller-ergaenzung-umfang-leitungen.md) lesen: mögliche Ausnahmen für Überbau/Niedergänge, Sandboden als Nutzerangabe und Prüfung von Tiefbau.zip. V01-PDF/Katalog enthalten diese jüngere Umfangsvorgabe noch nicht; E01 muss mitgelesen werden.
 
 Aktueller fachlicher Entwurf: [Keller-Aushub und Schachtplanung V01 vom 01.11.2026](docs/plans/2026-11-01-keller-aushub-und-schachtplanung.md), 13 Planungssektionen, A/B-Prüfung, Untersuchungsprogramm und geplante Unterbaugruppen. Nutzer bestätigt fehlende belastbare Baugrund-/Fundamentunterlagen. Der Entwurf ersetzt keine Ausführungsfreigabe; die Entwicklungsprompts K-S01–K-S06 ergänzen die folgende Roadmap.
 
-Die aktuelle [Roadmap](docs/plans/2026-10-31-renovierung-roadmap.md) konkretisiert M0–M6 mit Abnahmen. Für die Entwicklung den [Promptkatalog P00–P10](docs/plans/2026-10-31-entwicklungsprompts.md) verwenden und mit P00 samt gemeinsamem Superpowers-Startblock beginnen. Der folgende ursprüngliche Übernahmeauftrag bleibt als Kontext erhalten; spätere Etappen nicht ohne ihre Voraussetzungen starten.
+Die historische [Roadmap](docs/plans/2026-10-31-renovierung-roadmap.md) konkretisiert M0–M6 mit Abnahmen. Ihr [Promptkatalog P00–P10](docs/plans/2026-10-31-entwicklungsprompts.md) bleibt als Planungskontext erhalten; keine pauschale Etappenabnahme und kein automatischer Neustart bei P00. Der folgende ursprüngliche Übernahmeauftrag ist historischer Kontext; spätere Etappen nicht ohne ihre Voraussetzungen starten.
 
 Diesen Text nach dem Öffnen des Repositorys an Codex geben:
 

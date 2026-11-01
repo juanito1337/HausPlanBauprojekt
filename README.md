@@ -1,8 +1,10 @@
 # HausPlan & Bauprojekt · NX / Codex
 
-**Git-fähiger Entwicklungsstand vom 31.10.2026.** Dieses Repository enthält den tatsächlich verfügbaren G02-Quellcode mit seinen Plan-/Geometriequellen, die erhaltenen K01-Unterlagen, den Außenrundgang und eine eigenständige Übergabe an Codex.
+**Git-fähiger Entwicklungsstand vom 01.11.2026.** Dieses Repository enthält den unveränderten G02-Quellbestand, die getrennte native K02-Böschungs-/Abraumstudie, erhaltene K01-Unterlagen und den Außenrundgang.
 
-**Erweiterung auf Nutzerwunsch:** Native NX-Dateien werden unter [`cad/nx/`](cad/nx/README.md) mit Git LFS verwaltet. Der neue Einstieg `tools/nx_project.py` erzeugt den G02-Stand in einer separaten echten NX-Sitzung und prüft Wiederöffnen/Portabilität. Der jeweils tatsächliche Status steht in `cad/nx/LAST_ATTEMPT.json`; nur ein vollständig geprüfter Lauf erhält einen Eintrag in `cad/nx/CURRENT.json`. Quell-/Generatoränderungen entwerten den alten Nachweis.
+**Direkt zur K02-Studie:** [Renovierungsbasis BASE](cad/nx/k02/20261101T133310_8b6d68/BASE/BASE_21.prt) oder [Mengenübersicht mit 22 direkten Feldmasterlinks](renovierung/planung/2026-11-01/K02_STUDIE.md). BASE und alle 22 unabhängigen Feldvarianten sind tatsächlich in NX erzeugt sowie frisch und verschoben geöffnet: 689 Parts. [Prüfnachweis und Grenzen](docs/entwicklungsstand/K02-native-2026-11-01.md). Grafische NX-Bedien-/Kameraprüfung bleibt offen; keine Bauausführungsfreigabe.
+
+Native NX-Dateien werden unter [`cad/nx/`](cad/nx/README.md) mit Git LFS verwaltet. `tools/nx_project.py` prüft G02 und K02 getrennt; nur vollständige erfolgreiche Läufe schreiben ihre jeweiligen CURRENT-Verweise fort. Für K02 wird eine gültige G02-Basis wiederverwendet. Quell-/Generatoränderungen entwerten den zugehörigen Nachweis. Nach Checkout alle LFS-Dateien laden und die [Suchpfade des gewählten Zustands](cad/nx/README.md) verwenden.
 
 > **Privates Repository verwenden.** Hauspläne, Grundstücksdaten, Bilder, lokale Pfade und teilweise personenbezogene Angaben sind enthalten. Dieses Verzeichnis ist nicht anonymisiert.
 
@@ -13,6 +15,7 @@
 | Bereich | Verfügbarkeit / Status |
 |---|---|
 | `projects/g02/` | Vollständiger G02-Lieferbestand: **543 Dateien**, unverändert entpackt. Haus MAIN01-A01, Gelände, ausgewählte Vegetation, Leitungsreferenzen, Quellcode und Tests. |
+| `renovierung/k02/` | Eigenständiger Studienerzeuger; 13 PS/72 Registerfelder, 22 native Einzelfeldvarianten, 5 Hinderniskonflikte, 45 ungeklärte/ausgenommene Felder ohne Mengen. Keine kumulative Baufolge oder Netto-Gesamtmenge. |
 | `renovierung/k01_unterlagen/` | **8 erhaltene Dateien**: Konzeptbericht, Tabellen, Vorschau, Erläuterung und historische Nachweise. **Kein ausführbarer K01-Code und keine Maßnahmen-STEP-Dateien.** |
 | `renovierung/recovered/` | Aus der erhaltenen HTML-Vorschau extrahierter JSON-Studienplan mit Herkunftsnachweis; keine neue CAD- oder Statikprüfung. |
 | `sources/video/` | Originaler Außenrundgang, unveränderte Videodaten. |
@@ -39,7 +42,7 @@ Der erste Befehl prüft Integrität, Syntax und Repository-Werkzeuge. Der zweite
 
 Den entpackten Ordner als Git-Repository verwenden, nicht die ZIP als einzelne Datei hochladen. Danach Repository oder lokalen Ordner in Codex auswählen und den Auftrag aus `CODEX_START.md` verwenden. Codex braucht den bisherigen Chat nicht; die wesentlichen Entscheidungen und Grenzen sind hier dokumentiert.
 
-Die erste Aufgabe ist **Bestand aufnehmen, Tests nachvollziehen und K01 als fehlende Implementierung behandeln**, nicht G02 neu schreiben. Die vollständige Renovierungsanforderung steht in `docs/ANFORDERUNGEN_RENOVIERUNG.md`.
+Den aktuellen K02-Nachweis und die tatsächlich vorhandenen Zustände zuerst lesen; keine abgeschlossene Kopier-/Erzeugerintegration wegen historischer Starttexte erneut entwickeln. K01 bleibt eine fehlende historische Implementierung. Die vollständige Renovierungsanforderung steht in `docs/ANFORDERUNGEN_RENOVIERUNG.md`; die abgegrenzte K02-Studie erfüllt noch keine vollständige Ausführungsplanung.
 
 ## In NX arbeiten
 

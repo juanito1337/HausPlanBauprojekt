@@ -27,3 +27,7 @@ historie/diagnosen/** -text
 
 # Versioned native NX delivery; source/import snapshots remain unchanged.
 cad/nx/**/*.prt filter=lfs diff=lfs merge=lfs -text
+
+# Preserve generated evidence bytes: K02 fingerprints the actual G02 JSON files.
+cad/nx/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+cad/nx/**/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

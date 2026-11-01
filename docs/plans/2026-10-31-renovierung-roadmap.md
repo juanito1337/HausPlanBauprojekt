@@ -1,5 +1,7 @@
 # Roadmap: G02-Bestand zur unabhängigen Keller-Renovierungsstudie
 
+**Aktuelle Einordnung 01.11.2026:** Der nachfolgende Text und seine P00–P10-Statuszeilen dokumentieren den historischen Planungsstand. Inzwischen wird die gesonderte [K02-Einzelfeldstudie](2026-11-01-nx-boeschung-implementation.md) mit unabhängig gespeicherter NX-Basis und Feldvarianten umgesetzt; tatsächliche Liefer-/Prüfbelege und offene Grenzen stehen im [aktuellen K02-Nachweis](../entwicklungsstand/K02-native-2026-11-01.md), direkte Modelleinstiege im [Mengenbericht](../../renovierung/planung/2026-11-01/K02_STUDIE.md). Native Quellen und reale Kopier-/Öffnungsnachweise liegen vor. Dies ist keine pauschale Abnahme der P00–P10-Pakete: A/B-Vergleich, kumulative Baufolge und grafische NX-Prüfung bleiben offen. Die ursprüngliche Roadmap wird hier nicht nachträglich umgeschrieben.
+
 Stand: 31.10.2026. Status: **Planung erstellt; Entwicklung noch nicht begonnen.**
 Auftrag: Roadmap mit wiederverwendbaren Entwicklungsprompts; Superpowers für die Entwicklung einsetzen.
 
