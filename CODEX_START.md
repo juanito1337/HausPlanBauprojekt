@@ -2,7 +2,7 @@
 
 ## Aktueller Einstieg am 01.11.2026
 
-Zuerst [Projektstand](docs/PROJEKTSTAND.md), [K02-Nachweis](docs/entwicklungsstand/K02-native-2026-11-01.md) und [Mengenbericht mit direkten NX-Masterlinks](renovierung/planung/2026-11-01/K02_STUDIE.md) lesen. Der getrennte K02-Studienerzeuger ist implementiert; vorhandene native Kopien und Nachweise nicht wegen des folgenden historischen Startauftrags erneut entwickeln. `python tools/run_checks.py` und `python tools/nx_project.py check` prüfen den aktuellen gelieferten Stand. Bekannter historischer Windows-Pfadtest und offene grafische/fachliche Prüfungen bleiben ausdrücklich im Nachweis getrennt ausgewiesen. Nächsten Auftrag am tatsächlichen Stand abgrenzen.
+Zuerst [aktuellen CAD-Revisionsstand K02 / 31dba74](cad/nx/REVISION_K02_31dba74.md), [Projektstand](docs/PROJEKTSTAND.md), [K02-Nachweis](docs/entwicklungsstand/K02-native-2026-11-01.md) und [Mengenbericht der geometrisch gleichen Erstlieferung](renovierung/planung/2026-11-01/K02_STUDIE.md) lesen. Die Modelllinks des Mengenberichts gehören zur früheren Lieferung; aktuelle Master stehen in der Revisionsübersicht. Der getrennte K02-Studienerzeuger ist implementiert; vorhandene native Kopien und Nachweise nicht wegen des folgenden historischen Startauftrags erneut entwickeln. `python tools/run_checks.py` und `python tools/nx_project.py check` prüfen den aktuellen gelieferten Stand. Bekannter historischer Windows-Pfadtest und offene grafische/fachliche Prüfungen bleiben ausdrücklich im Nachweis getrennt ausgewiesen. Nächsten Auftrag am tatsächlichen Stand abgrenzen.
 
 ## Historischer Startauftrag nach der Git-Übergabe
 

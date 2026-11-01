@@ -1,5 +1,7 @@
 # Versionierte native NX-Dateien
 
+**Aktueller K02-Revisionsstand:** [K02 / Quellrevision 31dba74 mit allen 23 Masterlinks](REVISION_K02_31dba74.md). Erneuter vollständiger K02-Journalablauf mit Exit 0; 689 Dateien im Lauf `k02/20261101T191747_4adeb5/` gespeichert. G02 wurde als unveränderte gültige Basis wiederverwendet.
+
 Dieser Bereich enthält ausschließlich tatsächlich erzeugte NX-Dateien und zugehörige Prüfnachweise. `.prt` werden mit Git LFS gespeichert. Arbeits-/Fehlerprotokolle und temporäre Quellkopien liegen unter `reports/local/nx/` und bleiben lokal.
 
 `CURRENT.json` benennt den zuletzt vollständig geprüften Lauf und seinen Master. `LAST_ATTEMPT.json` zeigt den jüngsten Buildversuch; FAIL oder RUNNING darf nicht als Erfolg ausgegeben werden. Pro Lauf enthalten `BUILD.json` und `VERIFY.json` die Quellzuordnung, Part-Hashes, NX-Version und Ergebnisse des frischen Wiederöffnens sowie des Tests an einer verschobenen Kopie.

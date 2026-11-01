@@ -2,7 +2,11 @@
 
 Aktueller Studienstand: **01.11.2026**. Der ursprüngliche Übergabestand vom 31.10.2026 bleibt nachfolgend als Historie erhalten.
 
-## Aktuelle K02-Böschungs- und Abraumstudie
+## Aktueller CAD-Revisionsstand K02 / 31dba74
+
+Auf erneuten Prüf- und Speicherauftrag wurde der unveränderte K02-Journalablauf vollständig ausgeführt: **Exit 0**, Lauf `20261101T191747_4adeb5`, 23 Zustände und 689 frisch gespeicherte native Dateien. Alle Zustände wurden frisch AsSaved und als verschobene Kopie mit SearchDirectories geöffnet. Die gültige G02-Basis wurde wiederverwendet. Geometrie und Mengen stimmen mit der Erstlieferung überein; Code und Modelleingaben blieben unverändert. [Revisionsübersicht mit aktuellen Masterlinks und Prüfnachweisen](../cad/nx/REVISION_K02_31dba74.md). Grafische NX-Sichtprüfung und fachliche Freigaben bleiben offen.
+
+## K02-Böschungs- und Abraumstudie: Erstlieferung
 
 **Native Lieferung bestanden:** [Renovierungsbasis BASE direkt öffnen](../cad/nx/k02/20261101T133310_8b6d68/BASE/BASE_21.prt), oder ein Feld über die [Mengenübersicht mit direkten Masterlinks](../renovierung/planung/2026-11-01/K02_STUDIE.md) wählen. Vollständigen jeweiligen Komponentenordner beibehalten und nach Checkout die [NX-Suchpfadanleitung](../cad/nx/README.md) beachten. Ein Master allein ist keine vollständige Baugruppe.
 
