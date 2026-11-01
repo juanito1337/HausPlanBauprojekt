@@ -14,6 +14,15 @@
     "geotechnical_verification": false,
     "parameters": null
   },
+  "groundwater": {
+    "user_statement": "Auf Kellertiefe wird es hier kein Problem mit Grundwasser geben.",
+    "provenance": "NUTZERANGABE_2026-11-01",
+    "planning_assumption": "KEIN_GRUNDWASSERPROBLEM_AUF_KELLERTIEFE_ERWARTET",
+    "measured_level_mm": null,
+    "design_water_level_mm": null,
+    "geotechnical_verification": false,
+    "other_water_conditions": "NICHT_DURCH_DIESE_ANGABE_GEKLAERT"
+  },
   "provisional_exclusions": [
     {
       "sector": "PS05",

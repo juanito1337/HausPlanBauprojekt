@@ -7,6 +7,7 @@ Stand 01.11.2026. Ergänzt [Vorplanung V01](2026-11-01-keller-aushub-und-schacht
 - Überbaute Bereiche werden **wahrscheinlich ausgelassen**.
 - Kellerniedergänge werden **wahrscheinlich ausgelassen beziehungsweise durch Bauwerksversiegelung vom übrigen Keller entkoppelt**.
 - Das Haus liegt laut Nutzer auf **Sandboden**.
+- Nach ergänzender Standortangabe des Nutzers ist **auf Kellertiefe kein Grundwasserproblem zu erwarten**. Als Nutzerangabe erfasst; gemessener Wasserstand und Bemessungswasserstand wurden nicht genannt.
 - Weitere Pläne mit Leitungstiefen sind angekündigt.
 
 Die Einschränkung „wahrscheinlich“ bleibt erhalten. Vorläufig kein Außenaushub in den betroffenen Zonen einplanen; endgültige Grenzen und Ausnahmen stehen noch aus. Nicht automatisch ganze Fassadensektionen oder das Sanierungsziel entfernen. Ausgenommene Bauteile bleiben als Bestand, Anschluss und Konflikt im Modell sichtbar.
@@ -35,6 +36,10 @@ Die [WTA-Kurzfassung 4-6, Ausgabe 12.2024](https://www.wta-international.org/fil
 ## Bodenstatus
 
 `Sandboden`: Nutzerangabe vom 01.11.2026, kein Baugrundgutachten. Korngrößenverteilung, Lagerungsdichte, Schichtung/Auffüllungen, Festigkeits-/Verformungswerte, Wasserstand und Durchlässigkeit bleiben unbekannt. Keine automatischen Böschungswinkel, Standzeiten, Verbauabmessungen oder sicheren Feldlängen daraus bilden. Die [BG BAU](https://bauportal.bgbau.de/bauportal-22025/anwendung-der-baustellenverordnung-bei-baugruben-und-graeben) beschreibt ausdrücklich das Zusammenspiel von Sand, Witterung und Wasser bei der Sicherung. Die Untersuchungsaufträge U02/U03 und die bisherigen Sperren bleiben erforderlich. Abruf 01.11.2026.
+
+## Ergänzende Grundwasserangabe
+
+Für die Vorplanung gilt die Nutzerangabe vom 01.11.2026: Auf Kellertiefe wird kein Grundwasserproblem erwartet. Diese Information ergänzt den Bodenstatus; eine konkrete Grundwasserkote oder zeitliche Schwankungsbreite lässt sich daraus nicht ableiten. Es wird dadurch weder eine Wasserhaltungsanlage als erforderlich festgelegt noch der Wasserprüfpunkt insgesamt geschlossen. Niederschlags-, Oberflächen- und mögliches Schichtenwasser sind durch die Aussage nicht beschrieben; die vorhandenen Prüfaufträge zu diesen Themen bleiben bestehen. Keine Änderung der Gründungssperren, Aushubfreigaben oder NX-Geometrie.
 
 ## Eingang Tiefbau.zip
 

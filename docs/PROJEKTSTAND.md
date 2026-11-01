@@ -4,6 +4,8 @@ Stand dieser Übergabe: **31.10.2026**.
 
 ## Ergänzung 01.11.2026: Keller-Vorplanung
 
+Weitere Nutzerangabe: Auf Kellertiefe wird kein Grundwasserproblem erwartet. In E01 als Standortangabe dokumentiert; kein gemessener oder bemessener Wasserstand angegeben. Keine automatische Ausführungsfreigabe daraus abgeleitet.
+
 Aktuell zusätzlich [E01](plans/2026-11-01-keller-ergaenzung-umfang-leitungen.md) beachten: Nutzer plant voraussichtlich Ausnahmen für Überbau/Niedergänge; Sandboden als Nutzerangabe erfasst. `Tiefbau.zip` enthält neun bytegleiche bereits vorhandene PDF-Quellen; kein neuer belastbarer Leitungstiefennachweis gewonnen. Geometrischer V01-Stand und native NX-Dateien unverändert.
 
 [Aushub- und Schachtplanung V01](plans/2026-11-01-keller-aushub-und-schachtplanung.md) erstellt: 13 aus den aktuellen Kellerkonturen abgeleitete Planungssektionen, 21-seitiges Zeichnungsheft, editierbarer Sektionskatalog, Untersuchungs-/Nachweisprogramm, Bauablauf mit Haltepunkten und Zielstruktur für NX-Unterbaugruppen. Keine neuen Renovierungs-.prt oder Maßnahmengeometrien erzeugt. Fachliche Grundlagen fehlen laut Nutzer; sichere Feldlängen, Tiefen und Mengen noch offen. Sämtliche Ausführungsfreigaben bleiben gesperrt. Prüfungen stehen im [V01-Protokoll](../renovierung/planung/2026-11-01/PRUEFUNG.md).

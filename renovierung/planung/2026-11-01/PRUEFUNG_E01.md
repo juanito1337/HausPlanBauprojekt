@@ -2,6 +2,8 @@
 
 Datum 01.11.2026. Reine Planungsdokumentation, keine Änderung an G02, V01-Katalog/PDF oder nativen NX-Dateien.
 
+Nachtrag am selben Tag: Nutzer erwartet kein Grundwasserproblem auf Kellertiefe. Text und `groundwater`-Eintrag ergänzt; Mess-/Bemessungshöhen bleiben null und fachlicher Nachweis false. JSON erneut gelesen und nativen Aktualitätscheck erneut ausgeführt: Rückgabecode 0, PASS; kein neuer NX-Lauf.
+
 - `Tiefbau.zip`: CRC-Prüfung mit `zipfile.testzip()` ohne Fehler; 9 PDFs, 15 Seiten. Sichere lokale PDF-Extraktion unter `reports/local/tiefbau_20261101/`, keine Dokumentbefehle ausgeführt.
 - SHA-256/Dateigröße aller 9 PDFs mit vorhandenen G02-Quellen verglichen: alle bytegleich; keine neue Quellkopie in G02 geschrieben. Zuordnung in `TIEFBAU_EINGANG.json`.
 - Gas, Telefon, Strom (beide Seiten), Breitband und Legende mit Poppler gerendert und visuell gelesen. Anschreiben, Nutzungsbedingungen und relevante Abschnitte des Leitungsschutz-Merkblatts textlich geprüft. Allgemeine Überdeckungen nicht als Haus-Leitungstiefen eingetragen.
