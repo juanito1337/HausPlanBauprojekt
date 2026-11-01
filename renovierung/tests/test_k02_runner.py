@@ -1,6 +1,7 @@
 """Offline evidence tests; synthetic files never constitute native NX evidence."""
 import copy
 import hashlib
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -80,11 +81,63 @@ class StudyEvidenceTests(unittest.TestCase):
     def test_measurement_rejects_missing_component(self):
         self.assertTrue(hasattr(runner, 'validate_measurement'))
         with self.assertRaises(ValueError):
-            runner.validate_measurement({'body_count': 2, 'component_volumes_m3': [1, 2]}, [1, 2, 3])
+            runner.validate_measurement({'body_count': 2, 'component_volumes_m3': [1, 2], 'volume_m3': 3}, [1, 2, 3])
 
     def test_measurement_accepts_three_components_unordered(self):
         self.assertTrue(hasattr(runner, 'validate_measurement'))
-        runner.validate_measurement({'body_count': 3, 'component_volumes_m3': [3, 1, 2]}, [1, 2, 3])
+        runner.validate_measurement({'body_count': 3, 'component_volumes_m3': [3, 1, 2], 'volume_m3': 6}, [1, 2, 3])
+
+    def set_measurement(self, record):
+        self.build['states'][0]['measurements'] = {'excavation': copy.deepcopy(record)}
+        for phase in ('reopen', 'relocated'):
+            self.verify['states']['BASE'][phase]['measurements'] = {'excavation': copy.deepcopy(record)}
+
+    def test_gate_accepts_valid_multicomponent_total(self):
+        self.set_measurement({'body_count': 3, 'component_volumes_m3': [1, 2, 3], 'volume_m3': 6})
+        self.verify['states']['BASE']['reopen']['measurements']['excavation']['component_volumes_m3'] = [3, 1, 2]
+        self.assertEqual(self.check(), [])
+
+    def test_measurement_rejects_invalid_components_and_expectations(self):
+        for value in (0, -1, float('nan'), float('inf'), float('-inf'), True):
+            with self.subTest(side='actual', value=value), self.assertRaises(ValueError):
+                runner.validate_measurement({'body_count': 1, 'component_volumes_m3': [value], 'volume_m3': value}, [value])
+            with self.subTest(side='expected', value=value), self.assertRaises(ValueError):
+                runner.validate_measurement({'body_count': 1, 'component_volumes_m3': [1], 'volume_m3': 1}, [value])
+        with self.assertRaises(ValueError):
+            runner.validate_measurement({'body_count': 0, 'component_volumes_m3': [], 'volume_m3': 0}, [])
+
+    def test_measurement_rejects_missing_nonfinite_and_incoherent_totals(self):
+        for total in (None, 0, -1, 2, float('nan'), float('inf'), float('-inf'), True):
+            with self.subTest(total=total), self.assertRaises(ValueError):
+                runner.validate_measurement({'body_count': 1, 'component_volumes_m3': [1], 'volume_m3': total}, [1])
+        with self.assertRaises(ValueError):
+            runner.validate_measurement({'body_count': 1, 'component_volumes_m3': [1]}, [1])
+        with self.assertRaises(ValueError):
+            runner.validate_measurement({'body_count': 2, 'component_volumes_m3': [1e308, 1e308], 'volume_m3': 1}, [1e308, 1e308])
+        # No absolute tolerance may hide a 100% mismatch in a small solid.
+        with self.assertRaises(ValueError):
+            runner.validate_measurement({'body_count': 1, 'component_volumes_m3': [1e-12], 'volume_m3': 2e-12}, [1e-12])
+
+    def test_build_and_both_verify_phases_reject_numeric_corruption(self):
+        changes = [{'component_volumes_m3': [v]} for v in (0, -1, float('nan'), float('inf'), float('-inf'))]
+        changes += [{'volume_m3': v} for v in (None, 0, -1, 2, float('nan'), float('inf'), float('-inf'))]
+        changes += [{'body_count': 0, 'component_volumes_m3': [], 'volume_m3': 0}]
+        for location in ('BUILD', 'reopen', 'relocated'):
+            for change in changes:
+                with self.subTest(location=location, change=change):
+                    self.set_measurement({'body_count': 1, 'component_volumes_m3': [1], 'volume_m3': 1})
+                    records = self.build['states'][0]['measurements'] if location == 'BUILD' else self.verify['states']['BASE'][location]['measurements']
+                    records['excavation'].update(change)
+                    self.assertTrue(self.check())
+
+    def test_nonstandard_nan_read_from_json_cannot_bypass_gate(self):
+        self.set_measurement({'body_count': 1, 'component_volumes_m3': [1], 'volume_m3': 1})
+        payload = copy.deepcopy(self.build)
+        payload['states'][0]['measurements']['excavation']['component_volumes_m3'] = [float('nan')]
+        path = self.root/'malformed_numeric_build.json'
+        path.write_text(json.dumps(payload), encoding='utf-8')
+        self.build = runner.read(path)
+        self.assertTrue(self.check())
 
     def test_non_object_manifest_fails_closed(self):
         self.assertTrue(runner.validate_evidence(self.directory, [], self.verify, 'current'))

@@ -42,12 +42,46 @@ def source_fingerprint():
     return hashlib.sha256(json.dumps({p: digest(member_path(ROOT, p)) for p in sorted(paths)}, sort_keys=True).encode()).hexdigest()
 
 
+def _positive_volume(value):
+    if type(value) not in (int, float):
+        return False
+    try:
+        return math.isfinite(value) and value > 0
+    except OverflowError:
+        return False
+
+
+def _component_total(values):
+    if not isinstance(values, list) or not values or not all(_positive_volume(v) for v in values):
+        raise ValueError('Native components must be nonempty, finite and positive')
+    try:
+        total = math.fsum(values)
+    except OverflowError as error:
+        raise ValueError('Native component total overflow') from error
+    if not _positive_volume(total):
+        raise ValueError('Native component total must be finite and positive')
+    return total
+
+
+def _measurement_values(record):
+    values = record['component_volumes_m3']
+    total = _component_total(values)
+    if type(record['body_count']) is not int or record['body_count'] != len(values):
+        raise ValueError('Native component count mismatch')
+    saved_total = record.get('volume_m3')
+    # Internal record coherence uses relative rounding tolerance, not CAD tolerance.
+    if not _positive_volume(saved_total) or not math.isclose(saved_total, total, rel_tol=1e-12, abs_tol=0.0):
+        raise ValueError('Native stored total must match its finite positive component sum')
+    return values
+
+
 def validate_measurement(actual, expected):
-    values = actual['component_volumes_m3']
-    if actual['body_count'] != len(expected) or len(values) != len(expected):
+    values = _measurement_values(actual)
+    _component_total(expected)
+    if len(values) != len(expected):
         raise ValueError('Native component count mismatch')
     for a, b in zip(sorted(values), sorted(expected)):
-        if not math.isfinite(a) or abs(a-b) > max(1e-10, abs(b)*1e-6):
+        if abs(a-b) > max(1e-10, abs(b)*1e-6):
             raise ValueError('Native volume mismatch')
 
 
@@ -88,7 +122,7 @@ def validate_evidence(directory, build, verify, fingerprint, require_complete=Tr
                 if set(actual_measurements) != set(state['measurements']):
                     errors.append('Native measurement roles differ: ' + state['id'])
                 for role, expected in state['measurements'].items():
-                    validate_measurement(actual_measurements[role], expected['component_volumes_m3'])
+                    validate_measurement(actual_measurements[role], _measurement_values(expected))
         if len(set(state_ids)) != len(state_ids) or 'BASE' not in state_ids:
             errors.append('Missing/duplicate base state')
         if set(state_ids) != {'BASE', *build['delivered_field_ids']}:
