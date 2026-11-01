@@ -32,7 +32,8 @@ def main() -> int:
     out = ROOT / 'reports/local' / (datetime.datetime.now().strftime('%Y%m%d_%H%M%S') + '_' + uuid.uuid4().hex[:8])
     out.mkdir(parents=True, exist_ok=False)
     jobs = [('repository_integrity', [sys.executable, str(ROOT/'tools/verify_repo.py')]),
-            ('repository_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'tests'), '-v'])]
+            ('repository_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'tests'), '-v']),
+            ('k02_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'renovierung/tests'), '-p', 'test_k02*.py', '-v'])]
     if args.full:
         command = [sys.executable, str(ROOT/'projects/g02/werkzeuge/PRUEFE_G02_OFFLINE.py'),
                    '--out', str(out/'g02')]

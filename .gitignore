@@ -57,3 +57,9 @@ Thumbs.db
 !/cad/nx/LAST_ATTEMPT.json
 !/cad/nx/*/BUILD.json
 !/cad/nx/*/VERIFY.json
+
+# K02 independent states and their compact, separately scoped evidence.
+!/cad/nx/k02/CURRENT.json
+!/cad/nx/k02/LAST_ATTEMPT.json
+!/cad/nx/k02/*/BUILD.json
+!/cad/nx/k02/*/VERIFY.json

@@ -170,6 +170,22 @@ def build_native(nx_root: Path, accept: bool) -> Path:
         raise
 
 
+def check_base() -> list[str]:
+    """Check only the historical G02 scope; K02 never rewrites its old proof."""
+    try:
+        current = read(ROOT / 'cad/nx/CURRENT.json')
+        attempt = read(ROOT / 'cad/nx/LAST_ATTEMPT.json')
+        if attempt.get('status') != 'PASS' or attempt.get('directory') != current['directory']:
+            return ['Latest NX attempt is not verified']
+        directory = member_path(ROOT / 'cad/nx', current['directory'])
+        build = read(directory / 'BUILD.json')
+        if current.get('master') != current['directory'] + '/' + build.get('master', ''):
+            return ['CURRENT master pointer does not match the verified build']
+        return validate_evidence(directory, build, read(directory / 'VERIFY.json'), source_fingerprint())
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        return [str(error)]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=('build', 'check'))
@@ -178,17 +194,18 @@ def main() -> int:
     args = parser.parse_args()
     try:
         if args.command == 'build':
-            print('PASS: ' + str(build_native(args.nx_root, args.accept_model_assumptions)))
+            if not args.accept_model_assumptions:
+                raise ValueError('Explicit --accept-model-assumptions required')
+            if check_base():
+                print('PASS G02: ' + str(build_native(args.nx_root, True)))
+            else:
+                print('PASS G02: current baseline reused')
+            from renovierung.k02.runner import build_study
+            print('PASS K02: ' + str(build_study(args.nx_root, True)))
         else:
-            current = read(ROOT / 'cad/nx/CURRENT.json')
-            attempt = read(ROOT / 'cad/nx/LAST_ATTEMPT.json')
-            if attempt.get('status') != 'PASS' or attempt.get('directory') != current['directory']:
-                raise ValueError('Latest NX attempt is not verified')
-            directory = member_path(ROOT / 'cad/nx', current['directory'])
-            build = read(directory / 'BUILD.json')
-            if current.get('master') != current['directory'] + '/' + build.get('master', ''):
-                raise ValueError('CURRENT master pointer does not match the verified build')
-            errors = validate_evidence(directory, build, read(directory / 'VERIFY.json'), source_fingerprint())
+            errors = check_base()
+            from renovierung.k02.runner import check_study
+            errors.extend(check_study())
             if errors:
                 raise ValueError('; '.join(errors))
             print('PASS: saved NX evidence and native files match current sources (no new NX run)')
