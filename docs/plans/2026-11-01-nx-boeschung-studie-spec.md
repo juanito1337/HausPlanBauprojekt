@@ -11,7 +11,7 @@ Native unabhängig kopierte Renovierungsbasis und pro modellierbarem Arbeitsfeld
 - mm in NX; unveränderte Höhenquelle `projects/g02/data/HOEHENANSCHLUSS_G02.json`; Umgebung einmal auf Elternteilebene verschoben.
 - V01-Katalog plus `UMFANG_E01.json` lesen; PS05/08 vorläufig ausgenommen, PS02-Niedergang nicht automatisch gesamte Fassade ausnehmen. PS03/10 Anschluss ungeklärt. Anbau ohne Bodenplatten-UK: keine erfundene Sohle oder m³-Angabe.
 - Hauptkeller-Sohle in Studie: -2605 mm, ausdrücklich Prüfziel, keine Bodenaushubfreigabe. 1:1-Seiten- und Endböschungen = Nutzerannahme; keine ungesicherte senkrechte Erd-Stirnseite.
-- Arbeitsraum 800 mm und Sohlenlänge bis 2000 mm sind vorläufige Darstellungsannahmen des Assistenten (optionale Nutzerfrage gestellt). Enden/Ecken/Konflikte begrenzen modellierbare Felder; unerreichbare Restbereiche im Bericht erhalten.
+- Arbeitsraum 800 mm und Sohlenlänge bis 2000 mm wurden vom Nutzer am 01.11.2026 als Studienparameter bestätigt. Enden/Ecken/Konflikte begrenzen modellierbare Felder; unerreichbare Restbereiche im Bericht erhalten. Die Bestätigung ist keine Ausführungsfreigabe.
 - Keine neuen geotechnischen Kennwerte behaupten. `construction_release=false` für sämtliche Felder. Grundwassererwartung als Nutzerangabe, keine Messkote.
 
 ## Geometrie
