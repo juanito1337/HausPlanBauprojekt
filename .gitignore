@@ -63,3 +63,10 @@ Thumbs.db
 !/cad/nx/k02/LAST_ATTEMPT.json
 !/cad/nx/k02/*/BUILD.json
 !/cad/nx/k02/*/VERIFY.json
+
+# M01 integrated master delivery and its independent native evidence.
+!/cad/nx/m01/CURRENT.json
+!/cad/nx/m01/LAST_ATTEMPT.json
+!/cad/nx/m01/*/BUILD.json
+!/cad/nx/m01/*/VERIFY.json
+!/cad/nx/m01/README.md

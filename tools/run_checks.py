@@ -43,7 +43,12 @@ def main() -> int:
     if args.nx:
         jobs.append(('native_nx_build', [sys.executable, str(ROOT/'tools/nx_project.py'),
                                        'build', '--accept-model-assumptions']))
+        jobs.append(('master_nx_build', [sys.executable, str(ROOT/'tools/nx_master.py'),
+                                       'build', '--accept-model-assumptions']))
+    # M01's real-source layout tests require the refreshed G02/K02 evidence.
+    jobs.append(('m01_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'renovierung/tests'), '-p', 'test_m01*.py', '-v']))
     jobs.append(('native_evidence', [sys.executable, str(ROOT/'tools/nx_project.py'), 'check']))
+    jobs.append(('master_evidence', [sys.executable, str(ROOT/'tools/nx_master.py'), 'check']))
     env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1', OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1')
     summary = {'checks': [], 'NX_run_performed': None if args.nx else False,
                'NX_run_requested': args.nx, 'cad_requested': args.cad,

@@ -1,5 +1,9 @@
 # Keller-Renovierung – Entwicklungsbereich
 
+## Gemeinsame Hauptbaugruppe M01 vom 03.11.2026
+
+`m01/` ordnet die vorhandenen bestätigten Teile zu einer gemeinsamen Hauptbaugruppe: Haus und Gelände einmal, Bauabschnitte gemeinsam geladen und einzeln schaltbar. [Einstieg und Bedienung](../cad/nx/m01/README.md). Räume und historische Wohnungsbezüge werden als Register geführt; keine erfundenen Raumkörper oder Zuordnung gemeinsamer Wände. Eigener nativer Erzeuger und Nachweis über `tools/nx_master.py`, zusätzlich im schnellen Repository-Check. K02-Geometrie und Originalteile bleiben erhalten.
+
 ## Aktueller K02-Einstieg vom 01.11.2026
 
 `k02/` enthält den eigenständigen Studienerzeuger für Böschung und Abraum. Der erneut geprüfte und gespeicherte Stand ist über die [Revisionsübersicht K02 / 31dba74](../cad/nx/REVISION_K02_31dba74.md) und die [Renovierungsbasis BASE](../cad/nx/k02/20261101T191747_4adeb5/BASE/BASE_21.prt) erreichbar. Der [Mengenbericht der geometrisch gleichen Erstlieferung](planung/2026-11-01/K02_STUDIE.md) behält seine früheren Modelllinks. Prüfungen und noch offene grafische NX-Prüfung stehen im [K02-Nachweis](../docs/entwicklungsstand/K02-native-2026-11-01.md). Komponentenordner vollständig beibehalten, [NX-Ladeanleitung](../cad/nx/README.md) beachten. Alle 13 PS/72 Felder bleiben registriert, auch gesperrte/ungeklärte Bereiche. Keine kumulative Baufolge oder Ausführungsfreigabe.

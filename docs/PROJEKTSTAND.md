@@ -1,6 +1,14 @@
 # Projektstand und gesicherte Übergabe
 
-Aktueller Studienstand: **01.11.2026**. Der ursprüngliche Übergabestand vom 31.10.2026 bleibt nachfolgend als Historie erhalten.
+Aktueller Studienstand: **03.11.2026**. Frühere Liefer- und Übergabestände bleiben nachfolgend als Historie erhalten.
+
+## Aktuelle Hauptbaugruppe M01
+
+**Eine Hauptdatei öffnen:** [HAUSPROJEKT_MASTER_M01.prt](../cad/nx/m01/20261103T005043Z_07d05f/HAUSPROJEKT_MASTER_M01.prt). Haus, Geschosse, Dach, Umgebung und alle 13 Bauabschnitte liegen gemeinsam im Baugruppenbaum. 72 Felder sind registriert; 22 besitzen separat schaltbare native Studiengeometrie. 50 Zimmer bleiben ausdrücklich Raumregister ohne erfundene Wand- oder Raumkörperzuordnung. Alle Komponenten im Lieferordner belassen; [Bedienung und Suchpfade](../cad/nx/m01/README.md).
+
+Lauf `20261103T005043Z_07d05f`: **199 native Parts**, 265 Baumknoten, 405.483.415 Bytes. Mit NX 2406.6000 tatsächlich aufgebaut, frisch AsSaved und als verschobene Kopie mit SearchDirectories geöffnet; alle drei Phasen bestanden. Je Phase wurden alle 264 Komponenten und 23 Darstellungszustände geschaltet, Feld-/Rollenvolumen und Referenzen geprüft. G02/K02-Quellen und alte Lieferungen bleiben unverändert. [Projektanalyse, Fehlerkorrekturen und Prüfgrenzen](entwicklungsstand/M01-pruefung-2026-11-03.md).
+
+Abschlusscheck `tools/run_checks.py`: Exit 0; 54 Repositorytests (ein bestehender Skip), 45 K02-Tests und 25 M01-Tests sowie beide nativen Aktualitätsnachweise bestanden. Die grafische Bildschirm-/Menüabnahme bleibt offen. Die erneut ausgeführte historische G02-Suite bestätigt weiterhin einen bekannten Windows-Pfadtestfehler. Fachliche Bestandslücken, Statik/Gründung und Leitungstiefen bleiben offen; keine Ausführungsfreigabe.
 
 ## Aktueller CAD-Revisionsstand K02 / 31dba74
 

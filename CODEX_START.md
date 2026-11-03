@@ -1,6 +1,8 @@
 # Erster Arbeitsauftrag für Codex
 
-## Aktueller Einstieg am 01.11.2026
+## Aktueller Einstieg am 03.11.2026
+
+Der jüngste Nutzerauftrag verlangt eine gemeinsame Hauptbaugruppe. [M01-Einstieg](cad/nx/m01/README.md) und [Umsetzungsplan](docs/plans/2026-11-03-hauptbaugruppe.md) zuerst lesen. `tools/nx_master.py` erzeugt/prüft M01 zusätzlich zum unveränderten G02/K02-Nachweis. Alte K02-Feldmaster sind die historischen unabhängigen Studienkopien; sie sind nicht die gemeinsame Hauptdatei. Zimmer sind vorerst nur Quellenregister. Die jeweils bestandene native Lieferung über M01-CURRENT bestimmen; einen Versuch mit FAIL nicht als geliefert ausgeben.
 
 Zuerst [aktuellen CAD-Revisionsstand K02 / 31dba74](cad/nx/REVISION_K02_31dba74.md), [Projektstand](docs/PROJEKTSTAND.md), [K02-Nachweis](docs/entwicklungsstand/K02-native-2026-11-01.md) und [Mengenbericht der geometrisch gleichen Erstlieferung](renovierung/planung/2026-11-01/K02_STUDIE.md) lesen. Die Modelllinks des Mengenberichts gehören zur früheren Lieferung; aktuelle Master stehen in der Revisionsübersicht. Der getrennte K02-Studienerzeuger ist implementiert; vorhandene native Kopien und Nachweise nicht wegen des folgenden historischen Startauftrags erneut entwickeln. `python tools/run_checks.py` und `python tools/nx_project.py check` prüfen den aktuellen gelieferten Stand. Bekannter historischer Windows-Pfadtest und offene grafische/fachliche Prüfungen bleiben ausdrücklich im Nachweis getrennt ausgewiesen. Nächsten Auftrag am tatsächlichen Stand abgrenzen.
 

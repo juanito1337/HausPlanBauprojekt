@@ -1,5 +1,7 @@
 # Versionierte native NX-Dateien
 
+**Gemeinsame Hauptbaugruppe:** [M01 – Haus, Gelände und schaltbare Bauabschnitte](m01/README.md). Dieser zusätzliche Lieferbereich hat eigene CURRENT-/BUILD-/VERIFY-Nachweise und wird mit `tools/nx_master.py` erzeugt und geprüft. Die folgenden G02/K02-Bereiche bleiben als bestätigte Quellen und unabhängige frühere Studien erhalten.
+
 **Aktueller K02-Revisionsstand:** [K02 / Quellrevision 31dba74 mit allen 23 Masterlinks](REVISION_K02_31dba74.md). Erneuter vollständiger K02-Journalablauf mit Exit 0; 689 Dateien im Lauf `k02/20261101T191747_4adeb5/` gespeichert. G02 wurde als unveränderte gültige Basis wiederverwendet.
 
 Dieser Bereich enthält ausschließlich tatsächlich erzeugte NX-Dateien und zugehörige Prüfnachweise. `.prt` werden mit Git LFS gespeichert. Arbeits-/Fehlerprotokolle und temporäre Quellkopien liegen unter `reports/local/nx/` und bleiben lokal.

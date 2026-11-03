@@ -9,13 +9,14 @@ from tools import run_checks
 
 
 class NativeRunnerTests(unittest.TestCase):
-    def run_checks(self, extra, fail_native=False):
+    def run_checks(self, extra, fail_native=False, fail_master=False):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
 
             def child(command, **kwargs):
                 native = any(str(arg).endswith('nx_project.py') for arg in command)
-                return subprocess.CompletedProcess(command, 1 if native and fail_native else 0)
+                master = any(str(arg).endswith('nx_master.py') for arg in command)
+                return subprocess.CompletedProcess(command, 1 if native and fail_native or master and fail_master else 0)
 
             with patch.object(run_checks, 'ROOT', root), patch('sys.argv', ['run_checks.py'] + extra), \
                     patch.object(run_checks.subprocess, 'run', side_effect=child):
@@ -43,6 +44,26 @@ class NativeRunnerTests(unittest.TestCase):
         with self.assertRaises(SystemExit) as error:
             self.run_checks(['--nx'])
         self.assertEqual(error.exception.code, 2)
+
+    def test_master_is_in_default_tests_and_native_evidence(self):
+        result,report=self.run_checks([])
+        self.assertEqual(result,0)
+        names=[r['name'] for r in report['checks']]
+        self.assertIn('m01_tests',names)
+        self.assertIn('master_evidence',names)
+
+    def test_master_evidence_failure_fails_project(self):
+        result,report=self.run_checks([],fail_master=True)
+        self.assertEqual(result,1)
+        self.assertEqual(report['status'],'FAIL')
+
+    def test_master_build_follows_study_build(self):
+        result,report=self.run_checks(['--nx','--accept-model-assumptions'])
+        self.assertEqual(result,0)
+        names=[r['name'] for r in report['checks']]
+        self.assertLess(names.index('native_nx_build'),names.index('master_nx_build'))
+        self.assertLess(names.index('master_nx_build'),names.index('m01_tests'))
+        self.assertLess(names.index('master_nx_build'),names.index('master_evidence'))
 
 
 if __name__ == '__main__':

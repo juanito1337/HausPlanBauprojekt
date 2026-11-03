@@ -1,6 +1,8 @@
 # HausPlan & Bauprojekt · NX / Codex
 
-**Git-fähiger Entwicklungsstand vom 01.11.2026.** Dieses Repository enthält den unveränderten G02-Quellbestand, die getrennte native K02-Böschungs-/Abraumstudie, erhaltene K01-Unterlagen und den Außenrundgang.
+**Entwicklungsstand vom 03.11.2026.** Dieses Repository enthält den unveränderten G02-Quellbestand, die native K02-Böschungs-/Abraumstudie, die neue integrierte M01-Hauptbaugruppe, erhaltene K01-Unterlagen und den Außenrundgang.
+
+**Aktuelle Hauptdatei:** [HAUSPROJEKT_MASTER_M01.prt](cad/nx/m01/20261103T005043Z_07d05f/HAUSPROJEKT_MASTER_M01.prt), dazu [Bedienung und Ladehinweise](cad/nx/m01/README.md). Die Hauptbaugruppe enthält Haus, Umgebung und die schaltbaren Bauabschnitte. Geschosse und Dach sind gegliedert; Zimmer bleiben ausdrücklich Raumregister ohne erfundene Wandzuordnung. Lauf `20261103T005043Z_07d05f`: 199 native Parts, tatsächlicher Neuaufbau sowie frisches und verschobenes Öffnen bestanden. [Prüfbericht und Grenzen](docs/entwicklungsstand/M01-pruefung-2026-11-03.md), [Entwurf und Prüfplan](docs/plans/2026-11-03-hauptbaugruppe.md).
 
 **Aktueller CAD-Revisionsstand K02 / 31dba74:** [Revisionsübersicht mit allen 23 NX-Masterlinks](cad/nx/REVISION_K02_31dba74.md) oder [Renovierungsbasis BASE](cad/nx/k02/20261101T191747_4adeb5/BASE/BASE_21.prt). Der vollständige K02-Journalablauf wurde erneut mit Exit 0 ausgeführt: 689 Parts frisch gespeichert und je Zustand frisch sowie verschoben geöffnet. Der [Mengenbericht der geometrisch gleichen Erstlieferung](renovierung/planung/2026-11-01/K02_STUDIE.md) bleibt erhalten; seine Modelllinks zeigen den früheren Lauf. [Prüfnachweis und Grenzen](docs/entwicklungsstand/K02-native-2026-11-01.md). Grafische NX-Bedien-/Kameraprüfung bleibt offen; keine Bauausführungsfreigabe.
 

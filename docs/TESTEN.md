@@ -1,5 +1,9 @@
 # Testen ohne erfundene Erfolgsnachweise
 
+## Zusätzlicher M01-Nachweis ab 03.11.2026
+
+Für die gemeinsame Hauptbaugruppe zusätzlich `python tools/nx_master.py build --accept-model-assumptions` ausführen. `python tools/nx_master.py check` vergleicht den nativen Nachweis mit dem aktuellen aus den Quellen abgeleiteten Baum, sämtlichen Teilbytes, Feldmengen, Referenzsets, Komponentenzuständen und Schaltprüfungen. `tools/run_checks.py` enthält die M01-Tests und beide nativen Aktualitätschecks. Bei `--nx` erfolgen G02/K02- und M01-Neuerzeugung vor den M01-Tests, die aktuelle Quelllieferungen benötigen. Ein reiner Offline-Test ist weiterhin kein neuer NX-Lauf. Die interaktive Auswahl im NX-Menü ist vom programmgesteuert getesteten Schaltkern zu unterscheiden.
+
 ## Verbindlicher nativer Projektcheck ab 31.10.2026
 
 Auf Nutzerwunsch werden neue native Ausgaben unter `cad/nx/` mit Git LFS verwaltet. Vor einem Abschluss `python tools/nx_project.py check` ausführen: Der gespeicherte echte NX-Nachweis muss zu aktuellen Quell-/Generatorhashes und allen nativen Dateien passen. Nach Erzeuger-/Geometrieänderungen ist ein neuer echter Lauf erforderlich:
@@ -31,7 +35,7 @@ python tools/run_checks.py --full
 
 Startet zusätzlich `projects/g02/werkzeuge/PRUEFE_G02_OFFLINE.py` und dessen vorhandene Gruppen. Der bei dieser Übergabe ausgeführte Altbestand zählt 680 Tests; diese Zahl ist eine Beobachtung dieses Stands, kein auf ewig festes Erfolgskriterium. Testgruppen in getrennten Prozessen laufen lassen. Alle neuen Ausgaben unter `reports/local/` sind ignoriert.
 
-Bekannte Windows-Grenze: `test_r09.CoreTests.test_path_traversal_rejected`, Teilfall `/tmp/x`, scheitert im unveränderten historischen G02. Der volle Lauf vom 01.11.2026 hat diesen einen Fehler erneut bestätigt; der K02-Lieferabschluss wiederholt die breite historische Suite ohne neuen Anlass nicht. Das ist getrennt vom schnellen Check und echten nativen Gate zu lesen, keine Behauptung einer vollständig grünen historischen Suite. Aktuelle Befehle, Exitcodes und Nachweise: [K02-Entwicklungsnachweis](entwicklungsstand/K02-native-2026-11-01.md).
+Bekannte Windows-Grenze: `test_r09.CoreTests.test_path_traversal_rejected`, Teilfall `/tmp/x`, scheitert im unveränderten historischen G02. Der volle Lauf vom 03.11.2026 hat diesen einen Fehler erneut bestätigt. Das ist getrennt vom schnellen Check und echten nativen Gate zu lesen, keine Behauptung einer vollständig grünen historischen Suite. Aktuelle Befehle, Exitcodes und Nachweise: [M01-Projektprüfung](entwicklungsstand/M01-pruefung-2026-11-03.md), zuvor [K02-Entwicklungsnachweis](entwicklungsstand/K02-native-2026-11-01.md).
 
 ## 3. Optionale unabhängige CAD-Prüfung
 
