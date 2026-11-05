@@ -1,8 +1,9 @@
 """Run this journal in NX with the intended M01 master displayed.
 
-Select exactly one native Feld_... component in the assembly tree, then
+Select exactly one field or section component in the assembly tree, then
 run this file via Tools > Journal > Play. Clear the selection for BASE.
-M01_FIELD_ID may explicitly request BASE or a native field in batch use.
+M01_FIELD_ID may explicitly request BASE, a section, or a saved field state.
+Register-only fields select their section overview with visible markers.
 No code editing is needed, and this journal never saves a part.
 The register-only room entries have no invented position or wall ownership.
 """
@@ -28,11 +29,19 @@ def selected_field(master):
         raise ValueError('Select exactly one M01 field component, or clear selection for BASE')
     selected = manager.GetSelectedTaggedObject(0)
     matched = [c for c in nodes.values() if c.Tag == selected.Tag]
+    if len(matched) == 1:
+        ident = read_attribute(matched[0], 'M01_NODE_ID')
+        if ident.startswith('SECTION_'):
+            return ident.removeprefix('SECTION_')
     if len(matched) != 1 or read_attribute(matched[0], 'M01_KIND') != 'field':
         raise ValueError('Selection must be a field component belonging to this M01 master')
+    field_id = read_attribute(matched[0], 'M01_FIELD_ID')
+    if master.HasUserAttribute('M01_DEFAULT_STATE', NXOpen.NXObject.AttributeType.String, -1):
+        if field_id in read_attribute(master, 'M01_STATE_CATALOG'):
+            return field_id
     if read_attribute(matched[0], 'M01_FIELD_NATIVE') is not True:
-        raise ValueError('The selected register field has no native study')
-    return read_attribute(matched[0], 'M01_FIELD_ID')
+        return read_attribute(matched[0], 'M01_FIELD_METADATA')['sector_id']
+    return field_id
 
 
 def main():

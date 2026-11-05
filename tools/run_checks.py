@@ -31,6 +31,8 @@ def main() -> int:
         parser.error('--nx requires --accept-model-assumptions')
     out = ROOT / 'reports/local' / (datetime.datetime.now().strftime('%Y%m%d_%H%M%S') + '_' + uuid.uuid4().hex[:8])
     out.mkdir(parents=True, exist_ok=False)
+    annex_scope = (ROOT/'renovierung/anbau/assumptions.json').is_file()
+    master_tool = ROOT/'tools'/('nx_anbau.py' if annex_scope else 'nx_master.py')
     jobs = [('repository_integrity', [sys.executable, str(ROOT/'tools/verify_repo.py')]),
             ('repository_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'tests'), '-v']),
             ('k02_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'renovierung/tests'), '-p', 'test_k02*.py', '-v'])]
@@ -43,12 +45,14 @@ def main() -> int:
     if args.nx:
         jobs.append(('native_nx_build', [sys.executable, str(ROOT/'tools/nx_project.py'),
                                        'build', '--accept-model-assumptions']))
-        jobs.append(('master_nx_build', [sys.executable, str(ROOT/'tools/nx_master.py'),
+        jobs.append(('master_nx_build', [sys.executable, str(master_tool),
                                        'build', '--accept-model-assumptions']))
     # M01's real-source layout tests require the refreshed G02/K02 evidence.
     jobs.append(('m01_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'renovierung/tests'), '-p', 'test_m01*.py', '-v']))
+    if annex_scope:
+        jobs.append(('anbau_tests', [sys.executable, '-m', 'unittest', 'discover', '-s', str(ROOT/'renovierung/tests'), '-p', 'test_anbau*.py', '-v']))
     jobs.append(('native_evidence', [sys.executable, str(ROOT/'tools/nx_project.py'), 'check']))
-    jobs.append(('master_evidence', [sys.executable, str(ROOT/'tools/nx_master.py'), 'check']))
+    jobs.append(('master_evidence', [sys.executable, str(master_tool), 'check']))
     env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1', OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1')
     summary = {'checks': [], 'NX_run_performed': None if args.nx else False,
                'NX_run_requested': args.nx, 'cad_requested': args.cad,

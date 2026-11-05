@@ -1,14 +1,18 @@
 # Projektstand und gesicherte Übergabe
 
-Aktueller Studienstand: **03.11.2026**. Frühere Liefer- und Übergabestände bleiben nachfolgend als Historie erhalten.
+Aktueller Studienstand **05.11.2026**. Frühere Liefer- und Übergabestände bleiben nachfolgend als Historie erhalten.
 
-## Aktuelle Hauptbaugruppe M01
+## Aktuelle Hauptbaugruppe M02
 
-**Eine Hauptdatei öffnen:** [HAUSPROJEKT_MASTER_M01.prt](../cad/nx/m01/20261103T005043Z_07d05f/HAUSPROJEKT_MASTER_M01.prt). Haus, Geschosse, Dach, Umgebung und alle 13 Bauabschnitte liegen gemeinsam im Baugruppenbaum. 72 Felder sind registriert; 22 besitzen separat schaltbare native Studiengeometrie. 50 Zimmer bleiben ausdrücklich Raumregister ohne erfundene Wand- oder Raumkörperzuordnung. Alle Komponenten im Lieferordner belassen; [Bedienung und Suchpfade](../cad/nx/m01/README.md).
+Stand 05.11.2026. [Hauptbaugruppe öffnen](../cad/nx/m02/20261105T002134Z_6569c2/HAUSPROJEKT_MASTER_M01.prt). Alle 367 zugehörigen Parts bleiben gemeinsam im selben Lieferordner. Zum Revisionswechsel die ältere Projektbaugruppe schließen und diesen Stand öffnen. [Bedienung und Dateiauswahl](../cad/nx/m01/README.md).
 
-Lauf `20261103T005043Z_07d05f`: **199 native Parts**, 265 Baumknoten, 405.483.415 Bytes. Mit NX 2406.6000 tatsächlich aufgebaut, frisch AsSaved und als verschobene Kopie mit SearchDirectories geöffnet; alle drei Phasen bestanden. Je Phase wurden alle 264 Komponenten und 23 Darstellungszustände geschaltet, Feld-/Rollenvolumen und Referenzen geprüft. G02/K02-Quellen und alte Lieferungen bleiben unverändert. [Projektanalyse, Fehlerkorrekturen und Prüfgrenzen](entwicklungsstand/M01-pruefung-2026-11-03.md).
+Das Haus, seine Geschosse, die Umgebung und alle 13 Bauabschnitte sind gemeinsam enthalten. 72 Felder sind registriert. Die bisherigen 22 Schachtstudien werden durch 10 Anbaustudien mit Schnittboden und Bodenlager sowie 14 rote Anbau-Konfliktansichten ergänzt. Die übrigen 26 Felder bleiben gekennzeichnete Register. 50 Zimmer bleiben Raumregister. Es sind 60 Zustände und 59 separate Abschnitts-/Feldeinstiege gespeichert.
 
-Abschlusscheck `tools/run_checks.py`: Exit 0; 54 Repositorytests (ein bestehender Skip), 45 K02-Tests und 25 M01-Tests sowie beide nativen Aktualitätsnachweise bestanden. Die grafische Bildschirm-/Menüabnahme bleibt offen. Die erneut ausgeführte historische G02-Suite bestätigt weiterhin einen bekannten Windows-Pfadtestfehler. Fachliche Bestandslücken, Statik/Gründung und Leitungstiefen bleiben offen; keine Ausführungsfreigabe.
+Im minimalen NX-Ladeprofil wurden alte Registerlinien in 11 Ansichten nicht beobachtet. Nur die 4 reinen Register-SECTIONs `SECTION_PS02`, `SECTION_PS03`, `SECTION_PS05`, `SECTION_PS08` zeigten eine leere Minimalansicht. In gemischten SECTIONs fehlten lediglich einzelne alte Begleitregistermarker. Ausgewählte Studienmarker und Studienkörper blieben vorhanden. Die betroffenen Abschnitts-Wrapper zeigten Haus und Gelände, alle 26 zugehörigen direkten FIELD-Einstiege ihre Feldmarkierung. Für sämtliche Registerlinien im SECTION-Teil ist vollständiges Laden der belegte Weg. Die 26 betroffenen alten Registerfelder besitzen keinen aktiven Aushubkörper und keinen nativen Aushubvolumennachweis. Historische K02-Rechenwerte einzelner Konfliktfelder sind keine aktuellen nativen Aushubmengen. Alle 24 neuen Anbaufeld-Wrapper und die zugehörigen 24 direkten FIELD-Einstiege wurden ohne Registerausnahme geprüft. Diese Anbaufelder besitzen echte Studien- oder Diagnosekörper. Rote Diagnosen erhalten weiterhin keine effektiven Aushub- oder Lagermengen.
+
+Lauf `20261105T002134Z_6569c2` wurde mit NX 2406 aufgebaut und vollständig geprüft. Der native Nachweis umfasst 413 Baumknoten, alle 60 Zustände, die 24 öffentlichen Anbaufeldaufrufe sowie 145 normale Einstiege aus einer verschobenen Kopie. Original- und Lieferbytes wurden kontrolliert. Die grafische NX-Bildschirmabnahme bleibt offen. [Befunde, Mengen und Prüfgrenzen](entwicklungsstand/M01-2-pruefung-2026-11-04.md).
+
+Der Nutzer hat die Sohle bei −1.600 mm gegenüber EG ausdrücklich als reine Schnittstudie bestätigt. Die rechnerische Hilfskote −1.500 mm beschreibt eine angenommene Plattenunterkante. Der vorhandene Anbau-Fußbodenproxy liegt bei −1.860 mm. Tatsächliche Platten- und Fundamenthöhen bleiben zu erkunden. Die Ansichten bilden unabhängige Einzelfeldstudien ab. Gründung, Boden, Leitungen, Zugänge, Auflasten und Baufolge benötigen weiterhin örtliche Fachprüfung.
 
 ## Aktueller CAD-Revisionsstand K02 / 31dba74
 

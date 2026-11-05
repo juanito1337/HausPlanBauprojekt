@@ -1,6 +1,6 @@
 # Versionierte native NX-Dateien
 
-**Gemeinsame Hauptbaugruppe:** [M01 – Haus, Gelände und schaltbare Bauabschnitte](m01/README.md). Dieser zusätzliche Lieferbereich hat eigene CURRENT-/BUILD-/VERIFY-Nachweise und wird mit `tools/nx_master.py` erzeugt und geprüft. Die folgenden G02/K02-Bereiche bleiben als bestätigte Quellen und unabhängige frühere Studien erhalten.
+**Gemeinsame Hauptbaugruppe M02** [Haus, Gelände und sämtliche Bauabschnitte](m01/README.md). Der aktuelle Gesamtstand wird über `m02/CURRENT.json` bestimmt und mit `tools/nx_anbau.py` erzeugt und geprüft. Alle Parts des M02-Laufs liegen gemeinsam in einem flachen Ordner. Die G02/K02-Bereiche erhalten ihre eigenen historischen Nachweise. Der flache 318-Part-M01-Zwischenstand ist als explizite Eingabe dokumentiert. Die vollständige integrierte Prüfung steht beim aktuellen M02-Lauf.
 
 **Aktueller K02-Revisionsstand:** [K02 / Quellrevision 31dba74 mit allen 23 Masterlinks](REVISION_K02_31dba74.md). Erneuter vollständiger K02-Journalablauf mit Exit 0; 689 Dateien im Lauf `k02/20261101T191747_4adeb5/` gespeichert. G02 wurde als unveränderte gültige Basis wiederverwendet.
 
@@ -16,9 +16,10 @@ K02 hat darunter einen eigenen Bereich `k02/` mit eigenem `CURRENT.json`, `LAST_
 git lfs install --local
 git lfs pull
 python tools/nx_project.py check
+python tools/nx_anbau.py check
 ```
 
-NX lädt die Baugruppe über Suchverzeichnisse: alle im Part-Manifest vorkommenden Unterordner des gewählten Laufs als Komponentensuchpfade eintragen, vollständig laden und den Master aus `CURRENT.json` öffnen. Eine `.prt`-Masterdatei allein ist keine vollständige Baugruppe. Der automatisierte Prüflauf verwendet genau dieses Ladeverfahren und verweigert Komponenten außerhalb des gewählten Laufordners. Absolute Speicherpfade in NX-Dateien werden nicht als portable Referenzgarantie ausgegeben.
+Für M02 genügt der normale Ladeweg aus dem gemeinsamen Lieferordner. Für G02 und K02 gilt weiterhin die Suchpfadkonfiguration. Hierfür alle im Part-Manifest vorkommenden Unterordner des gewählten Laufs als Komponentensuchpfade eintragen, vollständig laden und den Master aus `CURRENT.json` öffnen. Eine `.prt`-Masterdatei allein ist keine vollständige Baugruppe. Der automatisierte Prüflauf verwendet genau dieses Ladeverfahren und verweigert Komponenten außerhalb des gewählten Laufordners. Absolute Speicherpfade in NX-Dateien werden nicht als portable Referenzgarantie ausgegeben.
 
 Für K02 zuerst `k02/CURRENT.json` lesen: `directory` liegt relativ zu `cad/nx/k02/`, jeder Eintrag in `masters` wiederum relativ zu diesem Laufordner. Für einen Zustand ausschließlich dessen eigenen Unterordner als Suchverzeichnis verwenden und den dort genannten Master vollständig öffnen. Alle Komponenten haben zustandsspezifische Dateinamen. Keine Teile aus BASE, anderen Feldern oder dem G02-Original hinzufügen. Der automatisierte Test prüft neue K02-Dateien am Erstellort zusätzlich mit AsSaved; nach Checkout/Umzug ist SearchDirectories mit dem eigenen Zustandsordner maßgeblich.
 

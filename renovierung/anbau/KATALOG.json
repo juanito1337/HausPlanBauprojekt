@@ -1,0 +1,1528 @@
+{
+  "schema": "ANBAU_DISPLAY_CATALOG_V1",
+  "units": "mm",
+  "construction_release": false,
+  "assumptions": {
+    "assumed_slab_underside_z_mm": -1500,
+    "basis": "EXPLICIT_USER_DISPLAY_ASSUMPTION_NOT_SURVEYED_SLAB_OR_FOUNDATION",
+    "construction_release": false,
+    "excavation_slope_ratio": 1,
+    "formation_z_mm": -1600,
+    "height_warning": "Existing G02 annex FFB proxy Z_KG_ANBAU=-1860 mm stays unchanged. Assumed slab underside -1500 and target -1600 lie above it; no as-built slab or foundation datum follows.",
+    "loose_factor": 1.05,
+    "max_bottom_length_mm": 2000,
+    "minimum_pile_excavation_clearance_mm": 600,
+    "pile_center_xy_mm": [
+      14500,
+      -9500
+    ],
+    "pile_patch_radius_mm": 6000,
+    "reserve_factor": 1.25,
+    "schema": "ANBAU_DISPLAY_ASSUMPTIONS_V1",
+    "target_below_assumed_slab_mm": 100,
+    "terrain_tolerance_mm": 25,
+    "utility_corridor_half_width_mm": 1000,
+    "working_width_mm": 800
+  },
+  "height_registration": {
+    "translation_mm": [
+      0,
+      0,
+      -31362.49870845903
+    ],
+    "mode": "PLAN_ANNAHME",
+    "applied_once_to_source_grid": true
+  },
+  "terrain": {
+    "source": "BILINEAR_DGM_UNCHANGED_K02_TIN",
+    "shape": [
+      102,
+      83
+    ],
+    "TIN_subdivisions": 4,
+    "max_vertical_error_mm": 20.78125
+  },
+  "native_candidate_ids": [
+    "PS11-F01",
+    "PS11-F04",
+    "PS11-F05",
+    "PS12-F01",
+    "PS12-F02",
+    "PS12-F03",
+    "PS12-F04",
+    "PS12-F05",
+    "PS13-F01",
+    "PS13-F02",
+    "PS13-F03",
+    "PS13-F04",
+    "PS13-F05"
+  ],
+  "diagnostic_only_ids": [
+    "PS10-F01",
+    "PS10-F02",
+    "PS10-F03",
+    "PS10-F04",
+    "PS10-F05",
+    "PS11-F02",
+    "PS11-F03",
+    "PS11-F06",
+    "PS11-F07",
+    "PS13-F06",
+    "PS13-F07"
+  ],
+  "provenance": {
+    "source_and_generator_hashes": {
+      "projects/g02/data/DGM_STUETZPUNKTE_G02.json": "da981e278a8bbd3545c467491c0684132b5969c36e6ee7e2506498d7a8a512f9",
+      "projects/g02/data/HOEHENANSCHLUSS_G02.json": "a565318eaed01f741615c91be954f76e8b85c4ef790797bbe33c6607006cd341",
+      "projects/g02/haus/data/haus.json": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+      "projects/g02/umgebung/CAD_IMPORT/V01_R09.step": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+      "projects/g02/umgebung/CAD_IMPORT/V02_R09.step": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+      "projects/g02/umgebung/CAD_IMPORT/V03_R09.step": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+      "projects/g02/umgebung/CAD_IMPORT/V05_R09.step": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+      "projects/g02/umgebung/abgleich/VEGETATION_VIDEO_R11.json": "976d3c622aad6dc07239aea9f186839fb07b403c6569ee390a4d513aeaaa1b7b",
+      "projects/g02/umgebung/data/IMPORTAUFTRAG_R09.json": "07b8766f50618eb96b321ff75d451a6a789c91fe5ec3ed89ae1f81f9b884a651",
+      "renovierung/anbau/assumptions.json": "300b1b4c87e30ccd4a7891e5b4083b18df925ad818f75df35e2edb4b84128762",
+      "renovierung/anbau/geometry.py": "46a948a1d5488a413c4f5152a68c9e1038efada4484086626fede3da68fd9338",
+      "renovierung/k02/geometry.py": "58f763462da2e9f777aee523d7868d468664e3cb9609dd0aba6baf5e00db4a7c",
+      "renovierung/k02/planning.py": "10ed43ca976ea6ed1eadbdbde50094f69e616bad748fe1869f8e3ece51fca8e7",
+      "renovierung/k02/terrain.py": "146ac5077370e7376b625172b3859d296af667c46435d6045d89a71204723fd9",
+      "renovierung/planung/2026-11-01/UMFANG_E01.json": "8a6584c2afcdf3c715fa08df11c32cf29f6318ac8788943c47b96c6310020cb1",
+      "renovierung/planung/2026-11-01/sektionen.json": "61c05993677a7b01cdd1809251a68b30305752a159d6e88cf3ca05806ac09ddf",
+      "tools/check_m01_clearances.py": "acd8dfb7b8f6d8d2f629e3c1d20c13def144891edb858d6eba2896738e7b25b8",
+      "tools/repo_support.py": "9fa4ba7d620bcb1a8b84527a1b73d8b0fc32a107676c658ceba178ae882f957d"
+    },
+    "coordinate_reference": "EG_MM_HEIGHT_APPLIED_ONCE",
+    "no_original_generator_or_geometry_modified": true
+  },
+  "limitations": [
+    "DISPLAY_ASSUMPTION_NOT_AS_BUILT_SLAB_OR_FOUNDATION",
+    "EXISTING_ANNEX_FFB_PROXY_MINUS_1860_CONTRADICTS_HIGHER_ASSUMED_SLAB_UNDERSIDE",
+    "PS10_UNKNOWN_INTERFACE_MASK_NOT_INVENTED",
+    "BUILDING_INTERSECTIONS_ARE_XY_PROJECTION_CONFLICTS_NOT_SOLID_BOOLEAN_QUANTITIES",
+    "PARCEL_MAP_REFERENCE_NOT_SURVEY",
+    "UTILITY_CORRIDORS_ASSUMED_DEPTHS_UNKNOWN",
+    "REGISTERED_VEGETATION_PROJECTIONS_NOT_CURRENT_TREE_ROOT_SURVEY",
+    "ARTIFICIAL_SOIL_BOTTOM_NOT_EARTHWORK_QUANTITY",
+    "NO_CUMULATIVE_SEQUENCE_OR_NET_TOTAL",
+    "NO_NX_EXECUTION_NO_CONSTRUCTION_RELEASE"
+  ],
+  "fields": [
+    {
+      "id": "PS10-F01",
+      "sector_id": "PS10",
+      "source_wall": "AN_KG_AW_01",
+      "origin_mm": [
+        15450.0,
+        5865.0
+      ],
+      "tangent": [
+        0.9848077460932047,
+        -0.17364821690654392
+      ],
+      "normal": [
+        -0.17364821690654392,
+        -0.9848077460932047
+      ],
+      "station_interval_mm": [
+        0.0,
+        1746.000076483217
+      ],
+      "length_mm": 1746.000076483217,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.139207386480717,
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 9.842352808443579,
+          "upper_error_overlap_m2": 10.028445434388026,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 10.068419261711892,
+          "upper_error_overlap_m2": 10.255815591363794,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS10-F01; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS10-F02",
+      "sector_id": "PS10",
+      "source_wall": "AN_KG_AW_01",
+      "origin_mm": [
+        17169.4744,
+        5561.8102
+      ],
+      "tangent": [
+        0.9848077460932047,
+        -0.17364821690654392
+      ],
+      "normal": [
+        -0.17364821690654392,
+        -0.9848077460932047
+      ],
+      "station_interval_mm": [
+        1746.000076483217,
+        3492.000152966434
+      ],
+      "length_mm": 1746.000076483217,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.139207386480731,
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 9.777168367662414,
+          "upper_error_overlap_m2": 9.961910650345358,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 10.068419261711906,
+          "upper_error_overlap_m2": 10.255815591363795,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS10-F02; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS10-F03",
+      "sector_id": "PS10",
+      "source_wall": "AN_KG_AW_01",
+      "origin_mm": [
+        18888.9488,
+        5258.6204
+      ],
+      "tangent": [
+        0.9848077460932047,
+        -0.17364821690654392
+      ],
+      "normal": [
+        -0.17364821690654392,
+        -0.9848077460932047
+      ],
+      "station_interval_mm": [
+        3492.000152966434,
+        5238.000229449651
+      ],
+      "length_mm": 1746.0000764832166,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.138445083278355,
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 8.025864362002077,
+          "upper_error_overlap_m2": 8.14885254586023,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 8.7139929299959,
+          "upper_error_overlap_m2": 8.842962264781706,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS10-F03; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS10-F04",
+      "sector_id": "PS10",
+      "source_wall": "AN_KG_AW_01",
+      "origin_mm": [
+        20608.423199999997,
+        4955.430600000001
+      ],
+      "tangent": [
+        0.9848077460932047,
+        -0.17364821690654392
+      ],
+      "normal": [
+        -0.17364821690654392,
+        -0.9848077460932047
+      ],
+      "station_interval_mm": [
+        5238.000229449651,
+        6984.000305932868
+      ],
+      "length_mm": 1746.0000764832175,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.11769210245639,
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 4.281843712953274,
+          "upper_error_overlap_m2": 4.368622556413211,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 4.859695506128559,
+          "upper_error_overlap_m2": 4.952380776824945,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS10-F04; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS10-F05",
+      "sector_id": "PS10",
+      "source_wall": "AN_KG_AW_01",
+      "origin_mm": [
+        22327.8976,
+        4652.2408000000005
+      ],
+      "tangent": [
+        0.9848077460932047,
+        -0.17364821690654392
+      ],
+      "normal": [
+        -0.17364821690654392,
+        -0.9848077460932047
+      ],
+      "station_interval_mm": [
+        6984.000305932868,
+        8730.000382416085
+      ],
+      "length_mm": 1746.0000764832166,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.065415856107274,
+      "blockers": [
+        "INTERFACE_UNRESOLVED"
+      ],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 0.5315449251708015,
+          "upper_error_overlap_m2": 0.582114428232527,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 1.0053980822612187,
+          "upper_error_overlap_m2": 1.0617992888681846,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS10-F05; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F01",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        24047.372,
+        4349.051
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        0.0,
+        1890.0000504765896
+      ],
+      "length_mm": 1890.0000504765896,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.386160400037303,
+      "diagnostic_volume_m3": 7.386160400037303,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.386160400037303
+          ],
+          "volume_m3": 7.386160400037303
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            58.468151364966204,
+            125.63256239957117
+          ],
+          "volume_m3": 184.10071376453735
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.755468392099825
+          ],
+          "volume_m3": 7.755468392099825
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            9.23270054637714
+          ],
+          "volume_m3": 9.23270054637714
+        }
+      },
+      "note": "PS11-F01; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.386 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F02",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        24375.567,
+        6210.337714285715
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        1890.0000504765896,
+        3780.0001009531793
+      ],
+      "length_mm": 1890.0000504765896,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "BLOCKED_INTERFACE_OR_ACCESS_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.414270819720789,
+      "blockers": [
+        "ACCESS_PROTECTION_UNRESOLVED"
+      ],
+      "conflicts": [],
+      "access_conflicts": [
+        {
+          "id": "AN_EG_TUER",
+          "overlap_station_mm": 330.0001009531793,
+          "opening_station_interval_mm": [
+            3450,
+            4460
+          ],
+          "basis": "MODELED_ESTIMATED_DOOR_NO_REPLACEMENT_ACCESS_PROVEN"
+        }
+      ],
+      "measurements": {},
+      "note": "PS11-F02; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F03",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        24703.762,
+        8071.624428571429
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        3780.0001009531793,
+        5670.000151429768
+      ],
+      "length_mm": 1890.000050476589,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "BLOCKED_INTERFACE_OR_ACCESS_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.395715724760743,
+      "blockers": [
+        "ACCESS_PROTECTION_UNRESOLVED"
+      ],
+      "conflicts": [],
+      "access_conflicts": [
+        {
+          "id": "AN_EG_TUER",
+          "overlap_station_mm": 679.9998990468207,
+          "opening_station_interval_mm": [
+            3450,
+            4460
+          ],
+          "basis": "MODELED_ESTIMATED_DOOR_NO_REPLACEMENT_ACCESS_PROVEN"
+        }
+      ],
+      "measurements": {},
+      "note": "PS11-F03; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F04",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        25031.957,
+        9932.911142857143
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        5670.000151429768,
+        7560.000201906359
+      ],
+      "length_mm": 1890.0000504765903,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.328326931800762,
+      "diagnostic_volume_m3": 7.328326931800762,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.328326931800762
+          ],
+          "volume_m3": 7.328326931800762
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            60.65562611989511,
+            131.7382960288828
+          ],
+          "volume_m3": 192.39392214877594
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.694743270508523
+          ],
+          "volume_m3": 7.694743270508523
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            9.160408727759163
+          ],
+          "volume_m3": 9.160408727759163
+        }
+      },
+      "note": "PS11-F04; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.328 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F05",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        25360.152000000002,
+        11794.197857142859
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        7560.000201906359,
+        9450.000252382948
+      ],
+      "length_mm": 1890.0000504765894,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.27838287024377,
+      "diagnostic_volume_m3": 7.27838287024377,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.27838287024377
+          ],
+          "volume_m3": 7.27838287024377
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            59.24015491920138,
+            126.93168004087225
+          ],
+          "volume_m3": 186.1718349600735
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.64230194904562
+          ],
+          "volume_m3": 7.64230194904562
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            9.097978659730156
+          ],
+          "volume_m3": 9.097978659730156
+        }
+      },
+      "note": "PS11-F05; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.278 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F06",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        25688.347,
+        13655.484571428573
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        9450.000252382948,
+        11340.000302859537
+      ],
+      "length_mm": 1890.0000504765885,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_PROPERTY_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.254445090993251,
+      "blockers": [],
+      "conflicts": [
+        {
+          "kind": "PROPERTY_BOUNDARY",
+          "nominal_outside_m2": 0.0,
+          "upper_error_outside_m2": 0.016796632999420167
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS11-F06; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS11-F07",
+      "sector_id": "PS11",
+      "source_wall": "AN_KG_AW_02",
+      "origin_mm": [
+        26016.542,
+        15516.771285714287
+      ],
+      "tangent": [
+        0.17364814351049426,
+        0.9848077590349087
+      ],
+      "normal": [
+        0.9848077590349087,
+        -0.17364814351049426
+      ],
+      "station_interval_mm": [
+        11340.000302859537,
+        13230.000353336127
+      ],
+      "length_mm": 1890.0000504765903,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_PROPERTY_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.141189970821932,
+      "blockers": [],
+      "conflicts": [
+        {
+          "kind": "PROPERTY_BOUNDARY",
+          "nominal_outside_m2": 0.01972479132148996,
+          "upper_error_outside_m2": 0.11413547720592841
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS11-F07; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS12-F01",
+      "sector_id": "PS12",
+      "source_wall": "AN_KG_AW_03",
+      "origin_mm": [
+        26344.737,
+        17378.058
+      ],
+      "tangent": [
+        -0.9848077460932047,
+        0.17364821690654403
+      ],
+      "normal": [
+        0.17364821690654403,
+        0.9848077460932047
+      ],
+      "station_interval_mm": [
+        0.0,
+        1746.000076483217
+      ],
+      "length_mm": 1746.000076483217,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 6.8663051377519535,
+      "diagnostic_volume_m3": 6.8663051377519535,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            6.8663051377519535
+          ],
+          "volume_m3": 6.8663051377519535
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            48.9719740636494,
+            126.88083454614198
+          ],
+          "volume_m3": 175.85280860979134
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.209620399692908
+          ],
+          "volume_m3": 7.209620399692908
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.582881416156543
+          ],
+          "volume_m3": 8.582881416156543
+        }
+      },
+      "note": "PS12-F01; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 6.866 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS12-F02",
+      "sector_id": "PS12",
+      "source_wall": "AN_KG_AW_03",
+      "origin_mm": [
+        24625.262600000002,
+        17681.2478
+      ],
+      "tangent": [
+        -0.9848077460932047,
+        0.17364821690654403
+      ],
+      "normal": [
+        0.17364821690654403,
+        0.9848077460932047
+      ],
+      "station_interval_mm": [
+        1746.000076483217,
+        3492.000152966434
+      ],
+      "length_mm": 1746.000076483217,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.016983008360991,
+      "diagnostic_volume_m3": 7.016983008360991,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.016983008360991
+          ],
+          "volume_m3": 7.016983008360991
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            54.51838650725594,
+            147.6849524820231
+          ],
+          "volume_m3": 202.2033389892789
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.367832126775123
+          ],
+          "volume_m3": 7.367832126775123
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.771228713378505
+          ],
+          "volume_m3": 8.771228713378505
+        }
+      },
+      "note": "PS12-F02; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.017 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS12-F03",
+      "sector_id": "PS12",
+      "source_wall": "AN_KG_AW_03",
+      "origin_mm": [
+        22905.788200000003,
+        17984.4376
+      ],
+      "tangent": [
+        -0.9848077460932047,
+        0.17364821690654403
+      ],
+      "normal": [
+        0.17364821690654403,
+        0.9848077460932047
+      ],
+      "station_interval_mm": [
+        3492.000152966434,
+        5238.000229449651
+      ],
+      "length_mm": 1746.0000764832166,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.155430624399229,
+      "diagnostic_volume_m3": 7.155430624399229,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.155430624399229
+          ],
+          "volume_m3": 7.155430624399229
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            53.710003328831284,
+            151.57832554454387
+          ],
+          "volume_m3": 205.28832887337484
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.513202165474376
+          ],
+          "volume_m3": 7.513202165474376
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.944288354366893
+          ],
+          "volume_m3": 8.944288354366893
+        }
+      },
+      "note": "PS12-F03; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.155 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS12-F04",
+      "sector_id": "PS12",
+      "source_wall": "AN_KG_AW_03",
+      "origin_mm": [
+        21186.313800000004,
+        18287.6274
+      ],
+      "tangent": [
+        -0.9848077460932047,
+        0.17364821690654403
+      ],
+      "normal": [
+        0.17364821690654403,
+        0.9848077460932047
+      ],
+      "station_interval_mm": [
+        5238.000229449651,
+        6984.000305932868
+      ],
+      "length_mm": 1746.0000764832175,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.1231615928001215,
+      "diagnostic_volume_m3": 7.1231615928001215,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.1231615928001215
+          ],
+          "volume_m3": 7.1231615928001215
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            48.07076097033661,
+            137.5210766014891
+          ],
+          "volume_m3": 185.59183757182538
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.479319691161483
+          ],
+          "volume_m3": 7.479319691161483
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.9039520091173
+          ],
+          "volume_m3": 8.9039520091173
+        }
+      },
+      "note": "PS12-F04; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.123 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS12-F05",
+      "sector_id": "PS12",
+      "source_wall": "AN_KG_AW_03",
+      "origin_mm": [
+        19466.8394,
+        18590.8172
+      ],
+      "tangent": [
+        -0.9848077460932047,
+        0.17364821690654403
+      ],
+      "normal": [
+        0.17364821690654403,
+        0.9848077460932047
+      ],
+      "station_interval_mm": [
+        6984.000305932868,
+        8730.000382416085
+      ],
+      "length_mm": 1746.0000764832166,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.084044451511743,
+      "diagnostic_volume_m3": 7.084044451511743,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.084044451511743
+          ],
+          "volume_m3": 7.084044451511743
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            46.945787655610175,
+            138.48568789082898
+          ],
+          "volume_m3": 185.43147554643915
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.438246658575841
+          ],
+          "volume_m3": 7.438246658575841
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.855055629960235
+          ],
+          "volume_m3": 8.855055629960235
+        }
+      },
+      "note": "PS12-F05; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.084 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F01",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        17747.365,
+        18894.007
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        0.0,
+        1890.0000504765896
+      ],
+      "length_mm": 1890.0000504765896,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 7.810272153601758,
+      "diagnostic_volume_m3": 7.810272153601758,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            7.810272153601758
+          ],
+          "volume_m3": 7.810272153601758
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            37.91141822927249,
+            146.97034003175028
+          ],
+          "volume_m3": 184.88175826102244
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.200785795356754
+          ],
+          "volume_m3": 8.200785795356754
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            9.762840192854267
+          ],
+          "volume_m3": 9.762840192854267
+        }
+      },
+      "note": "PS13-F01; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 7.810 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F02",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        17419.170000000002,
+        17032.720285714287
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        1890.0000504765896,
+        3780.0001009531793
+      ],
+      "length_mm": 1890.0000504765896,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 8.106562452720917,
+      "diagnostic_volume_m3": 8.106562452720917,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.106562452720917
+          ],
+          "volume_m3": 8.106562452720917
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            36.856432142447474,
+            149.05851498617875
+          ],
+          "volume_m3": 185.9149471286256
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.511890498346254
+          ],
+          "volume_m3": 8.511890498346254
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            10.13320316133323
+          ],
+          "volume_m3": 10.13320316133323
+        }
+      },
+      "note": "PS13-F02; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 8.107 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F03",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        17090.975000000002,
+        15171.433571428572
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        3780.0001009531793,
+        5670.000151429768
+      ],
+      "length_mm": 1890.000050476589,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 8.31145187637124,
+      "diagnostic_volume_m3": 8.31145187637124,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.31145187637124
+          ],
+          "volume_m3": 8.31145187637124
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            59.77496232809746,
+            128.6333766269905
+          ],
+          "volume_m3": 188.40833895508877
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.727024445692274
+          ],
+          "volume_m3": 8.727024445692274
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            10.389314864521008
+          ],
+          "volume_m3": 10.389314864521008
+        }
+      },
+      "note": "PS13-F03; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 8.311 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F04",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        16762.780000000002,
+        13310.14685714286
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        5670.000151429768,
+        7560.000201906359
+      ],
+      "length_mm": 1890.0000504765903,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 8.482282479306175,
+      "diagnostic_volume_m3": 8.482282479306175,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.482282479306175
+          ],
+          "volume_m3": 8.482282479306175
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            64.71545054498283,
+            143.46758897366084
+          ],
+          "volume_m3": 208.18303951864377
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.906396577510687
+          ],
+          "volume_m3": 8.906396577510687
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            10.602853132358314
+          ],
+          "volume_m3": 10.602853132358314
+        }
+      },
+      "note": "PS13-F04; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 8.482 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F05",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        16434.585,
+        11448.860142857142
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        7560.000201906359,
+        9450.000252382948
+      ],
+      "length_mm": 1890.0000504765894,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "GEOMETRICALLY_CLEAR_DISPLAY_STUDY_UNRELEASED",
+      "native_candidate": true,
+      "diagnostic_only": false,
+      "volume_m3": 8.557873083901654,
+      "diagnostic_volume_m3": 8.557873083901654,
+      "blockers": [],
+      "conflicts": [],
+      "access_conflicts": [],
+      "measurements": {
+        "excavation": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.557873083901654
+          ],
+          "volume_m3": 8.557873083901654
+        },
+        "cut_soil": {
+          "body_count": 2,
+          "component_volumes_m3": [
+            63.35182807028086,
+            144.2480687604123
+          ],
+          "volume_m3": 207.59989683069352
+        },
+        "pile_main": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            8.98576677873141
+          ],
+          "volume_m3": 8.98576677873141
+        },
+        "pile_reserve": {
+          "body_count": 1,
+          "component_volumes_m3": [
+            10.697341367809265
+          ],
+          "volume_m3": 10.697341367809265
+        }
+      },
+      "note": "PS13-F05; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; hypothetische Einzelstudie 8.558 m3; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F06",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        16106.39,
+        9587.573428571428
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        9450.000252382948,
+        11340.000302859537
+      ],
+      "length_mm": 1890.0000504765885,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 8.208544601182227,
+      "blockers": [],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 2.3830210501826268,
+          "upper_error_overlap_m2": 2.4944020798733364,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 2.90194366754883,
+          "upper_error_overlap_m2": 3.0225461241720653,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS13-F06; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    },
+    {
+      "id": "PS13-F07",
+      "sector_id": "PS13",
+      "source_wall": "AN_KG_AW_04",
+      "origin_mm": [
+        15778.195,
+        7726.286714285716
+      ],
+      "tangent": [
+        -0.17364814351049426,
+        -0.9848077590349087
+      ],
+      "normal": [
+        -0.9848077590349087,
+        0.17364814351049426
+      ],
+      "station_interval_mm": [
+        11340.000302859537,
+        13230.000353336127
+      ],
+      "length_mm": 1890.0000504765903,
+      "width_mm": 800,
+      "assumed_slab_underside_z_mm": -1500,
+      "formation_z_mm": -1600,
+      "status": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "native_candidate": false,
+      "diagnostic_only": true,
+      "volume_m3": null,
+      "diagnostic_volume_m3": 7.726386169127575,
+      "blockers": [],
+      "conflicts": [
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "KG",
+          "nominal_overlap_m2": 6.389363447182202,
+          "upper_error_overlap_m2": 6.668362813841494,
+          "solid_intersection_volume_m3": null
+        },
+        {
+          "kind": "BUILDING_PROJECTION",
+          "object": "EG",
+          "nominal_overlap_m2": 7.0571893957989955,
+          "upper_error_overlap_m2": 7.3413269840582736,
+          "solid_intersection_volume_m3": null
+        }
+      ],
+      "access_conflicts": [],
+      "measurements": {},
+      "note": "PS13-F07; DARSTELLUNGSANNAHME UK -1500 / Sohle -1600 mm; ROTE/GESPERRTE KONFLIKTSTUDIE, KEINE EFFEKTIVE MENGE; FFB-Proxy -1860 unveraendert; keine Bau-/Grabfreigabe"
+    }
+  ],
+  "aktuelleDarstellungsfreigabe": {
+    "scope": "DISPLAY_ONLY_NO_CONSTRUCTION_RELEASE",
+    "construction_release": false,
+    "review": "renovierung/anbau/RANDSTREIFEN_REVIEW.json",
+    "review_sha256": "d5d3ad1766a623a416781fd6ab8fa8bac40ad56f4ccb0cf1c768050454ac9cab",
+    "regular_study_ids": [
+      "PS12-F01",
+      "PS12-F02",
+      "PS12-F03",
+      "PS12-F04",
+      "PS12-F05",
+      "PS13-F01",
+      "PS13-F02",
+      "PS13-F03",
+      "PS13-F04",
+      "PS13-F05"
+    ],
+    "diagnostic_ids": [
+      "PS10-F01",
+      "PS10-F02",
+      "PS10-F03",
+      "PS10-F04",
+      "PS10-F05",
+      "PS11-F01",
+      "PS11-F02",
+      "PS11-F03",
+      "PS11-F04",
+      "PS11-F05",
+      "PS11-F06",
+      "PS11-F07",
+      "PS13-F06",
+      "PS13-F07"
+    ],
+    "regular_study_count": 10,
+    "diagnostic_count": 14
+  }
+}

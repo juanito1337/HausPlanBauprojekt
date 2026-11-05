@@ -30,7 +30,8 @@ class LayoutTests(unittest.TestCase):
         build = json.loads((ROOT/'cad/nx/k02'/current['directory']/'BUILD.json').read_text())
         for actual, original in zip(layout['fields'], build['plan']['fields']):
             for key, value in original.items():
-                self.assertEqual(actual[key], value, (original['id'], key))
+                actual_key = 'k02_stockpile' if key == 'stockpile' and actual['native'] else key
+                self.assertEqual(actual[actual_key], value, (original['id'], key))
         house = json.loads((ROOT/'projects/g02/haus/data/haus.json').read_text())
         for actual, original in zip(layout['rooms'], house['rooms']):
             for key, value in original.items():
@@ -51,7 +52,7 @@ class LayoutTests(unittest.TestCase):
         self.assertEqual(len([n for n in nodes if n['id'] == 'TERRAIN']), 1)
         for field in layout['fields']:
             node = next(n for n in nodes if n['id'] == field['node_id'])
-            self.assertTrue(node['blank'])
+            self.assertFalse(node['blank'])
             roles = [n for n in nodes if n['parent'] == node['id']]
             self.assertEqual(len(roles), 4 if field['native'] else 0)
             if roles:
@@ -72,6 +73,21 @@ class LayoutTests(unittest.TestCase):
             self.assertEqual(node['translation_mm'], [0, 0, 0])
             self.assertEqual(node['metadata'], room)
 
+    def test_shared_ground_and_explicit_inspection_start(self):
+        layout = self.layout
+        self.assertEqual(layout.get('default_state'), 'PS01-F01')
+        self.assertLess(layout['presentation']['scale'], 0.01)
+        groups = layout['context']['groups']
+        self.assertGreater(len(groups), 0)
+        nodes = {n['id']: n for n in layout['nodes']}
+        for group in groups:
+            self.assertEqual(nodes[group['id']]['kind'], 'context')
+            self.assertEqual(nodes[group['id']]['parent'], 'SITE_CONTEXT')
+            self.assertEqual(nodes[group['id']]['translation_mm'], [0, 0, 0])
+        for field in layout['fields']:
+            if not field['native']:
+                self.assertIn('GESPERRT', nodes[field['node_id']]['name'])
+
     def test_rejects_invalid_layouts(self):
         def duplicate_id(d): d['nodes'][1]['id'] = d['nodes'][0]['id']
         def missing_parent(d): d['nodes'][1]['parent'] = 'MISSING'
@@ -83,7 +99,7 @@ class LayoutTests(unittest.TestCase):
         def wrong_transform(d): d['nodes'][1]['rotation'][0] = float('nan')
         def doubled_height(d): next(n for n in d['nodes'] if n['id'] == 'TERRAIN')['translation_mm'][2] = -31362.49870845903
         def release(d): d['construction_release'] = True
-        def visible_field(d): next(n for n in d['nodes'] if n['kind'] == 'field')['blank'] = False
+        def visible_field(d): next(n for n in d['nodes'] if n['kind'] == 'field')['blank'] = True
         def shared_assembly(d): d['nodes'][1]['file'] = d['nodes'][0]['file']
         def house_under_environment(d): next(n for n in d['nodes'] if n['id'] == 'HOUSE')['parent'] = 'ENVIRONMENT'
         def leaf_under_wrong_floor(d): next(n for n in d['nodes'] if n['id'] == 'HOUSE_KG_MAIN')['parent'] = 'HOUSE_EG'

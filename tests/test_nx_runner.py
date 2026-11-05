@@ -9,6 +9,25 @@ from tools import run_checks
 
 
 class NativeRunnerTests(unittest.TestCase):
+    def test_annex_scope_requires_integrated_evidence_and_tests(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            marker = root / 'renovierung/anbau/assumptions.json'
+            marker.parent.mkdir(parents=True)
+            marker.write_text('{}')
+            commands = []
+
+            def child(command, **kwargs):
+                commands.append(command)
+                return subprocess.CompletedProcess(command, 0)
+
+            with patch.object(run_checks, 'ROOT', root), patch('sys.argv', ['run_checks.py']), \
+                    patch.object(run_checks.subprocess, 'run', side_effect=child):
+                self.assertEqual(run_checks.main(), 0)
+            self.assertTrue(any(str(root/'tools/nx_anbau.py') in c and 'check' in c for c in commands))
+            self.assertTrue(any('test_anbau*.py' in c for c in commands))
+            self.assertFalse(any(str(root/'tools/nx_master.py') in c for c in commands))
+
     def run_checks(self, extra, fail_native=False, fail_master=False):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

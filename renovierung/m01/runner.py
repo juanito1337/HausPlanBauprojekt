@@ -14,7 +14,7 @@ import uuid
 
 from tools.repo_support import digest, member_path
 from renovierung.k02.runner import read, write, validate_measurement
-from .layout import create_layout, validate_layout
+from .layout import create_layout, validate_layout, part_paths
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -22,6 +22,8 @@ ROOT = Path(__file__).resolve().parents[2]
 def expected_nodes(layout):
     """Layout positions are local; NX occurrence positions are world coordinates."""
     nodes = {n['id']: n for n in layout['nodes']}
+    from .states import state_spec
+    suppressed = set(state_spec(layout, layout['default_state'])['suppressed_ids']) if 'default_state' in layout else set()
     result = {}
     def visit(nid, active):
         if nid in result: return result[nid]
@@ -37,7 +39,8 @@ def expected_nodes(layout):
         # NX hiding/showing a parent cascades to its descendants. A hidden
         # study must therefore have every child explicitly hidden as well.
         result[nid]['blank'] = node['blank'] or bool(parent and parent['blank'])
-        result[nid].update(translation_mm=xyz,rotation=node['rotation'],suppressed=False)
+        result[nid].update(translation_mm=xyz,rotation=node['rotation'],
+                           suppressed=nid in suppressed or bool(parent and parent['suppressed']))
         return result[nid]
     for nid in nodes: visit(nid,set())
     return result
@@ -66,7 +69,7 @@ def validate_result(layout, actual):
                         raise ValueError('Changed node '+nid+': '+key)
                 elif found.get(key)!=value or (key in ('blank','suppressed') and type(found.get(key)) is not bool):
                     raise ValueError('Changed node '+nid+': '+key)
-        paths={n['file'] for n in layout['nodes']}
+        paths=part_paths(layout)
         if set(actual['parts'])!=paths or len(actual['parts'])!=len(paths): raise ValueError('Part inventory differs')
         if set(actual['dependencies'])!=paths: raise ValueError('Missing dependency inspection')
         for path,dep in actual['dependencies'].items():
@@ -77,6 +80,7 @@ def validate_result(layout, actual):
             raise ValueError('Incomplete or duplicated component switching tests')
         fields={f['id']:f for f in layout['fields'] if f['native']}
         states={'BASE',*fields}
+        if 'context' in layout: states.update(s['id'] for s in layout['sections'])
         if set(actual['state_checks'])!=states or len(actual['state_checks'])!=len(states):
             raise ValueError('Incomplete or duplicated field display tests')
         if set(actual['measurements'])!=set(fields): raise ValueError('Measured field list differs')
@@ -100,6 +104,12 @@ def validate_result(layout, actual):
             if set(actual['measurements'][fid])!=set(field['measurements']): raise ValueError('Measurement roles differ: '+fid)
             for role,wanted in field['measurements'].items():
                 validate_measurement(actual['measurements'][fid][role],wanted['component_volumes_m3'])
+        if 'context' in layout:
+            from .proof import validate_display_evidence
+            errors.extend(validate_display_evidence(layout, actual))
+        if 'pile_site' in layout:
+            from .pile_transfer import validate_pile_locations
+            validate_pile_locations(layout, actual['pile_locations'])
     except (AttributeError,KeyError,TypeError,ValueError,OverflowError) as error:
         errors.append(str(error))
     return errors
@@ -130,6 +140,8 @@ def source_fingerprint(layout):
         directory=member_path(ROOT/base,current['directory'])
         paths.update((directory/name).relative_to(ROOT).as_posix() for name in ('BUILD.json','VERIFY.json'))
     paths.update(s['source'] for s in layout['sources'])
+    paths.update(layout.get('context', {}).get('source_hashes', {}))
+    paths.update(layout.get('pile_site', {}).get('source_hashes', {}))
     values={p:digest(member_path(ROOT,p)) for p in sorted(paths)}
     values['canonical_layout']=hashlib.sha256(json.dumps(layout,sort_keys=True,allow_nan=False).encode()).hexdigest()
     return hashlib.sha256(json.dumps(values,sort_keys=True).encode()).hexdigest()
@@ -145,7 +157,7 @@ def validate_evidence(directory, layout, build, verify, fingerprint):
         if build.get('source_fingerprint')!=fingerprint or verify.get('source_fingerprint')!=fingerprint:
             raise ValueError('M01 source fingerprint stale')
         if build.get('layout')!=layout: raise ValueError('Saved layout differs from current canonical sources')
-        expected_paths={n['file'] for n in layout['nodes']}
+        expected_paths=part_paths(layout)
         rows=build['parts']
         if len(rows)!=len(expected_paths) or {r['path'] for r in rows}!=expected_paths:
             raise ValueError('Part manifest differs from canonical layout')
@@ -155,6 +167,19 @@ def validate_evidence(directory, layout, build, verify, fingerprint):
             path=member_path(directory,row['path'])
             if path.stat().st_size!=row['bytes'] or digest(path)!=row['sha256']:
                 raise ValueError('Native file changed: '+row['path'])
+        candidates = build.get('study_cache_candidates', {})
+        checks = build['result'].get('study_cache_checks', {})
+        if set(candidates) != set(checks):
+            raise ValueError('Missing native study-cache comparison')
+        for fid, record in candidates.items():
+            test = checks[fid]
+            if test['reused'] is True:
+                if digest(member_path(directory, record['file'])) != record['sha256']:
+                    raise ValueError('Reused native study bytes changed: '+fid)
+                if set(test['evidence']['retained_absolute_boundary_sha256']) != {'cut_soil','excavation'}:
+                    raise ValueError('Missing K02 solid boundary comparison: '+fid)
+            elif test['reused'] is not False or not test['evidence'].get('cold_fallback_reason'):
+                raise ValueError('Unexplained native study-cache outcome: '+fid)
         study_files={n['file'] for n in layout['nodes'] if n['kind']=='role'}
         for source in layout['sources']:
             if source['file'] not in study_files and digest(member_path(directory,source['file']))!=source['sha256']:
@@ -180,7 +205,11 @@ def check_master():
         layout=create_layout(ROOT)
         if current.get('master')!=current['directory']+'/'+layout['master']:
             raise ValueError('M01 CURRENT master mismatch')
-        return validate_evidence(directory,layout,read(directory/'BUILD.json'),read(directory/'VERIFY.json'),source_fingerprint(layout))
+        build,verify=read(directory/'BUILD.json'),read(directory/'VERIFY.json')
+        if build.get('schema')=='M01_FLAT_BUILD_V2':
+            from .flat_release import validate_flat
+            return validate_flat(directory,layout,build,verify,source_fingerprint(layout))
+        return validate_evidence(directory,layout,build,verify,source_fingerprint(layout))
     except (AttributeError,OSError,KeyError,TypeError,ValueError) as error:
         return ['M01: '+str(error)]
 
@@ -218,7 +247,8 @@ def run_journal(nx_root,request,scratch,label):
     env=dict(os.environ,M01_NX_REQUEST=str(request_path),PYTHONDONTWRITEBYTECODE='1')
     print('NX M01 '+label,flush=True)
     with (scratch/(label+'.log')).open('w',encoding='utf-8') as stream:
-        proc=subprocess.run([str(nx_root/'NXBIN/run_journal.exe'),str(ROOT/'renovierung/m01/nx_journal.py')],
+        journal='flat_journal.py' if request['mode'].startswith('flat_') else 'nx_journal.py'
+        proc=subprocess.run([str(nx_root/'NXBIN/run_journal.exe'),str(ROOT/'renovierung/m01'/journal)],
             env=env,cwd=scratch,stdout=stream,stderr=subprocess.STDOUT)
     if not report.is_file(): raise RuntimeError('NX produced no result: '+str(scratch/(label+'.log')))
     result=read(report)
@@ -226,7 +256,7 @@ def run_journal(nx_root,request,scratch,label):
     return result
 
 
-def build_master(nx_root,accept):
+def build_master(nx_root,accept,context_cache_run=None,study_cache_run=None,pack_run=None):
     if not accept: raise ValueError('Explicit --accept-model-assumptions required')
     nx_root=Path(nx_root)
     if not (nx_root/'NXBIN/run_journal.exe').is_file(): raise ValueError('NX journal executable missing')
@@ -235,48 +265,60 @@ def build_master(nx_root,accept):
         wait_for_journal_slot()
         layout=create_layout(ROOT)
         fingerprint=source_fingerprint(layout)
+        from .flat_release import publish_generated
+        if pack_run:
+            return publish_generated(nx_root,pack_run,layout,fingerprint)
         stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'_'+uuid.uuid4().hex[:6]
         root=ROOT/'cad/nx/m01';root.mkdir(parents=True,exist_ok=True)
         scratch=ROOT/'reports/local/m01'/stamp
         destination=root/stamp
         scratch.mkdir(parents=True,exist_ok=False);destination.mkdir(parents=True,exist_ok=False)
+        (destination/'.gitignore').write_text('*\n',encoding='ascii')  # structured assembly is an intermediate
         attempt={'status':'RUNNING','directory':stamp,'source_fingerprint':fingerprint}
         write(root/'LAST_ATTEMPT.json',attempt)
         try:
+            from .context import create_context
+            from renovierung.k02.mesh_step import write_step
+            context = create_context(ROOT, layout, include_mesh=True)
+            context_steps = {}
+            for group in context['groups']:
+                path = scratch/'context_steps'/(group['id']+'.step')
+                write_step(path, group['mesh'], group['id'])
+                context_steps[group['id']] = str(path)
+            from .piles import create_piles
+            from .context_cache import prepare_context_cache
+            from .pile_transfer import pile_pair_mesh
+            piles = create_piles(ROOT, layout, layout['pile_site']['center_mm'], include_mesh=True)
+            pile_steps = {}
+            for field in piles['fields']:
+                fid = field['id']
+                path = scratch/'pile_steps'/(fid+'.step')
+                write_step(path, pile_pair_mesh(field), fid+'_SANDLAGER')
+                pile_steps[fid] = str(path)
+            cached = (prepare_context_cache(ROOT, context_cache_run, destination, layout, context_steps)
+                      if context_cache_run else {})
+            studies = {}
+            if study_cache_run:
+                from .study_cache import capture_inventory, prepare_study_cache
+                inventory = capture_inventory(ROOT, study_cache_run)
+                write(scratch/'study_candidate_inventory.json', inventory)
+                studies = prepare_study_cache(ROOT, study_cache_run, destination, layout, pile_steps, inventory)
+            seeded_files = {record['file'] for record in studies.values()}
             for source in layout['sources']:
-                src=member_path(ROOT,source['source']);dst=member_path(destination,source['file'])
-                dst.parent.mkdir(parents=True,exist_ok=True)
-                if digest(src)!=source['sha256']: raise ValueError('Source changed before copy')
-                shutil.copy2(src,dst)
-            request={'mode':'build','directory':str(destination),'layout':layout,'load_method':'AsSaved'}
-            result=run_journal(nx_root,request,scratch,'build')
-            errors=validate_result(layout,result)
-            if errors: raise ValueError('; '.join(errors))
-            parts=[{'path':p.relative_to(destination).as_posix(),'bytes':p.stat().st_size,'sha256':digest(p)}
-                for p in sorted(destination.rglob('*.prt'))]
-            build={'schema':'M01_BUILD_V1','status':'PASS','native_NX_run_completed':True,
-                'source_fingerprint':fingerprint,'layout':layout,'parts':parts,'result':result,
-                'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
-                'source_commit_is_context_fingerprint_is_authoritative':True,
-                'completed_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
-            write(destination/'BUILD.json',build)
-            request.update(mode='verify',parts=parts)
-            reopen=run_journal(nx_root,request,scratch,'reopen')
-            relocated=scratch/'relocated'
-            for part in parts:
-                target=member_path(relocated,part['path']);target.parent.mkdir(parents=True,exist_ok=True)
-                shutil.copy2(member_path(destination,part['path']),target)
-            moved=run_journal(nx_root,dict(request,directory=str(relocated),load_method='SearchDirectories'),scratch,'relocated')
-            verify={'schema':'M01_VERIFY_V1','status':'PASS','source_fingerprint':fingerprint,'reopen':reopen,'relocated':moved,
-                'completed_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
-            write(destination/'VERIFY.json',verify)
-            # Re-derive the layout and fingerprint after NX, detecting source changes during build.
-            current_layout=create_layout(ROOT)
-            errors=validate_evidence(destination,current_layout,build,verify,source_fingerprint(current_layout))
-            if errors: raise ValueError('; '.join(errors))
-            write(root/'CURRENT.json',{'directory':stamp,'master':stamp+'/'+layout['master'],'revision':'M01'})
-            write(root/'LAST_ATTEMPT.json',dict(attempt,status='PASS'))
-            return destination
+                src = member_path(ROOT, source['source'])
+                if digest(src) != source['sha256']:
+                    raise ValueError('Source changed before copy')
+                if source['file'] not in seeded_files:
+                    dst = member_path(destination, source['file'])
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    if dst.exists():
+                        raise ValueError('Unexpected existing source destination: ' + source['file'])
+                    shutil.copy2(src, dst)
+            request={'mode':'generate','directory':str(destination),'layout':layout,'load_method':'AsSaved',
+                     'nx_root':str(nx_root),'context_steps':context_steps,
+                     'pile_steps':pile_steps,'context_cache':cached,'study_cache':studies}
+            run_journal(nx_root,request,scratch,'generate')
+            return publish_generated(nx_root,stamp,layout,fingerprint)
         except Exception as error:
             write(root/'LAST_ATTEMPT.json',dict(attempt,status='FAIL',error=str(error)))
             raise

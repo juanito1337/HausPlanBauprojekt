@@ -1,0 +1,1028 @@
+{
+  "schema": "M01_STOCKPILE_DISPLAY_LOCATION_CHECK_V1",
+  "scope": "OFFLINE_XY_ONLY_NO_NX_RUN_NO_CONSTRUCTION_RELEASE",
+  "construction_release": false,
+  "plan_sha256": "985c719f89586d1c8d3d311bf9c156e46b42d025b27797a367164711a343c279",
+  "verified_source_generator_hashes": {
+    "cad/nx/20261101T132625_6a1ec1/BUILD.json": "b41a8c90b3a7a76d7839f06d4d5dc21d538f40369b010382581089145429ca66",
+    "cad/nx/20261101T132625_6a1ec1/VERIFY.json": "421b65031d4fdbbdf4f4fa38f4e01cd08d01f39719162f302d8061908ac6f44b",
+    "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/02_V01_HECKENBEREICH_R09.prt": "32ed0e6786e694d01dc0caa370f614c7bd8bd981495f77d7836a76fe620fa303",
+    "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/03_V02_HECKENBEREICH_R09.prt": "bb0d748fd5eb8b1e929c8e021cdd02cb4f8af3303245a87a5d63a466e8373ff9",
+    "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/04_V03_GEHOELZKRONE_R09.prt": "d95df4f1bbc5ffa7e5bf02d576fc25dcba1c7e4f2b184aae443f52b3fb039f22",
+    "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/06_V05_GEHOELZKRONE_R09.prt": "c4abacdd362a7efc108b16cae32ddd3caf93fe893ccd4b78123e67bbac6b7774",
+    "cad/nx/CURRENT.json": "40a06613924d059965bf6e47ed9456ab118e92217b7e9987ee89d29f86cac728",
+    "projects/g02/data/DGM_STUETZPUNKTE_G02.json": "da981e278a8bbd3545c467491c0684132b5969c36e6ee7e2506498d7a8a512f9",
+    "projects/g02/data/HOEHENANSCHLUSS_G02.json": "a565318eaed01f741615c91be954f76e8b85c4ef790797bbe33c6607006cd341",
+    "projects/g02/haus/data/haus.json": "64a9dc39423b22796ff13a497c07b7c2f0a30ef6fd0ebedaca797d0ec317b61d",
+    "projects/g02/umgebung/CAD_IMPORT/V01_R09.step": "5d23d22331d4edceb04e07725737e3c2730d67f0b5d9a7deace5e5506a969c4d",
+    "projects/g02/umgebung/CAD_IMPORT/V02_R09.step": "e26b56335da78cea4585fbcc310d67b793f30e85ffdeffa863a778baa9748ab2",
+    "projects/g02/umgebung/CAD_IMPORT/V03_R09.step": "40e98bb7b06a9a6cc9169fe2f11d05e2d4f0d658448870a701ada6f444af6098",
+    "projects/g02/umgebung/CAD_IMPORT/V05_R09.step": "533ca400819a56813e04e1b8292cb1a3c5bb6e9268b9246970657ee2d7f2be3a",
+    "projects/g02/umgebung/abgleich/VEGETATION_VIDEO_R11.json": "976d3c622aad6dc07239aea9f186839fb07b403c6569ee390a4d513aeaaa1b7b",
+    "projects/g02/umgebung/data/IMPORTAUFTRAG_R09.json": "07b8766f50618eb96b321ff75d451a6a789c91fe5ec3ed89ae1f81f9b884a651",
+    "renovierung/k02/__init__.py": "7bb14afb4627280340244e2b5a427bfde9cf1bc5fff6447434fbb62513c43dee",
+    "renovierung/k02/geometry.py": "58f763462da2e9f777aee523d7868d468664e3cb9609dd0aba6baf5e00db4a7c",
+    "renovierung/k02/materials.py": "c13081b4a619cbb92c2f4ac9ce578905468450e6e2b1457fd702f5833bb2cd67",
+    "renovierung/k02/mesh_step.py": "f7c49614d8c9e838997207875f38e9992b4640b1ca2167055732a1878350ed3f",
+    "renovierung/k02/nx_build.py": "13c1210cf6574b2b688d1eb37b331d7a05e61781f1d5aad462185fb6278ce270",
+    "renovierung/k02/nx_verify.py": "a4e3db4af6520612c3f336c324941efcdf64f6a6ce36b538bcdc46739c7d7bfa",
+    "renovierung/k02/planning.py": "10ed43ca976ea6ed1eadbdbde50094f69e616bad748fe1869f8e3ece51fca8e7",
+    "renovierung/k02/runner.py": "dfd8b6340f94f4b365236c14299462190ce683230efb2e4fd54a474bd680991d",
+    "renovierung/k02/study_config.json": "1240df607e469172f8298933608e5fa54d89ca3dee05676e8b92fad905358faa",
+    "renovierung/k02/terrain.py": "146ac5077370e7376b625172b3859d296af667c46435d6045d89a71204723fd9",
+    "renovierung/planung/2026-11-01/UMFANG_E01.json": "8a6584c2afcdf3c715fa08df11c32cf29f6318ac8788943c47b96c6310020cb1",
+    "renovierung/planung/2026-11-01/sektionen.json": "61c05993677a7b01cdd1809251a68b30305752a159d6e88cf3ca05806ac09ddf",
+    "tools/check_m01_lagerstandorte.py": "9b7d874fb0892901ae003393bb7b38ccb1fa7aa0716cd4905b87f1d2fe72c339",
+    "tools/repo_support.py": "9fa4ba7d620bcb1a8b84527a1b73d8b0fc32a107676c658ceba178ae882f957d"
+  },
+  "vegetation_sources": {
+    "V01": {
+      "step": "projects/g02/umgebung/CAD_IMPORT/V01_R09.step",
+      "sheets": 49,
+      "projected_area_m2": 26.960000001699,
+      "existing_native_part": "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/02_V01_HECKENBEREICH_R09.prt"
+    },
+    "V02": {
+      "step": "projects/g02/umgebung/CAD_IMPORT/V02_R09.step",
+      "sheets": 27,
+      "projected_area_m2": 18.60000000007499,
+      "existing_native_part": "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/03_V02_HECKENBEREICH_R09.prt"
+    },
+    "V03": {
+      "step": "projects/g02/umgebung/CAD_IMPORT/V03_R09.step",
+      "sheets": 21,
+      "projected_area_m2": 6.079999999573165,
+      "existing_native_part": "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/04_V03_GEHOELZKRONE_R09.prt"
+    },
+    "V05": {
+      "step": "projects/g02/umgebung/CAD_IMPORT/V05_R09.step",
+      "sheets": 17,
+      "projected_area_m2": 7.48000000008409,
+      "existing_native_part": "cad/nx/20261101T132625_6a1ec1/umgebung/R09_20261101_132830_d8977a/umgebung/06_V05_GEHOELZKRONE_R09.prt"
+    }
+  },
+  "vegetation_dates": {
+    "bdom": "2023-04-07",
+    "mask_image": "2025-05-12"
+  },
+  "missing_networks": [
+    "TRINKWASSER_HAUSANSCHLUSS",
+    "SCHMUTZWASSER",
+    "REGENWASSER",
+    "DRAENAGE",
+    "FERNWAERME_FALLS_VORHANDEN"
+  ],
+  "field_count": 22,
+  "original_alternatives": [
+    {
+      "field": "PS01-F01",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 41.62180793751594,
+      "vegetation_overlap_m2": {
+        "V01": 0.29834522772613126,
+        "V02": 10.505121040003637,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.918570483910557,
+      "parcel_outside_m2": 5.960464477539062e-14
+    },
+    {
+      "field": "PS01-F01",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 46.62995816634969,
+      "vegetation_overlap_m2": {
+        "V01": 0.7796467440735907,
+        "V02": 10.810699426936795,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.7050305327413895,
+      "parcel_outside_m2": 1.9371509552001952e-13
+    },
+    {
+      "field": "PS01-F02",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 41.77699858704212,
+      "vegetation_overlap_m2": {
+        "V01": 0.30912185078151877,
+        "V02": 10.514929268881469,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.911682838384255,
+      "parcel_outside_m2": 2.2351741790771485e-14
+    },
+    {
+      "field": "PS01-F02",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 46.80464747171758,
+      "vegetation_overlap_m2": {
+        "V01": 0.8004497592801159,
+        "V02": 10.820992954599483,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.697886943555841,
+      "parcel_outside_m2": 1.862645149230957e-13
+    },
+    {
+      "field": "PS01-F03",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 40.7435718118517,
+      "vegetation_overlap_m2": {
+        "V01": 0.24448150065222526,
+        "V02": 10.449213983874554,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.958769384640853,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F03",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 45.64153674953469,
+      "vegetation_overlap_m2": {
+        "V01": 0.6621049285598835,
+        "V02": 10.75208288223772,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.745707519674939,
+      "parcel_outside_m2": 1.341104507446289e-13
+    },
+    {
+      "field": "PS01-F04",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 34.39161552602478,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 9.987340426322536,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.271651238723776,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F04",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 38.49073976217576,
+      "vegetation_overlap_m2": {
+        "V01": 0.11089731584303938,
+        "V02": 10.301859121607821,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.066033637475091,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F05",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 24.756833057055903,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 8.60004755125506,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "STROM_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.777778026308669,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F05",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 27.677591888677295,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 9.102749140393454,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "STROM_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.634371607764426,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F06",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 15.793776622255223,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 6.845405552345731,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "STROM_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 7.270159007038506,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F06",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 17.67947610320365,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 7.236570170300971,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "STROM_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 7.1574908954275696,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F07",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 27.199743284843233,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 9.023004377124122,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "STROM_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.657290487458668,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F07",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 30.42421120459052,
+      "vegetation_overlap_m2": {
+        "V01": 0.0,
+        "V02": 9.547837118921283,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.485277600131731,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F08",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 35.73870099092446,
+      "vegetation_overlap_m2": {
+        "V01": 0.01206162701909129,
+        "V02": 10.093309344440966,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 6.2028508182587005,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F08",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 40.00488894048914,
+      "vegetation_overlap_m2": {
+        "V01": 0.2004737699193586,
+        "V02": 10.401625871993227,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.993502372964895,
+      "parcel_outside_m2": 7.450580596923828e-15
+    },
+    {
+      "field": "PS01-F09",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 40.90495265623005,
+      "vegetation_overlap_m2": {
+        "V01": 0.2540457306023074,
+        "V02": 10.45953948440426,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.951225793134321,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS01-F09",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 45.82314305576854,
+      "vegetation_overlap_m2": {
+        "V01": 0.6832223701362224,
+        "V02": 10.762897637740556,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.738201036288746,
+      "parcel_outside_m2": 1.1920928955078124e-13
+    },
+    {
+      "field": "PS01-F10",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 41.42322671250194,
+      "vegetation_overlap_m2": {
+        "V01": 0.2852595757753259,
+        "V02": 10.49253985406838,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.9274024160974035,
+      "parcel_outside_m2": 7.450580596923828e-15
+    },
+    {
+      "field": "PS01-F10",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 46.40643659246381,
+      "vegetation_overlap_m2": {
+        "V01": 0.752973701391418,
+        "V02": 10.79749930676506,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.714190862109263,
+      "parcel_outside_m2": 1.4901161193847657e-13
+    },
+    {
+      "field": "PS01-F11",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 42.19043144194077,
+      "vegetation_overlap_m2": {
+        "V01": 0.34065943172087515,
+        "V02": 10.540956435090674,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.893395718722611,
+      "parcel_outside_m2": 4.470348358154297e-14
+    },
+    {
+      "field": "PS01-F11",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 47.27000725109632,
+      "vegetation_overlap_m2": {
+        "V01": 0.8556908754763295,
+        "V02": 10.848319966667173,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.678920894441192,
+      "parcel_outside_m2": 1.7881393432617188e-13
+    },
+    {
+      "field": "PS04-F02",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 47.83418332925141,
+      "vegetation_overlap_m2": {
+        "V01": 0.922350173045835,
+        "V02": 10.88128247278468,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.656040790486327,
+      "parcel_outside_m2": 1.6391277313232421e-13
+    },
+    {
+      "field": "PS04-F02",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 53.63102939845089,
+      "vegetation_overlap_m2": {
+        "V01": 1.6976463232988044,
+        "V02": 11.208325594324108,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.429007019528292,
+      "parcel_outside_m2": 3.1292438507080076e-13
+    },
+    {
+      "field": "PS06-F01",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 47.17062861250888,
+      "vegetation_overlap_m2": {
+        "V01": 0.8439153939005059,
+        "V02": 10.842495611465372,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.682963404832613,
+      "parcel_outside_m2": 2.0116567611694335e-13
+    },
+    {
+      "field": "PS06-F01",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 52.88134177800332,
+      "vegetation_overlap_m2": {
+        "V01": 1.5902948462897042,
+        "V02": 11.167122668963598,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.4575950581292165,
+      "parcel_outside_m2": 3.6507844924926757e-13
+    },
+    {
+      "field": "PS06-F02",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 47.257207703956205,
+      "vegetation_overlap_m2": {
+        "V01": 0.8541748920990114,
+        "V02": 10.847570159836414,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.679441318142864,
+      "parcel_outside_m2": 1.9371509552001952e-13
+    },
+    {
+      "field": "PS06-F02",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 52.97913560631738,
+      "vegetation_overlap_m2": {
+        "V01": 1.6036124945662742,
+        "V02": 11.17251358826574,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.453854916815857,
+      "parcel_outside_m2": 3.427267074584961e-13
+    },
+    {
+      "field": "PS06-F03",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 46.673621492931744,
+      "vegetation_overlap_m2": {
+        "V01": 0.7848499347398957,
+        "V02": 10.813274148311402,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.703243733297441,
+      "parcel_outside_m2": 1.6391277313232421e-13
+    },
+    {
+      "field": "PS06-F03",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 52.319935224229276,
+      "vegetation_overlap_m2": {
+        "V01": 1.5134050534089003,
+        "V02": 11.136086111220132,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.47913192850035,
+      "parcel_outside_m2": 2.682209014892578e-13
+    },
+    {
+      "field": "PS07-F01",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 45.303828253671355,
+      "vegetation_overlap_m2": {
+        "V01": 0.6243683568475336,
+        "V02": 10.731913381701906,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.759706113440648,
+      "parcel_outside_m2": 1.1920928955078124e-13
+    },
+    {
+      "field": "PS07-F01",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 50.7726016559515,
+      "vegetation_overlap_m2": {
+        "V01": 1.29760474644241,
+        "V02": 11.049692633500863,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.53910204648396,
+      "parcel_outside_m2": 2.682209014892578e-13
+    },
+    {
+      "field": "PS07-F02",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 45.54374355940943,
+      "vegetation_overlap_m2": {
+        "V01": 0.650971533701532,
+        "V02": 10.746252891866575,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.7497558790609755,
+      "parcel_outside_m2": 1.2665987014770508e-13
+    },
+    {
+      "field": "PS07-F02",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 51.043528281014325,
+      "vegetation_overlap_m2": {
+        "V01": 1.33573919281766,
+        "V02": 11.06491648495092,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.5285326395871905,
+      "parcel_outside_m2": 2.6077032089233396e-13
+    },
+    {
+      "field": "PS09-F03",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 44.413326683981786,
+      "vegetation_overlap_m2": {
+        "V01": 0.5351724046158284,
+        "V02": 10.678230285322373,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.796867341544109,
+      "parcel_outside_m2": 8.195638656616211e-14
+    },
+    {
+      "field": "PS09-F03",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 49.76750566512198,
+      "vegetation_overlap_m2": {
+        "V01": 1.1555005535354355,
+        "V02": 10.992841484105389,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.578579408043542,
+      "parcel_outside_m2": 2.2351741790771485e-13
+    },
+    {
+      "field": "PS09-F04",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 43.713682796964996,
+      "vegetation_overlap_m2": {
+        "V01": 0.4700945327521306,
+        "V02": 10.635542633238636,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.826819262956815,
+      "parcel_outside_m2": 5.960464477539062e-14
+    },
+    {
+      "field": "PS09-F04",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 48.98005986113362,
+      "vegetation_overlap_m2": {
+        "V01": 1.0569005118186472,
+        "V02": 10.94777341676757,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.609877480813594,
+      "parcel_outside_m2": 1.7881393432617188e-13
+    },
+    {
+      "field": "PS09-F05",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 43.10368616174753,
+      "vegetation_overlap_m2": {
+        "V01": 0.41619801605871987,
+        "V02": 10.597904289366252,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.853334035774797,
+      "parcel_outside_m2": 1.2665987014770508e-13
+    },
+    {
+      "field": "PS09-F05",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 48.2960012956662,
+      "vegetation_overlap_m2": {
+        "V01": 0.9767474558637491,
+        "V02": 10.908170924400451,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.637374356975673,
+      "parcel_outside_m2": 1.7881393432617188e-13
+    },
+    {
+      "field": "PS09-F06",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 42.44490038836529,
+      "vegetation_overlap_m2": {
+        "V01": 0.36107853690092,
+        "V02": 10.556900770679418,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.8821857443325385,
+      "parcel_outside_m2": 5.2154064178466796e-14
+    },
+    {
+      "field": "PS09-F06",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 47.55637007510316,
+      "vegetation_overlap_m2": {
+        "V01": 0.8895590855641551,
+        "V02": 10.865069324167253,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.667295145436063,
+      "parcel_outside_m2": 1.7881393432617188e-13
+    },
+    {
+      "field": "PS09-F07",
+      "kind": "main",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 41.84178223006124,
+      "vegetation_overlap_m2": {
+        "V01": 0.31379419256173546,
+        "V02": 10.519017478282374,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.908811360922001,
+      "parcel_outside_m2": 0.0
+    },
+    {
+      "field": "PS09-F07",
+      "kind": "reserve_1_25",
+      "center_xy_mm": [
+        13000,
+        -16000
+      ],
+      "support_m2": 46.87757087076954,
+      "vegetation_overlap_m2": {
+        "V01": 0.8091230420414455,
+        "V02": 10.825284155530685,
+        "V03": 0.0,
+        "V05": 0.0
+      },
+      "eg_overlap_m2": 0.0,
+      "utility_corridor_overlap_sum_m2": 0.0,
+      "nearest_registered_route": "GAS_HAUSANSCHLUSS",
+      "route_clearance_lower_bound_m": 5.694908813364783,
+      "parcel_outside_m2": 1.6391277313232421e-13
+    }
+  ],
+  "TIN_subdivisions": 4,
+  "TIN_vertical_error_mm": 20.78125,
+  "utility_corridor_half_width_mm": 1000,
+  "minimum_excavation_clearance_mm": 600,
+  "preferred_display_candidate": "A",
+  "support_bound": "Largest reserve target bounds all 44 alternatives at common center/TIN/slope. Re-solved fixed-volume roof H<=H_nominal+eps combined with terrain>=TIN-eps. Convex hull of this support gives conservative distance lower bounds.",
+  "candidates": [
+    {
+      "id": "A",
+      "center_xy_mm": [
+        14500.0,
+        -9500.0
+      ],
+      "largest_reserve_target_m3": 31.34153215671132,
+      "largest_nominal_support_m2": 52.631620813402606,
+      "upper_error_support_m2": 55.27493561109238,
+      "upper_error_support_bbox_xy_mm": [
+        10435.94466491151,
+        -13405.512827089371,
+        18405.51282708937,
+        -5417.802457242779
+      ],
+      "clearance_lower_bounds_m": {
+        "vegetation": 0.33909615480204475,
+        "building": 5.41780245724278,
+        "utility_corridor": 3.96234647359663,
+        "excavation": 2.3598943074361247,
+        "parcel_boundary": 5.55733590514022
+      },
+      "overlap_area_sum_m2": {
+        "vegetation": 0.0,
+        "building": 0.0,
+        "utility_corridor": 0.0,
+        "excavation": 0.0
+      },
+      "parcel_outside_m2": 4.544854164123535e-13,
+      "geometric_criterion_passed": true
+    },
+    {
+      "id": "B",
+      "center_xy_mm": [
+        10000.0,
+        -22000.0
+      ],
+      "largest_reserve_target_m3": 31.34153215671132,
+      "largest_nominal_support_m2": 51.99105623584079,
+      "upper_error_support_m2": 54.36672402110242,
+      "upper_error_support_bbox_xy_mm": [
+        6289.860162235349,
+        -25826.979381203262,
+        13826.565623807168,
+        -18403.660464189714
+      ],
+      "clearance_lower_bounds_m": {
+        "vegetation": 0.2861424723885942,
+        "building": 18.403660464189713,
+        "utility_corridor": 1.3613292477883547,
+        "excavation": 15.28550756653058,
+        "parcel_boundary": 1.927123837286119
+      },
+      "overlap_area_sum_m2": {
+        "vegetation": 0.0,
+        "building": 0.0,
+        "utility_corridor": 0.0,
+        "excavation": 0.0
+      },
+      "parcel_outside_m2": 1.4230608940124512e-12,
+      "geometric_criterion_passed": true
+    }
+  ]
+}

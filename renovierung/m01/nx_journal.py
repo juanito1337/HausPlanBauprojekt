@@ -83,22 +83,51 @@ def load_leaf(session, path):
     return part
 
 
-def build(session, root, layout):
+def build(session, root, layout, request):
     import NXOpen
-    from renovierung.k02.nx_build import save
+    from renovierung.k02.nx_build import save, import_mesh, note
+    from renovierung.m01.presentation import apply_presentation
+    from renovierung.m01.states import create_arrangements
+    from renovierung.m01.inspection import create_reviews
+    from renovierung.m01.context_cache import load_cached_context
+    from renovierung.m01.pile_native import replace_piles
     from renovierung.k02.nx_verify import body_role
     from renovierung.m01.display import (PROJECT, apply_visibility, components,
                                          set_blank, write_attribute as attribute)
     rows = sorted_nodes(layout)
+    node_rows = {row['id']: row for row in rows}
     fields, rooms = associated_rows(layout, 'fields'), associated_rows(layout, 'rooms')
+    native_fields = {field['id']: field for field in layout['fields'] if field['native']}
+    if set(request.get('pile_steps', {})) != set(native_fields):
+        raise ValueError('Relocated pile STEP inventory differs from native fields')
+    cache_records = request.get('context_cache', {})
+    context_ids = {group['id'] for group in layout['context']['groups']}
+    if not isinstance(cache_records, dict) or set(cache_records) - context_ids:
+        raise ValueError('Unknown context cache candidate IDs')
     source_rows = {r['file']: r for r in layout['sources']}
     expected_files = {r['file'] for r in rows}
     if set(source_rows) - expected_files:
         raise ValueError('Unused source in layout')
-    sources = {}
+    sources, verified_studies = {}, {}
+    request['_study_checks'] = {}
+    planned_studies = request.get('study_cache', {})
+    if set(planned_studies) - set(native_fields):
+        raise ValueError('Unregistered cached study')
+    study_by_file = {native_fields[fid]['study_file']: fid for fid in planned_studies}
     for filename, item in source_rows.items():
         path = root/filename
         internal(root, path)
+        if filename in study_by_file:
+            from renovierung.m01.study_cache import load_cached_study
+            fid = study_by_file[filename]
+            print('M01 compare candidate study '+fid, flush=True)
+            part, evidence = load_cached_study(session, request['repo_root'], root, layout, fid, planned_studies[fid])
+            request['_study_checks'][fid] = {'reused': part is not None, 'evidence': evidence}
+            if part is not None:
+                verified_studies[filename] = planned_studies[fid]
+                sources[filename] = part
+                continue
+            print('M01 cold study '+fid+' '+str(evidence), flush=True)
         if not path.is_file() or path.stat().st_size != item['bytes'] or digest(path) != item['sha256']:
             raise ValueError('Copied source bytes differ: '+filename)
         sources[filename] = load_leaf(session, path)
@@ -108,9 +137,20 @@ def build(session, root, layout):
         if row['kind'] == 'role':
             study_roles.setdefault(row['file'], {})[row['role']] = row['reference_set']
     for filename, roles in study_roles.items():
+        if filename in verified_studies:
+            continue
         part = sources[filename]
         # Independent source leaves are not descendants of the last opened leaf.
         display_part(session, part)
+        matching_fields = [field for field in native_fields.values() if field['study_file'] == filename]
+        if len(matching_fields) != 1:
+            raise ValueError('Study Part must belong to exactly one native field: ' + filename)
+        field = matching_fields[0]
+        step_path = Path(request['pile_steps'][field['id']]).resolve()
+        if not step_path.is_file() or step_path.suffix.lower() != '.step':
+            raise ValueError('Missing relocated pile STEP: ' + field['id'])
+        print('M01 relocated pile ' + field['id'], flush=True)
+        replace_piles(session, part, field, step_path, request['nx_root'])
         existing = {r.Name for r in part.GetAllReferenceSets()}
         for role, ref_name in roles.items():
             bodies = [b for b in part.Bodies if body_role(b.Name) == role]
@@ -121,12 +161,20 @@ def build(session, root, layout):
             refset = part.CreateReferenceSet()
             refset.SetName(ref_name)
             refset.AddObjectsToReferenceSet(bodies)
+        apply_presentation(part, layout['presentation'])
         save(part)
     parts = dict(sources)
     # Build children before parents. Source leaves are never saved here.
     for row in reversed(rows):
         filename = row['file']
         if filename in parts:
+            continue
+        if row['kind'] == 'context' and row['id'] in cache_records:
+            print('M01 verify context candidate ' + row['id'], flush=True)
+            part, _ = load_cached_context(session, root, row, layout, cache_records[row['id']])
+            # A candidate is admitted only after its fresh native leaf check.
+            # Never run metadata/presentation/import/save on this cached Part.
+            parts[filename] = part
             continue
         path = root/filename
         internal(root, path)
@@ -136,10 +184,40 @@ def build(session, root, layout):
         part = session.Parts.NewDisplay(str(path), NXOpen.Part.Units.Millimeters)
         display_part(session, part)
         metadata(part, row, fields, rooms)
+        if row['kind'] == 'context':
+            print('M01 context '+row['id'], flush=True)
+            bodies = import_mesh(session, part, request['context_steps'][row['id']], request['nx_root'])
+            if len(bodies) != row['metadata']['body_count']:
+                raise ValueError('Context import body count differs: '+row['id'])
+            for index, body in enumerate(bodies):
+                body.SetName(row['id']+'_%03d' % index)
+                body.Layer, body.Color = 210, 95
+                body.Unblank()
+        if row['kind'] == 'field':
+            field = fields[row['id']]
+            marker = field['display_marker']
+            line = part.Curves.CreateLine(*(NXOpen.Point3d(*(float(x) for x in p)) for p in marker['line']))
+            line.SetName('M01_REGISTER_'+field['id'])
+            line.Layer, line.Color = 200, (36 if field['native'] else 186)
+            lines = [field['id'], 'STUDIE' if field['native'] else 'GESPERRT - NUR REGISTER']
+            if field['native']:
+                lines.append('Aushub %.2f m3 / Lager %.2f m3' %
+                             (field['measurements']['excavation']['volume_m3'], field['measurements']['pile_main']['volume_m3']))
+                lines.extend(['Lager A - Vorplanung', 'Bewuchsabstand oertlich pruefen - keine Freigabe'])
+            label = note(part, lines, [float(x) for x in marker['label']], 'M01_NOTE_'+field['id'], 200)
+            label.Layer = 201
+        if row['id'] == 'SITE_CONTEXT':
+            boundary = layout['context']['boundary_xyz_mm']
+            for a, b in zip(boundary, boundary[1:]+boundary[:1]):
+                line = part.Curves.CreateLine(NXOpen.Point3d(float(a[0]),float(a[1]),float(a[2]+80)),
+                                              NXOpen.Point3d(float(b[0]),float(b[1]),float(b[2]+80)))
+                line.SetName('GRUNDSTUECK_KARTENREFERENZ_KEINE_VERMESSUNG')
+                line.Layer, line.Color = 200, 181
         if row['id'] == 'MASTER':
             attribute(part, 'M01_PROJECT', PROJECT)
             attribute(part, 'M01_CONSTRUCTION_RELEASE', False)
             attribute(part, 'M01_LAYOUT_SCHEMA', layout['schema'])
+            attribute(part, 'M01_PRESENTATION', layout['presentation'])
         for child in rows:
             if child['parent'] != row['id']:
                 continue
@@ -155,7 +233,30 @@ def build(session, root, layout):
             finally:
                 status.Dispose()
             metadata(component, child, fields, rooms)
-            set_blank(component, child['blank'])
+            hidden = child['blank']
+            if row['id'].startswith('SECTION_') and child['kind'] == 'field':
+                candidates = sorted(f['node_id'] for f in layout['fields'] if f['native'] and 'SECTION_'+f['sector_id'] == row['id'])
+                hidden = bool(candidates and fields[child['id']]['native'] and child['id'] != candidates[0])
+            set_blank(component, hidden)
+        # Adding/unblanking an assembly can cascade into every descendant.
+        # Restore local section defaults from parent to child before saving.
+        from renovierung.m01.display import read_attribute
+        def restore_local(parent, inherited_hidden=False):
+            for component in parent.GetChildren():
+                ident = read_attribute(component, 'M01_NODE_ID')
+                child = node_rows[ident]
+                hidden = child['blank']
+                if child['kind'] == 'field':
+                    candidates = sorted(f['node_id'] for f in layout['fields']
+                                        if f['native'] and f['sector_id'] == fields[ident]['sector_id'])
+                    hidden = bool(fields[ident]['native'] and candidates and ident != candidates[0])
+                hidden = bool(inherited_hidden or hidden)
+                set_blank(component, hidden)
+                restore_local(component, hidden)
+        assembly_root = part.ComponentAssembly.RootComponent
+        if assembly_root is not None:
+            restore_local(assembly_root)
+        apply_presentation(part, layout['presentation'])
         save(part)
         parts[filename] = part
     master = parts[layout['master']]
@@ -167,7 +268,17 @@ def build(session, root, layout):
     if set(occurrences) != set(defaults):
         raise ValueError('Incomplete master occurrence tree before default visibility')
     apply_visibility(occurrences, defaults)
+    create_arrangements(master, layout)
+    apply_presentation(master, layout['presentation'])
     save(master)
+    create_reviews(session, root, layout)
+    for filename, record in verified_studies.items():
+        if digest(root/filename) != record['sha256']:
+            raise ValueError('Verified study bytes changed: '+filename)
+    for record in cache_records.values():
+        path = root / record['file']
+        if path.stat().st_size != record['bytes'] or digest(path) != record['sha256']:
+            raise ValueError('Cached context bytes changed during the native build: ' + record['file'])
     for filename, item in source_rows.items():
         if filename not in study_roles and digest(root/filename) != item['sha256']:
             raise ValueError('Copied source leaf was modified: '+filename)
@@ -193,8 +304,10 @@ def same_numbers(actual, wanted, context):
         raise ValueError('Native transform mismatch: '+context)
 
 
-def inspect_nodes(master, root, layout):
+def inspect_nodes(master, root, layout, file_map=None):
+    from renovierung.m01.delivery_paths import logicalfile
     from renovierung.m01.display import PROJECT, effective_visibility, read_attribute
+    from renovierung.m01.runner import expected_nodes
     if read_attribute(master, 'M01_PROJECT') != PROJECT:
         raise ValueError('Missing M01 master identity')
     if read_attribute(master, 'M01_CONSTRUCTION_RELEASE') is not False:
@@ -207,6 +320,7 @@ def inspect_nodes(master, root, layout):
     local_states = {ident: row['blank'] for ident, row in wanted.items() if ident != 'MASTER'}
     effective = effective_visibility({ident: wanted[ident]['parent'] for ident in local_states}, local_states)
     rows, occurrences = {}, {}
+    expected_suppression = expected_nodes(layout)
 
     def check_attrs(obj, ident):
         row = wanted[ident]
@@ -225,7 +339,7 @@ def inspect_nodes(master, root, layout):
 
     check_attrs(master, 'MASTER')
     root_row = wanted['MASTER']
-    rows['MASTER'] = {'parent': None, 'file': internal(root, master.FullPath),
+    rows['MASTER'] = {'parent': None, 'file': logicalfile(root, master.FullPath, file_map),
                       'name': root_row['name'], 'translation_mm': [0., 0., 0.],
                       'rotation': IDENTITY, 'blank': False, 'reference_set': 'Entire Part',
                       'suppressed': False}
@@ -240,19 +354,19 @@ def inspect_nodes(master, root, layout):
             check_attrs(component, ident)
             row = wanted[ident]
             point, matrix = component.GetPosition()
-            actual = {'parent': parent_id, 'file': internal(root, component.Prototype.FullPath),
+            actual = {'parent': parent_id, 'file': logicalfile(root, component.Prototype.FullPath, file_map),
                       'name': component.Name, 'translation_mm': [point.X, point.Y, point.Z],
                       'rotation': [getattr(matrix, k) for k in MATRIX_KEYS],
                       'blank': bool(component.IsBlanked), 'reference_set': component.ReferenceSet,
-                      'suppressed': bool(component.IsSuppressed)}
+                      'suppressed': bool(component.IsSuppressed) or rows[parent_id]['suppressed']}
             for key in ('parent', 'file', 'name', 'blank', 'reference_set'):
                 expected = effective[ident] if key == 'blank' else row[key]
                 matches = (actual[key].casefold() == row[key].casefold()
                            if key == 'name' else actual[key] == expected)
                 if not matches:
                     raise ValueError('Native node mismatch: '+ident+' '+key+' '+repr(actual[key]))
-            if component.IsSuppressed:
-                raise ValueError('Suppressed occurrence: '+ident)
+            if actual['suppressed'] != expected_suppression[ident]['suppressed']:
+                raise ValueError('Unexpected inherited suppression: '+ident)
             same_numbers(actual['translation_mm'], world[ident][0], ident+' translation')
             same_numbers(actual['rotation'], world[ident][1], ident+' rotation')
             rows[ident], occurrences[ident] = actual, component
@@ -287,31 +401,34 @@ def validate_refset_members(body_names_by_tag, members):
     return sorted(facets)
 
 
-def inspect_parts(session, master, root, layout, expected_parts=None):
+def inspect_parts(session, master, root, layout, expected_parts=None, file_map=None, core_only=False):
     import NXOpen
     import NXOpen.Facet
     from renovierung.k02.nx_verify import body_role, measure
     from renovierung.k02.runner import validate_measurement
-    expected_files = {r['file'] for r in layout['nodes']}
-    disk_files = {p.relative_to(root).as_posix() for p in root.rglob('*.prt')}
+    from renovierung.m01.layout import part_paths
+    from renovierung.m01.delivery_paths import logicalfile, mapfile
+    expected_files = part_paths(layout)
+    disk_files = {logicalfile(root, p, file_map) for p in root.rglob('*.prt')}
     if disk_files != expected_files:
         raise ValueError('Delivery part inventory differs from layout')
     expected_hashes = {r['path']: r for r in expected_parts} if expected_parts is not None else None
     if expected_hashes is not None and set(expected_hashes) != expected_files:
         raise ValueError('Verifier part manifest differs from layout')
     parts, dependencies = {}, {}
+    loaded_files = {n['file'] for n in layout['nodes']} if core_only else expected_files
     for part in session.Parts:
-        filename = internal(root, part.FullPath)
-        if filename not in expected_files or filename in parts:
+        filename = logicalfile(root, part.FullPath, file_map)
+        if filename not in loaded_files or filename in parts:
             raise ValueError('Unlisted or duplicate native part: '+filename)
         if not part.IsFullyLoaded or part.PartUnits != NXOpen.BasePart.Units.Millimeters:
             raise ValueError('Part not fully loaded in millimeters: '+filename)
-        path = root/filename
+        path = mapfile(root, filename, file_map)
         if expected_hashes is not None:
             item = expected_hashes[filename]
             if path.stat().st_size != item['bytes'] or digest(path) != item['sha256']:
                 raise ValueError('Native file bytes differ: '+filename)
-        parents = [internal(root, p.FullPath) for p in part.GetInterpartParents()]
+        parents = [logicalfile(root, p.FullPath, file_map) for p in part.GetInterpartParents()]
         if set(parents)-expected_files:
             raise ValueError('Unknown internal interpart parent: '+filename)
         refs = list(part.Expressions.GetInterpartReferences())
@@ -319,12 +436,25 @@ def inspect_parts(session, master, root, layout, expected_parts=None):
             raise ValueError('Unsupported expression interpart reference: '+filename)
         dependencies[filename] = {'interpart_parents': sorted(parents), 'expression_references': refs}
         parts[filename] = part
-    if set(parts) != expected_files:
-        raise ValueError('Missing loaded parts: '+repr(sorted(expected_files-set(parts))))
-    refsets, refset_facets, measurements = {}, {}, {}
+    if set(parts) != loaded_files:
+        raise ValueError('Missing loaded parts: '+repr(sorted(loaded_files-set(parts))))
+    refsets, refset_facets, measurements, context_measurements, pile_locations = {}, {}, {}, {}, {}
+    for group in layout['context']['groups']:
+        part = parts[group['file']]
+        session.Parts.SetWork(part)
+        bodies = list(part.Bodies)
+        if not bodies or any(b.IsBlanked or b.Layer != 210 for b in bodies):
+            raise ValueError('Context body missing or hidden: '+group['id'])
+        actual = measure(bodies)
+        validate_measurement(actual, group['component_volumes_m3'])
+        context_measurements[group['id']] = actual
     for field in layout['fields']:
         if not field['native']:
             continue
+        from renovierung.m01.pile_native import inspect_piles
+        study_part = parts[field['study_file']]
+        display_part(session, study_part)
+        pile_locations[field['id']] = inspect_piles(study_part, field)
         roles = [r for r in layout['nodes'] if r['parent'] == field['node_id'] and r['kind'] == 'role']
         if {r['role'] for r in roles} != set(field['measurements']):
             raise ValueError('Field role inventory mismatch: '+field['id'])
@@ -362,8 +492,8 @@ def inspect_parts(session, master, root, layout, expected_parts=None):
             wanted = field['measurements'][role]
             validate_measurement(actual, wanted['component_volumes_m3'])
             measurements[field['id']][role] = actual
-    session.Parts.SetWork(master)
-    return sorted(parts), dependencies, refsets, measurements, refset_facets
+    display_part(session, master)
+    return sorted(parts), dependencies, refsets, measurements, refset_facets, context_measurements, pile_locations
 
 
 def test_visibility(master, layout, occurrences):
@@ -372,42 +502,23 @@ def test_visibility(master, layout, occurrences):
     wanted = {r['id']: r for r in layout['nodes']}
     baseline = {ident: wanted[ident]['blank'] for ident in occurrences}
     parents = {ident: wanted[ident]['parent'] for ident in occurrences}
-    toggles, states = [], []
+    toggles = []
+    expected = effective_visibility(parents, baseline)
     try:
         for ident, component in occurrences.items():
-            visible = dict(baseline)
-            current = ident
-            while current != 'MASTER':
-                visible[current] = False
-                current = parents[current]
-            apply_visibility(occurrences, visible)
             set_blank(component, True)
             set_blank(component, False)
-            # Parent operations overwrite descendant flags. Restore the
-            # complete canonical local intent, expanded to physical flags.
-            apply_visibility(occurrences, baseline)
+            if component.GetChildren():
+                apply_visibility(occurrences, baseline)
+            else:
+                set_blank(component, expected[ident])
             toggles.append(ident)
-        for state in ['BASE']+[f['id'] for f in layout['fields'] if f['native']]:
-            select_state(master, state)
-            for field in layout['fields']:
-                expected = state == 'BASE' or field['id'] != state
-                if bool(occurrences[field['node_id']].IsBlanked) != expected:
-                    raise ValueError('Field state switch mismatch: '+state)
-            if bool(occurrences['TERRAIN'].IsBlanked) != (state != 'BASE'):
-                raise ValueError('Terrain state switch mismatch: '+state)
-            for ident, component in occurrences.items():
-                if wanted[ident]['kind'] == 'role':
-                    hidden_field = bool(occurrences[parents[ident]].IsBlanked)
-                    expected = hidden_field or wanted[ident]['blank']
-                    if bool(component.IsBlanked) != expected:
-                        raise ValueError('Role state visibility mismatch: '+state+' '+ident)
-            states.append(state)
     finally:
         apply_visibility(occurrences, baseline)
     expected = effective_visibility(parents, baseline)
     if any(bool(c.IsBlanked) != expected[ident] for ident, c in occurrences.items()):
         raise ValueError('Native default visibility was not restored')
-    return sorted(toggles), states
+    return sorted(toggles)
 
 
 def main():
@@ -418,27 +529,61 @@ def main():
         import NXOpen
         from renovierung.k02.nx_verify import open_all
         from renovierung.m01.layout import validate_layout
+        from renovierung.m01.states import test_arrangements
+        from renovierung.m01.inspection import inspect_reviews
+        from renovierung.m01.layout import part_paths
         session = NXOpen.Session.GetSession()
         if list(session.Parts):
             raise RuntimeError('A fresh NX process is required')
         root, layout = Path(request['directory']).resolve(), request['layout']
         validate_layout(layout)
         sorted_nodes(layout)
+        if request['mode'] == 'generate':
+            build(session, root, layout, request)
+            if {p.relative_to(root).as_posix() for p in root.rglob('*.prt')} != part_paths(layout):
+                raise ValueError('Generated part inventory differs')
+            result.update(status='PASS',mode='generate',parts=sorted(part_paths(layout)),
+                          study_cache_checks=request.get('_study_checks',{}))
+            Path(request['report']).write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+            return
         if request['mode'] == 'build':
-            master = build(session, root, layout)
+            master = build(session, root, layout, request)
         elif request['mode'] == 'verify':
             master = open_all(session, root, layout['master'], request['load_method'])
+            from renovierung.m01.states import state_catalog, activate_state
+            if master.ComponentAssembly.ActiveArrangement.Name != state_catalog(layout)[layout['default_state']]:
+                raise ValueError('Saved initial arrangement differs')
+            loaded = {internal(root, part.FullPath) for part in session.Parts}
+            for filename in sorted(part_paths(layout)-loaded):
+                _, status = session.Parts.OpenBase(str(root/filename))
+                try:
+                    if status.NumberUnloadedParts: raise ValueError('Incomplete auxiliary part load: '+filename)
+                finally: status.Dispose()
+            display_part(session, master)
+            activate_state(master, layout['default_state'])
         else:
             raise ValueError('Unsupported M01 journal mode')
         before = {p.relative_to(root).as_posix(): digest(p) for p in root.rglob('*.prt')}
+        print('M01 inspect saved root', flush=True)
         nodes, occurrences = inspect_nodes(master, root, layout)
-        parts, dependencies, refsets, measurements, refset_facets = inspect_parts(
+        parts, dependencies, refsets, measurements, refset_facets, context_measurements, pile_locations = inspect_parts(
             session, master, root, layout, request.get('parts') if request['mode'] == 'verify' else None)
-        toggles, states = test_visibility(master, layout, occurrences)
+        toggles = test_visibility(master, layout, occurrences)
+        from renovierung.m01.display import select_state
+        select_state(master, layout['default_state'])
+        print('M01 test arrangements', flush=True)
+        arrangements = test_arrangements(master, layout)
+        states = list(arrangements['catalog'])
+        print('M01 test review entry files', flush=True)
+        reviews = inspect_reviews(session, root, layout)
+        master = session.Parts.Display
         # Check attributes and exact baseline again after the unsaved switches.
         restored, _ = inspect_nodes(master, root, layout)
         if nodes != restored:
             raise ValueError('Native state testing changed the baseline')
+        from renovierung.m01.standalone import inspect_subassemblies
+        print('M01 test standalone fields and sections', flush=True)
+        standalone = inspect_subassemblies(session, root, layout)
         after = {p.relative_to(root).as_posix(): digest(p) for p in root.rglob('*.prt')}
         if before != after:
             raise ValueError('Inspection modified saved part files')
@@ -446,9 +591,15 @@ def main():
                       load_method=request['load_method'], nodes=nodes, parts=parts,
                       dependencies=dependencies, measurements=measurements, refsets=refsets,
                       refset_facets=refset_facets,
+                      context_measurements=context_measurements, arrangements=arrangements,
+                      pile_locations=pile_locations,
+                      reviews=reviews,
+                      standalone=standalone,
                       toggle_checks=toggles, state_checks=states, all_parts_mm=True,
                       all_parts_fully_loaded=True, all_paths_internal=True,
                       files_saved_by_verifier=False)
+        if request['mode'] == 'build':
+            result['study_cache_checks'] = request.get('_study_checks', {})
     except Exception as error:
         result.update(status='FAIL', error=str(error), traceback=traceback.format_exc())
     Path(request['report']).write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')

@@ -115,13 +115,154 @@ def _load_evidence(root):
     return gd, gb, kd, kb
 
 
-def create_layout(root: Path) -> dict:
+PILE_SITE_CHECK = 'renovierung/planung/2026-11-04/M01_LAGERSTANDORTE_XY.json'
+DEFAULT_PILE_CENTER = (14500, -9500)
+
+
+def _pile_site_evidence(root, center, field_count):
+    """A is an explicit reviewed XY alternative, never a construction release."""
+    if list(center) != list(DEFAULT_PILE_CENTER):
+        return {'status': 'UNASSESSED_EXPLICIT_ALTERNATIVE', 'source_hashes': {}}
+    path = member_path(root, PILE_SITE_CHECK)
+    if not path.is_file():
+        raise ValueError('Missing versioned pile site A XY evidence')
+    check = _read(path)
+    if (check['schema'] != 'M01_STOCKPILE_DISPLAY_LOCATION_CHECK_V1' or
+            check['scope'] != 'OFFLINE_XY_ONLY_NO_NX_RUN_NO_CONSTRUCTION_RELEASE' or
+            check['construction_release'] is not False or check['preferred_display_candidate'] != 'A' or
+            check['minimum_excavation_clearance_mm'] != 600 or check['field_count'] != 22 or field_count != 22):
+        raise ValueError('Invalid pile site A XY evidence scope')
+    candidates = [c for c in check['candidates'] if c['id'] == 'A']
+    if len(candidates) != 1:
+        raise ValueError('Missing/duplicate pile site A evidence')
+    candidate = candidates[0]
+    clearances = candidate['clearance_lower_bounds_m']
+    def finite_number(v):
+        return type(v) in (int, float) and math.isfinite(v)
+    if (candidate['center_xy_mm'] != list(DEFAULT_PILE_CENTER) or
+            candidate['geometric_criterion_passed'] is not True or
+            not {'vegetation','building','utility_corridor','excavation','parcel_boundary'} <= set(clearances) or
+            not all(finite_number(v) and v > 0 for v in clearances.values()) or clearances['excavation'] < 0.6 or
+            not {'vegetation','building','utility_corridor','excavation'} <= set(candidate['overlap_area_sum_m2']) or
+            not all(finite_number(v) and 0 <= v < 1e-8 for v in candidate['overlap_area_sum_m2'].values()) or
+            not finite_number(candidate['parcel_outside_m2']) or not 0 <= candidate['parcel_outside_m2'] < 1e-8):
+        raise ValueError('Pile site A fails recorded XY geometric criteria')
+    hashes = check['verified_source_generator_hashes']
+    if not isinstance(hashes, dict) or not hashes:
+        raise ValueError('Missing pile site A input/generator hashes')
+    vegetation = check['vegetation_sources']
+    if not {'V01','V02','V03','V05'} <= set(vegetation):
+        raise ValueError('Incomplete G02 vegetation evidence')
+    for vid in ('V01','V02','V03','V05'):
+        for key in ('step','existing_native_part'):
+            if vegetation[vid][key] not in hashes:
+                raise ValueError('Unhashed G02 vegetation source: '+vid+'/'+key)
+    for relative, expected in hashes.items():
+        source = member_path(root, _safe(relative))
+        if not re.fullmatch(r'[a-f0-9]{64}', expected) or not source.is_file() or digest(source) != expected:
+            raise ValueError('Pile site A source/generator stale: '+relative)
+    return {'status': 'OFFLINE_XY_GEOMETRIC_CRITERIA_PASSED_NO_RELEASE', 'path': PILE_SITE_CHECK,
+            'sha256': digest(path), 'source_hashes': {**hashes, PILE_SITE_CHECK: digest(path)}}
+
+
+def _apply_pile_site(root, layout, center, *, proposal=None):
+    from .piles import create_piles
+    from renovierung.k02.runner import validate_measurement
+    root = Path(root).resolve()
+    proposal = create_piles(root, layout, center) if proposal is None else proposal
+    native = {f['id']: f for f in layout['fields'] if f['native']}
+    rows = {f['id']: f for f in proposal['fields']}
+    if (len(rows) != len(proposal['fields']) or set(rows) != set(native) or
+            proposal['center_xy_mm'] != list(center) or proposal['construction_release'] is not False):
+        raise ValueError('Pile proposal field/site inventory differs')
+    for relative, expected in proposal['source_hashes'].items():
+        if digest(member_path(root, _safe(relative))) != expected:
+            raise ValueError('Pile proposal source stale: '+relative)
+    evidence = _pile_site_evidence(root, center, len(native))
+    previous_centers = set()
+    for fid, field in native.items():
+        row = rows[fid]
+        if abs(row['excavation_volume_m3']-field['volume_m3']) > 1e-9:
+            raise ValueError('Pile proposal changes excavation: '+fid)
+        old = field.get('k02_stockpile', field.get('stockpile'))
+        previous_centers.add(tuple(old['center_mm']))
+        preserved = field.get('k02_pile_measurements', {r: deepcopy(field['measurements'][r])
+                                                     for r in ('pile_main', 'pile_reserve')})
+        compact = {}
+        for role, source_role, factor in (('pile_main','main',1.05),('pile_reserve','reserve_1_25',1.25)):
+            pile = row[source_role]
+            if abs(pile['target_volume_m3']-field['volume_m3']*factor) > 1e-8:
+                raise ValueError('Pile proposal target changed: '+fid+'/'+role)
+            measurement = {k:deepcopy(pile[k]) for k in ('body_count','volume_m3','component_volumes_m3')}
+            validate_measurement(measurement, measurement['component_volumes_m3'])
+            field['measurements'][role] = measurement
+            keys = ('target_volume_m3','volume_m3','body_count','component_volumes_m3',
+                    'contact_area_m2','bbox_mm','apex_z_mm','center_xy_mm','terrain_error_mm')
+            compact[role] = {k:deepcopy(pile[k]) for k in keys}
+            compact[role].update(construction_release=False, native_verified=False,
+                                 basis='RECOMPUTED_K02_TIN_AT_EXPLICIT_ALTERNATIVE_SITE')
+        field['k02_stockpile'] = deepcopy(old)
+        field.pop('stockpile', None)
+        field['stockpile_reference'] = 'HISTORICAL_K02_NOT_CURRENT_DISPLAY_SITE'
+        field['k02_pile_measurements'] = deepcopy(preserved)
+        field['display_stockpile'] = compact
+        field['display_pile_native_verification_required'] = True
+        field['display_pile_note'] = ('ALTERNATIVER_LAGERPLATZ XY %.0f/%.0f mm; Haupt %.3f m3; Reserve %.3f m3; '
+                                      'TIN neu berechnet; native Pruefung erforderlich; nicht freigegeben' %
+                                     (center[0],center[1],compact['pile_main']['volume_m3'],compact['pile_reserve']['volume_m3']))
+        if 'display_marker' in field:
+            field['display_marker']['pile_note'] = field['display_pile_note']
+    layout['pile_site'] = {'center_mm':list(center), 'previous_centers_mm':[list(p) for p in sorted(previous_centers)],
+                           'status':'EXPLICIT_ALTERNATIVE_SITE_UNRELEASED', 'construction_release':False,
+                           'native_verified':False, 'ground_capture':deepcopy(proposal['ground_capture']),
+                           'source_hashes':{**proposal['source_hashes'], **evidence['source_hashes']},
+                           'xy_location_check':evidence,
+                           'provenance':{'layout_input_sha256':proposal['layout_input_sha256'],
+                                         'basis':'UNCHANGED_K02_EXCAVATION_TARGETS_NEW_TIN_PILES',
+                                         'generator':'renovierung/m01/piles.py',
+                                         'generator_sha256':digest(Path(__file__).with_name('piles.py'))}}
+    _validate_pile_site(layout)
+
+
+def _validate_pile_site(layout):
+    from renovierung.k02.runner import validate_measurement
+    site = layout['pile_site']
+    if (site['construction_release'] is not False or site['native_verified'] is not False or
+            site['status'] != 'EXPLICIT_ALTERNATIVE_SITE_UNRELEASED' or
+            len(site['center_mm']) != 2 or not site['source_hashes']):
+        raise ValueError('Invalid alternative pile site scope')
+    for field in layout['fields']:
+        if not field['native']:
+            if 'display_stockpile' in field:
+                raise ValueError('Invented blocked-field pile')
+            continue
+        if ('stockpile' in field or field['stockpile_reference'] != 'HISTORICAL_K02_NOT_CURRENT_DISPLAY_SITE' or
+                field['display_pile_native_verification_required'] is not True or
+                set(field['display_stockpile']) != {'pile_main','pile_reserve'}):
+            raise ValueError('Alternative/historical pile roles ambiguous')
+        for role, factor in (('pile_main',1.05),('pile_reserve',1.25)):
+            pile = field['display_stockpile'][role]
+            box = pile['bbox_mm']
+            if (len(box) != 6 or any(type(x) not in (int,float) or not math.isfinite(x) for x in box) or
+                    any(box[k] >= box[k+3] for k in range(3)) or pile['center_xy_mm'] != site['center_mm'] or
+                    abs(pile['apex_z_mm']-box[5]) > 1e-6 or pile['contact_area_m2'] <= 0 or
+                    abs(pile['target_volume_m3']-field['volume_m3']*factor) > 1e-8 or
+                    pile['native_verified'] is not False or pile['construction_release'] is not False or
+                    any(k in pile for k in ('mesh','contact_polygons_xy_mm','uncertainty_contact_hull_xy_mm'))):
+                raise ValueError('Malformed compact display pile: '+field['id']+'/'+role)
+            validate_measurement(pile, pile['component_volumes_m3'])
+            validate_measurement(field['measurements'][role], pile['component_volumes_m3'])
+            validate_measurement(field['k02_pile_measurements'][role],
+                                 field['k02_pile_measurements'][role]['component_volumes_m3'])
+
+
+def create_layout(root: Path, pile_center_xy=DEFAULT_PILE_CENTER) -> dict:
     """Return a JSON layout backed by complete, current G02/K02 evidence."""
     root = Path(root).resolve()
     gd, gb, kd, kb = _load_evidence(root)
     plan = kb['plan']
     house = _read(root/'projects/g02/haus/data/haus.json')
-    layout = {'schema': 'M01_LAYOUT_V1', 'master': 'HAUSPROJEKT_MASTER_M01.prt',
+    layout = {'schema': 'M01_LAYOUT_V2', 'master': 'HAUSPROJEKT_MASTER_M01.prt',
               'nodes': [], 'sources': [], 'fields': [], 'rooms': [], 'construction_release': False,
               'units': 'mm', 'height_registration': deepcopy(plan['height_registration']),
               'sections': deepcopy(plan['sectors']), 'limitations': deepcopy(plan['limitations']),
@@ -173,11 +314,13 @@ def create_layout(root: Path) -> dict:
     states = {s['id']: s for s in kb['states']}
     if len(states) != len(kb['states']): raise ValueError('Duplicate K02 states')
     for sector in plan['sectors']:
-        node('SECTION_'+sector['id'], 'CONSTRUCTION', 'Sektion_'+sector['id'], metadata=deepcopy(sector))
+        count = sum(bool(f['native_candidate']) for f in plan['fields'] if f['sector_id'] == sector['id'])
+        node('SECTION_'+sector['id'], 'CONSTRUCTION', 'Sektion_'+sector['id']+('_%02d_STUDIEN' % count if count else '_GESPERRT_REGISTER'), metadata=deepcopy(sector))
     for original in plan['fields']:
         field = deepcopy(original); fid = field['id']; nid = 'FIELD_'+fid
         field.update(node_id=nid, native=bool(field['native_candidate']), measurements={})
-        node(nid, 'SECTION_'+field['sector_id'], 'Feld_'+fid, 'field', file='bauzustaende/'+nid+'.prt', blank=True)
+        node(nid, 'SECTION_'+field['sector_id'], 'Feld_'+fid+('_STUDIE' if field['native'] else '_GESPERRT_REGISTER'),
+             'field', file='bauzustaende/'+nid+'.prt', blank=False)
         if field['native']:
             state = states[fid]
             studies = [p for p in state['parts'] if Path(p['path']).name == fid+'_STUDY.prt']
@@ -201,6 +344,28 @@ def create_layout(root: Path) -> dict:
             node(group, floor, 'Raumregister_'+room['level']+'_'+assignment, blank=True)
         node(room['node_id'], group, 'Raum_'+rid, 'room', file='raeume/'+room['node_id']+'.prt', metadata=deepcopy(room))
         layout['rooms'].append(room)
+    from .context import create_context
+    from .presentation import camera_spec
+    layout['context'] = create_context(root, layout)
+    from renovierung.k02.terrain import Grid
+    grid = Grid(_read(root/'projects/g02/data/DGM_STUETZPUNKTE_G02.json'), layout['height_registration']['translation_mm'][2])
+    for index, field in enumerate(layout['fields']):
+        a, t, normal, length = field['origin_mm'], field['tangent'], field['normal'], field['length_mm']
+        ends = [[a[k]+station*t[k]+100*normal[k] for k in range(2)] for station in (0, length)]
+        label = [a[k]+length/2*t[k]+(700+index%3*600)*normal[k] for k in range(2)]
+        field['display_marker'] = {'line': [[*p, grid.sample(p)+100] for p in ends],
+                                   'label': [*label, grid.sample(label)+150],
+                                   'basis': 'SURFACE_OFFSET_REGISTER_NOT_EXCAVATION_OR_UTILITY_DEPTH'}
+    _apply_pile_site(root, layout, pile_center_xy)
+    layout['default_state'] = sorted(f['id'] for f in layout['fields'] if f['native'])[0]
+    boundary = layout['context']['boundary_xyz_mm']
+    # This is a conservative viewing envelope, not new building geometry.
+    layout['presentation'] = camera_spec([[p[0], p[1], z] for p in boundary for z in (-4000., 12000.)])
+    node('SITE_CONTEXT', 'MASTER', 'Grundstueck_Studienboden')
+    for group in layout['context']['groups']:
+        node(group['id'], 'SITE_CONTEXT', group['id']+'_GELAENDE', 'context', file=group['file'], metadata=deepcopy(group))
+    from .inspection import build_review_index
+    layout['review_masters'] = build_review_index(layout)
     validate_layout(layout)
     return layout
 
@@ -215,7 +380,7 @@ def validate_layout(layout) -> None:
 
 def _validate_layout(d):
     from renovierung.k02.runner import validate_measurement
-    if d['schema'] != 'M01_LAYOUT_V1' or d['units'] != 'mm' or d['construction_release'] is not False:
+    if d['schema'] != 'M01_LAYOUT_V2' or d['units'] != 'mm' or d['construction_release'] is not False:
         raise ValueError('Invalid M01 scope')
     nodes = d['nodes']; ids = [n['id'] for n in nodes]; byid = {n['id']: n for n in nodes}
     if len(ids) != len(set(ids)) or any(not re.fullmatch(r'[A-Za-z0-9_-]+', x) for x in ids):
@@ -226,7 +391,7 @@ def _validate_layout(d):
         raise ValueError('Master differs')
     required_parents = {'HOUSE': 'MASTER', 'HOUSE_KG': 'HOUSE', 'HOUSE_EG': 'HOUSE',
                         'HOUSE_DG': 'HOUSE', 'HOUSE_ROOF': 'HOUSE', 'HOUSE_OUTSIDE': 'HOUSE',
-                        'ENVIRONMENT': 'MASTER', 'UTILITIES': 'MASTER', 'CONSTRUCTION': 'MASTER'}
+                        'ENVIRONMENT': 'MASTER', 'UTILITIES': 'MASTER', 'CONSTRUCTION': 'MASTER', 'SITE_CONTEXT': 'MASTER'}
     required_parents.update({v[0]: v[1] for v in HOUSE_PARTS.values()})
     required_parents.update({v[0]: 'ENVIRONMENT' for v in ENV_PARTS.values()})
     required_parents.update({'UTILITY_'+x: 'UTILITIES' for x in ('GAS', 'STROM', 'TELEFON', 'BREITBAND')})
@@ -237,7 +402,7 @@ def _validate_layout(d):
         name = _safe(n['file'])
         if not re.fullmatch(r'[A-Za-z0-9_/-]+\.prt', name) or not n['name'].isascii() or not n['name']:
             raise ValueError('Unsafe part/component name')
-        if n['kind'] not in ('assembly', 'source', 'role', 'room', 'field') or type(n['blank']) is not bool:
+        if n['kind'] not in ('assembly', 'source', 'role', 'room', 'field', 'context') or type(n['blank']) is not bool:
             raise ValueError('Invalid node kind/display')
         if n['rotation'] != IDENTITY or any(type(x) not in (int, float) or not math.isfinite(x) for x in n['rotation']):
             raise ValueError('Invalid rotation')
@@ -278,7 +443,7 @@ def _validate_layout(d):
         raise ValueError('Field nodes differ')
     for f in fields:
         n = byid[f['node_id']]
-        if n['id'] != 'FIELD_'+f['id'] or n['parent'] != 'SECTION_'+f['sector_id'] or not n['blank'] or f['construction_release'] is not False:
+        if n['id'] != 'FIELD_'+f['id'] or n['parent'] != 'SECTION_'+f['sector_id'] or n['blank'] or f['construction_release'] is not False:
             raise ValueError('Field display/hierarchy differs')
         roles = [n for n in nodes if n['parent'] == f['node_id']]
         if type(f['native']) is not bool or f['native'] != f['native_candidate']: raise ValueError('Native classification differs')
@@ -298,3 +463,27 @@ def _validate_layout(d):
         if room['apartment_reference'] != expected or room['current_apartment_assignment_confirmed'] is not False or n['metadata'] != room:
             raise ValueError('Room source metadata differs')
         if not byid[n['parent']]['blank'] or n['blank']: raise ValueError('Room register display differs')
+    groups = d['context']['groups']
+    if not groups or {g['id'] for g in groups} != {n['id'] for n in nodes if n['kind'] == 'context'}:
+        raise ValueError('Context group inventory differs')
+    native_ids = {f['id'] for f in fields if f['native']}
+    if d['default_state'] != sorted(native_ids)[0]: raise ValueError('Missing explicit initial study')
+    for g in groups:
+        n = byid[g['id']]
+        if n['parent'] != 'SITE_CONTEXT' or n['file'] != g['file'] or n['metadata'] != g or n['blank']:
+            raise ValueError('Context hierarchy differs')
+        if not set(g['exclude_for']) <= native_ids or len(set(g['exclude_for'])) != len(g['exclude_for']):
+            raise ValueError('Unknown/duplicate context mask')
+        validate_measurement(g, g['component_volumes_m3'])
+    if abs(sum(g['area_m2'] for g in groups)-d['context']['area_m2']) > 1e-7:
+        raise ValueError('Incomplete context area')
+    if not (0 < d['presentation']['scale'] < 0.01): raise ValueError('Unusable site view scale')
+    from .inspection import build_review_index
+    if d['review_masters'] != build_review_index(d): raise ValueError('Review entry catalog differs')
+    if len(part_paths(d)) != len(set(n['file'] for n in nodes)) + len(d['review_masters']):
+        raise ValueError('Review file collides with assembly parts')
+    _validate_pile_site(d)
+
+
+def part_paths(layout):
+    return {n['file'] for n in layout['nodes']} | {_safe(r['file']) for r in layout.get('review_masters', [])}

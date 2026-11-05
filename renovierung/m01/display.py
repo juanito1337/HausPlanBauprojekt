@@ -71,6 +71,8 @@ def components(master):
 
 
 def set_blank(component, hidden):
+    if bool(component.IsBlanked) == bool(hidden):
+        return
     if hidden:
         component.Blank()
     else:
@@ -140,6 +142,20 @@ def select_state(master, field_id='BASE'):
     Room and house visibility remains under the user's assembly-tree control.
     """
     nodes = components(master)
+    # V2 uses persisted native arrangements. Keep the legacy path only for
+    # historical V1 files which genuinely have no catalog attribute.
+    import NXOpen
+    if master.HasUserAttribute('M01_DEFAULT_STATE', NXOpen.NXObject.AttributeType.String, -1):
+        from .states import activate_state
+        from .presentation import apply_presentation
+        catalog = read_attribute(master, 'M01_STATE_CATALOG')
+        if field_id not in catalog:
+            raise ValueError('Unknown M01 state: '+str(field_id))
+        defaults = {ident: read_attribute(c, 'M01_DEFAULT_BLANK') for ident, c in nodes.items()}
+        apply_visibility(nodes, defaults)
+        activate_state(master, field_id)
+        apply_presentation(master, read_attribute(master, 'M01_PRESENTATION'))
+        return field_id
     fields = {read_attribute(c, 'M01_FIELD_ID'): c for c in nodes.values()
               if read_attribute(c, 'M01_KIND') == 'field'}
     if field_id != 'BASE':

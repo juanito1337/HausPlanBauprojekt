@@ -1,0 +1,18 @@
+{
+  "schema": "ANBAU_DISPLAY_ASSUMPTIONS_V1",
+  "assumed_slab_underside_z_mm": -1500,
+  "target_below_assumed_slab_mm": 100,
+  "working_width_mm": 800,
+  "max_bottom_length_mm": 2000,
+  "excavation_slope_ratio": 1,
+  "terrain_tolerance_mm": 25,
+  "utility_corridor_half_width_mm": 1000,
+  "pile_center_xy_mm": [14500, -9500],
+  "pile_patch_radius_mm": 6000,
+  "minimum_pile_excavation_clearance_mm": 600,
+  "loose_factor": 1.05,
+  "reserve_factor": 1.25,
+  "construction_release": false,
+  "basis": "EXPLICIT_USER_DISPLAY_ASSUMPTION_NOT_SURVEYED_SLAB_OR_FOUNDATION",
+  "height_warning": "Existing G02 annex FFB proxy Z_KG_ANBAU=-1860 mm stays unchanged. Assumed slab underside -1500 and target -1600 lie above it; no as-built slab or foundation datum follows."
+}

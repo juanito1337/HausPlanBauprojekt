@@ -1,8 +1,12 @@
 # Testen ohne erfundene Erfolgsnachweise
 
-## Zusätzlicher M01-Nachweis ab 03.11.2026
+## Integrierter M02 Nachweis ab 05.11.2026
 
-Für die gemeinsame Hauptbaugruppe zusätzlich `python tools/nx_master.py build --accept-model-assumptions` ausführen. `python tools/nx_master.py check` vergleicht den nativen Nachweis mit dem aktuellen aus den Quellen abgeleiteten Baum, sämtlichen Teilbytes, Feldmengen, Referenzsets, Komponentenzuständen und Schaltprüfungen. `tools/run_checks.py` enthält die M01-Tests und beide nativen Aktualitätschecks. Bei `--nx` erfolgen G02/K02- und M01-Neuerzeugung vor den M01-Tests, die aktuelle Quelllieferungen benötigen. Ein reiner Offline-Test ist weiterhin kein neuer NX-Lauf. Die interaktive Auswahl im NX-Menü ist vom programmgesteuert getesteten Schaltkern zu unterscheiden.
+Für den Gesamtstand `python tools/nx_anbau.py build --accept-model-assumptions` und anschließend `python tools/nx_anbau.py check` ausführen. Der Build erzeugt neue Parts und verlangt vollständige native Prüfungen des übernommenen M01-Baums, aller Anbaufelder, gespeicherten Zustände und separaten Einstiege. Ein explizites Paket bereits geprüfter nativer Eingaben kann über `--reuse-assets` verwendet werden. Die abschließenden Gesamtprüfungen bleiben dabei verpflichtend.
+
+`tools/run_checks.py` führt Repository-, K02-, M01- und Anbautests sowie die nativen Aktualitätschecks für G02/K02 und M02 aus. Mit `--nx` werden G02/K02 und anschließend M02 nativ aufgebaut. Die M01-Basis muss dem aktuellen M01-Layoutgenerator exakt entsprechen. Bei einer Abweichung ist zuerst eine passende M01-Basis zu erzeugen. Ein reiner Aktualitätscheck führt keinen neuen NX-Lauf aus. Die grafische Menü-/Bildschirmabnahme bleibt ein eigener Prüfpunkt.
+
+`tools/nx_master.py` behält seinen eigenständigen M01-Geltungsbereich. Der aktuelle gemeinsame Gesamtstand wird über `cad/nx/m02/CURRENT.json` bestimmt.
 
 ## Verbindlicher nativer Projektcheck ab 31.10.2026
 

@@ -23,6 +23,9 @@ K01 ist **nicht ausführbar vorhanden**. `renovierung/k01_unterlagen/` enthält 
 - Kein NXOpen in einer gewöhnlichen Python-Umgebung installieren oder durch Attrappen einen angeblichen NX-Erfolg erzeugen.
 
 ## Schutz des bestehenden Projekts
+
+Der Folgeauftrag vom 04./05.11.2026 erweitert die gemeinsame Hauptbaugruppe um alle 24 Anbaufelder. Für den integrierten Umfang M02 gilt `python tools/nx_anbau.py build --accept-model-assumptions` mit anschließendem `python tools/nx_anbau.py check`. Sein vollständiger nativer Nachweis muss auch sämtliche übernommenen M01-Knoten, Geometrien, Darstellungszustände und separaten Einstiege umfassen. `tools/run_checks.py` verlangt bei vorhandenem Anbaumodul diesen Gesamtnachweis sowie beide Modultestgruppen. Der eigenständige M01-Prüfbefehl behält seinen bisherigen Geltungsbereich. Ein übernommener Zwischenstand mit gebauter Geometrie und noch unvollständiger Prüfung darf ausschließlich als explizite Eingabe erscheinen. Erst der erfolgreich geprüfte Gesamtstand erhält den aktuellen M02-Verweis.
+
 Keine vorhandenen Nutzermodelle automatisch speichern, schließen, überschreiben oder löschen. Keine Änderungskennzeichen zurücksetzen, um Vorprüfungen zu umgehen. Kein `git clean -fdx`, `reset --hard`, automatischer Remote-Push oder Veröffentlichung ohne ausdrücklichen Auftrag.
 
 G02-Prüfmanifeste prüfen Dateibytes. Git-Attribute erhalten die importierten Bytes. Keine automatische Neu-Berechnung der Prüfsummen, nur damit Tests grün werden. Bei beauftragter Änderung eine bewusste Revision mit geändertem Manifest und nachvollziehbarem Diff planen; die Importnachweise in `provenance/` bleiben historische Belege.

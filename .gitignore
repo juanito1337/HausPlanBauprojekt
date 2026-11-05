@@ -70,3 +70,15 @@ Thumbs.db
 !/cad/nx/m01/*/BUILD.json
 !/cad/nx/m01/*/VERIFY.json
 !/cad/nx/m01/README.md
+
+# Integrated M02 annex extension and native evidence.
+!/cad/nx/m02/CURRENT.json
+!/cad/nx/m02/LAST_ATTEMPT.json
+!/cad/nx/m02/*/BUILD.json
+!/cad/nx/m02/*/VERIFY.json
+!/cad/nx/m02/*/EXPECTATIONS.json
+!/cad/nx/m02/*/BUILD_INITIAL.json
+!/cad/nx/m02/*/EXPECTATIONS_INITIAL.json
+!/cad/nx/m02/*/BUILD_BEFORE_NAMING.json
+!/cad/nx/m02/*/BUILD_BEFORE_DEFAULTS.json
+!/cad/nx/m02/README.md

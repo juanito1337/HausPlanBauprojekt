@@ -1,0 +1,364 @@
+{
+  "schema": "ANBAU_PARCEL_EDGE_STRIP_REVIEW_V1",
+  "construction_release": false,
+  "scope": "CONSERVATIVE_TRENCH_ERROR_HULL_TO_CADASTRAL_BOUNDARY_DISPLAY_ONLY",
+  "plan_sha256": "3bfb30a8d5b837d34423af8476da29dfccd7c085b0c386c7b76687f2c34aebc5",
+  "minimum_unloaded_edge_strip_mm": 600,
+  "regular_study_ids": [
+    "PS12-F01",
+    "PS12-F02",
+    "PS12-F03",
+    "PS12-F04",
+    "PS12-F05",
+    "PS13-F01",
+    "PS13-F02",
+    "PS13-F03",
+    "PS13-F04",
+    "PS13-F05"
+  ],
+  "diagnostic_ids": [
+    "PS10-F01",
+    "PS10-F02",
+    "PS10-F03",
+    "PS10-F04",
+    "PS10-F05",
+    "PS11-F01",
+    "PS11-F02",
+    "PS11-F03",
+    "PS11-F04",
+    "PS11-F05",
+    "PS11-F06",
+    "PS11-F07",
+    "PS13-F06",
+    "PS13-F07"
+  ],
+  "fields": {
+    "PS10-F01": {
+      "id": "PS10-F01",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS10-F02": {
+      "id": "PS10-F02",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS10-F03": {
+      "id": "PS10-F03",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS10-F04": {
+      "id": "PS10-F04",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS10-F05": {
+      "id": "PS10-F05",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F01": {
+      "id": "PS11-F01",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 226.2963689086279,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          26848.469522954867,
+          7251.30842115486
+        ],
+        [
+          27072.707995049823,
+          7220.859214042859
+        ]
+      ],
+      "edge_strip_criterion_passed": false,
+      "reserve_mm": -373.70363109137213,
+      "reason": "PARCEL_EDGE_STRIP_LT_600_MM",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F02": {
+      "id": "PS11-F02",
+      "source_native_candidate": false,
+      "reason": "BLOCKED_INTERFACE_OR_ACCESS_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F03": {
+      "id": "PS11-F03",
+      "source_native_candidate": false,
+      "reason": "BLOCKED_INTERFACE_OR_ACCESS_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F04": {
+      "id": "PS11-F04",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 6.36595777181932,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          27828.184230267616,
+          12831.758348107369
+        ],
+        [
+          27834.492297211236,
+          12830.901779495178
+        ]
+      ],
+      "edge_strip_criterion_passed": false,
+      "reserve_mm": -593.6340422281806,
+      "reason": "PARCEL_EDGE_STRIP_LT_600_MM",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F05": {
+      "id": "PS11-F05",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 4.389710946667042,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          27832.5842149852,
+          12849.474026802345
+        ],
+        [
+          27836.93400672232,
+          12848.883371201367
+        ]
+      ],
+      "edge_strip_criterion_passed": false,
+      "reserve_mm": -595.610289053333,
+      "reason": "PARCEL_EDGE_STRIP_LT_600_MM",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F06": {
+      "id": "PS11-F06",
+      "source_native_candidate": false,
+      "reason": "RED_PROPERTY_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS11-F07": {
+      "id": "PS11-F07",
+      "source_native_candidate": false,
+      "reason": "RED_PROPERTY_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS12-F01": {
+      "id": "PS12-F01",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 600.5427902901863,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          28107.247247369014,
+          19302.755229464736
+        ],
+        [
+          28702.328813952554,
+          19221.94946183641
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 0.5427902901863035,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS12-F02": {
+      "id": "PS12-F02",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 2342.4683890221854,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          26390.792610287463,
+          19608.05949004452
+        ],
+        [
+          28711.95903031587,
+          19292.869699440984
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 1742.4683890221854,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS12-F03": {
+      "id": "PS12-F03",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 4075.2911553913177,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          24643.371150183422,
+          19617.661765427132
+        ],
+        [
+          28681.602370747187,
+          19069.312779402
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 3475.2911553913177,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS12-F04": {
+      "id": "PS12-F04",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 4686.757124562293,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          18513.31096124393,
+          20938.83955224501
+        ],
+        [
+          18515.508321230915,
+          25625.596161697275
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 4086.757124562293,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS12-F05": {
+      "id": "PS12-F05",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 4365.062369411315,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          16780.31030445681,
+          21261.346850552414
+        ],
+        [
+          16782.35683964869,
+          25626.408740210387
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 3765.0623694113146,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS13-F01": {
+      "id": "PS13-F01",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 5012.676133844071,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          15852.320734737998,
+          20614.168097733527
+        ],
+        [
+          15854.670900038116,
+          25626.84368064661
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 4412.676133844071,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS13-F02": {
+      "id": "PS13-F02",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 6774.072949451696,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          15454.051457873045,
+          18852.9578148889
+        ],
+        [
+          15457.22744426458,
+          25627.030019818787
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 6174.072949451696,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS13-F03": {
+      "id": "PS13-F03",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 8604.723782032197,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          15104.290299308854,
+          17022.470764696136
+        ],
+        [
+          15108.324576152136,
+          25627.19360100416
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 8004.723782032197,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS13-F04": {
+      "id": "PS13-F04",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 10445.370479819878,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          14761.530620704714,
+          15181.984565592307
+        ],
+        [
+          14766.427874505498,
+          25627.35389738703
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 9845.370479819878,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS13-F05": {
+      "id": "PS13-F05",
+      "source_native_candidate": true,
+      "parcel_edge_clearance_mm": 11051.825013142754,
+      "required_unloaded_edge_strip_mm": 600,
+      "witness_points_xy_mm": [
+        [
+          16691.175409509586,
+          12904.056962532413
+        ],
+        [
+          27642.49719500669,
+          11416.983571060311
+        ]
+      ],
+      "edge_strip_criterion_passed": true,
+      "reserve_mm": 10451.825013142754,
+      "reason": "GEOMETRY_AND_EDGE_STRIP_DISPLAY_CHECK_ONLY",
+      "display_mode": "STUDY"
+    },
+    "PS13-F06": {
+      "id": "PS13-F06",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    },
+    "PS13-F07": {
+      "id": "PS13-F07",
+      "source_native_candidate": false,
+      "reason": "RED_BUILDING_PROJECTION_CONFLICT_STUDY",
+      "display_mode": "CONFLICT_DIAGNOSTIC"
+    }
+  },
+  "limitation": "Map contour is not a surveyed boundary. A numerical surplus is no stability, load, access or construction release."
+}
