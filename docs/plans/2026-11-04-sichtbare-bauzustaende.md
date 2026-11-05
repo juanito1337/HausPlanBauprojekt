@@ -27,7 +27,7 @@ Grundlage sind der Nutzerauftrag vom 04.11.2026, `docs/ANFORDERUNGEN_RENOVIERUNG
 - [x] Prüfung um echte sichtbare Geometrie, Layer, Kamera, Zustandserhalt nach Öffnen, Kontextabdeckung und unveränderte Aushub-/Lagervolumen erweitern. Bedienweg mit dem tatsächlich verfügbaren NX-Zugang prüfen.
 - [x] Machbarkeitsbericht pro Sektion mit Grundstücks-/Gebäudekonflikten, Lager-/Schutzstreifenprüfung und offenen Last-/Wege-/Gründungsnachweisen aktualisieren.
 - [x] Neue native Lieferung vollständig erzeugen, frisch und verschoben öffnen, unabhängiges Review und Abschlusschecks.
-- [ ] CAD-Dateien und Bericht in Git sichern.
+- [x] CAD-Dateien und Bericht in Git sichern.
 
 ## Verbindliche Grenzen und Nachweise
 
