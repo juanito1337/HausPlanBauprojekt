@@ -2,6 +2,10 @@
 
 Aktueller Studienstand **05.11.2026**. Frühere Liefer- und Übergabestände bleiben nachfolgend als Historie erhalten.
 
+## Planung der erdarmen Baufolge M03
+
+Der neue Nutzerauftrag richtet die weitere Planung auf geringe Erdbewegung, sinnvolle Arbeitslängen und Verbau aus. Als Gerät ist der eigene Yanmar B17-2 angegeben. Das unabhängig geprüfte Konzept untersucht kleinteiligen einseitigen Mietverbau mit geführten Dielen, bemessenen Holzverbau sowie Böschungs- und Sonderlösungen. Es verlangt eine fortgeschriebene Baufolge mit Erstaushub, Wiederaushub, Lager und Einbau- beziehungsweise Rückbauzuständen. Die Modellumsetzung folgt auf die Bestätigung des Konzepts. [Konzept und offene Nachweise](plans/2026-11-05-erdarme-baufolge-verbau-konzept.md).
+
 ## Aktuelle Hauptbaugruppe M02
 
 Stand 05.11.2026. [Hauptbaugruppe öffnen](../cad/nx/m02/20261105T002134Z_6569c2/HAUSPROJEKT_MASTER_M01.prt). Alle 367 zugehörigen Parts bleiben gemeinsam im selben Lieferordner. Zum Revisionswechsel die ältere Projektbaugruppe schließen und diesen Stand öffnen. [Bedienung und Dateiauswahl](../cad/nx/m01/README.md).
